@@ -57,12 +57,12 @@
    <th>Código</th>
    </tr>
    <tr>
-   <td>Integrante 1</td>
-   <td>U202312222</td>
+   <td>León Vivas, Fabrizio Amir</td>
+   <td>U20211B994</td>
    </tr>
    <tr>
-   <td>Integrante 2</td>
-   <td>U/td>
+   <td>Medina Cruzado, Raúl Adrian</td>
+   <td>U202210938</td>
    </tr>
    <tr>
    <td>Integrante 3</td>
@@ -85,151 +85,163 @@
 
 # Registro de Versiones del Informe
 
-<div>
+<table style="border-collapse: collapse; width: 100%; text-align: left;">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black; padding: 8px; font-weight: bold; text-align: center;">Versión</th>
+            <th style="border: 1px solid black; padding: 8px; font-weight: bold; text-align: center;">Fecha</th>
+            <th style="border: 1px solid black; padding: 8px; font-weight: bold; text-align: center;">Autor</th>
+            <th style="border: 1px solid black; padding: 8px; font-weight: bold;">Descripción de modificación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.0</td>
+            <td>19/09/2025</td>
+            <td>
+                <ul>   
+                    <li>León Vivas, Fabrizio Amir</li>
+                    <li>Medina Cruzado, Raúl Adrian</li>
+                    <li></li>
+                    <li>Varela Bustinza, Marcelo Alessandro</li>
+                </ul>
+            </td>
+            <td>
+                <strong>Adición de secciones:</strong><br>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Registro de Versiones del Informe</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Project Report Collaboration Insights</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Student Outcome</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Part I: As-Is Software Project</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.1. Startup Profile</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.1.1. Descripción de la Startup</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.1.2. Perfiles de integrantes del equipo</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.2. Solution Profile</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.2.1. Antecedentes y problemática</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.2.2. Lean UX Process</p>
+                <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.1. Lean UX Problem Statements</p>
+                <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.2. Lean UX Assumptions</p>
+                <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.3. Lean UX Hypothesis Statements</p>
+                <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.4. Lean UX Canvas</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.3. Segmentos objetivo</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">2.1. Competidores</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">2.1.1. Análisis competitivo</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">2.1.2. Estrategias y tácticas frente a competidores</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">2.2. Entrevistas</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">2.2.1. Diseño de entrevistas</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">2.2.2. Registro de entrevistas</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">2.2.3. Análisis de entrevistas</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">2.3. Needfinding</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">2.3.1. User Personas</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">2.3.2. User Task Matrix</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">2.3.3. User Journey Mapping</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">2.3.4. Empathy Mapping</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">2.3.5. As-is Scenario Mapping</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">2.4. Ubiquitous Language</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">3.1. To-Be Scenario Mapping</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">3.2. User Stories</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">3.3. Product Backlog</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">3.4. Impact Mapping</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">4.1. Style Guidelines</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.1.1. General Style Guidelines</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.1.2. Web Style Guidelines</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.1.3. Mobile Style Guidelines</p>
+                <p style="display: block; margin: 2px 0; text-indent: 20px;">4.1.3.1. iOS Mobile Style Guidelines</p>
+                <p style="display: block; margin: 2px 0; text-indent: 20px;">4.1.3.2. Android Mobile Style Guidelines</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">4.2. Information Architecture</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.2.1. Organization Systems</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.2.2. Labeling Systems</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.2.3. SEO Tags and Meta Tags</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.2.4. Searching Systems</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.2.5. Navigation Systems</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">4.3. Landing Page UI Design</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.3.1. Landing Page Wireframe</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.3.2. Landing Page Mock-up</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">4.4. Mobile Applications UX/UI Design</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.4.1. Mobile Applications Wireframes</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.4.2. Mobile Applications Wireflow Diagrams</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.4.3. Mobile Applications Mock-ups</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.4.4. Mobile Applications User Flow Diagrams</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">4.5. Mobile Applications Prototyping</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.5.1. Android Mobile Applications Prototyping</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.5.2. iOS Mobile Applications Prototyping</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">4.6. Web Applications UX/UI Design</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.6.1. Web Applications Wireframes</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.6.2. Web Applications Wireflow Diagrams</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.6.3. Web Applications Mock-ups</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.6.4. Web Applications User Flow Diagrams</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">4.7. Web Applications Prototyping</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">4.8. Domain-Driven Software Architecture</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.8.1. Software Architecture Context Diagram</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.8.2. Software Architecture Container Diagrams</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.8.3. Software Architecture Components Diagrams</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">4.9. Software Object-Oriented Design</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.9.1. Class Diagrams</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.9.2. Class Dictionary</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">4.10. Database Design</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">4.10.1. Relational/Non-Relational Database Diagram</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">5.1. Software Configuration Management</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.1.1. Software Development Environment Configuration</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.1.2. Source Code Management</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.1.3. Source Code Style Guide & Conventions</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.1.4. Software Deployment Configuration</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">5.2. Product Implementation & Deployment</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.2.1. Sprint Backlogs</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.2.2. Implemented Landing Page Evidence</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.2.3. Implemented Frontend-Web Application Evidence</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.2.4. Acuerdo de Servicio - SaaS</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.2.5. Implemented Native-Mobile Application Evidence</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.2.6. Implemented RESTful API and/or Serverless Backend Evidence</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.2.7. RESTful API documentation</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">5.2.8. Team Collaboration Insights</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">5.3. Video About-the-Product</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Conclusiones</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-| Version | Fecha      | Autor          | Descripción de modificación                              |
-|---------|------------|----------------|----------------------------------------------------------|
-| 1.0     | 19/94/2025 | , , Varela,    | Elaboración del documento de trabajo en formato Markdown |
 
-</div>
 
 # Project Report Collaboration Insights
 
-Link URL del repositorio para el proyecto: https://github.com/Prime-Fixers
+Link URL del repositorio para el proyecto: [https://github.com/Prime-Fixers](https://github.com/Prime-Fixers)
+
+Se presenta una tabla que especifica qué miembro del equipo se corresponde con qué usuario de GitHub.
+
+<table cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th>Team Member <br>(Last Name, First Name)</th>
+    <th>GitHub Username</th>
+  </tr>
+  <tr>
+    <td>León Vivas, Fabrizio Amir</td>
+    <td>CodyLionVivo</td>
+  </tr>
+  <tr>
+    <td>Medina Cruzado, Raúl Adrian</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Varela Bustinza, Marcelo Alessandro</td>
+    <td></td>
+  </tr>
+</table>
 
 **TB1**
 
-Para la elaboración del informe correspondiente a la entrega del TB1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas.
+Para la elaboración del informe correspondiente a la entrega del TB1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas desde el capítulo I hasta el capitulo V.
 
-| Integrantes     | Tareas Asignadas                                                                                                                                                                  |
+| Integrantes     | Tareas Asignadas                                                                                                                                                              |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    |                       |
+|  León Vivas, Fabrizio Amir  |                       |
 |      | |
 | Marcelo Varela  |  |
 |      |        |
 
-# Student Outcome
-
-ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
-<div>
-<table>
-  <thead>
-    <tr>
-      <th>Criterio específico</th>
-      <th>Nombre</th>
-      <th>Acciones realizadas</th>
-      <th>Conclusiones</th>
-    </tr>
-  </thead>
-  <tbody>
-    <!-- Criterio 1 -->
-    <tr>
-      <td rowspan="5">4.c.1 Reconoce responsabilidadética y profesional ensituaciones de ingeniería de software. </td>
-    <tr>
- <td rowspan="6">Conclusiones</td>
-      <td>Integrante 1</td>
-      <td>
-        <strong>TB1: </strong><br>
-        <br>
-        <strong>TP:</strong><br>
-        <br>
-        <strong>TB2:</strong><br>
-        <br>
-        <strong> TF:</strong><br>
-      </td>
-    </tr>
-    <tr>
-      <td>Integrante 2</td>
-      <td>
-        <strong> TB1:  </strong><br>
-        <br>
-        <strong> TP:</strong><br>
-        <br>
-        <strong> TB2:</strong><br>
-        <br>
-        <strong> TF:</strong><br>
-      </td>
-    </tr>
-    <tr>
-      <td>Integrante 3</td>
-      <td>
-        <strong> TB1: </strong><br>
-        <br>
-        <strong> TP:</strong><br>
-        <br>
-        <strong> TB2:</strong><br>
-        <br>
-        <strong> TF:</strong><br>
-      </td>
-    </tr>
-    <tr>
-      <td>Marcelo Varela</td>
-      <td>
-        <strong> TB1:.</strong><br>
-        <br>
-        <strong> TP:</strong><br>
-        <br>
-        <strong> TB2:</strong><br>
-        <br>
-        <strong> TF:</strong><br>
-      </td>
-    </tr>
-    <!-- Criterio 2 -->
-    <tr>
-      <td rowspan="6">4.c.2 Emite juicios informadosconsiderando el impacto de lassoluciones de ingeniería desoftware en contextos globales,económicos, ambientales ysociales.</td>
-      <td rowspan="6">Conclusiones</td>
-    </tr>
-    <tr>
-      <td>Integrante 1</td>
-      <td>
-        <strong>TB1: </strong><br>
-        <br>
-        <strong>TP:</strong><br>
-        <br>
-        <strong>TB2:</strong><br>
-        <br>
-        <strong> TF:</strong><br>
-      </td>
-    </tr>
-    <tr>
-      <td>Integrante 2</td>
-      <td>
-        <strong> TB1:  </strong><br>
-        <br>
-        <strong> TP:</strong><br>
-        <br>
-        <strong> TB2:</strong><br>
-        <br>
-        <strong> TF:</strong><br>
-      </td>
-    </tr>
-    <tr>
-      <td>Integrante 3</td>
-      <td>
-        <strong> TB1: </strong><br>
-        <br>
-        <strong> TP:</strong><br>
-        <br>
-        <strong> TB2:</strong><br>
-        <br>
-        <strong> TF:</strong><br>
-      </td>
-    </tr>
-    <tr>
-      <td>Marcelo Varela</td>
-      <td>
-        <strong> TB1:.</strong><br>
-        <br>
-        <strong> TP:</strong><br>
-        <br>
-        <strong> TB2:</strong><br>
-        <br>
-        <strong> TF:</strong><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
 # Contenido
 
@@ -416,3 +428,55 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
 11. [Video About-the-Team](#video-about-the-team)<br>
 12. [Bibliografía](#bibliografía)<br>
 13. [Anexos](#anexos)<br>
+
+# Student Outcome
+
+ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
+
+<table style="border-collapse: collapse; width: 100%; text-align: left;">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black; padding: 8px; font-weight: bold; width: 25%;">Criterio Específico</th>
+            <th style="border: 1px solid black; padding: 8px; font-weight: bold; width: 45%;">Acciones realizadas</th>
+            <th style="border: 1px solid black; padding: 8px; font-weight: bold; width: 30%;">Conclusiones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software 
+            </td>
+            <td>
+                <strong>TB1:</strong><br>
+                <ul>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> </li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong>  </li>
+                    <li><strong></strong> </li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> </li>
+                </ul>
+            </td>
+            <td>
+                <strong>TB1:</strong> <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales económicos, ambientales y sociales 
+            </td>
+            <td>
+                <strong>TB1:</strong><br>
+                <ul>
+                    <li><strong>Fabrizio Amir León Vivas:</strong>  </li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
+                    <li><strong></strong> </li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
+                </ul>
+            </td>
+            <td>
+                <strong>TB1:</strong> <br>
+            </td>
+        </tr>
+    </tobdy>
+</table>
+
+# Capítulo I: Introducción
