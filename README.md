@@ -481,7 +481,7 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
 
 # Capítulo I: Introducción
 
-## 1. Startup Profile
+## 1.1. Startup Profile
 
 ### 1.1.1 Descripción de la Startup
 
@@ -499,8 +499,198 @@ Visión: Aspiramos a convertirnos en la empresa líder en gestión y mantenimien
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | ****<br>                                                                                                                                                                | <img src="" alt="angie image" width="200">  |
 |**** <br> | <img src="" alt="kevin image" width="200">  |
-| **a**<br>                                                     | <img src="https://files.catbox.moe/u1b8w5.jpg" alt="kevin image" width="200">  | 
+| **Fabrizio León**<br> Soy Fabrizio Amir León Vivas, estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Cuento con experiencia en metodologías ágiles, desarrollo de aplicaciones open source y sólidos conocimientos en sistemas basados en Linux. Dentro de mis habilidades técnicas, destaco la capacidad para gestionar proyectos con enfoque ágil, diseñar e implementar soluciones de software eficientes y explorar áreas emergentes como la ciberseguridad, campo que me apasiona y en el cual busco seguir especializándome. En cuanto a mis habilidades interpersonales, me caracterizo por el trabajo en equipo, el pensamiento crítico y la comunicación efectiva. Disfruto asumir nuevos retos y desafíos, entendiendo que tanto los aciertos como los fracasos son oportunidades valiosas de aprendizaje y crecimiento profesional.                                                     | <img src="/resources/Fabrizio.png" alt="fabrizio image" width="200">  | 
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
+
+## 1.2. Solution Profile
+
+### 1.2.1. Antecedentes y Problemática
+
+**Análisis 5W + 2H**
+
+***What?***
+
+En la actualidad, los negocios que dependen de equipos de congelación afrontan serios retos operativos debido a fallas imprevistas y a la falta de un mantenimiento adecuado. Problemas como interrupciones térmicas, consumos energéticos elevados no identificados oportunamente y la ausencia de un monitoreo continuo pueden ocasionar pérdidas de productos, disminución en la calidad del servicio y considerables perjuicios económicos.
+
+***Why?***
+
+La raíz del problema radica en la ausencia de soluciones tecnológicas accesibles que integren en una sola plataforma funciones de monitoreo, alertas, historial y programación automática. En consecuencia, muchas empresas continúan dependiendo de métodos manuales o carecen de visibilidad sobre el estado de sus equipos hasta que enfrentan una falla crítica.
+
+***Who?***
+
+Los principales actores involucrados son los administradores y propietarios de negocios que utilizan equipos de congelación, así como los técnicos y empresas proveedoras de servicios de refrigeración.
+
+***When?***
+
+Estas problemáticas suelen presentarse durante los periodos de operación continua, en especial cuando no se cuenta con personal técnico disponible de inmediato o cuando no se ha realizado un seguimiento constante del estado de los equipos a lo largo del tiempo.
+
+***Where?***
+
+El problema impacta a negocios de todo el país, con mayor énfasis en Lima, donde la cadena de frío resulta crítica para sectores como alimentación, salud y distribución. Asimismo, afecta a las empresas proveedoras de servicios de refrigeración que atienden a múltiples clientes sin contar con una plataforma centralizada de monitoreo y control.
+
+***How?***
+
+Los negocios y técnicos han llegado a esta situación debido a la acumulación de imprevistos y a la limitada digitalización en los procesos de mantenimiento preventivo. Esto ha generado una fuerte dependencia de intervenciones reactivas en lugar de planificadas, lo que se traduce en mayores costos, tiempos de respuesta más largos y un aumento en el desgaste operativo.
+
+***How much?***
+
+Si bien el impacto económico depende del tipo de negocio, una sola falla en un equipo de refrigeración puede generar pérdidas que van desde cientos hasta miles de soles en productos dañados. A ello se suman el tiempo operativo interrumpido, la pérdida de clientes y los costos adicionales asociados a reparaciones o reemplazo de equipos.
+
+<div style="page-break-before: always;"></div>
+
+### 1.2.2. Lean UX Process.
+
+#### 1.2.2.1. Lean UX Problem Statements.
+
+La industria de la refrigeración comercial y técnica enfrenta retos significativos en la gestión, el mantenimiento y la trazabilidad de los equipos de congelación. Negocios que dependen de la cadena de frío —como supermercados, minimarkets, laboratorios, restaurantes y empresas de los sectores alimentario y farmacéutico— aún operan sin un monitoreo en tiempo real ni procesos preventivos sólidos, lo que deriva en pérdidas económicas, ineficiencias energéticas y riesgos para el inventario.
+
+Las soluciones disponibles en el mercado no cubren la necesidad de una plataforma confiable y automatizada que permita una gestión centralizada, predictiva y transparente para negocios, técnicos y proveedores de refrigeración. La ausencia de historiales técnicos accesibles, reportes detallados y alertas preventivas limita la capacidad de anticiparse a fallas y reduce la calidad del servicio técnico.
+
+FrostLink busca cerrar esta brecha con una solución tecnológica integral que conecta a negocios con técnicos especializados, ofreciendo funciones clave como monitoreo en tiempo real de temperatura y consumo energético, programación inteligente de mantenimientos, alertas automáticas, reportes técnicos y trazabilidad completa de cada equipo. Asimismo, brinda a los proveedores de servicios un módulo de gestión que les permite organizar sus visitas, acceder al historial técnico de los equipos atendidos y optimizar la atención a múltiples clientes.
+
+Nuestro enfoque inicial está en los negocios de Lima que requieren garantizar la continuidad y eficiencia de sus sistemas de congelación, así como en los proveedores de refrigeración que buscan digitalizar, profesionalizar y escalar sus servicios mediante herramientas modernas.
+
+Consideraremos exitoso nuestro trabajo cuando logremos reducir las fallas imprevistas, optimizar el consumo energético, mejorar la eficiencia operativa de los técnicos y aumentar la satisfacción de los clientes finales, reflejada en la continuidad del servicio y en su fidelización dentro de la plataforma.
+
+#### 1.2.2.2. Lean UX Assumptions.
+
+**Business Outcomes**
+* Incrementar en al menos un 15% la cantidad de usuarios activos en la plataforma.
+* Mejorar la presencia y visibilidad de FrostLink en redes sociales, enfocándose en negocios de alimentos y técnicos de refrigeración.
+* Construir confianza y seguridad en los usuarios sobre el valor del monitoreo automatizado y el mantenimiento inteligente de sus sistemas.
+* Garantizar que los usuarios reciban notificaciones oportunas sobre incidentes relevantes, como fallas térmicas, cortes de energía o uso inusual de los equipos.
+* Consolidar una base de usuarios premium dispuestos a pagar por funcionalidades avanzadas, como mantenimiento predictivo, reportes personalizados y soporte técnico prioritario.
+* Desarrollar alianzas estratégicas con servicios de geolocalización (por ejemplo, Google Maps) para ampliar la cobertura y optimizar la programación de visitas técnicas.
+* Promover la participación activa de los usuarios a través de encuestas, evaluaciones de técnicos y retroalimentación sobre el rendimiento de los equipos.
+* Diseñar una interfaz limpia, intuitiva y fácil de usar, que asegure una experiencia agradable sin sobrecargar al usuario con elementos innecesarios.
+* Incorporar inteligencia artificial para habilitar mantenimiento inteligente, optimización de rutas para técnicos y recomendaciones proactivas frente a posibles fallos.
+
+**User Outcomes**
+
+**¿Quién será nuestro usuario?**
+- Negocios que dependen críticamente de sistemas de refrigeración, como supermercados, minimarkets, restaurantes, laboratorios y empresas de los sectores alimentario y farmacéutico.  
+- Técnicos especializados en refrigeración que brindan mantenimiento preventivo y correctivo.  
+- Proveedores de equipos de refrigeración que buscan ofrecer un servicio posventa más eficiente. 
+
+**¿Dónde encaja nuestro producto en su vida?**
+- En los negocios que necesitan garantizar la continuidad operativa de sus equipos de frío y evitar pérdidas económicas por fallas imprevistas.  
+- En la gestión diaria de técnicos de refrigeración que atienden múltiples clientes, visitas y mantenimientos.  
+- En la operación de empresas que requieren registros precisos y reportes claros sobre el desempeño de sus sistemas de refrigeración.
+
+**¿Qué problemas tiene nuestro producto y cómo se pueden resolver?**
+- **Desafío:** Garantizar que los datos de monitoreo (temperatura, consumo energético, fallas) sean confiables y actualizados.  
+  **Solución:** Integración de sensores calibrados y sistemas de verificación automática de lecturas.  
+
+- **Desafío:** Dificultad en la adopción por parte de usuarios con poca experiencia tecnológica.  
+  **Solución:** Interfaz sencilla, guías paso a paso y soporte técnico accesible.
+
+**¿Cómo y cuándo es usado nuestro producto?**
+- Acceso desde la aplicación web, disponible en computadoras y dispositivos móviles.  
+- Uso diario para monitoreo de equipos de frío, recepción de alertas, programación de mantenimientos y revisión de historial técnico.  
+- Integración con sensores que transmiten datos en segundo plano, incluso sin intervención del usuario.  
+
+**¿Qué problemas adicionales puede enfrentar nuestro producto?**  
+- Limitada integración inicial con hardware de terceros.  
+- Algunos usuarios requerirán capacitación para aprovechar funciones avanzadas.  
+- Posible resistencia de técnicos acostumbrados a métodos tradicionales.
+
+**¿Qué características son importantes para la app?**
+- Monitoreo en tiempo real de temperatura, consumo energético y horas de uso.  
+- Alertas automáticas ante fallas detectadas.  
+- Historial técnico detallado con reportes exportables en PDF.  
+- Calendario de mantenimiento preventivo con notificaciones programadas.  
+- Módulo para técnicos con gestión de clientes y visitas.  
+- Recomendaciones predictivas y soporte inteligente mediante IA.  
+- Registro multiusuario y multisitio con roles diferenciados.  
+- Interfaz intuitiva, minimalista y de rápida adopción.
+
+**¿Cómo debe verse y comportarse nuestro producto?**
+- **Interfaz amigable y confiable:** clara, ordenada, segura y fácil de navegar, con gráficos intuitivos.  
+- **Diseño centrado en tareas críticas:** información inmediata sobre fallas, próximas visitas y reportes técnicos.  
+- **Accesibilidad multiplataforma:** disponible en web y móvil, con notificaciones en tiempo real.  
+- **Simplicidad operativa:** panel centralizado que muestre clientes, equipos en riesgo, visitas programadas y reportes generados en segundos.
+
+**¿Qué valor busca el cliente?**
+- **Gestión técnica simplificada:** pasar de un modelo reactivo a uno predictivo con historiales claros.  
+- **Seguridad operativa:** minimizar pérdidas gracias a monitoreo constante, alertas automáticas y control total.  
+- **Eficiencia energética y trazabilidad:** identificar consumos elevados, bajo rendimiento o piezas próximas a falla.
+
+**¿Qué beneficios adicionales obtiene el cliente?**
+- Visibilidad completa del estado de los equipos desde cualquier lugar.  
+- Soporte técnico más ágil gracias al historial y alertas automáticas.  
+- Reducción de costos por mantenimientos oportunos y eficiencia energética.  
+- Reportes personalizados y exportables.  
+- Automatización de visitas técnicas ante patrones de falla detectados.
+
+**¿Cómo atraeremos usuarios?**
+- **Marketing dirigido** a supermercados, restaurantes y empresas de frío mediante LinkedIn, correos y llamadas estratégicas.  
+- **Alianzas con proveedores de equipos** para incluir FrostLink como parte de sus paquetes posventa.  
+- **Prueba gratuita** de 14 días para mostrar el valor del monitoreo en tiempo real.
+
+**¿Cómo generaremos ingresos?**
+- **Modelo de suscripción mensual** según número de equipos y funcionalidades activadas.  
+- **Modelo freemium** con funciones limitadas y anuncios integrados.  
+- **Publicidad dirigida (opcional)** para marcas de refrigeración dentro de la plataforma. 
+
+**¿Cuál es nuestra competencia y cómo la superamos?**
+- **Competencia:** aplicaciones genéricas de gestión de mantenimiento.  
+- **Nuestra ventaja:** FrostLink está diseñado específicamente para negocios dependientes de la cadena de frío. Detecta anomalías en tiempo real, genera alertas y automatiza acciones más allá de un simple registro de mantenimientos.
+
+**¿Cuál es nuestro mayor riesgo?**
+- **Resistencia al cambio:** técnicos y proveedores que aún usan métodos tradicionales (agendas o Excel).  
+- **Baja adopción inicial:** dificultad para convencer a los primeros usuarios del valor de la plataforma.  
+- **Desconfianza en sensores:** dudas sobre la precisión de los datos recolectados.
+
+**¿Cómo lo resolveremos?**
+- **Algoritmos de validación con IA** para asegurar la confiabilidad de los datos.  
+- **Capacitación y soporte continuo** con tutoriales, videos y asistencia en línea.  
+- **Integraciones progresivas** iniciando con equipos más comunes y expandiendo compatibilidad vía APIs y alianzas.  
+- **Sensores certificados** que garanticen precisión y confiabilidad de la información.
+
+<div style="page-break-before: always;"></div>
+
+#### 1.2.2.3. Lean UX Hypothesis Statements.
+
+**Hipótesis 1: Eficiencia operativa y reducción de fallas inesperadas**  
+Creemos que al disponer de una plataforma integral que unifique monitoreo, mantenimiento y gestión técnica, los negocios y proveedores del sector podrán optimizar su eficiencia operativa, reduciendo la complejidad de la gestión y el riesgo de fallas inesperadas. Sabremos que estamos en lo correcto cuando los usuarios reporten una menor cantidad de incidencias térmicas y una mejora en la planificación de mantenimientos preventivos.  
+
+**Hipótesis 2: Control de pérdidas y optimización energética**  
+Creemos que el control de pérdidas operativas y del consumo energético es esencial para los usuarios, por lo que al ofrecer herramientas de análisis de rendimiento junto con alertas automatizadas, aumentaremos su capacidad de respuesta preventiva y su eficiencia en costos. Validaremos esta hipótesis cuando observemos un mayor uso de las funciones de monitoreo en tiempo real y reportes técnicos, acompañado de una disminución en pérdidas económicas por fallas de refrigeración.  
+
+**Hipótesis 3: Servicio técnico predictivo y personalizado** 
+Creemos que al brindar reportes automáticos e historiales detallados de uso y rendimiento de los equipos, los técnicos y proveedores podrán ofrecer un servicio más personalizado y predictivo, elevando la calidad de la atención. Confirmaremos esta hipótesis cuando los técnicos valoren positivamente estas funciones y los clientes finales expresen mayor satisfacción con la rapidez y efectividad del servicio recibido.  
+
+**Hipótesis 4: Confianza mediante trazabilidad y seguridad de la información**  
+Creemos que al garantizar trazabilidad completa de cada acción realizada sobre los equipos y proteger adecuadamente la información técnica dentro de la plataforma, fortaleceremos la confianza entre negocios y proveedores. Estaremos en lo correcto cuando observemos mayor fidelización de usuarios y menos incidencias relacionadas con pérdida de datos o errores administrativos.  
+
+**Hipótesis 5: Adopción de una gestión moderna de refrigeración**  
+Creemos que al ofrecer una solución digital intuitiva y especializada como **FrostLink**, facilitaremos la adopción de prácticas modernas de gestión de refrigeración y reduciremos la curva de aprendizaje. Validaremos esta hipótesis cuando identifiquemos una rápida adopción, baja tasa de abandono y un uso constante de las funcionalidades clave por parte de usuarios nuevos y recurrentes.
+
+<div style="page-break-before: always;"></div>
+
+#### 1.2.2.4. Lean UX Canvas.
+
+El Lean UX Canvas de **FrostLink** se ha elaborado como una herramienta estratégica que conecta de forma clara los objetivos del negocio con las necesidades reales de los usuarios y las hipótesis que guiarán el desarrollo de la solución. Este marco nos permite descomponer el problema central que enfrentan los negocios dependientes de sistemas de refrigeración, definir la propuesta de valor de manera concisa y proyectar los resultados esperados.  
+
+A través de este lienzo, identificamos a nuestros usuarios clave, sus beneficios directos, los resultados de negocio que buscamos, así como los supuestos que validaremos mediante hipótesis claras y medibles. De esta manera, aseguramos que cada iteración se enfoque en generar valor tangible con el menor riesgo y la máxima eficiencia de recursos.
+
+<img src="/resources/leanuxcanvas.jpg" alt="Lean UX Canvas">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Capítulo IV: Product Design
