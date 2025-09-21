@@ -493,7 +493,7 @@ Nuestro estilo de comunicación mantiene un equilibrio entre lo profesional y lo
 
 La identidad visual de FrostLink busca transmitir seguridad, innovación y cercanía.
 
-Logo: Representa la esencia de FrostLink a través de un diseño moderno que integra conceptos de tecnología y refrigeración. Su estilo equilibra lo técnico con lo accesible, transmitiendo innovación y cercanía. Está disponible en versiones para fondos claros y oscuros, así como en formatos monocromático, horizontal y vertical.
+*Logo:* Representa la esencia de FrostLink a través de un diseño moderno que integra conceptos de tecnología y refrigeración. Su estilo equilibra lo técnico con lo accesible, transmitiendo innovación y cercanía. Está disponible en versiones para fondos claros y oscuros, así como en formatos monocromático, horizontal y vertical.
 
 *Tipografía*
 
@@ -504,3 +504,13 @@ Para mantener la formalidad y accesibilidad de la interfaz de usuario de FrostLi
 *Figura 1:* Tipografía Helvica
 
 <img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" width="50" height="50">
+
+*Figura 2:* Tipografía Open Sans
+
+*Colores*
+La paleta cromática fue diseñada para evocar entornos fríos y tecnológicos, transmitiendo sensación de confianza y orden visual.
+
+El color principal es el celeste, ya que refleja de manera óptima las características de la marca. Como colores neutros, se emplean negro, blanco y gris, ideales para fondos y textos por su versatilidad. Además, se incorporan variantes de verde, rojo, azul y amarillo para resaltar estados específicos, como alertas, servicios o calificaciones.
+
+<img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="50" height="50">
+
