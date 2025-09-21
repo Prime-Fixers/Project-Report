@@ -887,3 +887,50 @@ Pantalla donde la empresa gestiona las solicitudes enviadas por los clientes.</p
 Presenta la vista de control de órdenes de trabajo generadas por la empresa.</p>
 <img src="./resources/Wireframe_25.jpeg" alt="wireframe_25" width="500" height="500">
 
+### 4.4.2. Web Applications Wireflow Diagrams
+<p>En esta sección se muestran los <strong>wireflows</strong> de cada objetivo del usuario, tomando en cuenta los <strong>User Personas</strong> pertinentes. Cada diagrama describe el recorrido de interacción y cómo dichas acciones impactan en las pantallas de la aplicación.</p>
+
+<p><strong>User Goal 1</strong><br>
+Como propietario de un negocio que opera equipos de refrigeración, deseo <strong>monitorear el estado</strong> de cada equipo registrado en tiempo real.</p>
+<p><strong>Task Flow 1</strong><br>
+Secuencia de pasos para completar la acción principal del usuario (consulta y verificación del estado de equipos).</p>
+<img src="./resources/taskflow1.png" alt="taskflow1" width="500" height="500">
+<p><strong>Wireflow 1</strong><br>
+Mapa que combina wireframes con el flujo de interacción, mostrando transiciones entre pantallas y puntos de decisión.</p>
+<img src="./resources/wireflow1.png" alt="wireflow1" width="500" height="500">
+
+<p><strong>User Goal 2</strong><br>
+Como dueño de un negocio con equipos de refrigeración, quiero <strong>gestionar el alta y administración</strong> de los nuevos equipos que registre.</p>
+<p><strong>Task Flow 2</strong><br>
+Proceso de tareas que guía el registro, edición y organización de nuevos equipos.</p>
+<img src="./resources/taskflow2.png" alt="taskflow2" width="500" height="500">
+<p><strong>Wireflow 2</strong><br>
+Representación visual del flujo entre pantallas para dar de alta equipos y configurar sus atributos.</p>
+<img src="./resources/wireflow2.png" alt="wireflow2" width="500" height="500">
+
+<p><strong>User Goal 3</strong><br>
+Como dueño de un negocio que usa equipos de refrigeración, quiero <strong>consultar estadísticas completas</strong> sobre el rendimiento de mis equipos.</p>
+<p><strong>Task Flow 3</strong><br>
+Secuencia de tareas para explorar métricas, filtrar periodos y comparar resultados.</p>
+<img src="./resources/taskflow3.png" alt="taskflow3" width="500" height="500">
+<p><strong>Wireflow 3</strong><br>
+Detalle de pantallas y transiciones que soportan la visualización de KPIs, gráficos y reportes.</p>
+<img src="./resources/wireflow3.png" alt="wireflow3" width="500" height="500">
+
+<p><strong>User Goal 4</strong><br>
+Como dueño de un negocio con equipos de refrigeración, quiero <strong>solicitar nuevos equipos</strong> a un proveedor de forma simple.</p>
+<p><strong>Task Flow 4</strong><br>
+Flujo de tareas para seleccionar productos, confirmar cantidades y generar una solicitud.</p>
+<img src="./resources/taskflow4.png" alt="taskflow4" width="500" height="500">
+<p><strong>Wireflow 4</strong><br>
+Visión general del camino de compra: búsqueda, detalle de equipo, carrito/solicitud y confirmación.</p>
+<img src="./resources/wireflow4.png" alt="wireflow4" width="500" height="500">
+
+<p><strong>User Goal 5</strong><br>
+Como proveedor de equipos de refrigeración, deseo <strong>seguir y gestionar</strong> las <strong>órdenes de pedido</strong> de mis clientes.</p>
+<p><strong>Task Flow 5</strong><br>
+Flujo de tareas para revisar pedidos, actualizar estados y coordinar despachos.</p>
+<img src="./resources/taskflow5.png" alt="taskflow5" width="500" height="500">
+<p><strong>Wireflow 5</strong><br>
+Resumen del movimiento entre pantallas para administrar órdenes: listado, detalle, acciones y notificaciones.</p>
+<img src="./resources/wireflow5.png" alt="wireflow5" width="500" height="500">
