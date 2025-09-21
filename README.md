@@ -519,3 +519,35 @@ El color principal es el celeste, ya que refleja de manera óptima las caracter�
 *Espaciado*
 
 Para garantizar consistencia en la interfaz, se define un espaciado base de 8 px y un margen mínimo de 16 px. En el diseño modular, se implementan grillas flexibles que se adaptan tanto a entornos web como móviles, utilizando configuraciones de 12 columnas para web y 4 columnas para dispositivos móviles.
+
+### 4.1.2. Web Style Guidelines
+
+Esta sección establece los estándares visuales y de interacción para la versión web de FrostLink, asegurando una experiencia de usuario uniforme, profesional y accesible en todos los dispositivos. La interfaz es responsiva, lo que ofrece beneficios como compatibilidad en cualquier dispositivo, optimización de tiempo y costos de desarrollo, y mayor satisfacción para el usuario final.
+
+Bajo un enfoque mobile-first, se utiliza un sistema de grilla de 12 columnas que permite que la interfaz se ajuste correctamente a distintos tamaños de pantalla.
+
+*Tipografía*
+
+Siguiendo la guía de estilos, se emplea Helvetica como tipografía principal en la mayoría de los textos, ya que proyecta claridad y profesionalismo. Para garantizar una óptima legibilidad, el tamaño de la fuente se ajusta de forma automática según el dispositivo en uso.
+
+*Colores*
+
+Dado que FrostLink está orientado al sector tecnológico, su paleta de colores busca transmitir frescura, innovación y confianza. Los colores seleccionados son:
+
+- Celeste (#0884C4): para encabezados y botones principales.
+
+- Blanco (#FFFFFF): para fondos neutros y áreas de descanso visual.
+
+- Negro (#000000): para botones secundarios y bordes.
+
+- Gris Claro (#808080): para divisores, bordes y botones deshabilitados.
+
+- Blanco Azul Mar (#F4FCFC): para algunos fondos.
+
+- Verde Medio Primavera (#00CC66): para notificaciones y estados positivos.
+
+- Rojo Claro (#FF4B4B): para alertas, errores y fallas críticas.
+
+- Amarillo Mandarina (#FFCC00): para notificaciones especiales y calificaciones.
+
+Dado que los botones y fondos pueden variar según el contexto, la plataforma emplea diferentes tonalidades de celeste para mantener coherencia visual.
