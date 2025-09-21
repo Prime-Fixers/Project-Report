@@ -725,3 +725,25 @@ A continuación, se despliegan secciones clave que describen las funcionalidades
 
 - Esta corresponde a la primera sección llamada "Inicio", donde se muestra de forma clara la propuesta de valor de la plataforma y el espacio para el Call to Action, que será implementado en etapas posteriores.
 
+<img src="./resources/Mockup_landing_2.jpeg" alt="mockup_landing_1" width="500" height="500">
+
+<img src="./resources/Mockup_landing_3.jpeg" alt="mockup_landing_2" width="500" height="500">
+
+<img src="./resources/Mockup_landing_4.jpeg" alt="mockup_landing_3" width="500" height="500">
+
+<img src="./resources/Mockup_landing_5.jpeg" alt="mockup_landing_4" width="500" height="500">
+
+<img src="./resources/Mockup_landing_6.jpeg" alt="mockup_landing_5" width="500" height="500">
+
+<img src="./resources/Mockup_landing_7.jpeg" alt="mockup_landing_6" width="500" height="500">
+
+<img src="./resources/Mockup_landing_8.jpeg" alt="mockup_landing_7" width="500" height="500">
+
+<img src="./resources/Mockup_landing_9.jpeg" alt="mockup_landing_8" width="500" height="500">
+
+<img src="./resources/Mockup_landing_10.jpeg" alt="mockup_landing_9" width="500" height="500">
+
+<img src="./resources/Mockup_landing_11.jpeg" alt="mockup_landing_10" width="500" height="500">
+
+<img src="./resources/Mockup_landing_12.jpeg" alt="mockup_landing_11" width="500" height="500">
+
