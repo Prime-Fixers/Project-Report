@@ -481,6 +481,28 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
 
 # Capítulo I: Introducción
 
+## 1. Startup Profile
+
+### 1.1.1 Descripción de la Startup
+
+FrostLink es una plataforma web diseñada para optimizar la gestión y el mantenimiento de equipos de refrigeración en negocios que dependen de la cadena de frío, como supermercados, minimarkets, laboratorios, restaurantes y empresas del sector alimentario o farmacéutico. La solución conecta a estos negocios con técnicos y proveedores especializados, permitiendo una administración integral, preventiva y automatizada de sus sistemas de refrigeración.
+
+La plataforma incorpora funcionalidades clave como monitoreo en tiempo real de temperatura, consumo energético y tiempo de operación; generación de reportes técnicos; alertas automáticas ante fallas; historial de rendimiento; y programación inteligente de mantenimientos. Estas herramientas están pensadas para que negocios, técnicos y proveedores optimicen sus operaciones, reduzcan riesgos de pérdidas económicas por fallas inesperadas y mantengan un registro completo del estado y uso de sus equipos.
+
+Misión: En FrostLink, nuestra misión es ofrecer una solución tecnológica avanzada que ayude a las empresas a proteger su inventario y gestionar de forma eficiente sus equipos de refrigeración, brindando a técnicos y proveedores herramientas inteligentes que mejoren su productividad y la continuidad operativa.
+
+Visión: Aspiramos a convertirnos en la empresa líder en gestión y mantenimiento de sistemas de refrigeración, iniciando en Lima y expandiéndonos progresivamente a más regiones del Perú.
+
+### 1.1.2 Perfiles de integrantes del equipo
+
+| **Perfil**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Foto**                                                                       |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| ****<br>                                                                                                                                                                | <img src="" alt="angie image" width="200">  |
+|**** <br> | <img src="" alt="kevin image" width="200">  |
+| **a**<br>                                                     | <img src="https://files.catbox.moe/u1b8w5.jpg" alt="kevin image" width="200">  | 
+| **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
+
+
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
