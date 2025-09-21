@@ -480,3 +480,187 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
 </table>
 
 # Capítulo I: Introducción
+
+# Capítulo IV: Product Design
+
+## 4.1. Style Guidelines
+
+### 4.1.1. General Style guidelines
+
+Nuestro estilo de comunicación mantiene un equilibrio entre lo profesional y lo accesible, utilizando un lenguaje claro, empático y respetuoso para atraer a nuevos usuarios y fortalecer la relación con los actuales. Esta identidad se refuerza con una paleta de colores fríos pero amigables y una tipografía moderna que transmite confianza, profesionalismo y cercanía.
+
+*Branding*
+
+La identidad visual de FrostLink busca transmitir seguridad, innovación y cercanía.
+
+*Logo:* Representa la esencia de FrostLink a través de un diseño moderno que integra conceptos de tecnología y refrigeración. Su estilo equilibra lo técnico con lo accesible, transmitiendo innovación y cercanía. Está disponible en versiones para fondos claros y oscuros, así como en formatos monocromático, horizontal y vertical.
+
+*Tipografía*
+
+Para mantener la formalidad y accesibilidad de la interfaz de usuario de FrostLink, se establecen las tipografías Helvetica y Open Sans por sus cualidades funcionales, estéticas y su excelente compatibilidad con entornos digitales, siendo Helvetica la tipografía principal.
+
+<img src="./resources/Tipografia.jpeg" alt="Tipografia" width="50" height="50">
+
+*Figura 1:* Tipografía Helvica
+
+<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" width="50" height="50">
+
+*Figura 2:* Tipografía Open Sans
+
+*Colores*
+La paleta cromática fue diseñada para evocar entornos fríos y tecnológicos, transmitiendo sensación de confianza y orden visual.
+
+El color principal es el celeste, ya que refleja de manera óptima las características de la marca. Como colores neutros, se emplean negro, blanco y gris, ideales para fondos y textos por su versatilidad. Además, se incorporan variantes de verde, rojo, azul y amarillo para resaltar estados específicos, como alertas, servicios o calificaciones.
+
+<img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="50" height="50">
+
+*Figura 3:* Guías Generales de Estilo – Colores
+
+*Espaciado*
+
+Para garantizar consistencia en la interfaz, se define un espaciado base de 8 px y un margen mínimo de 16 px. En el diseño modular, se implementan grillas flexibles que se adaptan tanto a entornos web como móviles, utilizando configuraciones de 12 columnas para web y 4 columnas para dispositivos móviles.
+
+### 4.1.2. Web Style Guidelines
+
+Esta sección establece los estándares visuales y de interacción para la versión web de FrostLink, asegurando una experiencia de usuario uniforme, profesional y accesible en todos los dispositivos. La interfaz es responsiva, lo que ofrece beneficios como compatibilidad en cualquier dispositivo, optimización de tiempo y costos de desarrollo, y mayor satisfacción para el usuario final.
+
+Bajo un enfoque mobile-first, se utiliza un sistema de grilla de 12 columnas que permite que la interfaz se ajuste correctamente a distintos tamaños de pantalla.
+
+*Tipografía*
+
+Siguiendo la guía de estilos, se emplea Helvetica como tipografía principal en la mayoría de los textos, ya que proyecta claridad y profesionalismo. Para garantizar una óptima legibilidad, el tamaño de la fuente se ajusta de forma automática según el dispositivo en uso.
+
+*Colores*
+
+Dado que FrostLink está orientado al sector tecnológico, su paleta de colores busca transmitir frescura, innovación y confianza. Los colores seleccionados son:
+
+- Celeste (#0884C4): para encabezados y botones principales.
+
+- Blanco (#FFFFFF): para fondos neutros y áreas de descanso visual.
+
+- Negro (#000000): para botones secundarios y bordes.
+
+- Gris Claro (#808080): para divisores, bordes y botones deshabilitados.
+
+- Blanco Azul Mar (#F4FCFC): para algunos fondos.
+
+- Verde Medio Primavera (#00CC66): para notificaciones y estados positivos.
+
+- Rojo Claro (#FF4B4B): para alertas, errores y fallas críticas.
+
+- Amarillo Mandarina (#FFCC00): para notificaciones especiales y calificaciones.
+
+Dado que los botones y fondos pueden variar según el contexto, la plataforma emplea diferentes tonalidades de celeste para mantener coherencia visual.
+
+<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" width="50" height="50">
+
+*Figura 1:* Guías de Estilo Web – Color Sky Blue
+
+De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
+
+<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" width="50" height="50">
+
+*Figura 2:* Guías de Estilo Web - Color Rojo.
+
+## 4.2. Arquitectura de la Información
+### 4.2.1. Sistemas de Organización
+
+Para estructurar la información en FrostLink, se emplean diversos sistemas de organización que facilitan la navegación del usuario:
+
+Jerarquía Visual: Se priorizan los elementos más relevantes, ayudando a que el usuario identifique rápidamente la información clave.
+
+Organización Secuencial (Paso a Paso): Ideal para procesos guiados como la compra de equipos o contratación de servicios, asegurando un flujo ordenado y sencillo de seguir.
+
+Organización Matricial: Utilizada para comparar o analizar datos relacionados, ofreciendo al usuario una visión clara y estructurada de las alternativas disponibles.
+
+### 4.2.2. Sistemas de Etiquetado
+
+En FrostLink, estos sistemas se aplican de la siguiente forma:
+
+Jerarquía Visual: Se destacan indicadores importantes, como el estado de los equipos y alertas críticas, para facilitar su identificación inmediata.
+
+Organización Secuencial: El proceso de agendar mantenimiento o visitas técnicas se presenta paso a paso para guiar al usuario de forma clara.
+
+Organización Matricial: Se emplean tablas comparativas para mostrar diferencias entre planes de servicio y suscripción, apoyando la toma de decisiones.
+
+### 4.2.3. SEO y Meta Tags
+
+Para garantizar visibilidad en buscadores y mejorar la experiencia de los usuarios, se definen títulos y descripciones optimizadas:
+
+*Landing Page*
+
+Title: FrostLink – Monitorea y Gestiona tus Equipos de Refrigeración en Tiempo Real
+
+Meta Description: FrostLink te permite supervisar y gestionar el estado de tus equipos de refrigeración, optimizando su rendimiento y reduciendo fallas. Protege tu inventario con alertas y mantenimiento predictivo.
+
+Meta Keywords: monitoreo de equipos de frío, gestión de refrigeración, mantenimiento preventivo, FrostLink, alertas de fallas, eficiencia energética
+
+Meta Author: FrostLink
+
+*Aplicación Web*
+
+Title: FrostLink – Plataforma de Gestión de Refrigeración
+
+Meta Description: FrostLink facilita el monitoreo, mantenimiento y eficiencia de tus equipos de refrigeración en tiempo real, mejorando su rendimiento y reduciendo riesgos.
+
+Meta Keywords: gestión de refrigeración, monitoreo en tiempo real, mantenimiento predictivo, FrostLink, alertas de fallas, reportes de eficiencia
+
+Meta Author: FrostLink
+
+### 4.2.4. Sistemas de Búsqueda
+
+El diseño de búsqueda está pensado para que los usuarios encuentren información de forma rápida y sin sentirse abrumados:
+
+Barra de Búsqueda: Permite ingresar términos específicos (nombre de equipo, tipo de servicio o estado) con resultados que se muestran de forma instantánea.
+
+Categorías: Filtros como “Congeladoras”, “Refrigeradores”, “Mantenimiento Preventivo” o “Alertas de Falla” permiten enfocar la búsqueda.
+
+Etiquetas Populares: Etiquetas como “Mantenimiento Programado” o “Alertas Críticas” facilitan el acceso a opciones frecuentes.
+
+Filtros Avanzados:
+
+Por Tipo de Equipo: Congeladoras, refrigeradores y equipos industriales.
+
+Por Estado: En funcionamiento, en reparación o pendiente de mantenimiento.
+
+Por Fecha de Revisión: Últimos 7 días, 30 días, etc.
+
+Por Consumo Energético: Permite encontrar equipos según su rango de eficiencia.
+
+Resultados de Búsqueda:
+Los resultados se presentan en listas ordenadas con información clave (nombre del equipo, estado actual, próximas revisiones, consumo energético). Cada elemento incluye un resumen y opciones para ver detalles o agendar mantenimiento.
+Los usuarios pueden ordenar por relevancia, estado o consumo, y visualizar filtros aplicados. También se muestran reseñas y comentarios de técnicos o clientes, ayudando en la toma de decisiones.
+
+### 4.2.5. Sistemas de Navegación
+
+La navegación de FrostLink está diseñada para ser clara y eficiente:
+
+Páginas Principales
+
+Inicio: Página principal de la plataforma.
+
+Funcionalidades: Descripción de herramientas y servicios.
+
+Beneficios: Ventajas para clientes y proveedores.
+
+Nosotros: Información sobre la empresa y su propósito.
+
+Contacto: Formulario y datos de contacto.
+
+Opciones de Usuario
+
+Login / Sign-up: Acceso y registro de cuentas.
+
+Iniciar Sesión / Registrarse: Alternativa directa para gestión de cuenta.
+
+Búsqueda y Navegación
+
+Barra de Búsqueda: Acceso rápido a equipos, servicios o reportes.
+
+Categorías: Filtros por tipo de equipo.
+
+Explorar: Navegación por secciones destacadas.
+
+Branding e Identidad
+
+FrostLink: Logo y nombre de la marca se presentan de forma consistente en las diferentes secciones para reforzar la identidad visual de la plataforma.
