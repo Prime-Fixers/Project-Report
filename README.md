@@ -521,11 +521,17 @@ La identidad visual de FrostLink busca transmitir seguridad, innovación y cerca
 
 Para mantener la formalidad y accesibilidad de la interfaz de usuario de FrostLink, se establecen las tipografías Helvetica y Open Sans por sus cualidades funcionales, estéticas y su excelente compatibilidad con entornos digitales, siendo Helvetica la tipografía principal.
 
-<img src="./resources/Tipografia.jpeg" alt="Tipografia" width="100" height="100">
+<center>
+<img src="./resources/Tipografia.jpeg" alt="Tipografia" width="500" height="500">
+</center>
 
 *Figura 1:* Tipografía Helvica
 
-<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" width="100" height="100">
+<center>
+
+<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" width="500" height="500">
+
+</center>
 
 *Figura 2:* Tipografía Open Sans
 
@@ -534,8 +540,11 @@ La paleta cromática fue diseñada para evocar entornos fríos y tecnológicos, 
 
 El color principal es el celeste, ya que refleja de manera óptima las características de la marca. Como colores neutros, se emplean negro, blanco y gris, ideales para fondos y textos por su versatilidad. Además, se incorporan variantes de verde, rojo, azul y amarillo para resaltar estados específicos, como alertas, servicios o calificaciones.
 
-<img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="100" height="100">
+<center>
 
+<img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="500" height="500">
+
+</center>
 *Figura 3:* Guías Generales de Estilo – Colores
 
 *Espaciado*
