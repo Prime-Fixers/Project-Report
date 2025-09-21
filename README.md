@@ -1062,18 +1062,18 @@ Se expone la arquitectura de software orientada al dominio para Frostlink. A tra
 
 ### 4.6.1. Software Architecture Context Diagram
 <p>El diagrama de contexto muestra cómo <strong>Clientes</strong> y <strong>Empresas Proveedoras</strong> interactúan con <strong>Frostlink</strong> para gestionar y monitorear equipos de refrigeración. La plataforma se integra con servicios de correo para el envío de notificaciones y con un servicio de pagos para procesar transacciones de forma segura.</p>
-<img src="./resources/diagram_1.png" alt="diagram_1" width="500" height="500">
+<img src="./resources/diagram_1.jpeg" alt="diagram_1" width="500" height="500">
 
 ### 4.6.2. Software Architecture Container Diagrams
 <p>El diagrama de contenedores describe las principales piezas de <strong>Frostlink</strong> y sus relaciones: la <em>web app</em> (interfaz de usuario), la <em>API</em> que expone capacidades del dominio y la <em>base de datos</em> que persiste la información, junto con otros servicios que soportan la operación.</p>
-<img src="./resources/diagram_2.png" alt="diagram_2" width="500" height="500">
+<img src="./resources/diagram_2.jpeg" alt="diagram_2" width="500" height="500">
 
 ### 4.6.3. Software Architecture Components Diagrams
 
 <h3>Mi Equipo — Bounded Context</h3>
 <p>Este diagrama detalla los componentes responsables de la gestión de equipos: alta de nuevos dispositivos, monitoreo en tiempo real y visualización del estado e historial.</p>
-<img src="./resources/diagram_3.png" alt="diagram_3" width="500" height="500">
+<img src="./resources/diagram_3.jpeg" alt="diagram_3" width="500" height="500">
 
 ### Notificaciones y Órdenes de Trabajo — Bounded Contexts
 <p>El diagrama agrupa los componentes que administran las notificaciones —para informar eventos y estados relevantes— y los que gestionan las órdenes de trabajo, desde su creación hasta su seguimiento y cierre.</p>
-<img src="./resources/diagram_4.png" alt="diagram_4" width="500" height="500">
+<img src="./resources/diagram_4.jpeg" alt="diagram_4" width="500" height="500">
