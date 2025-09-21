@@ -787,52 +787,103 @@ En esta sección se incluye un formulario para que los usuarios puedan comunicar
 
 Los wireframes de las aplicaciones web de Frostlink establecen la estructura general y la organización de las pantallas principales, detallando la ubicación de los componentes de la interfaz y los recorridos de navegación. Actúan como una referencia visual para el diseño final, garantizando una experiencia de usuario coherente y fácil de seguir. Estos diagramas priorizan la usabilidad y la claridad, permitiendo que diseñadores y desarrolladores anticipen cómo interactuarán los usuarios con la aplicación y optimicen la distribución de los elementos para ofrecer una experiencia ágil y atractiva.
 
+<p><strong>Figura 1: Wireframe – Alquiler de Equipos (Clientes)</strong><br>
+Representa la pantalla destinada a que los clientes puedan solicitar el alquiler de equipos.</p>
 <img src="./resources/Wireframe_1.jpeg" alt="wireframe_1" width="500" height="500">
 
+<p><strong>Figura 2: Wireframe – Contacto (Clientes)</strong><br>
+Muestra la interfaz donde los clientes pueden comunicarse con la empresa.</p>
 <img src="./resources/Wireframe_2.jpeg" alt="wireframe_2" width="500" height="500">
 
+<p><strong>Figura 3: Wireframe – Contacto (Empresa)</strong><br>
+Presenta el panel de control diseñado para la empresa.</p>
 <img src="./resources/Wireframe_3.jpeg" alt="wireframe_3" width="500" height="500">
 
+<p><strong>Figura 4: Wireframe – Control (Clientes)</strong><br>
+Visualiza la sección donde los clientes pueden gestionar y supervisar su información de cuenta.</p>
 <img src="./resources/Wireframe_4.jpeg" alt="wireframe_4" width="500" height="500">
 
+<p><strong>Figura 5: Wireframe – Estado de Cuenta (Clientes)</strong><br>
+Muestra el estado de cuenta detallado de los clientes.</p>
 <img src="./resources/Wireframe_5.jpeg" alt="wireframe_5" width="500" height="500">
 
+<p><strong>Figura 6: Wireframe – Estado de Cuenta (Empresa)</strong><br>
+Despliega la vista de estado de cuenta desde la perspectiva de la empresa.</p>
 <img src="./resources/Wireframe_6.jpeg" alt="wireframe_6" width="500" height="500">
 
+<p><strong>Figura 7: Wireframe – Analíticas Completas (Clientes)</strong><br>
+Presenta la pantalla de métricas y estadísticas para clientes.</p>
 <img src="./resources/Wireframe_7.jpeg" alt="wireframe_7" width="500" height="500">
 
+<p><strong>Figura 8: Wireframe – Inicio (Clientes)</strong><br>
+Muestra la pantalla principal que ven los clientes al ingresar.</p>
 <img src="./resources/Wireframe_8.jpeg" alt="wireframe_8" width="500" height="500">
 
+<p><strong>Figura 9: Wireframe – Inicio (Empresa)</strong><br>
+Representa la vista inicial para los usuarios de la empresa.</p>
 <img src="./resources/Wireframe_9.jpeg" alt="wireframe_9" width="500" height="500">
 
+<p><strong>Figura 10: Wireframe – Inicio de la Aplicación</strong><br>
+Corresponde a la pantalla principal de bienvenida de la aplicación.</p>
 <img src="./resources/Wireframe_10.jpeg" alt="wireframe_10" width="500" height="500">
 
+<p><strong>Figura 11: Wireframe – Inicio de Sesión (Clientes)</strong><br>
+Pantalla donde los clientes ingresan sus credenciales para acceder a la plataforma.</p>
 <img src="./resources/Wireframe_11.jpeg" alt="wireframe_11" width="500" height="500">
 
+<p><strong>Figura 12: Wireframe – Inicio de Sesión (Empresa)</strong><br>
+Pantalla donde el personal de la empresa inicia sesión.</p>
 <img src="./resources/Wireframe_12.jpeg" alt="wireframe_12" width="500" height="500">
 
+<p><strong>Figura 13: Wireframe – Mi Cuenta (Clientes)</strong><br>
+Vista en la que los clientes administran la información de su cuenta personal.</p>
 <img src="./resources/Wireframe_13.jpeg" alt="wireframe_13" width="500" height="500">
 
+<p><strong>Figura 14: Wireframe – Mi Cuenta (Empresa)</strong><br>
+Pantalla donde la empresa gestiona su información y configuración.</p>
 <img src="./resources/Wireframe_14.jpeg" alt="wireframe_14" width="500" height="500">
 
+<p><strong>Figura 15: Wireframe – Mis Clientes y Técnicos (Empresa)</strong><br>
+Muestra la sección para que la empresa gestione tanto a sus clientes como a sus técnicos.</p>
 <img src="./resources/Wireframe_15.jpeg" alt="wireframe_15" width="500" height="500">
 
+<p><strong>Figura 16: Wireframe – Mis Equipos (Clientes)</strong><br>
+Pantalla que lista los equipos que el cliente tiene registrados o alquilados.</p>
 <img src="./resources/Wireframe_16.jpeg" alt="wireframe_16" width="500" height="500">
 
+<p><strong>Figura 17: Wireframe – Mis Equipos (Clientes, Detalle 1)</strong><br>
+Presenta información detallada del primer equipo seleccionado por el cliente.</p>
 <img src="./resources/Wireframe_17.jpeg" alt="wireframe_17" width="500" height="500">
 
+<p><strong>Figura 18: Wireframe – Mis Equipos (Clientes, Detalle 2)</strong><br>
+Muestra la vista de detalle de un segundo equipo registrado por el cliente.</p>
 <img src="./resources/Wireframe_18.jpeg" alt="wireframe_18" width="500" height="500">
 
+<p><strong>Figura 19: Wireframe – Mis Equipos (Empresa)</strong><br>
+Pantalla de la empresa para administrar el inventario de equipos.</p>
 <img src="./resources/Wireframe_19.jpeg" alt="wireframe_19" width="500" height="500">
 
+<p><strong>Figura 20: Wireframe – Notificaciones (Clientes)</strong><br>
+Interfaz donde los clientes visualizan las notificaciones recibidas.</p>
 <img src="./resources/Wireframe_20.jpeg" alt="wireframe_20" width="500" height="500">
 
+<p><strong>Figura 21: Wireframe – Notificaciones (Empresa)</strong><br>
+Pantalla en la que la empresa revisa las notificaciones del sistema.</p>
 <img src="./resources/Wireframe_21.jpeg" alt="wireframe_21" width="500" height="500">
 
+<p><strong>Figura 22: Wireframe – Registro (Clientes)</strong><br>
+Muestra el formulario de registro para nuevos clientes.</p>
 <img src="./resources/Wireframe_22.jpeg" alt="wireframe_22" width="500" height="500">
 
+<p><strong>Figura 23: Wireframe – Registro (Empresa)</strong><br>
+Formulario de alta de usuarios internos o nuevos registros empresariales.</p>
 <img src="./resources/Wireframe_23.jpeg" alt="wireframe_23" width="500" height="500">
 
+<p><strong>Figura 24: Wireframe – Solicitudes (Empresa)</strong><br>
+Pantalla donde la empresa gestiona las solicitudes enviadas por los clientes.</p>
 <img src="./resources/Wireframe_24.jpeg" alt="wireframe_24" width="500" height="500">
 
+<p><strong>Figura 25: Wireframe – Órdenes de Trabajo (Empresa)</strong><br>
+Presenta la vista de control de órdenes de trabajo generadas por la empresa.</p>
 <img src="./resources/Wireframe_25.jpeg" alt="wireframe_25" width="500" height="500">
+
