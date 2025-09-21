@@ -486,3 +486,5 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
 ## 4.1. Style Guidelines
 
 ### 4.1.1. General Style guidelines
+
+Nuestro estilo de comunicación mantiene un equilibrio entre lo profesional y lo accesible, utilizando un lenguaje claro, empático y respetuoso para atraer a nuevos usuarios y fortalecer la relación con los actuales. Esta identidad se refuerza con una paleta de colores fríos pero amigables y una tipografía moderna que transmite confianza, profesionalismo y cercanía.
