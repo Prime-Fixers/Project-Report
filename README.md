@@ -701,3 +701,11 @@ La página incluye secciones que presentan a los usuarios objetivo, las funciona
 <img src="./resources/LandingPage_2.jpeg" alt="lading_page_2" width="100" height="100">
 
 <img src="./resources/LandingPage_3.jpeg" alt="lading_page_3" width="100" height="100">
+
+### 4.3.2. Landing Page Mockup
+
+El mockup de la landing page de FrostLink presenta un diseño limpio y bien estructurado que guía de manera intuitiva a los usuarios a través de la plataforma. En la parte superior se destaca la propuesta de valor, acompañada de un call to action principal que invita a interactuar con la página.
+
+A continuación, se despliegan secciones clave que describen las funcionalidades del sistema, los beneficios para empresas y proveedores, y una explicación clara sobre cómo funciona el servicio. También se incluyen testimonios de clientes, información corporativa sobre FrostLink y un formulario de contacto para solicitar una demo, todo orientado a maximizar la conversión de visitantes en usuarios activos.
+
+Esta corresponde a la primera sección llamada "Inicio", donde se muestra de forma clara la propuesta de valor de la plataforma y el espacio para el Call to Action, que será implementado en etapas posteriores.
