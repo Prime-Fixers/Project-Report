@@ -1077,3 +1077,105 @@ Se expone la arquitectura de software orientada al dominio para Frostlink. A tra
 ### Notificaciones y Órdenes de Trabajo — Bounded Contexts
 <p>El diagrama agrupa los componentes que administran las notificaciones —para informar eventos y estados relevantes— y los que gestionan las órdenes de trabajo, desde su creación hasta su seguimiento y cierre.</p>
 <img src="./resources/diagram_4.jpeg" alt="diagram_4" width="500" height="500">
+
+## 4.7. Software Object-Oriented Design
+<p>En esta sección se expone el diseño orientado a objetos de <strong>Frostlink</strong>. Se incluyen diagramas de clases y un diccionario de clases que describen la estructura de las entidades principales y sus atributos, proporcionando una visión clara de cómo se organizan y administran los componentes clave de la plataforma.</p>
+
+### 4.7.1. Class Diagrams
+<p>El diagrama de clases ofrece una representación visual de las clases del sistema, sus atributos y las relaciones que las vinculan.</p>
+<img src="./resources/Class-UML.jpeg" alt="class_uml" width="500" height="500">
+
+### 4.7.2. Class Dictionary
+
+<h4>Clase: Solicitud</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name_equipo</td><td>Registra el nombre del equipo solicitado.</td><td>Equipo</td></tr>
+    <tr><td>2</td><td>name_usuario</td><td>Registra el nombre del usuario que formula la solicitud.</td><td>Usuario</td></tr>
+    <tr><td>3</td><td>orden</td><td>Conserva el número identificador de la orden asociada.</td><td>unsigned long int</td></tr>
+    <tr><td>4</td><td>description</td><td>Contiene el detalle descriptivo de la solicitud.</td><td>varchar</td></tr>
+    <tr><td>5</td><td>time</td><td>Guarda la duración estimada o requerida.</td><td>float</td></tr>
+    <tr><td>6</td><td>status</td><td>Indica el estado actual de la solicitud.</td><td>char</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Equipo</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name</td><td>Registra la denominación del equipo.</td><td>string</td></tr>
+    <tr><td>2</td><td>cost</td><td>Guarda el costo del equipo.</td><td>float</td></tr>
+    <tr><td>3</td><td>details_tecnicos</td><td>Contiene las especificaciones técnicas del equipo.</td><td>varchar</td></tr>
+    <tr><td>4</td><td>serie</td><td>Conserva el número de serie del equipo.</td><td>unsigned long int</td></tr>
+    <tr><td>5</td><td>code</td><td>Almacena el código identificador del equipo.</td><td>unsigned long int</td></tr>
+    <tr><td>6</td><td>status</td><td>Indica la condición del equipo.</td><td>char</td></tr>
+    <tr><td>7</td><td>notes</td><td>Registra observaciones o notas adicionales del equipo.</td><td>varchar</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Cliente</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name</td><td>Registra el nombre del cliente.</td><td>string</td></tr>
+    <tr><td>2</td><td>email</td><td>Guarda el correo electrónico del cliente.</td><td>string</td></tr>
+    <tr><td>3</td><td>password</td><td>Conserva la contraseña del cliente.</td><td>string</td></tr>
+    <tr><td>4</td><td>username</td><td>Registra el alias o nombre de usuario del cliente.</td><td>string</td></tr>
+    <tr><td>5</td><td>phone</td><td>Guarda el número telefónico del cliente.</td><td>string</td></tr>
+    <tr><td>6</td><td>user_type</td><td>Indica la categoría o tipo de usuario.</td><td>char</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Company</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name</td><td>Registra la razón social o nombre de la empresa.</td><td>string</td></tr>
+    <tr><td>2</td><td>email</td><td>Guarda el correo electrónico de la empresa.</td><td>string</td></tr>
+    <tr><td>3</td><td>password</td><td>Conserva la contraseña de la empresa.</td><td>string</td></tr>
+    <tr><td>4</td><td>username</td><td>Registra el nombre de usuario asociado a la empresa.</td><td>string</td></tr>
+    <tr><td>5</td><td>plan</td><td>Indica el plan contratado por la empresa.</td><td>char</td></tr>
+    <tr><td>6</td><td>phone</td><td>Guarda el teléfono de contacto de la empresa.</td><td>string</td></tr>
+    <tr><td>7</td><td>business_type</td><td>Indica el giro o tipo de negocio de la empresa.</td><td>char</td></tr>
+    <tr><td>8</td><td>location</td><td>Registra la dirección o ubicación de la empresa.</td><td>string</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Cuenta</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
