@@ -1054,4 +1054,11 @@ Como propietario de un negocio que utiliza equipos de refrigeración, deseo <str
 Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>dar de alta y administrar</strong> los nuevos equipos que registro.</p>
 <img src="./resources/userflow3.png" alt="userflow3" width="500" height="500">
 
+## 4.5. Web Applications Prototyping
+Se presenta el prototipo interactivo de la aplicación web de Frostlink, que permite a los usuarios explorar la interfaz y navegar por las distintas secciones de la plataforma. Este prototipo incorpora las funcionalidades esenciales y ofrece una vista preliminar de la experiencia de uso. Además, facilita la evaluación y validación de la interfaz antes de su implementación definitiva, garantizando un diseño intuitivo y eficiente.
 
+## 4.6. Domain Driven Software Architecture
+Se expone la arquitectura de software orientada al dominio para Frostlink. A través de diversos diagramas se describe la estructura del sistema y sus componentes principales, destacando cómo se relacionan e integran entre sí para ofrecer una solución eficiente, escalable y mantenible.
+
+### 4.6.1. Software Architecture Context Diagram
+El diagrama de contexto ilustra cómo interactúan los usuarios —Clientes y Empresas Proveedoras— con Frostlink para gestionar y monitorear equipos de refrigeración. La plataforma, a su vez, se integra con servicios de correo para el envío de notificaciones y con un servicio de pagos para procesar transacciones.
