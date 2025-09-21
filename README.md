@@ -219,7 +219,7 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
   </tr>
   <tr>
     <td>Medina Cruzado, Raúl Adrian</td>
-    <td></td>
+    <td>Necxuz18</td>
   </tr>
   <tr>
     <td></td>
@@ -240,7 +240,7 @@ Para la elaboración del informe correspondiente a la entrega del TB1, se realiz
 |  León Vivas, Fabrizio Amir  |                       |
 |      | |
 | Marcelo Varela  |  |
-|      |        |
+| Medina Cruzado, Raúl Adrian |        |
 
 
 # Contenido
@@ -501,6 +501,7 @@ Visión: Aspiramos a convertirnos en la empresa líder en gestión y mantenimien
 |**** <br> | <img src="" alt="kevin image" width="200">  |
 | **Fabrizio León**<br> Soy Fabrizio Amir León Vivas, estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Cuento con experiencia en metodologías ágiles, desarrollo de aplicaciones open source y sólidos conocimientos en sistemas basados en Linux. Dentro de mis habilidades técnicas, destaco la capacidad para gestionar proyectos con enfoque ágil, diseñar e implementar soluciones de software eficientes y explorar áreas emergentes como la ciberseguridad, campo que me apasiona y en el cual busco seguir especializándome. En cuanto a mis habilidades interpersonales, me caracterizo por el trabajo en equipo, el pensamiento crítico y la comunicación efectiva. Disfruto asumir nuevos retos y desafíos, entendiendo que tanto los aciertos como los fracasos son oportunidades valiosas de aprendizaje y crecimiento profesional.                                                     | <img src="/resources/Fabrizio.png" alt="fabrizio image" width="200">  | 
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
+| **Raúl Medina** <br> Soy Raúl Adrian Medina Cruzado, Estudiante de Ingeniería de Software, soy apasionado por la ciencia de datos. Me motiva descubrir cómo el análisis y la interpretación de grandes volúmenes de información pueden generar soluciones innovadoras dentro del desarrollo de software. Me interesa explorar cómo los datos pueden optimizar procesos, anticipar errores y mejorar la toma de decisiones. Confío en que, junto a mi equipo, podré seguir fortaleciendo mis habilidades y contribuir de manera significativa en cada etapa del proyecto. | <img src="/resources/Raul.png" alt="Raul image" width="200">  | 
 
 ## 1.2. Solution Profile
 
