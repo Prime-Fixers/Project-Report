@@ -657,7 +657,7 @@ Los usuarios pueden ordenar por relevancia, estado o consumo, y visualizar filtr
 
 La navegación de FrostLink está diseñada para ser clara y eficiente:
 
-Páginas Principales
+1. Páginas Principales
 
 Inicio: Página principal de la plataforma.
 
@@ -669,13 +669,13 @@ Nosotros: Información sobre la empresa y su propósito.
 
 Contacto: Formulario y datos de contacto.
 
-Opciones de Usuario
+2. Opciones de Usuario
 
 Login / Sign-up: Acceso y registro de cuentas.
 
 Iniciar Sesión / Registrarse: Alternativa directa para gestión de cuenta.
 
-Búsqueda y Navegación
+3. Búsqueda y Navegación
 
 Barra de Búsqueda: Acceso rápido a equipos, servicios o reportes.
 
@@ -683,6 +683,7 @@ Categorías: Filtros por tipo de equipo.
 
 Explorar: Navegación por secciones destacadas.
 
-Branding e Identidad
+4. Branding e Identidad
 
 FrostLink: Logo y nombre de la marca se presentan de forma consistente en las diferentes secciones para reforzar la identidad visual de la plataforma.
+
