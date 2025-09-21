@@ -1448,9 +1448,24 @@ Se considera para la realización de este User Task Matrix los User Persona, sus
   </tbody>
 </table>
 
-### 2.3.3. Empathy Maps
+### 2.3.4. Empathy Maps
 
 **Segmento objetivo #1: Negocios que utilizan equipos de refrigeración**
+
+![Foto](/resources/empathymap_Ernesto%20Mendoza.png)
+
+**Segmento objetivo #2: EMPRESAS PROVEEDORAS DE SERVICIOS Y EQUIPOS DE REFRIGERACIÓN**
+
+![Foto](/resources/empathymap_Luis%20Rojas.png)
+
+<div style="page-break-after: always;"></div>
+
+### 2.3.5. As-is Scenario Mapping
+
+Para el desarrollo de esta sección, nuestro equipo consideró diferentes etapas. Se comenzó con la recopilación de información obtenida en las entrevistas y su respectivo análisis para cada segmento, seguido de una sesión de lluvia de ideas, revisión colaborativa e identificación de fases junto con aspectos positivos y negativos. Con todo definido, elaboramos los As-is Scenario Mapping asociados a cada User Persona utilizando la plataforma Miro. Desde la perspectiva del usuario, este mapeo nos permite comprender su situación actual: acciones que realiza, emociones, pensamientos, puntos de dolor, entre otros, los cuales orientan el diseño de la solución digital **FrostLink**.  
+
+**Segmento objetivo #1: Negocios que utilizan equipos de refrigeración**
+
 
 
 
