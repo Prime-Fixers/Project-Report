@@ -1179,3 +1179,53 @@ Se expone la arquitectura de software orientada al dominio para Frostlink. A tra
       <th>Descripción</th>
       <th>Tipo de dato</th>
     </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name (company)</td><td>Registra el nombre de la empresa vinculada.</td><td>Company</td></tr>
+    <tr><td>2</td><td>name (usuario)</td><td>Registra el nombre del usuario vinculado.</td><td>Usuario</td></tr>
+    <tr><td>3</td><td>cost</td><td>Guarda el costo del equipo asociado a la cuenta.</td><td>Equipo</td></tr>
+    <tr><td>4</td><td>status</td><td>Indica el estado actual de la cuenta.</td><td>char</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Mantenimiento</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name</td><td>Registra el equipo que se encuentra en mantenimiento.</td><td>Equipo</td></tr>
+    <tr><td>2</td><td>status</td><td>Indica la situación del mantenimiento.</td><td>char</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Notificación</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name</td><td>Registra el título o nombre de la notificación.</td><td>varchar</td></tr>
+    <tr><td>2</td><td>description</td><td>Contiene el contenido descriptivo de la notificación.</td><td>varchar</td></tr>
+    <tr><td>3</td><td>name_company</td><td>Guarda la empresa asociada a la notificación.</td><td>Company</td></tr>
+    <tr><td>4</td><td>name_cliente</td><td>Registra el cliente destinatario.</td><td>Cliente</td></tr>
+    <tr><td>5</td><td>status</td><td>Señala si la notificación ha sido leída o gestionada.</td><td>bool</td></tr>
+  </tbody>
+</table>
+
+## 4.8. Database Design
+<p>Esta sección describe la estructura lógica de datos del sistema: entidades, atributos, tipos y relaciones. El modelo de base de datos está concebido para asegurar integridad, consistencia y eficiencia en el acceso a la información.</p>
+
+### 4.8.1. Database Diagram
+<p>El diagrama de base de datos muestra cómo se relacionan las tablas, incluyendo claves primarias y foráneas, así como las cardinalidades (uno a uno, uno a muchos y muchos a muchos).</p>
+<img src="./resources/diagram-class.png" alt="diagram_class" width="500" height="500">
