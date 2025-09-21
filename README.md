@@ -514,3 +514,8 @@ El color principal es el celeste, ya que refleja de manera óptima las caracter�
 
 <img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="50" height="50">
 
+*Figura 3:* Guías Generales de Estilo – Colores
+
+*Espaciado*
+
+Para garantizar consistencia en la interfaz, se define un espaciado base de 8 px y un margen mínimo de 16 px. En el diseño modular, se implementan grillas flexibles que se adaptan tanto a entornos web como móviles, utilizando configuraciones de 12 columnas para web y 4 columnas para dispositivos móviles.
