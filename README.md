@@ -727,23 +727,62 @@ A continuación, se despliegan secciones clave que describen las funcionalidades
 
 <img src="./resources/Mockup_landing_2.jpeg" alt="mockup_landing_1" width="500" height="500">
 
+Figura 1: Mockup 1 – Inicio – Landing Page
+
+En esta segunda sección se presenta una breve descripción del público objetivo al que está dirigida la plataforma.
+
 <img src="./resources/Mockup_landing_3.jpeg" alt="mockup_landing_2" width="500" height="500">
+
+Figura 2: Mockup 2 – ¿Para quién es? – Landing Page
+La sección "Funcionalidades Clave" muestra de forma resumida las principales características y herramientas que la plataforma pone a disposición de los usuarios.
 
 <img src="./resources/Mockup_landing_4.jpeg" alt="mockup_landing_3" width="500" height="500">
 
+Figura 3: Mockup 3 – Funcionalidades – Landing Page
+La sección "Beneficios" expone las ventajas que la plataforma ofrece tanto a empresas como a proveedores.
+
 <img src="./resources/Mockup_landing_5.jpeg" alt="mockup_landing_4" width="500" height="500">
+
+Figura 4: Mockup 4 – Beneficios para negocios – Landing Page
+En esta parte se detallan los beneficios específicos que la plataforma brinda a las empresas.
 
 <img src="./resources/Mockup_landing_6.jpeg" alt="mockup_landing_5" width="500" height="500">
 
+Figura 5: Mockup 5 – Beneficios para proveedores – Landing Page
+La sección "Cómo funciona" explica de manera clara el flujo de operación de la plataforma.
+
 <img src="./resources/Mockup_landing_7.jpeg" alt="mockup_landing_6" width="500" height="500">
+
+Figura 6: Mockup 6 – ¿Cómo funciona? – Landing Page
+Aquí se comparte la información sobre la Misión y Visión de nuestra startup.
 
 <img src="./resources/Mockup_landing_8.jpeg" alt="mockup_landing_7" width="500" height="500">
 
+Figura 7: Mockup 7 – Sobre Nosotros – Landing Page
+En esta sección se muestran los testimonios y opiniones de los usuarios que han utilizado la plataforma.
+
 <img src="./resources/Mockup_landing_9.jpeg" alt="mockup_landing_8" width="500" height="500">
+
+Figura 8: Mockup 8 – Lo que dicen nuestros clientes – Landing Page
+Se presentan reseñas de clientes que destacan su experiencia con la plataforma.
 
 <img src="./resources/Mockup_landing_10.jpeg" alt="mockup_landing_9" width="500" height="500">
 
+Figura 9: Mockup 9 – Lo que dicen nuestros clientes – Landing Page
+Continúan mostrándose las opiniones de los usuarios que recomiendan el servicio.
+
 <img src="./resources/Mockup_landing_11.jpeg" alt="mockup_landing_10" width="500" height="500">
+
+Figura 10: Mockup 10 – Lo que dicen nuestros clientes – Landing Page
+Se concluye la visualización de testimonios de clientes satisfechos.
 
 <img src="./resources/Mockup_landing_12.jpeg" alt="mockup_landing_11" width="500" height="500">
 
+Figura 11: Mockup 11 – Contacto – Landing Page
+En esta sección se incluye un formulario para que los usuarios puedan comunicarse y solicitar una demostración de la plataforma.
+
+## 4.4. Web Applications UX/UI Design
+
+### 4.4.1. Web Applications Wireframes
+
+Los wireframes de las aplicaciones web de Frostlink establecen la estructura general y la organización de las pantallas principales, detallando la ubicación de los componentes de la interfaz y los recorridos de navegación. Actúan como una referencia visual para el diseño final, garantizando una experiencia de usuario coherente y fácil de seguir. Estos diagramas priorizan la usabilidad y la claridad, permitiendo que diseñadores y desarrolladores anticipen cómo interactuarán los usuarios con la aplicación y optimicen la distribución de los elementos para ofrecer una experiencia ágil y atractiva.
