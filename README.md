@@ -481,7 +481,7 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
 
 # Capítulo I: Introducción
 
-## 1.1. Startup Profile
+## 1. Startup Profile
 
 ### 1.1.1 Descripción de la Startup
 
@@ -499,7 +499,7 @@ Visión: Aspiramos a convertirnos en la empresa líder en gestión y mantenimien
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | ****<br>                                                                                                                                                                | <img src="" alt="angie image" width="200">  |
 |**** <br> | <img src="" alt="kevin image" width="200">  |
-| **Fabrizio León**<br> Soy Fabrizio Amir León Vivas, estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Cuento con experiencia en metodologías ágiles, desarrollo de aplicaciones open source y sólidos conocimientos en sistemas basados en Linux. Dentro de mis habilidades técnicas, destaco la capacidad para gestionar proyectos con enfoque ágil, diseñar e implementar soluciones de software eficientes y explorar áreas emergentes como la ciberseguridad, campo que me apasiona y en el cual busco seguir especializándome. En cuanto a mis habilidades interpersonales, me caracterizo por el trabajo en equipo, el pensamiento crítico y la comunicación efectiva. Disfruto asumir nuevos retos y desafíos, entendiendo que tanto los aciertos como los fracasos son oportunidades valiosas de aprendizaje y crecimiento profesional.                                                     | <img src="/resources/Fabrizio.png" alt="fabrizio image" width="200">  | 
+| **a**<br>                                                     | <img src="https://files.catbox.moe/u1b8w5.jpg" alt="kevin image" width="200">  | 
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
 
 ## 1.2. Solution Profile
@@ -1405,29 +1405,6 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
   </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
@@ -1446,11 +1423,17 @@ La identidad visual de FrostLink busca transmitir seguridad, innovación y cerca
 
 Para mantener la formalidad y accesibilidad de la interfaz de usuario de FrostLink, se establecen las tipografías Helvetica y Open Sans por sus cualidades funcionales, estéticas y su excelente compatibilidad con entornos digitales, siendo Helvetica la tipografía principal.
 
-<img src="./resources/Tipografia.jpeg" alt="Tipografia" width="50" height="50">
+<center>
+<img src="./resources/Tipografia.jpeg" alt="Tipografia" width="500" height="500">
+</center>
 
 *Figura 1:* Tipografía Helvica
 
-<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" width="50" height="50">
+<center>
+
+<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" width="500" height="500">
+
+</center>
 
 *Figura 2:* Tipografía Open Sans
 
@@ -1459,8 +1442,12 @@ La paleta cromática fue diseñada para evocar entornos fríos y tecnológicos, 
 
 El color principal es el celeste, ya que refleja de manera óptima las características de la marca. Como colores neutros, se emplean negro, blanco y gris, ideales para fondos y textos por su versatilidad. Además, se incorporan variantes de verde, rojo, azul y amarillo para resaltar estados específicos, como alertas, servicios o calificaciones.
 
+<center>
 <img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="50" height="50">
 
+<img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="500" height="500">
+
+</center>
 *Figura 3:* Guías Generales de Estilo – Colores
 
 *Espaciado*
@@ -1499,13 +1486,16 @@ Dado que FrostLink está orientado al sector tecnológico, su paleta de colores 
 
 Dado que los botones y fondos pueden variar según el contexto, la plataforma emplea diferentes tonalidades de celeste para mantener coherencia visual.
 
-<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" width="50" height="50">
-
+<center>
+<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+</center>
 *Figura 1:* Guías de Estilo Web – Color Sky Blue
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
-<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" width="50" height="50">
+<center>
+<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+</center>
 
 *Figura 2:* Guías de Estilo Web - Color Rojo.
 
@@ -1582,7 +1572,7 @@ Los usuarios pueden ordenar por relevancia, estado o consumo, y visualizar filtr
 
 La navegación de FrostLink está diseñada para ser clara y eficiente:
 
-Páginas Principales
+1. Páginas Principales
 
 Inicio: Página principal de la plataforma.
 
@@ -1594,13 +1584,13 @@ Nosotros: Información sobre la empresa y su propósito.
 
 Contacto: Formulario y datos de contacto.
 
-Opciones de Usuario
+2. Opciones de Usuario
 
 Login / Sign-up: Acceso y registro de cuentas.
 
 Iniciar Sesión / Registrarse: Alternativa directa para gestión de cuenta.
 
-Búsqueda y Navegación
+3. Búsqueda y Navegación
 
 Barra de Búsqueda: Acceso rápido a equipos, servicios o reportes.
 
@@ -1608,6 +1598,537 @@ Categorías: Filtros por tipo de equipo.
 
 Explorar: Navegación por secciones destacadas.
 
-Branding e Identidad
+4. Branding e Identidad
 
 FrostLink: Logo y nombre de la marca se presentan de forma consistente en las diferentes secciones para reforzar la identidad visual de la plataforma.
+
+## 4.3. Landing Page UI Design
+### 4.3.1. Landing Page Wireframe
+
+El wireframe de la landing page de FrostLink está diseñado para organizar los elementos clave y garantizar una navegación clara e intuitiva. En la parte superior se ubica un encabezado con el logo y el menú principal de navegación. Justo debajo, se presenta una propuesta de valor destacada acompañada de botones de acción visibles como “Solicitar Demo” y “¿Cómo Funciona?” para incentivar la interacción del usuario.
+
+La página incluye secciones que presentan a los usuarios objetivo, las funcionalidades principales de la plataforma y los beneficios que FrostLink ofrece. Finalmente, en la parte inferior se dispone un formulario de contacto para solicitar una demo y un pie de página con enlaces legales y de referencia.
+
+*Figura 1:* Wireframe de la Landing Page.
+<center>
+
+<img src="./resources/LandingPage_1.jpeg" alt="lading_page_1" width="500" height="500">
+
+<img src="./resources/LandingPage_2.jpeg" alt="lading_page_2" width="500" height="500">
+
+<img src="./resources/LandingPage_3.jpeg" alt="lading_page_3" width="500" height="500">
+
+</center>
+
+### 4.3.2. Landing Page Mockup
+
+El mockup de la landing page de FrostLink presenta un diseño limpio y bien estructurado que guía de manera intuitiva a los usuarios a través de la plataforma. En la parte superior se destaca la propuesta de valor, acompañada de un call to action principal que invita a interactuar con la página.
+
+A continuación, se despliegan secciones clave que describen las funcionalidades del sistema, los beneficios para empresas y proveedores, y una explicación clara sobre cómo funciona el servicio. También se incluyen testimonios de clientes, información corporativa sobre FrostLink y un formulario de contacto para solicitar una demo, todo orientado a maximizar la conversión de visitantes en usuarios activos.
+
+- Esta corresponde a la primera sección llamada "Inicio", donde se muestra de forma clara la propuesta de valor de la plataforma y el espacio para el Call to Action, que será implementado en etapas posteriores.
+
+<img src="./resources/Mockup_landing_2.jpeg" alt="mockup_landing_1" width="500" height="500">
+
+Figura 1: Mockup 1 – Inicio – Landing Page
+
+En esta segunda sección se presenta una breve descripción del público objetivo al que está dirigida la plataforma.
+
+<img src="./resources/Mockup_landing_3.jpeg" alt="mockup_landing_2" width="500" height="500">
+
+Figura 2: Mockup 2 – ¿Para quién es? – Landing Page
+La sección "Funcionalidades Clave" muestra de forma resumida las principales características y herramientas que la plataforma pone a disposición de los usuarios.
+
+<img src="./resources/Mockup_landing_4.jpeg" alt="mockup_landing_3" width="500" height="500">
+
+Figura 3: Mockup 3 – Funcionalidades – Landing Page
+La sección "Beneficios" expone las ventajas que la plataforma ofrece tanto a empresas como a proveedores.
+
+<img src="./resources/Mockup_landing_5.jpeg" alt="mockup_landing_4" width="500" height="500">
+
+Figura 4: Mockup 4 – Beneficios para negocios – Landing Page
+En esta parte se detallan los beneficios específicos que la plataforma brinda a las empresas.
+
+<img src="./resources/Mockup_landing_6.jpeg" alt="mockup_landing_5" width="500" height="500">
+
+Figura 5: Mockup 5 – Beneficios para proveedores – Landing Page
+La sección "Cómo funciona" explica de manera clara el flujo de operación de la plataforma.
+
+<img src="./resources/Mockup_landing_7.jpeg" alt="mockup_landing_6" width="500" height="500">
+
+Figura 6: Mockup 6 – ¿Cómo funciona? – Landing Page
+Aquí se comparte la información sobre la Misión y Visión de nuestra startup.
+
+<img src="./resources/Mockup_landing_8.jpeg" alt="mockup_landing_7" width="500" height="500">
+
+Figura 7: Mockup 7 – Sobre Nosotros – Landing Page
+En esta sección se muestran los testimonios y opiniones de los usuarios que han utilizado la plataforma.
+
+<img src="./resources/Mockup_landing_9.jpeg" alt="mockup_landing_8" width="500" height="500">
+
+Figura 8: Mockup 8 – Lo que dicen nuestros clientes – Landing Page
+Se presentan reseñas de clientes que destacan su experiencia con la plataforma.
+
+<img src="./resources/Mockup_landing_10.jpeg" alt="mockup_landing_9" width="500" height="500">
+
+Figura 9: Mockup 9 – Lo que dicen nuestros clientes – Landing Page
+Continúan mostrándose las opiniones de los usuarios que recomiendan el servicio.
+
+<img src="./resources/Mockup_landing_11.jpeg" alt="mockup_landing_10" width="500" height="500">
+
+Figura 10: Mockup 10 – Lo que dicen nuestros clientes – Landing Page
+Se concluye la visualización de testimonios de clientes satisfechos.
+
+<img src="./resources/Mockup_landing_12.jpeg" alt="mockup_landing_11" width="500" height="500">
+
+Figura 11: Mockup 11 – Contacto – Landing Page
+En esta sección se incluye un formulario para que los usuarios puedan comunicarse y solicitar una demostración de la plataforma.
+
+## 4.4. Web Applications UX/UI Design
+
+### 4.4.1. Web Applications Wireframes
+
+Los wireframes de las aplicaciones web de Frostlink establecen la estructura general y la organización de las pantallas principales, detallando la ubicación de los componentes de la interfaz y los recorridos de navegación. Actúan como una referencia visual para el diseño final, garantizando una experiencia de usuario coherente y fácil de seguir. Estos diagramas priorizan la usabilidad y la claridad, permitiendo que diseñadores y desarrolladores anticipen cómo interactuarán los usuarios con la aplicación y optimicen la distribución de los elementos para ofrecer una experiencia ágil y atractiva.
+
+<p><strong>Figura 1: Wireframe – Alquiler de Equipos (Clientes)</strong><br>
+Representa la pantalla destinada a que los clientes puedan solicitar el alquiler de equipos.</p>
+<img src="./resources/Wireframe_1.jpeg" alt="wireframe_1" width="500" height="500">
+
+<p><strong>Figura 2: Wireframe – Contacto (Clientes)</strong><br>
+Muestra la interfaz donde los clientes pueden comunicarse con la empresa.</p>
+<img src="./resources/Wireframe_2.jpeg" alt="wireframe_2" width="500" height="500">
+
+<p><strong>Figura 3: Wireframe – Contacto (Empresa)</strong><br>
+Presenta el panel de control diseñado para la empresa.</p>
+<img src="./resources/Wireframe_3.jpeg" alt="wireframe_3" width="500" height="500">
+
+<p><strong>Figura 4: Wireframe – Control (Clientes)</strong><br>
+Visualiza la sección donde los clientes pueden gestionar y supervisar su información de cuenta.</p>
+<img src="./resources/Wireframe_4.jpeg" alt="wireframe_4" width="500" height="500">
+
+<p><strong>Figura 5: Wireframe – Estado de Cuenta (Clientes)</strong><br>
+Muestra el estado de cuenta detallado de los clientes.</p>
+<img src="./resources/Wireframe_5.jpeg" alt="wireframe_5" width="500" height="500">
+
+<p><strong>Figura 6: Wireframe – Estado de Cuenta (Empresa)</strong><br>
+Despliega la vista de estado de cuenta desde la perspectiva de la empresa.</p>
+<img src="./resources/Wireframe_6.jpeg" alt="wireframe_6" width="500" height="500">
+
+<p><strong>Figura 7: Wireframe – Analíticas Completas (Clientes)</strong><br>
+Presenta la pantalla de métricas y estadísticas para clientes.</p>
+<img src="./resources/Wireframe_7.jpeg" alt="wireframe_7" width="500" height="500">
+
+<p><strong>Figura 8: Wireframe – Inicio (Clientes)</strong><br>
+Muestra la pantalla principal que ven los clientes al ingresar.</p>
+<img src="./resources/Wireframe_8.jpeg" alt="wireframe_8" width="500" height="500">
+
+<p><strong>Figura 9: Wireframe – Inicio (Empresa)</strong><br>
+Representa la vista inicial para los usuarios de la empresa.</p>
+<img src="./resources/Wireframe_9.jpeg" alt="wireframe_9" width="500" height="500">
+
+<p><strong>Figura 10: Wireframe – Inicio de la Aplicación</strong><br>
+Corresponde a la pantalla principal de bienvenida de la aplicación.</p>
+<img src="./resources/Wireframe_10.jpeg" alt="wireframe_10" width="500" height="500">
+
+<p><strong>Figura 11: Wireframe – Inicio de Sesión (Clientes)</strong><br>
+Pantalla donde los clientes ingresan sus credenciales para acceder a la plataforma.</p>
+<img src="./resources/Wireframe_11.jpeg" alt="wireframe_11" width="500" height="500">
+
+<p><strong>Figura 12: Wireframe – Inicio de Sesión (Empresa)</strong><br>
+Pantalla donde el personal de la empresa inicia sesión.</p>
+<img src="./resources/Wireframe_12.jpeg" alt="wireframe_12" width="500" height="500">
+
+<p><strong>Figura 13: Wireframe – Mi Cuenta (Clientes)</strong><br>
+Vista en la que los clientes administran la información de su cuenta personal.</p>
+<img src="./resources/Wireframe_13.jpeg" alt="wireframe_13" width="500" height="500">
+
+<p><strong>Figura 14: Wireframe – Mi Cuenta (Empresa)</strong><br>
+Pantalla donde la empresa gestiona su información y configuración.</p>
+<img src="./resources/Wireframe_14.jpeg" alt="wireframe_14" width="500" height="500">
+
+<p><strong>Figura 15: Wireframe – Mis Clientes y Técnicos (Empresa)</strong><br>
+Muestra la sección para que la empresa gestione tanto a sus clientes como a sus técnicos.</p>
+<img src="./resources/Wireframe_15.jpeg" alt="wireframe_15" width="500" height="500">
+
+<p><strong>Figura 16: Wireframe – Mis Equipos (Clientes)</strong><br>
+Pantalla que lista los equipos que el cliente tiene registrados o alquilados.</p>
+<img src="./resources/Wireframe_16.jpeg" alt="wireframe_16" width="500" height="500">
+
+<p><strong>Figura 17: Wireframe – Mis Equipos (Clientes, Detalle 1)</strong><br>
+Presenta información detallada del primer equipo seleccionado por el cliente.</p>
+<img src="./resources/Wireframe_17.jpeg" alt="wireframe_17" width="500" height="500">
+
+<p><strong>Figura 18: Wireframe – Mis Equipos (Clientes, Detalle 2)</strong><br>
+Muestra la vista de detalle de un segundo equipo registrado por el cliente.</p>
+<img src="./resources/Wireframe_18.jpeg" alt="wireframe_18" width="500" height="500">
+
+<p><strong>Figura 19: Wireframe – Mis Equipos (Empresa)</strong><br>
+Pantalla de la empresa para administrar el inventario de equipos.</p>
+<img src="./resources/Wireframe_19.jpeg" alt="wireframe_19" width="500" height="500">
+
+<p><strong>Figura 20: Wireframe – Notificaciones (Clientes)</strong><br>
+Interfaz donde los clientes visualizan las notificaciones recibidas.</p>
+<img src="./resources/Wireframe_20.jpeg" alt="wireframe_20" width="500" height="500">
+
+<p><strong>Figura 21: Wireframe – Notificaciones (Empresa)</strong><br>
+Pantalla en la que la empresa revisa las notificaciones del sistema.</p>
+<img src="./resources/Wireframe_21.jpeg" alt="wireframe_21" width="500" height="500">
+
+<p><strong>Figura 22: Wireframe – Registro (Clientes)</strong><br>
+Muestra el formulario de registro para nuevos clientes.</p>
+<img src="./resources/Wireframe_22.jpeg" alt="wireframe_22" width="500" height="500">
+
+<p><strong>Figura 23: Wireframe – Registro (Empresa)</strong><br>
+Formulario de alta de usuarios internos o nuevos registros empresariales.</p>
+<img src="./resources/Wireframe_23.jpeg" alt="wireframe_23" width="500" height="500">
+
+<p><strong>Figura 24: Wireframe – Solicitudes (Empresa)</strong><br>
+Pantalla donde la empresa gestiona las solicitudes enviadas por los clientes.</p>
+<img src="./resources/Wireframe_24.jpeg" alt="wireframe_24" width="500" height="500">
+
+<p><strong>Figura 25: Wireframe – Órdenes de Trabajo (Empresa)</strong><br>
+Presenta la vista de control de órdenes de trabajo generadas por la empresa.</p>
+<img src="./resources/Wireframe_25.jpeg" alt="wireframe_25" width="500" height="500">
+
+### 4.4.2. Web Applications Wireflow Diagrams
+<p>En esta sección se muestran los <strong>wireflows</strong> de cada objetivo del usuario, tomando en cuenta los <strong>User Personas</strong> pertinentes. Cada diagrama describe el recorrido de interacción y cómo dichas acciones impactan en las pantallas de la aplicación.</p>
+
+<p><strong>User Goal 1</strong><br>
+Como propietario de un negocio que opera equipos de refrigeración, deseo <strong>monitorear el estado</strong> de cada equipo registrado en tiempo real.</p>
+<p><strong>Task Flow 1</strong><br>
+Secuencia de pasos para completar la acción principal del usuario (consulta y verificación del estado de equipos).</p>
+<img src="./resources/taskflow1.png" alt="taskflow1" width="500" height="500">
+<p><strong>Wireflow 1</strong><br>
+Mapa que combina wireframes con el flujo de interacción, mostrando transiciones entre pantallas y puntos de decisión.</p>
+<img src="./resources/wireflow1.png" alt="wireflow1" width="500" height="500">
+
+<p><strong>User Goal 2</strong><br>
+Como dueño de un negocio con equipos de refrigeración, quiero <strong>gestionar el alta y administración</strong> de los nuevos equipos que registre.</p>
+<p><strong>Task Flow 2</strong><br>
+Proceso de tareas que guía el registro, edición y organización de nuevos equipos.</p>
+<img src="./resources/taskflow2.png" alt="taskflow2" width="500" height="500">
+<p><strong>Wireflow 2</strong><br>
+Representación visual del flujo entre pantallas para dar de alta equipos y configurar sus atributos.</p>
+<img src="./resources/wireflow2.png" alt="wireflow2" width="500" height="500">
+
+<p><strong>User Goal 3</strong><br>
+Como dueño de un negocio que usa equipos de refrigeración, quiero <strong>consultar estadísticas completas</strong> sobre el rendimiento de mis equipos.</p>
+<p><strong>Task Flow 3</strong><br>
+Secuencia de tareas para explorar métricas, filtrar periodos y comparar resultados.</p>
+<img src="./resources/taskflow3.png" alt="taskflow3" width="500" height="500">
+<p><strong>Wireflow 3</strong><br>
+Detalle de pantallas y transiciones que soportan la visualización de KPIs, gráficos y reportes.</p>
+<img src="./resources/wireflow3.png" alt="wireflow3" width="500" height="500">
+
+<p><strong>User Goal 4</strong><br>
+Como dueño de un negocio con equipos de refrigeración, quiero <strong>solicitar nuevos equipos</strong> a un proveedor de forma simple.</p>
+<p><strong>Task Flow 4</strong><br>
+Flujo de tareas para seleccionar productos, confirmar cantidades y generar una solicitud.</p>
+<img src="./resources/taskflow4.png" alt="taskflow4" width="500" height="500">
+<p><strong>Wireflow 4</strong><br>
+Visión general del camino de compra: búsqueda, detalle de equipo, carrito/solicitud y confirmación.</p>
+<img src="./resources/wireflow4.png" alt="wireflow4" width="500" height="500">
+
+<p><strong>User Goal 5</strong><br>
+Como proveedor de equipos de refrigeración, deseo <strong>seguir y gestionar</strong> las <strong>órdenes de pedido</strong> de mis clientes.</p>
+<p><strong>Task Flow 5</strong><br>
+Flujo de tareas para revisar pedidos, actualizar estados y coordinar despachos.</p>
+<img src="./resources/taskflow5.png" alt="taskflow5" width="500" height="500">
+<p><strong>Wireflow 5</strong><br>
+Resumen del movimiento entre pantallas para administrar órdenes: listado, detalle, acciones y notificaciones.</p>
+<img src="./resources/wireflow5.png" alt="wireflow5" width="500" height="500">
+
+### 4.4.3. Web Applications Mock-ups</h2>
+<p>En esta sección se presentan y describen los mock-ups de las aplicaciones de <strong>Frostlink</strong>. Se evidencian los principios de diseño, la arquitectura de información, el diseño inclusivo y el uso del Design System en los productos digitales. Cada maqueta muestra cómo estos conceptos se integran en la interfaz de usuario. A continuación, se exhiben las maquetas de la aplicación web, que representan de forma visual el aspecto y funcionamiento de la plataforma, facilitando la comunicación del diseño a desarrolladores y clientes para alinear la experiencia de usuario con la visión del proyecto.</p>
+
+<p><strong>Figura 1: Mockup – Inicio General de la App</strong><br>
+Pantalla de bienvenida y acceso principal de la aplicación web.</p>
+<img src="./resources/web_application_1.jpeg" alt="web_appliaction_1" width="500" height="500">
+
+<p><strong>Figura 2: Mockup – Registro (Clientes)</strong><br>
+Formulario de alta para nuevos clientes.</p>
+<img src="./resources/web_application_2.jpeg" alt="web_appliaction_2" width="500" height="500">
+
+<p><strong>Figura 3: Mockup – Inicio de Sesión (Clientes)</strong><br>
+Interfaz de autenticación para clientes.</p>
+<img src="./resources/web_application_3.jpeg" alt="web_appliaction_3" width="500" height="500">
+
+<p><strong>Figura 4: Mockup – Inicio (Clientes)</strong><br>
+Panel principal o dashboard de los clientes.</p>
+<img src="./resources/web_application_4.jpeg" alt="web_appliaction_4" width="500" height="500">
+
+<p><strong>Figura 5: Mockup – Mis Equipos (Clientes)</strong><br>
+Listado de equipos registrados o alquilados por el cliente.</p>
+<img src="./resources/web_application_5.jpeg" alt="web_appliaction_5" width="500" height="500">
+
+<p><strong>Figura 6: Mockup – Mis Equipos (Clientes, Detalle 1)</strong><br>
+Primera vista de detalle de un equipo del cliente.</p>
+<img src="./resources/web_application_6.jpeg" alt="web_appliaction_6" width="500" height="500">
+
+<p><strong>Figura 7: Mockup – Mis Equipos (Clientes, Detalle 2)</strong><br>
+Segunda vista de detalle de un equipo del cliente.</p>
+<img src="./resources/web_application_7.jpeg" alt="web_appliaction_7" width="500" height="500">
+
+<p><strong>Figura 8: Mockup – Alquilar Equipos (Clientes)</strong><br>
+Proceso guiado para solicitar el alquiler de equipos.</p>
+<img src="./resources/web_application_8.jpeg" alt="web_appliaction_8" width="500" height="500">
+
+<p><strong>Figura 9: Mockup – Contacto (Clientes)</strong><br>
+Canales de contacto y soporte para clientes.</p>
+<img src="./resources/web_application_9.jpeg" alt="web_appliaction_9" width="500" height="500">
+
+<p><strong>Figura 10: Mockup – Notificaciones (Clientes)</strong><br>
+Centro de notificaciones y avisos para clientes.</p>
+<img src="./resources/web_application_10.jpeg" alt="web_appliaction_10" width="500" height="500">
+
+<p><strong>Figura 11: Mockup – Control (Clientes)</strong><br>
+Panel de control y actividad del cliente.</p>
+<img src="./resources/web_application_11.jpeg" alt="web_appliaction_11" width="500" height="500">
+
+<p><strong>Figura 12: Mockup – Estado de Cuenta (Clientes)</strong><br>
+Resumen de facturación, saldos y movimientos.</p>
+<img src="./resources/web_application_12.jpeg" alt="web_appliaction_12" width="500" height="500">
+
+<p><strong>Figura 13: Mockup – Mi Cuenta (Clientes)</strong><br>
+Gestión de perfil, preferencias y seguridad del cliente.</p>
+<img src="./resources/web_application_13.jpeg" alt="web_appliaction_13" width="500" height="500">
+
+<p><strong>Figura 14: Mockup – Analíticas Completas (Clientes)</strong><br>
+Panel de métricas, gráficos y KPI para clientes.</p>
+<img src="./resources/web_application_13.jpeg" alt="web_appliaction_14" width="500" height="500">
+
+<p><strong>Mockups Empresa</strong></p>
+
+<p><strong>Figura 15: Mockup – Inicio de Sesión (Empresa)</strong><br>
+Interfaz de autenticación para el personal de la empresa.</p>
+<img src="./resources/web_application_15.jpeg" alt="web_appliaction_15" width="500" height="500">
+
+<p><strong>Figura 16: Mockup – Registro (Empresa)</strong><br>
+Alta de la empresa y creación de credenciales.</p>
+<img src="./resources/web_application_16.jpeg" alt="web_appliaction_16" width="500" height="500">
+
+<p><strong>Figura 17: Mockup – Inicio (Empresa)</strong><br>
+Dashboard principal para la gestión empresarial.</p>
+<img src="./resources/web_application_17.jpeg" alt="web_appliaction_17" width="500" height="500">
+
+<p><strong>Figura 18: Mockup – Contacto (Empresa)</strong><br>
+Soporte y comunicación para cuentas empresariales.</p>
+<img src="./resources/web_application_18.jpeg" alt="web_appliaction_18" width="500" height="500">
+
+<p><strong>Figura 19: Mockup – Estado de Cuenta (Empresa)</strong><br>
+Facturación, saldos y movimientos para la empresa.</p>
+<img src="./resources/web_application_19.jpeg" alt="web_appliaction_19" width="500" height="500">
+
+<p><strong>Figura 20: Mockup – Mi Cuenta (Empresa)</strong><br>
+Configuración de cuenta, permisos y seguridad.</p>
+<img src="./resources/web_application_20.jpeg" alt="web_appliaction_20" width="500" height="500">
+
+<p><strong>Figura 21: Mockup – Mis Clientes y Técnicos (Empresa)</strong><br>
+Administración de clientes, técnicos y roles.</p>
+<img src="./resources/web_application_21.jpeg" alt="web_appliaction_21" width="500" height="500">
+
+<p><strong>Figura 22: Mockup – Mis Equipos (Empresa)</strong><br>
+Inventario y control de equipos bajo responsabilidad de la empresa.</p>
+<img src="./resources/web_application_22.jpeg" alt="web_appliaction_22" width="500" height="500">
+
+<p><strong>Figura 23: Mockup – Notificaciones (Empresa)</strong><br>
+Centro de avisos, eventos del sistema y comunicaciones.</p>
+<img src="./resources/web_application_10.jpeg" alt="web_appliaction_23" width="500" height="500">
+
+<p><strong>Figura 24: Mockup – Solicitudes (Empresa)</strong><br>
+Bandeja de solicitudes entrantes y su procesamiento.</p>
+<img src="./resources/web_application_23.jpeg" alt="web_appliaction_24" width="500" height="500">
+
+<p><strong>Figura 25: Mockup – Órdenes de Trabajo (Empresa)</strong><br>
+Gestión y seguimiento de órdenes de trabajo.</p>
+
+### 4.4.4. Web Applications User Flow Diagrams</h2>
+<p>En esta sección se presentan los diagramas de <strong>user flow</strong> asociados a los objetivos clave, mostrando cómo las acciones del usuario se traducen en transiciones entre pantallas dentro de la aplicación.</p>
+
+<p><strong>User Goal 1</strong><br>
+Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>monitorear el estado</strong> de cada equipo registrado.</p>
+<img src="./resources/userflow1.png" alt="userflow1" width="500" height="500">
+
+<p><strong>User Goal 2</strong><br>
+Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>consultar las estadísticas completas</strong> del rendimiento de mis equipos.</p>
+<img src="./resources/userflow2.png" alt="userflow2" width="500" height="500">
+
+<p><strong>User Goal 3</strong><br>
+Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>dar de alta y administrar</strong> los nuevos equipos que registro.</p>
+<img src="./resources/userflow3.png" alt="userflow3" width="500" height="500">
+
+## 4.5. Web Applications Prototyping
+Se presenta el prototipo interactivo de la aplicación web de Frostlink, que permite a los usuarios explorar la interfaz y navegar por las distintas secciones de la plataforma. Este prototipo incorpora las funcionalidades esenciales y ofrece una vista preliminar de la experiencia de uso. Además, facilita la evaluación y validación de la interfaz antes de su implementación definitiva, garantizando un diseño intuitivo y eficiente.
+
+## 4.6. Domain Driven Software Architecture
+Se expone la arquitectura de software orientada al dominio para Frostlink. A través de diversos diagramas se describe la estructura del sistema y sus componentes principales, destacando cómo se relacionan e integran entre sí para ofrecer una solución eficiente, escalable y mantenible.
+
+### 4.6.1. Software Architecture Context Diagram
+<p>El diagrama de contexto muestra cómo <strong>Clientes</strong> y <strong>Empresas Proveedoras</strong> interactúan con <strong>Frostlink</strong> para gestionar y monitorear equipos de refrigeración. La plataforma se integra con servicios de correo para el envío de notificaciones y con un servicio de pagos para procesar transacciones de forma segura.</p>
+<img src="./resources/diagram_1.jpeg" alt="diagram_1" width="500" height="500">
+
+### 4.6.2. Software Architecture Container Diagrams
+<p>El diagrama de contenedores describe las principales piezas de <strong>Frostlink</strong> y sus relaciones: la <em>web app</em> (interfaz de usuario), la <em>API</em> que expone capacidades del dominio y la <em>base de datos</em> que persiste la información, junto con otros servicios que soportan la operación.</p>
+<img src="./resources/diagram_2.jpeg" alt="diagram_2" width="500" height="500">
+
+### 4.6.3. Software Architecture Components Diagrams
+
+<h3>Mi Equipo — Bounded Context</h3>
+<p>Este diagrama detalla los componentes responsables de la gestión de equipos: alta de nuevos dispositivos, monitoreo en tiempo real y visualización del estado e historial.</p>
+<img src="./resources/diagram_3.jpeg" alt="diagram_3" width="500" height="500">
+
+### Notificaciones y Órdenes de Trabajo — Bounded Contexts
+<p>El diagrama agrupa los componentes que administran las notificaciones —para informar eventos y estados relevantes— y los que gestionan las órdenes de trabajo, desde su creación hasta su seguimiento y cierre.</p>
+<img src="./resources/diagram_4.jpeg" alt="diagram_4" width="500" height="500">
+
+## 4.7. Software Object-Oriented Design
+<p>En esta sección se expone el diseño orientado a objetos de <strong>Frostlink</strong>. Se incluyen diagramas de clases y un diccionario de clases que describen la estructura de las entidades principales y sus atributos, proporcionando una visión clara de cómo se organizan y administran los componentes clave de la plataforma.</p>
+
+### 4.7.1. Class Diagrams
+<p>El diagrama de clases ofrece una representación visual de las clases del sistema, sus atributos y las relaciones que las vinculan.</p>
+<img src="./resources/Class-UML.jpeg" alt="class_uml" width="500" height="500">
+
+### 4.7.2. Class Dictionary
+
+<h4>Clase: Solicitud</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name_equipo</td><td>Registra el nombre del equipo solicitado.</td><td>Equipo</td></tr>
+    <tr><td>2</td><td>name_usuario</td><td>Registra el nombre del usuario que formula la solicitud.</td><td>Usuario</td></tr>
+    <tr><td>3</td><td>orden</td><td>Conserva el número identificador de la orden asociada.</td><td>unsigned long int</td></tr>
+    <tr><td>4</td><td>description</td><td>Contiene el detalle descriptivo de la solicitud.</td><td>varchar</td></tr>
+    <tr><td>5</td><td>time</td><td>Guarda la duración estimada o requerida.</td><td>float</td></tr>
+    <tr><td>6</td><td>status</td><td>Indica el estado actual de la solicitud.</td><td>char</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Equipo</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name</td><td>Registra la denominación del equipo.</td><td>string</td></tr>
+    <tr><td>2</td><td>cost</td><td>Guarda el costo del equipo.</td><td>float</td></tr>
+    <tr><td>3</td><td>details_tecnicos</td><td>Contiene las especificaciones técnicas del equipo.</td><td>varchar</td></tr>
+    <tr><td>4</td><td>serie</td><td>Conserva el número de serie del equipo.</td><td>unsigned long int</td></tr>
+    <tr><td>5</td><td>code</td><td>Almacena el código identificador del equipo.</td><td>unsigned long int</td></tr>
+    <tr><td>6</td><td>status</td><td>Indica la condición del equipo.</td><td>char</td></tr>
+    <tr><td>7</td><td>notes</td><td>Registra observaciones o notas adicionales del equipo.</td><td>varchar</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Cliente</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name</td><td>Registra el nombre del cliente.</td><td>string</td></tr>
+    <tr><td>2</td><td>email</td><td>Guarda el correo electrónico del cliente.</td><td>string</td></tr>
+    <tr><td>3</td><td>password</td><td>Conserva la contraseña del cliente.</td><td>string</td></tr>
+    <tr><td>4</td><td>username</td><td>Registra el alias o nombre de usuario del cliente.</td><td>string</td></tr>
+    <tr><td>5</td><td>phone</td><td>Guarda el número telefónico del cliente.</td><td>string</td></tr>
+    <tr><td>6</td><td>user_type</td><td>Indica la categoría o tipo de usuario.</td><td>char</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Company</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name</td><td>Registra la razón social o nombre de la empresa.</td><td>string</td></tr>
+    <tr><td>2</td><td>email</td><td>Guarda el correo electrónico de la empresa.</td><td>string</td></tr>
+    <tr><td>3</td><td>password</td><td>Conserva la contraseña de la empresa.</td><td>string</td></tr>
+    <tr><td>4</td><td>username</td><td>Registra el nombre de usuario asociado a la empresa.</td><td>string</td></tr>
+    <tr><td>5</td><td>plan</td><td>Indica el plan contratado por la empresa.</td><td>char</td></tr>
+    <tr><td>6</td><td>phone</td><td>Guarda el teléfono de contacto de la empresa.</td><td>string</td></tr>
+    <tr><td>7</td><td>business_type</td><td>Indica el giro o tipo de negocio de la empresa.</td><td>char</td></tr>
+    <tr><td>8</td><td>location</td><td>Registra la dirección o ubicación de la empresa.</td><td>string</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Cuenta</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name (company)</td><td>Registra el nombre de la empresa vinculada.</td><td>Company</td></tr>
+    <tr><td>2</td><td>name (usuario)</td><td>Registra el nombre del usuario vinculado.</td><td>Usuario</td></tr>
+    <tr><td>3</td><td>cost</td><td>Guarda el costo del equipo asociado a la cuenta.</td><td>Equipo</td></tr>
+    <tr><td>4</td><td>status</td><td>Indica el estado actual de la cuenta.</td><td>char</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Mantenimiento</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name</td><td>Registra el equipo que se encuentra en mantenimiento.</td><td>Equipo</td></tr>
+    <tr><td>2</td><td>status</td><td>Indica la situación del mantenimiento.</td><td>char</td></tr>
+  </tbody>
+</table>
+
+<h4>Clase: Notificación</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Nombre de atributo</th>
+      <th>Descripción</th>
+      <th>Tipo de dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>name</td><td>Registra el título o nombre de la notificación.</td><td>varchar</td></tr>
+    <tr><td>2</td><td>description</td><td>Contiene el contenido descriptivo de la notificación.</td><td>varchar</td></tr>
+    <tr><td>3</td><td>name_company</td><td>Guarda la empresa asociada a la notificación.</td><td>Company</td></tr>
+    <tr><td>4</td><td>name_cliente</td><td>Registra el cliente destinatario.</td><td>Cliente</td></tr>
+    <tr><td>5</td><td>status</td><td>Señala si la notificación ha sido leída o gestionada.</td><td>bool</td></tr>
+  </tbody>
+</table>
+
+## 4.8. Database Design
+<p>Esta sección describe la estructura lógica de datos del sistema: entidades, atributos, tipos y relaciones. El modelo de base de datos está concebido para asegurar integridad, consistencia y eficiencia en el acceso a la información.</p>
+
+### 4.8.1. Database Diagram
+<p>El diagrama de base de datos muestra cómo se relacionan las tablas, incluyendo claves primarias y foráneas, así como las cardinalidades (uno a uno, uno a muchos y muchos a muchos).</p>
+<img src="./resources/diagram-class.png" alt="diagram_class" width="500" height="500">
