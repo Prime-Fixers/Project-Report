@@ -1038,5 +1038,20 @@ Bandeja de solicitudes entrantes y su procesamiento.</p>
 
 <p><strong>Figura 25: Mockup – Órdenes de Trabajo (Empresa)</strong><br>
 Gestión y seguimiento de órdenes de trabajo.</p>
-<img src="./resources/web_application_25.jpeg" alt="web_appliaction_25" width="500" height="500">
+
+### 4.4.4. Web Applications User Flow Diagrams</h2>
+<p>En esta sección se presentan los diagramas de <strong>user flow</strong> asociados a los objetivos clave, mostrando cómo las acciones del usuario se traducen en transiciones entre pantallas dentro de la aplicación.</p>
+
+<p><strong>User Goal 1</strong><br>
+Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>monitorear el estado</strong> de cada equipo registrado.</p>
+<img src="./resources/userflow1.png" alt="userflow1" width="500" height="500">
+
+<p><strong>User Goal 2</strong><br>
+Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>consultar las estadísticas completas</strong> del rendimiento de mis equipos.</p>
+<img src="./resources/userflow2.png" alt="userflow2" width="500" height="500">
+
+<p><strong>User Goal 3</strong><br>
+Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>dar de alta y administrar</strong> los nuevos equipos que registro.</p>
+<img src="./resources/userflow3.png" alt="userflow3" width="500" height="500">
+
 
