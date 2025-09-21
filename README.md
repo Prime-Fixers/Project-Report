@@ -495,3 +495,12 @@ La identidad visual de FrostLink busca transmitir seguridad, innovación y cerca
 
 Logo: Representa la esencia de FrostLink a través de un diseño moderno que integra conceptos de tecnología y refrigeración. Su estilo equilibra lo técnico con lo accesible, transmitiendo innovación y cercanía. Está disponible en versiones para fondos claros y oscuros, así como en formatos monocromático, horizontal y vertical.
 
+*Tipografía*
+
+Para mantener la formalidad y accesibilidad de la interfaz de usuario de FrostLink, se establecen las tipografías Helvetica y Open Sans por sus cualidades funcionales, estéticas y su excelente compatibilidad con entornos digitales, siendo Helvetica la tipografía principal.
+
+<img src="./resources/Tipografia.jpeg" alt="Tipografia" width="50" height="50">
+
+*Figura 1:* Tipografía Helvica
+
+<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" width="50" height="50">
