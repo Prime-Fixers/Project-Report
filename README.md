@@ -1349,7 +1349,7 @@ El siguiente Impact Mapping fue desarrollado en UXPressia de manera colaborativa
 
 
 <figure style="page-break-inside: avoid; text-align: center;">
-  <img src="/resource/Impact-Mapping.png"
+  <img src="/resources/Impact-Mapping.png"
        alt="Diagrama de Impact Mapping: Objetivo, actores, impactos y entregables clave."
        style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
