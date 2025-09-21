@@ -934,3 +934,109 @@ Flujo de tareas para revisar pedidos, actualizar estados y coordinar despachos.<
 <p><strong>Wireflow 5</strong><br>
 Resumen del movimiento entre pantallas para administrar órdenes: listado, detalle, acciones y notificaciones.</p>
 <img src="./resources/wireflow5.png" alt="wireflow5" width="500" height="500">
+
+<h2>4.4.3. Web Applications Mock-ups</h2>
+<p>En esta sección se presentan y describen los mock-ups de las aplicaciones de <strong>Frostlink</strong>. Se evidencian los principios de diseño, la arquitectura de información, el diseño inclusivo y el uso del Design System en los productos digitales. Cada maqueta muestra cómo estos conceptos se integran en la interfaz de usuario. A continuación, se exhiben las maquetas de la aplicación web, que representan de forma visual el aspecto y funcionamiento de la plataforma, facilitando la comunicación del diseño a desarrolladores y clientes para alinear la experiencia de usuario con la visión del proyecto.</p>
+
+<p><strong>Figura 1: Mockup – Inicio General de la App</strong><br>
+Pantalla de bienvenida y acceso principal de la aplicación web.</p>
+<img src="./resources/web_application_1.jpeg" alt="web_appliaction_1" width="500" height="500">
+
+<p><strong>Figura 2: Mockup – Registro (Clientes)</strong><br>
+Formulario de alta para nuevos clientes.</p>
+<img src="./resources/web_application_2.jpeg" alt="web_appliaction_2" width="500" height="500">
+
+<p><strong>Figura 3: Mockup – Inicio de Sesión (Clientes)</strong><br>
+Interfaz de autenticación para clientes.</p>
+<img src="./resources/web_application_3.jpeg" alt="web_appliaction_3" width="500" height="500">
+
+<p><strong>Figura 4: Mockup – Inicio (Clientes)</strong><br>
+Panel principal o dashboard de los clientes.</p>
+<img src="./resources/web_application_4.jpeg" alt="web_appliaction_4" width="500" height="500">
+
+<p><strong>Figura 5: Mockup – Mis Equipos (Clientes)</strong><br>
+Listado de equipos registrados o alquilados por el cliente.</p>
+<img src="./resources/web_application_5.jpeg" alt="web_appliaction_5" width="500" height="500">
+
+<p><strong>Figura 6: Mockup – Mis Equipos (Clientes, Detalle 1)</strong><br>
+Primera vista de detalle de un equipo del cliente.</p>
+<img src="./resources/web_application_6.jpeg" alt="web_appliaction_6" width="500" height="500">
+
+<p><strong>Figura 7: Mockup – Mis Equipos (Clientes, Detalle 2)</strong><br>
+Segunda vista de detalle de un equipo del cliente.</p>
+<img src="./resources/web_application_7.jpeg" alt="web_appliaction_7" width="500" height="500">
+
+<p><strong>Figura 8: Mockup – Alquilar Equipos (Clientes)</strong><br>
+Proceso guiado para solicitar el alquiler de equipos.</p>
+<img src="./resources/web_application_8.jpeg" alt="web_appliaction_8" width="500" height="500">
+
+<p><strong>Figura 9: Mockup – Contacto (Clientes)</strong><br>
+Canales de contacto y soporte para clientes.</p>
+<img src="./resources/web_application_9.jpeg" alt="web_appliaction_9" width="500" height="500">
+
+<p><strong>Figura 10: Mockup – Notificaciones (Clientes)</strong><br>
+Centro de notificaciones y avisos para clientes.</p>
+<img src="./resources/web_application_10.jpeg" alt="web_appliaction_10" width="500" height="500">
+
+<p><strong>Figura 11: Mockup – Control (Clientes)</strong><br>
+Panel de control y actividad del cliente.</p>
+<img src="./resources/web_application_11.jpeg" alt="web_appliaction_11" width="500" height="500">
+
+<p><strong>Figura 12: Mockup – Estado de Cuenta (Clientes)</strong><br>
+Resumen de facturación, saldos y movimientos.</p>
+<img src="./resources/web_application_12.jpeg" alt="web_appliaction_12" width="500" height="500">
+
+<p><strong>Figura 13: Mockup – Mi Cuenta (Clientes)</strong><br>
+Gestión de perfil, preferencias y seguridad del cliente.</p>
+<img src="./resources/web_application_13.jpeg" alt="web_appliaction_13" width="500" height="500">
+
+<p><strong>Figura 14: Mockup – Analíticas Completas (Clientes)</strong><br>
+Panel de métricas, gráficos y KPI para clientes.</p>
+<img src="./resources/web_application_14.jpeg" alt="web_appliaction_14" width="500" height="500">
+
+<p><strong>Mockups Empresa</strong></p>
+
+<p><strong>Figura 15: Mockup – Inicio de Sesión (Empresa)</strong><br>
+Interfaz de autenticación para el personal de la empresa.</p>
+<img src="./resources/web_application_15.jpeg" alt="web_appliaction_15" width="500" height="500">
+
+<p><strong>Figura 16: Mockup – Registro (Empresa)</strong><br>
+Alta de la empresa y creación de credenciales.</p>
+<img src="./resources/web_application_16.jpeg" alt="web_appliaction_16" width="500" height="500">
+
+<p><strong>Figura 17: Mockup – Inicio (Empresa)</strong><br>
+Dashboard principal para la gestión empresarial.</p>
+<img src="./resources/web_application_17.jpeg" alt="web_appliaction_17" width="500" height="500">
+
+<p><strong>Figura 18: Mockup – Contacto (Empresa)</strong><br>
+Soporte y comunicación para cuentas empresariales.</p>
+<img src="./resources/web_application_18.jpeg" alt="web_appliaction_18" width="500" height="500">
+
+<p><strong>Figura 19: Mockup – Estado de Cuenta (Empresa)</strong><br>
+Facturación, saldos y movimientos para la empresa.</p>
+<img src="./resources/web_application_19.jpeg" alt="web_appliaction_19" width="500" height="500">
+
+<p><strong>Figura 20: Mockup – Mi Cuenta (Empresa)</strong><br>
+Configuración de cuenta, permisos y seguridad.</p>
+<img src="./resources/web_application_20.jpeg" alt="web_appliaction_20" width="500" height="500">
+
+<p><strong>Figura 21: Mockup – Mis Clientes y Técnicos (Empresa)</strong><br>
+Administración de clientes, técnicos y roles.</p>
+<img src="./resources/web_application_21.jpeg" alt="web_appliaction_21" width="500" height="500">
+
+<p><strong>Figura 22: Mockup – Mis Equipos (Empresa)</strong><br>
+Inventario y control de equipos bajo responsabilidad de la empresa.</p>
+<img src="./resources/web_application_22.jpeg" alt="web_appliaction_22" width="500" height="500">
+
+<p><strong>Figura 23: Mockup – Notificaciones (Empresa)</strong><br>
+Centro de avisos, eventos del sistema y comunicaciones.</p>
+<img src="./resources/web_application_23.jpeg" alt="web_appliaction_23" width="500" height="500">
+
+<p><strong>Figura 24: Mockup – Solicitudes (Empresa)</strong><br>
+Bandeja de solicitudes entrantes y su procesamiento.</p>
+<img src="./resources/web_application_24.jpeg" alt="web_appliaction_24" width="500" height="500">
+
+<p><strong>Figura 25: Mockup – Órdenes de Trabajo (Empresa)</strong><br>
+Gestión y seguimiento de órdenes de trabajo.</p>
+<img src="./resources/web_application_25.jpeg" alt="web_appliaction_25" width="500" height="500">
+
