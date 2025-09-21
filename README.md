@@ -711,11 +711,11 @@ La identidad visual de FrostLink busca transmitir seguridad, innovación y cerca
 
 Para mantener la formalidad y accesibilidad de la interfaz de usuario de FrostLink, se establecen las tipografías Helvetica y Open Sans por sus cualidades funcionales, estéticas y su excelente compatibilidad con entornos digitales, siendo Helvetica la tipografía principal.
 
-<img src="./resources/Tipografia.jpeg" alt="Tipografia" width="50" height="50">
+<img src="./resources/Tipografia.jpeg" alt="Tipografia" width="100" height="100">
 
 *Figura 1:* Tipografía Helvica
 
-<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" width="50" height="50">
+<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" width="100" height="100">
 
 *Figura 2:* Tipografía Open Sans
 
@@ -724,7 +724,7 @@ La paleta cromática fue diseñada para evocar entornos fríos y tecnológicos, 
 
 El color principal es el celeste, ya que refleja de manera óptima las características de la marca. Como colores neutros, se emplean negro, blanco y gris, ideales para fondos y textos por su versatilidad. Además, se incorporan variantes de verde, rojo, azul y amarillo para resaltar estados específicos, como alertas, servicios o calificaciones.
 
-<img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="50" height="50">
+<img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="100" height="100">
 
 *Figura 3:* Guías Generales de Estilo – Colores
 
@@ -764,13 +764,13 @@ Dado que FrostLink está orientado al sector tecnológico, su paleta de colores 
 
 Dado que los botones y fondos pueden variar según el contexto, la plataforma emplea diferentes tonalidades de celeste para mantener coherencia visual.
 
-<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" width="50" height="50">
+<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" width="100" height="100">
 
 *Figura 1:* Guías de Estilo Web – Color Sky Blue
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
-<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" width="50" height="50">
+<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" width="100" height="100">
 
 *Figura 2:* Guías de Estilo Web - Color Rojo.
 
@@ -847,7 +847,7 @@ Los usuarios pueden ordenar por relevancia, estado o consumo, y visualizar filtr
 
 La navegación de FrostLink está diseñada para ser clara y eficiente:
 
-Páginas Principales
+1. Páginas Principales
 
 Inicio: Página principal de la plataforma.
 
@@ -859,13 +859,13 @@ Nosotros: Información sobre la empresa y su propósito.
 
 Contacto: Formulario y datos de contacto.
 
-Opciones de Usuario
+2. Opciones de Usuario
 
 Login / Sign-up: Acceso y registro de cuentas.
 
 Iniciar Sesión / Registrarse: Alternativa directa para gestión de cuenta.
 
-Búsqueda y Navegación
+3. Búsqueda y Navegación
 
 Barra de Búsqueda: Acceso rápido a equipos, servicios o reportes.
 
@@ -873,6 +873,29 @@ Categorías: Filtros por tipo de equipo.
 
 Explorar: Navegación por secciones destacadas.
 
-Branding e Identidad
+4. Branding e Identidad
 
 FrostLink: Logo y nombre de la marca se presentan de forma consistente en las diferentes secciones para reforzar la identidad visual de la plataforma.
+
+## 4.3. Landing Page UI Design
+### 4.3.1. Landing Page Wireframe
+
+El wireframe de la landing page de FrostLink está diseñado para organizar los elementos clave y garantizar una navegación clara e intuitiva. En la parte superior se ubica un encabezado con el logo y el menú principal de navegación. Justo debajo, se presenta una propuesta de valor destacada acompañada de botones de acción visibles como “Solicitar Demo” y “¿Cómo Funciona?” para incentivar la interacción del usuario.
+
+La página incluye secciones que presentan a los usuarios objetivo, las funcionalidades principales de la plataforma y los beneficios que FrostLink ofrece. Finalmente, en la parte inferior se dispone un formulario de contacto para solicitar una demo y un pie de página con enlaces legales y de referencia.
+
+*Figura 1:* Wireframe de la Landing Page.
+
+<img src="./resources/LandingPage_1.jpeg" alt="lading_page_1" width="100" height="100">
+
+<img src="./resources/LandingPage_2.jpeg" alt="lading_page_2" width="100" height="100">
+
+<img src="./resources/LandingPage_3.jpeg" alt="lading_page_3" width="100" height="100">
+
+### 4.3.2. Landing Page Mockup
+
+El mockup de la landing page de FrostLink presenta un diseño limpio y bien estructurado que guía de manera intuitiva a los usuarios a través de la plataforma. En la parte superior se destaca la propuesta de valor, acompañada de un call to action principal que invita a interactuar con la página.
+
+A continuación, se despliegan secciones clave que describen las funcionalidades del sistema, los beneficios para empresas y proveedores, y una explicación clara sobre cómo funciona el servicio. También se incluyen testimonios de clientes, información corporativa sobre FrostLink y un formulario de contacto para solicitar una demo, todo orientado a maximizar la conversión de visitantes en usuarios activos.
+
+Esta corresponde a la primera sección llamada "Inicio", donde se muestra de forma clara la propuesta de valor de la plataforma y el espacio para el Call to Action, que será implementado en etapas posteriores.
