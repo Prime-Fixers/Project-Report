@@ -1161,13 +1161,13 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
           <div style="flex: 1; display: flex; flex-direction: column;">
             <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
-              <li><strong>Nombres:</strong> </li>
-              <li><strong>Apellidos:</strong> </li>
-              <li><strong>Edad:</strong> </li>
-              <li><strong>Distrito:</strong> </li>
+              <li><strong>Nombres:</strong> Mario Joaquin </li>
+              <li><strong>Apellidos:</strong> Lopez Acuña</li>
+              <li><strong>Edad:</strong> 25</li>
+              <li><strong>Distrito:</strong> La Molina</li>
               <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
               <li><strong>Timestamp:</strong> 00:00</li>
-              <li><strong>Duración:</strong> </li>
+              <li><strong>Duración:</strong> 04:09</li>
             </ul>
           </div>
           <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="" alt="Screenshot de la entrevista">
@@ -1178,7 +1178,7 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
       <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
         <div style="background-color: #f9f9f9; border-radius: 10px; padding: 24px; margin-top: 12px;">
           <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Resumen</p>
-          (Insertar resumen)
+          Mario es un joven administrador de un minimarket en Lima. Su negocio depende de equipos de refrigeración para conservar productos lácteos, carnes frías y bebidas. Actualmente cuenta con 3 congeladoras y 2 vitrinas refrigeradas. No utiliza ninguna herramienta digital, todo lo gestiona con llamadas y notas manuales. Considera que recibir alertas automáticas en su celular sería “muy útil” porque no siempre está en el local. Además, le interesaría tener un historial por cada equipo con reportes claros para identificar qué equipos fallan más.
         </div>
       </td>
     </tr>
@@ -1205,13 +1205,13 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
           <div style="flex: 1; display: flex; flex-direction: column;">
             <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
-              <li><strong>Nombres:</strong> </li>
-              <li><strong>Apellidos:</strong> </li>
-              <li><strong>Edad:</strong> </li>
-              <li><strong>Distrito:</strong> </li>
+              <li><strong>Nombres:</strong> Jorge Rolando</li>
+              <li><strong>Apellidos:</strong> Garcia Roca</li>
+              <li><strong>Edad:</strong> 28</li>
+              <li><strong>Distrito:</strong> San Miguel</li>
               <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
               <li><strong>Timestamp:</strong> 04:52</li>
-              <li><strong>Duración:</strong> 04:37</li>
+              <li><strong>Duración:</strong> </li>
             </ul>
           </div>
           <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="" alt="Screenshot de la entrevista">
@@ -1222,51 +1222,7 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
       <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
         <div style="background-color: #f9f9f9; border-radius: 10px; padding: 24px; margin-top: 12px;">
           <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Resumen</p>
-          (Insertar resumen)
-        </div>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<div style="page-break-before: always;"></div>
-
-<table class="tabla-entrevista">
-  <thead>
-    <tr>
-      <th style="
-            text-align: left;
-            padding: 12px;
-            background-color: #f0f0f0;
-            font-size: 22px;"><strong>SEGMENTO OBJETIVO: NEGOCIOS</strong></th>
-      <th><strong>#3</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
-        <div style="display: flex; gap: 24px; align-items: flex-start; background-color: #fafafa; border-radius: 10px; padding: 24px;">
-          <div style="flex: 1; display: flex; flex-direction: column;">
-            <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
-              <li><strong>Nombres:</strong> </li>
-              <li><strong>Apellidos:</strong> </li>
-              <li><strong>Edad:</strong> </li>
-              <li><strong>Distrito:</strong> </li>
-              <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
-              <li><strong>Timestamp:</strong> 04:52</li>
-              <li><strong>Duración:</strong> 04:37</li>
-            </ul>
-          </div>
-          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="" alt="Screenshot de la entrevista">
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
-        <div style="background-color: #f9f9f9; border-radius: 10px; padding: 24px; margin-top: 12px;">
-          <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Resumen</p>
-          (Insertar resumen)
+          Comenta que en varias ocasiones sufrió pérdidas por fallas de equipos, llegando a perder más de S/ 10,000 en insumos durante un corte de energía que pasó desapercibido hasta la mañana siguiente. Actualmente, confía en que su personal revise los equipos manualmente, pero reconoce que es un proceso poco confiable. Jorge estaría dispuesto a pagar por una suscripción mensual si el sistema realmente reduce pérdidas y mejora la vida útil de los equipos. Para él, las funcionalidades imprescindibles son: monitoreo en tiempo real, integración con múltiples equipos, alertas inmediatas y reportes exportables. Prefiere acceder tanto desde computadora en la oficina como desde el celular cuando está fuera.
         </div>
       </td>
     </tr>
@@ -1404,6 +1360,97 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
     </tr>
   </tbody>
 </table>
+
+<div style="page-break-after: always;"></div>
+
+### 2.2.3. Análisis de entrevistas
+
+**DUEÑOS**
+
+Tras realizar las entrevistas a dos administradores de negocios que dependen de sistemas de refrigeración (Mario López, 25 años – minimarket; Jorge García, 28 años – supermarket), se identificaron patrones y hallazgos clave:  
+
+**1. Problemas recurrentes detectados**  
+- Ambos entrevistados han experimentado **pérdidas económicas significativas** debido a fallas en sus equipos de refrigeración, con montos que oscilaron entre S/ 3,000 y S/ 10,000.  
+- Actualmente, el **monitoreo se realiza de forma manual**, lo cual genera riesgos al no detectar fallas en tiempo real.  
+- El mantenimiento es en su mayoría **reactivo y tercerizado**, dependiendo de técnicos externos que solo actúan cuando ya existe un problema.  
+
+**2. Necesidades expresadas**  
+- Existe una fuerte demanda por **alertas automáticas en tiempo real**, ya que ambos entrevistados señalaron que no siempre están presentes en el local.  
+- Se valora contar con un **historial técnico y reportes detallados** para tomar decisiones sobre reemplazo, eficiencia y frecuencia de fallas.  
+- Buscan **herramientas simples, accesibles y fáciles de usar**, que no requieran conocimientos técnicos avanzados.  
+
+**3. Valor esperado de la solución**  
+- Ambos estarían dispuestos a **pagar una suscripción mensual** si la herramienta evita pérdidas económicas y mejora la eficiencia operativa.  
+- Prefieren acceder a la plataforma desde el **celular** (por movilidad) y, en el caso de Jorge, también desde la computadora en la oficina.  
+- Consideran imprescindible que la aplicación incluya: **monitoreo en tiempo real, alertas inmediatas, reportes exportables e integración con múltiples equipos**.  
+
+**4. Riesgos percibidos**  
+- Mario dejaría de usar la aplicación si **no envía alertas oportunas o si es demasiado complicada**.  
+- Jorge la dejaría si **el costo es excesivo o si el soporte técnico no responde rápidamente**.  
+
+**Conclusión general:**  
+Las entrevistas evidencian que los negocios pequeños y medianos que dependen de equipos de refrigeración necesitan con urgencia una solución accesible, confiable y de fácil uso que combine monitoreo en tiempo real, alertas automáticas y reportes técnicos. Esto confirma la **propuesta de valor de FrostLink** como herramienta integral que cubre estas carencias, diferenciándose de competidores más costosos y complejos. 
+
+**PROVEEDORES**
+
+falta
+
+<div style="page-break-before: always;"></div>
+
+## 2.3. Needfinding.
+
+### 2.3.1. User Personas.
+
+En esta sección se presentan las fichas de **User Personas** elaboradas a partir de la información obtenida en el análisis de entrevistas del segmento #1: *Negocios que utilizan equipos de refrigeración* y del segmento #2: *Empresas proveedoras de servicios y equipos de refrigeración*. Estas fichas permiten definir de manera clara y estratégica los perfiles representativos de cada segmento objetivo, tomando en cuenta sus metas, capacidades, motivaciones y principales dificultades. Al integrar tanto la visión del usuario como las tendencias del sector, estas representaciones funcionan como una herramienta clave para orientar el diseño de soluciones digitales centradas en el usuario y alineadas con las oportunidades del mercado.  
+
+**Segmento objetivo #1: Negocios que utilizan equipos de refrigeración**
+
+![Foto](/resources/userPersona_Ernesto%20Mendoza.png)
+
+<div style="page-break-after: always;"></div>
+
+**Segmento objetivo #2: Empresas proveedoras de servicios y equipos de refrigeración**
+
+![Foto](/resources/userPersona_Luis%20Rojas.png)
+
+<div style="page-break-after: always;"></div>
+
+### 2.3.2. User Task Matrix.
+
+Se considera para la realización de este User Task Matrix los User Persona, sus actividades, frecuencia e importancia.
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th rowspan="2">Task</th>
+      <th colspan="2">Ernesto Mendoza</th>
+      <th colspan="2">Luis Rojas</th>
+    </tr>
+    <tr>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Detectar o identificar fallas en los equipos</td><td>Baja</td><td>Alta</td><td>Alta</td><td>Alta</td></tr>
+    <tr><td>Coordinar servicios de mantenimiento</td><td>Media</td><td>Alta</td><td>Alta</td><td>Alta</td></tr>
+    <tr><td>Planificar rutas de llegada al punto de atención</td><td>Alta</td><td>Media</td><td>Baja</td><td>Alta</td></tr>
+    <tr><td>Realizar mantenimiento preventivo o solicitarlo</td><td>Media</td><td>Alta</td><td>Alta</td><td>Alta</td></tr>
+    <tr><td>Gestionar datos de los equipos de refrigeración</td><td>Baja</td><td>Alta</td><td>Alta</td><td>Alta</td></tr>
+    <tr><td>Gestionar costos por pérdidas de productos</td><td>Alta</td><td>Alta</td><td>Media</td><td>Media</td></tr>
+    <tr><td>Evaluar la calidad de los equipos y servicios brindados</td><td>Media</td><td>Alta</td><td>Media</td><td>Alta</td></tr>
+    <tr><td>Monitorear el desempeño de los técnicos</td><td>Baja</td><td>Media</td><td>Alta</td><td>Alta</td></tr>
+    <tr><td>Monitorear el desempeño de los equipos brindados</td><td>Alta</td><td>Alta</td><td>Baja</td><td>Alta</td></tr>
+    <tr><td>Usar reportes técnicos para tomar decisiones </td><td>Baja</td><td>Alta</td><td>Media</td><td>Alta</td></tr>
+    <tr><td>Comunicar fallas al técnico o proveedor </td><td>Alta</td><td>Alta</td><td>Media</td><td>Alta</td></tr>
+  </tbody>
+</table>
+
+### 2.3.3. Empathy Maps
+
+**Segmento objetivo #1: Negocios que utilizan equipos de refrigeración**
 
 
 
