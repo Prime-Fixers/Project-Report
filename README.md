@@ -935,7 +935,7 @@ Flujo de tareas para revisar pedidos, actualizar estados y coordinar despachos.<
 Resumen del movimiento entre pantallas para administrar órdenes: listado, detalle, acciones y notificaciones.</p>
 <img src="./resources/wireflow5.png" alt="wireflow5" width="500" height="500">
 
-<h2>4.4.3. Web Applications Mock-ups</h2>
+### 4.4.3. Web Applications Mock-ups</h2>
 <p>En esta sección se presentan y describen los mock-ups de las aplicaciones de <strong>Frostlink</strong>. Se evidencian los principios de diseño, la arquitectura de información, el diseño inclusivo y el uso del Design System en los productos digitales. Cada maqueta muestra cómo estos conceptos se integran en la interfaz de usuario. A continuación, se exhiben las maquetas de la aplicación web, que representan de forma visual el aspecto y funcionamiento de la plataforma, facilitando la comunicación del diseño a desarrolladores y clientes para alinear la experiencia de usuario con la visión del proyecto.</p>
 
 <p><strong>Figura 1: Mockup – Inicio General de la App</strong><br>
@@ -992,7 +992,7 @@ Gestión de perfil, preferencias y seguridad del cliente.</p>
 
 <p><strong>Figura 14: Mockup – Analíticas Completas (Clientes)</strong><br>
 Panel de métricas, gráficos y KPI para clientes.</p>
-<img src="./resources/web_application_14.jpeg" alt="web_appliaction_14" width="500" height="500">
+<img src="./resources/web_application_13.jpeg" alt="web_appliaction_14" width="500" height="500">
 
 <p><strong>Mockups Empresa</strong></p>
 
@@ -1030,11 +1030,11 @@ Inventario y control de equipos bajo responsabilidad de la empresa.</p>
 
 <p><strong>Figura 23: Mockup – Notificaciones (Empresa)</strong><br>
 Centro de avisos, eventos del sistema y comunicaciones.</p>
-<img src="./resources/web_application_23.jpeg" alt="web_appliaction_23" width="500" height="500">
+<img src="./resources/web_application_10.jpeg" alt="web_appliaction_23" width="500" height="500">
 
 <p><strong>Figura 24: Mockup – Solicitudes (Empresa)</strong><br>
 Bandeja de solicitudes entrantes y su procesamiento.</p>
-<img src="./resources/web_application_24.jpeg" alt="web_appliaction_24" width="500" height="500">
+<img src="./resources/web_application_23.jpeg" alt="web_appliaction_24" width="500" height="500">
 
 <p><strong>Figura 25: Mockup – Órdenes de Trabajo (Empresa)</strong><br>
 Gestión y seguimiento de órdenes de trabajo.</p>
