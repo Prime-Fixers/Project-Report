@@ -786,3 +786,53 @@ En esta sección se incluye un formulario para que los usuarios puedan comunicar
 ### 4.4.1. Web Applications Wireframes
 
 Los wireframes de las aplicaciones web de Frostlink establecen la estructura general y la organización de las pantallas principales, detallando la ubicación de los componentes de la interfaz y los recorridos de navegación. Actúan como una referencia visual para el diseño final, garantizando una experiencia de usuario coherente y fácil de seguir. Estos diagramas priorizan la usabilidad y la claridad, permitiendo que diseñadores y desarrolladores anticipen cómo interactuarán los usuarios con la aplicación y optimicen la distribución de los elementos para ofrecer una experiencia ágil y atractiva.
+
+<img src="./resources/Wireframe_1.jpeg" alt="wireframe_1" width="500" height="500">
+
+<img src="./resources/Wireframe_2.jpeg" alt="wireframe_2" width="500" height="500">
+
+<img src="./resources/Wireframe_3.jpeg" alt="wireframe_3" width="500" height="500">
+
+<img src="./resources/Wireframe_4.jpeg" alt="wireframe_4" width="500" height="500">
+
+<img src="./resources/Wireframe_5.jpeg" alt="wireframe_5" width="500" height="500">
+
+<img src="./resources/Wireframe_6.jpeg" alt="wireframe_6" width="500" height="500">
+
+<img src="./resources/Wireframe_7.jpeg" alt="wireframe_7" width="500" height="500">
+
+<img src="./resources/Wireframe_8.jpeg" alt="wireframe_8" width="500" height="500">
+
+<img src="./resources/Wireframe_9.jpeg" alt="wireframe_9" width="500" height="500">
+
+<img src="./resources/Wireframe_10.jpeg" alt="wireframe_10" width="500" height="500">
+
+<img src="./resources/Wireframe_11.jpeg" alt="wireframe_11" width="500" height="500">
+
+<img src="./resources/Wireframe_12.jpeg" alt="wireframe_12" width="500" height="500">
+
+<img src="./resources/Wireframe_13.jpeg" alt="wireframe_13" width="500" height="500">
+
+<img src="./resources/Wireframe_14.jpeg" alt="wireframe_14" width="500" height="500">
+
+<img src="./resources/Wireframe_15.jpeg" alt="wireframe_15" width="500" height="500">
+
+<img src="./resources/Wireframe_16.jpeg" alt="wireframe_16" width="500" height="500">
+
+<img src="./resources/Wireframe_17.jpeg" alt="wireframe_17" width="500" height="500">
+
+<img src="./resources/Wireframe_18.jpeg" alt="wireframe_18" width="500" height="500">
+
+<img src="./resources/Wireframe_19.jpeg" alt="wireframe_19" width="500" height="500">
+
+<img src="./resources/Wireframe_20.jpeg" alt="wireframe_20" width="500" height="500">
+
+<img src="./resources/Wireframe_21.jpeg" alt="wireframe_21" width="500" height="500">
+
+<img src="./resources/Wireframe_22.jpeg" alt="wireframe_22" width="500" height="500">
+
+<img src="./resources/Wireframe_23.jpeg" alt="wireframe_23" width="500" height="500">
+
+<img src="./resources/Wireframe_24.jpeg" alt="wireframe_24" width="500" height="500">
+
+<img src="./resources/Wireframe_25.jpeg" alt="wireframe_25" width="500" height="500">
