@@ -1032,6 +1032,164 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
 
 ### 2.1.2. Estrategias y tácticas frente a competidores.
 
+#### 1. Destacar la Especialización en Refrigeración y la Gestión Integral  
+* Contexto:  
+    * Fortalezas de competidores: ServiceTitan y Facilio se posicionan como soluciones estándar en gestión de operaciones, con amplia red de integraciones y un alcance corporativo global. TempGenius ofrece hardware certificado y cumplimiento normativo.  
+    * Nuestras fortalezas: Tenemos un enfoque específico en refrigeración, con una plataforma basada en la nube que integra monitoreo en tiempo real, mantenimiento predictivo, alertas y trazabilidad completa.  
+* Táctica:  
+    * Desarrollar estudios de caso en supermercados, restaurantes y laboratorios que demuestren cómo nuestra solución reduce pérdidas y costos energéticos, reforzando la percepción de que somos expertos en la cadena de frío.  
+
+---
+
+#### 2. Accesibilidad y Adaptación a PYMEs  
+* Contexto:  
+    * Fortalezas de competidores: ServiceTitan y Facilio cuentan con planes robustos, pero con costos altos que los hacen atractivos solo para corporaciones medianas y grandes. TempGenius implica inversión inicial fuerte en hardware.  
+    * Nuestras fortalezas: Ofrecemos planes modulares y escalables con precios accesibles, diseñados específicamente para pequeñas y medianas empresas en Latinoamérica.  
+* Táctica:  
+    * Implementar campañas de marketing con énfasis en el bajo costo de entrada, el modelo freemium y las pruebas gratuitas de 14 días, demostrando que democratizamos la tecnología de monitoreo.  
+
+---
+
+#### 3. Experiencia de Usuario Simple con Soporte Local  
+* Contexto:  
+    * Fortalezas de competidores: ServiceTitan tiene aplicaciones móviles muy completas para técnicos, Facilio ofrece integraciones IoT avanzadas y TempGenius garantiza confiabilidad en datos.  
+    * Nuestras fortalezas: Diseñamos una interfaz amigable, en español, pensada para usuarios no técnicos, acompañada de soporte cercano en horarios locales.  
+* Táctica:  
+    * Publicar tutoriales interactivos, webinars y contenidos educativos que muestren la facilidad de uso, destacando testimonios de usuarios que lograron digitalizarse sin fricciones.  
+
+---
+
+#### 4. Innovación mediante Mantenimiento Predictivo  
+* Contexto:  
+    * Fortalezas de competidores: TempGenius asegura cumplimiento regulatorio, mientras que ServiceTitan y Facilio ofrecen herramientas de gestión administrativa avanzada.  
+    * Nuestras fortalezas: Ofrecemos inteligencia artificial para detectar patrones de fallas, optimizar mantenimientos y generar recomendaciones proactivas que previenen incidentes.  
+* Táctica:  
+    * Realizar campañas de comunicación que resalten los ahorros tangibles gracias al mantenimiento predictivo, con métricas claras sobre reducción de fallas y costos energéticos.  
+
+---
+
+#### 5. Alianzas Estratégicas para Expansión  
+* Contexto:  
+    * Fortalezas de competidores: ServiceTitan tiene un ecosistema consolidado de integraciones, Facilio se apoya en alianzas globales de IoT, y TempGenius trabaja con distribuidores en sectores médicos.  
+    * Nuestras fortalezas: Podemos crear alianzas con proveedores locales de refrigeración, distribuidores de equipos y gremios empresariales en Perú y Latinoamérica.  
+* Táctica:  
+    * Establecer convenios con proveedores para incluir FrostLink como servicio posventa, y usar estas alianzas como canal de marketing para ganar confianza y penetración en el mercado.  
+
+---
+
+#### 6. Confianza y Cumplimiento Normativo  
+* Contexto:  
+    * Fortalezas de competidores: TempGenius lidera en cumplimiento normativo en EE. UU., ServiceTitan garantiza trazabilidad de operaciones y Facilio se adapta a normas de facility management.  
+    * Nuestras fortalezas: Aseguramos trazabilidad completa de equipos, reportes auditables y datos seguros, adaptados a normativas locales de alimentos y farmacéutica en Latinoamérica.  
+* Táctica:  
+    * Generar certificaciones locales y regionales (ej. HACCP, BPM) y usar estos sellos en todas nuestras comunicaciones de marketing como símbolo de confianza y seguridad de datos.  
+
+<div style="page-break-before: always;"></div>
+
+## 2.2. Entrevistas
+
+### 2.2.1. Diseño de entrevistas.
+
+**Segmento 1: Negocios que utilizan equipos de refrigeración**
+
+1. ¿Qué edad tiene?  
+
+2. ¿De dónde es y a qué se dedica?  
+
+3. ¿Qué tipo de negocio tiene y qué productos necesita mantener en frío?  
+
+4. ¿Cuántos equipos de refrigeración tiene actualmente?  
+
+5. ¿Ha tenido pérdidas por fallas en sus equipos? ¿Qué impacto tuvo?  
+
+6. ¿Cómo monitorea hoy el estado (temperatura, consumo, fallas) de esos equipos?  
+
+7. ¿Con qué frecuencia realiza mantenimiento y quién se encarga?  
+
+8. ¿Utiliza alguna herramienta digital para la gestión de estos equipos?  
+
+9. ¿Qué tan útil le parecería recibir alertas automáticas por fallas o variaciones de temperatura?  
+
+10. ¿Le interesaría tener un historial técnico y reportes automáticos por cada equipo? 
+11. ¿Estaría dispuesto a pagar una suscripción si esto evita pérdidas y mejora la eficiencia? 
+12. ¿Qué funcionalidades sí o sí debería tener una herramienta de este tipo para que usted la use? 
+13. ¿Preferiría acceder a la herramienta desde su celular o computadora?
+14. ¿Qué le haría dejar de usar una aplicación de este tipo?  
+
+**Segmento 2: Empresas proveedoras de servicios y equipos de refrigeración**
+
+1. ¿Qué edad tiene? 
+2. ¿De dónde es? 
+3. ¿A qué se dedica específicamente y hace cuánto trabaja en el rubro? 
+4. ¿Cuántos clientes o negocios atiende regularmente? 
+5. ¿Cómo organiza sus visitas técnicas y mantenimientos? 
+6. ¿Lleva un historial técnico de los equipos que repara? ¿Cómo lo gestiona?  
+7. ¿Cuáles son las principales dificultades que enfrenta su empresa al coordinar servicios técnicos?  
+8. ¿Cómo coordina hoy sus rutas o visitas? ¿Utiliza alguna herramienta o lo hace manualmente? 
+9. ¿Qué tan útil le sería tener una app donde pueda ver todos los equipos que provee o atiende?  
+10. ¿Le interesaría recibir alertas sobre fallas en los equipos de sus clientes en el momento en el que suceden?  
+11. ¿Qué tanto valora poder generar reportes automáticos y mantener trazabilidad de cada intervención?  
+12. ¿Estaría dispuesto a usar una plataforma que le ayude a organizarse mejor y escalar su servicio?  
+13. ¿Ha probado alguna solución parecida antes? ¿Por qué la dejó de usar (si la dejó)?  
+14. ¿Qué beneficios cree que podría tener la implementación de una solución digital como FrostIq a su empresa?
+
+### 2.2.2. Registro de entrevistas.
+
+<table style="
+          width: 100%;
+          border-collapse: collapse;
+          font-family: Arial, sans-serif;
+          margin-bottom: 40px;">
+  <thead>
+    <tr>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>SEGMENTO OBJETIVO: NEGOCIOS</strong></th>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>#1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; background-color: #fafafa; border-radius: 10px; padding: 24px;">
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
+              <li><strong>Nombres:</strong> </li>
+              <li><strong>Apellidos:</strong> </li>
+              <li><strong>Edad:</strong> </li>
+              <li><strong>Distrito:</strong> </li>
+              <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 00:00</li>
+              <li><strong>Duración:</strong> </li>
+            </ul>
+          </div>
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="" alt="Screenshot de la entrevista">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="background-color: #f9f9f9; border-radius: 10px; padding: 24px; margin-top: 12px;">
+          <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Resumen</p>
+          f
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
 
 
 
