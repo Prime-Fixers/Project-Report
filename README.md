@@ -227,7 +227,7 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
   </tr>
   <tr>
     <td>Varela Bustinza, Marcelo Alessandro</td>
-    <td></td>
+    <td>VarBus</td>
   </tr>
 </table>
 
