@@ -736,20 +736,20 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
         </tr>
         <tr>
             <th style="border: 1px solid #000; padding: 10px;font-weight: bold;" colspan="2">(En la cabecera colocar por cada competidor nombre y logo)</th>
-            <th style="border: 1px solid #000; padding: 10px;font-weight: bold; width: 20%; text-align: center;">Galaxia Wonder
-            <img style="display : flex; justify-content: center;" src="./img/chapter2/statupLogo.png" alt="Galaxia Wonder logo">
+            <th style="border: 1px solid #000; padding: 10px;font-weight: bold; width: 20%; text-align: center;">PrimeFixers
+            <img style="display : flex; justify-content: center;" src="/resources/logo_startup.png" alt="PrimeFixers logo">
             </th>
             <th style="border: 1px solid #000; padding: 10px;font-weight: bold; width: 20%; text-align: center;">
-                Autodesk Construction Cloud
-                <img style="display : flex; justify-content: center;" src="./img/chapter2/competidor1Logo.png" alt="Logo1">
+                ServiceTitan
+                <img style="display : flex; justify-content: center;" src="/resources/competidor1.jpeg" alt="Logo1">
             </th>
             <th style="border: 1px solid #000; padding: 10px;font-weight: bold; width: 20%; text-align: center;">
-                Procore
-                <img style="display : flex; justify-content: center;" src="./img/chapter2/competidor2Logo.png" alt="Logo2">
+                Facilio
+                <img style="display : flex; justify-content: center;" src="/resources/competidor2.png" alt="Logo2">
             </th>
             <th style="border: 1px solid #000; padding: 10px;font-weight: bold; width: 20%; text-align: center;">
-                Deltek ComputerEase
-                <img style="display : flex; justify-content: center;" src="./img/chapter2/competidor3Logo.png" alt="Logo3">
+                TempGenius
+                <img style="display : flex; justify-content: center;" src="/resources/competidor3.jpeg" alt="Logo3">
             </th>
         </tr>
     </thead>
@@ -758,16 +758,16 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
             <th style="border: 1px solid #000; padding: 10px; font-weight: normal; width: 12%; writing-mode: tb-rl; text-align: center; vertical-align: middle; white-space: nowrap; font-weight: bold; width: 8%;" rowspan="2">Perfil</th>
             <th style="border: 1px solid #000; padding: 10px; font-weight: normal; width: 12%;">Overview</th>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Galaxia Wonder ofrece un sistema de gestión de proyectos de ingeniería civil diseñado para contratistas, consultoras pequeñas de obras y subcontratistas. La plataforma permite gestionar proyectos, planificar cronogramas, controlar costos, administrar documentación técnica y organizar expedientes técnicos en un solo lugar, asegurando eficiencia y cumplimiento de plazos.
+                Solución de monitoreo de equipos de refrigeración para negocios que dependen críticamente del frío (supermercados, minimarkets, laboratorios, restaurantes, sector alimentario/farmacéutico), técnicos y proveedores de refrigeración.
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Esta plataforma conecta flujos de trabajo, equipos y datos en todas las etapas de la construcción, facilitando la colaboración y mejorando la eficiencia en proyectos de construcción.
+                Software de gestión de servicios de campo (Field Service Management) con enfoque en HVAC, fontanería, eléctricas, etc. Ofrece también para refrigeración. Funcionalidades: despacho, programación, estimaciones en sitio, facturación, historial de clientes, optimización de rutas, aplicación móvil para técnicos.
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Procore ofrece una solución integral en línea para la gestión de proyectos de construcción, incluyendo control de costos, comunicaciones y colaboración, utilizada ampliamente en la industria.
+                Plataforma de gestión de instalaciones / facility management IoT / CMMS orientada a empresas medianas a grandes con muchos activos, múltiples ubicaciones. Ofrece gestión de mantenimiento, alertas, integración IoT, reportes, dashboards, etc.
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Software de contabilidad y gestión de proyectos de construcción que integra costos laborales con herramientas remotas, ayudando a las empresas a gestionar eficazmente sus proyectos y finanzas.
+                Sistemas de monitoreo de temperatura (y humedad) para refrigeradores, freezers, instalaciones sensibles (laboratorios, alimentos, vacunas). Hardware + software: sensores, alertas, registro, monitoreo remoto.
             </td>
         </tr>
         <tr>
@@ -776,13 +776,13 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
                 Galaxia Wonder se diferencia por ser una nube especializada en la gestión de proyectos de ingeniería civil, ofreciendo una solución integral que combina planificación, control de costos, gestión documental y expedientes técnicos en una sola plataforma.
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Ofrece una integración completa de herramientas para la gestión de proyectos de construcción, desde el diseño hasta la adjudicación.
+                ServiceTitan está orientado a múltiples rubros de servicios (HVAC, plomería, electricidad) y cobra tarifas elevadas (~US$200–300 por técnico/mes).
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Procore destaca por su interfaz intuitiva y facilidad de uso, lo que permite a los equipos de construcción gestionar proyectos de manera efectiva sin necesidad de una curva de aprendizaje extensa.
+                Facilio está diseñado para empresas grandes con costos iniciales de ~US$10,000/año y despliegues complejos.
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Se enfoca en ofrecer una solución integral para la planificación y gestión de proyectos en el sector de la construccción.
+                TempGenius se centra principalmente en hardware de sensores para temperatura y humedad, con instalaciones que pueden costar desde US$2,000 hasta más de US$5,000, pero sin una gestión integral del mantenimiento.
             </td>
         </tr>
         <tr>
@@ -790,26 +790,26 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
             <th style="border: 1px solid #000; padding: 10px; font-weight: normal; width: 12%;">Mercado objetivo</th>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Contratistas independientes.</li>
-                    <li>Consultoras pequeñas de obras.</li>
+                    <li>Supermercados, minimarkets, restaurantes, laboratorios y farmacias en Perú y Latinoamérica, con énfasis en PYMEs que dependen críticamente de la cadena de frío.</li>
+                    <li>Técnicos independientes y proveedores locales de refrigeración que necesitan una plataforma para gestionar clientes, visitas y mantenimientos.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Grandes empresas de construcción.</li>
-                    <li>Consultoras de ingeniería.</li>
+                    <li>Empresas de servicios de campo (HVAC, plomería, electricidad, fontanería, climatización), principalmente en EE. UU. y mercados desarrollados.</li>
+                    <li>Está orientado a contratistas medianos y grandes, con múltiples técnicos en campo, que buscan integrar facturación, despacho, CRM y optimización de rutas.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Contratistas generales.</li>
-                    <li>Subcontratistas.</li>
-                    <li>Empresas constructoras.</li>
+                    <li>Empresas de facility management y gestión de activos en múltiples ubicaciones.</li>
+                    <li>Corporaciones, centros comerciales, edificios inteligentes, hospitales y grandes cadenas que necesitan centralizar operaciones de mantenimiento e IoT.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Contratistas de construcción.</li>
+                    <li>Negocios que requieren monitoreo estricto de temperatura/humedad para cumplimiento normativo: hospitales, laboratorios, farmacias, almacenes de vacunas y alimentos.</li>
+                    <li>Empresas que necesitan garantizar trazabilidad ambiental en instalaciones críticas.</li>
                 </ul>
             </td>
         </tr>
@@ -817,30 +817,30 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
             <th style="border: 1px solid #000; padding: 10px; font-weight: normal; width: 12%;">Estrategias de marketing</th>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Prueba Gratuita de 14 o 30 Días.</li>
-                    <li>Casos de Éxito.</li>
-                    <li>Campañas de redes sociales.</li>
+                    <li>Marketing digital local: campañas en LinkedIn, Facebook e Instagram dirigidas a supermercados, restaurantes y PYMEs en Perú y LATAM.</li>
+                    <li>Alianzas con proveedores de equipos de refrigeración para incluir FrostLink como parte de sus paquetes posventa.</li>
+                    <li>Prueba gratuita o modelo freemium (14 días o versión básica) para demostrar valor antes de la conversión a pago.</li>
                 </ul> 
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Marketing de Contenidos.</li>
-                    <li>Webinars y Formación en Línea.</li>
-                    <li>Publicidad Digital y Redes Sociales.</li>
+                    <li>Inbound marketing robusto: blogs, guías y contenido SEO sobre HVAC, plomería, gestión de servicios de campo.</li>
+                    <li>Webinars y demostraciones en vivo para educar a clientes potenciales en EE. UU.</li>
+                    <li>Eventos y ferias industriales relacionadas con servicios técnicos y HVAC.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Email Marketing.</li>
-                    <li>Convenios con Empresas Constructoras y Gobiernos.</li>
-                    <li>Eventos en línea.</li>
+                    <li>Marketing de contenidos B2B: whitepapers, reportes y casos de éxito en facility management y sostenibilidad.</li>
+                    <li>Participación en ferias internacionales de IoT, edificios inteligentes y sostenibilidad.</li>
+                    <li>Alianzas estratégicas con empresas de IoT y automatización para aumentar credibilidad.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Eventos y Webinars de Capacitación.</li>
-                    <li>Estrategia de Publicidad Directa.</li>
-                    <li>Referencias y Testimonios.</li>
+                    <li>Marketing orientado a cumplimiento normativo (FDA, HACCP, CDC): enfocado en hospitales, laboratorios y farmacéuticas.</li>
+                    <li>Página web centrada en verticales específicos (vacunas, hospitales, restaurantes, universidades).</li>
+                    <li>Estrategia de venta directa consultiva: asesores que personalizan soluciones según la necesidad del cliente.</li>
                 </ul>
             </td>
         </tr>
@@ -848,60 +848,60 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
             <th style="border: 1px solid #000; padding: 10px; font-weight: normal; width: 12%;">Productos & Servicios</th>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Aplicación web para gestión de proyectos, planificación y optimización de recursos para agilizar los procesos y plazos del desarrollo de un proyecto.</li>
-                    <li>Gestor de expedientes y fichas técnicas en base a roles predefinidos.</li>
-                    <li>Funciona como nube para almacenamiento de documentos.</li>
+                    <li>Monitoreo en tiempo real de temperatura, consumo energético y horas de uso.</li>
+                    <li>Alertas automatizadas ante fallas o anomalías detectadas.</li>
+                    <li>Historial técnico completo y reportes exportables en PDF.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Plataforma para la gestión de licitaciones y conexión con contratistas, facilitando la comunicación durante las fases iniciales del proyecto.</li>
-                    <li>Herramienta para la gestión de planos y documentos en proyectos de construcción, permitiendo a los equipos acceder y actualizar información en tiempo real en la obra.</li>
-                    <li>Servicios adicionales para adaptar el software a las necesidades específicas de cada cliente o tipo de proyecto.</li>
+                    <li>Software de gestión de servicios de campo (FSM).</li>
+                    <li>Programación y despacho de técnicos en tiempo real.</li>
+                    <li>CRM integrado para seguimiento de clientes y prospectos.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Construction Financials: Herramienta enfocada en la gestión financiera del proyecto, como presupuestos, órdenes de cambio y pagos a contratistas, integrando la contabilidad con la gestión del proyecto.</li>
-                    <li>Consultoría personalizada: Servicios de implementación y consultoría para adaptar el software a las necesidades de cada cliente.</li>
+                    <li>Plataforma de Facility Management con integración IoT.</li>
+                    <li>Gestión de activos y mantenimientos en múltiples ubicaciones.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Software de contabilidad para la construcción</li>
-                    <li>Gestión de proyectos: Herramienta de gestión integral que ayuda a los contratistas a planificar, programar y controlar los proyectos, asegurando que se mantengan dentro del presupuesto y cronograma.</li>
-                    <li>Soporte técnico y consultoría</li>
+                    <li>Monitoreo inalámbrico de temperatura y humedad en refrigeradores, freezers e instalaciones críticas.</li>
+                    <li>Sensores calibrados y certificados para cumplir con normativas FDA, HACCP, CDC.</li>
+                    <li>Alertas en tiempo real por SMS, email o llamadas automáticas.</li>
                 </ul>
             </td>
         </tr>
         <tr>
             <th style="border: 1px solid #000; padding: 10px; font-weight: normal; width: 12%;">Precios & Costos</th>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Galaxia Wonder brinda una modelo de precios basado en suscripción. Además, evalua las funciones y caracteristicas del software en base al cliente.
+                Actualmente no tiene precios oficiales publicados, pero su propuesta de modelo está orientada a planes escalables y accesibles para PYMEs, con esquema de suscripción mensual por número de equipos y funcionalidades. Se plantea un modelo freemium con acceso básico gratuito, un plan estándar con reportes e historial técnico, y un plan premium con mantenimiento predictivo, soporte prioritario y analítica avanzada. La estrategia de costos busca ser significativamente más baja que la de competidores globales, apuntando a la accesibilidad en el mercado latinoamericano.
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Utiliza un modelo de precios basado en suscripción. Ofrece prubas gratuitas para su producto BIM 360.
+                No publica precios exactos en su web, ya que trabaja con cotización personalizada. Según fuentes externas y foros de usuarios, el costo suele estar en un rango de 200 a 300 dólares por técnico al mes, dependiendo de la cantidad de usuarios y módulos contratados. Adicionalmente, existen costos de implementación y entrenamiento que pueden superar los miles de dólares. Esto lo hace más viable para empresas medianas y grandes con alto presupuesto, pero poco atractivo para PYMEs.
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Procore utiliza un modelo de precios basado en suscripción. Los precios varian dependiendo de la organización, rondando entre $1,000 a $2,000 USD al mes. Además, ofrece una prueba gratuita de 14 días.
+                Su precio base se ubica aproximadamente en 10,000 dólares al año para una implementación inicial con funciones básicas, aunque el costo real depende del número de ubicaciones, activos gestionados y personal que usará la plataforma. A partir de ahí, los costos pueden escalar significativamente con integraciones IoT, soporte adicional y módulos avanzados. Se trata de una solución diseñada para corporaciones con presupuestos elevados y operaciones a gran escala, no para pequeños negocios.
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Deltek ComputerEase ofrece un modelo basado en suscripción o licencias perpetuas, dependiendo de las necesidades del cliente. Asimismo, cuenta con una demostración gratuita que debe ser solicitada.
+                Combina costos de hardware con software. Una instalación pequeña con menos de 5 sensores tiene un costo estimado de alrededor de 2,000 dólares, mientras que implementaciones de 20 sensores o más pueden costar en torno a 5,000 dólares. A esto se suman costos de suscripción para el software de monitoreo y mantenimiento. Es una solución más enfocada en sectores regulados como hospitales, laboratorios y farmacéuticas, donde la inversión inicial en hardware se justifica por el cumplimiento normativo.
             </td>
         </tr>
         <tr>
             <th style="border: 1px solid #000; padding: 10px; font-weight: normal; width: 12%;">Canales de distribución (Web y/o Móvil)</th>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Aplicación web.
+                Disponemos de una plataforma web accesible desde cualquier navegador y una aplicación móvil pensada para administradores y técnicos que trabajan en campo. Nuestra prioridad es que tanto usuarios técnicos como no técnicos puedan acceder fácilmente al monitoreo, alertas y reportes en cualquier momento y lugar.
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Dispone de aplicación web y aplicación móvil.
+                Opera a través de una plataforma web completa para gestión administrativa y una aplicación móvil avanzada que permite a los técnicos acceder a clientes, historial, cotizaciones y facturación directamente en sitio. Su canal móvil es clave para el trabajo de campo.
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Dispone de aplicación web y aplicación móvil.
+                Se centra principalmente en una plataforma web centralizada para facility managers y administradores corporativos. También ofrece una aplicación móvil complementaria, limitada a funciones básicas como tickets de mantenimiento y notificaciones.
             </td>
             <td style="border: 1px solid #000; padding: 10px;" style="text-align:center;">
-                Solo dispone de aplicación web.
+                Funciona principalmente con una plataforma web en la nube que recopila y gestiona la información de los sensores. El acceso móvil existe, pero está enfocado en notificaciones y reportes básicos, mientras que la mayor parte de la gestión ocurre desde la web.
             </td>
         </tr>
         <tr>
@@ -912,28 +912,28 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
             <th style="border: 1px solid #000; padding: 10px; font-weight: normal; width: 12%;">Fortalezas</th>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Enfoque Específico en Ingeniería Civil.</li>
-                    <li>Funciona como una nube.</li>
-                    <li>Gestión Integral de Expedientes Técnicos.</li>
+                    <li>Nos especializamos exclusivamente en refrigeración, ofreciendo una solución integral adaptada a negocios que dependen de la cadena de frío.</li>
+                    <li>Disponemos de un modelo flexible y accesible de precios, pensado para PYMEs y el mercado latinoamericano.</li>
+                    <li>Nuestra interfaz es intuitiva y fácil de usar, diseñada para usuarios no técnicos.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Es uno de los líderes en la tecnología BIM, lo que le permite ofrecer soluciones avanzadas para la gestión de la construcción desde la planificación hasta la adjudicación.</li>
-                    <li>Esta posicionada como el estándar en la industria de la construcción.</li>
-                    <li>Su infraestructura en la nube permite que los equipos de trabajo se conecten de manera remota desde cualquier lugar y dispositivo.</li>
+                    <li>Plataforma robusta y consolidada, con múltiples funcionalidades (CRM, facturación, rutas, gestión completa).</li>
+                    <li>Alta reputación en el mercado de servicios de campo (HVAC, plomería, electricidad).</li>
+                    <li>Amplia base de clientes y ecosistema de integraciones.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Amplia red de colaboradores e integraciones con otros sistemas de la industria.</li>
-                    <li>Ofrece una solución compacta, convirtiéndose en una opción atractiva para las grandes empresas.</li>
+                    <li>Plataforma IoT potente para gestión de instalaciones multi-sitio.</li>
+                    <li>Ideal para grandes corporaciones y facility managers.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Ofrece tanto herramientas de contabilidad como de gestión de proyectos, lo que permite a los contratistas tener una visión clara de sus operaciones y finanzas.</li>
-                    <li>Deltek ha ganado una base de clientes leales que aprecian la fiabilidad y la precisión de su software en la gestión financiera.</li>
+                    <li>Especialización en sensores de temperatura y humedad para sectores críticos (salud, farmacéutica, alimentos).</li>
+                    <li>Cumplimiento normativo (FDA, HACCP, CDC) que genera confianza.</li>
                 </ul>
             </td>
         </tr>
@@ -941,28 +941,28 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
             <th style="border: 1px solid #000; padding: 10px; font-weight: normal; width: 12%;">Debilidades</th>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Dependencia de Internet.</li>
-                    <li>Requiere inversión en marketing y captación de clientes.</li>
-                    <li>Funcionalidades menos competitivas.
+                    <li>Somos una startup nueva sin la reputación consolidada de competidores internacionales.</li>
+                    <li>Necesitamos asegurar la fiabilidad de los sensores y la precisión de los datos para generar confianza.</li>
+                    <li>Dependemos de alianzas con proveedores de hardware para garantizar escalabilidad.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>El precio de las suscripciones puede ser alto, especialmente para empresas pequeñas o medianas.</li>
-                    <li>Los productos de Autodesk pueden ser complejos y requerir tiempo para aprender a usarlos de manera eficiente, lo que puede ser una barrera para empresas pequeñas o sin experiencia.</li>
+                    <li>Costos elevados (200–300 USD por técnico al mes) que excluyen a PYMEs.</li>
+                    <li>Exceso de funcionalidades que puede complicar su adopción.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Aunque tiene muchas funciones, la personalización de algunas herramientas puede ser limitada en comparación con otros competidores.</li>
-                    <li>Los costos de suscripciones pueden ser prohibitivos para pequeñas empresas o aquellos con presupuestos ajustados, especialmente cuando se incluyen módulos adicionales.</li>
+                    <li>Costos iniciales muy elevados (≈10,000 USD/año o más).</li>
+                    <li>Complejidad de implementación y curva de aprendizaje.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Enfoque limitado en gestión de proyectos.</li>
-                    <li>Interfaz menos moderna.</li>
-                    <li>Precios menos competitivos.</li>
+                    <li>Alto costo inicial (2,000–5,000 USD por instalación).</li>
+                    <li>Limitada capacidad de gestión de mantenimiento predictivo y técnicos.</li>
+                    <li>Dependencia de hardware propietario que puede encarecer la adopción.</li>
                 </ul>
             </td>
         </tr>
@@ -970,30 +970,30 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
             <th style="border: 1px solid #000; padding: 10px; font-weight: normal; width: 12%;">Oportunidades</th>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Crecimiento del Sector Construcción.</li>
-                    <li>Digitalización y Transformación Digital.</li>
-                    <li>Integración con Otras Plataformas.</li>
+                    <li>Aumento de la demanda en sectores alimentarios, farmacéuticos y retail en Latinoamérica.</li>
+                    <li>Escasez de soluciones locales accesibles y con soporte cercano al cliente.</li>
+                    <li>Posibilidad de integrar inteligencia artificial y mantenimiento predictivo como ventaja diferencial.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Expansión a nuevos mercados.</li>
-                    <li>Aumento de la demanda de soluciones colaborativas.</li>
-                    <li>Avances tecnológicos.</li>
+                    <li>Expansión hacia nichos más especializados en refrigeración comercial.</li>
+                    <li>Desarrollo de planes más accesibles para pequeños negocios.</li>
+                    <li>Alianzas con fabricantes de equipos de refrigeración.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Crecimiento en mercados internacionales.</li>
-                    <li>Innovación en la automatización.</li>
-                    <li>Ampliación de funcionalidades.</li>
+                    <li>Expansión en mercados corporativos emergentes que buscan digitalización.</li>
+                    <li>Integraciones con hardware IoT especializado en refrigeración.</li>
+                    <li>Creciente demanda de sostenibilidad y eficiencia energética.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Expansión a nuevas funciones.</li>
-                    <li>Integración con nuevas tecnologías.</li>
-                    <li>Adopción de nuevas plataformas móviles.</li>
+                    <li>Creciente demanda de trazabilidad en cadena de frío, sobre todo en vacunas y alimentos.</li>
+                    <li>Expansión hacia soluciones híbridas de hardware + gestión técnica avanzada.</li>
+                    <li>Posibilidad de integrarse con plataformas de terceros para mejorar funcionalidades.</li>
                 </ul>
             </td>
         </tr>
@@ -1001,34 +1001,37 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
             <th style="border: 1px solid #000; padding: 10px; font-weight: normal; width: 12%;">Amenazas</th>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Resistencia al Cambio por Parte de Empresas Tradicionales.</li>
-                    <li>Preocupaciones de Seguridad y Privacidad.</li>
-                    <li>Integración al mercado como una startup emergente.</li>
+                    <li>Competidores globales con más recursos pueden entrar a nuestro mercado con planes reducidos.</li>
+                    <li>Costos de hardware (sensores) pueden encarecer la adopción en PYMEs.</li>
+                    <li>Resistencia al cambio en técnicos tradicionales que aún trabajan con métodos manuales.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Competencia creciente.</li>
-                    <li>Riesgo de obsolescencia.</li>
-                    <li>Condiciones económicas globales.</li>
+                    <li>Startups especializadas (como Prime Fixers) que cubren mejor el nicho de refrigeración.</li>
+                    <li>Saturación del mercado en EE. UU.</li>
+                    <li>Barreras de entrada en mercados internacionales con menor capacidad de pago.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Problemas con la adopción en mercados más pequeños.</li>
-                    <li>Desafíos de integración.</li>
+                    <li>Startups más ágiles con soluciones rápidas y económicas.</li>
+                    <li>Cambios tecnológicos en IoT que dejen obsoletos algunos módulos.</li>
                 </ul>
             </td>
             <td style="border: 1px solid #000; padding: 10px;">
                 <ul>
-                    <li>Presión de precios bajos.</li>
-                    <li>Cambios tecnológicos rápidos.</li>
-                    <li>Competencia de plataformas más completas.</li>
+                    <li>Competidores que ofrezcan soluciones integrales (monitoreo + gestión + IA).</li>
+                    <li>Bajada de precios en sensores genéricos IoT que reduzcan su ventaja competitiva.</li>
+                    <li>Riesgo de obsolescencia tecnológica si no actualizan hardware.</li>
                 </ul>
             </td>
         </tr>
     </tbody>
 </table>
+
+### 2.1.2. Estrategias y tácticas frente a competidores.
+
 
 
 
