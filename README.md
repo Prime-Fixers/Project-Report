@@ -1533,28 +1533,6 @@ Para el desarrollo de esta sección, nuestro equipo consideró diferentes etapas
 19. Notification (Notificación): Mensajes enviados automáticamente para informar sobre mantenimientos, fallas o cambios importantes.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
@@ -1648,6 +1626,12 @@ De manera complementaria, se utiliza una paleta de rojo claro para resaltar vent
 </center>
 
 *Figura 2:* Guías de Estilo Web - Color Rojo.
+
+### 4.1.3. Mobile Style Guidelines
+
+### 4.1.3.1. Web Style Guidelines
+
+### 4.1.3.2. Web Style Guidelines
 
 ## 4.2. Arquitectura de la Información
 ### 4.2.1. Sistemas de Organización
