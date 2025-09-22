@@ -219,7 +219,7 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
   </tr>
   <tr>
     <td>Medina Cruzado, Raúl Adrian</td>
-    <td></td>
+    <td>Necxuz18</td>
   </tr>
   <tr>
     <td></td>
@@ -240,7 +240,7 @@ Para la elaboración del informe correspondiente a la entrega del TB1, se realiz
 |  León Vivas, Fabrizio Amir  |                       |
 |      | |
 | Marcelo Varela  |  |
-|      |        |
+| Medina Cruzado, Raúl Adrian |        |
 
 
 # Contenido
