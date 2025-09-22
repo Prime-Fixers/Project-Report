@@ -235,12 +235,12 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 
 Para la elaboración del informe correspondiente a la entrega del TB1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas desde el capítulo I hasta el capitulo V.
 
-| Integrantes     | Tareas Asignadas                                                                                                                                                              |
-|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  León Vivas, Fabrizio Amir  |                       |
-|      | |
-| Marcelo Varela  |  |
-|      |        |
+| Integrantes                         | Tareas Asignadas                                                                                                                                                              |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| León Vivas, Fabrizio Amir           |                       |
+| Medina Cruzado, Raúl Adrian         | |
+| Varela Bustinza, Marcelo Alessandro | Participé en el diseño de interfaz y arquitectura (wireframes, mock-ups, prototipos, diagramas C4 y de clases), asegurando coherencia entre experiencia de usuario y modelo de software. |
+|                                     |        |
 
 
 # Contenido
