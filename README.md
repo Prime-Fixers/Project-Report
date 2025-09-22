@@ -501,6 +501,7 @@ Visión: Aspiramos a convertirnos en la empresa líder en gestión y mantenimien
 |**** <br> | <img src="" alt="kevin image" width="200">  |
 | **a**<br>                                                     | <img src="https://files.catbox.moe/u1b8w5.jpg" alt="kevin image" width="200">  | 
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
+| **Raúl Meidna**<br>Como estudiante de la carrera de Ingeniería de Software, soy apasionado por la ciencia de datos. Me motiva descubrir cómo el análisis y la interpretación de grandes volúmenes de información pueden generar soluciones innovadoras dentro del desarrollo de software. Me interesa explorar cómo los datos pueden optimizar procesos, anticipar errores y mejorar la toma de decisiones. Confío en que, junto a mi equipo, podré seguir fortaleciendo mis habilidades y contribuir de manera significativa en cada etapa del proyecto. | <img src="/resources/Raul.jpeg" alt="Raul imagen" width="200"> |
 
 ## 1.2. Solution Profile
 
