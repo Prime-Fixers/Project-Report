@@ -65,8 +65,8 @@
    <td>U202210938</td>
    </tr>
    <tr>
-   <td>Integrante 3</td>
-   <td>U</td>
+   <td>Mondoñedo Rodriguez, Juan Diego Javier</td>
+   <td>U202110373</td>
    </tr>
    <tr>
    <td>Varela Bustinza, Marcelo Alessandro</td>
@@ -102,7 +102,7 @@
                 <ul>   
                     <li>León Vivas, Fabrizio Amir</li>
                     <li>Medina Cruzado, Raúl Adrian</li>
-                    <li></li>
+                    <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
                     <li>Varela Bustinza, Marcelo Alessandro</li>
                 </ul>
             </td>
@@ -222,8 +222,8 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
     <td>Necxuz18</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Mondoñedo Rodriguez, Juan Diego Javier</td>
+    <td>Jmondonedor</td>
   </tr>
   <tr>
     <td>Varela Bustinza, Marcelo Alessandro</td>
@@ -468,7 +468,7 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong>  </li>
                     <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
-                    <li><strong></strong> </li>
+                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong> </li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
                 </ul>
             </td>
@@ -2283,3 +2283,299 @@ Se expone la arquitectura de software orientada al dominio para Frostlink. A tra
 ### 4.8.1. Database Diagram
 <p>El diagrama de base de datos muestra cómo se relacionan las tablas, incluyendo claves primarias y foráneas, así como las cardinalidades (uno a uno, uno a muchos y muchos a muchos).</p>
 <img src="./resources/diagram-class.png" alt="diagram_class" width="500" height="500">
+
+# Capítulo V: Product Implementation, Validation & Deployment
+
+## 5.1. Software Configuration Management
+
+### 5.1.1. Software Development Environment Configuration
+
+**Project Management**
+
+Trello: Para gestión general los sprints, tareas del equipo, etc.
+- Link: [Trello](https://trello.com)
+
+**Product UX/UI Design:**
+
+Figma: Para diseños como Wireframes, Mockups, Prototypes, etc.
+- Link: [Figma](https://figma.com)
+
+Vertabelo: Para diagramas de base de datos (ERD, diagramas de clases, etc.)
+- Link: [Vertabelo](https://vertabelo.com)
+
+**Software Development:**
+
+Visual Studio Code: Para el desarrollo de la Landing Page del proyecto.
+- Link: LandingPage
+
+**Software Documentation:**
+
+Visual Studio Code: Para la documentación de FrostLink se utilizó Visual Studio Code para el desarrollo de los capítulos en formato Markdown.
+- Link: Documentation
+
+### 5.1.2. Source Code Management
+
+Para todo el desarrollo de FrostLink se usará el flujo de trabajo de Gitflow.
+
+**Flujo de trabajo GitFlow:**
+
+**Main branch**
+- La rama principal (main) es donde se mantiene el código más estable y desplegado.
+
+**Develop branch**
+- La rama develop actúa como el área principal donde se integran los últimos avances y correcciones antes de hacerles merge a master.
+
+**Release branch**
+- Las ramas release facilitan la preparación para una nueva versión del producto. Nos permiten aplicar correcciones menores en caso de imprevistos mientras develop sigue recibiendo nuevas funcionalidades.
+- Deriva de: develop
+- Se fusiona en: develop y master
+
+**Feature branch**
+- Las ramas feature son utilizadas para desarrollar nuevas funcionalidades o mejoras específicas. Cada característica se desarrolla de forma aislada hasta estar lista para integrarse.
+- Deriva de: develop
+- Se fusiona de regreso a: develop
+
+**Hotfix branch**
+- Las ramas hotfix se crean para corregir errores críticos detectados en producción, asegurando una reacción rápida sin interrumpir el trabajo de desarrollo continuo.
+- Deriva de: master
+- Se fusiona en: master y develop
+
+**Conventional Commits**
+
+Aplicamos la convención Conventional Commits para redactar mensajes de commit claros, consistentes y semánticos. Esta práctica facilita el rastreo de cambios, la generación automática de registros de cambios y mejora la colaboración en equipo.
+
+**Tipos De Conventional Commits**
+
+- `feat`: Para introducir una nueva funcionalidad
+- `fix`: Para corregir un error existente
+- `docs`: Cambios relacionados a la documentación
+- `style`: Modificaciones de formato que no afectan el comportamiento del código
+- `refactor`: Reestructuraciones internas sin cambios funcionales o correcciones de errores
+- `test`: Agregado o modificación de pruebas
+- `chore`: Tareas de mantenimiento o cambios que no afectan el código de producción
+- `perf`: Mejoras de rendimiento
+
+### 5.1.3. Source Code Style Guide & Conventions
+
+Todo el código de la solución será escrito en inglés para mantener la consistencia internacional y facilitar su mantenimiento.
+
+**HTML**
+- Emplear nombres de etiquetas y atributos en minúscula
+- Cerrar correctamente todas las etiquetas HTML
+- Especificar siempre los atributos alt, width, y height para imágenes para mejorar la accesibilidad
+- Evitar espacios innecesarios en los atributos HTML
+
+**CSS**
+- Asignar nombres de IDs y clases descriptivos que reflejen el propósito del elemento
+- Utilizar nombres cortos pero claros para IDs y clases
+- Aplicar propiedades abreviadas cuando sea posible para optimizar el código
+- Evitar el uso de unidades después de valores de cero (0)
+- Ordenar las declaraciones CSS en orden alfabético para facilitar su lectura
+
+**JavaScript**
+- Mantener una sintaxis expandida: llaves de apertura en la misma línea de la declaración, cierre en línea nueva
+- Aplicar lowerCamelCase en el nombramiento de variables y funciones
+- Usar `let` y `const` para declarar variables en lugar de `var`
+- Asegurar que los nombres de las funciones sean descriptivos y en lowerCamelCase
+
+**Lenguaje Gherkin**
+- Redactar títulos descriptivos y concisos para escenarios (Feature, Scenario)
+- Respetar estrictamente la estructura Given-When-Then
+- Usar un lenguaje orientado al negocio, entendible para todos los stakeholders, evitando detalles técnicos
+- Implementar Scenario Outline cuando existan múltiples casos similares
+- Agregar comentarios cuando se requiera contexto o explicaciones adicionales
+
+### 5.1.4. Software Deployment Configuration  
+#### Landing Page Deployment  
+
+Realizaremos el despliegue de nuestra Landing utilizando la herramienta implementada de **GitHub Pages**. Para usarla, es necesario contar con acceso como administrador al repositorio del proyecto. A partir de ahí podemos proceder con el despliegue siguiendo los pasos a continuación:  
+
+1. **Creación de ramas**: Se crean ramas específicas para que cada miembro del equipo pueda trabajar en módulos o componentes del proyecto de forma organizada y sin generar conflictos en la rama principal.  
+
+2. **Estructura del proyecto**: Se define una estructura clara a seguir en todas las ramas, en nuestro caso seguiremos la estructura estándar pero utilizaremos una carpeta "resources" para imágenes y configuración i18n.  
+
+3. **Subida de archivos al repositorio**:  
+   - Instalación de Git.  
+   - Configuración del repositorio remoto.  
+   - Uso de comandos Git para hacer commit y push de los cambios.  
+
+4. **Configuración para despliegue en GitHub Pages**:  
+   - Instalamos el paquete **angular-cli-ghpages** con el comando:  
+     ```bash
+     npm install -g angular-cli-ghpages
+     ```  
+   - Editamos el archivo `angular.json` para asegurarnos de que el `baseHref` tenga el valor correcto:  
+     ```json
+     "baseHref": "/nombre-del-repo/"
+     ```  
+   - Ejecutamos el build de producción del proyecto Angular con:  
+     ```bash
+     ng build --configuration production --base-href "https://usuario.github.io/nombre-del-repo/"
+     ```  
+   - Desplegamos en GitHub Pages con el comando:  
+     ```bash
+     npx angular-cli-ghpages --dir=dist/nombre-del-proyecto
+     ```  
+
+5. **Habilitación de GitHub Pages**:  
+   - Accedemos a la configuración del repositorio en GitHub.  
+   - En la pestaña **Pages**, seleccionamos la rama `gh-pages` como origen del despliegue.  
+   - Guardamos los cambios y esperamos a que GitHub genere la URL de la landing.  
+
+6. **Resolución de conflictos**:  
+   - En caso de conflictos, se resuelven con herramientas como Visual Studio Code.  
+   - Se verifica que los conflictos hayan sido solucionados correctamente.  
+
+Con este flujo, la aplicación Angular queda desplegada en **GitHub Pages**, quedando disponible en la URL generada automáticamente y permitiendo actualizaciones cada vez que se ejecute un nuevo `ng build` y `angular-cli-ghpages`.  
+
+🔗 **Landing Page en GitHub Pages**: []()
+
+---
+
+#### Front End Web Application Deployment
+
+1. Iniciamos sesión en Netlify y vinculamos el repositorio correspondiente.  
+   ![Imagen 1]()
+
+2. Seleccionamos el proyecto adecuado desde la lista de repositorios.  
+   ![Imagen 2]()
+
+3. Completamos los campos necesarios:
+   - Equipo.
+   - Rama donde están los archivos.
+   - Nombre de la página a desplegar.  
+   ![Imagen 3]()  
+   ![Imagen 4]()
+
+4. Procedemos con el despliegue del sitio.  
+   ![Imagen 5]()
+
+5. Verificamos que el despliegue haya sido exitoso desde la sección de sitios activos en Netlify.  
+   ![Imagen 6]()  
+   ![Imagen 7]()
+
+🔗 **Página desplegada en Netlify**: []()
+
+El despliegue de la aplicación móvil nativa se realiza a través de las **tiendas oficiales de aplicaciones** (Google Play Store y Apple App Store). El proceso general es el siguiente:  
+
+1. **Compilación del proyecto**:  
+   - Para Android, se genera un archivo **APK** o **AAB** usando Android Studio o comandos de Angular/Ionic/React Native, según la tecnología utilizada.  
+   - Para iOS, se genera un archivo **IPA** utilizando Xcode.  
+
+2. **Configuración de cuentas de desarrollador**:  
+   - Registro en **Google Play Console** para Android.  
+   - Registro en **Apple Developer Program** para iOS.  
+
+3. **Subida de builds**:  
+   - Se carga el archivo compilado en la consola correspondiente.  
+   - Se completan los metadatos requeridos (nombre, descripción, imágenes, políticas de privacidad, clasificación por edades, etc.).  
+
+4. **Publicación y despliegue**:  
+   - En Android, la app se despliega después de la revisión automática de Google.  
+   - En iOS, Apple realiza una revisión manual antes de autorizar la publicación en la App Store.  
+
+Con este flujo, la aplicación queda disponible para descarga en dispositivos móviles, asegurando un canal oficial y seguro de distribución.  
+
+#### RESTful API and/or Serverless Backend Deployment  
+El despliegue de la API RESTful o backend serverless puede realizarse en **Azure**, aprovechando el servicio de **Azure App Service**. El proceso general es:  
+
+1. **Preparación del proyecto**:  
+   - Definir la estructura de endpoints y controladores.  
+   - Configurar el archivo `package.json` (si es Node.js) o el equivalente según el framework.  
+   - Crear un archivo de configuración `host.json` (en caso de usar Azure Functions).  
+
+2. **Despliegue**:  
+   - Iniciaremos sesión en Azure:  
+     ```bash
+     az login
+     ```  
+   - Crearemos un grupo de recursos (si no existe):  
+     ```bash
+     az group create --name FrostIQApi --location eastus
+     ```  
+   - Desplegaremos con **Azure App Service** (API REST):  
+     ```bash
+     az webapp up --name nombre-api --runtime "NODE:18-lts" --resource-group FrostIQApi
+     ```  
+
+3. **Pruebas post-deploy**:  
+   - Validaremos los endpoints con **Postman** o **cURL**.  
+   - Confirmaremos que el front-end (web o móvil) consume correctamente la API publicada en Azure.  
+
+4. **Monitoreo y escalabilidad**:  
+   - Usaremos **Azure Monitor** para métricas y logs.  
+   - Configuraremos reglas de **autoescalado** según el consumo de CPU, memoria o número de peticiones.  
+   - Revisaremos alertas para anticipar caídas o problemas de rendimiento.  
+
+Con este flujo, la API queda desplegada en **Azure**, disponible en una URL pública y lista para integrarse con las aplicaciones web y móviles.
+
+## 5.2. Product Implementation & Deployment.
+### 5.2.1. Sprint Backlogs
+#### 5.2.1.1 Sprint Backlog 1
+Durante el primer sprint, el equipo se propuso iniciar y finalizar la landing page. Para la organización y gestión de integrantes realizamos una división de las historias de usuario en tareas más pequeñas y su asignación según las habilidades de cada miembro. 
+
+<table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">User Story</th>
+                <th colspan="6">Work-Item/Task</th>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Estimation (Hours)</th>
+                <th>Assigned To</th>
+                <th>Status (To-do / In Process / To Review / Done)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>US00</td>
+                <td>Información del User Story</td>
+                <td>TK00</td>
+                <td>Configurar proyecto y estructura base</td>
+                <td>Crear estructura inicial del proyecto e implementar header con navegación y hero banner principal</td>
+                <td>0</td>
+                <td>Integrante</td>
+                <td>Done</td>
+            </tr>
+        </tbody>
+</table>
+
+### 5.2.2. Implemented Landing Page Evidence  
+En esta sección se presentan capturas de pantalla de la **Landing Page** ya implementada, mostrando su diseño, estructura y los elementos visuales clave que permiten la interacción con el usuario.  
+
+
+### 5.2.3. Implemented Frontend-Web Application Evidence  
+Aquí se incluyen capturas de la **aplicación web** en funcionamiento, donde se visualizan las pantallas principales, la navegación entre módulos y las funcionalidades desarrolladas en el front-end.  
+
+
+### 5.2.4. Implemented Native-Mobile Application Evidence  
+En esta parte se presentan capturas de la **aplicación móvil nativa**, evidenciando su diseño responsivo, la experiencia de usuario en dispositivos móviles y las principales características disponibles.  
+
+
+### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence  
+Se muestran capturas que validan la implementación de la **API RESTful** o backend serverless, incluyendo endpoints activos, pruebas realizadas en herramientas como Postman y la comunicación entre el front-end y el back-end.  
+
+
+### 5.2.6. RESTful API Documentation  
+Aquí se presenta evidencia de la **documentación de la API RESTful**, mostrando cómo se estructuran los endpoints, métodos, parámetros y ejemplos de uso, con el fin de facilitar la integración y el mantenimiento.  
+
+
+### 5.2.7. Team Collaboration Insights  
+En esta sección se incluyen evidencias de la **colaboración del equipo**, tales como el uso de control de versiones, tableros de tareas, discusiones técnicas y flujos de trabajo compartidos que permitieron coordinar el desarrollo.  
+
+# Video About-the-Product
+A continuación se encuentra nuestro video about the product, donde se evidencia la explicacion sobre los principales features, sustentacion de diseño  y proposito de la aplicacion.
+
+**Título:** ``
+<td><img src="resources/aboutTheProduct.png" alt="Screenshot del video about the product"></td>
+
+
+
+- **YouTube:** [Ver en YouTube]()
+- **Microsoft Stream:** [Ver video]()
+
