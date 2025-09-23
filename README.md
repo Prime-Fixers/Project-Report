@@ -1881,115 +1881,94 @@ Actúan como referencia visual para el diseño final, garantizando una experienc
 
 Estos diagramas priorizan la **usabilidad móvil** y la **claridad visual**, permitiendo que diseñadores y desarrolladores anticipen cómo los usuarios interactuarán con la aplicación mediante gestos táctiles y optimicen la distribución de elementos para ofrecer una experiencia ágil e intuitiva en dispositivos de pantalla reducida.
 
----
-
-## Figura 1: Wireframe Móvil – Alquiler de Equipos (Clientes)
-
-Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con: 
-<img src="./resources/RENT-CUSTOMER.jpeg" alt="RENT-CUSTOMER" width="500" height="500">
-
-# Wireframes Móviles - FrostLink
-
-Los wireframes de la aplicación móvil de **FrostLink** definen la estructura y organización de las pantallas principales para dispositivos **iOS** y **Android**, detallando la ubicación de componentes nativos de la interfaz y los flujos de navegación táctil.  
-Actúan como referencia visual para el diseño final, garantizando una experiencia de usuario coherente y optimizada para interacciones móviles.
-
-Estos diagramas priorizan la **usabilidad móvil** y la **claridad visual**, permitiendo que diseñadores y desarrolladores anticipen cómo los usuarios interactuarán con la aplicación mediante gestos táctiles y optimicen la distribución de elementos para ofrecer una experiencia ágil e intuitiva en dispositivos de pantalla reducida.
-
----
-
 ## Figura 1: Wireframe Móvil – Alquiler de Equipos (Clientes)
 Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con:
 
-- Navegación por pestañas  
-- **Cards desplazables** para mostrar equipos disponibles  
-- **Botones de acción flotantes (FAB)** para interacciones frecuentes  
-- Adaptación nativa para **iOS y Android**  
-
-<img src="./resources/RENT-CUSTOMER.jpeg" alt="RENT-CUSTOMER" width="500" height="500">
+<img src="./resources/RENT-CUSTOMER.jpg" alt="RENT-CUSTOMER" width="500" height="500">
 
 ---
 
 ## Figura 2: Wireframe Móvil – Agregar Equipos
 Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
 
-<img src="./resources/ADD-EQUIPMENT.jpeg" alt="ADD-EQUIPMENT" width="500" height="500">
+<img src="./resources/ADD-EQUIPMENT.jpg" alt="ADD-EQUIPMENT" width="500" height="500">
 
 ---
 
 ## Figura 3: Wireframe Móvil – Máquinas (Clientes)
 Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
 
-<img src="./resources/MACHINES-CUSTOMER.jpeg" alt="MACHINES-CUSTOMER" width="500" height="500">
+<img src="./resources/MACHINES-CUSTOMER.jpg" alt="MACHINES-CUSTOMER" width="500" height="500">
 
 ---
 
 ## Figura 4: Wireframe Móvil – Inicio (Clientes)
 Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
 
-<img src="./resources/HOME-CUSTOMER.jpeg" alt="HOME-CUSTOMER" width="500" height="500">
+<img src="./resources/HOME-CUSTOMER.jpg" alt="HOME-CUSTOMER" width="500" height="500">
 
 ---
 
 ## Figura 5: Wireframe Móvil – Registro (Clientes)
 Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
 
-<img src="./resources/REGISTER-CUSTOMER.jpeg" alt="REGISTER-CUSTOMER" width="500" height="500">
+<img src="./resources/REGISTER-CUSTOMER.jpg" alt="REGISTER-CUSTOMER" width="500" height="500">
 
 ---
 
 ## Figura 6: Wireframe Móvil – Inicio de Sesión (Clientes)
 Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
 
-<img src="./resources/LOGIN-CUSTOMER.jpeg" alt="LOGIN-CUSTOMER" width="500" height="500">
+<img src="./resources/LOGIN-CUSTOMER.jpg" alt="LOGIN-CUSTOMER" width="500" height="500">
 
 ---
 
 ## Figura 7: Wireframe Móvil – Inicio de Sesión (General)
 Pantalla de inicio de sesión para acceso general de la aplicación.
 
-<img src="./resources/LOGIN.jpeg" alt="LOGIN" width="500" height="500">
+<img src="./resources/LOGIN.jpg" alt="LOGIN" width="500" height="500">
 
 ---
 
 ## Figura 8: Wireframe Móvil – Registro (Empresas)
 Formulario para el registro de **nuevas empresas** dentro de la aplicación.
 
-<img src="./resources/REGISTER-COMPANIES.jpeg" alt="REGISTER-COMPANIES" width="500" height="500">
+<img src="./resources/REGISTER-COMPANIES.jpg" alt="REGISTER-COMPANIES" width="500" height="500">
 
 ---
 
 ## Figura 9: Wireframe Móvil – Inicio (Empresas)
 Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
 
-<img src="./resources/HOME-COMPANIES.jpeg" alt="HOME-COMPANIES" width="500" height="500">
+<img src="./resources/HOME-COMPANIES.jpg" alt="HOME-COMPANIES" width="500" height="500">
 
 ---
 
 ## Figura 10: Wireframe Móvil – Máquinas (Empresas)
 Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
 
-<img src="./resources/MACHINES-COMPANIES.jpeg" alt="MACHINES-COMPANIES" width="500" height="500">
+<img src="./resources/MACHINES-COMPANIES.jpg" alt="MACHINES-COMPANIES" width="500" height="500">
 
 ---
 
 ## Figura 11: Wireframe Móvil – Cuenta (Empresas)
 Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
 
-<img src="./resources/ACCOUNT-COMPANIES.jpeg" alt="ACCOUNT-COMPANIES" width="500" height="500">
+<img src="./resources/ACCOUNT-COMPANIES.jpg" alt="ACCOUNT-COMPANIES" width="500" height="500">
 
 ---
 
 ## Figura 12: Wireframe Móvil – Cuenta (General)
 Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
 
-<img src="./resources/ACCOUNT.jpeg" alt="ACCOUNT" width="500" height="500">
+<img src="./resources/ACCOUNT.jpg" alt="ACCOUNT" width="500" height="500">
 
 ---
 
 ## Figura 13: Wireframe Móvil – Gestión de Equipos
 Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
 
-<img src="./resources/MANAGE-EQUIPMENTS.jpeg" alt="MANAGE-EQUIPMENTS" width="500" height="500">
+<img src="./resources/MANAGE-EQUIPMENTS.jpg" alt="MANAGE-EQUIPMENTS" width="500" height="500">
 
 
 ### 4.4.3. Mobile Applications Mock-ups
@@ -2005,91 +1984,91 @@ Estos mockups priorizan la **usabilidad móvil** y la **claridad visual**, permi
 
 ## Figura 1: Mockup Móvil – Alquiler de Equipos (Clientes)
 Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con:
-<img src="./resources/RENT-CUSTOMER-MOCKUP.jpeg" alt="RENT-CUSTOMER-MOCKUP" width="500" height="500">
+<img src="./resources/RENT-CUSTOMER-MOCKUP.jpg" alt="RENT-CUSTOMER-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 2: Mockup Móvil – Agregar Equipos
 Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
 
-<img src="./resources/ADD-EQUIPMENT-MOCKUP.jpeg" alt="ADD-EQUIPMENT-MOCKUP" width="500" height="500">
+<img src="./resources/ADD-EQUIPMENT-MOCKUP.jpg" alt="ADD-EQUIPMENT-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 3: Mockup Móvil – Máquinas (Clientes)
 Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
 
-<img src="./resources/MACHINES-CUSTOMER-MOCKUP.jpeg" alt="MACHINES-CUSTOMER-MOCKUP" width="500" height="500">
+<img src="./resources/MACHINES-CUSTOMER-MOCKUP.jpg" alt="MACHINES-CUSTOMER-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 4: Mockup Móvil – Inicio (Clientes)
 Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
 
-<img src="./resources/HOME-CUSTOMER-MOCKUP.jpeg" alt="HOME-CUSTOMER-MOCKUP" width="500" height="500">
+<img src="./resources/HOME-CUSTOMER-MOCKUP.jpg" alt="HOME-CUSTOMER-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 5: Mockup Móvil – Registro (Clientes)
 Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
 
-<img src="./resources/REGISTER-CUSTOMER-MOCKUP.jpeg" alt="REGISTER-CUSTOMER-MOCKUP" width="500" height="500">
+<img src="./resources/REGISTER-CUSTOMER-MOCKUP.jpg" alt="REGISTER-CUSTOMER-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 6: Mockup Móvil – Inicio de Sesión (Clientes)
 Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
 
-<img src="./resources/LOGIN-CUSTOMER-MOCKUP.jpeg" alt="LOGIN-CUSTOMER-MOCKUP" width="500" height="500">
+<img src="./resources/LOGIN-CUSTOMER-MOCKUP.jpg" alt="LOGIN-CUSTOMER-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 7: Mockup Móvil – Inicio de Sesión (General)
 Pantalla de inicio de sesión para acceso general de la aplicación.
 
-<img src="./resources/LOGIN-MOCKUP.jpeg" alt="LOGIN-MOCKUP" width="500" height="500">
+<img src="./resources/LOGIN-MOCKUP.jpg" alt="LOGIN-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 8: Mockup Móvil – Registro (Empresas)
 Formulario para el registro de **nuevas empresas** dentro de la aplicación.
 
-<img src="./resources/REGISTER-COMPANIES-MOCKUP.jpeg" alt="REGISTER-COMPANIES-MOCKUP" width="500" height="500">
+<img src="./resources/REGISTER-COMPANIES-MOCKUP.jpg" alt="REGISTER-COMPANIES-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 9: Mockup Móvil – Inicio (Empresas)
 Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
 
-<img src="./resources/HOME-COMPANIES-MOCKUP.jpeg" alt="HOME-COMPANIES-MOCKUP" width="500" height="500">
+<img src="./resources/HOME-COMPANIES-MOCKUP.jpg" alt="HOME-COMPANIES-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 10: Mockup Móvil – Máquinas (Empresas)
 Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
 
-<img src="./resources/MACHINES-COMPANIES-MOCKUP.jpeg" alt="MACHINES-COMPANIES-MOCKUP" width="500" height="500">
+<img src="./resources/MACHINES-COMPANIES-MOCKUP.jpg" alt="MACHINES-COMPANIES-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 11: Mockup Móvil – Cuenta (Empresas)
 Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
 
-<img src="./resources/ACCOUNT-COMPANIES-MOCKUP.jpeg" alt="ACCOUNT-COMPANIES-MOCKUP" width="500" height="500">
+<img src="./resources/ACCOUNT-COMPANIES-MOCKUP.jpg" alt="ACCOUNT-COMPANIES-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 12: Mockup Móvil – Cuenta (General)
 Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
 
-<img src="./resources/ACCOUNT-MOCKUP.jpeg" alt="ACCOUNT-MOCKUP" width="500" height="500">
+<img src="./resources/ACCOUNT-MOCKUP.jpg" alt="ACCOUNT-MOCKUP" width="500" height="500">
 
 ---
 
 ## Figura 13: Mockup Móvil – Gestión de Equipos
 Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
 
-<img src="./resources/MANAGE-EQUIPMENTS-MOCKUP.jpeg" alt="MANAGE-EQUIPMENTS-MOCKUP" width="500" height="500">
+<img src="./resources/MANAGE-EQUIPMENTS-MOCKUP.jpg" alt="MANAGE-EQUIPMENTS-MOCKUP" width="500" height="500">
 
 
 ## 4.6. Web Applications UX/UI Design
