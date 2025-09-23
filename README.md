@@ -469,7 +469,7 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Fabrizio Amir León Vivas:</strong> Analicé el impacto de FrostLink en negocios que dependen de la cadena de frío, resaltando beneficios económicos al reducir pérdidas, sociales al garantizar calidad de productos y ambientales al optimizar el consumo energético.</li>
                     <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
                     <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong> </li>
-                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Asimismo, emití juicios informados considerando el impacto que las soluciones de software pueden tener en distintos contextos globales, económicos, sociales y ambientales, buscando que las propuestas de diseño y arquitectura no solo sean técnicamente viables, sino también sostenibles, inclusivas y generadoras de valor en la sociedad.</li>
                 </ul>
             </td>
             <td>
