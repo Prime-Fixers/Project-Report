@@ -1613,12 +1613,65 @@ Las historias de usuario de este proyecto se co-diseñaron por el equipo de desa
 | EP-06   | Evaluación de Servicios                    | Permite registrar y actualizar evaluaciones de clientes sobre servicios recibidos.                                  |
 | EP-07   | Sitio Web y Experiencia Web (Landing Page) | Abarca landing page, propuesta de valor, soluciones por segmento, solicitud de demo, contacto y acceso a login/app. |
 
-
-
 # 3.3. Impact Mapping.
 El equipo de FrostLink realizó de manera colaborativa, en UXPressia, un Impact Mapping para conectar y alinear los objetivos de negocio con los requerimientos funcionales de la plataforma.
 
 ![Impact-Mapping.png](resources/Impact-Mapping.png)
+
+# 3.4. Product Backlog
+A continuación se presenta el Product Backlog, que reúne todas las funcionalidades y características esenciales para construir la plataforma. El listado integra tanto historias de usuario como tareas técnicas que habilitan el avance incremental del proyecto. La priorización se realizó con la escala Fibonacci (1, 2, 3, 5, 8, 13, 21) para estimar el esfuerzo relativo de cada ítem y, según su relevancia y dependencias, se asignó cada uno a un sprint específico.
+
+Escala de Story Points (Fibonacci):
+1 = tareas muy pequeñas y rápidas.
+2 = trabajo breve de complejidad baja.
+3 = actividades medianas con algo más de dedicación.
+5 = tareas complejas y/o con dependencias.
+8 = esfuerzos muy complejos o con impacto transversal.
+
+![Product_Backlog.png](resources/Product_Backlog.png)
+
+Diagrama del Product Backlog: lista priorizada de requisitos y funcionalidades del producto.
+
+| Orden | User Story ID | Título                                           | Descripción                                                                                                    | Story Points |
+| ----: | ------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | -----------: |
+|     1 | US-01         | Registro de usuario                              | Como persona nueva, crear una cuenta para acceder a la plataforma y gestionar mis equipos de refrigeración.    |            5 |
+|     2 | US-02         | Inicio de sesión                                 | Como usuario, iniciar sesión con mis credenciales para usar las funcionalidades.                               |            3 |
+|     3 | US-03         | Solicitar servicio de reparación                 | Como cliente, pedir una reparación cuando detecto fallas en mis equipos.                                       |            5 |
+|     4 | US-04         | Ver estado del servicio solicitado               | Como cliente, consultar el estado actual de mi solicitud para conocer el avance.                               |            3 |
+|     5 | US-05         | Ver reporte de servicio realizado                | Como cliente, revisar el informe detallado del servicio efectuado en mi equipo.                                |            3 |
+|     6 | US-06         | Agregar equipos                                  | Como cliente, registrar y editar mis equipos en la plataforma para llevar control.                             |            5 |
+|     7 | US-07         | Recibir alerta de falla en equipo                | Como cliente, recibir alertas automáticas cuando un equipo presente una falla para actuar rápido.              |            8 |
+|     8 | US-08         | Solicitar mantenimiento preventivo               | Como cliente, programar mantenimiento preventivo para evitar fallas futuras.                                   |            5 |
+|     9 | US-09         | Ver consumo energético de equipos                | Como cliente, visualizar informes de consumo por equipo para analizar eficiencia.                              |            5 |
+|    10 | US-10         | Recepción de alertas automáticas para servicio   | Como empresario, recibir alertas cuando un cliente solicite reparación o mantenimiento.                        |            8 |
+|    11 | US-11         | Asignar técnico a solicitud de servicio          | Como empresario, asignar un técnico a cada solicitud para asegurar la atención adecuada.                       |            5 |
+|    12 | US-12         | Ver historial de servicios realizados            | Como empresario, consultar el historial de servicios por cliente y equipo.                                     |            5 |
+|    13 | US-13         | Realizar seguimiento a solicitudes de servicio   | Como empresario, monitorear el progreso de las solicitudes atendidas por los técnicos.                         |            8 |
+|    14 | US-14         | Generar reporte de desempeño de técnicos         | Como empresario, generar reportes para evaluar eficiencia y productividad del equipo técnico.                  |            5 |
+|    15 | US-15         | Configurar alertas de mantenimiento              | Como empresario, definir alertas automáticas para mantenimiento preventivo.                                    |            8 |
+|    16 | US-16         | Visualizar clientes y servicios asociados        | Como empresario, listar clientes con sus servicios para organizar el trabajo.                                  |            5 |
+|    17 | US-17         | Visualizar equipos entregados a clientes         | Como empresario, ver equipos entregados a clientes para su seguimiento.                                        |            5 |
+|    18 | US-18         | Recibir notificaciones de eventos importantes    | Como cliente, recibir notificaciones sobre eventos clave y avance del servicio.                                |            8 |
+|    19 | US-19         | Realizar evaluación de servicio                  | Como cliente, calificar el servicio recibido para expresar conformidad.                                        |            3 |
+|    20 | US-20         | Registrar técnicos                               | Como empresario, dar de alta técnicos para integrarlos a la red de soporte.                                    |            5 |
+|    21 | US-21         | Visualizar perfil del técnico                    | Como empresario, ver datos y métricas de desempeño de cada técnico.                                            |            5 |
+|    22 | US-22         | Visualizar propuesta de valor principal          | Como visitante, ver claramente la propuesta de valor en la landing de **FrostLink** para decidir si me ayuda.  |            8 |
+|    23 | US-23         | Explorar soluciones específicas para mi rubro    | Como visitante, encontrar soluciones por tipo de negocio y validar el encaje con mis necesidades.              |            3 |
+|    24 | US-24         | Comprender funcionalidades destacadas            | Como visitante, revisar funcionalidades clave (monitoreo, alertas, gestión remota) presentadas de forma clara. |            5 |
+|    25 | US-25         | Solicitar una demo fácilmente                    | Como visitante, solicitar una demo desde la landing para iniciar contacto con **FrostLink**.                   |            5 |
+|    26 | US-26         | Conocer misión y visión de la startup            | Como visitante, consultar misión y visión para comprender el enfoque de **FrostLink**.                         |            3 |
+|    27 | US-27         | Conocer misión y visión de la startup            | Como visitante, acceder a una descripción clara de misión y visión de **FrostLink**.                           |            2 |
+|    28 | US-28         | Contactar fácilmente con ventas                  | Como visitante empresario, usar un botón visible para comunicarme con el equipo comercial.                     |            3 |
+|    29 | US-29         | Acceder fácilmente al inicio de sesión           | Como visitante, encontrar un botón de “Iniciar sesión” visible para entrar rápido a mi cuenta.                 |            3 |
+|    30 | US-30         | Descargar la app móvil desde la web              | Como visitante, contar con un enlace claro para descargar la app móvil desde la landing.                       |            5 |
+|    31 | US-31         | Registrar nuevo equipo (API)                     | Como desarrollador, exponer un endpoint para registrar equipos y facilitar su control y monitoreo.             |            5 |
+|    32 | US-32         | Eliminar técnico asignado (API)                  | Como desarrollador, eliminar técnicos mediante la API para gestionar asignaciones y roles.                     |            5 |
+|    33 | US-33         | Notificación automática por alerta crítica (API) | Como desarrollador, activar notificaciones automáticas cuando se detecten fallas críticas.                     |            8 |
+|    34 | US-34         | Crear solicitud de mantenimiento (API)           | Como desarrollador, implementar un endpoint para crear solicitudes de mantenimiento.                           |            5 |
+|    35 | US-35         | Crear registro de intervención técnica (API)     | Como desarrollador, registrar intervenciones técnicas vía API para seguimiento.                                |            5 |
+|    36 | US-36         | Registrar evento de alerta manual (API)          | Como desarrollador, permitir el alta de alertas manuales desde campo mediante la API.                          |            3 |
+|    37 | US-37         | Evaluar servicio (API)                           | Como desarrollador, habilitar un endpoint para crear y actualizar evaluaciones de servicio.                    |            8 |
+
 
 # Capítulo IV: Product Design
 
