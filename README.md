@@ -1629,9 +1629,9 @@ De manera complementaria, se utiliza una paleta de rojo claro para resaltar vent
 
 ### 4.1.3. Mobile Style Guidelines
 
-### 4.1.3.1. Web Style Guidelines
+#### 4.1.3.1. iOS Mobile Style Guidelines
 
-### 4.1.3.2. Web Style Guidelines
+#### 4.1.3.2. Android Mobile Style Guidelines
 
 ## 4.2. Information Architecture
 ### 4.2.1. Organization Systems
