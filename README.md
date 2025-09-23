@@ -1209,12 +1209,12 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
               <li><strong>Apellidos:</strong> Garcia Roca</li>
               <li><strong>Edad:</strong> 28</li>
               <li><strong>Distrito:</strong> San Miguel</li>
-              <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/EVNdbWUsAPlCiq8mgLnukSABKau8G9kECaaVFAjfninR9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yg7o0X" target="_blank">Ver video</a></li>
               <li><strong>Timestamp:</strong> 04:52</li>
               <li><strong>Duración:</strong> </li>
             </ul>
           </div>
-          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="" alt="Screenshot de la entrevista">
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="/resources/segunda_entrevista.png" alt="Screenshot de la entrevista">
         </div>
       </td>
     </tr>
@@ -1249,16 +1249,16 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
           <div style="flex: 1; display: flex; flex-direction: column;">
             <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
-              <li><strong>Nombres:</strong> </li>
-              <li><strong>Apellidos:</strong> </li>
-              <li><strong>Edad:</strong> </li>
-              <li><strong>Distrito:</strong> </li>
-              <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
+              <li><strong>Nombres:</strong> Richard Francisco </li>
+              <li><strong>Apellidos:</strong> Flores Gonzalez</li>
+              <li><strong>Edad:</strong> 38</li>
+              <li><strong>Distrito:</strong> San Borja</li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/EVNdbWUsAPlCiq8mgLnukSABKau8G9kECaaVFAjfninR9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yg7o0X" target="_blank">Ver video</a></li>
               <li><strong>Timestamp:</strong> 04:52</li>
               <li><strong>Duración:</strong> 04:37</li>
             </ul>
           </div>
-          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="" alt="Screenshot de la entrevista">
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="/resources/tercera_entrevista.png" alt="Screenshot de la entrevista">
         </div>
       </td>
     </tr>
@@ -1266,7 +1266,7 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
       <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
         <div style="background-color: #f9f9f9; border-radius: 10px; padding: 24px; margin-top: 12px;">
           <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Resumen</p>
-          (Insertar resumen)
+          Richard es técnico independiente especializado en instalación y mantenimiento de equipos de refrigeración en Lima. Maneja una cartera de alrededor de 15 clientes frecuentes, principalmente restaurantes y pequeños supermercados. Actualmente coordina sus visitas a través de llamadas telefónicas y WhatsApp, lo que le genera confusiones en horarios y duplicación de tareas.
         </div>
       </td>
     </tr>
@@ -1715,10 +1715,64 @@ De manera complementaria, se utiliza una paleta de rojo claro para resaltar vent
 *Figura 2:* Guías de Estilo Web - Color Rojo.
 
 ### 4.1.3. Mobile Style Guidelines
+# FrostLink - Estándares de Diseño e Interacción Móvil
 
-#### 4.1.3.1. iOS Mobile Style Guidelines
+Esta sección establece los estándares visuales y de interacción para la aplicación móvil de **FrostLink**, garantizando una experiencia de usuario uniforme y optimizada para **iOS** y **Android**.  
+Bajo un enfoque **nativo-móvil**, se implementan componentes específicos de cada plataforma que priorizan la ergonomía táctil, gestos intuitivos y navegación por pestañas inferiores.
 
-#### 4.1.3.2. Android Mobile Style Guidelines
+---
+
+## Diseño Adaptativo
+La interfaz utiliza un sistema de contenedores flexibles que se ajustan dinámicamente a diferentes resoluciones y orientaciones de pantalla, manteniendo la jerarquía visual en dispositivos desde **4 hasta 6.5 pulgadas**.
+
+---
+
+## Tipografía Móvil
+- **iOS:** SF Pro  
+- **Android:** Roboto  
+
+Las tipografías se escalan automáticamente según las configuraciones de accesibilidad del usuario.  
+Los tamaños de fuente siguen las pautas de **Material Design** y **Human Interface Guidelines**.
+
+---
+
+## Paleta de Colores Móvil
+La paleta se adapta a los modos **claro/oscuro** de los sistemas operativos, conservando la identidad de FrostLink y manteniendo un contraste adecuado para mejorar la legibilidad.
+
+- **Celeste Primario (#0884C4):** Botones de acción principal y estados activos.  
+- **Degradados Dinámicos:** Fondos con gradientes sutiles para profundidad visual.  
+- **Verde (#00CC66):** Notificaciones push exitosas y estados en tiempo real.  
+- **Rojo (#FF4B4B):** Alertas críticas con vibración asociada.  
+- **Amarillo (#FFCC00):** Recordatorios de mantenimiento preventivo.  
+
+---
+
+## Componentes Móviles Específicos
+- Navegación inferior con **5 secciones clave**.  
+- **Cards expandibles** con gestos de deslizamiento.  
+- **Botones flotantes (FAB)** para acciones frecuentes.  
+- Notificaciones integradas con el **centro de notificaciones del sistema operativo**.  
+
+---
+
+## Interacciones Táctiles
+- **Pull-to-refresh** en listas dinámicas.  
+- **Swipe left/right** para acciones rápidas.  
+- **Vibración háptica** en confirmaciones críticas.  
+- **Animaciones de carga nativas** por plataforma.  
+<center>
+<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+</center>
+*Figura 1:* Guías de Estilo Web – Color Sky Blue
+
+De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
+
+<center>
+<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+</center>
+
+*Figura 2:* Guías de Estilo Web - Color Rojo.
+
 
 ## 4.2. Information Architecture
 ### 4.2.1. Organization Systems
@@ -1909,17 +1963,200 @@ En esta sección se incluye un formulario para que los usuarios puedan comunicar
 
 ### 4.4.1. Mobile Applications Wireframes
 
-### 4.4.2. Mobile Applications Wireflow Diagrams
+Los wireframes de la aplicación móvil de **FrostLink** definen la estructura y organización de las pantallas principales para dispositivos **iOS** y **Android**, detallando la ubicación de componentes nativos de la interfaz y los flujos de navegación táctil.  
+Actúan como referencia visual para el diseño final, garantizando una experiencia de usuario coherente y optimizada para interacciones móviles.
+
+Estos diagramas priorizan la **usabilidad móvil** y la **claridad visual**, permitiendo que diseñadores y desarrolladores anticipen cómo los usuarios interactuarán con la aplicación mediante gestos táctiles y optimicen la distribución de elementos para ofrecer una experiencia ágil e intuitiva en dispositivos de pantalla reducida.
+
+## Figura 1: Wireframe Móvil – Alquiler de Equipos (Clientes)
+Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con:
+
+<img src="./resources/RENT-CUSTOMER.jpg" alt="RENT-CUSTOMER" width="500" height="500">
+
+---
+
+## Figura 2: Wireframe Móvil – Agregar Equipos
+Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
+
+<img src="./resources/ADD-EQUIPMENT.jpg" alt="ADD-EQUIPMENT" width="500" height="500">
+
+---
+
+## Figura 3: Wireframe Móvil – Máquinas (Clientes)
+Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
+
+<img src="./resources/MACHINES-CUSTOMER.jpg" alt="MACHINES-CUSTOMER" width="500" height="500">
+
+---
+
+## Figura 4: Wireframe Móvil – Inicio (Clientes)
+Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
+
+<img src="./resources/HOME-CUSTOMER.jpg" alt="HOME-CUSTOMER" width="500" height="500">
+
+---
+
+## Figura 5: Wireframe Móvil – Registro (Clientes)
+Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
+
+<img src="./resources/REGISTER-CUSTOMER.jpg" alt="REGISTER-CUSTOMER" width="500" height="500">
+
+---
+
+## Figura 6: Wireframe Móvil – Inicio de Sesión (Clientes)
+Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
+
+<img src="./resources/LOGIN-CUSTOMER.jpg" alt="LOGIN-CUSTOMER" width="500" height="500">
+
+---
+
+## Figura 7: Wireframe Móvil – Inicio de Sesión (General)
+Pantalla de inicio de sesión para acceso general de la aplicación.
+
+<img src="./resources/LOGIN.jpg" alt="LOGIN" width="500" height="500">
+
+---
+
+## Figura 8: Wireframe Móvil – Registro (Empresas)
+Formulario para el registro de **nuevas empresas** dentro de la aplicación.
+
+<img src="./resources/REGISTER-COMPANIES.jpg" alt="REGISTER-COMPANIES" width="500" height="500">
+
+---
+
+## Figura 9: Wireframe Móvil – Inicio (Empresas)
+Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
+
+<img src="./resources/HOME-COMPANIES.jpg" alt="HOME-COMPANIES" width="500" height="500">
+
+---
+
+## Figura 10: Wireframe Móvil – Máquinas (Empresas)
+Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
+
+<img src="./resources/MACHINES-COMPANIES.jpg" alt="MACHINES-COMPANIES" width="500" height="500">
+
+---
+
+## Figura 11: Wireframe Móvil – Cuenta (Empresas)
+Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
+
+<img src="./resources/ACCOUNT-COMPANIES.jpg" alt="ACCOUNT-COMPANIES" width="500" height="500">
+
+---
+
+## Figura 12: Wireframe Móvil – Cuenta (General)
+Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
+
+<img src="./resources/ACCOUNT.jpg" alt="ACCOUNT" width="500" height="500">
+
+---
+
+## Figura 13: Wireframe Móvil – Gestión de Equipos
+Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
+
+<img src="./resources/MANAGE-EQUIPMENTS.jpg" alt="MANAGE-EQUIPMENTS" width="500" height="500">
+
 
 ### 4.4.3. Mobile Applications Mock-ups
 
-### 4.4.4. Mobile Applications User Flow Diagrams
+# Mockups Móviles - FrostLink
 
-## 4.5. Mobile Applications Prototyping
+Los mockups de la aplicación móvil de **FrostLink** representan la propuesta visual final de las pantallas principales para dispositivos **iOS** y **Android**, detallando la apariencia de los componentes nativos de la interfaz y los flujos de navegación táctil.  
+Actúan como **referencia visual definitiva** para el diseño final, garantizando una experiencia de usuario coherente y optimizada para interacciones móviles.
 
-### 4.5.1. Android Mobile Applications Prototyping
+Estos mockups priorizan la **usabilidad móvil** y la **claridad visual**, permitiendo que diseñadores y desarrolladores anticipen cómo los usuarios interactuarán con la aplicación mediante gestos táctiles y optimicen la distribución de elementos para ofrecer una experiencia ágil e intuitiva en dispositivos de pantalla reducida.
 
-### 4.5.2. iOS Mobile Applications Prototyping
+---
+
+## Figura 1: Mockup Móvil – Alquiler de Equipos (Clientes)
+Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con:
+<img src="./resources/RENT-CUSTOMER-MOCKUP.jpg" alt="RENT-CUSTOMER-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 2: Mockup Móvil – Agregar Equipos
+Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
+
+<img src="./resources/ADD-EQUIPMENT-MOCKUP.jpg" alt="ADD-EQUIPMENT-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 3: Mockup Móvil – Máquinas (Clientes)
+Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
+
+<img src="./resources/MACHINES-CUSTOMER-MOCKUP.jpg" alt="MACHINES-CUSTOMER-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 4: Mockup Móvil – Inicio (Clientes)
+Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
+
+<img src="./resources/HOME-CUSTOMER-MOCKUP.jpg" alt="HOME-CUSTOMER-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 5: Mockup Móvil – Registro (Clientes)
+Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
+
+<img src="./resources/REGISTER-CUSTOMER-MOCKUP.jpg" alt="REGISTER-CUSTOMER-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 6: Mockup Móvil – Inicio de Sesión (Clientes)
+Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
+
+<img src="./resources/LOGIN-CUSTOMER-MOCKUP.jpg" alt="LOGIN-CUSTOMER-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 7: Mockup Móvil – Inicio de Sesión (General)
+Pantalla de inicio de sesión para acceso general de la aplicación.
+
+<img src="./resources/LOGIN-MOCKUP.jpg" alt="LOGIN-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 8: Mockup Móvil – Registro (Empresas)
+Formulario para el registro de **nuevas empresas** dentro de la aplicación.
+
+<img src="./resources/REGISTER-COMPANIES-MOCKUP.jpg" alt="REGISTER-COMPANIES-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 9: Mockup Móvil – Inicio (Empresas)
+Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
+
+<img src="./resources/HOME-COMPANIES-MOCKUP.jpg" alt="HOME-COMPANIES-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 10: Mockup Móvil – Máquinas (Empresas)
+Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
+
+<img src="./resources/MACHINES-COMPANIES-MOCKUP.jpg" alt="MACHINES-COMPANIES-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 11: Mockup Móvil – Cuenta (Empresas)
+Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
+
+<img src="./resources/ACCOUNT-COMPANIES-MOCKUP.jpg" alt="ACCOUNT-COMPANIES-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 12: Mockup Móvil – Cuenta (General)
+Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
+
+<img src="./resources/ACCOUNT-MOCKUP.jpg" alt="ACCOUNT-MOCKUP" width="500" height="500">
+
+---
+
+## Figura 13: Mockup Móvil – Gestión de Equipos
+Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
+
+<img src="./resources/MANAGE-EQUIPMENTS-MOCKUP.jpg" alt="MANAGE-EQUIPMENTS-MOCKUP" width="500" height="500">
+
 
 ## 4.6. Web Applications UX/UI Design
 
