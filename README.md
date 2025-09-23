@@ -237,7 +237,7 @@ Para la elaboración del informe correspondiente a la entrega del TB1, se realiz
 
 | Integrantes     | Tareas Asignadas                                                                                                                                                              |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  León Vivas, Fabrizio Amir  |                       |
+|  León Vivas, Fabrizio Amir  | Chapter I & II                     |
 |      | |
 | Marcelo Varela  |  |
 | Medina Cruzado, Raúl Adrian |        |
@@ -449,14 +449,14 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
             <td>
                 <strong>TB1:</strong><br>
                 <ul>
-                    <li><strong>Fabrizio Amir León Vivas:</strong> </li>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Contribuí en la definición de la propuesta de valor de FrostLink, el análisis 5W+2H y el desarrollo del Lean UX Canvas, asegurando un enfoque ético y responsable. También participé en la elaboración de los As-is Scenario Mapping, User Journey Mapping y en el análisis competitivo frente a otras soluciones del mercado.</li>
                     <li><strong>Raúl Adrian Medina Cruzado:</strong>  </li>
                     <li><strong></strong> </li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong> </li>
                 </ul>
             </td>
             <td>
-                <strong>TB1:</strong> <br>
+                <strong>TB1:</strong> Se demostró un compromiso ético y profesional al diseñar FrostLink, alineando la propuesta tecnológica con las necesidades reales de los usuarios y consolidando una solución responsable e innovadora.<br>
             </td>
         </tr>
         <tr>
@@ -466,14 +466,14 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
             <td>
                 <strong>TB1:</strong><br>
                 <ul>
-                    <li><strong>Fabrizio Amir León Vivas:</strong>  </li>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Analicé el impacto de FrostLink en negocios que dependen de la cadena de frío, resaltando beneficios económicos al reducir pérdidas, sociales al garantizar calidad de productos y ambientales al optimizar el consumo energético.</li>
                     <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
                     <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong> </li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
                 </ul>
             </td>
             <td>
-                <strong>TB1:</strong> <br>
+                <strong>TB1:</strong> El proyecto demuestra que una solución tecnológica puede generar valor económico, social y ambiental, siempre que se diseñe con responsabilidad y pensando en su impacto global.<br>
             </td>
         </tr>
     </tobdy>
@@ -499,7 +499,7 @@ Visión: Aspiramos a convertirnos en la empresa líder en gestión y mantenimien
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | ****<br>                                                                                                                                                                | <img src="" alt="angie image" width="200">  |
 |**** <br> | <img src="" alt="kevin image" width="200">  |
-| **a**<br>                                                     | <img src="https://files.catbox.moe/u1b8w5.jpg" alt="kevin image" width="200">  | 
+| **Fabrizio León**<br> Soy estudiante de Ingeniería de Software en la UPC con enfoque en desarrollo front-end y sólida base en sistemas UNIX/Linux. Manejo C++, JavaScript y Python, y he trabajado con metodologías ágiles para entregar soluciones claras y mantenibles. Me apasiona la ciberseguridad y la tecnología aplicada a problemas reales. Destaco por el trabajo en equipo, pensamiento crítico y comunicación efectiva.                                                     | <img src="/resources/Fabrizio.png" alt="kevin image" width="200">  | 
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
 | **Raúl Meidna**<br>Como estudiante de la carrera de Ingeniería de Software, soy apasionado por la ciencia de datos. Me motiva descubrir cómo el análisis y la interpretación de grandes volúmenes de información pueden generar soluciones innovadoras dentro del desarrollo de software. Me interesa explorar cómo los datos pueden optimizar procesos, anticipar errores y mejorar la toma de decisiones. Confío en que, junto a mi equipo, podré seguir fortaleciendo mis habilidades y contribuir de manera significativa en cada etapa del proyecto. | <img src="/resources/Raul.jpeg" alt="Raul imagen" width="200"> |
 
@@ -1132,7 +1132,7 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
 11. ¿Qué tanto valora poder generar reportes automáticos y mantener trazabilidad de cada intervención?  
 12. ¿Estaría dispuesto a usar una plataforma que le ayude a organizarse mejor y escalar su servicio?  
 13. ¿Ha probado alguna solución parecida antes? ¿Por qué la dejó de usar (si la dejó)?  
-14. ¿Qué beneficios cree que podría tener la implementación de una solución digital como FrostIq a su empresa?
+14. ¿Qué beneficios cree que podría tener la implementación de una solución digital como FrostLink a su empresa?
 
 ### 2.2.2. Registro de entrevistas.
 
@@ -2491,11 +2491,11 @@ El despliegue de la API RESTful o backend serverless puede realizarse en **Azure
      ```  
    - Crearemos un grupo de recursos (si no existe):  
      ```bash
-     az group create --name FrostIQApi --location eastus
+     az group create --name FrostLinkApi --location eastus
      ```  
    - Desplegaremos con **Azure App Service** (API REST):  
      ```bash
-     az webapp up --name nombre-api --runtime "NODE:18-lts" --resource-group FrostIQApi
+     az webapp up --name nombre-api --runtime "NODE:18-lts" --resource-group FrostLinkApi
      ```  
 
 3. **Pruebas post-deploy**:  
