@@ -1533,29 +1533,6 @@ Para el desarrollo de esta sección, nuestro equipo consideró diferentes etapas
 
 19. Notification (Notificación): Mensajes enviados automáticamente para informar sobre mantenimientos, fallas o cambios importantes.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
@@ -1650,8 +1627,14 @@ De manera complementaria, se utiliza una paleta de rojo claro para resaltar vent
 
 *Figura 2:* Guías de Estilo Web - Color Rojo.
 
-## 4.2. Arquitectura de la Información
-### 4.2.1. Sistemas de Organización
+### 4.1.3. Mobile Style Guidelines
+
+#### 4.1.3.1. iOS Mobile Style Guidelines
+
+#### 4.1.3.2. Android Mobile Style Guidelines
+
+## 4.2. Information Architecture
+### 4.2.1. Organization Systems
 
 Para estructurar la información en FrostLink, se emplean diversos sistemas de organización que facilitan la navegación del usuario:
 
@@ -1661,7 +1644,7 @@ Organización Secuencial (Paso a Paso): Ideal para procesos guiados como la comp
 
 Organización Matricial: Utilizada para comparar o analizar datos relacionados, ofreciendo al usuario una visión clara y estructurada de las alternativas disponibles.
 
-### 4.2.2. Sistemas de Etiquetado
+### 4.2.2. Labeling Systems
 
 En FrostLink, estos sistemas se aplican de la siguiente forma:
 
@@ -1671,7 +1654,7 @@ Organización Secuencial: El proceso de agendar mantenimiento o visitas técnica
 
 Organización Matricial: Se emplean tablas comparativas para mostrar diferencias entre planes de servicio y suscripción, apoyando la toma de decisiones.
 
-### 4.2.3. SEO y Meta Tags
+### 4.2.3. SEO Tags and Meta Tags
 
 Para garantizar visibilidad en buscadores y mejorar la experiencia de los usuarios, se definen títulos y descripciones optimizadas:
 
@@ -1695,7 +1678,7 @@ Meta Keywords: gestión de refrigeración, monitoreo en tiempo real, mantenimien
 
 Meta Author: FrostLink
 
-### 4.2.4. Sistemas de Búsqueda
+### 4.2.4 Searching systems
 
 El diseño de búsqueda está pensado para que los usuarios encuentren información de forma rápida y sin sentirse abrumados:
 
@@ -1719,7 +1702,7 @@ Resultados de Búsqueda:
 Los resultados se presentan en listas ordenadas con información clave (nombre del equipo, estado actual, próximas revisiones, consumo energético). Cada elemento incluye un resumen y opciones para ver detalles o agendar mantenimiento.
 Los usuarios pueden ordenar por relevancia, estado o consumo, y visualizar filtros aplicados. También se muestran reseñas y comentarios de técnicos o clientes, ayudando en la toma de decisiones.
 
-### 4.2.5. Sistemas de Navegación
+### 4.2.5. Navigation Systems
 
 La navegación de FrostLink está diseñada para ser clara y eficiente:
 
@@ -1771,7 +1754,7 @@ La página incluye secciones que presentan a los usuarios objetivo, las funciona
 
 </center>
 
-### 4.3.2. Landing Page Mockup
+### 4.3.2. Landing Page Mock-up
 
 El mockup de la landing page de FrostLink presenta un diseño limpio y bien estructurado que guía de manera intuitiva a los usuarios a través de la plataforma. En la parte superior se destaca la propuesta de valor, acompañada de un call to action principal que invita a interactuar con la página.
 
@@ -1835,9 +1818,25 @@ Se concluye la visualización de testimonios de clientes satisfechos.
 Figura 11: Mockup 11 – Contacto – Landing Page
 En esta sección se incluye un formulario para que los usuarios puedan comunicarse y solicitar una demostración de la plataforma.
 
-## 4.4. Web Applications UX/UI Design
+## 4.4. Mobile Applications UX/UI Design
 
-### 4.4.1. Web Applications Wireframes
+### 4.4.1. Mobile Applications Wireframes
+
+### 4.4.2. Mobile Applications Wireflow Diagrams
+
+### 4.4.3. Mobile Applications Mock-ups
+
+### 4.4.4. Mobile Applications User Flow Diagrams
+
+## 4.5. Mobile Applications Prototyping
+
+### 4.5.1. Android Mobile Applications Prototyping
+
+### 4.5.2. iOS Mobile Applications Prototyping
+
+## 4.6. Web Applications UX/UI Design
+
+### 4.6.1. Web Applications Wireframes
 
 Los wireframes de las aplicaciones web de Frostlink establecen la estructura general y la organización de las pantallas principales, detallando la ubicación de los componentes de la interfaz y los recorridos de navegación. Actúan como una referencia visual para el diseño final, garantizando una experiencia de usuario coherente y fácil de seguir. Estos diagramas priorizan la usabilidad y la claridad, permitiendo que diseñadores y desarrolladores anticipen cómo interactuarán los usuarios con la aplicación y optimicen la distribución de los elementos para ofrecer una experiencia ágil y atractiva.
 
@@ -1941,7 +1940,7 @@ Pantalla donde la empresa gestiona las solicitudes enviadas por los clientes.</p
 Presenta la vista de control de órdenes de trabajo generadas por la empresa.</p>
 <img src="./resources/Wireframe_25.jpeg" alt="wireframe_25" width="500" height="500">
 
-### 4.4.2. Web Applications Wireflow Diagrams
+### 4.6.2. Web Applications Wireflow Diagrams
 <p>En esta sección se muestran los <strong>wireflows</strong> de cada objetivo del usuario, tomando en cuenta los <strong>User Personas</strong> pertinentes. Cada diagrama describe el recorrido de interacción y cómo dichas acciones impactan en las pantallas de la aplicación.</p>
 
 <p><strong>User Goal 1</strong><br>
@@ -2093,7 +2092,7 @@ Bandeja de solicitudes entrantes y su procesamiento.</p>
 <p><strong>Figura 25: Mockup – Órdenes de Trabajo (Empresa)</strong><br>
 Gestión y seguimiento de órdenes de trabajo.</p>
 
-### 4.4.4. Web Applications User Flow Diagrams</h2>
+### 4.6.4. Web Applications User Flow Diagrams
 <p>En esta sección se presentan los diagramas de <strong>user flow</strong> asociados a los objetivos clave, mostrando cómo las acciones del usuario se traducen en transiciones entre pantallas dentro de la aplicación.</p>
 
 <p><strong>User Goal 1</strong><br>
@@ -2108,21 +2107,21 @@ Como propietario de un negocio que utiliza equipos de refrigeración, deseo <str
 Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>dar de alta y administrar</strong> los nuevos equipos que registro.</p>
 <img src="./resources/userflow3.png" alt="userflow3" width="500" height="500">
 
-## 4.5. Web Applications Prototyping
+## 4.7. Web Applications Prototyping
 Se presenta el prototipo interactivo de la aplicación web de Frostlink, que permite a los usuarios explorar la interfaz y navegar por las distintas secciones de la plataforma. Este prototipo incorpora las funcionalidades esenciales y ofrece una vista preliminar de la experiencia de uso. Además, facilita la evaluación y validación de la interfaz antes de su implementación definitiva, garantizando un diseño intuitivo y eficiente.
 
-## 4.6. Domain Driven Software Architecture
+## 4.8. Domain Driven Software Architecture
 Se expone la arquitectura de software orientada al dominio para Frostlink. A través de diversos diagramas se describe la estructura del sistema y sus componentes principales, destacando cómo se relacionan e integran entre sí para ofrecer una solución eficiente, escalable y mantenible.
 
-### 4.6.1. Software Architecture Context Diagram
+### 4.8.1. Software Architecture Context Diagram
 <p>El diagrama de contexto muestra cómo <strong>Clientes</strong> y <strong>Empresas Proveedoras</strong> interactúan con <strong>Frostlink</strong> para gestionar y monitorear equipos de refrigeración. La plataforma se integra con servicios de correo para el envío de notificaciones y con un servicio de pagos para procesar transacciones de forma segura.</p>
 <img src="./resources/diagram_1.jpeg" alt="diagram_1" width="500" height="500">
 
-### 4.6.2. Software Architecture Container Diagrams
+### 4.8.2. Software Architecture Container Diagrams
 <p>El diagrama de contenedores describe las principales piezas de <strong>Frostlink</strong> y sus relaciones: la <em>web app</em> (interfaz de usuario), la <em>API</em> que expone capacidades del dominio y la <em>base de datos</em> que persiste la información, junto con otros servicios que soportan la operación.</p>
 <img src="./resources/diagram_2.jpeg" alt="diagram_2" width="500" height="500">
 
-### 4.6.3. Software Architecture Components Diagrams
+### 4.8.3. Software Architecture Components Diagrams
 
 <h3>Mi Equipo — Bounded Context</h3>
 <p>Este diagrama detalla los componentes responsables de la gestión de equipos: alta de nuevos dispositivos, monitoreo en tiempo real y visualización del estado e historial.</p>
@@ -2132,14 +2131,14 @@ Se expone la arquitectura de software orientada al dominio para Frostlink. A tra
 <p>El diagrama agrupa los componentes que administran las notificaciones —para informar eventos y estados relevantes— y los que gestionan las órdenes de trabajo, desde su creación hasta su seguimiento y cierre.</p>
 <img src="./resources/diagram_4.jpeg" alt="diagram_4" width="500" height="500">
 
-## 4.7. Software Object-Oriented Design
+## 4.9. Software Object-Oriented Design
 <p>En esta sección se expone el diseño orientado a objetos de <strong>Frostlink</strong>. Se incluyen diagramas de clases y un diccionario de clases que describen la estructura de las entidades principales y sus atributos, proporcionando una visión clara de cómo se organizan y administran los componentes clave de la plataforma.</p>
 
-### 4.7.1. Class Diagrams
+### 4.9.1. Class Diagrams
 <p>El diagrama de clases ofrece una representación visual de las clases del sistema, sus atributos y las relaciones que las vinculan.</p>
 <img src="./resources/Class-UML.jpeg" alt="class_uml" width="500" height="500">
 
-### 4.7.2. Class Dictionary
+### 4.9.2. Class Dictionary
 
 <h4>Clase: Solicitud</h4>
 <table>
@@ -2277,10 +2276,10 @@ Se expone la arquitectura de software orientada al dominio para Frostlink. A tra
   </tbody>
 </table>
 
-## 4.8. Database Design
+## 4.10. Database Design
 <p>Esta sección describe la estructura lógica de datos del sistema: entidades, atributos, tipos y relaciones. El modelo de base de datos está concebido para asegurar integridad, consistencia y eficiencia en el acceso a la información.</p>
 
-### 4.8.1. Database Diagram
+### 4.10.1. Relational/Non-Relational Database Diagram
 <p>El diagrama de base de datos muestra cómo se relacionan las tablas, incluyendo claves primarias y foráneas, así como las cardinalidades (uno a uno, uno a muchos y muchos a muchos).</p>
 <img src="./resources/diagram-class.png" alt="diagram_class" width="500" height="500">
 
