@@ -1171,7 +1171,7 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
               <li><strong>Duración:</strong> 04:09</li>
             </ul>
           </div>
-          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="" alt="Screenshot de la entrevista">
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="/resources/primera_entrevista.png" alt="Screenshot de la entrevista">
         </div>
       </td>
     </tr>
@@ -1215,7 +1215,7 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
               <li><strong>Duración:</strong> </li>
             </ul>
           </div>
-          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="" alt="Screenshot de la entrevista">
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="/resources/segunda_entrevista.png" alt="Screenshot de la entrevista">
         </div>
       </td>
     </tr>
@@ -1250,16 +1250,16 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
           <div style="flex: 1; display: flex; flex-direction: column;">
             <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
-              <li><strong>Nombres:</strong> </li>
-              <li><strong>Apellidos:</strong> </li>
-              <li><strong>Edad:</strong> </li>
-              <li><strong>Distrito:</strong> </li>
+              <li><strong>Nombres:</strong> Richard Francisco </li>
+              <li><strong>Apellidos:</strong> Flores Gonzalez</li>
+              <li><strong>Edad:</strong> 38</li>
+              <li><strong>Distrito:</strong> San Borja</li>
               <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
               <li><strong>Timestamp:</strong> 04:52</li>
               <li><strong>Duración:</strong> 04:37</li>
             </ul>
           </div>
-          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="" alt="Screenshot de la entrevista">
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="/resources/tercera_entrevista.png" alt="Screenshot de la entrevista">
         </div>
       </td>
     </tr>
@@ -1267,7 +1267,7 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
       <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
         <div style="background-color: #f9f9f9; border-radius: 10px; padding: 24px; margin-top: 12px;">
           <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Resumen</p>
-          (Insertar resumen)
+          Richard es técnico independiente especializado en instalación y mantenimiento de equipos de refrigeración en Lima. Maneja una cartera de alrededor de 15 clientes frecuentes, principalmente restaurantes y pequeños supermercados. Actualmente coordina sus visitas a través de llamadas telefónicas y WhatsApp, lo que le genera confusiones en horarios y duplicación de tareas.
         </div>
       </td>
     </tr>
