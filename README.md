@@ -498,7 +498,6 @@ Visión: Aspiramos a convertirnos en la empresa líder en gestión y mantenimien
 | **Perfil**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Foto**                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 |**Juan Diego Mondoñedo**<br>                                                         Estudiante de Ingeniería de Software con experiencia previa con metodología ágil y frameworks como Angular y Vue, además de conocimientos en programación en Javascript, C++ y Python. Como miembro del equipo de FrostLink, emplearé mis habilidades al máximo para el desarrollo de nuestra startup.                                                                                                      | <img src="/resources/JD.jpg" alt="angie image" width="200">  |
-|**** <br> | <img src="" alt="kevin image" width="200">  |
 | **Fabrizio León**<br> Soy estudiante de Ingeniería de Software en la UPC con enfoque en desarrollo front-end y sólida base en sistemas UNIX/Linux. Manejo C++, JavaScript y Python, y he trabajado con metodologías ágiles para entregar soluciones claras y mantenibles. Me apasiona la ciberseguridad y la tecnología aplicada a problemas reales. Destaco por el trabajo en equipo, pensamiento crítico y comunicación efectiva.                                                     | <img src="/resources/Fabrizio.png" alt="kevin image" width="200">  | 
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
 | **Raúl Meidna**<br>Como estudiante de la carrera de Ingeniería de Software, soy apasionado por la ciencia de datos. Me motiva descubrir cómo el análisis y la interpretación de grandes volúmenes de información pueden generar soluciones innovadoras dentro del desarrollo de software. Me interesa explorar cómo los datos pueden optimizar procesos, anticipar errores y mejorar la toma de decisiones. Confío en que, junto a mi equipo, podré seguir fortaleciendo mis habilidades y contribuir de manera significativa en cada etapa del proyecto. | <img src="/resources/Raul.jpeg" alt="Raul imagen" width="200"> |
@@ -1533,6 +1532,94 @@ Para el desarrollo de esta sección, nuestro equipo consideró diferentes etapas
 
 19. Notification (Notificación): Mensajes enviados automáticamente para informar sobre mantenimientos, fallas o cambios importantes.
 
+# Capítulo III: Requirements Specification
+## 3.1. To-Be Scenario Mapping.
+Segmento objetivo #1: CLIENTES (DUEÑOS DE EQUIPOS DE REFRIGERACIÓN)
+![To-Be-Scenario-segment-1-.png](resources/To-Be-Scenario-segment-1-.png)
+Figura 1: To Be Scenario Mapping Clientes (Segmento 1).
+Segmento objetivo #2: EMPRESAS PROVEEDORAS DE SERVICIOS Y EQUIPOS DE REFRIGERACIÓN
+![To-Be-Scenario-segment-2-.png](resources/To-Be-Scenario-segment-2-.png)
+Figura 2: To Be Scenario Mapping - Empresas Proveedoras (Segmento 2).
+
+## 3.2. User Stories
+Las historias de usuario de este proyecto se co-diseñaron por el equipo de desarrollo de FrostLink, incorporando las necesidades y funcionalidades clave tanto de los clientes (propietarios de equipos de refrigeración) como de las empresas proveedoras de equipos y servicios de mantenimiento. Se organizaron en épicas que agrupan capacidades afines, y sus criterios de aceptación fueron redactados usando la sintaxis Gherkin. El trabajo se realizó de manera colaborativa, priorizando la comprensión del problema desde la perspectiva del usuario final. Para la organización, priorización y trazabilidad de las tareas se empleó Trello.
+
+| Epic/Story ID | Título                                         | Descripción                                                                                                           | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Epic  |
+| ------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+| US-01         | Registro de usuario                            | Como usuario nuevo, necesito crear una cuenta para entrar a la plataforma y gestionar mis equipos de refrigeración.   | Escenario 1: Crear cuenta exitosamente — Dado que el nuevo usuario tiene todos los datos correctos, cuando completa el registro, entonces su cuenta es creada correctamente.<br>Escenario 2: Intento de crear cuenta con email ya registrado — Dado que el nuevo usuario intenta registrarse con un correo ya registrado, cuando envía el formulario, entonces el sistema muestra un mensaje indicando que el correo ya existe.                                                                                                      | EP-01 |
+| US-02         | Inicio de sesión                               | Como usuario, necesito iniciar sesión para utilizar las funcionalidades de la plataforma.                             | Escenario 1: Iniciar sesión correctamente — Dado que el usuario tiene una cuenta activa, cuando ingresa sus datos correctamente, entonces accede a su panel de control.<br>Escenario 2: Intento de iniciar sesión con datos incorrectos — Dado que el usuario ingresa datos incorrectos, cuando intenta iniciar sesión, entonces el sistema muestra un mensaje de error.                                                                                                                                                             | EP-01 |
+| US-03         | Solicitar servicio de reparación               | Como cliente, deseo solicitar un servicio de reparación cuando detecto fallas en mis equipos de refrigeración.        | Escenario 1: Solicitar servicio de reparación — Dado que el cliente ha identificado una falla, cuando solicita el servicio desde la plataforma, entonces se genera la solicitud de servicio.<br>Escenario 2: Confirmación de solicitud de servicio — Dado que el cliente ha solicitado el servicio, cuando el sistema recibe la solicitud, entonces muestra un mensaje confirmando la recepción.                                                                                                                                     | EP-03 |
+| US-04         | Ver estado del servicio solicitado             | Como cliente, necesito consultar el estado actual de mi solicitud para conocer el avance del proceso.                 | Escenario 1: Verificación del estado de la solicitud — Dado que el cliente ha solicitado el servicio, cuando ingresa a la plataforma, entonces puede ver el estado actualizado de su solicitud.<br>Escenario 2: Actualización de estado en tiempo real — Dado que el cliente está visualizando su solicitud, cuando el técnico inicia el trabajo, entonces el estado se actualiza.                                                                                                                                                   | EP-03 |
+| US-05         | Ver reporte de servicio realizado              | Como cliente, deseo acceder al reporte detallado del servicio para saber qué reparaciones se realizaron en mi equipo. | Escenario 1: Generación del reporte de servicio — Dado que el servicio ha sido completado, cuando el técnico termina, entonces el sistema genera un reporte detallado.<br>Escenario 2: Enviar reporte al cliente por correo — Dado que el reporte ha sido generado, cuando se ha finalizado el servicio, entonces el sistema envía el reporte al cliente por correo electrónico.                                                                                                                                                     | EP-04 |
+| US-06         | Agregar equipos                                | Como cliente, necesito registrar y editar mis equipos de refrigeración en la plataforma para llevar control.          | Escenario 1: Agregar equipo de refrigeración — Dado que el cliente quiere agregar un equipo, cuando ingresa los detalles del equipo, entonces el sistema lo registra correctamente.<br>Escenario 2: Editar información del equipo — Dado que el cliente desea editar la información del equipo, cuando realiza los cambios, entonces el sistema actualiza la información del equipo.                                                                                                                                                 | EP-02 |
+| US-07         | Recibir alerta de falla en equipo              | Como cliente, necesito recibir alertas automáticas ante fallas o necesidades de mantenimiento.                        | Escenario 1: Alerta de falla detectada — Dado que el equipo de refrigeración está funcionando mal, cuando se detecta una falla, entonces el sistema envía una alerta al cliente.<br>Escenario 2: Alerta de mantenimiento preventivo — Dado que el equipo está funcionando correctamente, cuando el sistema detecta una necesidad de mantenimiento preventivo, entonces envía una alerta preventiva al cliente.                                                                                                                       | EP-05 |
+| US-08         | Solicitar mantenimiento preventivo             | Como cliente, deseo programar mantenimiento preventivo para evitar fallas futuras.                                    | Escenario 1: Solicitar mantenimiento preventivo — Dado que el cliente quiere programar mantenimiento preventivo, cuando selecciona la opción, entonces puede elegir la fecha y hora.<br>Escenario 2: Confirmación de solicitud de mantenimiento — Dado que el cliente ha solicitado el mantenimiento, cuando el sistema lo registra, entonces le envía una confirmación con los detalles.                                                                                                                                            | EP-03 |
+| US-09         | Ver consumo energético de equipos              | Como cliente, quiero revisar informes de consumo energético para analizar la eficiencia de mis equipos.               | Escenario 1: Visualización de consumo energético — Dado que el cliente tiene equipos registrados, cuando ingresa a la plataforma, entonces puede ver el informe de consumo energético de cada equipo.<br>Escenario 2: Comparación del consumo energético — Dado que el cliente quiere comparar, cuando selecciona dos equipos, entonces el sistema genera una comparación de su consumo energético.                                                                                                                                  | EP-04 |
+| US-10         | Recepción de alertas automáticas para servicio | Como empresario, necesito recibir alertas cuando un cliente solicite reparación o mantenimiento.                      | Escenario 1: Recepción de solicitud de servicio — Dado que el cliente ha solicitado un servicio, cuando se recibe la solicitud, entonces el sistema envía una alerta al empresario.<br>Escenario 2: Alerta de mantenimiento preventivo solicitado — Dado que un cliente ha solicitado mantenimiento preventivo, cuando se registra la solicitud, entonces el sistema envía una alerta automática al empresario.                                                                                                                      | EP-05 |
+| US-11         | Asignar técnico a solicitud de servicio        | Como empresario, deseo asignar un técnico a cada solicitud para garantizar la atención adecuada.                      | Escenario 1: Asignar técnico a servicio — Dado que el empresario recibe una solicitud de servicio, cuando elige un técnico, entonces el sistema asigna al técnico seleccionado a la solicitud.<br>Escenario 2: Confirmación de asignación de técnico — Dado que el técnico ha sido asignado, cuando el empresario lo confirma, entonces el sistema envía una notificación al técnico con los detalles.                                                                                                                               | EP-03 |
+| US-12         | Ver historial de servicios realizados          | Como empresario, quiero consultar el historial de servicios por cliente y equipo.                                     | Escenario 1: Visualizar historial de servicios — Dado que el empresario tiene acceso al historial de servicios, cuando accede a la plataforma, entonces puede ver el historial completo de servicios realizados.<br>Escenario 2: Filtrar historial por cliente o equipo — Dado que el empresario quiere filtrar los servicios, cuando selecciona un cliente o equipo, entonces el sistema filtra los servicios realizados según el filtro seleccionado.                                                                              | EP-04 |
+| US-13         | Realizar seguimiento a solicitudes de servicio | Como empresario, necesito dar seguimiento detallado a las solicitudes atendidas por los técnicos.                     | Escenario 1: Ver estado de la solicitud de servicio — Dado que el empresario tiene acceso a solicitudes, cuando ingresa al sistema, entonces puede ver el estado actualizado de cada solicitud de servicio.<br>Escenario 2: Actualización del estado de la solicitud — Dado que el empresario quiere seguir el progreso, cuando un técnico actualiza el estado de la solicitud, entonces el sistema muestra el estado en tiempo real.                                                                                                | EP-03 |
+| US-14         | Generar reporte de desempeño de técnicos       | Como empresario, deseo generar reportes para evaluar eficiencia y productividad de los técnicos.                      | Escenario 1: Generar reporte de desempeño — Dado que el empresario quiere evaluar el desempeño de sus técnicos, cuando selecciona la opción de generar reporte, entonces el sistema crea un informe con los datos.<br>Escenario 2: Descargar reporte de desempeño — Dado que el reporte ha sido generado, cuando el empresario quiere descargarlo, entonces el sistema permite descargar el archivo en formato PDF.                                                                                                                  | EP-04 |
+| US-15         | Configurar alertas de mantenimiento            | Como empresario, quiero definir alertas automáticas para mantenimiento preventivo.                                    | Escenario 1: Configuración de alerta de mantenimiento — Dado que el empresario quiere configurar alertas, cuando ingresa los parámetros, entonces el sistema configura la alerta correctamente.<br>Escenario 2: Modificación de alerta configurada — Dado que el empresario ha configurado una alerta, cuando decide cambiar la frecuencia, entonces el sistema actualiza la alerta.                                                                                                                                                 | EP-05 |
+| US-16         | Visualizar clientes y servicios asociados      | Como empresario, necesito ver clientes y sus servicios para organizar el trabajo técnico.                             | Escenario 1: Ver clientes y servicios asociados — Dado que el empresario quiere visualizar la información, cuando accede a la funcionalidad correspondiente, entonces puede consultar los clientes con sus servicios relacionados.<br>Escenario 2: Filtrar por estado de servicio — Dado que el empresario necesita filtrar resultados, cuando aplica el filtro por estado, entonces el sistema muestra los datos correspondientes.                                                                                                  | EP-04 |
+| US-17         | Visualizar equipos entregados a clientes       | Como empresario, deseo consultar equipos entregados a clientes para su seguimiento.                                   | Escenario 1: Ver equipos asociados — Dado que el empresario quiere visualizar la información de equipos, cuando accede al listado de equipos, entonces puede consultar los que están asociados a clientes.<br>Escenario 2: Filtrar por estado y tipo de equipo — Dado que el empresario necesita filtrar los resultados, cuando aplica los criterios, entonces el sistema muestra los equipos correspondientes.                                                                                                                      | EP-02 |
+| US-18         | Recibir notificaciones de eventos importantes  | Como cliente, quiero recibir notificaciones sobre eventos relevantes y progreso del servicio.                         | Escenario 1: Problema reportado durante el servicio — Dado que el técnico detecta una complicación o requiere aprobación, cuando se genera un evento interno, entonces el sistema envía una notificación que requiere acción del cliente.<br>Escenario 2: Notificación sobre progreso del servicio — Dado que el servicio está en ejecución, cuando el estado cambia, entonces se envía una notificación al cliente.                                                                                                                 | EP-05 |
+| US-19         | Realizar evaluación de servicio                | Como cliente, deseo calificar el servicio y poder corregir mi evaluación en un plazo.                                 | Escenario 1: Evaluar el servicio una vez finalizado — Dado que el cliente ha recibido el servicio, cuando accede a la opción de evaluación, entonces puede registrar una calificación del 1 al 5.<br>Escenario 2: Corrección de evaluación del servicio — Dado que el cliente ya evaluó el servicio, cuando realiza una modificación dentro del plazo permitido, entonces el sistema actualiza la calificación registrada.                                                                                                           | EP-06 |
+| US-20         | Registrar técnicos                             | Como empresario, necesito dar de alta técnicos para integrarlos a mi red de soporte.                                  | Escenario 1: Registro exitoso de un técnico — Dado que el empresario desea registrar un técnico, cuando completa los datos requeridos y confirma, entonces el sistema lo registra correctamente.<br>Escenario 2: Intento de registro con datos incompletos — Dado que faltan datos obligatorios, cuando intenta registrar al técnico, entonces el sistema impide la operación hasta que se completen los campos necesarios.                                                                                                          | EP-01 |
+| US-21         | Visualizar perfil del técnico                  | Como empresario, quiero ver datos personales y métricas de desempeño de cada técnico.                                 | Escenario 1: Acceso a información completa del técnico — Dado que el empresario selecciona un técnico, cuando accede a su información, entonces puede consultar datos personales, historial de servicios y calificaciones.<br>Escenario 2: Técnico sin evaluaciones registradas — Dado que el técnico aún no ha sido evaluado, cuando se consulta su perfil, entonces no se muestran métricas de desempeño.                                                                                                                          | EP-01 |
+| US-22         | Recibir alertas de fallas en equipos           | Como empresario, necesito alertas cuando equipos de clientes presentan fallas para coordinar atención.                | Escenario 1: Recepción de alerta automática por sensor — Dado que un equipo monitoreado presenta una falla, cuando el sistema la detecta, entonces genera una alerta inmediata para el empresario.<br>Escenario 2: Comunicación con el cliente — Dado que el empresario ha recibido una alerta, cuando revisa el equipo afectado, entonces puede iniciar una notificación directa al cliente desde la plataforma.                                                                                                                    | EP-05 |
+| US-23         | Visualizar propuesta de valor principal        | Como visitante, deseo conocer la propuesta de valor de FrostLink para evaluar su utilidad.                            | Escenario 1: Propuesta visible al ingresar — Dado que estoy en la página oficial de FrostLink, cuando la página carga, entonces debo acceder inmediatamente a una frase que explique claramente la propuesta de valor.<br>Escenario 2: Propuesta orientada a gestión de refrigeración — Dado que soy un visitante del segmento 1, cuando reviso la propuesta de valor, entonces esta debe mencionar conceptos relacionados con gestión inteligente y monitoreo de equipos.                                                           | EP-07 |
+| US-24         | Explorar soluciones específicas para mi rubro  | Como visitante, quiero conocer soluciones específicas de FrostLink para mi tipo de negocio.                           | Escenario 1: Acceso a información para negocios — Dado que accedo a las soluciones ofrecidas, cuando reviso el contenido disponible, entonces debo encontrar descripciones específicas dirigidas a negocios que utilizan o gestionan equipos de refrigeración.<br>Escenario 2: Acceso a información para empresas proveedoras — Dado que accedo a las soluciones ofrecidas, cuando reviso el contenido disponible, entonces debo encontrar información específica para empresas proveedoras de equipos o servicios de mantenimiento. | EP-07 |
+| US-25         | Comprender funcionalidades destacadas          | Como visitante, deseo entender las funcionalidades clave para evaluar si se ajustan a mi operación.                   | Escenario 1: Acceso a funcionalidades principales — Dado que consulto las características de la plataforma, cuando reviso la lista de funcionalidades, entonces debo identificar opciones clave como monitoreo en tiempo real, automatización de alertas y gestión remota.<br>Escenario 2: Descripciones orientadas a valor — Dado que leo las descripciones de las funcionalidades, cuando evalúo cada una, entonces debo entender el beneficio que aporta para operaciones de refrigeración o mantenimiento.                       | EP-07 |
+| US-26         | Solicitar una demo fácilmente                  | Como visitante, quiero solicitar una demo para iniciar contacto con FrostLink.                                        | Escenario 1: Disponibilidad de opción para solicitar demo — Dado que estoy explorando la plataforma, cuando busco cómo solicitar una demostración, entonces debo encontrar una opción clara y accesible para iniciar el proceso.<br>Escenario 2: Acceso a canal de contacto — Dado que selecciono la opción de solicitar una demo, cuando soy redirigido, entonces debo acceder a un canal funcional de contacto como un formulario, correo electrónico o enlace directo.                                                            | EP-07 |
+| US-27         | Conocer misión y visión de la startup          | Como visitante, deseo conocer la misión y visión de FrostLink.                                                        | Escenario 1: Acceso a la misión de la empresa — Dado que accedo a la información institucional de FrostLink, cuando reviso su contenido corporativo, entonces debo encontrar una descripción clara de su misión.<br>Escenario 2: Acceso a la visión de la empresa — Dado que accedo a la información institucional, cuando reviso su contenido estratégico, entonces debo encontrar una descripción clara de su visión a futuro.                                                                                                     | EP-07 |
+| US-28         | Contactar fácilmente con ventas                | Como visitante empresario, quiero contactar al equipo de ventas de forma simple.                                      | Escenario 1: Disponibilidad de medio de contacto comercial — Dado que estoy interesado en contactar al equipo de ventas, cuando busco información de contacto, entonces debo encontrar una opción clara para iniciar la comunicación.<br>Escenario 2: Redirección al canal adecuado — Dado que selecciono la opción de contacto, cuando soy redirigido, entonces debo llegar a un canal funcional como un formulario, dirección de correo o número de contacto.                                                                      | EP-07 |
+| US-29         | Acceder fácilmente a la plataforma             | Como visitante, deseo encontrar rápidamente el inicio de sesión para entrar a mi cuenta.                              | Escenario 1: Acceso al inicio de sesión — Dado que soy un usuario registrado, cuando busco cómo ingresar a mi cuenta, entonces debo encontrar una opción claramente identificable para iniciar sesión.<br>Escenario 2: Redirección al formulario de autenticación — Dado que selecciono la opción de inicio de sesión, cuando soy redirigido, entonces debo llegar al formulario correspondiente para ingresar mis credenciales.                                                                                                     | EP-07 |
+| US-30         | Descargar la app móvil desde la web            | Como visitante, deseo descargar la app móvil de FrostLink para usarla en mi dispositivo.                              | Escenario 1: Acceso a opciones de descarga móvil — Dado que estoy interesado en utilizar la aplicación en mi celular, cuando exploro la plataforma, entonces debo encontrar un enlace o referencia a la descarga de la app móvil.<br>Escenario 2: Redirección a la tienda correspondiente — Dado que selecciono el enlace de descarga, cuando soy redirigido, entonces debo acceder a la tienda de aplicaciones correspondiente según mi sistema operativo.                                                                          | EP-07 |
+| US-31         | Controlar encendido y apagado del equipo       | Como cliente, quiero encender y apagar remotamente mis equipos desde la plataforma.                                   | Escenario 1: Encendido remoto del equipo — Dado que el cliente tiene un equipo registrado, cuando ejecuta una acción de encendido sobre el equipo, entonces el sistema transmite la instrucción y cambia el estado del equipo a encendido.<br>Escenario 2: Apagado remoto del equipo — Dado que el cliente tiene un equipo activo, cuando ejecuta una acción de apagado, entonces el sistema transmite la instrucción y cambia el estado del equipo a apagado.                                                                       | EP-02 |
+| US-32         | Ajustar temperatura del equipo                 | Como cliente, deseo modificar la temperatura de mis equipos para mantener condiciones óptimas.                        | Escenario 1: Aumentar temperatura — Dado que el cliente tiene acceso a un equipo, cuando incrementa el valor de temperatura deseada, entonces el sistema actualiza la configuración del equipo con el nuevo valor.<br>Escenario 2: Disminuir temperatura — Dado que el cliente tiene acceso a un equipo, cuando reduce el valor de temperatura deseada, entonces el sistema actualiza la configuración del equipo con el nuevo valor.                                                                                                | EP-02 |
+
+## Technical stories
+
+| Epic/Story ID | Título                                                             | Descripción                                                                                                                       | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Epic  |
+| ------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| TS-33         | Registrar nuevo equipo a través de API RESTful                     | Como desarrollador, quiero un endpoint REST para registrar equipos de refrigeración y facilitar su control y monitoreo.           | Escenario 1: Registro exitoso — Dado que el endpoint `/equipment` está disponible, cuando se envía una solicitud POST con los datos válidos (nombre, tipo, ubicación, etc.), entonces se recibe una respuesta con estado 201 y los datos del equipo registrado.<br>Escenario 2: Registro con datos inválidos — Dado que el endpoint está disponible, cuando se envía una solicitud POST con campos obligatorios vacíos o mal formateados, entonces se recibe una respuesta 400 con mensaje "Invalid or incomplete data".                                                                                | EP-02 |
+| TS-34         | Eliminar técnico asignado a través de API RESTful                  | Como desarrollador, quiero eliminar técnicos del sistema mediante la API.                                                         | Escenario 1: Técnico eliminado correctamente — Dado que el endpoint `/technicians/{id}` está disponible y el ID existe, cuando se hace un DELETE, entonces se devuelve código 204 y el técnico es removido del sistema.<br>Escenario 2: Intentar eliminar técnico inexistente — Dado que el ID del técnico no existe, cuando se hace un DELETE, entonces se devuelve código 404 con mensaje "Technician not found".                                                                                                                                                                                     | EP-01 |
+| TS-35         | Notificación automática por alerta crítica a través de API RESTful | Como desarrollador, deseo exponer alertas críticas detectadas en los equipos para disparar notificaciones automáticas al usuario. | Escenario 1: Envío de notificación al detectar falla — Dado que el sistema recibe una alerta crítica desde un equipo, cuando se procesa la alerta, entonces el sistema debe enviar una notificación al usuario.<br>Escenario 2: Falla detectada sin notificación activa — Dado que el sistema de notificaciones está deshabilitado, cuando se genera la alerta crítica, entonces no se envía notificación y se registra solo en el historial.                                                                                                                                                           | EP-05 |
+| TS-36         | Crear solicitud de mantenimiento a través de API RESTful           | Como desarrollador, quiero crear solicitudes de mantenimiento vía API para reportar necesidades de soporte.                       | Escenario 1: Creación exitosa de solicitud — Dado que el endpoint `/api/v1/maintenance-requests` está disponible, cuando se envía una solicitud POST con los datos del equipo y la descripción del problema, entonces se recibe una respuesta 201 y se guarda la solicitud en el sistema.<br>Escenario 2: Datos incompletos en la solicitud — Dado que el endpoint está disponible, cuando se omite un campo obligatorio (como el ID del equipo), entonces se recibe una respuesta 400 con mensaje "Invalid data".                                                                                      | EP-03 |
+| TS-37         | Crear registro de intervención técnica a través de API RESTful     | Como desarrollador, deseo registrar intervenciones técnicas mediante la API para llevar seguimiento del mantenimiento.            | Escenario 1: Registro exitoso — Dado que el endpoint `/api/v1/interventions` está disponible, cuando se envía una solicitud POST con los datos del técnico y equipo, entonces el sistema responde con 201 y se almacena el registro.<br>Escenario 2: Registro con técnico no existente — Dado que el ID del técnico no existe, cuando se realiza la solicitud POST, entonces se devuelve un 404 con mensaje "Technician not found".                                                                                                                                                                     | EP-03 |
+| TS-38         | Registrar evento de alerta manual a través de API RESTful          | Como desarrollador, quiero registrar alertas manuales desde la API para incidentes detectados en campo.                           | Escenario 1: Registrar alerta manual correctamente — Dado que el endpoint `/api/v1/alerts` está activo, cuando se envía una solicitud POST con tipo de alerta, equipo y descripción, entonces se responde con estado 201 y se almacena el evento.<br>Escenario 2: Registrar alerta sin equipo asociado — Dado que se omite el ID del equipo en la solicitud, cuando se hace el POST, entonces se responde con estado 400 y mensaje "Device must be specified".                                                                                                                                          | EP-05 |
+| TS-39         | Evaluar servicio a través de API RESTful                           | Como desarrollador, deseo endpoints para crear y actualizar evaluaciones de servicio de los clientes.                             | Escenario 1: Evaluación inicial del servicio — Dado que el endpoint `/api/v1/reviews` está disponible y el cliente ha recibido un servicio, cuando se envía una solicitud POST con la puntuación (1-5), entonces el sistema responde con 201 y almacena la evaluación asociada al servicio correspondiente.<br>Escenario 2: Edición dentro del plazo permitido — Dado que el cliente ya evaluó un servicio y han pasado menos de 48 horas, cuando realiza una solicitud PUT a `/api/v1/reviews/{id}` con una nueva puntuación, entonces el sistema responde con 200 y actualiza la evaluación anterior. | EP-06 |
+| TS-40         | Registrar nuevo usuario a través de API RESTful                    | Como desarrollador, quiero un endpoint para alta de usuarios con validación de correo y contraseña.                               | Escenario 1: Registro exitoso — Dado que el endpoint `/api/v1/users` está disponible, cuando se envía una solicitud POST con datos válidos (nombre, email único, contraseña válida), entonces el sistema responde con 201 y devuelve el usuario registrado.<br>Escenario 2: Registro con email existente — Dado un correo ya registrado, cuando se intenta registrar nuevamente, entonces se devuelve un 400 con mensaje "Email already registered".                                                                                                                                                    | EP-01 |
+| TS-41         | Consultar estado de solicitud de servicio por API                  | Como desarrollador, deseo un endpoint para consultar el estado de una solicitud en tiempo real.                                   | Escenario 1: Consulta exitosa del estado — Dado que el endpoint `/api/v1/requests/{id}` está disponible, cuando se envía una solicitud GET con un ID válido, entonces el sistema responde con 200 y devuelve el estado actual de la solicitud.<br>Escenario 2: Consulta con ID inexistente — Dado que el ID no existe, entonces se devuelve 404 con mensaje "Request not found".                                                                                                                                                                                                                        | EP-03 |
+| TS-42         | Solicitar mantenimiento preventivo vía API                         | Como desarrollador, quiero un endpoint para registrar solicitudes de mantenimiento preventivo.                                    | Escenario 1: Solicitud exitosa de mantenimiento preventivo — Dado que el endpoint `/api/v1/preventive-maintenance` está disponible, cuando se envía una solicitud POST con datos válidos (equipo, fecha deseada), entonces el sistema responde con 201 y guarda la solicitud.<br>Escenario 2: Solicitud con datos incompletos — Dado que falta un campo obligatorio, entonces se responde con 400 y mensaje de error.                                                                                                                                                                                   | EP-03 |
+| TS-43         | Asignar técnico a solicitud de servicio por API                    | Como desarrollador, deseo asignar técnicos a solicitudes mediante un endpoint dedicado.                                           | Escenario 1: Asignación exitosa — Dado que el endpoint `/api/v1/requests/{id}/assign-technician` está disponible, cuando se envía una solicitud PUT con un técnico válido, entonces se devuelve 200 y se actualiza la solicitud.<br>Escenario 2: Técnico no existente — Dado un ID de técnico inválido, entonces se responde con 404 y mensaje "Technician not found".                                                                                                                                                                                                                                  | EP-03 |
+| TS-44         | Consultar historial de servicios por API                           | Como desarrollador, quiero obtener el historial por cliente o equipo con opciones de filtrado.                                    | Escenario 1: Historial completo por cliente — Dado que el endpoint `/api/v1/service-history?client_id={id}` está disponible, cuando se hace la consulta, entonces se responde con 200 y la lista de servicios asociados.<br>Escenario 2: Historial filtrado por equipo — Dado que se agrega un parámetro de equipo, entonces el sistema devuelve solo los servicios asociados a ese equipo.                                                                                                                                                                                                             | EP-04 |
+| TS-45         | Generar y exportar reporte de desempeño técnico                    | Como desarrollador, deseo generar reportes de desempeño y habilitar su descarga en PDF.                                           | Escenario 1: Generar reporte exitosamente — Dado que el endpoint `/api/v1/reports/performance` está disponible, cuando se hace una solicitud GET, entonces se devuelve un resumen con métricas.<br>Escenario 2: Descargar reporte PDF — Dado que el reporte ya fue generado, cuando se solicita la descarga, entonces el sistema entrega un archivo PDF con los datos generados.                                                                                                                                                                                                                        | EP-04 |
+| TS-46         | Consultar clientes con sus servicios asociados por API             | Como desarrollador, quiero listar clientes junto con los servicios que tienen registrados.                                        | Escenario 1: Consulta de clientes con servicios — Dado que el endpoint `/api/v1/clients/services` está disponible, cuando se realiza una solicitud GET, entonces se devuelve la lista de clientes y sus servicios.<br>Escenario 2: Filtro por estado de servicio — Dado un parámetro de estado (ej. "in progress"), entonces el sistema devuelve solo los clientes con servicios en ese estado.                                                                                                                                                                                                         | EP-04 |
+| TS-47         | Consultar equipos entregados y su estado por API                   | Como desarrollador, deseo visualizar equipos entregados a clientes con su estado y tipo.                                          | Escenario 1: Listado de equipos entregados — Dado que el endpoint `/api/v1/delivered-devices` está disponible, cuando se hace una solicitud GET, entonces se devuelve una lista con los equipos y sus estados.<br>Escenario 2: Filtro por tipo y estado — Dado que se agregan parámetros de tipo o estado, entonces se devuelve la lista filtrada según los criterios.                                                                                                                                                                                                                                  | EP-02 |
+| TS-48         | Sistema de envío de notificaciones por eventos relevantes          | Como desarrollador, quiero que el sistema envíe notificaciones automáticas o manuales ante eventos clave.                         | Escenario 1: Envío automático de notificación por cambio de estado — Dado que una solicitud cambia a "in progress", entonces el sistema envía una notificación al cliente.<br>Escenario 2: Envío manual por parte del técnico — Dado que un técnico detecta una situación crítica, cuando registra un evento, entonces se notifica al cliente automáticamente.                                                                                                                                                                                                                                          | EP-05 |
+| TS-49         | Consultar perfil del técnico con métricas por API                  | Como desarrollador, deseo un endpoint que muestre el perfil completo del técnico con historial y métricas.                        | Escenario 1: Visualización del perfil completo — Dado que el endpoint `/api/v1/technicians/{id}` está disponible, cuando se realiza una consulta GET, entonces se devuelve la información personal, servicios realizados y evaluación promedio.<br>Escenario 2: Técnico sin historial — Dado que el técnico aún no ha realizado servicios, el sistema informa que no hay datos de desempeño aún.                                                                                                                                                                                                        | EP-01 |
+
+## Epics
+
+| Epic ID | Título                                     | Descripción                                                                                                         |
+| ------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| EP-01   | Gestión de Usuarios                        | Enfocada en registro, autenticación y administración de perfiles de usuarios y técnicos.                            |
+| EP-02   | Gestión de Equipos                         | Incluye alta, edición, visualización y control básico de equipos (encendido/apagado, temperatura).                  |
+| EP-03   | Solicitudes de Servicio                    | Cubre creación, asignación, seguimiento y resolución de solicitudes de reparación y mantenimiento.                  |
+| EP-04   | Informes y Reportes                        | Comprende generación, consulta y envío de reportes (servicios, consumo energético, desempeño técnico).              |
+| EP-05   | Alertas y Notificaciones                   | Gestiona alertas automáticas y notificaciones por fallas, mantenimiento y cambios de estado.                        |
+| EP-06   | Evaluación de Servicios                    | Permite registrar y actualizar evaluaciones de clientes sobre servicios recibidos.                                  |
+| EP-07   | Sitio Web y Experiencia Web (Landing Page) | Abarca landing page, propuesta de valor, soluciones por segmento, solicitud de demo, contacto y acceso a login/app. |
+
+
+
+# 3.3. Impact Mapping.
+El equipo de FrostLink realizó de manera colaborativa, en UXPressia, un Impact Mapping para conectar y alinear los objetivos de negocio con los requerimientos funcionales de la plataforma.
+
+![Impact-Mapping.png](resources/Impact-Mapping.png)
+
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
@@ -1628,64 +1715,10 @@ De manera complementaria, se utiliza una paleta de rojo claro para resaltar vent
 *Figura 2:* Guías de Estilo Web - Color Rojo.
 
 ### 4.1.3. Mobile Style Guidelines
-# FrostLink - Estándares de Diseño e Interacción Móvil
 
-Esta sección establece los estándares visuales y de interacción para la aplicación móvil de **FrostLink**, garantizando una experiencia de usuario uniforme y optimizada para **iOS** y **Android**.  
-Bajo un enfoque **nativo-móvil**, se implementan componentes específicos de cada plataforma que priorizan la ergonomía táctil, gestos intuitivos y navegación por pestañas inferiores.
+#### 4.1.3.1. iOS Mobile Style Guidelines
 
----
-
-## Diseño Adaptativo
-La interfaz utiliza un sistema de contenedores flexibles que se ajustan dinámicamente a diferentes resoluciones y orientaciones de pantalla, manteniendo la jerarquía visual en dispositivos desde **4 hasta 6.5 pulgadas**.
-
----
-
-## Tipografía Móvil
-- **iOS:** SF Pro  
-- **Android:** Roboto  
-
-Las tipografías se escalan automáticamente según las configuraciones de accesibilidad del usuario.  
-Los tamaños de fuente siguen las pautas de **Material Design** y **Human Interface Guidelines**.
-
----
-
-## Paleta de Colores Móvil
-La paleta se adapta a los modos **claro/oscuro** de los sistemas operativos, conservando la identidad de FrostLink y manteniendo un contraste adecuado para mejorar la legibilidad.
-
-- **Celeste Primario (#0884C4):** Botones de acción principal y estados activos.  
-- **Degradados Dinámicos:** Fondos con gradientes sutiles para profundidad visual.  
-- **Verde (#00CC66):** Notificaciones push exitosas y estados en tiempo real.  
-- **Rojo (#FF4B4B):** Alertas críticas con vibración asociada.  
-- **Amarillo (#FFCC00):** Recordatorios de mantenimiento preventivo.  
-
----
-
-## Componentes Móviles Específicos
-- Navegación inferior con **5 secciones clave**.  
-- **Cards expandibles** con gestos de deslizamiento.  
-- **Botones flotantes (FAB)** para acciones frecuentes.  
-- Notificaciones integradas con el **centro de notificaciones del sistema operativo**.  
-
----
-
-## Interacciones Táctiles
-- **Pull-to-refresh** en listas dinámicas.  
-- **Swipe left/right** para acciones rápidas.  
-- **Vibración háptica** en confirmaciones críticas.  
-- **Animaciones de carga nativas** por plataforma.  
-<center>
-<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
-</center>
-*Figura 1:* Guías de Estilo Web – Color Sky Blue
-
-De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
-
-<center>
-<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
-</center>
-
-*Figura 2:* Guías de Estilo Web - Color Rojo.
-
+#### 4.1.3.2. Android Mobile Style Guidelines
 
 ## 4.2. Information Architecture
 ### 4.2.1. Organization Systems
@@ -1876,200 +1909,17 @@ En esta sección se incluye un formulario para que los usuarios puedan comunicar
 
 ### 4.4.1. Mobile Applications Wireframes
 
-Los wireframes de la aplicación móvil de **FrostLink** definen la estructura y organización de las pantallas principales para dispositivos **iOS** y **Android**, detallando la ubicación de componentes nativos de la interfaz y los flujos de navegación táctil.  
-Actúan como referencia visual para el diseño final, garantizando una experiencia de usuario coherente y optimizada para interacciones móviles.
-
-Estos diagramas priorizan la **usabilidad móvil** y la **claridad visual**, permitiendo que diseñadores y desarrolladores anticipen cómo los usuarios interactuarán con la aplicación mediante gestos táctiles y optimicen la distribución de elementos para ofrecer una experiencia ágil e intuitiva en dispositivos de pantalla reducida.
-
-## Figura 1: Wireframe Móvil – Alquiler de Equipos (Clientes)
-Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con:
-
-<img src="./resources/RENT-CUSTOMER.jpg" alt="RENT-CUSTOMER" width="500" height="500">
-
----
-
-## Figura 2: Wireframe Móvil – Agregar Equipos
-Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
-
-<img src="./resources/ADD-EQUIPMENT.jpg" alt="ADD-EQUIPMENT" width="500" height="500">
-
----
-
-## Figura 3: Wireframe Móvil – Máquinas (Clientes)
-Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
-
-<img src="./resources/MACHINES-CUSTOMER.jpg" alt="MACHINES-CUSTOMER" width="500" height="500">
-
----
-
-## Figura 4: Wireframe Móvil – Inicio (Clientes)
-Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
-
-<img src="./resources/HOME-CUSTOMER.jpg" alt="HOME-CUSTOMER" width="500" height="500">
-
----
-
-## Figura 5: Wireframe Móvil – Registro (Clientes)
-Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
-
-<img src="./resources/REGISTER-CUSTOMER.jpg" alt="REGISTER-CUSTOMER" width="500" height="500">
-
----
-
-## Figura 6: Wireframe Móvil – Inicio de Sesión (Clientes)
-Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
-
-<img src="./resources/LOGIN-CUSTOMER.jpg" alt="LOGIN-CUSTOMER" width="500" height="500">
-
----
-
-## Figura 7: Wireframe Móvil – Inicio de Sesión (General)
-Pantalla de inicio de sesión para acceso general de la aplicación.
-
-<img src="./resources/LOGIN.jpg" alt="LOGIN" width="500" height="500">
-
----
-
-## Figura 8: Wireframe Móvil – Registro (Empresas)
-Formulario para el registro de **nuevas empresas** dentro de la aplicación.
-
-<img src="./resources/REGISTER-COMPANIES.jpg" alt="REGISTER-COMPANIES" width="500" height="500">
-
----
-
-## Figura 9: Wireframe Móvil – Inicio (Empresas)
-Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
-
-<img src="./resources/HOME-COMPANIES.jpg" alt="HOME-COMPANIES" width="500" height="500">
-
----
-
-## Figura 10: Wireframe Móvil – Máquinas (Empresas)
-Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
-
-<img src="./resources/MACHINES-COMPANIES.jpg" alt="MACHINES-COMPANIES" width="500" height="500">
-
----
-
-## Figura 11: Wireframe Móvil – Cuenta (Empresas)
-Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
-
-<img src="./resources/ACCOUNT-COMPANIES.jpg" alt="ACCOUNT-COMPANIES" width="500" height="500">
-
----
-
-## Figura 12: Wireframe Móvil – Cuenta (General)
-Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
-
-<img src="./resources/ACCOUNT.jpg" alt="ACCOUNT" width="500" height="500">
-
----
-
-## Figura 13: Wireframe Móvil – Gestión de Equipos
-Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
-
-<img src="./resources/MANAGE-EQUIPMENTS.jpg" alt="MANAGE-EQUIPMENTS" width="500" height="500">
-
+### 4.4.2. Mobile Applications Wireflow Diagrams
 
 ### 4.4.3. Mobile Applications Mock-ups
 
-# Mockups Móviles - FrostLink
+### 4.4.4. Mobile Applications User Flow Diagrams
 
-Los mockups de la aplicación móvil de **FrostLink** representan la propuesta visual final de las pantallas principales para dispositivos **iOS** y **Android**, detallando la apariencia de los componentes nativos de la interfaz y los flujos de navegación táctil.  
-Actúan como **referencia visual definitiva** para el diseño final, garantizando una experiencia de usuario coherente y optimizada para interacciones móviles.
+## 4.5. Mobile Applications Prototyping
 
-Estos mockups priorizan la **usabilidad móvil** y la **claridad visual**, permitiendo que diseñadores y desarrolladores anticipen cómo los usuarios interactuarán con la aplicación mediante gestos táctiles y optimicen la distribución de elementos para ofrecer una experiencia ágil e intuitiva en dispositivos de pantalla reducida.
+### 4.5.1. Android Mobile Applications Prototyping
 
----
-
-## Figura 1: Mockup Móvil – Alquiler de Equipos (Clientes)
-Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con:
-<img src="./resources/RENT-CUSTOMER-MOCKUP.jpg" alt="RENT-CUSTOMER-MOCKUP" width="500" height="500">
-
----
-
-## Figura 2: Mockup Móvil – Agregar Equipos
-Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
-
-<img src="./resources/ADD-EQUIPMENT-MOCKUP.jpg" alt="ADD-EQUIPMENT-MOCKUP" width="500" height="500">
-
----
-
-## Figura 3: Mockup Móvil – Máquinas (Clientes)
-Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
-
-<img src="./resources/MACHINES-CUSTOMER-MOCKUP.jpg" alt="MACHINES-CUSTOMER-MOCKUP" width="500" height="500">
-
----
-
-## Figura 4: Mockup Móvil – Inicio (Clientes)
-Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
-
-<img src="./resources/HOME-CUSTOMER-MOCKUP.jpg" alt="HOME-CUSTOMER-MOCKUP" width="500" height="500">
-
----
-
-## Figura 5: Mockup Móvil – Registro (Clientes)
-Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
-
-<img src="./resources/REGISTER-CUSTOMER-MOCKUP.jpg" alt="REGISTER-CUSTOMER-MOCKUP" width="500" height="500">
-
----
-
-## Figura 6: Mockup Móvil – Inicio de Sesión (Clientes)
-Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
-
-<img src="./resources/LOGIN-CUSTOMER-MOCKUP.jpg" alt="LOGIN-CUSTOMER-MOCKUP" width="500" height="500">
-
----
-
-## Figura 7: Mockup Móvil – Inicio de Sesión (General)
-Pantalla de inicio de sesión para acceso general de la aplicación.
-
-<img src="./resources/LOGIN-MOCKUP.jpg" alt="LOGIN-MOCKUP" width="500" height="500">
-
----
-
-## Figura 8: Mockup Móvil – Registro (Empresas)
-Formulario para el registro de **nuevas empresas** dentro de la aplicación.
-
-<img src="./resources/REGISTER-COMPANIES-MOCKUP.jpg" alt="REGISTER-COMPANIES-MOCKUP" width="500" height="500">
-
----
-
-## Figura 9: Mockup Móvil – Inicio (Empresas)
-Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
-
-<img src="./resources/HOME-COMPANIES-MOCKUP.jpg" alt="HOME-COMPANIES-MOCKUP" width="500" height="500">
-
----
-
-## Figura 10: Mockup Móvil – Máquinas (Empresas)
-Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
-
-<img src="./resources/MACHINES-COMPANIES-MOCKUP.jpg" alt="MACHINES-COMPANIES-MOCKUP" width="500" height="500">
-
----
-
-## Figura 11: Mockup Móvil – Cuenta (Empresas)
-Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
-
-<img src="./resources/ACCOUNT-COMPANIES-MOCKUP.jpg" alt="ACCOUNT-COMPANIES-MOCKUP" width="500" height="500">
-
----
-
-## Figura 12: Mockup Móvil – Cuenta (General)
-Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
-
-<img src="./resources/ACCOUNT-MOCKUP.jpg" alt="ACCOUNT-MOCKUP" width="500" height="500">
-
----
-
-## Figura 13: Mockup Móvil – Gestión de Equipos
-Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
-
-<img src="./resources/MANAGE-EQUIPMENTS-MOCKUP.jpg" alt="MANAGE-EQUIPMENTS-MOCKUP" width="500" height="500">
-
+### 4.5.2. iOS Mobile Applications Prototyping
 
 ## 4.6. Web Applications UX/UI Design
 
