@@ -227,7 +227,7 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
   </tr>
   <tr>
     <td>Varela Bustinza, Marcelo Alessandro</td>
-    <td></td>
+    <td>VarBus</td>
   </tr>
 </table>
 
@@ -235,12 +235,12 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 
 Para la elaboración del informe correspondiente a la entrega del TB1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas desde el capítulo I hasta el capitulo V.
 
-| Integrantes     | Tareas Asignadas                                                                                                                                                              |
-|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  León Vivas, Fabrizio Amir  | Chapter I & II                     |
-|  Mondoñedo Rodriguez, Juan Diego Javier  | Chapter V |
-| Marcelo Varela  |  |
-| Medina Cruzado, Raúl Adrian |        |
+| Integrantes     | Tareas Asignadas |
+|-----------------|------------------|
+|  León Vivas, Fabrizio Amir  | Chapter I & II   |
+|  Mondoñedo Rodriguez, Juan Diego  Javier   |     Chapter V         |
+| Marcelo Varela  | Chapter  I & IV  |
+| Medina Cruzado, Raúl Adrian |                  |
 
 
 # Contenido
