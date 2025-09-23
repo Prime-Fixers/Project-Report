@@ -451,8 +451,8 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong> Contribuí en la definición de la propuesta de valor de FrostLink, el análisis 5W+2H y el desarrollo del Lean UX Canvas, asegurando un enfoque ético y responsable. También participé en la elaboración de los As-is Scenario Mapping, User Journey Mapping y en el análisis competitivo frente a otras soluciones del mercado.</li>
                     <li><strong>Raúl Adrian Medina Cruzado:</strong>  </li>
-                    <li><strong></strong> </li>
-                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> </li>
+                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong> </li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Durante el desarrollo del Capítulo IV: Product Design reconocí mi responsabilidad ética y profesional al diseñar las guías de estilo, la arquitectura de información y las interfaces UX/UI, asegurando que cumplan con principios de accesibilidad, usabilidad y buenas prácticas de ingeniería de software orientadas al bienestar del usuario.</li>
                 </ul>
             </td>
             <td>
