@@ -2955,3 +2955,60 @@ A continuación se encuentra nuestro video about the product, donde se evidencia
 - **YouTube:** [Ver en YouTube]()
 - **Microsoft Stream:** [Ver video]()
 
+# Conclusiones
+
+Se validó la alineación problema–solución mediante investigación con usuarios y análisis competitivo, definiendo con claridad segmentos objetivo y oportunidades de valor.
+
+La especificación (As-Is/To-Be, user stories, backlog e impact mapping) aseguró trazabilidad desde necesidades del usuario hasta funcionalidades priorizadas.
+
+El diseño del producto consolidó guías de estilo y una arquitectura de información coherentes, materializadas en wireframes, flujos y mockups para web, móvil y landing.
+
+Los prototipos permitieron evaluar usabilidad y reducir retrabajo antes del desarrollo, afinando interacciones clave y contenidos.
+
+La arquitectura basada en DDD y diagramas C4, junto con el diseño orientado a objetos, favorece mantenibilidad, escalabilidad e integración con servicios externos.
+
+El modelo de datos (relacional/no relacional) respalda los casos de uso actuales y futuros, equilibrando consistencia, rendimiento y analítica.
+
+La implementación aplicó buenas prácticas de ingeniería (configuración de entorno, control de versiones, convenciones de código, despliegue y documentación de API).
+
+La colaboración del equipo, con roles claros y revisión continua, aceleró la toma de decisiones y aseguró calidad en los entregables.
+
+Se consideraron accesibilidad, privacidad, seguridad y responsabilidad ética, reforzando la confiabilidad y la inclusión del producto.
+
+El conjunto de avances deja bases sólidas para un piloto en producción y un camino claro de mejora continua.
+
+# Bibliografía
+
+Axios. (s.f.). Axios: Promise based HTTP client for the browser and node.js. Recuperado el 10 de julio de 2025, de https://axios-http.com/docs/intro
+
+Cohn, M. (s.f.). User stories articles. Mountain Goat Software. Recuperado el 10 de julio de 2025, de https://www.mountaingoatsoftware.com/blog/tag/user-stories
+
+Conventional Commits. (s.f.). Conventional commits. Recuperado el 10 de julio de 2025, de https://www.conventionalcommits.org/
+
+Figma. (s.f.). Guide to prototyping in Figma. Help Center. Recuperado el 22 de septiembre de 2025, de https://help.figma.com/hc/en-us/articles/360040314193
+
+Google. (s.f.). Google HTML/CSS style guide. Recuperado el 10 de julio de 2025, de https://google.github.io/styleguide/htmlcssguide.html
+
+Miro. (2025, 18 de junio). Miro for mapping & diagramming. Help Center. Recuperado el 22 de septiembre de 2025, de https://help.miro.com/hc/en-us/articles/4403634496402-Miro-for-mapping-diagramming
+
+Nielsen Norman Group. (s.f.). Front-end style-guides: Definition, requirements, component checklist. Recuperado el 10 de julio de 2025, de https://www.nngroup.com/articles/front-end-style-guides/
+
+Nvie. (s.f.). A successful Git branching model. Recuperado el 10 de julio de 2025, de https://nvie.com/posts/a-successful-git-branching-model/
+
+Preston-Werner, T. (s.f.). Semantic versioning 2.0.0. Recuperado el 10 de julio de 2025, de https://semver.org/
+
+PrimeVue. (s.f.). PrimeVue: The most complete UI component library for Vue.js. Recuperado el 10 de julio de 2025, de https://primevue.org
+
+Render. (s.f.). Deployments. Recuperado el 10 de julio de 2025, de https://render.com/docs/deploys
+
+REST API Tutorial. (s.f.). What is REST? Recuperado el 10 de julio de 2025, de https://www.restapitutorial.com/introduction/whatisrest
+
+RESTfulAPI.net. (s.f.). REST API tutorial. Recuperado el 10 de julio de 2025, de https://restfulapi.net
+
+Stripe. (s.f.). Payments overview. Recuperado el 10 de julio de 2025, de https://docs.stripe.com/payments?payments=popular
+
+Structurizr. (s.f.). Structurizr DSL. Recuperado el 22 de septiembre de 2025, de https://docs.structurizr.com/dsl
+
+UXPressia. (2024, 23 de marzo). How to create a customer journey map — a step-by-step guide with examples. Recuperado el 22 de septiembre de 2025, de https://uxpressia.com/blog/customer-journey-map-guide-examples
+
+W3Schools. (s.f.). HTML style guide and coding conventions. Recuperado el 10 de julio de 2025, de https://www.w3schools.com/html/html5_syntax.asp
