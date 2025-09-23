@@ -450,7 +450,7 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                 <strong>TB1:</strong><br>
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong> Contribuí en la definición de la propuesta de valor de FrostLink, el análisis 5W+2H y el desarrollo del Lean UX Canvas, asegurando un enfoque ético y responsable. También participé en la elaboración de los As-is Scenario Mapping, User Journey Mapping y en el análisis competitivo frente a otras soluciones del mercado.</li>
-                    <li><strong>Raúl Adrian Medina Cruzado:</strong>  </li>
+                    <li><strong>Raúl Adrian Medina Cruzado: Colaboré activamente en el diseño de experiencias digitales para FrostLink, participando en el prototipado de aplicaciones móviles para Android e iOS, así como en el diseño UX/UI de la aplicación web , donde desarrollé wireframes, diagramas de wireflow, mock-ups y flujos de usuario , asegurando una experiencia coherente y centrada en el usuario en todas las plataformas.</strong>  </li>
                     <li><strong></strong> </li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Durante el desarrollo del Capítulo IV: Product Design reconocí mi responsabilidad ética y profesional al diseñar las guías de estilo, la arquitectura de información y las interfaces UX/UI, asegurando que cumplan con principios de accesibilidad, usabilidad y buenas prácticas de ingeniería de software orientadas al bienestar del usuario. </li>
                 </ul>
@@ -467,7 +467,7 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                 <strong>TB1:</strong><br>
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong> Analicé el impacto de FrostLink en negocios que dependen de la cadena de frío, resaltando beneficios económicos al reducir pérdidas, sociales al garantizar calidad de productos y ambientales al optimizar el consumo energético.</li>
-                    <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
+                    <li><strong>Raúl Adrian Medina Cruzado: Analicé la implementación de FrostLink en empresas de cadena de frío, identificando ventajas clave como la minimización de mermas económicas mediante monitoreo predictivo, el fortalecimiento de la seguridad alimentaria a través del control de temperatura en tiempo real, y la sostenibilidad operativa lograda mediante la reducción del consumo energético y la prolongación de la vida útil de los equipos.</strong> </li>
                     <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong> </li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Asimismo, emití juicios informados considerando el impacto que las soluciones de software pueden tener en distintos contextos globales, económicos, sociales y ambientales, buscando que las propuestas de diseño y arquitectura no solo sean técnicamente viables, sino también sostenibles, inclusivas y generadoras de valor en la sociedad.</li>
                 </ul>
