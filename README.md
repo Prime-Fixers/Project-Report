@@ -238,9 +238,9 @@ Para la elaboración del informe correspondiente a la entrega del TB1, se realiz
 | Integrantes     | Tareas Asignadas |
 |-----------------|------------------|
 |  León Vivas, Fabrizio Amir  | Chapter I & II   |
-|      |                  |
+|  Mondoñedo Rodriguez, Juan Diego  Javier   |     Chapter V         |
 | Marcelo Varela  | Chapter  I & IV  |
-| Medina Cruzado, Raúl Adrian |                  |
+| Medina Cruzado, Raúl Adrian | Chapter III & IV |
 
 
 # Contenido
@@ -451,8 +451,8 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong> Contribuí en la definición de la propuesta de valor de FrostLink, el análisis 5W+2H y el desarrollo del Lean UX Canvas, asegurando un enfoque ético y responsable. También participé en la elaboración de los As-is Scenario Mapping, User Journey Mapping y en el análisis competitivo frente a otras soluciones del mercado.</li>
                     <li><strong>Raúl Adrian Medina Cruzado:</strong>  </li>
-                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong> </li>
-                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Durante el desarrollo del Capítulo IV: Product Design reconocí mi responsabilidad ética y profesional al diseñar las guías de estilo, la arquitectura de información y las interfaces UX/UI, asegurando que cumplan con principios de accesibilidad, usabilidad y buenas prácticas de ingeniería de software orientadas al bienestar del usuario.</li>
+                    <li><strong></strong> </li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> </li>
                 </ul>
             </td>
             <td>
@@ -469,7 +469,7 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Fabrizio Amir León Vivas:</strong> Analicé el impacto de FrostLink en negocios que dependen de la cadena de frío, resaltando beneficios económicos al reducir pérdidas, sociales al garantizar calidad de productos y ambientales al optimizar el consumo energético.</li>
                     <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
                     <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong> </li>
-                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Asimismo, emití juicios informados considerando el impacto que las soluciones de software pueden tener en distintos contextos globales, económicos, sociales y ambientales, buscando que las propuestas de diseño y arquitectura no solo sean técnicamente viables, sino también sostenibles, inclusivas y generadoras de valor en la sociedad.</li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
                 </ul>
             </td>
             <td>
@@ -497,7 +497,7 @@ Visión: Aspiramos a convertirnos en la empresa líder en gestión y mantenimien
 
 | **Perfil**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Foto**                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| ****<br>                                                                                                                                                                | <img src="" alt="angie image" width="200">  |
+|**Juan Diego Mondoñedo**<br>                                                         Estudiante de Ingeniería de Software con experiencia previa con metodología ágil y frameworks como Angular y Vue, además de conocimientos en programación en Javascript, C++ y Python. Como miembro del equipo de FrostLink, emplearé mis habilidades al máximo para el desarrollo de nuestra startup.                                                                                                      | <img src="/resources/JD.jpg" alt="angie image" width="200">  |
 |**** <br> | <img src="" alt="kevin image" width="200">  |
 | **Fabrizio León**<br> Soy estudiante de Ingeniería de Software en la UPC con enfoque en desarrollo front-end y sólida base en sistemas UNIX/Linux. Manejo C++, JavaScript y Python, y he trabajado con metodologías ágiles para entregar soluciones claras y mantenibles. Me apasiona la ciberseguridad y la tecnología aplicada a problemas reales. Destaco por el trabajo en equipo, pensamiento crítico y comunicación efectiva.                                                     | <img src="/resources/Fabrizio.png" alt="kevin image" width="200">  | 
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
