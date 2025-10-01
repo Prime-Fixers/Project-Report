@@ -2977,6 +2977,12 @@ Se consideraron accesibilidad, privacidad, seguridad y responsabilidad ética, r
 
 El conjunto de avances deja bases sólidas para un piloto en producción y un camino claro de mejora continua.
 
+# Anexo
+
+- Repositorio Landing Page: [Enlace](https://github.com/Prime-Fixers/Landing-Page)
+- Repositorio del Front-End: [Enlace](https://github.com/Prime-Fixers/Frontend)
+- Repositorio del Back-End: [Enlace](https://github.com/Prime-Fixers/Platform)
+
 # Bibliografía
 
 Axios. (s.f.). Axios: Promise based HTTP client for the browser and node.js. Recuperado el 10 de julio de 2025, de https://axios-http.com/docs/intro
