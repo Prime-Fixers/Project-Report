@@ -2979,9 +2979,9 @@ El conjunto de avances deja bases sólidas para un piloto en producción y un ca
 
 # Anexo
 
-- Repositorio Landing Page: [Enlace](https://github.com/Prime-Fixers/Landing-Page)
-- Repositorio del Front-End: [Enlace](https://github.com/Prime-Fixers/Frontend)
-- Repositorio del Back-End: [Enlace](https://github.com/Prime-Fixers/Platform)
+//- Repositorio Landing Page: [Enlace](https://github.com/Prime-Fixers/Landing-Page)
+//- Repositorio del Front-End: [Enlace](https://github.com/Prime-Fixers/Frontend)
+//- Repositorio del Back-End: [Enlace](https://github.com/Prime-Fixers/Platform)
 
 # Bibliografía
 
