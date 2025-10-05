@@ -247,6 +247,19 @@ Para la elaboración del informe correspondiente a la entrega del TB1, se realiz
 | Marcelo Varela  | Chapter  I & IV  |
 | Medina Cruzado, Raúl Adrian | Chapter III & IV |
 
+**TP1**
+
+Para la elaboración del informe correspondiente a la entrega del TP1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas desde el capítulo III hasta el capitulo VII y levantando las correcciones del anterior entregable TB1.
+
+| Integrantes                                 | Tareas Asignadas |
+|---------------------------------------------|------------------|
+| León Vivas, Fabrizio Amir                   |                  |
+| Medina Cruzado, Raúl Adrian                 |                  |
+| Mondoñedo Rodriguez, Juan Diego Javier      |                  |
+| Pereira Vasquez, Fabrizzio                  |                  |
+| Varela Bustinza, Marcelo Alessandro         |                  |
+
+
 
 # Contenido
 
