@@ -2115,99 +2115,125 @@ Actúan como referencia visual para el diseño final, garantizando una experienc
 
 Estos diagramas priorizan la **usabilidad móvil** y la **claridad visual**, permitiendo que diseñadores y desarrolladores anticipen cómo los usuarios interactuarán con la aplicación mediante gestos táctiles y optimicen la distribución de elementos para ofrecer una experiencia ágil e intuitiva en dispositivos de pantalla reducida.
 
-## Figura 1: Wireframe Móvil – Alquiler de Equipos (Clientes)
+#### Figura 1: Wireframe Móvil – Alquiler de Equipos (Clientes)
 Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con:
 
-<img src="./resources/RENT-CUSTOMER.jpg" alt="RENT-CUSTOMER" width="500" height="500">
+![rentCustomer](./resources/RENT-CUSTOMER.jpg)
 
 ---
 
-## Figura 2: Wireframe Móvil – Agregar Equipos
+#### Figura 2: Wireframe Móvil – Agregar Equipos
 Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
 
-<img src="./resources/ADD-EQUIPMENT.jpg" alt="ADD-EQUIPMENT" width="500" height="500">
+![addEquipments](./resources/ADD-EQUIMENTS.jpg)
 
 ---
 
-## Figura 3: Wireframe Móvil – Máquinas (Clientes)
+#### Figura 3: Wireframe Móvil – Máquinas (Clientes)
 Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
 
-<img src="./resources/MACHINES-CUSTOMER.jpg" alt="MACHINES-CUSTOMER" width="500" height="500">
+![machinesCustomer](./resources/MACHINES-CUSTOMER.jpg)
 
 ---
 
-## Figura 4: Wireframe Móvil – Inicio (Clientes)
+#### Figura 4: Wireframe Móvil – Inicio (Clientes)
 Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
 
-<img src="./resources/HOME-CUSTOMER.jpg" alt="HOME-CUSTOMER" width="500" height="500">
+![homeCustomer](./resources/HOME-CUSTOMER.jpg)
 
 ---
 
-## Figura 5: Wireframe Móvil – Registro (Clientes)
+#### Figura 5: Wireframe Móvil – Registro (Clientes)
 Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
 
-<img src="./resources/REGISTER-CUSTOMER.jpg" alt="REGISTER-CUSTOMER" width="500" height="500">
+
+![register-customer](./resources/REGISTER-CUSTOMER.jpg)
 
 ---
 
-## Figura 6: Wireframe Móvil – Inicio de Sesión (Clientes)
+#### Figura 6: Wireframe Móvil – Inicio de Sesión (Clientes)
 Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
 
-<img src="./resources/LOGIN-CUSTOMER.jpg" alt="LOGIN-CUSTOMER" width="500" height="500">
+![login-customer](./resources/LOGIN-CUSTOMER.jpg)
 
 ---
 
-## Figura 7: Wireframe Móvil – Inicio de Sesión (General)
+#### Figura 7: Wireframe Móvil – Inicio de Sesión (General)
 Pantalla de inicio de sesión para acceso general de la aplicación.
 
-<img src="./resources/LOGIN.jpg" alt="LOGIN" width="500" height="500">
+![login](./resources/LOGIN.jpg)
 
 ---
 
-## Figura 8: Wireframe Móvil – Registro (Empresas)
+#### Figura 8: Wireframe Móvil – Registro (Empresas)
 Formulario para el registro de **nuevas empresas** dentro de la aplicación.
 
-<img src="./resources/REGISTER-COMPANIES.jpg" alt="REGISTER-COMPANIES" width="500" height="500">
+![register-companies](./resources/REGISTER-COMPANIES.jpg)
 
 ---
 
-## Figura 9: Wireframe Móvil – Inicio (Empresas)
+#### Figura 9: Wireframe Móvil – Inicio (Empresas)
 Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
 
-<img src="./resources/HOME-COMPANIES.jpg" alt="HOME-COMPANIES" width="500" height="500">
+![home-companies](./resources/HOME-COMPANIES.jpg)
 
 ---
 
-## Figura 10: Wireframe Móvil – Máquinas (Empresas)
+#### Figura 10: Wireframe Móvil – Máquinas (Empresas)
 Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
 
-<img src="./resources/MACHINES-COMPANIES.jpg" alt="MACHINES-COMPANIES" width="500" height="500">
+![machines-companies](./resources/MACHINES-COMPANIES.jpg)
 
 ---
 
-## Figura 11: Wireframe Móvil – Cuenta (Empresas)
+#### Figura 11: Wireframe Móvil – Cuenta (Empresas)
 Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
 
-<img src="./resources/ACCOUNT-COMPANIES.jpg" alt="ACCOUNT-COMPANIES" width="500" height="500">
+![account-companies](./resources/ACCOUNT-COMPANIES.jpg)
 
 ---
 
-## Figura 12: Wireframe Móvil – Cuenta (General)
+#### Figura 12: Wireframe Móvil – Cuenta (General)
 Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
 
-<img src="./resources/ACCOUNT.jpg" alt="ACCOUNT" width="500" height="500">
+![account](./resources/ACCOUNT.jpg)
 
 ---
 
-## Figura 13: Wireframe Móvil – Gestión de Equipos
+#### Figura 13: Wireframe Móvil – Gestión de Equipos
 Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
 
-<img src="./resources/MANAGE-EQUIPMENTS.jpg" alt="MANAGE-EQUIPMENTS" width="500" height="500">
+![manage-equipments](./resources/MANAGE-EQUIPMENTS.jpg)
 
+### 4.4.2. Mobile Applications Wireflow Diagrams
+
+Los Mobile Applications Wireflow Diagrams representan de forma visual el flujo de interacción dentro de la aplicación móvil, describiendo las pantallas, acciones del usuario y transiciones posibles entre ellas. Este artefacto permite comprender cómo el usuario navega a través de la interfaz, qué decisiones puede tomar y cuáles son las rutas restringidas o no permitidas según la lógica de negocio del producto.
+
+En el contexto de FrostLink, estos diagramas reflejan la secuencia lógica del ciclo de uso de la aplicación —desde el inicio de sesión hasta la gestión de funcionalidades principales—, asegurando consistencia entre la experiencia del usuario, las reglas del dominio y los casos de uso definidos en el sistema.
+
+**User Goal: Autenticación Company**
+
+![USERGOAL-AUTENTICACION](./resources/USER-GOAL-AUTENTICATION.png)
+
+**User Goal: Autenticación Customer**
+
+![USERGOAL-AUTENTICATIONCUSTOMER](./resources/USERGOAL-AUTENTICATION%20CUSTOMER.png)
+
+**User Goal: Profile Access**
+
+![USERGOAL-PROFILE ACCESS](./resources/USERGOAL-PROFILE.png)
+
+**User Goal: Machines Management for Companies**
+
+![USERGOAL-MACHINES MANAGEMENT](./resources/USERGOAL-MACHINEMANAGEMENT.png)
+
+**User Goal: Add Equipment Management**
+
+![USERGOAL-ADD EQUIPMENT FOR CUSTOMER](./resources/USERGOAL-ADDEQUIPMENT.png)
 
 ### 4.4.3. Mobile Applications Mock-ups
 
-# Mockups Móviles - FrostLink
+**Mockups Móviles - FrostLink**
 
 Los mockups de la aplicación móvil de **FrostLink** representan la propuesta visual final de las pantallas principales para dispositivos **iOS** y **Android**, detallando la apariencia de los componentes nativos de la interfaz y los flujos de navegación táctil.  
 Actúan como **referencia visual definitiva** para el diseño final, garantizando una experiencia de usuario coherente y optimizada para interacciones móviles.
@@ -2216,93 +2242,96 @@ Estos mockups priorizan la **usabilidad móvil** y la **claridad visual**, permi
 
 ---
 
-## Figura 1: Mockup Móvil – Alquiler de Equipos (Clientes)
+#### Figura 1: Mockup Móvil – Alquiler de Equipos (Clientes)
 Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con:
-<img src="./resources/RENT-CUSTOMER-MOCKUP.jpg" alt="RENT-CUSTOMER-MOCKUP" width="500" height="500">
+![RENT-CUSTOMER-MOCKUP](./resources/RENT-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 2: Mockup Móvil – Agregar Equipos
+#### Figura 2: Mockup Móvil – Agregar Equipos
 Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
 
-<img src="./resources/ADD-EQUIPMENT-MOCKUP.jpg" alt="ADD-EQUIPMENT-MOCKUP" width="500" height="500">
+![ADD EQUIPMENT-MOCKUP](./resources/ADD-EQUIMENTS%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 3: Mockup Móvil – Máquinas (Clientes)
+#### Figura 3: Mockup Móvil – Máquinas (Clientes)
 Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
 
-<img src="./resources/MACHINES-CUSTOMER-MOCKUP.jpg" alt="MACHINES-CUSTOMER-MOCKUP" width="500" height="500">
+![MACHINES CUSTOMER - MOCKUP](./resources/MACHINES-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 4: Mockup Móvil – Inicio (Clientes)
+#### Figura 4: Mockup Móvil – Inicio (Clientes)
 Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
 
-<img src="./resources/HOME-CUSTOMER-MOCKUP.jpg" alt="HOME-CUSTOMER-MOCKUP" width="500" height="500">
+![HOME CUSTOMER - MOCKUP](./resources/HOME-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 5: Mockup Móvil – Registro (Clientes)
+#### Figura 5: Mockup Móvil – Registro (Clientes)
 Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
 
-<img src="./resources/REGISTER-CUSTOMER-MOCKUP.jpg" alt="REGISTER-CUSTOMER-MOCKUP" width="500" height="500">
+![REGISTER CUSTOMER - MOCKUP](./resources/REGISTER-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 6: Mockup Móvil – Inicio de Sesión (Clientes)
+#### Figura 6: Mockup Móvil – Inicio de Sesión (Clientes)
 Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
 
-<img src="./resources/LOGIN-CUSTOMER-MOCKUP.jpg" alt="LOGIN-CUSTOMER-MOCKUP" width="500" height="500">
+![LOGIN CUSTOMER - MOCKUP](./resources/LOGIN-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 7: Mockup Móvil – Inicio de Sesión (General)
+#### Figura 7: Mockup Móvil – Inicio de Sesión (General)
 Pantalla de inicio de sesión para acceso general de la aplicación.
 
-<img src="./resources/LOGIN-MOCKUP.jpg" alt="LOGIN-MOCKUP" width="500" height="500">
+![LOGIN COMPANY - MOCKUP](/resources/LOGIN-MOCKUP.jpg)
 
 ---
 
-## Figura 8: Mockup Móvil – Registro (Empresas)
+#### Figura 8: Mockup Móvil – Registro (Empresas)
 Formulario para el registro de **nuevas empresas** dentro de la aplicación.
 
-<img src="./resources/REGISTER-COMPANIES-MOCKUP.jpg" alt="REGISTER-COMPANIES-MOCKUP" width="500" height="500">
+![REGISTER COMPANIES - MOCKUP](./resources/REGISTER-COMPANIES%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 9: Mockup Móvil – Inicio (Empresas)
+#### Figura 9: Mockup Móvil – Inicio (Empresas)
 Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
 
-<img src="./resources/HOME-COMPANIES-MOCKUP.jpg" alt="HOME-COMPANIES-MOCKUP" width="500" height="500">
+![HOME COMPANIES - MOCKUP](./resources/HOME-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 10: Mockup Móvil – Máquinas (Empresas)
+#### Figura 10: Mockup Móvil – Máquinas (Empresas)
 Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
 
-<img src="./resources/MACHINES-COMPANIES-MOCKUP.jpg" alt="MACHINES-COMPANIES-MOCKUP" width="500" height="500">
+
+![MACHINES COMPANIES - MOCKUP](./resources/MACHINES-COMPANIES%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 11: Mockup Móvil – Cuenta (Empresas)
+#### Figura 11: Mockup Móvil – Cuenta (Empresas)
 Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
 
-<img src="./resources/ACCOUNT-COMPANIES-MOCKUP.jpg" alt="ACCOUNT-COMPANIES-MOCKUP" width="500" height="500">
+![ACCOUNT COMPANIES - MOCKUP](./resources/ACCOUNT-COMPANIES%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 12: Mockup Móvil – Cuenta (General)
+#### Figura 12: Mockup Móvil – Cuenta (General)
 Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
 
-<img src="./resources/ACCOUNT-MOCKUP.jpg" alt="ACCOUNT-MOCKUP" width="500" height="500">
+![ACCOUNT - MOCKUP](./resources/ACCOUNT%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 13: Mockup Móvil – Gestión de Equipos
+#### Figura 13: Mockup Móvil – Gestión de Equipos
 Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
 
-<img src="./resources/MANAGE-EQUIPMENTS-MOCKUP.jpg" alt="MANAGE-EQUIPMENTS-MOCKUP" width="500" height="500">
+![MANAGE EQUIPMENTS - MOCKUP](./resources/MANAGE-EQUIPMENTS%20-%20MOCKUP.jpg)
+
+### 4.4.3. Mobile Applications User Flow Diagrams
 
 
 ## 4.6. Web Applications UX/UI Design
@@ -2405,11 +2434,11 @@ Formulario de alta de usuarios internos o nuevos registros empresariales.</p>
 
 <p><strong>Figura 24: Wireframe – Solicitudes (Empresa)</strong><br>
 Pantalla donde la empresa gestiona las solicitudes enviadas por los clientes.</p>
-<img src="./resources/Wireframe_24.jpeg" alt="wireframe_24" width="500" height="500">
+<img src="./resources/Wireframe_24.jpeg" alt="wireframe_24">
 
 <p><strong>Figura 25: Wireframe – Órdenes de Trabajo (Empresa)</strong><br>
 Presenta la vista de control de órdenes de trabajo generadas por la empresa.</p>
-<img src="./resources/Wireframe_25.jpeg" alt="wireframe_25" width="500" height="500">
+<img src="./resources/Wireframe_25.jpeg" alt="wireframe_25">
 
 ### 4.6.2. Web Applications Wireflow Diagrams
 <p>En esta sección se muestran los <strong>wireflows</strong> de cada objetivo del usuario, tomando en cuenta los <strong>User Personas</strong> pertinentes. Cada diagrama describe el recorrido de interacción y cómo dichas acciones impactan en las pantallas de la aplicación.</p>
@@ -2418,46 +2447,46 @@ Presenta la vista de control de órdenes de trabajo generadas por la empresa.</p
 Como propietario de un negocio que opera equipos de refrigeración, deseo <strong>monitorear el estado</strong> de cada equipo registrado en tiempo real.</p>
 <p><strong>Task Flow 1</strong><br>
 Secuencia de pasos para completar la acción principal del usuario (consulta y verificación del estado de equipos).</p>
-<img src="./resources/taskflow1.png" alt="taskflow1" width="500" height="500">
+<img src="./resources/taskflow1.png" alt="taskflow1">
 <p><strong>Wireflow 1</strong><br>
 Mapa que combina wireframes con el flujo de interacción, mostrando transiciones entre pantallas y puntos de decisión.</p>
-<img src="./resources/wireflow1.png" alt="wireflow1" width="500" height="500">
+<img src="./resources/wireflow1.png" alt="wireflow1">
 
 <p><strong>User Goal 2</strong><br>
 Como dueño de un negocio con equipos de refrigeración, quiero <strong>gestionar el alta y administración</strong> de los nuevos equipos que registre.</p>
 <p><strong>Task Flow 2</strong><br>
 Proceso de tareas que guía el registro, edición y organización de nuevos equipos.</p>
-<img src="./resources/taskflow2.png" alt="taskflow2" width="500" height="500">
+<img src="./resources/taskflow2.png" alt="taskflow2">
 <p><strong>Wireflow 2</strong><br>
 Representación visual del flujo entre pantallas para dar de alta equipos y configurar sus atributos.</p>
-<img src="./resources/wireflow2.png" alt="wireflow2" width="500" height="500">
+<img src="./resources/wireflow2.png" alt="wireflow2">
 
 <p><strong>User Goal 3</strong><br>
 Como dueño de un negocio que usa equipos de refrigeración, quiero <strong>consultar estadísticas completas</strong> sobre el rendimiento de mis equipos.</p>
 <p><strong>Task Flow 3</strong><br>
 Secuencia de tareas para explorar métricas, filtrar periodos y comparar resultados.</p>
-<img src="./resources/taskflow3.png" alt="taskflow3" width="500" height="500">
+<img src="./resources/taskflow3.png" alt="taskflow3">
 <p><strong>Wireflow 3</strong><br>
 Detalle de pantallas y transiciones que soportan la visualización de KPIs, gráficos y reportes.</p>
-<img src="./resources/wireflow3.png" alt="wireflow3" width="500" height="500">
+<img src="./resources/wireflow3.png" alt="wireflow3">
 
 <p><strong>User Goal 4</strong><br>
 Como dueño de un negocio con equipos de refrigeración, quiero <strong>solicitar nuevos equipos</strong> a un proveedor de forma simple.</p>
 <p><strong>Task Flow 4</strong><br>
 Flujo de tareas para seleccionar productos, confirmar cantidades y generar una solicitud.</p>
-<img src="./resources/taskflow4.png" alt="taskflow4" width="500" height="500">
+<img src="./resources/taskflow4.png" alt="taskflow4">
 <p><strong>Wireflow 4</strong><br>
 Visión general del camino de compra: búsqueda, detalle de equipo, carrito/solicitud y confirmación.</p>
-<img src="./resources/wireflow4.png" alt="wireflow4" width="500" height="500">
+<img src="./resources/wireflow4.png" alt="wireflow4">
 
 <p><strong>User Goal 5</strong><br>
 Como proveedor de equipos de refrigeración, deseo <strong>seguir y gestionar</strong> las <strong>órdenes de pedido</strong> de mis clientes.</p>
 <p><strong>Task Flow 5</strong><br>
 Flujo de tareas para revisar pedidos, actualizar estados y coordinar despachos.</p>
-<img src="./resources/taskflow5.png" alt="taskflow5" width="500" height="500">
+<img src="./resources/taskflow5.png" alt="taskflow5">
 <p><strong>Wireflow 5</strong><br>
 Resumen del movimiento entre pantallas para administrar órdenes: listado, detalle, acciones y notificaciones.</p>
-<img src="./resources/wireflow5.png" alt="wireflow5" width="500" height="500">
+<img src="./resources/wireflow5.png" alt="wireflow5">
 
 ### 4.4.3. Web Applications Mock-ups</h2>
 <p>En esta sección se presentan y describen los mock-ups de las aplicaciones de <strong>Frostlink</strong>. Se evidencian los principios de diseño, la arquitectura de información, el diseño inclusivo y el uso del Design System en los productos digitales. Cada maqueta muestra cómo estos conceptos se integran en la interfaz de usuario. A continuación, se exhiben las maquetas de la aplicación web, que representan de forma visual el aspecto y funcionamiento de la plataforma, facilitando la comunicación del diseño a desarrolladores y clientes para alinear la experiencia de usuario con la visión del proyecto.</p>
