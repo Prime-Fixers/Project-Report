@@ -2333,7 +2333,17 @@ Pantalla de administración para **añadir, modificar o eliminar equipos** regis
 
 ### 4.4.3. Mobile Applications User Flow Diagrams
 
+Los Mobile Applications Wireflow Diagrams representan de forma visual el flujo de interacción dentro de la aplicación móvil, describiendo las pantallas, acciones del usuario y transiciones posibles entre ellas. Este artefacto permite comprender cómo el usuario navega a través de la interfaz, qué decisiones puede tomar y cuáles son las rutas restringidas o no permitidas según la lógica de negocio del producto.
 
+En el contexto de FrostLink, estos diagramas reflejan la secuencia lógica del ciclo de uso de la aplicación —desde el inicio de sesión hasta la gestión de funcionalidades principales—, asegurando consistencia entre la experiencia del usuario, las reglas del dominio y los casos de uso definidos en el sistema.
+
+**User Goal: Gestión de máquinas** Cuando el usuario acceso a FrostLink, primero debe registrarse si no cuenta con credenciales oficiales para el mobile app.
+
+![USER GOAL - MANAGES EQUIPMENTS](./resources/USERGOAL-GESTIONDEMAQUINAS.png)
+
+**User Goal: Añadir máquina** El *customer* quiere añadir una nueva máquina de refrigeración a su dashboard para monitoreo asincronico.
+
+![USER GOAL - ADD EQUIPMENTS](./resources/USER_FLOW-ADDEQUIPMENTS.png)
 ## 4.6. Web Applications UX/UI Design
 
 ### 4.6.1. Web Applications Wireframes
