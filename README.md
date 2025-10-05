@@ -228,7 +228,11 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
   </tr>
   <tr>
     <td>Mondoñedo Rodriguez, Juan Diego Javier</td>
-    <td></td>
+    <td>Jmondonedor</td>
+  </tr>
+  <tr>
+    <td>Pereira Vasquez, Fabrizzio</td>
+    <td>fabrizzioper</td>
   </tr>
   <tr>
     <td>Varela Bustinza, Marcelo Alessandro</td>
@@ -527,45 +531,62 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
                     <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong>Analicé las implicaciones y los contextos en los que se utilizarían nuestros productos para definir correctamente plataformas para el despliegue de nuestras aplicaciones que sean compatibles con el uso. </li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Asimismo, emití juicios informados considerando el impacto que las soluciones de software pueden tener en distintos contextos globales, económicos, sociales y ambientales, buscando que las propuestas de diseño y arquitectura no solo sean técnicamente viables, sino también sostenibles, inclusivas y generadoras de valor en la sociedad.</li>
-                </ul>
+                     <li><strong>Pereira Vasquez, Fabrizzio</strong></li>                
+               </ul>
                <strong>TP1:</strong><br>
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong></li>                     
                      <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
                     <li><strong>Mondoñedo Rodriguez, Juan Diego Javier: </strong></li>                    
                      <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
+                     <li><strong>Pereira Vasquez, Fabrizzio</strong></li>
                 </ul>
             </td>
             <td>
                 <strong>TB1:</strong> El proyecto demuestra que una solución tecnológica puede generar valor económico, social y ambiental, siempre que se diseñe con responsabilidad y pensando en su impacto global.<br>
                <strong>TP1:</strong> 
-</td>
+         </td>
         </tr>
-    </tobdy>
+    </tbody>
 </table>
 
 # Capítulo I: Introducción
 
 ## 1. Startup Profile
 
+En esta sección se incluye la **descripción de la startup** junto con los **perfiles de los integrantes del equipo**.
+
 ### 1.1.1 Descripción de la Startup
 
-FrostLink es una plataforma web diseñada para optimizar la gestión y el mantenimiento de equipos de refrigeración en negocios que dependen de la cadena de frío, como supermercados, minimarkets, laboratorios, restaurantes y empresas del sector alimentario o farmacéutico. La solución conecta a estos negocios con técnicos y proveedores especializados, permitiendo una administración integral, preventiva y automatizada de sus sistemas de refrigeración.
+**FrostLink:** es una plataforma web diseñada para optimizar la gestión y el mantenimiento de equipos de refrigeración en negocios que dependen de la cadena de frío, como supermercados, minimarkets, laboratorios, restaurantes y empresas del sector alimentario o farmacéutico. La solución conecta a estos negocios con técnicos y proveedores especializados, permitiendo una administración integral, preventiva y automatizada de sus sistemas de refrigeración.
 
 La plataforma incorpora funcionalidades clave como monitoreo en tiempo real de temperatura, consumo energético y tiempo de operación; generación de reportes técnicos; alertas automáticas ante fallas; historial de rendimiento; y programación inteligente de mantenimientos. Estas herramientas están pensadas para que negocios, técnicos y proveedores optimicen sus operaciones, reduzcan riesgos de pérdidas económicas por fallas inesperadas y mantengan un registro completo del estado y uso de sus equipos.
 
-Misión: En FrostLink, nuestra misión es ofrecer una solución tecnológica avanzada que ayude a las empresas a proteger su inventario y gestionar de forma eficiente sus equipos de refrigeración, brindando a técnicos y proveedores herramientas inteligentes que mejoren su productividad y la continuidad operativa.
+**Misión:** En FrostLink, nuestra misión es ofrecer una solución tecnológica avanzada que ayude a las empresas a proteger su inventario y gestionar de forma eficiente sus equipos de refrigeración, brindando a técnicos y proveedores herramientas inteligentes que mejoren su productividad y la continuidad operativa.
 
-Visión: Aspiramos a convertirnos en la empresa líder en gestión y mantenimiento de sistemas de refrigeración, iniciando en Lima y expandiéndonos progresivamente a más regiones del Perú.
+**Visión:** Aspiramos a convertirnos en la empresa líder en gestión y mantenimiento de sistemas de refrigeración, iniciando en Lima y expandiéndonos progresivamente a más regiones del Perú.
+
+**Valores:**
+
+- Innovación
+
+- Compromiso
+
+- Sostenibilidad
+
+- Colaboración
+
+- Responsabilidad
 
 ### 1.1.2 Perfiles de integrantes del equipo
 
-| **Perfil**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Foto**                                                                       |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-|**Juan Diego Mondoñedo**<br>                                                         Estudiante de Ingeniería de Software con experiencia previa con metodología ágil y frameworks como Angular y Vue, además de conocimientos en programación en Javascript, C++ y Python. Como miembro del equipo de FrostLink, emplearé mis habilidades al máximo para el desarrollo de nuestra startup.                                                                                                      | <img src="/resources/JD.jpg" alt="angie image" width="200">  |
-| **Fabrizio León**<br> Soy estudiante de Ingeniería de Software en la UPC con enfoque en desarrollo front-end y sólida base en sistemas UNIX/Linux. Manejo C++, JavaScript y Python, y he trabajado con metodologías ágiles para entregar soluciones claras y mantenibles. Me apasiona la ciberseguridad y la tecnología aplicada a problemas reales. Destaco por el trabajo en equipo, pensamiento crítico y comunicación efectiva.                                                     | <img src="/resources/Fabrizio.png" alt="kevin image" width="200">  | 
+| **Perfil** | **Foto** |
+|------------|----------|
+| **Fabrizio León**<br>Soy estudiante de Ingeniería de Software en la UPC con enfoque en desarrollo front-end y sólida base en sistemas UNIX/Linux. Manejo C++, JavaScript y Python, y he trabajado con metodologías ágiles para entregar soluciones claras y mantenibles. Me apasiona la ciberseguridad y la tecnología aplicada a problemas reales. Destaco por el trabajo en equipo, pensamiento crítico y comunicación efectiva. | <img src="/resources/Fabrizio.png" alt="kevin image" width="200"> |
+| **Raúl Medina**<br>Como estudiante de la carrera de Ingeniería de Software, soy apasionado por la ciencia de datos. Me motiva descubrir cómo el análisis y la interpretación de grandes volúmenes de información pueden generar soluciones innovadoras dentro del desarrollo de software. Me interesa explorar cómo los datos pueden optimizar procesos, anticipar errores y mejorar la toma de decisiones. Confío en que, junto a mi equipo, podré seguir fortaleciendo mis habilidades y contribuir de manera significativa en cada etapa del proyecto. | <img src="/resources/Raul.jpeg" alt="Raul imagen" width="200"> |
+| **Juan Diego Mondoñedo**<br>Estudiante de Ingeniería de Software con experiencia previa con metodología ágil y frameworks como Angular y Vue, además de conocimientos en programación en Javascript, C++ y Python. Como miembro del equipo de FrostLink, emplearé mis habilidades al máximo para el desarrollo de nuestra startup. | <img src="/resources/JD.jpg" alt="angie image" width="200"> |
+| **Fabrizzio Pereira**<br> | <img src="" alt="fabrizzio image" width="200"> |
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
-| **Raúl Meidna**<br>Como estudiante de la carrera de Ingeniería de Software, soy apasionado por la ciencia de datos. Me motiva descubrir cómo el análisis y la interpretación de grandes volúmenes de información pueden generar soluciones innovadoras dentro del desarrollo de software. Me interesa explorar cómo los datos pueden optimizar procesos, anticipar errores y mejorar la toma de decisiones. Confío en que, junto a mi equipo, podré seguir fortaleciendo mis habilidades y contribuir de manera significativa en cada etapa del proyecto. | <img src="/resources/Raul.jpeg" alt="Raul imagen" width="200"> |
 
 ## 1.2. Solution Profile
 
@@ -607,15 +628,13 @@ Si bien el impacto económico depende del tipo de negocio, una sola falla en un 
 
 #### 1.2.2.1. Lean UX Problem Statements.
 
-La industria de la refrigeración comercial y técnica enfrenta retos significativos en la gestión, el mantenimiento y la trazabilidad de los equipos de congelación. Negocios que dependen de la cadena de frío —como supermercados, minimarkets, laboratorios, restaurantes y empresas de los sectores alimentario y farmacéutico— aún operan sin un monitoreo en tiempo real ni procesos preventivos sólidos, lo que deriva en pérdidas económicas, ineficiencias energéticas y riesgos para el inventario.
+La industria de la refrigeración comercial y técnica enfrenta grandes desafíos en la gestión, el mantenimiento y la trazabilidad de los equipos. Negocios que dependen de la cadena de frío, como supermercados, minimarkets, laboratorios, restaurantes y empresas del sector alimentario y farmacéutico, todavía operan sin un monitoreo en tiempo real ni procesos preventivos eficaces. Esto provoca fallas inesperadas, pérdidas económicas, ineficiencia en el consumo energético y riesgo para el inventario.
 
-Las soluciones disponibles en el mercado no cubren la necesidad de una plataforma confiable y automatizada que permita una gestión centralizada, predictiva y transparente para negocios, técnicos y proveedores de refrigeración. La ausencia de historiales técnicos accesibles, reportes detallados y alertas preventivas limita la capacidad de anticiparse a fallas y reduce la calidad del servicio técnico.
+Las soluciones existentes en el mercado suelen ser parciales o poco integradas, ya que no ofrecen una plataforma que centralice la información, permita la predicción de fallas y brinde reportes claros y accesibles. La falta de historiales técnicos detallados, alertas preventivas y trazabilidad reduce la capacidad de respuesta de los técnicos y limita la toma de decisiones estratégicas para evitar pérdidas y optimizar recursos.
 
-FrostLink busca cerrar esta brecha con una solución tecnológica integral que conecta a negocios con técnicos especializados, ofreciendo funciones clave como monitoreo en tiempo real de temperatura y consumo energético, programación inteligente de mantenimientos, alertas automáticas, reportes técnicos y trazabilidad completa de cada equipo. Asimismo, brinda a los proveedores de servicios un módulo de gestión que les permite organizar sus visitas, acceder al historial técnico de los equipos atendidos y optimizar la atención a múltiples clientes.
+FrostLink surge como una respuesta a esta brecha, proporcionando una plataforma que conecta a negocios con técnicos especializados, ofreciendo monitoreo en tiempo real de temperatura y consumo energético, alertas automáticas, reportes técnicos, programación de mantenimientos y trazabilidad de cada equipo. Esto permite a los negocios reducir riesgos y a los técnicos mejorar su eficiencia y calidad de servicio.
 
-Nuestro enfoque inicial está en los negocios de Lima que requieren garantizar la continuidad y eficiencia de sus sistemas de congelación, así como en los proveedores de refrigeración que buscan digitalizar, profesionalizar y escalar sus servicios mediante herramientas modernas.
-
-Consideraremos exitoso nuestro trabajo cuando logremos reducir las fallas imprevistas, optimizar el consumo energético, mejorar la eficiencia operativa de los técnicos y aumentar la satisfacción de los clientes finales, reflejada en la continuidad del servicio y en su fidelización dentro de la plataforma.
+**¿Hasta qué punto podría evolucionar la industria de la refrigeración si los negocios y técnicos adoptaran una solución que predijera las fallas y optimizara la gestión de sus equipos?**
 
 #### 1.2.2.2. Lean UX Assumptions.
 
@@ -802,7 +821,7 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
         <tr>
             <th style="border: 1px solid #000; padding: 10px;font-weight: bold;" colspan="2">(En la cabecera colocar por cada competidor nombre y logo)</th>
             <th style="border: 1px solid #000; padding: 10px;font-weight: bold; width: 20%; text-align: center;">PrimeFixers
-            <img style="display : flex; justify-content: center;" src="/resources/logo_startup.png" alt="PrimeFixers logo">
+            <img style="display : flex; justify-content: center;" src="/resources/Logo_FrostLink_Pro.jpeg" alt="PrimeFixers logo">
             </th>
             <th style="border: 1px solid #000; padding: 10px;font-weight: bold; width: 20%; text-align: center;">
                 ServiceTitan
@@ -1677,6 +1696,16 @@ Las historias de usuario de este proyecto se co-diseñaron por el equipo de desa
 | EP-05   | Alertas y Notificaciones                   | Gestiona alertas automáticas y notificaciones por fallas, mantenimiento y cambios de estado.                        |
 | EP-06   | Evaluación de Servicios                    | Permite registrar y actualizar evaluaciones de clientes sobre servicios recibidos.                                  |
 | EP-07   | Sitio Web y Experiencia Web (Landing Page) | Abarca landing page, propuesta de valor, soluciones por segmento, solicitud de demo, contacto y acceso a login/app. |
+
+## Spike stories
+
+| Epic/Story ID | Título                                              | Descripción                                                                                                                                                                              | Criterios de Aceptación                                                                                                                                                                                                                                                 | Epic  |
+| ------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| SP-01         | Investigación de protocolos de monitoreo IoT        | Como desarrollador, necesito investigar qué protocolos (por ejemplo, MQTT, CoAP) son más adecuados para la comunicación en tiempo real con los sensores de los equipos de refrigeración. | Dado que se realiza la investigación de los protocolos disponibles, cuando se comparan en función de latencia, seguridad y facilidad de integración, entonces se documentan los resultados con una recomendación clara y justificada para la integración con FrostLink. | EP-02 |
+| SP-02         | Evaluación de librerías de notificaciones push      | Como desarrollador, quiero comparar librerías y servicios (Firebase, OneSignal, AWS SNS) para implementar notificaciones en web y móvil.                                                 | Dado que se realiza la revisión técnica de las opciones, cuando se comparan los costos, escalabilidad y compatibilidad con la infraestructura existente, entonces se presenta un informe que justifica la elección final.                                               | EP-05 |
+| SP-03         | Análisis de viabilidad de control remoto de equipos | Como desarrollador, necesito investigar los requisitos técnicos (protocolos, hardware, APIs) para implementar encendido/apagado y ajuste remoto de temperatura.                          | Dado que se analizan los requisitos de los equipos y su documentación técnica, cuando se prueban las conexiones en un entorno de laboratorio, entonces se registra la viabilidad técnica, limitaciones y una propuesta inicial de arquitectura para control remoto.     | EP-02 |
+| SP-04         | Investigación de estándares para trazabilidad       | Como desarrollador, necesito investigar estándares internacionales (por ejemplo, ISO 22000, HACCP) para garantizar que la trazabilidad en la plataforma cumpla las normas del sector.    | Dado que se recopila información de los estándares relevantes, cuando se identifican las prácticas aplicables a FrostLink, entonces se documenta un resumen con los lineamientos que debe cumplir el módulo de trazabilidad.                                            | EP-04 |
+| SP-05         | Exploración de APIs para mantenimiento predictivo   | Como desarrollador, quiero identificar librerías y APIs que permitan usar algoritmos básicos de predicción de fallas con datos históricos.                                               | Dado que se investigan opciones disponibles (open-source y comerciales), cuando se comparan en función de precisión, facilidad de integración y costos, entonces se documentan los hallazgos y se define cuál usar en un prototipo inicial.                             | EP-05 |
 
 # 3.3. Impact Mapping.
 El equipo de FrostLink realizó de manera colaborativa, en UXPressia, un Impact Mapping para conectar y alinear los objetivos de negocio con los requerimientos funcionales de la plataforma.
@@ -2955,35 +2984,121 @@ Con este flujo, la API queda desplegada en **Azure**, disponible en una URL púb
 #### 5.2.1.1 Sprint Backlog 1
 Durante el primer sprint, el equipo se propuso iniciar y finalizar la landing page. Para la organización y gestión de integrantes realizamos una división de las historias de usuario en tareas más pequeñas y su asignación según las habilidades de cada miembro. 
 
-<table border="1">
-        <thead>
-            <tr>
-                <th colspan="2">User Story</th>
-                <th colspan="6">Work-Item/Task</th>
-            </tr>
-            <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Estimation (Hours)</th>
-                <th>Assigned To</th>
-                <th>Status (To-do / In Process / To Review / Done)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>US00</td>
-                <td>Información del User Story</td>
-                <td>TK00</td>
-                <td>Configurar proyecto y estructura base</td>
-                <td>Crear estructura inicial del proyecto e implementar header con navegación y hero banner principal</td>
-                <td>0</td>
-                <td>Integrante</td>
-                <td>Done</td>
-            </tr>
-        </tbody>
+<h4>5.2.1.1 Sprint Backlog 1</h4>
+<p>
+Para el primer sprint, y de acuerdo con el Hito 1, el equipo priorizó completar evidencias de <b>Product Implementation</b>
+(User Stories + Sprint Backlog con tareas de 4–8 h) y de <b>Product Design</b> (Needfinding, Impact Map, Architecture Overview,
+Class & DB Diagrams), usando únicamente las User Stories, Spike Stories y Technical Stories definidas en el informe.
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0" style="border-collapse: collapse; width:100%;">
+  <thead>
+    <tr>
+      <th colspan="2">User Story / Spike / Technical</th>
+      <th colspan="6">Work-Item / Engineering Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status (To-do / In Process / To Review / Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">US-22</td>
+      <td rowspan="3">Visualizar propuesta de valor en Landing Page</td>
+      <td>TK-01</td>
+      <td>Configurar proyecto y base</td>
+      <td>Inicializar proyecto web, carpetas, header/nav y hero con copy de propuesta de valor.</td>
+      <td>6</td>
+      <td>Fabrizio León</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TK-02</td>
+      <td>Sección propuesta de valor</td>
+      <td>Desarrollar sección con copy corto, bullets de beneficios y call-to-action.</td>
+      <td>5</td>
+      <td>Marcelo Varela</td>
+      <td>In Process</td>
+    </tr>
+    <tr>
+      <td>TK-03</td>
+      <td>Estilos responsivos</td>
+      <td>Ajustes CSS/Tailwind para correcta visualización en desktop y móvil.</td>
+      <td>4</td>
+      <td>Raúl Medina</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US-25</td>
+      <td rowspan="2">Solicitar demo desde Landing Page</td>
+      <td>TK-04</td>
+      <td>Formulario de demo</td>
+      <td>Componente con campos nombre, email, empresa y validaciones.</td>
+      <td>6</td>
+      <td>Juan Diego Mondoñedo</td>
+      <td>In Process</td>
+    </tr>
+    <tr>
+      <td>TK-05</td>
+      <td>Integración con endpoint</td>
+      <td>Conectar el formulario al endpoint <code>/api/v1/demo-requests</code> para registrar solicitudes.</td>
+      <td>8</td>
+      <td>Fabrizzio Pereira</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SP-01</td>
+      <td rowspan="2">Spike: Needfinding y Personas</td>
+      <td>TK-06</td>
+      <td>Entrevistas y Competence Analysis</td>
+      <td>Documentar Interview Analysis + Competence Analysis con hallazgos clave.</td>
+      <td>6</td>
+      <td>Raúl Medina</td>
+      <td>To-Review</td>
+    </tr>
+    <tr>
+      <td>TK-07</td>
+      <td>Personas y Journey Maps</td>
+      <td>Redactar Personas, User Task Matrix y User Journey Maps según hallazgos.</td>
+      <td>8</td>
+      <td>Fabrizio León</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TS-01</td>
+      <td rowspan="3">Technical: Product Design (Impact Map, Arquitectura, Modelo de Datos)</td>
+      <td>TK-08</td>
+      <td>Impact Map</td>
+      <td>Construir Impact Map (Objetivo → Actores → Impactos → Deliverables) alineado a la propuesta de valor.</td>
+      <td>4</td>
+      <td>Marcelo Varela</td>
+      <td>In Process</td>
+    </tr>
+    <tr>
+      <td>TK-09</td>
+      <td>Architecture Overview</td>
+      <td>Diagramar contexto / contenedores / componentes (C4 niveles 1-3) y documentar decisiones clave.</td>
+      <td>8</td>
+      <td>Juan Diego Mondoñedo</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td>TK-10</td>
+      <td>Class Diagram y DB</td>
+      <td>Definir Class Diagram & Dictionary y diagramas de Base de Datos Relational/Non-Relational iniciales.</td>
+      <td>8</td>
+      <td>Fabrizzio Pereira</td>
+      <td>To-do</td>
+    </tr>
+
+  </tbody>
 </table>
 
 ### 5.2.2. Implemented Landing Page Evidence  
