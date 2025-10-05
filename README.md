@@ -34,7 +34,7 @@
 
    <br>
 
-<center><b>""Informe de Trabajo Final"</b></center>
+<center><b>"Informe de Trabajo Final"</b></center>
 
    <br>
 
@@ -48,40 +48,45 @@
    </div>
 
    <br>
+<center>
 
-   <div align="center">
+<table style="margin-left: auto; margin-right: auto;">
+  <tr>
+    <th>Nombre</th>
+    <th>Código</th>
+  </tr>
+  <tr>
+    <td>León Vivas, Fabrizio Amir</td>
+    <td>U20211B994</td>
+  </tr>
+  <tr>
+    <td>Medina Cruzado, Raúl Adrian</td>
+    <td>U202210938</td>
+  </tr>
+  <tr>
+    <td>Mondoñedo Rodriguez, Juan Diego Javier</td>
+    <td>U202110373</td>
+  </tr>
+  <tr>
+    <td>Pereira Vasquez, Fabrizzio</td>
+    <td>U202417468</td>
+  </tr>
+  <tr>
+    <td>Varela Bustinza, Marcelo Alessandro</td>
+    <td>U202319668</td>
+  </tr>
+</table>
 
-   <table style="margin-left: auto; margin-right: auto;">
-   <tr>
-   <th>Nombre</th>
-   <th>Código</th>
-   </tr>
-   <tr>
-   <td>León Vivas, Fabrizio Amir</td>
-   <td>U20211B994</td>
-   </tr>
-   <tr>
-   <td>Medina Cruzado, Raúl Adrian</td>
-   <td>U202210938</td>
-   </tr>
-   <tr>
-   <td>Mondoñedo Rodriguez, Juan Diego Javier</td>
-   <td>U202110373</td>
-   </tr>
-   <tr>
-   <td>Varela Bustinza, Marcelo Alessandro</td>
-   <td>U202319668</td>
-   </tr>
-   </table>
-   </div>
 
-   <br>
+</center>
 
-   <center><b>Setiembre, 2025</b></center>
-
-   <br>
+   <center><b>Octubre, 2025</b></center>
 
 </div>
+
+
+
+
 
 # Registro de Versiones del Informe
 
