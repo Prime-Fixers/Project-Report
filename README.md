@@ -101,7 +101,7 @@
     </thead>
     <tbody>
         <tr>
-            <td>1.0</td>
+            <td>TB1</td>
             <td>19/09/2025</td>
             <td>
                 <ul>   
@@ -228,7 +228,7 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
   </tr>
   <tr>
     <td>Mondoñedo Rodriguez, Juan Diego Javier</td>
-    <td>Jmondonedor</td>
+    <td></td>
   </tr>
   <tr>
     <td>Varela Bustinza, Marcelo Alessandro</td>
@@ -238,7 +238,7 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 
 **TB1**
 
-Para la elaboración del informe correspondiente a la entrega del TB1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas desde el capítulo I hasta el capitulo V.
+Para la elaboración deJmondonedorl informe correspondiente a la entrega del TB1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas desde el capítulo I hasta el capitulo V.
 
 | Integrantes     | Tareas Asignadas |
 |-----------------|------------------|
@@ -258,6 +258,37 @@ Para la elaboración del informe correspondiente a la entrega del TP1, se realiz
 | Mondoñedo Rodriguez, Juan Diego Javier      |                  |
 | Pereira Vasquez, Fabrizzio                  |                  |
 | Varela Bustinza, Marcelo Alessandro         |                  |
+
+# Github Collaboration Insights
+
+GitHub muestra también una línea de tiempo que refleja las ramas principales y los procesos de merge realizados.
+Todas las ramas fueron creadas siguiendo la estructura de GitFlow, lo que permite mantener una mejor organización y control del proyecto dentro del sistema de versiones.
+
+Los integrantes son:
+
+- León Vivas, Fabrizio Amir (CodyLionVivo)
+- Medina Cruzado, Raúl Adrian  (Necxuz18)
+- Mondoñedo Rodriguez, Juan Diego Javier (Jmondonedor)
+- Pereira Vasquez, Fabrizzio  (fabrizzioper)
+- Varela Bustinza, Marcelo Alessandro  (Varbus)
+
+Se explican las ramas más prominentes:
+
+**main:** Representada con el color negro, es la rama principal del proyecto y se actualiza en cada nueva entrega. <br>
+
+**develop:** Representada con el color azul, funciona como la rama central para el desarrollo continuo del proyecto. <br>
+
+**feature/feature-description-name:** Es una rama creada para implementar una funcionalidad o tarea específica. Se origina a partir de develop y, al finalizar el trabajo, se fusiona nuevamente con develop para incorporar los cambios al proyecto principal.
+
+**Capturas de la participación en el informe:**
+
+**TB1:**
+<br>
+<img src="resources/github_collaboration_insights_tb1.jpeg" alt="insightTB1open" width="500px" />
+
+**TP1:**
+<br>
+<img src="resources/github_collaboration_insights_tb1.jpeg" alt="insightTB1open" width="500px" />
 
 
 
@@ -472,9 +503,17 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Juan Diego Mondoñedo:</strong> Definí las configuraciones de las plataformas y environments de programación que empleamos para el desarrollo de nuestros productos y establecí pautas para el despliegue de estos.</li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Durante el desarrollo del Capítulo IV: Product Design reconocí mi responsabilidad ética y profesional al diseñar las guías de estilo, la arquitectura de información y las interfaces UX/UI, asegurando que cumplan con principios de accesibilidad, usabilidad y buenas prácticas de ingeniería de software orientadas al bienestar del usuario. </li>
                 </ul>
+               <strong>TP1:</strong><br>
+                <ul>
+                    <li><strong>Fabrizio Amir León Vivas:</strong></li>                     
+                     <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
+                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier: </strong></li>                    
+                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
+                </ul>
             </td>
             <td>
                 <strong>TB1:</strong> Se demostró un compromiso ético y profesional al diseñar FrostLink, alineando la propuesta tecnológica con las necesidades reales de los usuarios y consolidando una solución responsable e innovadora.<br>
+               <strong>TP1:</strong>            
             </td>
         </tr>
         <tr>
@@ -489,10 +528,18 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong>Analicé las implicaciones y los contextos en los que se utilizarían nuestros productos para definir correctamente plataformas para el despliegue de nuestras aplicaciones que sean compatibles con el uso. </li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Asimismo, emití juicios informados considerando el impacto que las soluciones de software pueden tener en distintos contextos globales, económicos, sociales y ambientales, buscando que las propuestas de diseño y arquitectura no solo sean técnicamente viables, sino también sostenibles, inclusivas y generadoras de valor en la sociedad.</li>
                 </ul>
+               <strong>TP1:</strong><br>
+                <ul>
+                    <li><strong>Fabrizio Amir León Vivas:</strong></li>                     
+                     <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
+                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier: </strong></li>                    
+                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
+                </ul>
             </td>
             <td>
                 <strong>TB1:</strong> El proyecto demuestra que una solución tecnológica puede generar valor económico, social y ambiental, siempre que se diseñe con responsabilidad y pensando en su impacto global.<br>
-            </td>
+               <strong>TP1:</strong> 
+</td>
         </tr>
     </tobdy>
 </table>
