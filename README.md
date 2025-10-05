@@ -1786,14 +1786,14 @@ La identidad visual de FrostLink busca transmitir seguridad, innovación y cerca
 Para mantener la formalidad y accesibilidad de la interfaz de usuario de FrostLink, se establecen las tipografías Helvetica y Open Sans por sus cualidades funcionales, estéticas y su excelente compatibilidad con entornos digitales, siendo Helvetica la tipografía principal.
 
 <center>
-<img src="./resources/Tipografia.jpeg" alt="Tipografia" width="500" height="500">
+<img src="./resources/Tipografia.jpeg" alt="Tipografia" >
 </center>
 
 *Figura 1:* Tipografía Helvica
 
 <center>
 
-<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" width="500" height="500">
+<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" >
 
 </center>
 
@@ -1807,7 +1807,7 @@ El color principal es el celeste, ya que refleja de manera óptima las caracter�
 <center>
 <img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="50" height="50">
 
-<img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="500" height="500">
+<img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" >
 
 </center>
 *Figura 3:* Guías Generales de Estilo – Colores
@@ -1849,14 +1849,14 @@ Dado que FrostLink está orientado al sector tecnológico, su paleta de colores 
 Dado que los botones y fondos pueden variar según el contexto, la plataforma emplea diferentes tonalidades de celeste para mantener coherencia visual.
 
 <center>
-<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
 *Figura 1:* Guías de Estilo Web – Color Sky Blue
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
 <center>
-<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
 
 *Figura 2:* Guías de Estilo Web - Color Rojo.
@@ -1908,14 +1908,14 @@ La paleta se adapta a los modos **claro/oscuro** de los sistemas operativos, con
 - **Vibración háptica** en confirmaciones críticas.  
 - **Animaciones de carga nativas** por plataforma.  
 <center>
-<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
 *Figura 1:* Guías de Estilo Web – Color Sky Blue
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
 <center>
-<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
 
 *Figura 2:* Guías de Estilo Web - Color Rojo.
@@ -2034,11 +2034,11 @@ La página incluye secciones que presentan a los usuarios objetivo, las funciona
 *Figura 1:* Wireframe de la Landing Page.
 <center>
 
-<img src="./resources/LandingPage_1.jpeg" alt="lading_page_1" width="500" height="500">
+<img src="./resources/LandingPage_1.jpeg" alt="lading_page_1" >
 
-<img src="./resources/LandingPage_2.jpeg" alt="lading_page_2" width="500" height="500">
+<img src="./resources/LandingPage_2.jpeg" alt="lading_page_2" >
 
-<img src="./resources/LandingPage_3.jpeg" alt="lading_page_3" width="500" height="500">
+<img src="./resources/LandingPage_3.jpeg" alt="lading_page_3" >
 
 </center>
 
@@ -2050,58 +2050,58 @@ A continuación, se despliegan secciones clave que describen las funcionalidades
 
 - Esta corresponde a la primera sección llamada "Inicio", donde se muestra de forma clara la propuesta de valor de la plataforma y el espacio para el Call to Action, que será implementado en etapas posteriores.
 
-<img src="./resources/Mockup_landing_2.jpeg" alt="mockup_landing_1" width="500" height="500">
+<img src="./resources/Mockup_landing_2.jpeg" alt="mockup_landing_1">
 
 Figura 1: Mockup 1 – Inicio – Landing Page
 
 En esta segunda sección se presenta una breve descripción del público objetivo al que está dirigida la plataforma.
 
-<img src="./resources/Mockup_landing_3.jpeg" alt="mockup_landing_2" width="500" height="500">
+<img src="./resources/Mockup_landing_3.jpeg" alt="mockup_landing_2">
 
 Figura 2: Mockup 2 – ¿Para quién es? – Landing Page
 La sección "Funcionalidades Clave" muestra de forma resumida las principales características y herramientas que la plataforma pone a disposición de los usuarios.
 
-<img src="./resources/Mockup_landing_4.jpeg" alt="mockup_landing_3" width="500" height="500">
+<img src="./resources/Mockup_landing_4.jpeg" alt="mockup_landing_3">
 
 Figura 3: Mockup 3 – Funcionalidades – Landing Page
 La sección "Beneficios" expone las ventajas que la plataforma ofrece tanto a empresas como a proveedores.
 
-<img src="./resources/Mockup_landing_5.jpeg" alt="mockup_landing_4" width="500" height="500">
+<img src="./resources/Mockup_landing_5.jpeg" alt="mockup_landing_4">
 
 Figura 4: Mockup 4 – Beneficios para negocios – Landing Page
 En esta parte se detallan los beneficios específicos que la plataforma brinda a las empresas.
 
-<img src="./resources/Mockup_landing_6.jpeg" alt="mockup_landing_5" width="500" height="500">
+<img src="./resources/Mockup_landing_6.jpeg" alt="mockup_landing_5">
 
 Figura 5: Mockup 5 – Beneficios para proveedores – Landing Page
 La sección "Cómo funciona" explica de manera clara el flujo de operación de la plataforma.
 
-<img src="./resources/Mockup_landing_7.jpeg" alt="mockup_landing_6" width="500" height="500">
+<img src="./resources/Mockup_landing_7.jpeg" alt="mockup_landing_6">
 
 Figura 6: Mockup 6 – ¿Cómo funciona? – Landing Page
 Aquí se comparte la información sobre la Misión y Visión de nuestra startup.
 
-<img src="./resources/Mockup_landing_8.jpeg" alt="mockup_landing_7" width="500" height="500">
+<img src="./resources/Mockup_landing_8.jpeg" alt="mockup_landing_7">
 
 Figura 7: Mockup 7 – Sobre Nosotros – Landing Page
 En esta sección se muestran los testimonios y opiniones de los usuarios que han utilizado la plataforma.
 
-<img src="./resources/Mockup_landing_9.jpeg" alt="mockup_landing_8" width="500" height="500">
+<img src="./resources/Mockup_landing_9.jpeg" alt="mockup_landing_8">
 
 Figura 8: Mockup 8 – Lo que dicen nuestros clientes – Landing Page
 Se presentan reseñas de clientes que destacan su experiencia con la plataforma.
 
-<img src="./resources/Mockup_landing_10.jpeg" alt="mockup_landing_9" width="500" height="500">
+<img src="./resources/Mockup_landing_10.jpeg" alt="mockup_landing_9">
 
 Figura 9: Mockup 9 – Lo que dicen nuestros clientes – Landing Page
 Continúan mostrándose las opiniones de los usuarios que recomiendan el servicio.
 
-<img src="./resources/Mockup_landing_11.jpeg" alt="mockup_landing_10" width="500" height="500">
+<img src="./resources/Mockup_landing_11.jpeg" alt="mockup_landing_10">
 
 Figura 10: Mockup 10 – Lo que dicen nuestros clientes – Landing Page
 Se concluye la visualización de testimonios de clientes satisfechos.
 
-<img src="./resources/Mockup_landing_12.jpeg" alt="mockup_landing_11" width="500" height="500">
+<img src="./resources/Mockup_landing_12.jpeg" alt="mockup_landing_11">
 
 Figura 11: Mockup 11 – Contacto – Landing Page
 En esta sección se incluye un formulario para que los usuarios puedan comunicarse y solicitar una demostración de la plataforma.
@@ -2352,95 +2352,95 @@ Los wireframes de las aplicaciones web de Frostlink establecen la estructura gen
 
 <p><strong>Figura 1: Wireframe – Alquiler de Equipos (Clientes)</strong><br>
 Representa la pantalla destinada a que los clientes puedan solicitar el alquiler de equipos.</p>
-<img src="./resources/Wireframe_1.jpeg" alt="wireframe_1" width="500" height="500">
+<img src="./resources/Wireframe_1.jpeg" alt="wireframe_1">
 
 <p><strong>Figura 2: Wireframe – Contacto (Clientes)</strong><br>
 Muestra la interfaz donde los clientes pueden comunicarse con la empresa.</p>
-<img src="./resources/Wireframe_2.jpeg" alt="wireframe_2" width="500" height="500">
+<img src="./resources/Wireframe_2.jpeg" alt="wireframe_2" >
 
 <p><strong>Figura 3: Wireframe – Contacto (Empresa)</strong><br>
 Presenta el panel de control diseñado para la empresa.</p>
-<img src="./resources/Wireframe_3.jpeg" alt="wireframe_3" width="500" height="500">
+<img src="./resources/Wireframe_3.jpeg" alt="wireframe_3" >
 
 <p><strong>Figura 4: Wireframe – Control (Clientes)</strong><br>
 Visualiza la sección donde los clientes pueden gestionar y supervisar su información de cuenta.</p>
-<img src="./resources/Wireframe_4.jpeg" alt="wireframe_4" width="500" height="500">
+<img src="./resources/Wireframe_4.jpeg" alt="wireframe_4" >
 
 <p><strong>Figura 5: Wireframe – Estado de Cuenta (Clientes)</strong><br>
 Muestra el estado de cuenta detallado de los clientes.</p>
-<img src="./resources/Wireframe_5.jpeg" alt="wireframe_5" width="500" height="500">
+<img src="./resources/Wireframe_5.jpeg" alt="wireframe_5" >
 
 <p><strong>Figura 6: Wireframe – Estado de Cuenta (Empresa)</strong><br>
 Despliega la vista de estado de cuenta desde la perspectiva de la empresa.</p>
-<img src="./resources/Wireframe_6.jpeg" alt="wireframe_6" width="500" height="500">
+<img src="./resources/Wireframe_6.jpeg" alt="wireframe_6" >
 
 <p><strong>Figura 7: Wireframe – Analíticas Completas (Clientes)</strong><br>
 Presenta la pantalla de métricas y estadísticas para clientes.</p>
-<img src="./resources/Wireframe_7.jpeg" alt="wireframe_7" width="500" height="500">
+<img src="./resources/Wireframe_7.jpeg" alt="wireframe_7" >
 
 <p><strong>Figura 8: Wireframe – Inicio (Clientes)</strong><br>
 Muestra la pantalla principal que ven los clientes al ingresar.</p>
-<img src="./resources/Wireframe_8.jpeg" alt="wireframe_8" width="500" height="500">
+<img src="./resources/Wireframe_8.jpeg" alt="wireframe_8" >
 
 <p><strong>Figura 9: Wireframe – Inicio (Empresa)</strong><br>
 Representa la vista inicial para los usuarios de la empresa.</p>
-<img src="./resources/Wireframe_9.jpeg" alt="wireframe_9" width="500" height="500">
+<img src="./resources/Wireframe_9.jpeg" alt="wireframe_9" >
 
 <p><strong>Figura 10: Wireframe – Inicio de la Aplicación</strong><br>
 Corresponde a la pantalla principal de bienvenida de la aplicación.</p>
-<img src="./resources/Wireframe_10.jpeg" alt="wireframe_10" width="500" height="500">
+<img src="./resources/Wireframe_10.jpeg" alt="wireframe_10" >
 
 <p><strong>Figura 11: Wireframe – Inicio de Sesión (Clientes)</strong><br>
 Pantalla donde los clientes ingresan sus credenciales para acceder a la plataforma.</p>
-<img src="./resources/Wireframe_11.jpeg" alt="wireframe_11" width="500" height="500">
+<img src="./resources/Wireframe_11.jpeg" alt="wireframe_11" >
 
 <p><strong>Figura 12: Wireframe – Inicio de Sesión (Empresa)</strong><br>
 Pantalla donde el personal de la empresa inicia sesión.</p>
-<img src="./resources/Wireframe_12.jpeg" alt="wireframe_12" width="500" height="500">
+<img src="./resources/Wireframe_12.jpeg" alt="wireframe_12" >
 
 <p><strong>Figura 13: Wireframe – Mi Cuenta (Clientes)</strong><br>
 Vista en la que los clientes administran la información de su cuenta personal.</p>
-<img src="./resources/Wireframe_13.jpeg" alt="wireframe_13" width="500" height="500">
+<img src="./resources/Wireframe_13.jpeg" alt="wireframe_13" >
 
 <p><strong>Figura 14: Wireframe – Mi Cuenta (Empresa)</strong><br>
 Pantalla donde la empresa gestiona su información y configuración.</p>
-<img src="./resources/Wireframe_14.jpeg" alt="wireframe_14" width="500" height="500">
+<img src="./resources/Wireframe_14.jpeg" alt="wireframe_14" >
 
 <p><strong>Figura 15: Wireframe – Mis Clientes y Técnicos (Empresa)</strong><br>
 Muestra la sección para que la empresa gestione tanto a sus clientes como a sus técnicos.</p>
-<img src="./resources/Wireframe_15.jpeg" alt="wireframe_15" width="500" height="500">
+<img src="./resources/Wireframe_15.jpeg" alt="wireframe_15" >
 
 <p><strong>Figura 16: Wireframe – Mis Equipos (Clientes)</strong><br>
 Pantalla que lista los equipos que el cliente tiene registrados o alquilados.</p>
-<img src="./resources/Wireframe_16.jpeg" alt="wireframe_16" width="500" height="500">
+<img src="./resources/Wireframe_16.jpeg" alt="wireframe_16" >
 
 <p><strong>Figura 17: Wireframe – Mis Equipos (Clientes, Detalle 1)</strong><br>
 Presenta información detallada del primer equipo seleccionado por el cliente.</p>
-<img src="./resources/Wireframe_17.jpeg" alt="wireframe_17" width="500" height="500">
+<img src="./resources/Wireframe_17.jpeg" alt="wireframe_17" >
 
 <p><strong>Figura 18: Wireframe – Mis Equipos (Clientes, Detalle 2)</strong><br>
 Muestra la vista de detalle de un segundo equipo registrado por el cliente.</p>
-<img src="./resources/Wireframe_18.jpeg" alt="wireframe_18" width="500" height="500">
+<img src="./resources/Wireframe_18.jpeg" alt="wireframe_18" >
 
 <p><strong>Figura 19: Wireframe – Mis Equipos (Empresa)</strong><br>
 Pantalla de la empresa para administrar el inventario de equipos.</p>
-<img src="./resources/Wireframe_19.jpeg" alt="wireframe_19" width="500" height="500">
+<img src="./resources/Wireframe_19.jpeg" alt="wireframe_19" >
 
 <p><strong>Figura 20: Wireframe – Notificaciones (Clientes)</strong><br>
 Interfaz donde los clientes visualizan las notificaciones recibidas.</p>
-<img src="./resources/Wireframe_20.jpeg" alt="wireframe_20" width="500" height="500">
+<img src="./resources/Wireframe_20.jpeg" alt="wireframe_20" >
 
 <p><strong>Figura 21: Wireframe – Notificaciones (Empresa)</strong><br>
 Pantalla en la que la empresa revisa las notificaciones del sistema.</p>
-<img src="./resources/Wireframe_21.jpeg" alt="wireframe_21" width="500" height="500">
+<img src="./resources/Wireframe_21.jpeg" alt="wireframe_21" >
 
 <p><strong>Figura 22: Wireframe – Registro (Clientes)</strong><br>
 Muestra el formulario de registro para nuevos clientes.</p>
-<img src="./resources/Wireframe_22.jpeg" alt="wireframe_22" width="500" height="500">
+<img src="./resources/Wireframe_22.jpeg" alt="wireframe_22" >
 
 <p><strong>Figura 23: Wireframe – Registro (Empresa)</strong><br>
 Formulario de alta de usuarios internos o nuevos registros empresariales.</p>
-<img src="./resources/Wireframe_23.jpeg" alt="wireframe_23" width="500" height="500">
+<img src="./resources/Wireframe_23.jpeg" alt="wireframe_23" >
 
 <p><strong>Figura 24: Wireframe – Solicitudes (Empresa)</strong><br>
 Pantalla donde la empresa gestiona las solicitudes enviadas por los clientes.</p>
@@ -2503,101 +2503,101 @@ Resumen del movimiento entre pantallas para administrar órdenes: listado, detal
 
 <p><strong>Figura 1: Mockup – Inicio General de la App</strong><br>
 Pantalla de bienvenida y acceso principal de la aplicación web.</p>
-<img src="./resources/web_application_1.jpeg" alt="web_appliaction_1" width="500" height="500">
+<img src="./resources/web_application_1.jpeg" alt="web_appliaction_1" >
 
 <p><strong>Figura 2: Mockup – Registro (Clientes)</strong><br>
 Formulario de alta para nuevos clientes.</p>
-<img src="./resources/web_application_2.jpeg" alt="web_appliaction_2" width="500" height="500">
+<img src="./resources/web_application_2.jpeg" alt="web_appliaction_2" >
 
 <p><strong>Figura 3: Mockup – Inicio de Sesión (Clientes)</strong><br>
 Interfaz de autenticación para clientes.</p>
-<img src="./resources/web_application_3.jpeg" alt="web_appliaction_3" width="500" height="500">
+<img src="./resources/web_application_3.jpeg" alt="web_appliaction_3" >
 
 <p><strong>Figura 4: Mockup – Inicio (Clientes)</strong><br>
 Panel principal o dashboard de los clientes.</p>
-<img src="./resources/web_application_4.jpeg" alt="web_appliaction_4" width="500" height="500">
+<img src="./resources/web_application_4.jpeg" alt="web_appliaction_4" >
 
 <p><strong>Figura 5: Mockup – Mis Equipos (Clientes)</strong><br>
 Listado de equipos registrados o alquilados por el cliente.</p>
-<img src="./resources/web_application_5.jpeg" alt="web_appliaction_5" width="500" height="500">
+<img src="./resources/web_application_5.jpeg" alt="web_appliaction_5" >
 
 <p><strong>Figura 6: Mockup – Mis Equipos (Clientes, Detalle 1)</strong><br>
 Primera vista de detalle de un equipo del cliente.</p>
-<img src="./resources/web_application_6.jpeg" alt="web_appliaction_6" width="500" height="500">
+<img src="./resources/web_application_6.jpeg" alt="web_appliaction_6" >
 
 <p><strong>Figura 7: Mockup – Mis Equipos (Clientes, Detalle 2)</strong><br>
 Segunda vista de detalle de un equipo del cliente.</p>
-<img src="./resources/web_application_7.jpeg" alt="web_appliaction_7" width="500" height="500">
+<img src="./resources/web_application_7.jpeg" alt="web_appliaction_7" >
 
 <p><strong>Figura 8: Mockup – Alquilar Equipos (Clientes)</strong><br>
 Proceso guiado para solicitar el alquiler de equipos.</p>
-<img src="./resources/web_application_8.jpeg" alt="web_appliaction_8" width="500" height="500">
+<img src="./resources/web_application_8.jpeg" alt="web_appliaction_8" >
 
 <p><strong>Figura 9: Mockup – Contacto (Clientes)</strong><br>
 Canales de contacto y soporte para clientes.</p>
-<img src="./resources/web_application_9.jpeg" alt="web_appliaction_9" width="500" height="500">
+<img src="./resources/web_application_9.jpeg" alt="web_appliaction_9" >
 
 <p><strong>Figura 10: Mockup – Notificaciones (Clientes)</strong><br>
 Centro de notificaciones y avisos para clientes.</p>
-<img src="./resources/web_application_10.jpeg" alt="web_appliaction_10" width="500" height="500">
+<img src="./resources/web_application_10.jpeg" alt="web_appliaction_10" >
 
 <p><strong>Figura 11: Mockup – Control (Clientes)</strong><br>
 Panel de control y actividad del cliente.</p>
-<img src="./resources/web_application_11.jpeg" alt="web_appliaction_11" width="500" height="500">
+<img src="./resources/web_application_11.jpeg" alt="web_appliaction_11" >
 
 <p><strong>Figura 12: Mockup – Estado de Cuenta (Clientes)</strong><br>
 Resumen de facturación, saldos y movimientos.</p>
-<img src="./resources/web_application_12.jpeg" alt="web_appliaction_12" width="500" height="500">
+<img src="./resources/web_application_12.jpeg" alt="web_appliaction_12" >
 
 <p><strong>Figura 13: Mockup – Mi Cuenta (Clientes)</strong><br>
 Gestión de perfil, preferencias y seguridad del cliente.</p>
-<img src="./resources/web_application_13.jpeg" alt="web_appliaction_13" width="500" height="500">
+<img src="./resources/web_application_13.jpeg" alt="web_appliaction_13" >
 
 <p><strong>Figura 14: Mockup – Analíticas Completas (Clientes)</strong><br>
 Panel de métricas, gráficos y KPI para clientes.</p>
-<img src="./resources/web_application_13.jpeg" alt="web_appliaction_14" width="500" height="500">
+<img src="./resources/web_application_13.jpeg" alt="web_appliaction_14" >
 
 <p><strong>Mockups Empresa</strong></p>
 
 <p><strong>Figura 15: Mockup – Inicio de Sesión (Empresa)</strong><br>
 Interfaz de autenticación para el personal de la empresa.</p>
-<img src="./resources/web_application_15.jpeg" alt="web_appliaction_15" width="500" height="500">
+<img src="./resources/web_application_15.jpeg" alt="web_appliaction_15" >
 
 <p><strong>Figura 16: Mockup – Registro (Empresa)</strong><br>
 Alta de la empresa y creación de credenciales.</p>
-<img src="./resources/web_application_16.jpeg" alt="web_appliaction_16" width="500" height="500">
+<img src="./resources/web_application_16.jpeg" alt="web_appliaction_16" >
 
 <p><strong>Figura 17: Mockup – Inicio (Empresa)</strong><br>
 Dashboard principal para la gestión empresarial.</p>
-<img src="./resources/web_application_17.jpeg" alt="web_appliaction_17" width="500" height="500">
+<img src="./resources/web_application_17.jpeg" alt="web_appliaction_17" >
 
 <p><strong>Figura 18: Mockup – Contacto (Empresa)</strong><br>
 Soporte y comunicación para cuentas empresariales.</p>
-<img src="./resources/web_application_18.jpeg" alt="web_appliaction_18" width="500" height="500">
+<img src="./resources/web_application_18.jpeg" alt="web_appliaction_18" >
 
 <p><strong>Figura 19: Mockup – Estado de Cuenta (Empresa)</strong><br>
 Facturación, saldos y movimientos para la empresa.</p>
-<img src="./resources/web_application_19.jpeg" alt="web_appliaction_19" width="500" height="500">
+<img src="./resources/web_application_19.jpeg" alt="web_appliaction_19" >
 
 <p><strong>Figura 20: Mockup – Mi Cuenta (Empresa)</strong><br>
 Configuración de cuenta, permisos y seguridad.</p>
-<img src="./resources/web_application_20.jpeg" alt="web_appliaction_20" width="500" height="500">
+<img src="./resources/web_application_20.jpeg" alt="web_appliaction_20" >
 
 <p><strong>Figura 21: Mockup – Mis Clientes y Técnicos (Empresa)</strong><br>
 Administración de clientes, técnicos y roles.</p>
-<img src="./resources/web_application_21.jpeg" alt="web_appliaction_21" width="500" height="500">
+<img src="./resources/web_application_21.jpeg" alt="web_appliaction_21" >
 
 <p><strong>Figura 22: Mockup – Mis Equipos (Empresa)</strong><br>
 Inventario y control de equipos bajo responsabilidad de la empresa.</p>
-<img src="./resources/web_application_22.jpeg" alt="web_appliaction_22" width="500" height="500">
+<img src="./resources/web_application_22.jpeg" alt="web_appliaction_22" >
 
 <p><strong>Figura 23: Mockup – Notificaciones (Empresa)</strong><br>
 Centro de avisos, eventos del sistema y comunicaciones.</p>
-<img src="./resources/web_application_10.jpeg" alt="web_appliaction_23" width="500" height="500">
+<img src="./resources/web_application_10.jpeg" alt="web_appliaction_23" >
 
 <p><strong>Figura 24: Mockup – Solicitudes (Empresa)</strong><br>
 Bandeja de solicitudes entrantes y su procesamiento.</p>
-<img src="./resources/web_application_23.jpeg" alt="web_appliaction_24" width="500" height="500">
+<img src="./resources/web_application_23.jpeg" alt="web_appliaction_24" >
 
 <p><strong>Figura 25: Mockup – Órdenes de Trabajo (Empresa)</strong><br>
 Gestión y seguimiento de órdenes de trabajo.</p>
@@ -2607,15 +2607,15 @@ Gestión y seguimiento de órdenes de trabajo.</p>
 
 <p><strong>User Goal 1</strong><br>
 Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>monitorear el estado</strong> de cada equipo registrado.</p>
-<img src="./resources/userflow1.png" alt="userflow1" width="500" height="500">
+<img src="./resources/userflow1.png" alt="userflow1" >
 
 <p><strong>User Goal 2</strong><br>
 Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>consultar las estadísticas completas</strong> del rendimiento de mis equipos.</p>
-<img src="./resources/userflow2.png" alt="userflow2" width="500" height="500">
+<img src="./resources/userflow2.png" alt="userflow2" >
 
 <p><strong>User Goal 3</strong><br>
 Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>dar de alta y administrar</strong> los nuevos equipos que registro.</p>
-<img src="./resources/userflow3.png" alt="userflow3" width="500" height="500">
+<img src="./resources/userflow3.png" alt="userflow3" >
 
 ## 4.7. Web Applications Prototyping
 Se presenta el prototipo interactivo de la aplicación web de Frostlink, que permite a los usuarios explorar la interfaz y navegar por las distintas secciones de la plataforma. Este prototipo incorpora las funcionalidades esenciales y ofrece una vista preliminar de la experiencia de uso. Además, facilita la evaluación y validación de la interfaz antes de su implementación definitiva, garantizando un diseño intuitivo y eficiente.
@@ -2625,28 +2625,28 @@ Se expone la arquitectura de software orientada al dominio para Frostlink. A tra
 
 ### 4.8.1. Software Architecture Context Diagram
 <p>El diagrama de contexto muestra cómo <strong>Clientes</strong> y <strong>Empresas Proveedoras</strong> interactúan con <strong>Frostlink</strong> para gestionar y monitorear equipos de refrigeración. La plataforma se integra con servicios de correo para el envío de notificaciones y con un servicio de pagos para procesar transacciones de forma segura.</p>
-<img src="./resources/diagram_1.jpeg" alt="diagram_1" width="500" height="500">
+<img src="./resources/diagram_1.jpeg" alt="diagram_1" >
 
 ### 4.8.2. Software Architecture Container Diagrams
 <p>El diagrama de contenedores describe las principales piezas de <strong>Frostlink</strong> y sus relaciones: la <em>web app</em> (interfaz de usuario), la <em>API</em> que expone capacidades del dominio y la <em>base de datos</em> que persiste la información, junto con otros servicios que soportan la operación.</p>
-<img src="./resources/diagram_2.jpeg" alt="diagram_2" width="500" height="500">
+<img src="./resources/diagram_2.jpeg" alt="diagram_2" >
 
 ### 4.8.3. Software Architecture Components Diagrams
 
 <h3>Mi Equipo — Bounded Context</h3>
 <p>Este diagrama detalla los componentes responsables de la gestión de equipos: alta de nuevos dispositivos, monitoreo en tiempo real y visualización del estado e historial.</p>
-<img src="./resources/diagram_3.jpeg" alt="diagram_3" width="500" height="500">
+<img src="./resources/diagram_3.jpeg" alt="diagram_3" >
 
 ### Notificaciones y Órdenes de Trabajo — Bounded Contexts
 <p>El diagrama agrupa los componentes que administran las notificaciones —para informar eventos y estados relevantes— y los que gestionan las órdenes de trabajo, desde su creación hasta su seguimiento y cierre.</p>
-<img src="./resources/diagram_4.jpeg" alt="diagram_4" width="500" height="500">
+<img src="./resources/diagram_4.jpeg" alt="diagram_4" >
 
 ## 4.9. Software Object-Oriented Design
 <p>En esta sección se expone el diseño orientado a objetos de <strong>Frostlink</strong>. Se incluyen diagramas de clases y un diccionario de clases que describen la estructura de las entidades principales y sus atributos, proporcionando una visión clara de cómo se organizan y administran los componentes clave de la plataforma.</p>
 
 ### 4.9.1. Class Diagrams
 <p>El diagrama de clases ofrece una representación visual de las clases del sistema, sus atributos y las relaciones que las vinculan.</p>
-<img src="./resources/Class-UML.jpeg" alt="class_uml" width="500" height="500">
+<img src="./resources/Class-UML.jpeg" alt="class_uml" >
 
 ### 4.9.2. Class Dictionary
 
@@ -2791,7 +2791,7 @@ Se expone la arquitectura de software orientada al dominio para Frostlink. A tra
 
 ### 4.10.1. Relational/Non-Relational Database Diagram
 <p>El diagrama de base de datos muestra cómo se relacionan las tablas, incluyendo claves primarias y foráneas, así como las cardinalidades (uno a uno, uno a muchos y muchos a muchos).</p>
-<img src="./resources/diagram-class.png" alt="diagram_class" width="500" height="500">
+<img src="./resources/diagram-class.png" alt="diagram_class" >
 
 # Capítulo V: Product Implementation, Validation & Deployment
 
