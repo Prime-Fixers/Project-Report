@@ -3195,23 +3195,82 @@ En esta sección se presentan capturas de pantalla de la **Landing Page** ya imp
 ### 5.2.3. Implemented Frontend-Web Application Evidence  
 Aquí se incluyen capturas de la **aplicación web** en funcionamiento, donde se visualizan las pantallas principales, la navegación entre módulos y las funcionalidades desarrolladas en el front-end.  
 
+### 5.2.4. Acuerdo de Servicio - SaaS
 
-### 5.2.4. Implemented Native-Mobile Application Evidence  
+El presente Acuerdo de Servicio establece los términos y condiciones bajo los cuales FrostLink ("el Proveedor") proporciona su plataforma de gestión y monitoreo de equipos de refrigeración como Servicio (SaaS) a empresas y técnicos ("el Cliente").
+
+#### 1. Descripción del Servicio
+
+FrostLink es una plataforma web diseñada para optimizar la gestión y el mantenimiento de equipos de refrigeración en negocios que dependen de la cadena de frío. El servicio incluye:
+
+- Monitoreo en tiempo real de temperatura, consumo energético y tiempo de operación
+- Alertas automáticas ante fallas detectadas
+- Generación de reportes técnicos e historiales
+- Programación inteligente de mantenimientos
+- Gestión integral de equipos, técnicos y proveedores
+
+#### 2. Suscripciones y Pagos
+
+- **Planes de Suscripción**: El Cliente puede elegir entre varios planes con diferentes niveles de servicio y características.
+- **Ciclo de Facturación**: Las suscripciones se facturan mensualmente según el plan elegido y la cantidad de equipos registrados.
+- **Pagos**: Los pagos se realizarán mediante los métodos disponibles en la plataforma (tarjeta de crédito, transferencia bancaria).
+- **Impuestos**: Todos los precios son netos y no incluyen impuestos aplicables, que serán responsabilidad del Cliente.
+
+#### 3. Propiedad de los Datos
+
+- **Datos del Cliente**: Toda la información proporcionada por el Cliente (incluidos datos de equipos, historiales y configuraciones) es propiedad exclusiva del Cliente.
+- **Uso de Datos Anónimos**: El Proveedor podrá utilizar datos agregados y anonimizados para mejorar los servicios y generar estadísticas industriales.
+- **Respaldo de Datos**: El Proveedor realizará copias de seguridad periódicas, pero se recomienda al Cliente mantener respaldos adicionales de información crítica.
+
+#### 4. Confidencialidad y Seguridad
+
+- **Protección de Datos**: El Proveedor implementa medidas técnicas y organizativas para proteger la información conforme a estándares internacionales.
+- **Notificación de Brechas**: El Cliente será notificado en caso de vulneraciones de seguridad que afecten sus datos.
+- **Acceso Restringido**: El Proveedor garantiza que solo personal autorizado y necesario tendrá acceso a los datos del Cliente.
+
+#### 5. Disponibilidad del Servicio
+
+- **Uptime Objetivo**: FrostLink se compromete a mantener un tiempo de actividad del 99.5% mensual, excluyendo mantenimientos programados.
+- **Mantenimiento Programado**: Se notificará con al menos 72 horas de anticipación sobre mantenimientos que puedan afectar la disponibilidad.
+- **Soporte Técnico**: Disponible en horario laborable (Lunes a Viernes, 8:00-18:00 GMT-5) con tiempos de respuesta según el plan contratado.
+
+#### 6. Limitaciones de Responsabilidad
+
+- FrostLink actúa como herramienta de monitoreo y gestión, pero no reemplaza la supervisión humana ni garantiza la prevención total de fallas.
+- El Proveedor no será responsable por pérdidas de productos, daños consecuentes o lucro cesante derivados del uso de la plataforma.
+- La responsabilidad máxima del Proveedor se limitará al monto pagado por el Cliente durante los últimos 12 meses.
+
+#### 7. Duración y Terminación
+
+- **Periodo Inicial**: El acuerdo tiene un periodo mínimo de 3 meses desde la activación.
+- **Renovación**: Se renovará automáticamente por periodos mensuales salvo notificación de cancelación.
+- **Cancelación**: El Cliente puede cancelar su suscripción con 30 días de anticipación sin penalización tras el periodo inicial.
+- **Efecto de Terminación**: Tras la cancelación, el Cliente tendrá 30 días para exportar sus datos antes de su eliminación definitiva.
+
+#### 8. Modificaciones al Acuerdo
+
+El Proveedor podrá modificar este acuerdo notificando los cambios con 30 días de anticipación. El uso continuado del servicio tras este periodo constituirá la aceptación de las modificaciones.
+
+#### 9. Ley Aplicable y Jurisdicción
+
+Este acuerdo se regirá e interpretará de conformidad con las leyes de Perú, y cualquier disputa estará sujeta a la jurisdicción exclusiva de los tribunales de Lima, Perú.
+
+### 5.2.5. Implemented Native-Mobile Application Evidence  
 En esta parte se presentan capturas de la **aplicación móvil nativa**, evidenciando su diseño responsivo, la experiencia de usuario en dispositivos móviles y las principales características disponibles.  
 
 
-### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence  
+### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence  
 Se muestran capturas que validan la implementación de la **API RESTful** o backend serverless, incluyendo endpoints activos, pruebas realizadas en herramientas como Postman y la comunicación entre el front-end y el back-end.  
 
 
-### 5.2.6. RESTful API Documentation  
+### 5.2.7. RESTful API Documentation  
 Aquí se presenta evidencia de la **documentación de la API RESTful**, mostrando cómo se estructuran los endpoints, métodos, parámetros y ejemplos de uso, con el fin de facilitar la integración y el mantenimiento.  
 
 
-### 5.2.7. Team Collaboration Insights  
+### 5.2.8. Team Collaboration Insights  
 En esta sección se incluyen evidencias de la **colaboración del equipo**, tales como el uso de control de versiones, tableros de tareas, discusiones técnicas y flujos de trabajo compartidos que permitieron coordinar el desarrollo.  
 
-# Video About-the-Product
+## 5.3. Video About-the-Product
 A continuación se encuentra nuestro video about the product, donde se evidencia la explicacion sobre los principales features, sustentacion de diseño  y proposito de la aplicacion.
 
 **Título:** ``
