@@ -3276,10 +3276,64 @@ A continuación se encuentra nuestro video about the product, donde se evidencia
 **Título:** ``
 <td><img src="resources/aboutTheProduct.png" alt="Screenshot del video about the product"></td>
 
-
-
 - **YouTube:** [Ver en YouTube]()
 - **Microsoft Stream:** [Ver video]()
+
+# Capítulo VII: DevOps Practices
+
+## 7.1. Continuous Integration
+
+### 7.1.1. Tools and Practices
+
+### 7.1.2. Build & Test Suite Pipeline Components.
+
+## 7.2. Continuous Delivery
+
+### 7.2.1. Tools and Practices
+
+Para lograr un Continuos Delivery en FrostLink haremos uso de una serie de herramientas y prácticas que garantizan una alta calidad en el software al mismo tiempo que se mantiene una frecuencia de entregas periódica:
+
+- Control de versiones: Aplicaremos el flujo de GitFlow para mantener separación entre los entornos de desarrollo, staging y producción.
+
+- CI/CD: Aprovecharemos Github Actions para integrar las fases de compilación, pruebas y despliegue automático en entornos de staging.
+
+- Contenedorización: Mediante Docker para empaquetar el backend y el frontend web, asegurando consistencia.
+
+- Infraestructura como código: Configuración de entornos en Docker Compose y scripts automatizados para levantar dependencias.
+
+- Testing automatizado: Integraremos pruebas unitarias e integrales como paso obligatorio antes de que se realice el despliegue.
+
+- Entornos de staging: Utilizaremos servicios como Firebase para pruebas previas al despliegue en producción.
+
+### 7.2.2. Stages Deployment Pipeline Components
+
+Estructuraremos nuestro pipeline de entrega continua en 5 etapas progresivas.
+A continuación detallaremos las tareas que se realizaran en cada de una de estas etapas:
+
+- **Build Stage**
+  - Compilación del frontend y empaquetado del backend en Docker.
+  - Verificación de dependencias y versiones.
+
+- **Testing Stage**
+  - Ejecución de pruebas unitarias e integración.
+  - Validación de endpoints de la API.
+
+- **Package & Registry Stage**
+  - Generación de imágenes Docker.
+  - Publicación en GitHub Container Registry.
+
+- **Staging Deployment Stage**
+  - Despliegue automático en entorno staging.
+  - Pruebas manuales de QA por el equipo.
+
+- **Approval/Gate**
+  - Validación por parte del equipo antes de pasar a producción.
+
+## 7.3. Continuous deployment
+
+### 7.3.1. Tools and Practices
+
+### 7.3.2. Production Deployment Pipeline Components
 
 # Conclusiones
 
