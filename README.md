@@ -2955,50 +2955,37 @@ Todo el código de la solución será escrito en inglés para mantener la consis
 - Implementar Scenario Outline cuando existan múltiples casos similares
 - Agregar comentarios cuando se requiera contexto o explicaciones adicionales
 
-### 5.1.4. Software Deployment Configuration  
-#### Landing Page Deployment  
+### 5.1.4 Software Deployment Configuration
 
-Realizaremos el despliegue de nuestra Landing utilizando la herramienta implementada de **GitHub Pages**. Para usarla, es necesario contar con acceso como administrador al repositorio del proyecto. A partir de ahí podemos proceder con el despliegue siguiendo los pasos a continuación:  
+**LANDING PAGE DEPLOYMENT**
 
-1. **Creación de ramas**: Se crean ramas específicas para que cada miembro del equipo pueda trabajar en módulos o componentes del proyecto de forma organizada y sin generar conflictos en la rama principal.  
+Para la segunda implementación de la landing page del proyecto, se decidió utilizar Netlify. Para ello, se siguio el siguiente proceso: 
 
-2. **Estructura del proyecto**: Se define una estructura clara a seguir en todas las ramas, en nuestro caso seguiremos la estructura estándar pero utilizaremos una carpeta "resources" para imágenes y configuración i18n.  
-
-3. **Subida de archivos al repositorio**:  
+1. **Subida de archivos al repositorio**:  
    - Instalación de Git.  
    - Configuración del repositorio remoto.  
    - Uso de comandos Git para hacer commit y push de los cambios.  
 
-4. **Configuración para despliegue en GitHub Pages**:  
-   - Instalamos el paquete **angular-cli-ghpages** con el comando:  
-     ```bash
-     npm install -g angular-cli-ghpages
-     ```  
-   - Editamos el archivo `angular.json` para asegurarnos de que el `baseHref` tenga el valor correcto:  
-     ```json
-     "baseHref": "/nombre-del-repo/"
-     ```  
-   - Ejecutamos el build de producción del proyecto Angular con:  
-     ```bash
-     ng build --configuration production --base-href "https://usuario.github.io/nombre-del-repo/"
-     ```  
-   - Desplegamos en GitHub Pages con el comando:  
-     ```bash
-     npx angular-cli-ghpages --dir=dist/nombre-del-proyecto
-     ```  
-
-5. **Habilitación de GitHub Pages**:  
-   - Accedemos a la configuración del repositorio en GitHub.  
-   - En la pestaña **Pages**, seleccionamos la rama `gh-pages` como origen del despliegue.  
-   - Guardamos los cambios y esperamos a que GitHub genere la URL de la landing.  
-
-6. **Resolución de conflictos**:  
+2. **Resolución de conflictos**:  
    - En caso de conflictos, se resuelven con herramientas como Visual Studio Code.  
    - Se verifica que los conflictos hayan sido solucionados correctamente.  
 
-Con este flujo, la aplicación Angular queda desplegada en **GitHub Pages**, quedando disponible en la URL generada automáticamente y permitiendo actualizaciones cada vez que se ejecute un nuevo `ng build` y `angular-cli-ghpages`.  
+Con este flujo, la Landing Page queda desplegada en **Netlify**, quedando disponible en la URL generada automáticamente y permitiendo actualizaciones cada vez que se ejecute de nuevo.
 
-🔗 **Landing Page en GitHub Pages**: []()
+1. Seleccionar el proyecto existente.
+
+<img src="./resources/landing_page-step1.png">
+
+
+2. Realizamos las configuraciones establecidas.
+
+<img src="./resources/landing_page-step2.png">
+
+3. Se tiene la Landing Page desplegada.
+
+<img src="./resources/landing_page-step3.png">
+
+🔗 [**Landing Page en Netlify**](https://landingpage-frostlink.netlify.app/) 
 
 ---
 
