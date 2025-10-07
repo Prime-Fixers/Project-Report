@@ -3331,7 +3331,27 @@ A continuación detallaremos las tareas que se realizaran en cada de una de esta
 
 ## 7.3. Continuous deployment
 
+En FrostLink, adoptaremos el Continuous Deployment de forma parcial:
+
+Para la landing page y el frontend web, cada commit en la rama main que pase todas las pruebas se desplegará automáticamente en producción mediante Firebase.
+
+Para el backend o API, el despliegue se realizará automáticamente en Azure luego de que se realicen las pruebas de integración y estas resulten exitosas.
+
+Para la aplicación móvil buscaremos un enfoque híbrido, priorizando mantener una distribución continua hacia testers mediante Firebase App Distribution y TestFlight.
+
 ### 7.3.1. Tools and Practices
+
+Las herramientas y prácticas que emplearemos para el Continuous Deployment serán:
+
+- GitHub Actions: con workflows separados para frontend, backend y aplicaciones móviles.
+- Firebase Hosting: para el deployment de nuestra aplicacion web.
+- Microsoft Azure: para desplegar nuestro backend el cual previamente sera dockerizado.
+- Docker: para contenerización.
+- Firebase App Distribution y TestFlight: para el deploy de nuestra aplicación móvil.
+- Blue-Green Deployment: estrategia de despliegue de dos entornos para minimizar riesgos de producción.
+- Rollbacks: empleados en caso de fallas detectadas en produccion.
+- Monitoreo y login: integrando las aplicaciones con servicios como Google Analytics o Firebase Crashlytics.
+- Zero-downtime deployment: mediante contenedores y balanceo de carga en el backend.
 
 ### 7.3.2. Production Deployment Pipeline Components
 
