@@ -3357,25 +3357,30 @@ Las herramientas y prácticas que emplearemos para el Continuous Deployment ser�
 
 # Conclusiones
 
-Se validó la alineación problema–solución mediante investigación con usuarios y análisis competitivo, definiendo con claridad segmentos objetivo y oportunidades de valor.
+El proyecto FrostLink permitió el desarrollo de una plataforma integral de gestión y monitoreo de equipos de refrigeración, diseñada para satisfacer las necesidades tanto de clientes
+como de empresas proveedoras. A lo largo del trabajo parcial se logró conceptualizar, diseñar y prototipar la aplicación web y móvil, aplicando metodologías de diseño centradas en el
+usuario y principios de arquitectura de software moderna.
 
-La especificación (As-Is/To-Be, user stories, backlog e impact mapping) aseguró trazabilidad desde necesidades del usuario hasta funcionalidades priorizadas.
+Se inició con el análisis de necesidades y definición de objetivos, identificando los principales requerimientos de los usuarios y estableciendo los flujos de interacción para los
+distintos escenarios de uso. A partir de esto, se elaboraron mockups y prototipos interactivos que permitieron validar la experiencia de usuario y la navegación entre las diferentes
+secciones de la plataforma, garantizando claridad, usabilidad e interacción fluida.
 
-El diseño del producto consolidó guías de estilo y una arquitectura de información coherentes, materializadas en wireframes, flujos y mockups para web, móvil y landing.
+En cuanto a la arquitectura de software, se aplicó un enfoque de Domain Driven Design (DDD), definiendo bounded contexts para la gestión de equipos, notificaciones y órdenes de trabajo.
+Esto permitió estructurar el sistema en componentes claros y modulares, facilitando su escalabilidad y mantenimiento. Los diagramas de contexto, contenedores y componentes, junto con
+los diagramas de clases y diccionarios de entidades, reflejan la correcta organización y la interrelación entre los distintos elementos de la plataforma.
 
-Los prototipos permitieron evaluar usabilidad y reducir retrabajo antes del desarrollo, afinando interacciones clave y contenidos.
+El diseño de la base de datos consideró tanto aspectos relacionales como no relacionales, asegurando integridad y consistencia en la información almacenada. La implementación de
+entidades como Cliente, Empresa, Equipo, Cuenta, Solicitud y Notificación permitió gestionar de manera eficiente usuarios, equipos y comunicaciones, integrando funcionalidades clave
+como monitoreo en tiempo real, reportes analíticos y gestión de mantenimientos.
 
-La arquitectura basada en DDD y diagramas C4, junto con el diseño orientado a objetos, favorece mantenibilidad, escalabilidad e integración con servicios externos.
+La implementación de la aplicación web y móvil incluyó la configuración de entornos de desarrollo, control de versiones con GitFlow, y adopción de buenas prácticas de codificación
+en HTML, CSS, JavaScript y frameworks modernos. Se desarrollaron interfaces intuitivas para registro, inicio de sesión, dashboards, gestión de equipos y análisis de métricas, así
+como funcionalidades de contacto, notificaciones y administración de cuentas. La comunicación entre front-end y back-end se realizó mediante una API RESTful desplegada en Azure,
+validada con Postman y asegurando interoperabilidad y confiabilidad en la transmisión de datos.
 
-El modelo de datos (relacional/no relacional) respalda los casos de uso actuales y futuros, equilibrando consistencia, rendimiento y analítica.
-
-La implementación aplicó buenas prácticas de ingeniería (configuración de entorno, control de versiones, convenciones de código, despliegue y documentación de API).
-
-La colaboración del equipo, con roles claros y revisión continua, aceleró la toma de decisiones y aseguró calidad en los entregables.
-
-Se consideraron accesibilidad, privacidad, seguridad y responsabilidad ética, reforzando la confiabilidad y la inclusión del producto.
-
-El conjunto de avances deja bases sólidas para un piloto en producción y un camino claro de mejora continua.
+Se incorporaron también prácticas de DevOps y CI/CD, con despliegue de la landing page y front-end en Netlify, uso de contenedores Docker para backend y front-end, automatización de builds
+y pruebas, y estrategias de despliegue continuo que permiten mantener alta disponibilidad y control de versiones. Además, se consideraron aspectos de seguridad, confidencialidad y respaldo
+de datos, cumpliendo con estándares de protección de información.
 
 # Anexo
 
