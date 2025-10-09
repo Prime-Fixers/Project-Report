@@ -3285,13 +3285,28 @@ A continuación se encuentra nuestro video about the product, donde se evidencia
 
 ### 7.1.1. Tools and Practices
 
+Para asegurar una integración continua adecuada durante nuestro proceso de desarrollo utilizaremos las siguientes herramientas y prácticas.
+
+- GitHub Actions: que usaremos para la ejecución de pruebas y compilaciones luego de cada commit.
+- JUnit: para el desarrollo de pruebas unitarias.
+- Commits pequeños: para mantener una integración frecuente y que se puedan realizar revisiones rápidas a los nuevos bloques de código.
+- Pipelines: que ejecuten pruebas en cada commit para asegurar el correcto funcionamiento de este.
+
 ### 7.1.2. Build & Test Suite Pipeline Components.
+
+Para garantizar un código de calidad que sea validado antes de las fases de entrega haremos uso de un pipeline diseñado con enfoque en la integración continua. Este pipeline contará con tres etapas.
+
+- Checkout & Install: se realiza el setup del proyecto al descargar el repositorio desde GitHub e instalar las dependencias necesarias para la compilación y ejecución del código en el entorno.
+- Build Stage: se desarrolla y compila el frontend (en Angular), el backend (en Node.js) y la generación de imágenes (en Docker) que se mantendrán consistentes en los diversos entornos de ejecución.
+- QA & Linting: se realizan procesos de verificación de calidad mediante el análisis estático del código, linting, y prouebas automatizadas para detectar errores o vulnerabilidades.
+- Report & Feedback: se documentan los resultados de las etapas anteriores y se comparten con el equipo para obtener retroalimentación inmediata sobre el estado del build.
+- Artifact Storage: se almacenan en un registro seguro los bundles y artefactos generados para que puedan ser reutilizados en etapas del pipeline de Continuous Delivery.
 
 ## 7.2. Continuous Delivery
 
 ### 7.2.1. Tools and Practices
 
-Para lograr un Continuos Delivery en FrostLink haremos uso de una serie de herramientas y prácticas que garantizan una alta calidad en el software al mismo tiempo que se mantiene una frecuencia de entregas periódica:
+Para lograr un Continuous Delivery en FrostLink haremos uso de una serie de herramientas y prácticas que garantizan una alta calidad en el software al mismo tiempo que se mantiene una frecuencia de entregas periódica:
 
 - Control de versiones: Aplicaremos el flujo de GitFlow para mantener separación entre los entornos de desarrollo, staging y producción.
 
@@ -3354,6 +3369,8 @@ Las herramientas y prácticas que emplearemos para el Continuous Deployment ser�
 - Zero-downtime deployment: mediante contenedores y balanceo de carga en el backend.
 
 ### 7.3.2. Production Deployment Pipeline Components
+
+
 
 # Conclusiones
 
