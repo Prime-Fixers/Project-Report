@@ -2726,17 +2726,9 @@ Como propietario de un negocio que utiliza equipos de refrigeración, deseo <str
 Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>dar de alta y administrar</strong> los nuevos equipos que registro.</p>
 <img src="./resources/userflow3.png" alt="userflow3" >
 
-### 5.2.2. Web Applications Prototyping  
+## 4.7. Web Applications Prototyping  
 
 Se presenta el prototipo interactivo de la aplicación web de **FrostLink**, que permite a los usuarios explorar la interfaz y navegar por las distintas secciones de la plataforma. Este prototipo incorpora las funcionalidades esenciales y ofrece una vista preliminar de la experiencia de uso. Además, facilita la evaluación y validación de la interfaz antes de su implementación definitiva, garantizando un diseño intuitivo y eficiente.
-
----
-
-**Implemented Landing Page Evidence**
-
-**LANDING PAGE - EVIDENCE**
-
----
 
 ### Hero Section y Navbar
 <img src="./resources/landing-page-evidence-1.png">
@@ -2791,8 +2783,6 @@ Visualización de los **planes de suscripción** que ofrece FrostLink, diferenci
 <img src="./resources/landing-page-evidence-8.png">
 
 Se presentan los **comentarios y valoraciones** de los clientes, reforzando la credibilidad y confianza en la plataforma.
-
----
 
 ### Formulario de Solicitud de Demo
 <img src="./resources/landing-page-evidence-9.png">
