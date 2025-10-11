@@ -2726,8 +2726,78 @@ Como propietario de un negocio que utiliza equipos de refrigeración, deseo <str
 Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>dar de alta y administrar</strong> los nuevos equipos que registro.</p>
 <img src="./resources/userflow3.png" alt="userflow3" >
 
-## 4.7. Web Applications Prototyping
-Se presenta el prototipo interactivo de la aplicación web de Frostlink, que permite a los usuarios explorar la interfaz y navegar por las distintas secciones de la plataforma. Este prototipo incorpora las funcionalidades esenciales y ofrece una vista preliminar de la experiencia de uso. Además, facilita la evaluación y validación de la interfaz antes de su implementación definitiva, garantizando un diseño intuitivo y eficiente.
+### 5.2.2. Web Applications Prototyping  
+
+Se presenta el prototipo interactivo de la aplicación web de **FrostLink**, que permite a los usuarios explorar la interfaz y navegar por las distintas secciones de la plataforma. Este prototipo incorpora las funcionalidades esenciales y ofrece una vista preliminar de la experiencia de uso. Además, facilita la evaluación y validación de la interfaz antes de su implementación definitiva, garantizando un diseño intuitivo y eficiente.
+
+---
+
+**Implemented Landing Page Evidence**
+
+**LANDING PAGE - EVIDENCE**
+
+---
+
+### Hero Section y Navbar
+<img src="./resources/landing-page-evidence-1.png">
+
+Vista inicial de la página donde se muestra el **hero section** con el mensaje principal y el **navbar** superior que permite navegar entre secciones.
+
+---
+
+### Usuarios Objetivo
+<img src="./resources/landing-page-evidence-2.png">
+
+Se presentan los **segmentos de usuarios** definidos en el diseño de la solución, mostrando claramente los grupos objetivo a los que se dirige FrostLink.
+
+---
+
+### Funcionalidades del Sistema
+<img src="./resources/landing-page-evidence-3.png">
+
+Visualización de las **principales funcionalidades** que ofrece el sistema FrostLink para los diferentes tipos de usuarios.
+
+---
+
+### Resultados Esperados (Outcomes)
+<img src="./resources/landing-page-evidence-4.png">
+
+Se ilustran los **outcomes o resultados esperados** que los usuarios obtendrán al interactuar con el sistema.
+
+---
+
+### Guía de Uso
+<img src="./resources/landing-page-evidence-5.png">
+
+Explicación visual de los **pasos a seguir** para utilizar el sistema de FrostLink de manera sencilla y eficiente.
+
+---
+
+### Descripción General del Sistema
+<img src="./resources/landing-page-evidence-6.png">
+
+Se muestra la **descripción general** de FrostLink, resaltando su propósito, beneficios y propuesta de valor.
+
+---
+
+### Planes Disponibles
+<img src="./resources/landing-page-evidence-7.png">
+
+Visualización de los **planes de suscripción** que ofrece FrostLink, diferenciados según las necesidades de cada usuario.
+
+---
+
+### Testimonios de Clientes
+<img src="./resources/landing-page-evidence-8.png">
+
+Se presentan los **comentarios y valoraciones** de los clientes, reforzando la credibilidad y confianza en la plataforma.
+
+---
+
+### Formulario de Solicitud de Demo
+<img src="./resources/landing-page-evidence-9.png">
+
+Vista del **formulario de contacto** donde los usuarios pueden solicitar una demo personalizada del sistema FrostLink.
 
 ## 4.8. Domain Driven Software Architecture
 Se expone la arquitectura de software orientada al dominio para Frostlink. A través de diversos diagramas se describe la estructura del sistema y sus componentes principales, destacando cómo se relacionan e integran entre sí para ofrecer una solución eficiente, escalable y mantenible.
