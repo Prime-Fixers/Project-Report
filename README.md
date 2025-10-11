@@ -4019,9 +4019,11 @@ de datos, cumpliendo con estándares de protección de información.
 
 # Anexo
 
-//- Repositorio Landing Page: [Enlace](https://github.com/Prime-Fixers/Landing-Page)
-//- Repositorio del Front-End: [Enlace](https://github.com/Prime-Fixers/Frontend)
-//- Repositorio del Back-End: [Enlace](https://github.com/Prime-Fixers/Platform)
+-Repositorio del Report: [Enlace](https://github.com/Prime-Fixers/Project-Report)
+- Repositorio Landing Page: [Enlace](https://github.com/Prime-Fixers/Landing-Page)
+- Repositorio del Front-End: [Enlace](https://github.com/Prime-Fixers/Frontend)
+- Repositorio del Back-End: [Enlace](https://github.com/Prime-Fixers/Platform)
+- Repositorio del mobile application: [Enlace](https://github.com/Prime-Fixers/Mobile)
 
 # Bibliografía
 
