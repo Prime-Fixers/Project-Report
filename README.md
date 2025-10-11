@@ -3158,50 +3158,6 @@ Con este flujo, la Landing Page queda desplegada en **Netlify**, quedando dispon
 
 ---
 
-#### Front End Web Application Deployment
-
-1. Iniciamos sesión en Netlify y vinculamos el repositorio correspondiente.  
-   ![Imagen 1]()
-
-2. Seleccionamos el proyecto adecuado desde la lista de repositorios.  
-   ![Imagen 2]()
-
-3. Completamos los campos necesarios:
-   - Equipo.
-   - Rama donde están los archivos.
-   - Nombre de la página a desplegar.  
-   ![Imagen 3]()  
-   ![Imagen 4]()
-
-4. Procedemos con el despliegue del sitio.  
-   ![Imagen 5]()
-
-5. Verificamos que el despliegue haya sido exitoso desde la sección de sitios activos en Netlify.  
-   ![Imagen 6]()  
-   ![Imagen 7]()
-
-🔗 **Página desplegada en Netlify**: []()
-
-El despliegue de la aplicación móvil nativa se realiza a través de las **tiendas oficiales de aplicaciones** (Google Play Store y Apple App Store). El proceso general es el siguiente:  
-
-1. **Compilación del proyecto**:  
-   - Para Android, se genera un archivo **APK** o **AAB** usando Android Studio o comandos de Angular/Ionic/React Native, según la tecnología utilizada.  
-   - Para iOS, se genera un archivo **IPA** utilizando Xcode.  
-
-2. **Configuración de cuentas de desarrollador**:  
-   - Registro en **Google Play Console** para Android.  
-   - Registro en **Apple Developer Program** para iOS.  
-
-3. **Subida de builds**:  
-   - Se carga el archivo compilado en la consola correspondiente.  
-   - Se completan los metadatos requeridos (nombre, descripción, imágenes, políticas de privacidad, clasificación por edades, etc.).  
-
-4. **Publicación y despliegue**:  
-   - En Android, la app se despliega después de la revisión automática de Google.  
-   - En iOS, Apple realiza una revisión manual antes de autorizar la publicación en la App Store.  
-
-Con este flujo, la aplicación queda disponible para descarga en dispositivos móviles, asegurando un canal oficial y seguro de distribución.  
-
 #### RESTful API and/or Serverless Backend Deployment  
 El despliegue de la API RESTful o backend serverless puede realizarse en **Azure**, aprovechando el servicio de **Azure App Service**. El proceso general es:  
 
