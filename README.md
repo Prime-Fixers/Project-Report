@@ -3897,6 +3897,68 @@ Resultado de Ejecución de Pruebas
 <img src="./resources/service-request-business-evidence-1.jpg"> 
 
 
+###  6.1.2. Core Integration Tests.
+
+<img src="./resources/integrantion-test.jpg"
+
+### 6.1.3. Core Behavior-Driven Development
+
+Con el objetivo de validar el comportamiento esperado del sistema **FrostLink** desde la perspectiva del usuario final, se desarrollaron escenarios de prueba utilizando *Behavior-Driven Development* (BDD), mediante la sintaxis Gherkin e implementación con **SpecFlow**.
+
+Las funcionalidades definidas corresponden a tres flujos esenciales del sistema:
+* Autenticación y Usuario
+* Gestión de Solicitudes de Servicio
+* Gestión de Equipos
+
+Cada flujo representa un proceso clave dentro de la operación de la plataforma, garantizando la coherencia entre la experiencia del usuario (tanto del cliente como del proveedor) y la lógica de negocio implementada.
+
+#### Escenario probado 1: Autenticación y Usuario
+
+La funcionalidad validada corresponde al flujo de autenticación básica del sistema, cubriendo el registro, inicio de sesión y posterior acceso a las funcionalidades internas de la aplicación.
+
+Este escenario simula una experiencia realista del propietario de un negocio desde su primer contacto con la plataforma, verificando que pueda registrarse correctamente, autenticarse y acceder al panel principal para gestionar sus equipos de refrigeración.
+
+En la ejecución se evidenció que:
+* Se ejecutaron correctamente todos los pasos definidos en el *feature*.
+* El escenario pasó sin errores (1 escenario ejecutado – 1 escenario aprobado).
+* Los logs de **Entity Framework Core** mostraron operaciones reales sobre la base de datos (INSERT y SELECT), demostrando la correcta interacción con el entorno de prueba.
+
+Este caso garantiza que el proceso de autenticación sea confiable, fluido y seguro, cumpliendo con las políticas de acceso definidas en **FrostLink**.
+
+#### Escenario probado 2: Gestión de Solicitudes de Servicio
+
+La funcionalidad probada cubre el flujo completo de administración de solicitudes de servicio, incluyendo la creación de una solicitud por falla, la asignación de un técnico y la verificación del cambio de estado.
+
+El escenario reproduce el comportamiento esperado de un cliente autenticado que reporta un problema con uno de sus equipos, asegurando la integridad de los datos y el cumplimiento de las reglas de negocio.
+
+Durante la prueba se observó que:
+* Se ejecutaron satisfactoriamente todos los pasos del escenario.
+* El sistema realizó operaciones `INSERT` y `UPDATE` sobre la base de datos, verificadas mediante los logs de EF Core.
+* Los resultados demostraron que la aplicación responde adecuadamente a cada acción del usuario, mostrando mensajes de validación y actualizando el estado de la solicitud en tiempo real.
+
+Con este escenario se valida que el módulo de solicitudes de servicio funciona de manera estable, brindando una experiencia de uso coherente y eficaz para los usuarios de la plataforma.
+
+#### Escenario probado 3: Gestión de Equipos
+
+La funcionalidad evaluada se centra en la administración de equipos de refrigeración, abarcando la visualización, registro y edición de sus detalles en el sistema.
+
+El objetivo principal fue comprobar que las operaciones realizadas desde la interfaz del cliente se reflejen correctamente en la base de datos y que los cambios se mantengan consistentes durante todo el proceso.
+
+En la ejecución se confirmó que:
+* Todos los pasos definidos en el *feature* fueron ejecutados exitosamente.
+* El escenario pasó sin errores (1 escenario ejecutado – 1 escenario aprobado).
+* Las operaciones `INSERT`, `UPDATE` y `SELECT` se realizaron correctamente, reflejando un flujo de interacción estable entre el sistema y la base de datos.
+
+Este caso valida que el módulo de equipos de **FrostLink** garantiza una gestión confiable de la información de los activos de refrigeración, asegurando la integridad de los datos registrados.
+
+#### Herramientas utilizadas
+
+* **Gherkin / SpecFlow** → Para la definición y ejecución de los escenarios BDD en el ecosistema .NET.
+* **.NET + xUnit + EF Core In-Memory Database** → Para la ejecución controlada de los pasos de prueba en un entorno aislado.
+* **Entity Framework Core (EF Core)** → Para la persistencia y trazabilidad de las operaciones sobre la base de datos durante las pruebas.
+
+
+
 # Capítulo VII: DevOps Practices
 
 ## 7.1. Continuous Integration
