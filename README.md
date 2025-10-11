@@ -3951,6 +3951,7 @@ En la ejecución se confirmó que:
 
 Este caso valida que el módulo de equipos de **FrostLink** garantiza una gestión confiable de la información de los activos de refrigeración, asegurando la integridad de los datos registrados.
 
+
 #### Herramientas utilizadas
 
 * **Gherkin / SpecFlow** → Para la definición y ejecución de los escenarios BDD en el ecosistema .NET.
