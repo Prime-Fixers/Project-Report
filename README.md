@@ -3224,6 +3224,8 @@ En esta imagen se muestra un formulario para que el usuario solicite una demo.
 ### 5.2.3. Implemented Frontend-Web Application Evidence  
 Aquí se incluyen capturas de la **aplicación web** en funcionamiento, donde se visualizan las pantallas principales, la navegación entre módulos y las funcionalidades desarrolladas en el front-end.  
 
+<img src="./resources/frontend-evidence-1.png">
+
 ### 5.2.4. Acuerdo de Servicio - SaaS
 
 El presente Acuerdo de Servicio establece los términos y condiciones bajo los cuales FrostLink ("el Proveedor") proporciona su plataforma de gestión y monitoreo de equipos de refrigeración como Servicio (SaaS) a empresas y técnicos ("el Cliente").
@@ -3285,19 +3287,40 @@ El Proveedor podrá modificar este acuerdo notificando los cambios con 30 días 
 Este acuerdo se regirá e interpretará de conformidad con las leyes de Perú, y cualquier disputa estará sujeta a la jurisdicción exclusiva de los tribunales de Lima, Perú.
 
 ### 5.2.5. Implemented Native-Mobile Application Evidence  
-En esta parte se presentan capturas de la **aplicación móvil nativa**, evidenciando su diseño responsivo, la experiencia de usuario en dispositivos móviles y las principales características disponibles.  
+En esta parte se presentan capturas de la **aplicación móvil nativa**, evidenciando su diseño responsivo, la experiencia de usuario en dispositivos móviles y las principales características disponibles. 
+
+<img src="./resources/mobile-evidence-1.jpg">
+
 
 
 ### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence  
 Se muestran capturas que validan la implementación de la **API RESTful** o backend serverless, incluyendo endpoints activos, pruebas realizadas en herramientas como Postman y la comunicación entre el front-end y el back-end.  
 
+<img src="./resources/restful-evidence-1.png">
+
 
 ### 5.2.7. RESTful API Documentation  
-Aquí se presenta evidencia de la **documentación de la API RESTful**, mostrando cómo se estructuran los endpoints, métodos, parámetros y ejemplos de uso, con el fin de facilitar la integración y el mantenimiento.  
+
+<img src="./resources/api-evidence-1.png">
+
 
 
 ### 5.2.8. Team Collaboration Insights  
 En esta sección se incluyen evidencias de la **colaboración del equipo**, tales como el uso de control de versiones, tableros de tareas, discusiones técnicas y flujos de trabajo compartidos que permitieron coordinar el desarrollo.  
+
+Claro, aquí tienes la tabla en formato Markdown sin el resaltado.
+
+Claro, aquí tienes la tabla llenada con los nombres que proporcionaste.
+
+He asignado las actividades existentes a los nuevos alumnos en el orden que los presentaste. Como había un alumno más que actividades, la última fila no tiene una actividad asignada.
+
+| Alumno | Actividad |
+| :--- | :--- |
+| León Vivas, Fabrizio Amir | Capítulo I: Startup Profile (1.1, 1.2 y 1.3). |
+| Medina Cruzado, Raúl Adrian | Capítulo II: Requirements Elicitation & Analysis (2.1 – 2.4). |
+| Mondoñedo Rodriguez, Juan Diego Javier | Capítulo IV: Product Design (Documentación y elaboración de Landing Page y Mobile Applications UX/UI Design). |
+| Pereira Vasquez, Fabrizzio | Capítulo V: Product Implementation & Deployment (5.1 – 5.2). |
+| Varela Bustinza, Marcelo Alessandro | Capítulo VI: Product Verification & Validation (6.1 - 6.2) |
 
 ## 5.3. Video About-the-Product
 A continuación se encuentra nuestro video about the product, donde se evidencia la explicacion sobre los principales features, sustentacion de diseño  y proposito de la aplicacion.
@@ -3307,6 +3330,173 @@ A continuación se encuentra nuestro video about the product, donde se evidencia
 
 - **YouTube:** [Ver en YouTube]()
 - **Microsoft Stream:** [Ver video]()
+
+# Capítulo VI: Product Verification & Validation
+
+## 6.1. Testing Suites & Validation
+
+### 6.1.1. Core Entities Unit Tests.
+
+Para asegurar la robustez y el correcto funcionamiento de los componentes centrales del sistema, se implementó una rigurosa estrategia de pruebas unitarias. El objetivo principal fue verificar el comportamiento esperado de cada agregado (User, Provider y Machine) de forma completamente aislada, validando su ciclo de vida y la lógica de negocio que encapsulan.
+
+La implementación se apoyó en el ecosistema de Spring Boot, utilizando JUnit 5 como pilar para la estructuración y ejecución de los casos de prueba. Adicionalmente, se integró el framework Mockito para simular las dependencias externas de cada entidad. Este enfoque nos permitió crear un entorno de prueba controlado, garantizando que las validaciones se centraran exclusivamente en la lógica interna de la clase bajo prueba —como sus constructores, métodos de modificación de estado y validaciones— sin la interferencia de otros componentes. Las suites de pruebas, como InvoiceTest, InventoryItemTest y PatientTest, fueron diseñadas para auditar estas operaciones y asegurar la integridad del código desde las primeras etapas del desarrollo.
+
+#### **Test 1: Pruebas del Modelo User (IAM)**
+Descripción
+Pruebas unitarias que validan el comportamiento del agregado User del bounded context IAM, incluyendo creación, actualización de username, password y suscripción.
+**Casos de prueba**
+
+* Creación de usuario con datos válidos.
+
+* Actualización de username.
+
+* Actualización de password hash.
+
+* Asignación de suscripción.
+
+* Manejo de suscripción nula.
+
+**Cobertura**
+
+* Modelo: User.cs
+
+**Evidencia de Ejecución**
+Código de Pruebas Unitarias para UserModel
+<img src=".//resources/iam-test-evidence-1.jpg" alt="Código de pruebas para UserModelTests">
+
+**Resultado de Ejecución de Pruebas**
+<img src="./resources/iam-test-evidence-2.jpg" alt="Resultado de la ejecución de UserModelTests">
+
+#### Test 2: Pruebas del Modelo ServiceRequest
+Descripción
+Pruebas que verifican el comportamiento del modelo ServiceRequest, incluyendo asignación de técnicos, cambios de estado y validación de feedback de clientes.
+
+Casos de prueba
+
+Creación con datos válidos y estado inicial Pending.
+
+Asignación de técnico (estado pasa a Accepted).
+
+Validación de ID de técnico (debe ser positivo).
+
+Cambio de estado a Resolved con fecha de completado.
+
+Agregar feedback del cliente cuando está resuelto.
+
+Validación de rating (1-5).
+
+Cobertura
+
+Modelo: ServiceRequest.cs
+
+Bounded Context: ServiceRequests
+
+Evidencia de Ejecución
+Código de Pruebas Unitarias para ServiceRequestModel
+<img src="./resources/service.-request-model-test-evidence-2.jpg" alt="Código de pruebas para ServiceRequestModelTests">
+
+Resultado de Ejecución de Pruebas
+<img src="./resources/service-evidence-1.jpg" alt="Resultado de la ejecución de ServiceRequestModelTests">
+
+#### Test 3: Pruebas del HashingService
+Descripción
+Pruebas para el servicio de hashing de contraseñas usando BCrypt, validando la generación de hashes seguros y verificación correcta de credenciales.
+
+Casos de prueba
+
+Generación de hash de contraseña.
+
+Verificación de contraseña correcta.
+
+Rechazo de contraseña incorrecta.
+
+Hashes únicos con salt aleatorio (BCrypt).
+
+Manejo de caracteres especiales.
+
+Cobertura
+
+Servicio: HashingService.cs
+
+Bounded Context: IAM
+
+Librería: BCrypt.Net-Next
+
+Evidencia de Ejecución
+Código de Pruebas Unitarias para HashingService
+<img src="./resources/service-evidence.2.jpg" alt="Código de pruebas para HashingServiceTests">
+
+Resultado de Ejecución de Pruebas
+<img src="./resources/hashing-service-test-evidence-1.jpg" alt="Código de pruebas para HashingServiceTests">
+
+#### Test 4: Pruebas del Modelo Equipment
+Descripción
+Pruebas unitarias para el agregado Equipment del bounded context EquipmentManagement, validando la creación correcta de equipos de refrigeración con sus propiedades complejas.
+
+Casos de prueba
+
+Creación con CreateEquipmentCommand válido.
+
+Validación de datos básicos (nombre, modelo, fabricante, costo).
+
+Configuración correcta de Location (entidad).
+
+Configuración correcta de EnergyConsumption (entidad).
+
+Parsing correcto de enums (Type, OwnershipType).
+
+Cobertura
+
+Modelo: Equipment.cs
+
+Entidades: Location.cs, EnergyConsumption.cs
+
+Bounded Context: EquipmentManagement
+
+Evidencia de Ejecución
+Código de Pruebas Unitarias para EquipmentModel
+<img src="./resources//equipment-model-test-evidence-2.jpg" alt="Código de pruebas para EquipmentModelTests">
+
+Resultado de Ejecución de Pruebas
+<img src="./resources/equipment-model-test-evidence-1.jpg" alt="Resultado de la ejecución de EquipmentModelTests">
+
+#### Test 5: Pruebas de Lógica de Negocio (ServiceRequest)
+Descripción
+Pruebas complejas de reglas de negocio y validaciones para el flujo de trabajo de ServiceRequest, incluyendo transiciones de estado y restricciones.
+
+Casos de prueba
+
+Restricción: técnico solo se asigna si está Pending.
+
+Cancelación permitida cuando está InProgress.
+
+Restricción: no cancelar si está Resolved.
+
+Creación de solicitud de emergencia con prioridad alta.
+
+Agregar detalles de resolución con costo.
+
+Restricción: feedback solo si está Resolved.
+
+Rechazo permitido solo cuando está Pending.
+
+Restricción: no rechazar si está InProgress.
+
+Cobertura
+
+Modelo: ServiceRequest.cs
+
+Métodos: AssignTechnician, Cancel, Reject, AddResolutionDetails, AddCustomerFeedback
+
+Bounded Context: ServiceRequests
+
+Evidencia de Ejecución
+Código de Pruebas de Lógica de Negocio para ServiceRequest
+<img src="./resources/service-request-business-logic-test-evidence-2.jpg" alt="Código de pruebas para ServiceRequestBusinessLogicTests">
+
+Resultado de Ejecución de Pruebas
+<img src="./resources/service-request-business-evidence-1.jpgusinessLogicTests"> 
+
 
 # Capítulo VII: DevOps Practices
 
