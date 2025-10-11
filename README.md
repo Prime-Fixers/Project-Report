@@ -709,7 +709,7 @@ La página incluye secciones que presentan a los usuarios objetivo, las funciona
 *Figura 1:* Wireframe de la Landing Page.
 <center>
 
-<img src="./resources/Landing_Page/WireFrame-Landing Page.png" alt="wireframe_lading_page" width="1500" height="500">
+<img src="./resources/Landing_Page/WireFrame-Landing Page.png" alt="wireframe_lading_page" width="500" height="1500">
 
 </center>
 
