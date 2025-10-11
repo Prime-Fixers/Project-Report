@@ -214,6 +214,60 @@
                     <li>Varela Bustinza, Marcelo Alessandro</li>
                 </ul>
             </td>
+<td>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Part II: Verification, Validation & Pipeline</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VI: Product Verification & Validation</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1. Testing Suites & Validation</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.1. Core Entities Unit Tests.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.2. Core Integration Tests.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.3. Core Behavior-Driven Development</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.4. Core System Tests.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2. Static testing & Verification</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1. Static Code Analysis</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1.1. Coding standard & Code conventions.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1.2. Code Quality & Code Security.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.2. Reviews</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3. Validation Interviews.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.1. Diseño de Entrevistas.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.2. Registro de Entrevistas.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.3. Evaluaciones según heurísticas.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4. Auditoría de Experiencias de Usuario</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1. Auditoría realizada.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.1. Información del grupo auditado.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.2. Cronograma de auditoría realizada.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.3. Contenido de auditoría realizada.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2. Auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.1. Información del grupo auditor.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.2. Cronograma de auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.3. Contenido de auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.4. Resumen de modificaciones para subsanar hallazgos.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Página 7 de 50</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VII: DevOps Practices</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1. Continuous Integration</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.2. Build & Test Suite Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2. Continuous Delivery</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.2. Stages Deployment Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3. Continuous deployment</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.2. Production Deployment Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4. Continuous Monitoring</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.1. Tools and Practices</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.2. Monitoring Pipeline Components</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.3. Alerting Pipeline Components</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.4. Notification Pipeline Components.</p>
+
+</td>
       </tr>
     </tbody>
 </table>
