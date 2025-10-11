@@ -202,6 +202,72 @@
                 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Conclusiones</p>
             </td>
         </tr>
+      <tr>
+            <td>TP1</td>
+            <td>11/09/2025</td>
+            <td>
+                <ul>   
+                    <li>León Vivas, Fabrizio Amir</li>
+                    <li>Medina Cruzado, Raúl Adrian</li>
+                    <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
+                     <li>Pereira Vasquez, Fabrizzio</li>
+                    <li>Varela Bustinza, Marcelo Alessandro</li>
+                </ul>
+            </td>
+<td>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Part II: Verification, Validation & Pipeline</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VI: Product Verification & Validation</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1. Testing Suites & Validation</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.1. Core Entities Unit Tests.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.2. Core Integration Tests.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.3. Core Behavior-Driven Development</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.4. Core System Tests.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2. Static testing & Verification</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1. Static Code Analysis</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1.1. Coding standard & Code conventions.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1.2. Code Quality & Code Security.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.2. Reviews</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3. Validation Interviews.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.1. Diseño de Entrevistas.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.2. Registro de Entrevistas.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.3. Evaluaciones según heurísticas.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4. Auditoría de Experiencias de Usuario</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1. Auditoría realizada.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.1. Información del grupo auditado.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.2. Cronograma de auditoría realizada.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.3. Contenido de auditoría realizada.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2. Auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.1. Información del grupo auditor.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.2. Cronograma de auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.3. Contenido de auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.4. Resumen de modificaciones para subsanar hallazgos.</p>
+
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VII: DevOps Practices</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1. Continuous Integration</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.2. Build & Test Suite Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2. Continuous Delivery</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.2. Stages Deployment Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3. Continuous deployment</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.2. Production Deployment Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4. Continuous Monitoring</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.1. Tools and Practices</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.2. Monitoring Pipeline Components</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.3. Alerting Pipeline Components</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.4. Notification Pipeline Components.</p>
+
+</td>
+      </tr>
     </tbody>
 </table>
 
@@ -255,13 +321,13 @@ Para la elaboración deJmondonedorl informe correspondiente a la entrega del TB1
 
 Para la elaboración del informe correspondiente a la entrega del TP1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas desde el capítulo III hasta el capitulo VII y levantando las correcciones del anterior entregable TB1.
 
-| Integrantes                                 | Tareas Asignadas |
-|---------------------------------------------|------------------|
-| León Vivas, Fabrizio Amir                   |                  |
-| Medina Cruzado, Raúl Adrian                 |                  |
-| Mondoñedo Rodriguez, Juan Diego Javier      |                  |
-| Pereira Vasquez, Fabrizzio                  |                  |
-| Varela Bustinza, Marcelo Alessandro         |                  |
+| Integrantes                            | Tareas Asignadas                                                                                                                                                                                                                           |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| León Vivas, Fabrizio Amir              | **6.1 Testing Suites & Validation**: 6.1.1 Unit Tests (Core Entities), 6.1.2 Integration Tests, 6.1.3 BDD (escenarios Gherkin), 6.1.4 System Tests; plan de pruebas, datos semilla y cobertura.                                            |
+| Medina Cruzado, Raúl Adrian            | **6.2 Static Testing & Verification**: 6.2.1 Análisis estático (estándares y convenciones; calidad y seguridad con Sonar/linters/OWASP), 6.2.2 Reviews (checklists, registro de hallazgos y PRs).                                          |
+| Mondoñedo Rodriguez, Juan Diego Javier | **6.3 Validation Interviews**: 6.3.1 Diseño de entrevistas (guion y criterios), 6.3.2 Registro (matriz de respuestas y evidencias), 6.3.3 Evaluación por heurísticas (Nielsen, severidad y recomendaciones).                               |
+| Pereira Vasquez, Fabrizzio             | **6.4 Auditoría de UX**: 6.4.1 Auditoría realizada (info del grupo auditado, cronograma, contenido); 6.4.2 Auditoría recibida (info del grupo auditor, cronograma, contenido); 6.4.2.4 Resumen de modificaciones para subsanar hallazgos.  |
+| Varela Bustinza, Marcelo Alessandro    | **Cap. VII DevOps**: 7.1 CI (herramientas y pipeline de build/test), 7.2 CD (stages y despliegue a staging), 7.3 Continuous Deployment (a producción), 7.4 Monitoring (métricas, alertas y notificaciones); diagramas y YAML del pipeline. |
 
 # Github Collaboration Insights
 
@@ -585,7 +651,7 @@ La plataforma incorpora funcionalidades clave como monitoreo en tiempo real de t
 | **Fabrizio León**<br>Soy estudiante de Ingeniería de Software en la UPC con enfoque en desarrollo front-end y sólida base en sistemas UNIX/Linux. Manejo C++, JavaScript y Python, y he trabajado con metodologías ágiles para entregar soluciones claras y mantenibles. Me apasiona la ciberseguridad y la tecnología aplicada a problemas reales. Destaco por el trabajo en equipo, pensamiento crítico y comunicación efectiva. | <img src="/resources/Fabrizio.png" alt="kevin image" width="200"> |
 | **Raúl Medina**<br>Como estudiante de la carrera de Ingeniería de Software, soy apasionado por la ciencia de datos. Me motiva descubrir cómo el análisis y la interpretación de grandes volúmenes de información pueden generar soluciones innovadoras dentro del desarrollo de software. Me interesa explorar cómo los datos pueden optimizar procesos, anticipar errores y mejorar la toma de decisiones. Confío en que, junto a mi equipo, podré seguir fortaleciendo mis habilidades y contribuir de manera significativa en cada etapa del proyecto. | <img src="/resources/Raul.jpeg" alt="Raul imagen" width="200"> |
 | **Juan Diego Mondoñedo**<br>Estudiante de Ingeniería de Software con experiencia previa con metodología ágil y frameworks como Angular y Vue, además de conocimientos en programación en Javascript, C++ y Python. Como miembro del equipo de FrostLink, emplearé mis habilidades al máximo para el desarrollo de nuestra startup. | <img src="/resources/JD.jpg" alt="angie image" width="200"> |
-| **Fabrizzio Pereira**<br> | <img src="" alt="fabrizzio image" width="200"> |
+| **Fabrizzio Pereira**<br> Mi nombre es Nelson Fabrizzio Pereira Vásquez (U202417468), estudiante de Ingeniería de Software con dominio en desarrollo web, especializado en React y su ecosistema. Cuenta con experiencia en la creación de proyectos prácticos como método de aprendizaje, aplicando principios de ingeniería de software y buenas prácticas de desarrollo. Destaca por su capacidad de trabajo en equipo, su disposición para colaborar activamente y su habilidad para apoyar en la resolución de problemas técnicos.| <img src="https://raw.githubusercontent.com/upc-pre-202520-1ACC0238-2005-mira/ProjectReport/main/img/chapter1/nelson.jpeg" alt="fabrizzio image" width="200"> |
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
 
 ## 1.2. Solution Profile
@@ -1869,22 +1935,73 @@ Bajo un enfoque **nativo-móvil**, se implementan componentes específicos de ca
 
 ---
 
+### 4.1.3.1. iOS Mobile Style Guidelines
+
+## Diseño Adaptativo
+La interfaz se adapta fluidamente al ecosistema **iOS**, respetando los márgenes de seguridad, zonas táctiles y proporciones de pantalla de dispositivos como **iPhone SE**, **iPhone 13/14/15** y **iPad Mini**.  
+Los componentes se ajustan mediante **Auto Layout** y **Size Classes**, manteniendo la consistencia visual tanto en orientación vertical como horizontal.
+
+---
+
+## Tipografía Móvil
+- **iOS:** SF Pro  
+
+Las fuentes respetan el tamaño dinámico configurado por el usuario y siguen las recomendaciones de las **Human Interface Guidelines (HIG)**.  
+Los títulos utilizan pesos **semibold**, mientras que los textos secundarios usan **regular** para favorecer la lectura en pantallas pequeñas.
+
+---
+
+## Paleta de Colores Móvil
+La interfaz aprovecha el modo **claro/oscuro de iOS**, manteniendo el contraste adecuado para la accesibilidad visual.
+
+- **Celeste Primario (#0884C4):** Elementos activos, botones principales.  
+- **Degradados suaves:** Aplicados en headers y secciones destacadas.  
+- **Verde (#00CC66):** Indicadores de conexión y acciones exitosas.  
+- **Rojo (#FF4B4B):** Alertas del sistema con retroalimentación háptica.  
+- **Amarillo (#FFCC00):** Advertencias o tareas pendientes.  
+
+---
+
+## Componentes Móviles Específicos
+- **Tab Bar inferior** con íconos SF Symbols adaptados.  
+- **Botones redondeados** con sombras sutiles.  
+- **Deslizamiento (swipe actions)** en listas nativas.  
+- **Alertas modales** con estilo iOS.  
+- **Feedback háptico** en acciones confirmadas.  
+
+---
+
+## Interacciones Táctiles
+- **Pull-to-refresh** en listas.  
+- **Gestos de retorno (swipe back)** en vistas anidadas.  
+- **Animaciones fluidas y naturales** basadas en UIKit Dynamics.  
+- **Haptics personalizados** para confirmaciones y errores.
+
+<center>
+<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
+</center>
+
+*Figura 1:* Guías de Estilo Móvil iOS – Color Sky Blue.
+
+---
+
+### 4.1.3.2. Android Mobile Style Guidelines
+
 ## Diseño Adaptativo
 La interfaz utiliza un sistema de contenedores flexibles que se ajustan dinámicamente a diferentes resoluciones y orientaciones de pantalla, manteniendo la jerarquía visual en dispositivos desde **4 hasta 6.5 pulgadas**.
 
 ---
 
 ## Tipografía Móvil
-- **iOS:** SF Pro  
 - **Android:** Roboto  
 
 Las tipografías se escalan automáticamente según las configuraciones de accesibilidad del usuario.  
-Los tamaños de fuente siguen las pautas de **Material Design** y **Human Interface Guidelines**.
+Los tamaños de fuente siguen las pautas de **Material Design**.
 
 ---
 
 ## Paleta de Colores Móvil
-La paleta se adapta a los modos **claro/oscuro** de los sistemas operativos, conservando la identidad de FrostLink y manteniendo un contraste adecuado para mejorar la legibilidad.
+La paleta se adapta a los modos **claro/oscuro** del sistema operativo, conservando la identidad de FrostLink y manteniendo un contraste adecuado para mejorar la legibilidad.
 
 - **Celeste Primario (#0884C4):** Botones de acción principal y estados activos.  
 - **Degradados Dinámicos:** Fondos con gradientes sutiles para profundidad visual.  
@@ -1907,10 +2024,11 @@ La paleta se adapta a los modos **claro/oscuro** de los sistemas operativos, con
 - **Swipe left/right** para acciones rápidas.  
 - **Vibración háptica** en confirmaciones críticas.  
 - **Animaciones de carga nativas** por plataforma.  
+
 <center>
 <img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
-*Figura 1:* Guías de Estilo Web – Color Sky Blue
+*Figura 2:* Guías de Estilo Móvil Android – Color Sky Blue.
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
@@ -1918,7 +2036,7 @@ De manera complementaria, se utiliza una paleta de rojo claro para resaltar vent
 <img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
 
-*Figura 2:* Guías de Estilo Web - Color Rojo.
+*Figura 3:* Guías de Estilo Móvil Android – Color Rojo.
 
 
 ## 4.2. Information Architecture
@@ -2344,6 +2462,63 @@ En el contexto de FrostLink, estos diagramas reflejan la secuencia lógica del c
 **User Goal: Añadir máquina** El *customer* quiere añadir una nueva máquina de refrigeración a su dashboard para monitoreo asincronico.
 
 ![USER GOAL - ADD EQUIPMENTS](./resources/USER_FLOW-ADDEQUIPMENTS.png)
+
+
+## 4.5. Mobile Applications Prototyping.
+
+### 4.5.1. Android Mobile Applications Prototyping.
+
+## Autenticación
+
+### Login Screen
+Pantalla de inicio de sesión donde los usuarios ingresan sus credenciales para acceder a la aplicación. Incluye campos para usuario y contraseña, opción "Remember me" y enlace "Forgot password". Al completar el login exitoso, navega al home principal.
+
+![Login](./resources/LoginMobile.png)
+
+### Register Screen
+Formulario de registro para nuevos usuarios. Contiene campos para nombre completo, usuario, email, contraseña y confirmación de contraseña. Incluye selector de tipo de cuenta (Cliente/Empresa) con radio buttons. Valida todos los campos antes de crear la cuenta.
+
+![Register](./resources/RegisterMobile.png)
+
+## Home
+
+### Home Screen
+Pantalla principal de la aplicación que muestra un resumen del estado del sistema. Incluye mensaje de bienvenida, estadísticas de equipos (cantidad, alertas, estado), y una tarjeta principal con información de monitoreo. Tiene icono de notificaciones en la esquina superior derecha.
+
+![Home](./resources/HomeMobile.png)
+
+## Equipos
+
+### My Equipment Screen
+Lista principal de equipos del usuario. Muestra tarjetas con información de cada equipo incluyendo nombre, temperatura actual, estado (normal/warning/critical) y ubicación. Incluye botón circular para agregar nuevos equipos. Header con título "My Equipment" y notificaciones.
+
+![My Equipment](./resources/MyEquipmentMobile.png)
+
+### Manage Equipments Screen
+Pantalla de gestión de equipos con enfoque en administración. Muestra una tarjeta con ejemplo de equipo ("Vertical display case for frozen meats") y botón para agregar equipos. Incluye botón principal "Add Equipment" para navegar al formulario de creación.
+
+![Manage Equipments](./resources/ManageEquipmentsMobile.png)
+
+### Add Equipment Screen
+Formulario completo para agregar nuevos equipos al sistema. Contiene campos para nombre, tipo, modelo, fabricante, número de serie, código, fecha de instalación, consumo energético, ubicación, dirección y temperatura. Incluye validación de campos y estados de carga.
+
+![Add Equipment](./resources/AddEquipmentMobile.png)
+
+## Cuenta
+
+### Account Screen
+Pantalla de perfil de usuario con información de la cuenta y gestión de planes de suscripción. Muestra datos del usuario (empresa, email, usuario, plan actual), icono de perfil circular, y tarjetas de planes disponibles (Gold/Diamond) con precios y botones de actualización.
+
+![Account](./resources/AccountMobile.png)
+
+## Navegación
+
+### Bottom Navigation
+Barra de navegación inferior presente en todas las pantallas principales. Incluye 5 secciones: Home (casa), Machines (equipos), Rent (alquiler), Contact (contacto) y Account (cuenta). La sección activa se destaca en azul FrostLink.
+
+![Bottom Navigation](./resources/BottomNavigationMobile.png)
+
+
 ## 4.6. Web Applications UX/UI Design
 
 ### 4.6.1. Web Applications Wireframes
@@ -2617,8 +2792,68 @@ Como propietario de un negocio que utiliza equipos de refrigeración, deseo <str
 Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>dar de alta y administrar</strong> los nuevos equipos que registro.</p>
 <img src="./resources/userflow3.png" alt="userflow3" >
 
-## 4.7. Web Applications Prototyping
-Se presenta el prototipo interactivo de la aplicación web de Frostlink, que permite a los usuarios explorar la interfaz y navegar por las distintas secciones de la plataforma. Este prototipo incorpora las funcionalidades esenciales y ofrece una vista preliminar de la experiencia de uso. Además, facilita la evaluación y validación de la interfaz antes de su implementación definitiva, garantizando un diseño intuitivo y eficiente.
+## 4.7. Web Applications Prototyping  
+
+Se presenta el prototipo interactivo de la aplicación web de **FrostLink**, que permite a los usuarios explorar la interfaz y navegar por las distintas secciones de la plataforma. Este prototipo incorpora las funcionalidades esenciales y ofrece una vista preliminar de la experiencia de uso. Además, facilita la evaluación y validación de la interfaz antes de su implementación definitiva, garantizando un diseño intuitivo y eficiente.
+
+### Hero Section y Navbar
+<img src="./resources/landing-page-evidence-1.png">
+
+Vista inicial de la página donde se muestra el **hero section** con el mensaje principal y el **navbar** superior que permite navegar entre secciones.
+
+---
+
+### Usuarios Objetivo
+<img src="./resources/landing-page-evidence-2.png">
+
+Se presentan los **segmentos de usuarios** definidos en el diseño de la solución, mostrando claramente los grupos objetivo a los que se dirige FrostLink.
+
+---
+
+### Funcionalidades del Sistema
+<img src="./resources/landing-page-evidence-3.png">
+
+Visualización de las **principales funcionalidades** que ofrece el sistema FrostLink para los diferentes tipos de usuarios.
+
+---
+
+### Resultados Esperados (Outcomes)
+<img src="./resources/landing-page-evidence-4.png">
+
+Se ilustran los **outcomes o resultados esperados** que los usuarios obtendrán al interactuar con el sistema.
+
+---
+
+### Guía de Uso
+<img src="./resources/landing-page-evidence-5.png">
+
+Explicación visual de los **pasos a seguir** para utilizar el sistema de FrostLink de manera sencilla y eficiente.
+
+---
+
+### Descripción General del Sistema
+<img src="./resources/landing-page-evidence-6.png">
+
+Se muestra la **descripción general** de FrostLink, resaltando su propósito, beneficios y propuesta de valor.
+
+---
+
+### Planes Disponibles
+<img src="./resources/landing-page-evidence-7.png">
+
+Visualización de los **planes de suscripción** que ofrece FrostLink, diferenciados según las necesidades de cada usuario.
+
+---
+
+### Testimonios de Clientes
+<img src="./resources/landing-page-evidence-8.png">
+
+Se presentan los **comentarios y valoraciones** de los clientes, reforzando la credibilidad y confianza en la plataforma.
+
+### Formulario de Solicitud de Demo
+<img src="./resources/landing-page-evidence-9.png">
+
+Vista del **formulario de contacto** donde los usuarios pueden solicitar una demo personalizada del sistema FrostLink.
 
 ## 4.8. Domain Driven Software Architecture
 Se expone la arquitectura de software orientada al dominio para Frostlink. A través de diversos diagramas se describe la estructura del sistema y sus componentes principales, destacando cómo se relacionan e integran entre sí para ofrecer una solución eficiente, escalable y mantenible.
@@ -2957,82 +3192,6 @@ Todo el código de la solución será escrito en inglés para mantener la consis
 
 ### 5.1.4 Software Deployment Configuration
 
-**LANDING PAGE DEPLOYMENT**
-
-Para la segunda implementación de la landing page del proyecto, se decidió utilizar Netlify. Para ello, se siguio el siguiente proceso: 
-
-1. **Subida de archivos al repositorio**:  
-   - Instalación de Git.  
-   - Configuración del repositorio remoto.  
-   - Uso de comandos Git para hacer commit y push de los cambios.  
-
-2. **Resolución de conflictos**:  
-   - En caso de conflictos, se resuelven con herramientas como Visual Studio Code.  
-   - Se verifica que los conflictos hayan sido solucionados correctamente.  
-
-Con este flujo, la Landing Page queda desplegada en **Netlify**, quedando disponible en la URL generada automáticamente y permitiendo actualizaciones cada vez que se ejecute de nuevo.
-
-1. Seleccionar el proyecto existente.
-
-<img src="./resources/landing_page-step1.png">
-
-
-2. Realizamos las configuraciones establecidas.
-
-<img src="./resources/landing_page-step2.png">
-
-3. Se tiene la Landing Page desplegada.
-
-<img src="./resources/landing_page-step3.png">
-
-🔗 [**Landing Page en Netlify**](https://landingpage-frostlink.netlify.app/) 
-
----
-
-#### Front End Web Application Deployment
-
-1. Iniciamos sesión en Netlify y vinculamos el repositorio correspondiente.  
-   ![Imagen 1]()
-
-2. Seleccionamos el proyecto adecuado desde la lista de repositorios.  
-   ![Imagen 2]()
-
-3. Completamos los campos necesarios:
-   - Equipo.
-   - Rama donde están los archivos.
-   - Nombre de la página a desplegar.  
-   ![Imagen 3]()  
-   ![Imagen 4]()
-
-4. Procedemos con el despliegue del sitio.  
-   ![Imagen 5]()
-
-5. Verificamos que el despliegue haya sido exitoso desde la sección de sitios activos en Netlify.  
-   ![Imagen 6]()  
-   ![Imagen 7]()
-
-🔗 **Página desplegada en Netlify**: []()
-
-El despliegue de la aplicación móvil nativa se realiza a través de las **tiendas oficiales de aplicaciones** (Google Play Store y Apple App Store). El proceso general es el siguiente:  
-
-1. **Compilación del proyecto**:  
-   - Para Android, se genera un archivo **APK** o **AAB** usando Android Studio o comandos de Angular/Ionic/React Native, según la tecnología utilizada.  
-   - Para iOS, se genera un archivo **IPA** utilizando Xcode.  
-
-2. **Configuración de cuentas de desarrollador**:  
-   - Registro en **Google Play Console** para Android.  
-   - Registro en **Apple Developer Program** para iOS.  
-
-3. **Subida de builds**:  
-   - Se carga el archivo compilado en la consola correspondiente.  
-   - Se completan los metadatos requeridos (nombre, descripción, imágenes, políticas de privacidad, clasificación por edades, etc.).  
-
-4. **Publicación y despliegue**:  
-   - En Android, la app se despliega después de la revisión automática de Google.  
-   - En iOS, Apple realiza una revisión manual antes de autorizar la publicación en la App Store.  
-
-Con este flujo, la aplicación queda disponible para descarga en dispositivos móviles, asegurando un canal oficial y seguro de distribución.  
-
 #### RESTful API and/or Serverless Backend Deployment  
 El despliegue de la API RESTful o backend serverless puede realizarse en **Azure**, aprovechando el servicio de **Azure App Service**. El proceso general es:  
 
@@ -3289,8 +3448,83 @@ Este acuerdo se regirá e interpretará de conformidad con las leyes de Perú, y
 ### 5.2.5. Implemented Native-Mobile Application Evidence  
 En esta parte se presentan capturas de la **aplicación móvil nativa**, evidenciando su diseño responsivo, la experiencia de usuario en dispositivos móviles y las principales características disponibles. 
 
-<img src="./resources/mobile-evidence-1.jpg">
+# Guía de Distribución Firebase App Distribution
 
+## 1. Acceso a Firebase Console
+
+![Configuración Firebase](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2000.59.37.png)
+
+Primera captura mostrando el acceso a la consola de Firebase para configurar el proyecto.
+
+## 2. Creación del Proyecto
+
+![Crear Proyecto](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2000.59.56.png)
+
+Interfaz para crear un nuevo proyecto en Firebase. Se puede ver el campo de nombre del proyecto donde se ingresa "FrostLink Mobile App".
+
+## 3. Configuración del Proyecto
+
+![Configuración Proyecto](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.01.34.png)
+
+Pantalla de configuración del proyecto donde se establecen los parámetros iniciales.
+
+## 4. Registro de la App Android
+
+![Registro App Android](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.02.38.png)
+
+Formulario para registrar la aplicación Android en Firebase, mostrando:
+- Nombre del paquete de Android: com.upc.frostlink
+- Sobrenombre de la app: FrostLink Mobile App
+
+## 5. Descarga del Archivo de Configuración
+
+![Descarga google-services.json](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.04.29.png)
+
+Paso 2 del proceso donde se descarga el archivo google-services.json. La interfaz muestra:
+- Instrucciones para Android Studio
+- Botón para descargar google-services.json
+- Guía visual de dónde colocar el archivo en el proyecto
+
+## 6. Integración en Android Studio
+
+![Integración Android Studio](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.05.37.png)
+
+Captura de Android Studio mostrando la integración de Firebase, incluyendo:
+- Estructura del proyecto con el archivo google-services.json en la carpeta app
+- Configuración de los plugins de Gradle para Firebase
+
+## 7. Configuración de Gradle
+
+![Configuración Gradle](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.05.44.png)
+
+Archivo build.gradle.kts mostrando la configuración de Firebase App Distribution:
+- Plugin com.google.gms.google-services agregado
+- Plugin com.google.firebase.appdistribution configurado
+- Dependencias de Firebase BoM y Analytics
+
+## 8. Consola de App Distribution
+
+![Consola App Distribution](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.05.56.png)
+
+Interfaz principal de Firebase App Distribution mostrando:
+- Proyecto "FrostLink Mobile App" seleccionado
+- Pestaña "Versiones" activa
+- Área para arrastrar y soltar archivos APK/AAB
+- Contador de versiones (0)
+- Email de contacto configurado
+
+## 9. Gestión de Versiones
+
+![Gestión Versiones](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.18.17.png)
+
+Vista detallada de la gestión de versiones en App Distribution:
+- Versión "1.0 (1)" expandida
+- Botones de acción: Copiar, Descargar, Borrar, Ejecutar pruebas
+- Proceso de configuración en 2 pasos:
+  1. Agregar verificadores (paso activo)
+  2. Agregar notas de la versión (opcional)
+- Campo para agregar testers o grupos
+- Mensaje indicando que no hay testers asignados aún
 
 
 ### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence  
@@ -3299,9 +3533,169 @@ Se muestran capturas que validan la implementación de la **API RESTful** o back
 <img src="./resources/restful-evidence-1.png">
 
 
-### 5.2.7. RESTful API Documentation  
+## Configuración de la Máquina Virtual en Azure
 
-<img src="./resources/api-evidence-1.png">
+![Configuración Básica de VM](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.41.36.png)
+
+La imagen muestra la configuración inicial de la Máquina Virtual de Azure para el despliegue del backend de FrostLink. Se puede observar la selección de Ubuntu Server 24.04 LTS como sistema operativo, la configuración de zona de disponibilidad, y la selección del tamaño Standard_E2s_v3 con 2 vCPU y 16 GiB de memoria. Esta configuración proporciona los recursos necesarios para ejecutar eficientemente el servicio backend de FrostLink en un entorno de producción.
+
+## Configuración de Red y Seguridad
+
+![Configuración de Red](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.42.58.png)
+
+Esta captura muestra la configuración de red de la VM de FrostLink, incluyendo la dirección IP pública (40.82.177.111) y privada (10.0.0.4), así como las reglas del Network Security Group que permiten el tráfico SSH en el puerto 22 y el tráfico HTTP en el puerto 8080 para el backend de FrostLink. La configuración de red es fundamental para garantizar la accesibilidad del servicio desde internet mientras se mantiene la seguridad apropiada.
+
+## Vista General de la VM de FrostLink
+
+![Vista General VM](./resources/WhatsApp%20Image%202025-10-05%20at%2014.38.58.jpeg)
+
+La imagen presenta una vista general de la Máquina Virtual de FrostLink en el portal de Azure, mostrando el estado detenido de la VM, la información de recursos asignados (Standard D4s v3 con 4 vCPU y 16 GiB de memoria), y los detalles de conectividad de red. Esta vista confirma la configuración básica de la infraestructura antes del despliegue del servicio backend.
+
+## Configuración de PM2 para Auto-inicio
+
+![Configuración PM2 Startup](./resources/WhatsApp%20Image%202025-10-05%20at%2015.11.52.jpeg)
+
+Esta captura muestra la configuración de PM2 para el auto-inicio del backend de FrostLink. Se puede observar la ejecución del comando `pm2 startup` que detecta systemd como sistema de inicio y genera el script necesario para que el servicio de FrostLink se inicie automáticamente al reiniciar la VM. La configuración incluye las variables de entorno correctas y los permisos apropiados para el usuario backendadmin.
+
+## Inicialización del Servicio FrostLink
+
+![Inicialización del Servicio](./resources/WhatsApp%20Image%202025-10-05%20at%2015.13.01.jpeg)
+
+La imagen muestra el proceso de inicialización del servicio backend de FrostLink utilizando PM2. Se puede observar la carga de variables de entorno desde el archivo .env, la configuración del entorno de producción, y la inicialización de la base de datos con las migraciones correspondientes. El servicio se configura para ejecutarse en el puerto 8080 y conectarse a la base de datos local.
+
+## Monitoreo de Logs del Servicio
+
+![Monitoreo de Logs](./resources/WhatsApp%20Image%202025-10-05%20at%2015.15.16.jpeg)
+
+Esta captura muestra el monitoreo en tiempo real de los logs del servicio backend de FrostLink utilizando PM2. Se pueden observar los logs de inicialización de la base de datos, la ejecución exitosa de las migraciones, y la confirmación de que el servidor está corriendo correctamente. El monitoreo de logs es esencial para el diagnóstico y mantenimiento del servicio en producción.
+
+## Verificación del Estado del Servicio
+
+![Estado del Servicio](./resources/WhatsApp%20Image%202025-10-10%20at%2011.24.18.jpeg)
+
+La imagen final muestra la verificación del estado del servicio backend de FrostLink después de un reinicio de la VM. Se puede observar que el servicio se ha reiniciado automáticamente y está funcionando correctamente, con un uso de memoria de 76.2mb y estado "online". Esta verificación confirma que la configuración de auto-inicio funciona correctamente y que el servicio de FrostLink mantiene su disponibilidad incluso después de reinicios del sistema.
+
+---
+
+## Enlaces de Acceso al Servicio
+
+### API Backend de FrostLink
+- **Endpoint Principal**: http://40.82.177.111:8080
+- **Documentación Swagger UI**: http://40.82.177.111:8080/index.html
+
+El servicio backend de FrostLink está disponible públicamente a través de la dirección IP de la VM de Azure, permitiendo el acceso a todos los endpoints de la API y la documentación interactiva de Swagger.
+
+---
+
+## Proceso de Despliegue Completado
+
+El despliegue del servicio backend de FrostLink en Azure VM se ha completado exitosamente, incluyendo:
+
+1. **Configuración de Infraestructura**: VM con Ubuntu Server 24.04 LTS y recursos apropiados
+2. **Configuración de Red**: Reglas de seguridad y conectividad para el puerto 8080
+3. **Instalación de Dependencias**: Node.js, PM2 y configuración del entorno
+4. **Configuración de Auto-inicio**: PM2 configurado para reiniciar automáticamente el servicio
+5. **Verificación de Funcionamiento**: Servicio operativo y monitoreado correctamente
+
+El servicio backend de FrostLink está ahora desplegado y funcionando en Azure, con alta disponibilidad y capacidad de auto-recuperación ante reinicios del sistema.
+
+
+
+
+# 5.2.7. RESTful API Documentation
+
+Aquí se presenta evidencia de la documentación de la API RESTful, mostrando cómo se estructuran los endpoints, métodos, parámetros y ejemplos de uso, con el fin de facilitar la integración y el mantenimiento.
+
+## Interfaz Principal de Swagger UI
+
+![Swagger UI Principal](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.09.jpeg)
+
+La imagen muestra la interfaz principal de Swagger UI para la API de FrostLink Platform. Se puede observar el encabezado con el logo de Swagger, la selección de la definición "FrostLink API V1", y la información básica de la API incluyendo la versión 1.0 y la especificación OAS 3.0. La sección de WorkOrders está expandida mostrando los endpoints disponibles para la gestión de órdenes de trabajo.
+
+## Endpoints de Autenticación
+
+![Endpoints de Autenticación](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.21.jpeg)
+
+Esta captura muestra los endpoints de autenticación disponibles en la API. Se presentan dos endpoints principales: POST para sign-in (iniciar sesión) y POST para sign-up (registro de usuarios). Ambos endpoints están protegidos con autenticación, como se indica por los iconos de candado, y permiten la gestión completa del ciclo de autenticación de usuarios en el sistema.
+
+## Endpoints de Usuarios
+
+![Endpoints de Usuarios](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.30.jpeg)
+
+La imagen presenta los endpoints disponibles para la gestión de usuarios. Se incluyen dos operaciones principales: GET para obtener un usuario específico por ID y GET para obtener todos los usuarios del sistema. Estos endpoints proporcionan la funcionalidad básica de consulta de información de usuarios, esencial para la administración del sistema.
+
+## Endpoints de Perfiles
+
+![Endpoints de Perfiles](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.49.jpeg)
+
+Esta sección muestra los endpoints relacionados con la gestión de perfiles de usuario. Se incluyen operaciones para obtener un perfil específico por ID, crear nuevos perfiles y obtener todos los perfiles del sistema. Los perfiles permiten almacenar información adicional y personalizada de los usuarios más allá de los datos básicos de autenticación.
+
+## Endpoints de Técnicos
+
+![Endpoints de Técnicos](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.16.jpeg)
+
+La imagen muestra los endpoints disponibles para la gestión de técnicos en el sistema. Se incluyen operaciones para crear técnicos, obtener todos los técnicos, obtener un técnico específico por ID y obtener la calificación promedio de un técnico. Estos endpoints son fundamentales para la gestión del personal técnico que realizará las órdenes de trabajo.
+
+## Endpoints de Equipos
+
+![Endpoints de Equipos](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.33.jpeg)
+
+Esta captura presenta una vista completa de los endpoints para la gestión de equipos. Se incluyen operaciones CRUD completas (Crear, Leer, Actualizar, Eliminar) así como operaciones específicas para gestionar parámetros de operación y lecturas de equipos. La variedad de endpoints permite un control detallado sobre todos los aspectos de los equipos en el sistema.
+
+## Endpoints de Solicitudes de Servicio
+
+![Endpoints de Solicitudes de Servicio](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.43.jpeg)
+
+La imagen muestra los endpoints disponibles para la gestión de solicitudes de servicio. Se incluyen operaciones para crear solicitudes, obtener todas las solicitudes, actualizar solicitudes existentes, asignar técnicos, agregar retroalimentación de clientes y actualizar el estado de las solicitudes. Estos endpoints cubren todo el ciclo de vida de una solicitud de servicio.
+
+## Endpoints de Órdenes de Trabajo
+
+![Endpoints de Órdenes de Trabajo](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.54.jpeg)
+
+Esta sección presenta los endpoints para la gestión de órdenes de trabajo. Se incluyen operaciones para crear órdenes de trabajo, obtener todas las órdenes, obtener una orden específica por ID, actualizar el estado de una orden y agregar detalles de resolución. Estos endpoints son centrales para la operación del sistema de gestión de mantenimiento.
+
+## Endpoints de Suscripciones
+
+![Endpoints de Suscripciones](./resources/WhatsApp%20Image%202025-10-10%20at%2013.35.02.jpeg)
+
+La imagen muestra los endpoints disponibles para la gestión de suscripciones y planes de pago. Se incluyen operaciones para crear planes de suscripción, obtener todas las suscripciones, obtener una suscripción específica, actualizar suscripciones y eliminar planes de suscripción. Estos endpoints permiten la gestión completa del modelo de negocio basado en suscripciones.
+
+## Endpoints de Analíticas
+
+![Endpoints de Analíticas](./resources/WhatsApp%20Image%202025-10-10%20at%2013.35.40.jpeg)
+
+Esta captura presenta los endpoints disponibles para el análisis de datos del sistema. Se incluyen operaciones para obtener lecturas de equipos específicos, obtener resúmenes analíticos de equipos y obtener una vista general de analíticas de múltiples equipos. Estos endpoints proporcionan las capacidades de business intelligence y análisis de rendimiento del sistema.
+
+## Esquemas de Datos - Primera Parte
+
+![Esquemas de Datos Parte 1](./resources/WhatsApp%20Image%202025-10-10%20at%2013.35.54.jpeg)
+
+La imagen muestra la primera parte de los esquemas de datos disponibles en la API. Se pueden observar recursos como AddCustomerFeedbackToServiceRequestResource, AddWorkOrderResolutionDetailsCommand, AnalyticsSummaryResource, y otros esquemas relacionados con la gestión de solicitudes, órdenes de trabajo y analíticas. Estos esquemas definen la estructura de datos utilizada en toda la API.
+
+## Esquemas de Datos - Segunda Parte
+
+![Esquemas de Datos Parte 2](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.05.jpeg)
+
+Esta captura continúa mostrando los esquemas de datos de la API. Se incluyen recursos como EServiceType, EUrgency, EWorkOrderStatus, EquipmentOperationParametersResource, y otros esquemas relacionados con enumeraciones y recursos de equipos. Estos esquemas proporcionan las definiciones de tipos de datos y estructuras utilizadas en las operaciones de la API.
+
+## Ejemplo de Endpoint GET Work Orders
+
+![Ejemplo GET Work Orders](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.24.jpeg)
+
+La imagen muestra un ejemplo detallado del endpoint GET /api/v1/work-orders para obtener todas las órdenes de trabajo. Se puede observar la estructura de respuesta con todos los campos disponibles, incluyendo información como ID, número de orden, ID de solicitud de servicio, título, descripción, fechas de creación y programación, estado, prioridad, y otros campos relevantes para la gestión de órdenes de trabajo.
+
+## Ejemplo de Endpoint POST Work Orders
+
+![Ejemplo POST Work Orders](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.35.jpeg)
+
+Esta captura muestra un ejemplo detallado del endpoint POST /api/v1/work-orders para crear nuevas órdenes de trabajo. Se puede observar la estructura del request body con campos como título, descripción, detalles del problema, ID del equipo, tipo de servicio, dirección de servicio, prioridad, y fecha programada. También se muestra la respuesta exitosa con todos los campos de la orden de trabajo creada.
+
+## Ejemplo de Endpoint PATCH Work Order Status
+
+![Ejemplo PATCH Work Order Status](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.56.jpeg)
+
+La imagen muestra un ejemplo detallado del endpoint PATCH /api/v1/work-orders/{workOrderId}/status para actualizar el estado de una orden de trabajo. Se puede observar la estructura del request body con el campo newStatus, los parámetros requeridos (workOrderId), y la respuesta exitosa que incluye todos los detalles de la orden de trabajo actualizada. Este endpoint es crucial para el seguimiento del progreso de las órdenes de trabajo.
+
 
 
 
