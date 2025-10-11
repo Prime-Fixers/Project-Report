@@ -3896,14 +3896,88 @@ Resultado de Ejecución de Pruebas
 
 ## 7.1. Continuous Integration
 
-### 7.1.1. Tools and Practices
+### 7.1.1. Tools and Practices.
 
-Para asegurar una integración continua adecuada durante nuestro proceso de desarrollo utilizaremos las siguientes herramientas y prácticas.
+La práctica de Continuous Integration (CI) en **FrostLink** consiste en integrar con la mayor frecuencia posible los cambios realizados por los desarrolladores en la rama principal del repositorio —generalmente `main`—, verificando de forma automática que dichas modificaciones mantengan la calidad, seguridad y funcionalidad del sistema.
 
-- GitHub Actions: que usaremos para la ejecución de pruebas y compilaciones luego de cada commit.
-- JUnit: para el desarrollo de pruebas unitarias.
-- Commits pequeños: para mantener una integración frecuente y que se puedan realizar revisiones rápidas a los nuevos bloques de código.
-- Pipelines: que ejecuten pruebas en cada commit para asegurar el correcto funcionamiento de este.
+Al automatizar los procesos de compilación, ejecución de pruebas y análisis de código, CI proporciona un ciclo de retroalimentación rápido, reduce la acumulación de defectos y fomenta una cultura de mejora continua y entrega confiable.
+
+En el contexto del proyecto **FrostLink**, desarrollado con **.NET** y **C#**, la integración continua actúa como un mecanismo preventivo ante vulnerabilidades, fallos lógicos y problemas de compatibilidad entre los módulos del sistema (como la gestión de equipos, el monitoreo de sensores, las órdenes de trabajo y la autenticación).
+
+Con este propósito, se implementó un pipeline de CI que cubre todas las fases —desde el commit hasta la generación del artefacto contenedor—, priorizando los siguientes objetivos:
+
+* **Reproducibilidad:** builds deterministas con dependencias declaradas y entornos estandarizados.
+* **Seguridad temprana (shift left):** detección de vulnerabilidades en código y librerías antes de llegar a producción.
+* **Velocidad y visibilidad:** ejecución paralela de jobs, caché de dependencias y métricas disponibles en tiempo real.
+* **Artefactos listos para CD:** imágenes Docker firmadas y versionadas, listas para despliegue en entornos sucesivos (desarrollo → staging → producción).
+
+A continuación, se describen las herramientas y buenas prácticas adoptadas dentro del pipeline de Integración Continua de **FrostLink**.
+
+#### Control de versiones – Git + GitHub
+
+El código fuente de **FrostLink** se gestiona mediante Git bajo una estrategia de ramas cortas derivadas de `main`. Cada modificación se versiona y audita (historial, diferencias, autores) garantizando trazabilidad completa.
+
+En GitHub, se implementan Pull Requests con revisiones obligatorias, políticas de rama y protección de merges. Cada `push` o PR desencadena automáticamente la ejecución del pipeline CI a través de webhooks, asegurando que toda contribución sea verificada antes de integrarse a la rama principal.
+
+#### Orquestador CI – GitHub Actions
+
+El pipeline de **FrostLink** se orquesta mediante GitHub Actions, utilizando workflows definidos en YAML directamente dentro del repositorio. Los runners hospedados ejecutan los jobs en entornos preconfigurados con el **SDK de .NET**, permitiendo paralelizar tareas como compilación, pruebas y análisis de calidad.
+
+Los disparadores `on: [push, pull_request]` garantizan que cada commit genere un build reproducible y resultados inmediatos. Además, el uso de **cachés de NuGet** reduce significativamente los tiempos de compilación en ejecuciones sucesivas.
+
+#### Build & Dependency Management – .NET SDK + NuGet
+
+El proyecto se compila y empaqueta mediante el **SDK de .NET**, utilizando comandos como `dotnet build` y `dotnet test` para validar la build completa. Se emplean archivos de configuración que fijan la versión exacta del SDK, asegurando que tanto los entornos locales como los runners de CI utilicen configuraciones idénticas.
+
+El archivo de proyecto (`.csproj`) declara versiones explícitas de dependencias a través de **NuGet**, garantizando builds deterministas y permitiendo auditorías de licencias, vulnerabilidades o incompatibilidades.
+
+#### Pruebas automatizadas – xUnit + Moq
+
+El pipeline ejecuta pruebas unitarias y de integración como parte del proceso CI:
+* **xUnit** y **Moq** se utilizan para pruebas unitarias en memoria, enfocadas en lógica de negocio (autenticación, gestión de equipos de refrigeración, validaciones de sensores y alertas).
+* En un job independiente, se ejecutan pruebas de integración mediante **Testcontainers**, levantando servicios reales como una base de datos PostgreSQL en contenedores efímeros.
+
+Se establece un umbral mínimo de cobertura del 80 %, y las pruebas más lentas se etiquetan para permitir su ejecución paralela sin afectar el tiempo total del pipeline.
+
+#### Análisis de código – SonarQube + .NET Analyzers
+
+La calidad del código se evalúa mediante **SonarQube**, que centraliza métricas sobre *code smells*, duplicaciones y vulnerabilidades. El job “Quality Gate” impide que los merges continúen si se detectan issues de severidad `blocker` o `critical`.
+
+Como medidas complementarias:
+* **Roslyn Analyzers** y **StyleCop** verifican el cumplimiento de las normas de estilo y convenciones de código de C#.
+* Los analizadores de seguridad integrados detectan patrones de código potencialmente inseguros.
+
+Aplicar la política de *fail-fast* en esta etapa evita la acumulación de deuda técnica y promueve la calidad continua del código.
+
+#### Escaneo de dependencias
+
+Cada ejecución del pipeline realiza un escaneo de vulnerabilidades (CVE) sobre el árbol de dependencias **NuGet**. Si se detecta una librería afectada, la build falla automáticamente y se adjunta un reporte detallado al Pull Request, evitando que código inseguro llegue a producción.
+
+Esta práctica se alinea con el principio de seguridad desde el diseño (*Security by Design*), priorizando la detección temprana de riesgos.
+
+#### Empaquetado y contenedores
+
+Una vez superadas las pruebas y validaciones, el sistema **FrostLink** se empaqueta dentro de una imagen **Docker** multi-arquitectura (amd64/arm64) utilizando Buildx. Las imágenes se etiquetan con un esquema de versionado semántico y el hash corto del commit (por ejemplo, `v1.3.0-gabcdef`).
+
+Se aplican buenas prácticas como:
+* Uso de imágenes base inmutables y usuarios no-root.
+* Ejecución de `docker scan` para verificar vulnerabilidades en las capas base.
+
+De esta forma, se obtiene un artefacto seguro, portable y listo para despliegue en entornos de Continuous Delivery (CD).
+
+#### Registro de artefactos
+
+Las imágenes Docker se publican en un registro privado de contenedores (como GitHub Container Registry o Azure Container Registry), desde donde se promueven entre los distintos entornos (desarrollo → staging → producción) sin necesidad de reconstrucción.
+
+Se aplica una política de retención automática para eliminar versiones obsoletas, y las imágenes se firman digitalmente con herramientas como **Cosign** para garantizar su integridad y autenticidad.
+
+#### Feedback y reporting
+
+El pipeline de **FrostLink** incluye mecanismos de visibilidad y retroalimentación continua:
+* *Badges* de estado de build y cobertura se muestran en el `README.md`.
+* Cada ejecución del pipeline notifica al canal `#devops` con duración, resultado y métricas de rendimiento (DORA Metrics: frecuencia de despliegue, MTTR y ratio de fallos).
+
+Esta transparencia fomenta la cultura DevOps dentro del equipo, facilitando una detección temprana de errores y una mejora continua en la calidad del software.
 
 ### 7.1.2. Build & Test Suite Pipeline Components.
 
