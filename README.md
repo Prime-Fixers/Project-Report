@@ -4056,8 +4056,17 @@ Las herramientas y prácticas que emplearemos para el Continuous Deployment ser�
 - Monitoreo y login: integrando las aplicaciones con servicios como Google Analytics o Firebase Crashlytics.
 - Zero-downtime deployment: mediante contenedores y balanceo de carga en el backend.
 
-### 7.3.2. Production Deployment Pipeline Components
+### 7.3.2. Production Deployment Pipeline Components.
 
+El Production Deployment Pipeline representa la secuencia automatizada de procesos que permiten llevar una aplicación desde su entorno de desarrollo hasta su despliegue en producción de forma segura, eficiente y controlada. A continuación se describen los pasos que conforman este pipeline para FrostLink:
+
+* **Gestión del código fuente**: El proyecto se gestiona en un repositorio de GitHub, donde cada commit o merge a la rama `main` activa automáticamente la ejecución del pipeline en **GitHub Actions**, que procede a clonar el repositorio.
+
+* **Compilación y Empaquetado**: **GitHub Actions** realiza el proceso de compilación utilizando el **SDK de .NET**, resolviendo las dependencias de **NuGet** declaradas en el backend. Una vez compilado, el artefacto se empaqueta en una imagen **Docker**, creando una unidad de despliegue portable y consistente.
+
+* **Validación Automatizada**: **GitHub Actions** ejecuta las suites de pruebas unitarias e integrales para verificar la funcionalidad del sistema. Si alguna prueba falla, el pipeline se detiene y se notifica al equipo de desarrollo, impidiendo que el código defectuoso avance.
+
+* **Despliegue a Producción**: Una vez que la imagen Docker ha superado todas las validaciones, **GitHub Actions** procede a realizar el despliegue del contenedor en el entorno de producción, alojado en **Microsoft Azure**. Se utilizan estrategias como Blue-Green Deployment para minimizar el tiempo de inactividad y permitir rollbacks rápidos en caso de ser necesario.
 
 
 # Conclusiones
