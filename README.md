@@ -3126,38 +3126,6 @@ Todo el código de la solución será escrito en inglés para mantener la consis
 
 ### 5.1.4 Software Deployment Configuration
 
-**LANDING PAGE DEPLOYMENT**
-
-Para la segunda implementación de la landing page del proyecto, se decidió utilizar Netlify. Para ello, se siguio el siguiente proceso: 
-
-1. **Subida de archivos al repositorio**:  
-   - Instalación de Git.  
-   - Configuración del repositorio remoto.  
-   - Uso de comandos Git para hacer commit y push de los cambios.  
-
-2. **Resolución de conflictos**:  
-   - En caso de conflictos, se resuelven con herramientas como Visual Studio Code.  
-   - Se verifica que los conflictos hayan sido solucionados correctamente.  
-
-Con este flujo, la Landing Page queda desplegada en **Netlify**, quedando disponible en la URL generada automáticamente y permitiendo actualizaciones cada vez que se ejecute de nuevo.
-
-1. Seleccionar el proyecto existente.
-
-<img src="./resources/landing_page-step1.png">
-
-
-2. Realizamos las configuraciones establecidas.
-
-<img src="./resources/landing_page-step2.png">
-
-3. Se tiene la Landing Page desplegada.
-
-<img src="./resources/landing_page-step3.png">
-
-🔗 [**Landing Page en Netlify**](https://landingpage-frostlink.netlify.app/) 
-
----
-
 #### RESTful API and/or Serverless Backend Deployment  
 El despliegue de la API RESTful o backend serverless puede realizarse en **Azure**, aprovechando el servicio de **Azure App Service**. El proceso general es:  
 
@@ -3348,6 +3316,38 @@ En esta imagen se muestra un formulario para que el usuario solicite una demo.
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence  
 Aquí se incluyen capturas de la **aplicación web** en funcionamiento, donde se visualizan las pantallas principales, la navegación entre módulos y las funcionalidades desarrolladas en el front-end.  
+
+**LANDING PAGE DEPLOYMENT**
+
+Para la segunda implementación de la landing page del proyecto, se decidió utilizar Netlify. Para ello, se siguio el siguiente proceso: 
+
+1. **Subida de archivos al repositorio**:  
+   - Instalación de Git.  
+   - Configuración del repositorio remoto.  
+   - Uso de comandos Git para hacer commit y push de los cambios.  
+
+2. **Resolución de conflictos**:  
+   - En caso de conflictos, se resuelven con herramientas como Visual Studio Code.  
+   - Se verifica que los conflictos hayan sido solucionados correctamente.  
+
+Con este flujo, la Landing Page queda desplegada en **Netlify**, quedando disponible en la URL generada automáticamente y permitiendo actualizaciones cada vez que se ejecute de nuevo.
+
+1. Seleccionar el proyecto existente.
+
+<img src="./resources/landing_page-step1.png">
+
+
+2. Realizamos las configuraciones establecidas.
+
+<img src="./resources/landing_page-step2.png">
+
+3. Se tiene la Landing Page desplegada.
+
+<img src="./resources/landing_page-step3.png">
+
+🔗 [**Landing Page en Netlify**](https://landingpage-frostlink.netlify.app/) 
+
+---
 
 ### 5.2.4. Acuerdo de Servicio - SaaS
 
