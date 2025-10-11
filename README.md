@@ -562,10 +562,10 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
     </thead>
     <tbody>
         <tr>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software 
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong><br>
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong> Contribuí en la definición de la propuesta de valor de FrostLink, el análisis 5W+2H y el desarrollo del Lean UX Canvas, asegurando un enfoque ético y responsable. También participé en la elaboración de los As-is Scenario Mapping, User Journey Mapping y en el análisis competitivo frente a otras soluciones del mercado.</li>
@@ -573,48 +573,49 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Juan Diego Mondoñedo:</strong> Definí las configuraciones de las plataformas y environments de programación que empleamos para el desarrollo de nuestros productos y establecí pautas para el despliegue de estos.</li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Durante el desarrollo del Capítulo IV: Product Design reconocí mi responsabilidad ética y profesional al diseñar las guías de estilo, la arquitectura de información y las interfaces UX/UI, asegurando que cumplan con principios de accesibilidad, usabilidad y buenas prácticas de ingeniería de software orientadas al bienestar del usuario. </li>
                 </ul>
-               <strong>TP1:</strong><br>
+                <strong>TP1:</strong><br>
                 <ul>
-                    <li><strong>Fabrizio Amir León Vivas:</strong></li>                     
-                     <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
-                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier: </strong></li>                    
-                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Implementé suites de pruebas (unitarias/integración/BDDs) usando datos anonimizados y criterios de aceptación trazables a requisitos, evitando exposición de información sensible y promoviendo revisiones pares.</li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong> Configuré análisis estático (linters/Sonar) y políticas de ramas; apliqué listas de verificación éticas en code reviews (seguridad, privacidad, licencias) y gestioné vulnerabilidades reportadas.</li>
+                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier:</strong> Conduje entrevistas con consentimiento informado, protegí la identidad de participantes y registré sesgos potenciales; apliqué heurísticas priorizando bienestar y accesibilidad.</li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Definí gates éticos en el pipeline (quality gate, escaneo SCA/secretos) y estrategias de rollback/feature flags para despliegues seguros y responsables.</li>
+                    <li><strong>Pereira Vasquez, Fabrizzio:</strong> Organicé la auditoría UX cuidando la confidencialidad de evidencias, documenté hallazgos sin datos personales y prioricé criterios WCAG en las correcciones.</li>
                 </ul>
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong> Se demostró un compromiso ético y profesional al diseñar FrostLink, alineando la propuesta tecnológica con las necesidades reales de los usuarios y consolidando una solución responsable e innovadora.<br>
-               <strong>TP1:</strong>            
+                <strong>TP1:</strong> El equipo evidenció responsabilidad ética al anonimizar datos, establecer controles en el pipeline y documentar revisiones y entrevistas con consentimiento, reduciendo riesgos de seguridad y sesgos en decisiones.
             </td>
         </tr>
         <tr>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales económicos, ambientales y sociales 
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong><br>
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong> Analicé el impacto de FrostLink en negocios que dependen de la cadena de frío, resaltando beneficios económicos al reducir pérdidas, sociales al garantizar calidad de productos y ambientales al optimizar el consumo energético.</li>
-                    <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong>Para el TB1, asumí el rol de verificación técnica y buenas prácticas: configuré el análisis estático (linters y Sonar), definí convenciones de código y listas de chequeo para code reviews, y atendí observaciones de seguridad y licencias. Documenté las evidencias de cada revisión y prioricé correcciones que reducen deuda técnica y riesgos (OWASP), emitiendo juicios informados sobre dependencias y costos operativos para asegurar una solución ética, mantenible y con menor impacto en fallas y retrabajo. </li>
                     <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong>Analicé las implicaciones y los contextos en los que se utilizarían nuestros productos para definir correctamente plataformas para el despliegue de nuestras aplicaciones que sean compatibles con el uso. </li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Asimismo, emití juicios informados considerando el impacto que las soluciones de software pueden tener en distintos contextos globales, económicos, sociales y ambientales, buscando que las propuestas de diseño y arquitectura no solo sean técnicamente viables, sino también sostenibles, inclusivas y generadoras de valor en la sociedad.</li>
-                     <li><strong>Pereira Vasquez, Fabrizzio</strong></li>                
                </ul>
                <strong>TP1:</strong><br>
                 <ul>
-                    <li><strong>Fabrizio Amir León Vivas:</strong></li>                     
-                     <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
-                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier: </strong></li>                    
-                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
-                     <li><strong>Pereira Vasquez, Fabrizzio</strong></li>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Priorizó pruebas que disminuyen costo de fallas en operación (reducción de rechazos/mermas), y midió cobertura/casos críticos para asegurar continuidad de servicio en la cadena de frío.</li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong> Evaluó deuda técnica y riesgos OWASP, proponiendo remediaciones que reducen costos de infraestructura y exposición legal; recomendó dependencias con mejor soporte y mantenimiento.</li>
+                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier:</strong> De las entrevistas derivó requerimientos con mayor impacto social (alertas claras, flujos accesibles), y recomendó simplificaciones que disminuyen errores y tiempos de capacitación.</li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Diseñó CI/CD con entornos escalables y apagado automático en staging para optimizar costos; definió monitoreo de métricas de uso/errores para decisiones basadas en evidencia.</li>
+                    <li><strong>Pereira Vasquez, Fabrizzio:</strong> La auditoría UX identificó barreras de accesibilidad; priorizó mejoras que amplían inclusión y reducen fricción en onboarding, con impacto directo en productividad y satisfacción.</li>
                 </ul>
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong> El proyecto demuestra que una solución tecnológica puede generar valor económico, social y ambiental, siempre que se diseñe con responsabilidad y pensando en su impacto global.<br>
-               <strong>TP1:</strong> 
-         </td>
+                <strong>TP1:</strong> Los juicios informados guiaron la priorización de requisitos, controles de calidad y pipeline, logrando menor retrabajo, consumo controlado de recursos y mayor accesibilidad para usuarios finales.
+            </td>
         </tr>
     </tbody>
 </table>
+
 
 # Capítulo I: Introducción
 
@@ -4061,25 +4062,30 @@ Las herramientas y prácticas que emplearemos para el Continuous Deployment ser�
 
 # Conclusiones
 
-Se validó la alineación problema–solución mediante investigación con usuarios y análisis competitivo, definiendo con claridad segmentos objetivo y oportunidades de valor.
+El proyecto FrostLink permitió el desarrollo de una plataforma integral de gestión y monitoreo de equipos de refrigeración, diseñada para satisfacer las necesidades tanto de clientes
+como de empresas proveedoras. A lo largo del trabajo parcial se logró conceptualizar, diseñar y prototipar la aplicación web y móvil, aplicando metodologías de diseño centradas en el
+usuario y principios de arquitectura de software moderna.
 
-La especificación (As-Is/To-Be, user stories, backlog e impact mapping) aseguró trazabilidad desde necesidades del usuario hasta funcionalidades priorizadas.
+Se inició con el análisis de necesidades y definición de objetivos, identificando los principales requerimientos de los usuarios y estableciendo los flujos de interacción para los
+distintos escenarios de uso. A partir de esto, se elaboraron mockups y prototipos interactivos que permitieron validar la experiencia de usuario y la navegación entre las diferentes
+secciones de la plataforma, garantizando claridad, usabilidad e interacción fluida.
 
-El diseño del producto consolidó guías de estilo y una arquitectura de información coherentes, materializadas en wireframes, flujos y mockups para web, móvil y landing.
+En cuanto a la arquitectura de software, se aplicó un enfoque de Domain Driven Design (DDD), definiendo bounded contexts para la gestión de equipos, notificaciones y órdenes de trabajo.
+Esto permitió estructurar el sistema en componentes claros y modulares, facilitando su escalabilidad y mantenimiento. Los diagramas de contexto, contenedores y componentes, junto con
+los diagramas de clases y diccionarios de entidades, reflejan la correcta organización y la interrelación entre los distintos elementos de la plataforma.
 
-Los prototipos permitieron evaluar usabilidad y reducir retrabajo antes del desarrollo, afinando interacciones clave y contenidos.
+El diseño de la base de datos consideró tanto aspectos relacionales como no relacionales, asegurando integridad y consistencia en la información almacenada. La implementación de
+entidades como Cliente, Empresa, Equipo, Cuenta, Solicitud y Notificación permitió gestionar de manera eficiente usuarios, equipos y comunicaciones, integrando funcionalidades clave
+como monitoreo en tiempo real, reportes analíticos y gestión de mantenimientos.
 
-La arquitectura basada en DDD y diagramas C4, junto con el diseño orientado a objetos, favorece mantenibilidad, escalabilidad e integración con servicios externos.
+La implementación de la aplicación web y móvil incluyó la configuración de entornos de desarrollo, control de versiones con GitFlow, y adopción de buenas prácticas de codificación
+en HTML, CSS, JavaScript y frameworks modernos. Se desarrollaron interfaces intuitivas para registro, inicio de sesión, dashboards, gestión de equipos y análisis de métricas, así
+como funcionalidades de contacto, notificaciones y administración de cuentas. La comunicación entre front-end y back-end se realizó mediante una API RESTful desplegada en Azure,
+validada con Postman y asegurando interoperabilidad y confiabilidad en la transmisión de datos.
 
-El modelo de datos (relacional/no relacional) respalda los casos de uso actuales y futuros, equilibrando consistencia, rendimiento y analítica.
-
-La implementación aplicó buenas prácticas de ingeniería (configuración de entorno, control de versiones, convenciones de código, despliegue y documentación de API).
-
-La colaboración del equipo, con roles claros y revisión continua, aceleró la toma de decisiones y aseguró calidad en los entregables.
-
-Se consideraron accesibilidad, privacidad, seguridad y responsabilidad ética, reforzando la confiabilidad y la inclusión del producto.
-
-El conjunto de avances deja bases sólidas para un piloto en producción y un camino claro de mejora continua.
+Se incorporaron también prácticas de DevOps y CI/CD, con despliegue de la landing page y front-end en Netlify, uso de contenedores Docker para backend y front-end, automatización de builds
+y pruebas, y estrategias de despliegue continuo que permiten mantener alta disponibilidad y control de versiones. Además, se consideraron aspectos de seguridad, confidencialidad y respaldo
+de datos, cumpliendo con estándares de protección de información.
 
 # Anexo
 
