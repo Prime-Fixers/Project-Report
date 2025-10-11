@@ -3410,7 +3410,85 @@ El Proveedor podrá modificar este acuerdo notificando los cambios con 30 días 
 Este acuerdo se regirá e interpretará de conformidad con las leyes de Perú, y cualquier disputa estará sujeta a la jurisdicción exclusiva de los tribunales de Lima, Perú.
 
 ### 5.2.5. Implemented Native-Mobile Application Evidence  
-En esta parte se presentan capturas de la **aplicación móvil nativa**, evidenciando su diseño responsivo, la experiencia de usuario en dispositivos móviles y las principales características disponibles.  
+En esta parte se presentan capturas de la **aplicación móvil nativa**, evidenciando su diseño responsivo, la experiencia de usuario en dispositivos móviles y las principales características disponibles. 
+
+# Guía de Distribución Firebase App Distribution
+
+## 1. Acceso a Firebase Console
+
+![Configuración Firebase](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2000.59.37.png)
+
+Primera captura mostrando el acceso a la consola de Firebase para configurar el proyecto.
+
+## 2. Creación del Proyecto
+
+![Crear Proyecto](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2000.59.56.png)
+
+Interfaz para crear un nuevo proyecto en Firebase. Se puede ver el campo de nombre del proyecto donde se ingresa "FrostLink Mobile App".
+
+## 3. Configuración del Proyecto
+
+![Configuración Proyecto](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.01.34.png)
+
+Pantalla de configuración del proyecto donde se establecen los parámetros iniciales.
+
+## 4. Registro de la App Android
+
+![Registro App Android](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.02.38.png)
+
+Formulario para registrar la aplicación Android en Firebase, mostrando:
+- Nombre del paquete de Android: com.upc.frostlink
+- Sobrenombre de la app: FrostLink Mobile App
+
+## 5. Descarga del Archivo de Configuración
+
+![Descarga google-services.json](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.04.29.png)
+
+Paso 2 del proceso donde se descarga el archivo google-services.json. La interfaz muestra:
+- Instrucciones para Android Studio
+- Botón para descargar google-services.json
+- Guía visual de dónde colocar el archivo en el proyecto
+
+## 6. Integración en Android Studio
+
+![Integración Android Studio](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.05.37.png)
+
+Captura de Android Studio mostrando la integración de Firebase, incluyendo:
+- Estructura del proyecto con el archivo google-services.json en la carpeta app
+- Configuración de los plugins de Gradle para Firebase
+
+## 7. Configuración de Gradle
+
+![Configuración Gradle](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.05.44.png)
+
+Archivo build.gradle.kts mostrando la configuración de Firebase App Distribution:
+- Plugin com.google.gms.google-services agregado
+- Plugin com.google.firebase.appdistribution configurado
+- Dependencias de Firebase BoM y Analytics
+
+## 8. Consola de App Distribution
+
+![Consola App Distribution](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.05.56.png)
+
+Interfaz principal de Firebase App Distribution mostrando:
+- Proyecto "FrostLink Mobile App" seleccionado
+- Pestaña "Versiones" activa
+- Área para arrastrar y soltar archivos APK/AAB
+- Contador de versiones (0)
+- Email de contacto configurado
+
+## 9. Gestión de Versiones
+
+![Gestión Versiones](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.18.17.png)
+
+Vista detallada de la gestión de versiones en App Distribution:
+- Versión "1.0 (1)" expandida
+- Botones de acción: Copiar, Descargar, Borrar, Ejecutar pruebas
+- Proceso de configuración en 2 pasos:
+  1. Agregar verificadores (paso activo)
+  2. Agregar notas de la versión (opcional)
+- Campo para agregar testers o grupos
+- Mensaje indicando que no hay testers asignados aún
 
 
 ### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence  
