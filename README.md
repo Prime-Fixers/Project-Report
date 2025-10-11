@@ -1316,12 +1316,12 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
               <li><strong>Apellidos:</strong> Lopez Acuña</li>
               <li><strong>Edad:</strong> 25</li>
               <li><strong>Distrito:</strong> La Molina</li>
-              <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/EVNdbWUsAPlCiq8mgLnukSABKau8G9kECaaVFAjfninR9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yg7o0X" target="_blank">Ver video</a></li>
               <li><strong>Timestamp:</strong> 00:00</li>
               <li><strong>Duración:</strong> 04:09</li>
             </ul>
           </div>
-          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="" alt="Screenshot de la entrevista">
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="./resources/mario.jpg" alt="Screenshot de la entrevista">
         </div>
       </td>
     </tr>
