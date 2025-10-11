@@ -34,7 +34,7 @@
 
    <br>
 
-<center><b>""Informe de Trabajo Final"</b></center>
+<center><b>"Informe de Trabajo Final"</b></center>
 
    <br>
 
@@ -48,40 +48,45 @@
    </div>
 
    <br>
+<center>
 
-   <div align="center">
+<table style="margin-left: auto; margin-right: auto;">
+  <tr>
+    <th>Nombre</th>
+    <th>Código</th>
+  </tr>
+  <tr>
+    <td>León Vivas, Fabrizio Amir</td>
+    <td>U20211B994</td>
+  </tr>
+  <tr>
+    <td>Medina Cruzado, Raúl Adrian</td>
+    <td>U202210938</td>
+  </tr>
+  <tr>
+    <td>Mondoñedo Rodriguez, Juan Diego Javier</td>
+    <td>U202110373</td>
+  </tr>
+  <tr>
+    <td>Pereira Vasquez, Fabrizzio</td>
+    <td>U202417468</td>
+  </tr>
+  <tr>
+    <td>Varela Bustinza, Marcelo Alessandro</td>
+    <td>U202319668</td>
+  </tr>
+</table>
 
-   <table style="margin-left: auto; margin-right: auto;">
-   <tr>
-   <th>Nombre</th>
-   <th>Código</th>
-   </tr>
-   <tr>
-   <td>León Vivas, Fabrizio Amir</td>
-   <td>U20211B994</td>
-   </tr>
-   <tr>
-   <td>Medina Cruzado, Raúl Adrian</td>
-   <td>U202210938</td>
-   </tr>
-   <tr>
-   <td>Mondoñedo Rodriguez, Juan Diego Javier</td>
-   <td>U202110373</td>
-   </tr>
-   <tr>
-   <td>Varela Bustinza, Marcelo Alessandro</td>
-   <td>U202319668</td>
-   </tr>
-   </table>
-   </div>
 
-   <br>
+</center>
 
-   <center><b>Setiembre, 2025</b></center>
-
-   <br>
+   <center><b>Octubre, 2025</b></center>
 
 </div>
+
+
+
+
 
 # Registro de Versiones del Informe
 
@@ -96,7 +101,7 @@
     </thead>
     <tbody>
         <tr>
-            <td>1.0</td>
+            <td>TB1</td>
             <td>19/09/2025</td>
             <td>
                 <ul>   
@@ -197,6 +202,72 @@
                 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Conclusiones</p>
             </td>
         </tr>
+      <tr>
+            <td>TP1</td>
+            <td>11/09/2025</td>
+            <td>
+                <ul>   
+                    <li>León Vivas, Fabrizio Amir</li>
+                    <li>Medina Cruzado, Raúl Adrian</li>
+                    <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
+                     <li>Pereira Vasquez, Fabrizzio</li>
+                    <li>Varela Bustinza, Marcelo Alessandro</li>
+                </ul>
+            </td>
+<td>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Part II: Verification, Validation & Pipeline</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VI: Product Verification & Validation</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1. Testing Suites & Validation</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.1. Core Entities Unit Tests.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.2. Core Integration Tests.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.3. Core Behavior-Driven Development</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.4. Core System Tests.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2. Static testing & Verification</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1. Static Code Analysis</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1.1. Coding standard & Code conventions.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1.2. Code Quality & Code Security.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.2. Reviews</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3. Validation Interviews.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.1. Diseño de Entrevistas.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.2. Registro de Entrevistas.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.3. Evaluaciones según heurísticas.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4. Auditoría de Experiencias de Usuario</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1. Auditoría realizada.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.1. Información del grupo auditado.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.2. Cronograma de auditoría realizada.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.3. Contenido de auditoría realizada.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2. Auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.1. Información del grupo auditor.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.2. Cronograma de auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.3. Contenido de auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.4. Resumen de modificaciones para subsanar hallazgos.</p>
+
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VII: DevOps Practices</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1. Continuous Integration</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.2. Build & Test Suite Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2. Continuous Delivery</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.2. Stages Deployment Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3. Continuous deployment</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.2. Production Deployment Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4. Continuous Monitoring</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.1. Tools and Practices</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.2. Monitoring Pipeline Components</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.3. Alerting Pipeline Components</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.4. Notification Pipeline Components.</p>
+
+</td>
+      </tr>
     </tbody>
 </table>
 
@@ -226,6 +297,10 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
     <td>Jmondonedor</td>
   </tr>
   <tr>
+    <td>Pereira Vasquez, Fabrizzio</td>
+    <td>fabrizzioper</td>
+  </tr>
+  <tr>
     <td>Varela Bustinza, Marcelo Alessandro</td>
     <td>VarBus</td>
   </tr>
@@ -233,7 +308,7 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 
 **TB1**
 
-Para la elaboración del informe correspondiente a la entrega del TB1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas desde el capítulo I hasta el capitulo V.
+Para la elaboración deJmondonedorl informe correspondiente a la entrega del TB1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas desde el capítulo I hasta el capitulo V.
 
 | Integrantes     | Tareas Asignadas |
 |-----------------|------------------|
@@ -242,9 +317,54 @@ Para la elaboración del informe correspondiente a la entrega del TB1, se realiz
 | Marcelo Varela  | Chapter  I & IV  |
 | Medina Cruzado, Raúl Adrian | Chapter III & IV |
 
+**TP1**
+
+Para la elaboración del informe correspondiente a la entrega del TP1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas desde el capítulo III hasta el capitulo VII y levantando las correcciones del anterior entregable TB1.
+
+| Integrantes                            | Tareas Asignadas                                                                                                                                                                                                                           |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| León Vivas, Fabrizio Amir              | **6.1 Testing Suites & Validation**: 6.1.1 Unit Tests (Core Entities), 6.1.2 Integration Tests, 6.1.3 BDD (escenarios Gherkin), 6.1.4 System Tests; plan de pruebas, datos semilla y cobertura.                                            |
+| Medina Cruzado, Raúl Adrian            | **6.2 Static Testing & Verification**: 6.2.1 Análisis estático (estándares y convenciones; calidad y seguridad con Sonar/linters/OWASP), 6.2.2 Reviews (checklists, registro de hallazgos y PRs).                                          |
+| Mondoñedo Rodriguez, Juan Diego Javier | **6.3 Validation Interviews**: 6.3.1 Diseño de entrevistas (guion y criterios), 6.3.2 Registro (matriz de respuestas y evidencias), 6.3.3 Evaluación por heurísticas (Nielsen, severidad y recomendaciones).                               |
+| Pereira Vasquez, Fabrizzio             | **6.4 Auditoría de UX**: 6.4.1 Auditoría realizada (info del grupo auditado, cronograma, contenido); 6.4.2 Auditoría recibida (info del grupo auditor, cronograma, contenido); 6.4.2.4 Resumen de modificaciones para subsanar hallazgos.  |
+| Varela Bustinza, Marcelo Alessandro    | **Cap. VII DevOps**: 7.1 CI (herramientas y pipeline de build/test), 7.2 CD (stages y despliegue a staging), 7.3 Continuous Deployment (a producción), 7.4 Monitoring (métricas, alertas y notificaciones); diagramas y YAML del pipeline. |
+
+# Github Collaboration Insights
+
+GitHub muestra también una línea de tiempo que refleja las ramas principales y los procesos de merge realizados.
+Todas las ramas fueron creadas siguiendo la estructura de GitFlow, lo que permite mantener una mejor organización y control del proyecto dentro del sistema de versiones.
+
+Los integrantes son:
+
+- León Vivas, Fabrizio Amir (CodyLionVivo)
+- Medina Cruzado, Raúl Adrian  (Necxuz18)
+- Mondoñedo Rodriguez, Juan Diego Javier (Jmondonedor)
+- Pereira Vasquez, Fabrizzio  (fabrizzioper)
+- Varela Bustinza, Marcelo Alessandro  (Varbus)
+
+Se explican las ramas más prominentes:
+
+**main:** Representada con el color negro, es la rama principal del proyecto y se actualiza en cada nueva entrega. <br>
+
+**develop:** Representada con el color azul, funciona como la rama central para el desarrollo continuo del proyecto. <br>
+
+**feature/feature-description-name:** Es una rama creada para implementar una funcionalidad o tarea específica. Se origina a partir de develop y, al finalizar el trabajo, se fusiona nuevamente con develop para incorporar los cambios al proyecto principal.
+
+**Capturas de la participación en el informe:**
+
+**TB1:**
+<br>
+<img src="resources/github_collaboration_insights_tb1.jpeg" alt="insightTB1open" width="500px" />
+
+**TP1:**
+<br>
+<img src="resources/github_collaboration_insights_tb1.jpeg" alt="insightTB1open" width="500px" />
+
+
 
 # Contenido
 
+<!-- Part I -->
 # Part I: As-Is Software Project
 1. [Capítulo I: Introducción](#capítulo-i-introducción)<br>
    1.1. [Startup Profile](#11-startup-profile)<br>
@@ -281,6 +401,7 @@ Para la elaboración del informe correspondiente a la entrega del TB1, se realiz
    3.3. [Product Backlog](#33-product-backlog)<br>
    3.4. [Impact Mapping](#34-impact-mapping)<br>
 
+<!-- Part II -->
 # Part II: Verification, Validation & Pipeline
 
 4. [Capítulo IV: Product Design](#capítulo-iv-product-design)<br>
@@ -382,6 +503,7 @@ Para la elaboración del informe correspondiente a la entrega del TB1, se realiz
    7.4.3. [Alerting Pipeline Components](#743-alerting-pipeline-components)<br>
    7.4.4. [Notification Pipeline Components](#744-notification-pipeline-components)<br>
 
+<!-- Part III -->
 # Part III: Experiment-Driven Lifecycle
 
 8. [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)<br>
@@ -429,6 +551,7 @@ Para la elaboración del informe correspondiente a la entrega del TB1, se realiz
 12. [Bibliografía](#bibliografía)<br>
 13. [Anexos](#anexos)<br>
 
+
 # Student Outcome
 
 ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
@@ -443,10 +566,10 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
     </thead>
     <tbody>
         <tr>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software 
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong><br>
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong> Contribuí en la definición de la propuesta de valor de FrostLink, el análisis 5W+2H y el desarrollo del Lean UX Canvas, asegurando un enfoque ético y responsable. También participé en la elaboración de los As-is Scenario Mapping, User Journey Mapping y en el análisis competitivo frente a otras soluciones del mercado.</li>
@@ -454,53 +577,87 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Juan Diego Mondoñedo:</strong> Definí las configuraciones de las plataformas y environments de programación que empleamos para el desarrollo de nuestros productos y establecí pautas para el despliegue de estos.</li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Durante el desarrollo del Capítulo IV: Product Design reconocí mi responsabilidad ética y profesional al diseñar las guías de estilo, la arquitectura de información y las interfaces UX/UI, asegurando que cumplan con principios de accesibilidad, usabilidad y buenas prácticas de ingeniería de software orientadas al bienestar del usuario. </li>
                 </ul>
+                <strong>TP1:</strong><br>
+                <ul>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Implementé suites de pruebas (unitarias/integración/BDDs) usando datos anonimizados y criterios de aceptación trazables a requisitos, evitando exposición de información sensible y promoviendo revisiones pares.</li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong> Configuré análisis estático (linters/Sonar) y políticas de ramas; apliqué listas de verificación éticas en code reviews (seguridad, privacidad, licencias) y gestioné vulnerabilidades reportadas.</li>
+                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier:</strong> Conduje entrevistas con consentimiento informado, protegí la identidad de participantes y registré sesgos potenciales; apliqué heurísticas priorizando bienestar y accesibilidad.</li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Definí gates éticos en el pipeline (quality gate, escaneo SCA/secretos) y estrategias de rollback/feature flags para despliegues seguros y responsables.</li>
+                    <li><strong>Pereira Vasquez, Fabrizzio:</strong> Organicé la auditoría UX cuidando la confidencialidad de evidencias, documenté hallazgos sin datos personales y prioricé criterios WCAG en las correcciones.</li>
+                </ul>
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong> Se demostró un compromiso ético y profesional al diseñar FrostLink, alineando la propuesta tecnológica con las necesidades reales de los usuarios y consolidando una solución responsable e innovadora.<br>
+                <strong>TP1:</strong> El equipo evidenció responsabilidad ética al anonimizar datos, establecer controles en el pipeline y documentar revisiones y entrevistas con consentimiento, reduciendo riesgos de seguridad y sesgos en decisiones.
             </td>
         </tr>
         <tr>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales económicos, ambientales y sociales 
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong><br>
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong> Analicé el impacto de FrostLink en negocios que dependen de la cadena de frío, resaltando beneficios económicos al reducir pérdidas, sociales al garantizar calidad de productos y ambientales al optimizar el consumo energético.</li>
-                    <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong>Para el TB1, asumí el rol de verificación técnica y buenas prácticas: configuré el análisis estático (linters y Sonar), definí convenciones de código y listas de chequeo para code reviews, y atendí observaciones de seguridad y licencias. Documenté las evidencias de cada revisión y prioricé correcciones que reducen deuda técnica y riesgos (OWASP), emitiendo juicios informados sobre dependencias y costos operativos para asegurar una solución ética, mantenible y con menor impacto en fallas y retrabajo. </li>
                     <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong>Analicé las implicaciones y los contextos en los que se utilizarían nuestros productos para definir correctamente plataformas para el despliegue de nuestras aplicaciones que sean compatibles con el uso. </li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Asimismo, emití juicios informados considerando el impacto que las soluciones de software pueden tener en distintos contextos globales, económicos, sociales y ambientales, buscando que las propuestas de diseño y arquitectura no solo sean técnicamente viables, sino también sostenibles, inclusivas y generadoras de valor en la sociedad.</li>
+               </ul>
+               <strong>TP1:</strong><br>
+                <ul>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Priorizó pruebas que disminuyen costo de fallas en operación (reducción de rechazos/mermas), y midió cobertura/casos críticos para asegurar continuidad de servicio en la cadena de frío.</li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong> Evaluó deuda técnica y riesgos OWASP, proponiendo remediaciones que reducen costos de infraestructura y exposición legal; recomendó dependencias con mejor soporte y mantenimiento.</li>
+                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier:</strong> De las entrevistas derivó requerimientos con mayor impacto social (alertas claras, flujos accesibles), y recomendó simplificaciones que disminuyen errores y tiempos de capacitación.</li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Diseñó CI/CD con entornos escalables y apagado automático en staging para optimizar costos; definió monitoreo de métricas de uso/errores para decisiones basadas en evidencia.</li>
+                    <li><strong>Pereira Vasquez, Fabrizzio:</strong> La auditoría UX identificó barreras de accesibilidad; priorizó mejoras que amplían inclusión y reducen fricción en onboarding, con impacto directo en productividad y satisfacción.</li>
                 </ul>
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong> El proyecto demuestra que una solución tecnológica puede generar valor económico, social y ambiental, siempre que se diseñe con responsabilidad y pensando en su impacto global.<br>
+                <strong>TP1:</strong> Los juicios informados guiaron la priorización de requisitos, controles de calidad y pipeline, logrando menor retrabajo, consumo controlado de recursos y mayor accesibilidad para usuarios finales.
             </td>
         </tr>
-    </tobdy>
+    </tbody>
 </table>
+
 
 # Capítulo I: Introducción
 
 ## 1. Startup Profile
 
+En esta sección se incluye la **descripción de la startup** junto con los **perfiles de los integrantes del equipo**.
+
 ### 1.1.1 Descripción de la Startup
 
-FrostLink es una plataforma web diseñada para optimizar la gestión y el mantenimiento de equipos de refrigeración en negocios que dependen de la cadena de frío, como supermercados, minimarkets, laboratorios, restaurantes y empresas del sector alimentario o farmacéutico. La solución conecta a estos negocios con técnicos y proveedores especializados, permitiendo una administración integral, preventiva y automatizada de sus sistemas de refrigeración.
+**FrostLink:** es una plataforma web diseñada para optimizar la gestión y el mantenimiento de equipos de refrigeración en negocios que dependen de la cadena de frío, como supermercados, minimarkets, laboratorios, restaurantes y empresas del sector alimentario o farmacéutico. La solución conecta a estos negocios con técnicos y proveedores especializados, permitiendo una administración integral, preventiva y automatizada de sus sistemas de refrigeración.
 
 La plataforma incorpora funcionalidades clave como monitoreo en tiempo real de temperatura, consumo energético y tiempo de operación; generación de reportes técnicos; alertas automáticas ante fallas; historial de rendimiento; y programación inteligente de mantenimientos. Estas herramientas están pensadas para que negocios, técnicos y proveedores optimicen sus operaciones, reduzcan riesgos de pérdidas económicas por fallas inesperadas y mantengan un registro completo del estado y uso de sus equipos.
 
-Misión: En FrostLink, nuestra misión es ofrecer una solución tecnológica avanzada que ayude a las empresas a proteger su inventario y gestionar de forma eficiente sus equipos de refrigeración, brindando a técnicos y proveedores herramientas inteligentes que mejoren su productividad y la continuidad operativa.
+**Misión:** En FrostLink, nuestra misión es ofrecer una solución tecnológica avanzada que ayude a las empresas a proteger su inventario y gestionar de forma eficiente sus equipos de refrigeración, brindando a técnicos y proveedores herramientas inteligentes que mejoren su productividad y la continuidad operativa.
 
-Visión: Aspiramos a convertirnos en la empresa líder en gestión y mantenimiento de sistemas de refrigeración, iniciando en Lima y expandiéndonos progresivamente a más regiones del Perú.
+**Visión:** Aspiramos a convertirnos en la empresa líder en gestión y mantenimiento de sistemas de refrigeración, iniciando en Lima y expandiéndonos progresivamente a más regiones del Perú.
+
+**Valores:**
+
+- Innovación
+
+- Compromiso
+
+- Sostenibilidad
+
+- Colaboración
+
+- Responsabilidad
 
 ### 1.1.2 Perfiles de integrantes del equipo
 
-| **Perfil**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Foto**                                                                       |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-|**Juan Diego Mondoñedo**<br>                                                         Estudiante de Ingeniería de Software con experiencia previa con metodología ágil y frameworks como Angular y Vue, además de conocimientos en programación en Javascript, C++ y Python. Como miembro del equipo de FrostLink, emplearé mis habilidades al máximo para el desarrollo de nuestra startup.                                                                                                      | <img src="/resources/JD.jpg" alt="angie image" width="200">  |
-| **Fabrizio León**<br> Soy estudiante de Ingeniería de Software en la UPC con enfoque en desarrollo front-end y sólida base en sistemas UNIX/Linux. Manejo C++, JavaScript y Python, y he trabajado con metodologías ágiles para entregar soluciones claras y mantenibles. Me apasiona la ciberseguridad y la tecnología aplicada a problemas reales. Destaco por el trabajo en equipo, pensamiento crítico y comunicación efectiva.                                                     | <img src="/resources/Fabrizio.png" alt="kevin image" width="200">  | 
+| **Perfil** | **Foto** |
+|------------|----------|
+| **Fabrizio León**<br>Soy estudiante de Ingeniería de Software en la UPC con enfoque en desarrollo front-end y sólida base en sistemas UNIX/Linux. Manejo C++, JavaScript y Python, y he trabajado con metodologías ágiles para entregar soluciones claras y mantenibles. Me apasiona la ciberseguridad y la tecnología aplicada a problemas reales. Destaco por el trabajo en equipo, pensamiento crítico y comunicación efectiva. | <img src="/resources/Fabrizio.png" alt="kevin image" width="200"> |
+| **Raúl Medina**<br>Como estudiante de la carrera de Ingeniería de Software, soy apasionado por la ciencia de datos. Me motiva descubrir cómo el análisis y la interpretación de grandes volúmenes de información pueden generar soluciones innovadoras dentro del desarrollo de software. Me interesa explorar cómo los datos pueden optimizar procesos, anticipar errores y mejorar la toma de decisiones. Confío en que, junto a mi equipo, podré seguir fortaleciendo mis habilidades y contribuir de manera significativa en cada etapa del proyecto. | <img src="/resources/Raul.jpeg" alt="Raul imagen" width="200"> |
+| **Juan Diego Mondoñedo**<br>Estudiante de Ingeniería de Software con experiencia previa con metodología ágil y frameworks como Angular y Vue, además de conocimientos en programación en Javascript, C++ y Python. Como miembro del equipo de FrostLink, emplearé mis habilidades al máximo para el desarrollo de nuestra startup. | <img src="/resources/JD.jpg" alt="angie image" width="200"> |
+| **Fabrizzio Pereira**<br> Mi nombre es Nelson Fabrizzio Pereira Vásquez (U202417468), estudiante de Ingeniería de Software con dominio en desarrollo web, especializado en React y su ecosistema. Cuenta con experiencia en la creación de proyectos prácticos como método de aprendizaje, aplicando principios de ingeniería de software y buenas prácticas de desarrollo. Destaca por su capacidad de trabajo en equipo, su disposición para colaborar activamente y su habilidad para apoyar en la resolución de problemas técnicos.| <img src="https://raw.githubusercontent.com/upc-pre-202520-1ACC0238-2005-mira/ProjectReport/main/img/chapter1/nelson.jpeg" alt="fabrizzio image" width="200"> |
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
-| **Raúl Meidna**<br>Como estudiante de la carrera de Ingeniería de Software, soy apasionado por la ciencia de datos. Me motiva descubrir cómo el análisis y la interpretación de grandes volúmenes de información pueden generar soluciones innovadoras dentro del desarrollo de software. Me interesa explorar cómo los datos pueden optimizar procesos, anticipar errores y mejorar la toma de decisiones. Confío en que, junto a mi equipo, podré seguir fortaleciendo mis habilidades y contribuir de manera significativa en cada etapa del proyecto. | <img src="/resources/Raul.jpeg" alt="Raul imagen" width="200"> |
 
 ## 1.2. Solution Profile
 
@@ -542,15 +699,13 @@ Si bien el impacto económico depende del tipo de negocio, una sola falla en un 
 
 #### 1.2.2.1. Lean UX Problem Statements.
 
-La industria de la refrigeración comercial y técnica enfrenta retos significativos en la gestión, el mantenimiento y la trazabilidad de los equipos de congelación. Negocios que dependen de la cadena de frío —como supermercados, minimarkets, laboratorios, restaurantes y empresas de los sectores alimentario y farmacéutico— aún operan sin un monitoreo en tiempo real ni procesos preventivos sólidos, lo que deriva en pérdidas económicas, ineficiencias energéticas y riesgos para el inventario.
+La industria de la refrigeración comercial y técnica enfrenta grandes desafíos en la gestión, el mantenimiento y la trazabilidad de los equipos. Negocios que dependen de la cadena de frío, como supermercados, minimarkets, laboratorios, restaurantes y empresas del sector alimentario y farmacéutico, todavía operan sin un monitoreo en tiempo real ni procesos preventivos eficaces. Esto provoca fallas inesperadas, pérdidas económicas, ineficiencia en el consumo energético y riesgo para el inventario.
 
-Las soluciones disponibles en el mercado no cubren la necesidad de una plataforma confiable y automatizada que permita una gestión centralizada, predictiva y transparente para negocios, técnicos y proveedores de refrigeración. La ausencia de historiales técnicos accesibles, reportes detallados y alertas preventivas limita la capacidad de anticiparse a fallas y reduce la calidad del servicio técnico.
+Las soluciones existentes en el mercado suelen ser parciales o poco integradas, ya que no ofrecen una plataforma que centralice la información, permita la predicción de fallas y brinde reportes claros y accesibles. La falta de historiales técnicos detallados, alertas preventivas y trazabilidad reduce la capacidad de respuesta de los técnicos y limita la toma de decisiones estratégicas para evitar pérdidas y optimizar recursos.
 
-FrostLink busca cerrar esta brecha con una solución tecnológica integral que conecta a negocios con técnicos especializados, ofreciendo funciones clave como monitoreo en tiempo real de temperatura y consumo energético, programación inteligente de mantenimientos, alertas automáticas, reportes técnicos y trazabilidad completa de cada equipo. Asimismo, brinda a los proveedores de servicios un módulo de gestión que les permite organizar sus visitas, acceder al historial técnico de los equipos atendidos y optimizar la atención a múltiples clientes.
+FrostLink surge como una respuesta a esta brecha, proporcionando una plataforma que conecta a negocios con técnicos especializados, ofreciendo monitoreo en tiempo real de temperatura y consumo energético, alertas automáticas, reportes técnicos, programación de mantenimientos y trazabilidad de cada equipo. Esto permite a los negocios reducir riesgos y a los técnicos mejorar su eficiencia y calidad de servicio.
 
-Nuestro enfoque inicial está en los negocios de Lima que requieren garantizar la continuidad y eficiencia de sus sistemas de congelación, así como en los proveedores de refrigeración que buscan digitalizar, profesionalizar y escalar sus servicios mediante herramientas modernas.
-
-Consideraremos exitoso nuestro trabajo cuando logremos reducir las fallas imprevistas, optimizar el consumo energético, mejorar la eficiencia operativa de los técnicos y aumentar la satisfacción de los clientes finales, reflejada en la continuidad del servicio y en su fidelización dentro de la plataforma.
+**¿Hasta qué punto podría evolucionar la industria de la refrigeración si los negocios y técnicos adoptaran una solución que predijera las fallas y optimizara la gestión de sus equipos?**
 
 #### 1.2.2.2. Lean UX Assumptions.
 
@@ -737,7 +892,7 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
         <tr>
             <th style="border: 1px solid #000; padding: 10px;font-weight: bold;" colspan="2">(En la cabecera colocar por cada competidor nombre y logo)</th>
             <th style="border: 1px solid #000; padding: 10px;font-weight: bold; width: 20%; text-align: center;">PrimeFixers
-            <img style="display : flex; justify-content: center;" src="/resources/logo_startup.png" alt="PrimeFixers logo">
+            <img style="display : flex; justify-content: center;" src="/resources/Logo_FrostLink_Pro.jpeg" alt="PrimeFixers logo">
             </th>
             <th style="border: 1px solid #000; padding: 10px;font-weight: bold; width: 20%; text-align: center;">
                 ServiceTitan
@@ -1165,12 +1320,12 @@ El análisis competitivo resulta esencial para definir una estrategia efectiva e
               <li><strong>Apellidos:</strong> Lopez Acuña</li>
               <li><strong>Edad:</strong> 25</li>
               <li><strong>Distrito:</strong> La Molina</li>
-              <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/EVNdbWUsAPlCiq8mgLnukSABKau8G9kECaaVFAjfninR9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yg7o0X" target="_blank">Ver video</a></li>
               <li><strong>Timestamp:</strong> 00:00</li>
               <li><strong>Duración:</strong> 04:09</li>
             </ul>
           </div>
-          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="" alt="Screenshot de la entrevista">
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="./resources/mario.jpg" alt="Screenshot de la entrevista">
         </div>
       </td>
     </tr>
@@ -1613,6 +1768,16 @@ Las historias de usuario de este proyecto se co-diseñaron por el equipo de desa
 | EP-06   | Evaluación de Servicios                    | Permite registrar y actualizar evaluaciones de clientes sobre servicios recibidos.                                  |
 | EP-07   | Sitio Web y Experiencia Web (Landing Page) | Abarca landing page, propuesta de valor, soluciones por segmento, solicitud de demo, contacto y acceso a login/app. |
 
+## Spike stories
+
+| Epic/Story ID | Título                                              | Descripción                                                                                                                                                                              | Criterios de Aceptación                                                                                                                                                                                                                                                 | Epic  |
+| ------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| SP-01         | Investigación de protocolos de monitoreo IoT        | Como desarrollador, necesito investigar qué protocolos (por ejemplo, MQTT, CoAP) son más adecuados para la comunicación en tiempo real con los sensores de los equipos de refrigeración. | Dado que se realiza la investigación de los protocolos disponibles, cuando se comparan en función de latencia, seguridad y facilidad de integración, entonces se documentan los resultados con una recomendación clara y justificada para la integración con FrostLink. | EP-02 |
+| SP-02         | Evaluación de librerías de notificaciones push      | Como desarrollador, quiero comparar librerías y servicios (Firebase, OneSignal, AWS SNS) para implementar notificaciones en web y móvil.                                                 | Dado que se realiza la revisión técnica de las opciones, cuando se comparan los costos, escalabilidad y compatibilidad con la infraestructura existente, entonces se presenta un informe que justifica la elección final.                                               | EP-05 |
+| SP-03         | Análisis de viabilidad de control remoto de equipos | Como desarrollador, necesito investigar los requisitos técnicos (protocolos, hardware, APIs) para implementar encendido/apagado y ajuste remoto de temperatura.                          | Dado que se analizan los requisitos de los equipos y su documentación técnica, cuando se prueban las conexiones en un entorno de laboratorio, entonces se registra la viabilidad técnica, limitaciones y una propuesta inicial de arquitectura para control remoto.     | EP-02 |
+| SP-04         | Investigación de estándares para trazabilidad       | Como desarrollador, necesito investigar estándares internacionales (por ejemplo, ISO 22000, HACCP) para garantizar que la trazabilidad en la plataforma cumpla las normas del sector.    | Dado que se recopila información de los estándares relevantes, cuando se identifican las prácticas aplicables a FrostLink, entonces se documenta un resumen con los lineamientos que debe cumplir el módulo de trazabilidad.                                            | EP-04 |
+| SP-05         | Exploración de APIs para mantenimiento predictivo   | Como desarrollador, quiero identificar librerías y APIs que permitan usar algoritmos básicos de predicción de fallas con datos históricos.                                               | Dado que se investigan opciones disponibles (open-source y comerciales), cuando se comparan en función de precisión, facilidad de integración y costos, entonces se documentan los hallazgos y se define cuál usar en un prototipo inicial.                             | EP-05 |
+
 # 3.3. Impact Mapping.
 El equipo de FrostLink realizó de manera colaborativa, en UXPressia, un Impact Mapping para conectar y alinear los objetivos de negocio con los requerimientos funcionales de la plataforma.
 
@@ -1692,14 +1857,14 @@ La identidad visual de FrostLink busca transmitir seguridad, innovación y cerca
 Para mantener la formalidad y accesibilidad de la interfaz de usuario de FrostLink, se establecen las tipografías Helvetica y Open Sans por sus cualidades funcionales, estéticas y su excelente compatibilidad con entornos digitales, siendo Helvetica la tipografía principal.
 
 <center>
-<img src="./resources/Tipografia.jpeg" alt="Tipografia" width="500" height="500">
+<img src="./resources/Tipografia.jpeg" alt="Tipografia" >
 </center>
 
 *Figura 1:* Tipografía Helvica
 
 <center>
 
-<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" width="500" height="500">
+<img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" >
 
 </center>
 
@@ -1713,7 +1878,7 @@ El color principal es el celeste, ya que refleja de manera óptima las caracter�
 <center>
 <img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="50" height="50">
 
-<img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="500" height="500">
+<img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" >
 
 </center>
 *Figura 3:* Guías Generales de Estilo – Colores
@@ -1755,14 +1920,14 @@ Dado que FrostLink está orientado al sector tecnológico, su paleta de colores 
 Dado que los botones y fondos pueden variar según el contexto, la plataforma emplea diferentes tonalidades de celeste para mantener coherencia visual.
 
 <center>
-<img src="./resources/Landing_Page/Escala_de_colores_azules.png" alt="color_section" width="500" height="500">
+<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
 *Figura 1:* Guías de Estilo Web – Color Sky Blue
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
 <center>
-<img src="./resources/Landing_Page/Escala_de_colores_rojos.png" alt="color_section" width="500" height="500">
+<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
 
 *Figura 2:* Guías de Estilo Web - Color Rojo.
@@ -1775,22 +1940,73 @@ Bajo un enfoque **nativo-móvil**, se implementan componentes específicos de ca
 
 ---
 
+### 4.1.3.1. iOS Mobile Style Guidelines
+
+## Diseño Adaptativo
+La interfaz se adapta fluidamente al ecosistema **iOS**, respetando los márgenes de seguridad, zonas táctiles y proporciones de pantalla de dispositivos como **iPhone SE**, **iPhone 13/14/15** y **iPad Mini**.  
+Los componentes se ajustan mediante **Auto Layout** y **Size Classes**, manteniendo la consistencia visual tanto en orientación vertical como horizontal.
+
+---
+
+## Tipografía Móvil
+- **iOS:** SF Pro  
+
+Las fuentes respetan el tamaño dinámico configurado por el usuario y siguen las recomendaciones de las **Human Interface Guidelines (HIG)**.  
+Los títulos utilizan pesos **semibold**, mientras que los textos secundarios usan **regular** para favorecer la lectura en pantallas pequeñas.
+
+---
+
+## Paleta de Colores Móvil
+La interfaz aprovecha el modo **claro/oscuro de iOS**, manteniendo el contraste adecuado para la accesibilidad visual.
+
+- **Celeste Primario (#0884C4):** Elementos activos, botones principales.  
+- **Degradados suaves:** Aplicados en headers y secciones destacadas.  
+- **Verde (#00CC66):** Indicadores de conexión y acciones exitosas.  
+- **Rojo (#FF4B4B):** Alertas del sistema con retroalimentación háptica.  
+- **Amarillo (#FFCC00):** Advertencias o tareas pendientes.  
+
+---
+
+## Componentes Móviles Específicos
+- **Tab Bar inferior** con íconos SF Symbols adaptados.  
+- **Botones redondeados** con sombras sutiles.  
+- **Deslizamiento (swipe actions)** en listas nativas.  
+- **Alertas modales** con estilo iOS.  
+- **Feedback háptico** en acciones confirmadas.  
+
+---
+
+## Interacciones Táctiles
+- **Pull-to-refresh** en listas.  
+- **Gestos de retorno (swipe back)** en vistas anidadas.  
+- **Animaciones fluidas y naturales** basadas en UIKit Dynamics.  
+- **Haptics personalizados** para confirmaciones y errores.
+
+<center>
+<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
+</center>
+
+*Figura 1:* Guías de Estilo Móvil iOS – Color Sky Blue.
+
+---
+
+### 4.1.3.2. Android Mobile Style Guidelines
+
 ## Diseño Adaptativo
 La interfaz utiliza un sistema de contenedores flexibles que se ajustan dinámicamente a diferentes resoluciones y orientaciones de pantalla, manteniendo la jerarquía visual en dispositivos desde **4 hasta 6.5 pulgadas**.
 
 ---
 
 ## Tipografía Móvil
-- **iOS:** SF Pro  
 - **Android:** Roboto  
 
 Las tipografías se escalan automáticamente según las configuraciones de accesibilidad del usuario.  
-Los tamaños de fuente siguen las pautas de **Material Design** y **Human Interface Guidelines**.
+Los tamaños de fuente siguen las pautas de **Material Design**.
 
 ---
 
 ## Paleta de Colores Móvil
-La paleta se adapta a los modos **claro/oscuro** de los sistemas operativos, conservando la identidad de FrostLink y manteniendo un contraste adecuado para mejorar la legibilidad.
+La paleta se adapta a los modos **claro/oscuro** del sistema operativo, conservando la identidad de FrostLink y manteniendo un contraste adecuado para mejorar la legibilidad.
 
 - **Celeste Primario (#0884C4):** Botones de acción principal y estados activos.  
 - **Degradados Dinámicos:** Fondos con gradientes sutiles para profundidad visual.  
@@ -1813,18 +2029,19 @@ La paleta se adapta a los modos **claro/oscuro** de los sistemas operativos, con
 - **Swipe left/right** para acciones rápidas.  
 - **Vibración háptica** en confirmaciones críticas.  
 - **Animaciones de carga nativas** por plataforma.  
+
 <center>
-<img src="./resources/Landing_Page/Escala_de_colores_azules.png" alt="color_section" width="500" height="500">
+<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
-*Figura 1:* Guías de Estilo Web – Color Sky Blue
+*Figura 2:* Guías de Estilo Móvil Android – Color Sky Blue.
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
 <center>
-<img src="./resources/Landing_Page/Escala_de_colores_rojos.png" alt="color_section" width="500" height="500">
+<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
 
-*Figura 2:* Guías de Estilo Web - Color Rojo.
+*Figura 3:* Guías de Estilo Móvil Android – Color Rojo.
 
 
 ## 4.2. Information Architecture
@@ -1940,7 +2157,11 @@ La página incluye secciones que presentan a los usuarios objetivo, las funciona
 *Figura 1:* Wireframe de la Landing Page.
 <center>
 
-<img src="./resources/Landing_Page/WireFrame-Landing Page.png" alt="wireframe_lading_page" width="500" height="4000">
+<img src="./resources/LandingPage_1.jpeg" alt="lading_page_1" >
+
+<img src="./resources/LandingPage_2.jpeg" alt="lading_page_2" >
+
+<img src="./resources/LandingPage_3.jpeg" alt="lading_page_3" >
 
 </center>
 
@@ -1952,58 +2173,58 @@ A continuación, se despliegan secciones clave que describen las funcionalidades
 
 - Esta corresponde a la primera sección llamada "Inicio", donde se muestra de forma clara la propuesta de valor de la plataforma y el espacio para el Call to Action, que será implementado en etapas posteriores.
 
-<img src="./resources/Mockup_landing_2.jpeg" alt="mockup_landing_1" width="500" height="500">
+<img src="./resources/Mockup_landing_2.jpeg" alt="mockup_landing_1">
 
 Figura 1: Mockup 1 – Inicio – Landing Page
 
 En esta segunda sección se presenta una breve descripción del público objetivo al que está dirigida la plataforma.
 
-<img src="./resources/Mockup_landing_3.jpeg" alt="mockup_landing_2" width="500" height="500">
+<img src="./resources/Mockup_landing_3.jpeg" alt="mockup_landing_2">
 
 Figura 2: Mockup 2 – ¿Para quién es? – Landing Page
 La sección "Funcionalidades Clave" muestra de forma resumida las principales características y herramientas que la plataforma pone a disposición de los usuarios.
 
-<img src="./resources/Mockup_landing_4.jpeg" alt="mockup_landing_3" width="500" height="500">
+<img src="./resources/Mockup_landing_4.jpeg" alt="mockup_landing_3">
 
 Figura 3: Mockup 3 – Funcionalidades – Landing Page
 La sección "Beneficios" expone las ventajas que la plataforma ofrece tanto a empresas como a proveedores.
 
-<img src="./resources/Mockup_landing_5.jpeg" alt="mockup_landing_4" width="500" height="500">
+<img src="./resources/Mockup_landing_5.jpeg" alt="mockup_landing_4">
 
 Figura 4: Mockup 4 – Beneficios para negocios – Landing Page
 En esta parte se detallan los beneficios específicos que la plataforma brinda a las empresas.
 
-<img src="./resources/Mockup_landing_6.jpeg" alt="mockup_landing_5" width="500" height="500">
+<img src="./resources/Mockup_landing_6.jpeg" alt="mockup_landing_5">
 
 Figura 5: Mockup 5 – Beneficios para proveedores – Landing Page
 La sección "Cómo funciona" explica de manera clara el flujo de operación de la plataforma.
 
-<img src="./resources/Mockup_landing_7.jpeg" alt="mockup_landing_6" width="500" height="500">
+<img src="./resources/Mockup_landing_7.jpeg" alt="mockup_landing_6">
 
 Figura 6: Mockup 6 – ¿Cómo funciona? – Landing Page
 Aquí se comparte la información sobre la Misión y Visión de nuestra startup.
 
-<img src="./resources/Mockup_landing_8.jpeg" alt="mockup_landing_7" width="500" height="500">
+<img src="./resources/Mockup_landing_8.jpeg" alt="mockup_landing_7">
 
 Figura 7: Mockup 7 – Sobre Nosotros – Landing Page
 En esta sección se muestran los testimonios y opiniones de los usuarios que han utilizado la plataforma.
 
-<img src="./resources/Mockup_landing_9.jpeg" alt="mockup_landing_8" width="500" height="500">
+<img src="./resources/Mockup_landing_9.jpeg" alt="mockup_landing_8">
 
 Figura 8: Mockup 8 – Lo que dicen nuestros clientes – Landing Page
 Se presentan reseñas de clientes que destacan su experiencia con la plataforma.
 
-<img src="./resources/Mockup_landing_10.jpeg" alt="mockup_landing_9" width="500" height="500">
+<img src="./resources/Mockup_landing_10.jpeg" alt="mockup_landing_9">
 
 Figura 9: Mockup 9 – Lo que dicen nuestros clientes – Landing Page
 Continúan mostrándose las opiniones de los usuarios que recomiendan el servicio.
 
-<img src="./resources/Mockup_landing_11.jpeg" alt="mockup_landing_10" width="500" height="500">
+<img src="./resources/Mockup_landing_11.jpeg" alt="mockup_landing_10">
 
 Figura 10: Mockup 10 – Lo que dicen nuestros clientes – Landing Page
 Se concluye la visualización de testimonios de clientes satisfechos.
 
-<img src="./resources/Mockup_landing_12.jpeg" alt="mockup_landing_11" width="500" height="500">
+<img src="./resources/Mockup_landing_12.jpeg" alt="mockup_landing_11">
 
 Figura 11: Mockup 11 – Contacto – Landing Page
 En esta sección se incluye un formulario para que los usuarios puedan comunicarse y solicitar una demostración de la plataforma.
@@ -2017,99 +2238,125 @@ Actúan como referencia visual para el diseño final, garantizando una experienc
 
 Estos diagramas priorizan la **usabilidad móvil** y la **claridad visual**, permitiendo que diseñadores y desarrolladores anticipen cómo los usuarios interactuarán con la aplicación mediante gestos táctiles y optimicen la distribución de elementos para ofrecer una experiencia ágil e intuitiva en dispositivos de pantalla reducida.
 
-## Figura 1: Wireframe Móvil – Alquiler de Equipos (Clientes)
+#### Figura 1: Wireframe Móvil – Alquiler de Equipos (Clientes)
 Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con:
 
-<img src="./resources/RENT-CUSTOMER.jpg" alt="RENT-CUSTOMER" width="500" height="500">
+![rentCustomer](./resources/RENT-CUSTOMER.jpg)
 
 ---
 
-## Figura 2: Wireframe Móvil – Agregar Equipos
+#### Figura 2: Wireframe Móvil – Agregar Equipos
 Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
 
-<img src="./resources/ADD-EQUIPMENT.jpg" alt="ADD-EQUIPMENT" width="500" height="500">
+![addEquipments](./resources/ADD-EQUIMENTS.jpg)
 
 ---
 
-## Figura 3: Wireframe Móvil – Máquinas (Clientes)
+#### Figura 3: Wireframe Móvil – Máquinas (Clientes)
 Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
 
-<img src="./resources/MACHINES-CUSTOMER.jpg" alt="MACHINES-CUSTOMER" width="500" height="500">
+![machinesCustomer](./resources/MACHINES-CUSTOMER.jpg)
 
 ---
 
-## Figura 4: Wireframe Móvil – Inicio (Clientes)
+#### Figura 4: Wireframe Móvil – Inicio (Clientes)
 Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
 
-<img src="./resources/HOME-CUSTOMER.jpg" alt="HOME-CUSTOMER" width="500" height="500">
+![homeCustomer](./resources/HOME-CUSTOMER.jpg)
 
 ---
 
-## Figura 5: Wireframe Móvil – Registro (Clientes)
+#### Figura 5: Wireframe Móvil – Registro (Clientes)
 Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
 
-<img src="./resources/REGISTER-CUSTOMER.jpg" alt="REGISTER-CUSTOMER" width="500" height="500">
+
+![register-customer](./resources/REGISTER-CUSTOMER.jpg)
 
 ---
 
-## Figura 6: Wireframe Móvil – Inicio de Sesión (Clientes)
+#### Figura 6: Wireframe Móvil – Inicio de Sesión (Clientes)
 Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
 
-<img src="./resources/LOGIN-CUSTOMER.jpg" alt="LOGIN-CUSTOMER" width="500" height="500">
+![login-customer](./resources/LOGIN-CUSTOMER.jpg)
 
 ---
 
-## Figura 7: Wireframe Móvil – Inicio de Sesión (General)
+#### Figura 7: Wireframe Móvil – Inicio de Sesión (General)
 Pantalla de inicio de sesión para acceso general de la aplicación.
 
-<img src="./resources/LOGIN.jpg" alt="LOGIN" width="500" height="500">
+![login](./resources/LOGIN.jpg)
 
 ---
 
-## Figura 8: Wireframe Móvil – Registro (Empresas)
+#### Figura 8: Wireframe Móvil – Registro (Empresas)
 Formulario para el registro de **nuevas empresas** dentro de la aplicación.
 
-<img src="./resources/REGISTER-COMPANIES.jpg" alt="REGISTER-COMPANIES" width="500" height="500">
+![register-companies](./resources/REGISTER-COMPANIES.jpg)
 
 ---
 
-## Figura 9: Wireframe Móvil – Inicio (Empresas)
+#### Figura 9: Wireframe Móvil – Inicio (Empresas)
 Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
 
-<img src="./resources/HOME-COMPANIES.jpg" alt="HOME-COMPANIES" width="500" height="500">
+![home-companies](./resources/HOME-COMPANIES.jpg)
 
 ---
 
-## Figura 10: Wireframe Móvil – Máquinas (Empresas)
+#### Figura 10: Wireframe Móvil – Máquinas (Empresas)
 Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
 
-<img src="./resources/MACHINES-COMPANIES.jpg" alt="MACHINES-COMPANIES" width="500" height="500">
+![machines-companies](./resources/MACHINES-COMPANIES.jpg)
 
 ---
 
-## Figura 11: Wireframe Móvil – Cuenta (Empresas)
+#### Figura 11: Wireframe Móvil – Cuenta (Empresas)
 Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
 
-<img src="./resources/ACCOUNT-COMPANIES.jpg" alt="ACCOUNT-COMPANIES" width="500" height="500">
+![account-companies](./resources/ACCOUNT-COMPANIES.jpg)
 
 ---
 
-## Figura 12: Wireframe Móvil – Cuenta (General)
+#### Figura 12: Wireframe Móvil – Cuenta (General)
 Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
 
-<img src="./resources/ACCOUNT.jpg" alt="ACCOUNT" width="500" height="500">
+![account](./resources/ACCOUNT.jpg)
 
 ---
 
-## Figura 13: Wireframe Móvil – Gestión de Equipos
+#### Figura 13: Wireframe Móvil – Gestión de Equipos
 Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
 
-<img src="./resources/MANAGE-EQUIPMENTS.jpg" alt="MANAGE-EQUIPMENTS" width="500" height="500">
+![manage-equipments](./resources/MANAGE-EQUIPMENTS.jpg)
 
+### 4.4.2. Mobile Applications Wireflow Diagrams
+
+Los Mobile Applications Wireflow Diagrams representan de forma visual el flujo de interacción dentro de la aplicación móvil, describiendo las pantallas, acciones del usuario y transiciones posibles entre ellas. Este artefacto permite comprender cómo el usuario navega a través de la interfaz, qué decisiones puede tomar y cuáles son las rutas restringidas o no permitidas según la lógica de negocio del producto.
+
+En el contexto de FrostLink, estos diagramas reflejan la secuencia lógica del ciclo de uso de la aplicación —desde el inicio de sesión hasta la gestión de funcionalidades principales—, asegurando consistencia entre la experiencia del usuario, las reglas del dominio y los casos de uso definidos en el sistema.
+
+**User Goal: Autenticación Company**
+
+![USERGOAL-AUTENTICACION](./resources/USER-GOAL-AUTENTICATION.png)
+
+**User Goal: Autenticación Customer**
+
+![USERGOAL-AUTENTICATIONCUSTOMER](./resources/USERGOAL-AUTENTICATION%20CUSTOMER.png)
+
+**User Goal: Profile Access**
+
+![USERGOAL-PROFILE ACCESS](./resources/USERGOAL-PROFILE.png)
+
+**User Goal: Machines Management for Companies**
+
+![USERGOAL-MACHINES MANAGEMENT](./resources/USERGOAL-MACHINEMANAGEMENT.png)
+
+**User Goal: Add Equipment Management**
+
+![USERGOAL-ADD EQUIPMENT FOR CUSTOMER](./resources/USERGOAL-ADDEQUIPMENT.png)
 
 ### 4.4.3. Mobile Applications Mock-ups
 
-# Mockups Móviles - FrostLink
+**Mockups Móviles - FrostLink**
 
 Los mockups de la aplicación móvil de **FrostLink** representan la propuesta visual final de las pantallas principales para dispositivos **iOS** y **Android**, detallando la apariencia de los componentes nativos de la interfaz y los flujos de navegación táctil.  
 Actúan como **referencia visual definitiva** para el diseño final, garantizando una experiencia de usuario coherente y optimizada para interacciones móviles.
@@ -2118,93 +2365,163 @@ Estos mockups priorizan la **usabilidad móvil** y la **claridad visual**, permi
 
 ---
 
-## Figura 1: Mockup Móvil – Alquiler de Equipos (Clientes)
+#### Figura 1: Mockup Móvil – Alquiler de Equipos (Clientes)
 Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con:
-<img src="./resources/RENT-CUSTOMER-MOCKUP.jpg" alt="RENT-CUSTOMER-MOCKUP" width="500" height="500">
+![RENT-CUSTOMER-MOCKUP](./resources/RENT-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 2: Mockup Móvil – Agregar Equipos
+#### Figura 2: Mockup Móvil – Agregar Equipos
 Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
 
-<img src="./resources/ADD-EQUIPMENT-MOCKUP.jpg" alt="ADD-EQUIPMENT-MOCKUP" width="500" height="500">
+![ADD EQUIPMENT-MOCKUP](./resources/ADD-EQUIMENTS%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 3: Mockup Móvil – Máquinas (Clientes)
+#### Figura 3: Mockup Móvil – Máquinas (Clientes)
 Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
 
-<img src="./resources/MACHINES-CUSTOMER-MOCKUP.jpg" alt="MACHINES-CUSTOMER-MOCKUP" width="500" height="500">
+![MACHINES CUSTOMER - MOCKUP](./resources/MACHINES-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 4: Mockup Móvil – Inicio (Clientes)
+#### Figura 4: Mockup Móvil – Inicio (Clientes)
 Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
 
-<img src="./resources/HOME-CUSTOMER-MOCKUP.jpg" alt="HOME-CUSTOMER-MOCKUP" width="500" height="500">
+![HOME CUSTOMER - MOCKUP](./resources/HOME-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 5: Mockup Móvil – Registro (Clientes)
+#### Figura 5: Mockup Móvil – Registro (Clientes)
 Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
 
-<img src="./resources/REGISTER-CUSTOMER-MOCKUP.jpg" alt="REGISTER-CUSTOMER-MOCKUP" width="500" height="500">
+![REGISTER CUSTOMER - MOCKUP](./resources/REGISTER-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 6: Mockup Móvil – Inicio de Sesión (Clientes)
+#### Figura 6: Mockup Móvil – Inicio de Sesión (Clientes)
 Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
 
-<img src="./resources/LOGIN-CUSTOMER-MOCKUP.jpg" alt="LOGIN-CUSTOMER-MOCKUP" width="500" height="500">
+![LOGIN CUSTOMER - MOCKUP](./resources/LOGIN-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 7: Mockup Móvil – Inicio de Sesión (General)
+#### Figura 7: Mockup Móvil – Inicio de Sesión (General)
 Pantalla de inicio de sesión para acceso general de la aplicación.
 
-<img src="./resources/LOGIN-MOCKUP.jpg" alt="LOGIN-MOCKUP" width="500" height="500">
+![LOGIN COMPANY - MOCKUP](/resources/LOGIN-MOCKUP.jpg)
 
 ---
 
-## Figura 8: Mockup Móvil – Registro (Empresas)
+#### Figura 8: Mockup Móvil – Registro (Empresas)
 Formulario para el registro de **nuevas empresas** dentro de la aplicación.
 
-<img src="./resources/REGISTER-COMPANIES-MOCKUP.jpg" alt="REGISTER-COMPANIES-MOCKUP" width="500" height="500">
+![REGISTER COMPANIES - MOCKUP](./resources/REGISTER-COMPANIES%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 9: Mockup Móvil – Inicio (Empresas)
+#### Figura 9: Mockup Móvil – Inicio (Empresas)
 Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
 
-<img src="./resources/HOME-COMPANIES-MOCKUP.jpg" alt="HOME-COMPANIES-MOCKUP" width="500" height="500">
+![HOME COMPANIES - MOCKUP](./resources/HOME-CUSTOMER%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 10: Mockup Móvil – Máquinas (Empresas)
+#### Figura 10: Mockup Móvil – Máquinas (Empresas)
 Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
 
-<img src="./resources/MACHINES-COMPANIES-MOCKUP.jpg" alt="MACHINES-COMPANIES-MOCKUP" width="500" height="500">
+
+![MACHINES COMPANIES - MOCKUP](./resources/MACHINES-COMPANIES%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 11: Mockup Móvil – Cuenta (Empresas)
+#### Figura 11: Mockup Móvil – Cuenta (Empresas)
 Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
 
-<img src="./resources/ACCOUNT-COMPANIES-MOCKUP.jpg" alt="ACCOUNT-COMPANIES-MOCKUP" width="500" height="500">
+![ACCOUNT COMPANIES - MOCKUP](./resources/ACCOUNT-COMPANIES%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 12: Mockup Móvil – Cuenta (General)
+#### Figura 12: Mockup Móvil – Cuenta (General)
 Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
 
-<img src="./resources/ACCOUNT-MOCKUP.jpg" alt="ACCOUNT-MOCKUP" width="500" height="500">
+![ACCOUNT - MOCKUP](./resources/ACCOUNT%20-%20MOCKUP.jpg)
 
 ---
 
-## Figura 13: Mockup Móvil – Gestión de Equipos
+#### Figura 13: Mockup Móvil – Gestión de Equipos
 Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
 
-<img src="./resources/MANAGE-EQUIPMENTS-MOCKUP.jpg" alt="MANAGE-EQUIPMENTS-MOCKUP" width="500" height="500">
+![MANAGE EQUIPMENTS - MOCKUP](./resources/MANAGE-EQUIPMENTS%20-%20MOCKUP.jpg)
+
+### 4.4.3. Mobile Applications User Flow Diagrams
+
+Los Mobile Applications Wireflow Diagrams representan de forma visual el flujo de interacción dentro de la aplicación móvil, describiendo las pantallas, acciones del usuario y transiciones posibles entre ellas. Este artefacto permite comprender cómo el usuario navega a través de la interfaz, qué decisiones puede tomar y cuáles son las rutas restringidas o no permitidas según la lógica de negocio del producto.
+
+En el contexto de FrostLink, estos diagramas reflejan la secuencia lógica del ciclo de uso de la aplicación —desde el inicio de sesión hasta la gestión de funcionalidades principales—, asegurando consistencia entre la experiencia del usuario, las reglas del dominio y los casos de uso definidos en el sistema.
+
+**User Goal: Gestión de máquinas** Cuando el usuario acceso a FrostLink, primero debe registrarse si no cuenta con credenciales oficiales para el mobile app.
+
+![USER GOAL - MANAGES EQUIPMENTS](./resources/USERGOAL-GESTIONDEMAQUINAS.png)
+
+**User Goal: Añadir máquina** El *customer* quiere añadir una nueva máquina de refrigeración a su dashboard para monitoreo asincronico.
+
+![USER GOAL - ADD EQUIPMENTS](./resources/USER_FLOW-ADDEQUIPMENTS.png)
+
+
+## 4.5. Mobile Applications Prototyping.
+
+### 4.5.1. Android Mobile Applications Prototyping.
+
+## Autenticación
+
+### Login Screen
+Pantalla de inicio de sesión donde los usuarios ingresan sus credenciales para acceder a la aplicación. Incluye campos para usuario y contraseña, opción "Remember me" y enlace "Forgot password". Al completar el login exitoso, navega al home principal.
+
+![Login](./resources/LoginMobile.png)
+
+### Register Screen
+Formulario de registro para nuevos usuarios. Contiene campos para nombre completo, usuario, email, contraseña y confirmación de contraseña. Incluye selector de tipo de cuenta (Cliente/Empresa) con radio buttons. Valida todos los campos antes de crear la cuenta.
+
+![Register](./resources/RegisterMobile.png)
+
+## Home
+
+### Home Screen
+Pantalla principal de la aplicación que muestra un resumen del estado del sistema. Incluye mensaje de bienvenida, estadísticas de equipos (cantidad, alertas, estado), y una tarjeta principal con información de monitoreo. Tiene icono de notificaciones en la esquina superior derecha.
+
+![Home](./resources/HomeMobile.png)
+
+## Equipos
+
+### My Equipment Screen
+Lista principal de equipos del usuario. Muestra tarjetas con información de cada equipo incluyendo nombre, temperatura actual, estado (normal/warning/critical) y ubicación. Incluye botón circular para agregar nuevos equipos. Header con título "My Equipment" y notificaciones.
+
+![My Equipment](./resources/MyEquipmentMobile.png)
+
+### Manage Equipments Screen
+Pantalla de gestión de equipos con enfoque en administración. Muestra una tarjeta con ejemplo de equipo ("Vertical display case for frozen meats") y botón para agregar equipos. Incluye botón principal "Add Equipment" para navegar al formulario de creación.
+
+![Manage Equipments](./resources/ManageEquipmentsMobile.png)
+
+### Add Equipment Screen
+Formulario completo para agregar nuevos equipos al sistema. Contiene campos para nombre, tipo, modelo, fabricante, número de serie, código, fecha de instalación, consumo energético, ubicación, dirección y temperatura. Incluye validación de campos y estados de carga.
+
+![Add Equipment](./resources/AddEquipmentMobile.png)
+
+## Cuenta
+
+### Account Screen
+Pantalla de perfil de usuario con información de la cuenta y gestión de planes de suscripción. Muestra datos del usuario (empresa, email, usuario, plan actual), icono de perfil circular, y tarjetas de planes disponibles (Gold/Diamond) con precios y botones de actualización.
+
+![Account](./resources/AccountMobile.png)
+
+## Navegación
+
+### Bottom Navigation
+Barra de navegación inferior presente en todas las pantallas principales. Incluye 5 secciones: Home (casa), Machines (equipos), Rent (alquiler), Contact (contacto) y Account (cuenta). La sección activa se destaca en azul FrostLink.
+
+![Bottom Navigation](./resources/BottomNavigationMobile.png)
 
 
 ## 4.6. Web Applications UX/UI Design
@@ -2215,103 +2532,103 @@ Los wireframes de las aplicaciones web de Frostlink establecen la estructura gen
 
 <p><strong>Figura 1: Wireframe – Alquiler de Equipos (Clientes)</strong><br>
 Representa la pantalla destinada a que los clientes puedan solicitar el alquiler de equipos.</p>
-<img src="./resources/Wireframe_1.jpeg" alt="wireframe_1" width="500" height="500">
+<img src="./resources/Wireframe_1.jpeg" alt="wireframe_1">
 
 <p><strong>Figura 2: Wireframe – Contacto (Clientes)</strong><br>
 Muestra la interfaz donde los clientes pueden comunicarse con la empresa.</p>
-<img src="./resources/Wireframe_2.jpeg" alt="wireframe_2" width="500" height="500">
+<img src="./resources/Wireframe_2.jpeg" alt="wireframe_2" >
 
 <p><strong>Figura 3: Wireframe – Contacto (Empresa)</strong><br>
 Presenta el panel de control diseñado para la empresa.</p>
-<img src="./resources/Wireframe_3.jpeg" alt="wireframe_3" width="500" height="500">
+<img src="./resources/Wireframe_3.jpeg" alt="wireframe_3" >
 
 <p><strong>Figura 4: Wireframe – Control (Clientes)</strong><br>
 Visualiza la sección donde los clientes pueden gestionar y supervisar su información de cuenta.</p>
-<img src="./resources/Wireframe_4.jpeg" alt="wireframe_4" width="500" height="500">
+<img src="./resources/Wireframe_4.jpeg" alt="wireframe_4" >
 
 <p><strong>Figura 5: Wireframe – Estado de Cuenta (Clientes)</strong><br>
 Muestra el estado de cuenta detallado de los clientes.</p>
-<img src="./resources/Wireframe_5.jpeg" alt="wireframe_5" width="500" height="500">
+<img src="./resources/Wireframe_5.jpeg" alt="wireframe_5" >
 
 <p><strong>Figura 6: Wireframe – Estado de Cuenta (Empresa)</strong><br>
 Despliega la vista de estado de cuenta desde la perspectiva de la empresa.</p>
-<img src="./resources/Wireframe_6.jpeg" alt="wireframe_6" width="500" height="500">
+<img src="./resources/Wireframe_6.jpeg" alt="wireframe_6" >
 
 <p><strong>Figura 7: Wireframe – Analíticas Completas (Clientes)</strong><br>
 Presenta la pantalla de métricas y estadísticas para clientes.</p>
-<img src="./resources/Wireframe_7.jpeg" alt="wireframe_7" width="500" height="500">
+<img src="./resources/Wireframe_7.jpeg" alt="wireframe_7" >
 
 <p><strong>Figura 8: Wireframe – Inicio (Clientes)</strong><br>
 Muestra la pantalla principal que ven los clientes al ingresar.</p>
-<img src="./resources/Wireframe_8.jpeg" alt="wireframe_8" width="500" height="500">
+<img src="./resources/Wireframe_8.jpeg" alt="wireframe_8" >
 
 <p><strong>Figura 9: Wireframe – Inicio (Empresa)</strong><br>
 Representa la vista inicial para los usuarios de la empresa.</p>
-<img src="./resources/Wireframe_9.jpeg" alt="wireframe_9" width="500" height="500">
+<img src="./resources/Wireframe_9.jpeg" alt="wireframe_9" >
 
 <p><strong>Figura 10: Wireframe – Inicio de la Aplicación</strong><br>
 Corresponde a la pantalla principal de bienvenida de la aplicación.</p>
-<img src="./resources/Wireframe_10.jpeg" alt="wireframe_10" width="500" height="500">
+<img src="./resources/Wireframe_10.jpeg" alt="wireframe_10" >
 
 <p><strong>Figura 11: Wireframe – Inicio de Sesión (Clientes)</strong><br>
 Pantalla donde los clientes ingresan sus credenciales para acceder a la plataforma.</p>
-<img src="./resources/Wireframe_11.jpeg" alt="wireframe_11" width="500" height="500">
+<img src="./resources/Wireframe_11.jpeg" alt="wireframe_11" >
 
 <p><strong>Figura 12: Wireframe – Inicio de Sesión (Empresa)</strong><br>
 Pantalla donde el personal de la empresa inicia sesión.</p>
-<img src="./resources/Wireframe_12.jpeg" alt="wireframe_12" width="500" height="500">
+<img src="./resources/Wireframe_12.jpeg" alt="wireframe_12" >
 
 <p><strong>Figura 13: Wireframe – Mi Cuenta (Clientes)</strong><br>
 Vista en la que los clientes administran la información de su cuenta personal.</p>
-<img src="./resources/Wireframe_13.jpeg" alt="wireframe_13" width="500" height="500">
+<img src="./resources/Wireframe_13.jpeg" alt="wireframe_13" >
 
 <p><strong>Figura 14: Wireframe – Mi Cuenta (Empresa)</strong><br>
 Pantalla donde la empresa gestiona su información y configuración.</p>
-<img src="./resources/Wireframe_14.jpeg" alt="wireframe_14" width="500" height="500">
+<img src="./resources/Wireframe_14.jpeg" alt="wireframe_14" >
 
 <p><strong>Figura 15: Wireframe – Mis Clientes y Técnicos (Empresa)</strong><br>
 Muestra la sección para que la empresa gestione tanto a sus clientes como a sus técnicos.</p>
-<img src="./resources/Wireframe_15.jpeg" alt="wireframe_15" width="500" height="500">
+<img src="./resources/Wireframe_15.jpeg" alt="wireframe_15" >
 
 <p><strong>Figura 16: Wireframe – Mis Equipos (Clientes)</strong><br>
 Pantalla que lista los equipos que el cliente tiene registrados o alquilados.</p>
-<img src="./resources/Wireframe_16.jpeg" alt="wireframe_16" width="500" height="500">
+<img src="./resources/Wireframe_16.jpeg" alt="wireframe_16" >
 
 <p><strong>Figura 17: Wireframe – Mis Equipos (Clientes, Detalle 1)</strong><br>
 Presenta información detallada del primer equipo seleccionado por el cliente.</p>
-<img src="./resources/Wireframe_17.jpeg" alt="wireframe_17" width="500" height="500">
+<img src="./resources/Wireframe_17.jpeg" alt="wireframe_17" >
 
 <p><strong>Figura 18: Wireframe – Mis Equipos (Clientes, Detalle 2)</strong><br>
 Muestra la vista de detalle de un segundo equipo registrado por el cliente.</p>
-<img src="./resources/Wireframe_18.jpeg" alt="wireframe_18" width="500" height="500">
+<img src="./resources/Wireframe_18.jpeg" alt="wireframe_18" >
 
 <p><strong>Figura 19: Wireframe – Mis Equipos (Empresa)</strong><br>
 Pantalla de la empresa para administrar el inventario de equipos.</p>
-<img src="./resources/Wireframe_19.jpeg" alt="wireframe_19" width="500" height="500">
+<img src="./resources/Wireframe_19.jpeg" alt="wireframe_19" >
 
 <p><strong>Figura 20: Wireframe – Notificaciones (Clientes)</strong><br>
 Interfaz donde los clientes visualizan las notificaciones recibidas.</p>
-<img src="./resources/Wireframe_20.jpeg" alt="wireframe_20" width="500" height="500">
+<img src="./resources/Wireframe_20.jpeg" alt="wireframe_20" >
 
 <p><strong>Figura 21: Wireframe – Notificaciones (Empresa)</strong><br>
 Pantalla en la que la empresa revisa las notificaciones del sistema.</p>
-<img src="./resources/Wireframe_21.jpeg" alt="wireframe_21" width="500" height="500">
+<img src="./resources/Wireframe_21.jpeg" alt="wireframe_21" >
 
 <p><strong>Figura 22: Wireframe – Registro (Clientes)</strong><br>
 Muestra el formulario de registro para nuevos clientes.</p>
-<img src="./resources/Wireframe_22.jpeg" alt="wireframe_22" width="500" height="500">
+<img src="./resources/Wireframe_22.jpeg" alt="wireframe_22" >
 
 <p><strong>Figura 23: Wireframe – Registro (Empresa)</strong><br>
 Formulario de alta de usuarios internos o nuevos registros empresariales.</p>
-<img src="./resources/Wireframe_23.jpeg" alt="wireframe_23" width="500" height="500">
+<img src="./resources/Wireframe_23.jpeg" alt="wireframe_23" >
 
 <p><strong>Figura 24: Wireframe – Solicitudes (Empresa)</strong><br>
 Pantalla donde la empresa gestiona las solicitudes enviadas por los clientes.</p>
-<img src="./resources/Wireframe_24.jpeg" alt="wireframe_24" width="500" height="500">
+<img src="./resources/Wireframe_24.jpeg" alt="wireframe_24">
 
 <p><strong>Figura 25: Wireframe – Órdenes de Trabajo (Empresa)</strong><br>
 Presenta la vista de control de órdenes de trabajo generadas por la empresa.</p>
-<img src="./resources/Wireframe_25.jpeg" alt="wireframe_25" width="500" height="500">
+<img src="./resources/Wireframe_25.jpeg" alt="wireframe_25">
 
 ### 4.6.2. Web Applications Wireflow Diagrams
 <p>En esta sección se muestran los <strong>wireflows</strong> de cada objetivo del usuario, tomando en cuenta los <strong>User Personas</strong> pertinentes. Cada diagrama describe el recorrido de interacción y cómo dichas acciones impactan en las pantallas de la aplicación.</p>
@@ -2320,147 +2637,147 @@ Presenta la vista de control de órdenes de trabajo generadas por la empresa.</p
 Como propietario de un negocio que opera equipos de refrigeración, deseo <strong>monitorear el estado</strong> de cada equipo registrado en tiempo real.</p>
 <p><strong>Task Flow 1</strong><br>
 Secuencia de pasos para completar la acción principal del usuario (consulta y verificación del estado de equipos).</p>
-<img src="./resources/taskflow1.png" alt="taskflow1" width="500" height="500">
+<img src="./resources/taskflow1.png" alt="taskflow1">
 <p><strong>Wireflow 1</strong><br>
 Mapa que combina wireframes con el flujo de interacción, mostrando transiciones entre pantallas y puntos de decisión.</p>
-<img src="./resources/wireflow1.png" alt="wireflow1" width="500" height="500">
+<img src="./resources/wireflow1.png" alt="wireflow1">
 
 <p><strong>User Goal 2</strong><br>
 Como dueño de un negocio con equipos de refrigeración, quiero <strong>gestionar el alta y administración</strong> de los nuevos equipos que registre.</p>
 <p><strong>Task Flow 2</strong><br>
 Proceso de tareas que guía el registro, edición y organización de nuevos equipos.</p>
-<img src="./resources/taskflow2.png" alt="taskflow2" width="500" height="500">
+<img src="./resources/taskflow2.png" alt="taskflow2">
 <p><strong>Wireflow 2</strong><br>
 Representación visual del flujo entre pantallas para dar de alta equipos y configurar sus atributos.</p>
-<img src="./resources/wireflow2.png" alt="wireflow2" width="500" height="500">
+<img src="./resources/wireflow2.png" alt="wireflow2">
 
 <p><strong>User Goal 3</strong><br>
 Como dueño de un negocio que usa equipos de refrigeración, quiero <strong>consultar estadísticas completas</strong> sobre el rendimiento de mis equipos.</p>
 <p><strong>Task Flow 3</strong><br>
 Secuencia de tareas para explorar métricas, filtrar periodos y comparar resultados.</p>
-<img src="./resources/taskflow3.png" alt="taskflow3" width="500" height="500">
+<img src="./resources/taskflow3.png" alt="taskflow3">
 <p><strong>Wireflow 3</strong><br>
 Detalle de pantallas y transiciones que soportan la visualización de KPIs, gráficos y reportes.</p>
-<img src="./resources/wireflow3.png" alt="wireflow3" width="500" height="500">
+<img src="./resources/wireflow3.png" alt="wireflow3">
 
 <p><strong>User Goal 4</strong><br>
 Como dueño de un negocio con equipos de refrigeración, quiero <strong>solicitar nuevos equipos</strong> a un proveedor de forma simple.</p>
 <p><strong>Task Flow 4</strong><br>
 Flujo de tareas para seleccionar productos, confirmar cantidades y generar una solicitud.</p>
-<img src="./resources/taskflow4.png" alt="taskflow4" width="500" height="500">
+<img src="./resources/taskflow4.png" alt="taskflow4">
 <p><strong>Wireflow 4</strong><br>
 Visión general del camino de compra: búsqueda, detalle de equipo, carrito/solicitud y confirmación.</p>
-<img src="./resources/wireflow4.png" alt="wireflow4" width="500" height="500">
+<img src="./resources/wireflow4.png" alt="wireflow4">
 
 <p><strong>User Goal 5</strong><br>
 Como proveedor de equipos de refrigeración, deseo <strong>seguir y gestionar</strong> las <strong>órdenes de pedido</strong> de mis clientes.</p>
 <p><strong>Task Flow 5</strong><br>
 Flujo de tareas para revisar pedidos, actualizar estados y coordinar despachos.</p>
-<img src="./resources/taskflow5.png" alt="taskflow5" width="500" height="500">
+<img src="./resources/taskflow5.png" alt="taskflow5">
 <p><strong>Wireflow 5</strong><br>
 Resumen del movimiento entre pantallas para administrar órdenes: listado, detalle, acciones y notificaciones.</p>
-<img src="./resources/wireflow5.png" alt="wireflow5" width="500" height="500">
+<img src="./resources/wireflow5.png" alt="wireflow5">
 
 ### 4.4.3. Web Applications Mock-ups</h2>
 <p>En esta sección se presentan y describen los mock-ups de las aplicaciones de <strong>Frostlink</strong>. Se evidencian los principios de diseño, la arquitectura de información, el diseño inclusivo y el uso del Design System en los productos digitales. Cada maqueta muestra cómo estos conceptos se integran en la interfaz de usuario. A continuación, se exhiben las maquetas de la aplicación web, que representan de forma visual el aspecto y funcionamiento de la plataforma, facilitando la comunicación del diseño a desarrolladores y clientes para alinear la experiencia de usuario con la visión del proyecto.</p>
 
 <p><strong>Figura 1: Mockup – Inicio General de la App</strong><br>
 Pantalla de bienvenida y acceso principal de la aplicación web.</p>
-<img src="./resources/web_application_1.jpeg" alt="web_appliaction_1" width="500" height="500">
+<img src="./resources/web_application_1.jpeg" alt="web_appliaction_1" >
 
 <p><strong>Figura 2: Mockup – Registro (Clientes)</strong><br>
 Formulario de alta para nuevos clientes.</p>
-<img src="./resources/web_application_2.jpeg" alt="web_appliaction_2" width="500" height="500">
+<img src="./resources/web_application_2.jpeg" alt="web_appliaction_2" >
 
 <p><strong>Figura 3: Mockup – Inicio de Sesión (Clientes)</strong><br>
 Interfaz de autenticación para clientes.</p>
-<img src="./resources/web_application_3.jpeg" alt="web_appliaction_3" width="500" height="500">
+<img src="./resources/web_application_3.jpeg" alt="web_appliaction_3" >
 
 <p><strong>Figura 4: Mockup – Inicio (Clientes)</strong><br>
 Panel principal o dashboard de los clientes.</p>
-<img src="./resources/web_application_4.jpeg" alt="web_appliaction_4" width="500" height="500">
+<img src="./resources/web_application_4.jpeg" alt="web_appliaction_4" >
 
 <p><strong>Figura 5: Mockup – Mis Equipos (Clientes)</strong><br>
 Listado de equipos registrados o alquilados por el cliente.</p>
-<img src="./resources/web_application_5.jpeg" alt="web_appliaction_5" width="500" height="500">
+<img src="./resources/web_application_5.jpeg" alt="web_appliaction_5" >
 
 <p><strong>Figura 6: Mockup – Mis Equipos (Clientes, Detalle 1)</strong><br>
 Primera vista de detalle de un equipo del cliente.</p>
-<img src="./resources/web_application_6.jpeg" alt="web_appliaction_6" width="500" height="500">
+<img src="./resources/web_application_6.jpeg" alt="web_appliaction_6" >
 
 <p><strong>Figura 7: Mockup – Mis Equipos (Clientes, Detalle 2)</strong><br>
 Segunda vista de detalle de un equipo del cliente.</p>
-<img src="./resources/web_application_7.jpeg" alt="web_appliaction_7" width="500" height="500">
+<img src="./resources/web_application_7.jpeg" alt="web_appliaction_7" >
 
 <p><strong>Figura 8: Mockup – Alquilar Equipos (Clientes)</strong><br>
 Proceso guiado para solicitar el alquiler de equipos.</p>
-<img src="./resources/web_application_8.jpeg" alt="web_appliaction_8" width="500" height="500">
+<img src="./resources/web_application_8.jpeg" alt="web_appliaction_8" >
 
 <p><strong>Figura 9: Mockup – Contacto (Clientes)</strong><br>
 Canales de contacto y soporte para clientes.</p>
-<img src="./resources/web_application_9.jpeg" alt="web_appliaction_9" width="500" height="500">
+<img src="./resources/web_application_9.jpeg" alt="web_appliaction_9" >
 
 <p><strong>Figura 10: Mockup – Notificaciones (Clientes)</strong><br>
 Centro de notificaciones y avisos para clientes.</p>
-<img src="./resources/web_application_10.jpeg" alt="web_appliaction_10" width="500" height="500">
+<img src="./resources/web_application_10.jpeg" alt="web_appliaction_10" >
 
 <p><strong>Figura 11: Mockup – Control (Clientes)</strong><br>
 Panel de control y actividad del cliente.</p>
-<img src="./resources/web_application_11.jpeg" alt="web_appliaction_11" width="500" height="500">
+<img src="./resources/web_application_11.jpeg" alt="web_appliaction_11" >
 
 <p><strong>Figura 12: Mockup – Estado de Cuenta (Clientes)</strong><br>
 Resumen de facturación, saldos y movimientos.</p>
-<img src="./resources/web_application_12.jpeg" alt="web_appliaction_12" width="500" height="500">
+<img src="./resources/web_application_12.jpeg" alt="web_appliaction_12" >
 
 <p><strong>Figura 13: Mockup – Mi Cuenta (Clientes)</strong><br>
 Gestión de perfil, preferencias y seguridad del cliente.</p>
-<img src="./resources/web_application_13.jpeg" alt="web_appliaction_13" width="500" height="500">
+<img src="./resources/web_application_13.jpeg" alt="web_appliaction_13" >
 
 <p><strong>Figura 14: Mockup – Analíticas Completas (Clientes)</strong><br>
 Panel de métricas, gráficos y KPI para clientes.</p>
-<img src="./resources/web_application_13.jpeg" alt="web_appliaction_14" width="500" height="500">
+<img src="./resources/web_application_13.jpeg" alt="web_appliaction_14" >
 
 <p><strong>Mockups Empresa</strong></p>
 
 <p><strong>Figura 15: Mockup – Inicio de Sesión (Empresa)</strong><br>
 Interfaz de autenticación para el personal de la empresa.</p>
-<img src="./resources/web_application_15.jpeg" alt="web_appliaction_15" width="500" height="500">
+<img src="./resources/web_application_15.jpeg" alt="web_appliaction_15" >
 
 <p><strong>Figura 16: Mockup – Registro (Empresa)</strong><br>
 Alta de la empresa y creación de credenciales.</p>
-<img src="./resources/web_application_16.jpeg" alt="web_appliaction_16" width="500" height="500">
+<img src="./resources/web_application_16.jpeg" alt="web_appliaction_16" >
 
 <p><strong>Figura 17: Mockup – Inicio (Empresa)</strong><br>
 Dashboard principal para la gestión empresarial.</p>
-<img src="./resources/web_application_17.jpeg" alt="web_appliaction_17" width="500" height="500">
+<img src="./resources/web_application_17.jpeg" alt="web_appliaction_17" >
 
 <p><strong>Figura 18: Mockup – Contacto (Empresa)</strong><br>
 Soporte y comunicación para cuentas empresariales.</p>
-<img src="./resources/web_application_18.jpeg" alt="web_appliaction_18" width="500" height="500">
+<img src="./resources/web_application_18.jpeg" alt="web_appliaction_18" >
 
 <p><strong>Figura 19: Mockup – Estado de Cuenta (Empresa)</strong><br>
 Facturación, saldos y movimientos para la empresa.</p>
-<img src="./resources/web_application_19.jpeg" alt="web_appliaction_19" width="500" height="500">
+<img src="./resources/web_application_19.jpeg" alt="web_appliaction_19" >
 
 <p><strong>Figura 20: Mockup – Mi Cuenta (Empresa)</strong><br>
 Configuración de cuenta, permisos y seguridad.</p>
-<img src="./resources/web_application_20.jpeg" alt="web_appliaction_20" width="500" height="500">
+<img src="./resources/web_application_20.jpeg" alt="web_appliaction_20" >
 
 <p><strong>Figura 21: Mockup – Mis Clientes y Técnicos (Empresa)</strong><br>
 Administración de clientes, técnicos y roles.</p>
-<img src="./resources/web_application_21.jpeg" alt="web_appliaction_21" width="500" height="500">
+<img src="./resources/web_application_21.jpeg" alt="web_appliaction_21" >
 
 <p><strong>Figura 22: Mockup – Mis Equipos (Empresa)</strong><br>
 Inventario y control de equipos bajo responsabilidad de la empresa.</p>
-<img src="./resources/web_application_22.jpeg" alt="web_appliaction_22" width="500" height="500">
+<img src="./resources/web_application_22.jpeg" alt="web_appliaction_22" >
 
 <p><strong>Figura 23: Mockup – Notificaciones (Empresa)</strong><br>
 Centro de avisos, eventos del sistema y comunicaciones.</p>
-<img src="./resources/web_application_10.jpeg" alt="web_appliaction_23" width="500" height="500">
+<img src="./resources/web_application_10.jpeg" alt="web_appliaction_23" >
 
 <p><strong>Figura 24: Mockup – Solicitudes (Empresa)</strong><br>
 Bandeja de solicitudes entrantes y su procesamiento.</p>
-<img src="./resources/web_application_23.jpeg" alt="web_appliaction_24" width="500" height="500">
+<img src="./resources/web_application_23.jpeg" alt="web_appliaction_24" >
 
 <p><strong>Figura 25: Mockup – Órdenes de Trabajo (Empresa)</strong><br>
 Gestión y seguimiento de órdenes de trabajo.</p>
@@ -2470,46 +2787,106 @@ Gestión y seguimiento de órdenes de trabajo.</p>
 
 <p><strong>User Goal 1</strong><br>
 Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>monitorear el estado</strong> de cada equipo registrado.</p>
-<img src="./resources/userflow1.png" alt="userflow1" width="500" height="500">
+<img src="./resources/userflow1.png" alt="userflow1" >
 
 <p><strong>User Goal 2</strong><br>
 Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>consultar las estadísticas completas</strong> del rendimiento de mis equipos.</p>
-<img src="./resources/userflow2.png" alt="userflow2" width="500" height="500">
+<img src="./resources/userflow2.png" alt="userflow2" >
 
 <p><strong>User Goal 3</strong><br>
 Como propietario de un negocio que utiliza equipos de refrigeración, deseo <strong>dar de alta y administrar</strong> los nuevos equipos que registro.</p>
-<img src="./resources/userflow3.png" alt="userflow3" width="500" height="500">
+<img src="./resources/userflow3.png" alt="userflow3" >
 
-## 4.7. Web Applications Prototyping
-Se presenta el prototipo interactivo de la aplicación web de Frostlink, que permite a los usuarios explorar la interfaz y navegar por las distintas secciones de la plataforma. Este prototipo incorpora las funcionalidades esenciales y ofrece una vista preliminar de la experiencia de uso. Además, facilita la evaluación y validación de la interfaz antes de su implementación definitiva, garantizando un diseño intuitivo y eficiente.
+## 4.7. Web Applications Prototyping  
+
+Se presenta el prototipo interactivo de la aplicación web de **FrostLink**, que permite a los usuarios explorar la interfaz y navegar por las distintas secciones de la plataforma. Este prototipo incorpora las funcionalidades esenciales y ofrece una vista preliminar de la experiencia de uso. Además, facilita la evaluación y validación de la interfaz antes de su implementación definitiva, garantizando un diseño intuitivo y eficiente.
+
+### Hero Section y Navbar
+<img src="./resources/landing-page-evidence-1.png">
+
+Vista inicial de la página donde se muestra el **hero section** con el mensaje principal y el **navbar** superior que permite navegar entre secciones.
+
+---
+
+### Usuarios Objetivo
+<img src="./resources/landing-page-evidence-2.png">
+
+Se presentan los **segmentos de usuarios** definidos en el diseño de la solución, mostrando claramente los grupos objetivo a los que se dirige FrostLink.
+
+---
+
+### Funcionalidades del Sistema
+<img src="./resources/landing-page-evidence-3.png">
+
+Visualización de las **principales funcionalidades** que ofrece el sistema FrostLink para los diferentes tipos de usuarios.
+
+---
+
+### Resultados Esperados (Outcomes)
+<img src="./resources/landing-page-evidence-4.png">
+
+Se ilustran los **outcomes o resultados esperados** que los usuarios obtendrán al interactuar con el sistema.
+
+---
+
+### Guía de Uso
+<img src="./resources/landing-page-evidence-5.png">
+
+Explicación visual de los **pasos a seguir** para utilizar el sistema de FrostLink de manera sencilla y eficiente.
+
+---
+
+### Descripción General del Sistema
+<img src="./resources/landing-page-evidence-6.png">
+
+Se muestra la **descripción general** de FrostLink, resaltando su propósito, beneficios y propuesta de valor.
+
+---
+
+### Planes Disponibles
+<img src="./resources/landing-page-evidence-7.png">
+
+Visualización de los **planes de suscripción** que ofrece FrostLink, diferenciados según las necesidades de cada usuario.
+
+---
+
+### Testimonios de Clientes
+<img src="./resources/landing-page-evidence-8.png">
+
+Se presentan los **comentarios y valoraciones** de los clientes, reforzando la credibilidad y confianza en la plataforma.
+
+### Formulario de Solicitud de Demo
+<img src="./resources/landing-page-evidence-9.png">
+
+Vista del **formulario de contacto** donde los usuarios pueden solicitar una demo personalizada del sistema FrostLink.
 
 ## 4.8. Domain Driven Software Architecture
 Se expone la arquitectura de software orientada al dominio para Frostlink. A través de diversos diagramas se describe la estructura del sistema y sus componentes principales, destacando cómo se relacionan e integran entre sí para ofrecer una solución eficiente, escalable y mantenible.
 
 ### 4.8.1. Software Architecture Context Diagram
 <p>El diagrama de contexto muestra cómo <strong>Clientes</strong> y <strong>Empresas Proveedoras</strong> interactúan con <strong>Frostlink</strong> para gestionar y monitorear equipos de refrigeración. La plataforma se integra con servicios de correo para el envío de notificaciones y con un servicio de pagos para procesar transacciones de forma segura.</p>
-<img src="./resources/diagram_1.jpeg" alt="diagram_1" width="500" height="500">
+<img src="./resources/diagram_1.jpeg" alt="diagram_1" >
 
 ### 4.8.2. Software Architecture Container Diagrams
 <p>El diagrama de contenedores describe las principales piezas de <strong>Frostlink</strong> y sus relaciones: la <em>web app</em> (interfaz de usuario), la <em>API</em> que expone capacidades del dominio y la <em>base de datos</em> que persiste la información, junto con otros servicios que soportan la operación.</p>
-<img src="./resources/diagram_2.jpeg" alt="diagram_2" width="500" height="500">
+<img src="./resources/diagram_2.jpeg" alt="diagram_2" >
 
 ### 4.8.3. Software Architecture Components Diagrams
 
 <h3>Mi Equipo — Bounded Context</h3>
 <p>Este diagrama detalla los componentes responsables de la gestión de equipos: alta de nuevos dispositivos, monitoreo en tiempo real y visualización del estado e historial.</p>
-<img src="./resources/diagram_3.jpeg" alt="diagram_3" width="500" height="500">
+<img src="./resources/diagram_3.jpeg" alt="diagram_3" >
 
 ### Notificaciones y Órdenes de Trabajo — Bounded Contexts
 <p>El diagrama agrupa los componentes que administran las notificaciones —para informar eventos y estados relevantes— y los que gestionan las órdenes de trabajo, desde su creación hasta su seguimiento y cierre.</p>
-<img src="./resources/diagram_4.jpeg" alt="diagram_4" width="500" height="500">
+<img src="./resources/diagram_4.jpeg" alt="diagram_4" >
 
 ## 4.9. Software Object-Oriented Design
 <p>En esta sección se expone el diseño orientado a objetos de <strong>Frostlink</strong>. Se incluyen diagramas de clases y un diccionario de clases que describen la estructura de las entidades principales y sus atributos, proporcionando una visión clara de cómo se organizan y administran los componentes clave de la plataforma.</p>
 
 ### 4.9.1. Class Diagrams
 <p>El diagrama de clases ofrece una representación visual de las clases del sistema, sus atributos y las relaciones que las vinculan.</p>
-<img src="./resources/Class-UML.jpeg" alt="class_uml" width="500" height="500">
+<img src="./resources/Class-UML.jpeg" alt="class_uml" >
 
 ### 4.9.2. Class Dictionary
 
@@ -2654,7 +3031,7 @@ Se expone la arquitectura de software orientada al dominio para Frostlink. A tra
 
 ### 4.10.1. Relational/Non-Relational Database Diagram
 <p>El diagrama de base de datos muestra cómo se relacionan las tablas, incluyendo claves primarias y foráneas, así como las cardinalidades (uno a uno, uno a muchos y muchos a muchos).</p>
-<img src="./resources/diagram-class.png" alt="diagram_class" width="500" height="500">
+<img src="./resources/diagram-class.png" alt="diagram_class" >
 
 # Capítulo V: Product Implementation, Validation & Deployment
 
@@ -2662,28 +3039,89 @@ Se expone la arquitectura de software orientada al dominio para Frostlink. A tra
 
 ### 5.1.1. Software Development Environment Configuration
 
-**Project Management**
+En Prime Fixers hemos adoptado una serie de herramientas tanto familiares como más recientes para el diseño, desarrollo y despliegue de nuestra solución de software. En la siguiente tabla a continuación, se presentan las principales herramientas a utilizar por el equipo.
 
-Trello: Para gestión general los sprints, tareas del equipo, etc.
-- Link: [Trello](https://trello.com)
-
-**Product UX/UI Design:**
-
-Figma: Para diseños como Wireframes, Mockups, Prototypes, etc.
-- Link: [Figma](https://figma.com)
-
-Vertabelo: Para diagramas de base de datos (ERD, diagramas de clases, etc.)
-- Link: [Vertabelo](https://vertabelo.com)
-
-**Software Development:**
-
-Visual Studio Code: Para el desarrollo de la Landing Page del proyecto.
-- Link: LandingPage
-
-**Software Documentation:**
-
-Visual Studio Code: Para la documentación de FrostLink se utilizó Visual Studio Code para el desarrollo de los capítulos en formato Markdown.
-- Link: Documentation
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Propósito de uso en el proyecto</th>
+            <th>Enlace de referencia / descarga</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>UXPressia</td>
+            <td><strong>UX/UI Design:</strong> Artefactos de UX</td>
+            <td><a href="https://uxpressia.com/" target="_blank">UXPressia Web Application</a></td>
+        </tr>
+        <tr>
+            <td>Miro</td>
+            <td><strong>UX/UI Design:</strong> As-Is & To-Be Scenario Mapping</td>
+            <td><a href="https://miro.com/es/app/" target="_blank">Descargar Miro</a></td>
+        </tr>
+        <tr>
+            <td>Figma</td>
+            <td><strong>UX/UI Design:</strong> Wireframes, Mockups & Prototyping</td>
+            <td><a href="https://www.figma.com/es-la/downloads/" target="_blank">Descargar Figma</a></td>
+        </tr>
+        <tr>
+            <td>LucidChart</td>
+            <td><strong>UX/UI Design:</strong> Wireflows & Userflows</td>
+            <td><a href="https://www.lucidchart.com/" target="_blank">LucidChart Web</a></td>
+        </tr>
+        <tr>
+            <td>Vertabelo</td>
+            <td><strong>Software Architecture Design:</strong> Database Diagram</td>
+            <td><a href="https://vertabelo.com/" target="_blank">Vertabelo Web</a></td>
+        </tr>
+        <tr>
+            <td>PlantUML</td>
+            <td><strong>Software Architecture Design:</strong> UML y C4 Model</td>
+            <td><a href="https://plantuml.com/es/" target="_blank">PlantUML Web</a></td>
+        </tr>
+        <tr>
+            <td>VSCode</td>
+            <td><strong>IDE:</strong> Editor de código ligero y versátil para múltiples lenguajes</td>
+            <td><a href="https://code.visualstudio.com/" target="_blank">Descargar VSCode</a></td>
+        </tr>
+        <tr>
+            <td>WebStorm</td>
+            <td><strong>IDE:</strong> Desarrollo especializado en JavaScript y frameworks modernos</td>
+            <td><a href="https://www.jetbrains.com/webstorm/" target="_blank">WebStorm Web</a></td>
+        </tr>
+        <tr>
+            <td>Rider</td>
+            <td><strong>IDE:</strong> Desarrollo en C# y .NET multiplataforma</td>
+            <td><a href="https://www.jetbrains.com/rider/" target="_blank">Rider Web</a></td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td><strong>Lenguaje de Programación:</strong> Backend moderno con tipado fuerte</td>
+            <td><a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">Documentación de C#</a></td>
+        </tr>
+        <tr>
+            <td>Node.js</td>
+            <td><strong>Entorno de Ejecución:</strong> JavaScript del lado del servidor</td>
+            <td><a href="https://nodejs.org/" target="_blank">Descargar Node.js</a></td>
+        </tr>
+        <tr>
+            <td>npm</td>
+            <td><strong>Gestor de Paquetes:</strong> Manejo de dependencias para proyectos JS</td>
+            <td><a href="https://www.npmjs.com/" target="_blank">Sitio de npm</a></td>
+        </tr>
+        <tr>
+            <td>Vue.js</td>
+            <td><strong>Framework:</strong> Desarrollo de aplicaciones web SPA con JavaScript</td>
+            <td><a href="https://vuejs.org/" target="_blank">Vue.js Web</a></td>
+        </tr>
+        <tr>
+            <td>.NET</td>
+            <td><strong>Framework:</strong> Plataforma para aplicaciones backend y frontend modernas</td>
+            <td><a href="https://dotnet.microsoft.com/" target="_blank">Sitio oficial .NET</a></td>
+        </tr>
+    </tbody>
+</table>
 
 ### 5.1.2. Source Code Management
 
@@ -2757,96 +3195,7 @@ Todo el código de la solución será escrito en inglés para mantener la consis
 - Implementar Scenario Outline cuando existan múltiples casos similares
 - Agregar comentarios cuando se requiera contexto o explicaciones adicionales
 
-### 5.1.4. Software Deployment Configuration  
-#### Landing Page Deployment  
-
-Realizaremos el despliegue de nuestra Landing utilizando la herramienta implementada de **GitHub Pages**. Para usarla, es necesario contar con acceso como administrador al repositorio del proyecto. A partir de ahí podemos proceder con el despliegue siguiendo los pasos a continuación:  
-
-1. **Creación de ramas**: Se crean ramas específicas para que cada miembro del equipo pueda trabajar en módulos o componentes del proyecto de forma organizada y sin generar conflictos en la rama principal.  
-
-2. **Estructura del proyecto**: Se define una estructura clara a seguir en todas las ramas, en nuestro caso seguiremos la estructura estándar pero utilizaremos una carpeta "resources" para imágenes y configuración i18n.  
-
-3. **Subida de archivos al repositorio**:  
-   - Instalación de Git.  
-   - Configuración del repositorio remoto.  
-   - Uso de comandos Git para hacer commit y push de los cambios.  
-
-4. **Configuración para despliegue en GitHub Pages**:  
-   - Instalamos el paquete **angular-cli-ghpages** con el comando:  
-     ```bash
-     npm install -g angular-cli-ghpages
-     ```  
-   - Editamos el archivo `angular.json` para asegurarnos de que el `baseHref` tenga el valor correcto:  
-     ```json
-     "baseHref": "/nombre-del-repo/"
-     ```  
-   - Ejecutamos el build de producción del proyecto Angular con:  
-     ```bash
-     ng build --configuration production --base-href "https://usuario.github.io/nombre-del-repo/"
-     ```  
-   - Desplegamos en GitHub Pages con el comando:  
-     ```bash
-     npx angular-cli-ghpages --dir=dist/nombre-del-proyecto
-     ```  
-
-5. **Habilitación de GitHub Pages**:  
-   - Accedemos a la configuración del repositorio en GitHub.  
-   - En la pestaña **Pages**, seleccionamos la rama `gh-pages` como origen del despliegue.  
-   - Guardamos los cambios y esperamos a que GitHub genere la URL de la landing.  
-
-6. **Resolución de conflictos**:  
-   - En caso de conflictos, se resuelven con herramientas como Visual Studio Code.  
-   - Se verifica que los conflictos hayan sido solucionados correctamente.  
-
-Con este flujo, la aplicación Angular queda desplegada en **GitHub Pages**, quedando disponible en la URL generada automáticamente y permitiendo actualizaciones cada vez que se ejecute un nuevo `ng build` y `angular-cli-ghpages`.  
-
-🔗 **Landing Page en GitHub Pages**: []()
-
----
-
-#### Front End Web Application Deployment
-
-1. Iniciamos sesión en Netlify y vinculamos el repositorio correspondiente.  
-   ![Imagen 1]()
-
-2. Seleccionamos el proyecto adecuado desde la lista de repositorios.  
-   ![Imagen 2]()
-
-3. Completamos los campos necesarios:
-   - Equipo.
-   - Rama donde están los archivos.
-   - Nombre de la página a desplegar.  
-   ![Imagen 3]()  
-   ![Imagen 4]()
-
-4. Procedemos con el despliegue del sitio.  
-   ![Imagen 5]()
-
-5. Verificamos que el despliegue haya sido exitoso desde la sección de sitios activos en Netlify.  
-   ![Imagen 6]()  
-   ![Imagen 7]()
-
-🔗 **Página desplegada en Netlify**: []()
-
-El despliegue de la aplicación móvil nativa se realiza a través de las **tiendas oficiales de aplicaciones** (Google Play Store y Apple App Store). El proceso general es el siguiente:  
-
-1. **Compilación del proyecto**:  
-   - Para Android, se genera un archivo **APK** o **AAB** usando Android Studio o comandos de Angular/Ionic/React Native, según la tecnología utilizada.  
-   - Para iOS, se genera un archivo **IPA** utilizando Xcode.  
-
-2. **Configuración de cuentas de desarrollador**:  
-   - Registro en **Google Play Console** para Android.  
-   - Registro en **Apple Developer Program** para iOS.  
-
-3. **Subida de builds**:  
-   - Se carga el archivo compilado en la consola correspondiente.  
-   - Se completan los metadatos requeridos (nombre, descripción, imágenes, políticas de privacidad, clasificación por edades, etc.).  
-
-4. **Publicación y despliegue**:  
-   - En Android, la app se despliega después de la revisión automática de Google.  
-   - En iOS, Apple realiza una revisión manual antes de autorizar la publicación en la App Store.  
-
-Con este flujo, la aplicación queda disponible para descarga en dispositivos móviles, asegurando un canal oficial y seguro de distribución.  
+### 5.1.4 Software Deployment Configuration
 
 #### RESTful API and/or Serverless Backend Deployment  
 El despliegue de la API RESTful o backend serverless puede realizarse en **Azure**, aprovechando el servicio de **Azure App Service**. El proceso general es:  
@@ -2886,98 +3235,941 @@ Con este flujo, la API queda desplegada en **Azure**, disponible en una URL púb
 #### 5.2.1.1 Sprint Backlog 1
 Durante el primer sprint, el equipo se propuso iniciar y finalizar la landing page. Para la organización y gestión de integrantes realizamos una división de las historias de usuario en tareas más pequeñas y su asignación según las habilidades de cada miembro. 
 
-<table border="1">
-        <thead>
-            <tr>
-                <th colspan="2">User Story</th>
-                <th colspan="6">Work-Item/Task</th>
-            </tr>
-            <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Estimation (Hours)</th>
-                <th>Assigned To</th>
-                <th>Status (To-do / In Process / To Review / Done)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>US00</td>
-                <td>Información del User Story</td>
-                <td>TK00</td>
-                <td>Configurar proyecto y estructura base</td>
-                <td>Crear estructura inicial del proyecto e implementar header con navegación y hero banner principal</td>
-                <td>0</td>
-                <td>Integrante</td>
-                <td>Done</td>
-            </tr>
-        </tbody>
+<h4>5.2.1.1 Sprint Backlog 1</h4>
+<p>
+Para el primer sprint, y de acuerdo con el Hito 1, el equipo priorizó completar evidencias de <b>Product Implementation</b>
+(User Stories + Sprint Backlog con tareas de 4–8 h) y de <b>Product Design</b> (Needfinding, Impact Map, Architecture Overview,
+Class & DB Diagrams), usando únicamente las User Stories, Spike Stories y Technical Stories definidas en el informe.
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0" style="border-collapse: collapse; width:100%;">
+  <thead>
+    <tr>
+      <th colspan="2">User Story / Spike / Technical</th>
+      <th colspan="6">Work-Item / Engineering Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status (To-do / In Process / To Review / Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">US-22</td>
+      <td rowspan="3">Visualizar propuesta de valor en Landing Page</td>
+      <td>TK-01</td>
+      <td>Configurar proyecto y base</td>
+      <td>Inicializar proyecto web, carpetas, header/nav y hero con copy de propuesta de valor.</td>
+      <td>6</td>
+      <td>Fabrizio León</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TK-02</td>
+      <td>Sección propuesta de valor</td>
+      <td>Desarrollar sección con copy corto, bullets de beneficios y call-to-action.</td>
+      <td>5</td>
+      <td>Marcelo Varela</td>
+      <td>In Process</td>
+    </tr>
+    <tr>
+      <td>TK-03</td>
+      <td>Estilos responsivos</td>
+      <td>Ajustes CSS/Tailwind para correcta visualización en desktop y móvil.</td>
+      <td>4</td>
+      <td>Raúl Medina</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US-25</td>
+      <td rowspan="2">Solicitar demo desde Landing Page</td>
+      <td>TK-04</td>
+      <td>Formulario de demo</td>
+      <td>Componente con campos nombre, email, empresa y validaciones.</td>
+      <td>6</td>
+      <td>Juan Diego Mondoñedo</td>
+      <td>In Process</td>
+    </tr>
+    <tr>
+      <td>TK-05</td>
+      <td>Integración con endpoint</td>
+      <td>Conectar el formulario al endpoint <code>/api/v1/demo-requests</code> para registrar solicitudes.</td>
+      <td>8</td>
+      <td>Fabrizzio Pereira</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SP-01</td>
+      <td rowspan="2">Spike: Needfinding y Personas</td>
+      <td>TK-06</td>
+      <td>Entrevistas y Competence Analysis</td>
+      <td>Documentar Interview Analysis + Competence Analysis con hallazgos clave.</td>
+      <td>6</td>
+      <td>Raúl Medina</td>
+      <td>To-Review</td>
+    </tr>
+    <tr>
+      <td>TK-07</td>
+      <td>Personas y Journey Maps</td>
+      <td>Redactar Personas, User Task Matrix y User Journey Maps según hallazgos.</td>
+      <td>8</td>
+      <td>Fabrizio León</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TS-01</td>
+      <td rowspan="3">Technical: Product Design (Impact Map, Arquitectura, Modelo de Datos)</td>
+      <td>TK-08</td>
+      <td>Impact Map</td>
+      <td>Construir Impact Map (Objetivo → Actores → Impactos → Deliverables) alineado a la propuesta de valor.</td>
+      <td>4</td>
+      <td>Marcelo Varela</td>
+      <td>In Process</td>
+    </tr>
+    <tr>
+      <td>TK-09</td>
+      <td>Architecture Overview</td>
+      <td>Diagramar contexto / contenedores / componentes (C4 niveles 1-3) y documentar decisiones clave.</td>
+      <td>8</td>
+      <td>Juan Diego Mondoñedo</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td>TK-10</td>
+      <td>Class Diagram y DB</td>
+      <td>Definir Class Diagram & Dictionary y diagramas de Base de Datos Relational/Non-Relational iniciales.</td>
+      <td>8</td>
+      <td>Fabrizzio Pereira</td>
+      <td>To-do</td>
+    </tr>
+
+  </tbody>
 </table>
 
 ### 5.2.2. Implemented Landing Page Evidence  
-En esta sección se presentan capturas de pantalla de la **Landing Page** ya implementada, mostrando su diseño, estructura y los elementos visuales clave que permiten la interacción con el usuario.  
 
+**LANDING PAGE - EVIDENCE**
+
+<img src="./resources/landing-page-evidence-1.png">
+
+Se observa el hero section junto con el navbar.
+
+<img src= "./resources/landing-page-evidence-2.png">
+Se observa los usuarios que se delimitaron en el diseño de la solución, solamente tenemos como usuarios a estos segmentos objetivos.
+
+<img src="./resources/landing-page-evidence-3.png">
+Se observa las diferentes funcionalidades del sistema FrostLink para los diferentes usuarios.
+
+<img src="./resources/landing-page-evidence-4.png">
+En esta imagen se observa los outcomes que esperan los usuarios al usar nuestro sistema.
+
+<img src="./resources/landing-page-evidence-5.png">
+En esta imagen se detalla los pasos a seguir para usar adecuadamente y sin complicaciones el sistema de FrostLink.
+
+<img src="./resources/landing-page-evidence-6.png">
+En esta imagen se detalla la descripción de FrostLink.
+
+
+<img src="./resources/landing-page-evidence-7.png">
+En esta imagen se detallan los diferentes planes que ocupa FrostLink para los diferentes usuarios.
+
+<img src="./resources/landing-page-evidence-8.png">
+Se muestran lo que dicen los clientes sobre nosotros.
+
+<img src="./resources/landing-page-evidence-9.png">
+En esta imagen se muestra un formulario para que el usuario solicite una demo.
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence  
 Aquí se incluyen capturas de la **aplicación web** en funcionamiento, donde se visualizan las pantallas principales, la navegación entre módulos y las funcionalidades desarrolladas en el front-end.  
 
+<img src="./resources/frontend-evidence-1.png">
 
-### 5.2.4. Implemented Native-Mobile Application Evidence  
-En esta parte se presentan capturas de la **aplicación móvil nativa**, evidenciando su diseño responsivo, la experiencia de usuario en dispositivos móviles y las principales características disponibles.  
+### 5.2.4. Acuerdo de Servicio - SaaS
+
+El presente Acuerdo de Servicio establece los términos y condiciones bajo los cuales FrostLink ("el Proveedor") proporciona su plataforma de gestión y monitoreo de equipos de refrigeración como Servicio (SaaS) a empresas y técnicos ("el Cliente").
+
+#### 1. Descripción del Servicio
+
+FrostLink es una plataforma web diseñada para optimizar la gestión y el mantenimiento de equipos de refrigeración en negocios que dependen de la cadena de frío. El servicio incluye:
+
+- Monitoreo en tiempo real de temperatura, consumo energético y tiempo de operación
+- Alertas automáticas ante fallas detectadas
+- Generación de reportes técnicos e historiales
+- Programación inteligente de mantenimientos
+- Gestión integral de equipos, técnicos y proveedores
+
+#### 2. Suscripciones y Pagos
+
+- **Planes de Suscripción**: El Cliente puede elegir entre varios planes con diferentes niveles de servicio y características.
+- **Ciclo de Facturación**: Las suscripciones se facturan mensualmente según el plan elegido y la cantidad de equipos registrados.
+- **Pagos**: Los pagos se realizarán mediante los métodos disponibles en la plataforma (tarjeta de crédito, transferencia bancaria).
+- **Impuestos**: Todos los precios son netos y no incluyen impuestos aplicables, que serán responsabilidad del Cliente.
+
+#### 3. Propiedad de los Datos
+
+- **Datos del Cliente**: Toda la información proporcionada por el Cliente (incluidos datos de equipos, historiales y configuraciones) es propiedad exclusiva del Cliente.
+- **Uso de Datos Anónimos**: El Proveedor podrá utilizar datos agregados y anonimizados para mejorar los servicios y generar estadísticas industriales.
+- **Respaldo de Datos**: El Proveedor realizará copias de seguridad periódicas, pero se recomienda al Cliente mantener respaldos adicionales de información crítica.
+
+#### 4. Confidencialidad y Seguridad
+
+- **Protección de Datos**: El Proveedor implementa medidas técnicas y organizativas para proteger la información conforme a estándares internacionales.
+- **Notificación de Brechas**: El Cliente será notificado en caso de vulneraciones de seguridad que afecten sus datos.
+- **Acceso Restringido**: El Proveedor garantiza que solo personal autorizado y necesario tendrá acceso a los datos del Cliente.
+
+#### 5. Disponibilidad del Servicio
+
+- **Uptime Objetivo**: FrostLink se compromete a mantener un tiempo de actividad del 99.5% mensual, excluyendo mantenimientos programados.
+- **Mantenimiento Programado**: Se notificará con al menos 72 horas de anticipación sobre mantenimientos que puedan afectar la disponibilidad.
+- **Soporte Técnico**: Disponible en horario laborable (Lunes a Viernes, 8:00-18:00 GMT-5) con tiempos de respuesta según el plan contratado.
+
+#### 6. Limitaciones de Responsabilidad
+
+- FrostLink actúa como herramienta de monitoreo y gestión, pero no reemplaza la supervisión humana ni garantiza la prevención total de fallas.
+- El Proveedor no será responsable por pérdidas de productos, daños consecuentes o lucro cesante derivados del uso de la plataforma.
+- La responsabilidad máxima del Proveedor se limitará al monto pagado por el Cliente durante los últimos 12 meses.
+
+#### 7. Duración y Terminación
+
+- **Periodo Inicial**: El acuerdo tiene un periodo mínimo de 3 meses desde la activación.
+- **Renovación**: Se renovará automáticamente por periodos mensuales salvo notificación de cancelación.
+- **Cancelación**: El Cliente puede cancelar su suscripción con 30 días de anticipación sin penalización tras el periodo inicial.
+- **Efecto de Terminación**: Tras la cancelación, el Cliente tendrá 30 días para exportar sus datos antes de su eliminación definitiva.
+
+#### 8. Modificaciones al Acuerdo
+
+El Proveedor podrá modificar este acuerdo notificando los cambios con 30 días de anticipación. El uso continuado del servicio tras este periodo constituirá la aceptación de las modificaciones.
+
+#### 9. Ley Aplicable y Jurisdicción
+
+Este acuerdo se regirá e interpretará de conformidad con las leyes de Perú, y cualquier disputa estará sujeta a la jurisdicción exclusiva de los tribunales de Lima, Perú.
+
+### 5.2.5. Implemented Native-Mobile Application Evidence  
+En esta parte se presentan capturas de la **aplicación móvil nativa**, evidenciando su diseño responsivo, la experiencia de usuario en dispositivos móviles y las principales características disponibles. 
+
+# Guía de Distribución Firebase App Distribution
+
+## 1. Acceso a Firebase Console
+
+![Configuración Firebase](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2000.59.37.png)
+
+Primera captura mostrando el acceso a la consola de Firebase para configurar el proyecto.
+
+## 2. Creación del Proyecto
+
+![Crear Proyecto](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2000.59.56.png)
+
+Interfaz para crear un nuevo proyecto en Firebase. Se puede ver el campo de nombre del proyecto donde se ingresa "FrostLink Mobile App".
+
+## 3. Configuración del Proyecto
+
+![Configuración Proyecto](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.01.34.png)
+
+Pantalla de configuración del proyecto donde se establecen los parámetros iniciales.
+
+## 4. Registro de la App Android
+
+![Registro App Android](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.02.38.png)
+
+Formulario para registrar la aplicación Android en Firebase, mostrando:
+- Nombre del paquete de Android: com.upc.frostlink
+- Sobrenombre de la app: FrostLink Mobile App
+
+## 5. Descarga del Archivo de Configuración
+
+![Descarga google-services.json](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.04.29.png)
+
+Paso 2 del proceso donde se descarga el archivo google-services.json. La interfaz muestra:
+- Instrucciones para Android Studio
+- Botón para descargar google-services.json
+- Guía visual de dónde colocar el archivo en el proyecto
+
+## 6. Integración en Android Studio
+
+![Integración Android Studio](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.05.37.png)
+
+Captura de Android Studio mostrando la integración de Firebase, incluyendo:
+- Estructura del proyecto con el archivo google-services.json en la carpeta app
+- Configuración de los plugins de Gradle para Firebase
+
+## 7. Configuración de Gradle
+
+![Configuración Gradle](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.05.44.png)
+
+Archivo build.gradle.kts mostrando la configuración de Firebase App Distribution:
+- Plugin com.google.gms.google-services agregado
+- Plugin com.google.firebase.appdistribution configurado
+- Dependencias de Firebase BoM y Analytics
+
+## 8. Consola de App Distribution
+
+![Consola App Distribution](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.05.56.png)
+
+Interfaz principal de Firebase App Distribution mostrando:
+- Proyecto "FrostLink Mobile App" seleccionado
+- Pestaña "Versiones" activa
+- Área para arrastrar y soltar archivos APK/AAB
+- Contador de versiones (0)
+- Email de contacto configurado
+
+## 9. Gestión de Versiones
+
+![Gestión Versiones](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.18.17.png)
+
+Vista detallada de la gestión de versiones en App Distribution:
+- Versión "1.0 (1)" expandida
+- Botones de acción: Copiar, Descargar, Borrar, Ejecutar pruebas
+- Proceso de configuración en 2 pasos:
+  1. Agregar verificadores (paso activo)
+  2. Agregar notas de la versión (opcional)
+- Campo para agregar testers o grupos
+- Mensaje indicando que no hay testers asignados aún
 
 
-### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence  
+### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence  
 Se muestran capturas que validan la implementación de la **API RESTful** o backend serverless, incluyendo endpoints activos, pruebas realizadas en herramientas como Postman y la comunicación entre el front-end y el back-end.  
 
-
-### 5.2.6. RESTful API Documentation  
-Aquí se presenta evidencia de la **documentación de la API RESTful**, mostrando cómo se estructuran los endpoints, métodos, parámetros y ejemplos de uso, con el fin de facilitar la integración y el mantenimiento.  
+<img src="./resources/restful-evidence-1.png">
 
 
-### 5.2.7. Team Collaboration Insights  
+## Configuración de la Máquina Virtual en Azure
+
+![Configuración Básica de VM](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.41.36.png)
+
+La imagen muestra la configuración inicial de la Máquina Virtual de Azure para el despliegue del backend de FrostLink. Se puede observar la selección de Ubuntu Server 24.04 LTS como sistema operativo, la configuración de zona de disponibilidad, y la selección del tamaño Standard_E2s_v3 con 2 vCPU y 16 GiB de memoria. Esta configuración proporciona los recursos necesarios para ejecutar eficientemente el servicio backend de FrostLink en un entorno de producción.
+
+## Configuración de Red y Seguridad
+
+![Configuración de Red](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.42.58.png)
+
+Esta captura muestra la configuración de red de la VM de FrostLink, incluyendo la dirección IP pública (40.82.177.111) y privada (10.0.0.4), así como las reglas del Network Security Group que permiten el tráfico SSH en el puerto 22 y el tráfico HTTP en el puerto 8080 para el backend de FrostLink. La configuración de red es fundamental para garantizar la accesibilidad del servicio desde internet mientras se mantiene la seguridad apropiada.
+
+## Vista General de la VM de FrostLink
+
+![Vista General VM](./resources/WhatsApp%20Image%202025-10-05%20at%2014.38.58.jpeg)
+
+La imagen presenta una vista general de la Máquina Virtual de FrostLink en el portal de Azure, mostrando el estado detenido de la VM, la información de recursos asignados (Standard D4s v3 con 4 vCPU y 16 GiB de memoria), y los detalles de conectividad de red. Esta vista confirma la configuración básica de la infraestructura antes del despliegue del servicio backend.
+
+## Configuración de PM2 para Auto-inicio
+
+![Configuración PM2 Startup](./resources/WhatsApp%20Image%202025-10-05%20at%2015.11.52.jpeg)
+
+Esta captura muestra la configuración de PM2 para el auto-inicio del backend de FrostLink. Se puede observar la ejecución del comando `pm2 startup` que detecta systemd como sistema de inicio y genera el script necesario para que el servicio de FrostLink se inicie automáticamente al reiniciar la VM. La configuración incluye las variables de entorno correctas y los permisos apropiados para el usuario backendadmin.
+
+## Inicialización del Servicio FrostLink
+
+![Inicialización del Servicio](./resources/WhatsApp%20Image%202025-10-05%20at%2015.13.01.jpeg)
+
+La imagen muestra el proceso de inicialización del servicio backend de FrostLink utilizando PM2. Se puede observar la carga de variables de entorno desde el archivo .env, la configuración del entorno de producción, y la inicialización de la base de datos con las migraciones correspondientes. El servicio se configura para ejecutarse en el puerto 8080 y conectarse a la base de datos local.
+
+## Monitoreo de Logs del Servicio
+
+![Monitoreo de Logs](./resources/WhatsApp%20Image%202025-10-05%20at%2015.15.16.jpeg)
+
+Esta captura muestra el monitoreo en tiempo real de los logs del servicio backend de FrostLink utilizando PM2. Se pueden observar los logs de inicialización de la base de datos, la ejecución exitosa de las migraciones, y la confirmación de que el servidor está corriendo correctamente. El monitoreo de logs es esencial para el diagnóstico y mantenimiento del servicio en producción.
+
+## Verificación del Estado del Servicio
+
+![Estado del Servicio](./resources/WhatsApp%20Image%202025-10-10%20at%2011.24.18.jpeg)
+
+La imagen final muestra la verificación del estado del servicio backend de FrostLink después de un reinicio de la VM. Se puede observar que el servicio se ha reiniciado automáticamente y está funcionando correctamente, con un uso de memoria de 76.2mb y estado "online". Esta verificación confirma que la configuración de auto-inicio funciona correctamente y que el servicio de FrostLink mantiene su disponibilidad incluso después de reinicios del sistema.
+
+---
+
+## Enlaces de Acceso al Servicio
+
+### API Backend de FrostLink
+- **Endpoint Principal**: http://40.82.177.111:8080
+- **Documentación Swagger UI**: http://40.82.177.111:8080/index.html
+
+El servicio backend de FrostLink está disponible públicamente a través de la dirección IP de la VM de Azure, permitiendo el acceso a todos los endpoints de la API y la documentación interactiva de Swagger.
+
+---
+
+## Proceso de Despliegue Completado
+
+El despliegue del servicio backend de FrostLink en Azure VM se ha completado exitosamente, incluyendo:
+
+1. **Configuración de Infraestructura**: VM con Ubuntu Server 24.04 LTS y recursos apropiados
+2. **Configuración de Red**: Reglas de seguridad y conectividad para el puerto 8080
+3. **Instalación de Dependencias**: Node.js, PM2 y configuración del entorno
+4. **Configuración de Auto-inicio**: PM2 configurado para reiniciar automáticamente el servicio
+5. **Verificación de Funcionamiento**: Servicio operativo y monitoreado correctamente
+
+El servicio backend de FrostLink está ahora desplegado y funcionando en Azure, con alta disponibilidad y capacidad de auto-recuperación ante reinicios del sistema.
+
+
+
+
+# 5.2.7. RESTful API Documentation
+
+Aquí se presenta evidencia de la documentación de la API RESTful, mostrando cómo se estructuran los endpoints, métodos, parámetros y ejemplos de uso, con el fin de facilitar la integración y el mantenimiento.
+
+## Interfaz Principal de Swagger UI
+
+![Swagger UI Principal](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.09.jpeg)
+
+La imagen muestra la interfaz principal de Swagger UI para la API de FrostLink Platform. Se puede observar el encabezado con el logo de Swagger, la selección de la definición "FrostLink API V1", y la información básica de la API incluyendo la versión 1.0 y la especificación OAS 3.0. La sección de WorkOrders está expandida mostrando los endpoints disponibles para la gestión de órdenes de trabajo.
+
+## Endpoints de Autenticación
+
+![Endpoints de Autenticación](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.21.jpeg)
+
+Esta captura muestra los endpoints de autenticación disponibles en la API. Se presentan dos endpoints principales: POST para sign-in (iniciar sesión) y POST para sign-up (registro de usuarios). Ambos endpoints están protegidos con autenticación, como se indica por los iconos de candado, y permiten la gestión completa del ciclo de autenticación de usuarios en el sistema.
+
+## Endpoints de Usuarios
+
+![Endpoints de Usuarios](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.30.jpeg)
+
+La imagen presenta los endpoints disponibles para la gestión de usuarios. Se incluyen dos operaciones principales: GET para obtener un usuario específico por ID y GET para obtener todos los usuarios del sistema. Estos endpoints proporcionan la funcionalidad básica de consulta de información de usuarios, esencial para la administración del sistema.
+
+## Endpoints de Perfiles
+
+![Endpoints de Perfiles](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.49.jpeg)
+
+Esta sección muestra los endpoints relacionados con la gestión de perfiles de usuario. Se incluyen operaciones para obtener un perfil específico por ID, crear nuevos perfiles y obtener todos los perfiles del sistema. Los perfiles permiten almacenar información adicional y personalizada de los usuarios más allá de los datos básicos de autenticación.
+
+## Endpoints de Técnicos
+
+![Endpoints de Técnicos](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.16.jpeg)
+
+La imagen muestra los endpoints disponibles para la gestión de técnicos en el sistema. Se incluyen operaciones para crear técnicos, obtener todos los técnicos, obtener un técnico específico por ID y obtener la calificación promedio de un técnico. Estos endpoints son fundamentales para la gestión del personal técnico que realizará las órdenes de trabajo.
+
+## Endpoints de Equipos
+
+![Endpoints de Equipos](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.33.jpeg)
+
+Esta captura presenta una vista completa de los endpoints para la gestión de equipos. Se incluyen operaciones CRUD completas (Crear, Leer, Actualizar, Eliminar) así como operaciones específicas para gestionar parámetros de operación y lecturas de equipos. La variedad de endpoints permite un control detallado sobre todos los aspectos de los equipos en el sistema.
+
+## Endpoints de Solicitudes de Servicio
+
+![Endpoints de Solicitudes de Servicio](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.43.jpeg)
+
+La imagen muestra los endpoints disponibles para la gestión de solicitudes de servicio. Se incluyen operaciones para crear solicitudes, obtener todas las solicitudes, actualizar solicitudes existentes, asignar técnicos, agregar retroalimentación de clientes y actualizar el estado de las solicitudes. Estos endpoints cubren todo el ciclo de vida de una solicitud de servicio.
+
+## Endpoints de Órdenes de Trabajo
+
+![Endpoints de Órdenes de Trabajo](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.54.jpeg)
+
+Esta sección presenta los endpoints para la gestión de órdenes de trabajo. Se incluyen operaciones para crear órdenes de trabajo, obtener todas las órdenes, obtener una orden específica por ID, actualizar el estado de una orden y agregar detalles de resolución. Estos endpoints son centrales para la operación del sistema de gestión de mantenimiento.
+
+## Endpoints de Suscripciones
+
+![Endpoints de Suscripciones](./resources/WhatsApp%20Image%202025-10-10%20at%2013.35.02.jpeg)
+
+La imagen muestra los endpoints disponibles para la gestión de suscripciones y planes de pago. Se incluyen operaciones para crear planes de suscripción, obtener todas las suscripciones, obtener una suscripción específica, actualizar suscripciones y eliminar planes de suscripción. Estos endpoints permiten la gestión completa del modelo de negocio basado en suscripciones.
+
+## Endpoints de Analíticas
+
+![Endpoints de Analíticas](./resources/WhatsApp%20Image%202025-10-10%20at%2013.35.40.jpeg)
+
+Esta captura presenta los endpoints disponibles para el análisis de datos del sistema. Se incluyen operaciones para obtener lecturas de equipos específicos, obtener resúmenes analíticos de equipos y obtener una vista general de analíticas de múltiples equipos. Estos endpoints proporcionan las capacidades de business intelligence y análisis de rendimiento del sistema.
+
+## Esquemas de Datos - Primera Parte
+
+![Esquemas de Datos Parte 1](./resources/WhatsApp%20Image%202025-10-10%20at%2013.35.54.jpeg)
+
+La imagen muestra la primera parte de los esquemas de datos disponibles en la API. Se pueden observar recursos como AddCustomerFeedbackToServiceRequestResource, AddWorkOrderResolutionDetailsCommand, AnalyticsSummaryResource, y otros esquemas relacionados con la gestión de solicitudes, órdenes de trabajo y analíticas. Estos esquemas definen la estructura de datos utilizada en toda la API.
+
+## Esquemas de Datos - Segunda Parte
+
+![Esquemas de Datos Parte 2](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.05.jpeg)
+
+Esta captura continúa mostrando los esquemas de datos de la API. Se incluyen recursos como EServiceType, EUrgency, EWorkOrderStatus, EquipmentOperationParametersResource, y otros esquemas relacionados con enumeraciones y recursos de equipos. Estos esquemas proporcionan las definiciones de tipos de datos y estructuras utilizadas en las operaciones de la API.
+
+## Ejemplo de Endpoint GET Work Orders
+
+![Ejemplo GET Work Orders](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.24.jpeg)
+
+La imagen muestra un ejemplo detallado del endpoint GET /api/v1/work-orders para obtener todas las órdenes de trabajo. Se puede observar la estructura de respuesta con todos los campos disponibles, incluyendo información como ID, número de orden, ID de solicitud de servicio, título, descripción, fechas de creación y programación, estado, prioridad, y otros campos relevantes para la gestión de órdenes de trabajo.
+
+## Ejemplo de Endpoint POST Work Orders
+
+![Ejemplo POST Work Orders](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.35.jpeg)
+
+Esta captura muestra un ejemplo detallado del endpoint POST /api/v1/work-orders para crear nuevas órdenes de trabajo. Se puede observar la estructura del request body con campos como título, descripción, detalles del problema, ID del equipo, tipo de servicio, dirección de servicio, prioridad, y fecha programada. También se muestra la respuesta exitosa con todos los campos de la orden de trabajo creada.
+
+## Ejemplo de Endpoint PATCH Work Order Status
+
+![Ejemplo PATCH Work Order Status](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.56.jpeg)
+
+La imagen muestra un ejemplo detallado del endpoint PATCH /api/v1/work-orders/{workOrderId}/status para actualizar el estado de una orden de trabajo. Se puede observar la estructura del request body con el campo newStatus, los parámetros requeridos (workOrderId), y la respuesta exitosa que incluye todos los detalles de la orden de trabajo actualizada. Este endpoint es crucial para el seguimiento del progreso de las órdenes de trabajo.
+
+
+
+
+### 5.2.8. Team Collaboration Insights  
 En esta sección se incluyen evidencias de la **colaboración del equipo**, tales como el uso de control de versiones, tableros de tareas, discusiones técnicas y flujos de trabajo compartidos que permitieron coordinar el desarrollo.  
 
-# Video About-the-Product
+Claro, aquí tienes la tabla en formato Markdown sin el resaltado.
+
+Claro, aquí tienes la tabla llenada con los nombres que proporcionaste.
+
+He asignado las actividades existentes a los nuevos alumnos en el orden que los presentaste. Como había un alumno más que actividades, la última fila no tiene una actividad asignada.
+
+| Alumno | Actividad |
+| :--- | :--- |
+| León Vivas, Fabrizio Amir | Capítulo I: Startup Profile (1.1, 1.2 y 1.3). |
+| Medina Cruzado, Raúl Adrian | Capítulo II: Requirements Elicitation & Analysis (2.1 – 2.4). |
+| Mondoñedo Rodriguez, Juan Diego Javier | Capítulo IV: Product Design (Documentación y elaboración de Landing Page y Mobile Applications UX/UI Design). |
+| Pereira Vasquez, Fabrizzio | Capítulo V: Product Implementation & Deployment (5.1 – 5.2). |
+| Varela Bustinza, Marcelo Alessandro | Capítulo VI: Product Verification & Validation (6.1 - 6.2) |
+
+## 5.3. Video About-the-Product
 A continuación se encuentra nuestro video about the product, donde se evidencia la explicacion sobre los principales features, sustentacion de diseño  y proposito de la aplicacion.
 
 **Título:** ``
 <td><img src="resources/aboutTheProduct.png" alt="Screenshot del video about the product"></td>
 
-
-
 - **YouTube:** [Ver en YouTube]()
 - **Microsoft Stream:** [Ver video]()
 
+# Capítulo VI: Product Verification & Validation
+
+## 6.1. Testing Suites & Validation
+
+### 6.1.1. Core Entities Unit Tests.
+
+Para asegurar la robustez y el correcto funcionamiento de los componentes centrales del sistema, se implementó una rigurosa estrategia de pruebas unitarias. El objetivo principal fue verificar el comportamiento esperado de cada agregado (User, Provider y Machine) de forma completamente aislada, validando su ciclo de vida y la lógica de negocio que encapsulan.
+
+La implementación se apoyó en el ecosistema de Spring Boot, utilizando JUnit 5 como pilar para la estructuración y ejecución de los casos de prueba. Adicionalmente, se integró el framework Mockito para simular las dependencias externas de cada entidad. Este enfoque nos permitió crear un entorno de prueba controlado, garantizando que las validaciones se centraran exclusivamente en la lógica interna de la clase bajo prueba —como sus constructores, métodos de modificación de estado y validaciones— sin la interferencia de otros componentes. Las suites de pruebas, como InvoiceTest, InventoryItemTest y PatientTest, fueron diseñadas para auditar estas operaciones y asegurar la integridad del código desde las primeras etapas del desarrollo.
+
+#### **Test 1: Pruebas del Modelo User (IAM)**
+Descripción
+Pruebas unitarias que validan el comportamiento del agregado User del bounded context IAM, incluyendo creación, actualización de username, password y suscripción.
+**Casos de prueba**
+
+* Creación de usuario con datos válidos.
+
+* Actualización de username.
+
+* Actualización de password hash.
+
+* Asignación de suscripción.
+
+* Manejo de suscripción nula.
+
+**Cobertura**
+
+* Modelo: User.cs
+
+**Evidencia de Ejecución**
+Código de Pruebas Unitarias para UserModel
+<img src=".//resources/iam-test-evidence-1.jpg" alt="Código de pruebas para UserModelTests">
+
+**Resultado de Ejecución de Pruebas**
+<img src="./resources/iam-test-evidence-2.jpg" alt="Resultado de la ejecución de UserModelTests">
+
+#### Test 2: Pruebas del Modelo ServiceRequest
+Descripción
+Pruebas que verifican el comportamiento del modelo ServiceRequest, incluyendo asignación de técnicos, cambios de estado y validación de feedback de clientes.
+
+Casos de prueba
+
+Creación con datos válidos y estado inicial Pending.
+
+Asignación de técnico (estado pasa a Accepted).
+
+Validación de ID de técnico (debe ser positivo).
+
+Cambio de estado a Resolved con fecha de completado.
+
+Agregar feedback del cliente cuando está resuelto.
+
+Validación de rating (1-5).
+
+Cobertura
+
+Modelo: ServiceRequest.cs
+
+Bounded Context: ServiceRequests
+
+Evidencia de Ejecución
+Código de Pruebas Unitarias para ServiceRequestModel
+<img src="./resources/service.-request-model-test-evidence-2.jpg" alt="Código de pruebas para ServiceRequestModelTests">
+
+Resultado de Ejecución de Pruebas
+<img src="./resources/service-evidence-1.jpg" alt="Resultado de la ejecución de ServiceRequestModelTests">
+
+#### Test 3: Pruebas del HashingService
+Descripción
+Pruebas para el servicio de hashing de contraseñas usando BCrypt, validando la generación de hashes seguros y verificación correcta de credenciales.
+
+Casos de prueba
+
+Generación de hash de contraseña.
+
+Verificación de contraseña correcta.
+
+Rechazo de contraseña incorrecta.
+
+Hashes únicos con salt aleatorio (BCrypt).
+
+Manejo de caracteres especiales.
+
+Cobertura
+
+Servicio: HashingService.cs
+
+Bounded Context: IAM
+
+Librería: BCrypt.Net-Next
+
+Evidencia de Ejecución
+Código de Pruebas Unitarias para HashingService
+<img src="./resources/service-evidence.2.jpg" alt="Código de pruebas para HashingServiceTests">
+
+Resultado de Ejecución de Pruebas
+<img src="./resources/hashing-service-test-evidence-1.jpg" alt="Código de pruebas para HashingServiceTests">
+
+#### Test 4: Pruebas del Modelo Equipment
+Descripción
+Pruebas unitarias para el agregado Equipment del bounded context EquipmentManagement, validando la creación correcta de equipos de refrigeración con sus propiedades complejas.
+
+Casos de prueba
+
+Creación con CreateEquipmentCommand válido.
+
+Validación de datos básicos (nombre, modelo, fabricante, costo).
+
+Configuración correcta de Location (entidad).
+
+Configuración correcta de EnergyConsumption (entidad).
+
+Parsing correcto de enums (Type, OwnershipType).
+
+Cobertura
+
+Modelo: Equipment.cs
+
+Entidades: Location.cs, EnergyConsumption.cs
+
+Bounded Context: EquipmentManagement
+
+Evidencia de Ejecución
+Código de Pruebas Unitarias para EquipmentModel
+<img src="./resources//equipment-model-test-evidence-2.jpg" alt="Código de pruebas para EquipmentModelTests">
+
+Resultado de Ejecución de Pruebas
+<img src="./resources/equipment-model-test-evidence-1.jpg" alt="Resultado de la ejecución de EquipmentModelTests">
+
+#### Test 5: Pruebas de Lógica de Negocio (ServiceRequest)
+Descripción
+Pruebas complejas de reglas de negocio y validaciones para el flujo de trabajo de ServiceRequest, incluyendo transiciones de estado y restricciones.
+
+Casos de prueba
+
+Restricción: técnico solo se asigna si está Pending.
+
+Cancelación permitida cuando está InProgress.
+
+Restricción: no cancelar si está Resolved.
+
+Creación de solicitud de emergencia con prioridad alta.
+
+Agregar detalles de resolución con costo.
+
+Restricción: feedback solo si está Resolved.
+
+Rechazo permitido solo cuando está Pending.
+
+Restricción: no rechazar si está InProgress.
+
+Cobertura
+
+Modelo: ServiceRequest.cs
+
+Métodos: AssignTechnician, Cancel, Reject, AddResolutionDetails, AddCustomerFeedback
+
+Bounded Context: ServiceRequests
+
+Evidencia de Ejecución
+Código de Pruebas de Lógica de Negocio para ServiceRequest
+<img src="./resources/service-request-business-logic-test-evidence-2.jpg" alt="Código de pruebas para ServiceRequestBusinessLogicTests">
+
+Resultado de Ejecución de Pruebas
+<img src="./resources/service-request-business-evidence-1.jpg"> 
+
+
+###  6.1.2. Core Integration Tests.
+
+<img src="./resources/integrantion-test.jpg"
+
+### 6.1.3. Core Behavior-Driven Development
+
+Con el objetivo de validar el comportamiento esperado del sistema **FrostLink** desde la perspectiva del usuario final, se desarrollaron escenarios de prueba utilizando *Behavior-Driven Development* (BDD), mediante la sintaxis Gherkin e implementación con **SpecFlow**.
+
+Las funcionalidades definidas corresponden a tres flujos esenciales del sistema:
+* Autenticación y Usuario
+* Gestión de Solicitudes de Servicio
+* Gestión de Equipos
+
+Cada flujo representa un proceso clave dentro de la operación de la plataforma, garantizando la coherencia entre la experiencia del usuario (tanto del cliente como del proveedor) y la lógica de negocio implementada.
+
+#### Escenario probado 1: Autenticación y Usuario
+
+La funcionalidad validada corresponde al flujo de autenticación básica del sistema, cubriendo el registro, inicio de sesión y posterior acceso a las funcionalidades internas de la aplicación.
+
+Este escenario simula una experiencia realista del propietario de un negocio desde su primer contacto con la plataforma, verificando que pueda registrarse correctamente, autenticarse y acceder al panel principal para gestionar sus equipos de refrigeración.
+
+En la ejecución se evidenció que:
+* Se ejecutaron correctamente todos los pasos definidos en el *feature*.
+* El escenario pasó sin errores (1 escenario ejecutado – 1 escenario aprobado).
+* Los logs de **Entity Framework Core** mostraron operaciones reales sobre la base de datos (INSERT y SELECT), demostrando la correcta interacción con el entorno de prueba.
+
+Este caso garantiza que el proceso de autenticación sea confiable, fluido y seguro, cumpliendo con las políticas de acceso definidas en **FrostLink**.
+
+#### Escenario probado 2: Gestión de Solicitudes de Servicio
+
+La funcionalidad probada cubre el flujo completo de administración de solicitudes de servicio, incluyendo la creación de una solicitud por falla, la asignación de un técnico y la verificación del cambio de estado.
+
+El escenario reproduce el comportamiento esperado de un cliente autenticado que reporta un problema con uno de sus equipos, asegurando la integridad de los datos y el cumplimiento de las reglas de negocio.
+
+Durante la prueba se observó que:
+* Se ejecutaron satisfactoriamente todos los pasos del escenario.
+* El sistema realizó operaciones `INSERT` y `UPDATE` sobre la base de datos, verificadas mediante los logs de EF Core.
+* Los resultados demostraron que la aplicación responde adecuadamente a cada acción del usuario, mostrando mensajes de validación y actualizando el estado de la solicitud en tiempo real.
+
+Con este escenario se valida que el módulo de solicitudes de servicio funciona de manera estable, brindando una experiencia de uso coherente y eficaz para los usuarios de la plataforma.
+
+#### Escenario probado 3: Gestión de Equipos
+
+La funcionalidad evaluada se centra en la administración de equipos de refrigeración, abarcando la visualización, registro y edición de sus detalles en el sistema.
+
+El objetivo principal fue comprobar que las operaciones realizadas desde la interfaz del cliente se reflejen correctamente en la base de datos y que los cambios se mantengan consistentes durante todo el proceso.
+
+En la ejecución se confirmó que:
+* Todos los pasos definidos en el *feature* fueron ejecutados exitosamente.
+* El escenario pasó sin errores (1 escenario ejecutado – 1 escenario aprobado).
+* Las operaciones `INSERT`, `UPDATE` y `SELECT` se realizaron correctamente, reflejando un flujo de interacción estable entre el sistema y la base de datos.
+
+Este caso valida que el módulo de equipos de **FrostLink** garantiza una gestión confiable de la información de los activos de refrigeración, asegurando la integridad de los datos registrados.
+
+
+#### Herramientas utilizadas
+
+* **Gherkin / SpecFlow** → Para la definición y ejecución de los escenarios BDD en el ecosistema .NET.
+* **.NET + xUnit + EF Core In-Memory Database** → Para la ejecución controlada de los pasos de prueba en un entorno aislado.
+* **Entity Framework Core (EF Core)** → Para la persistencia y trazabilidad de las operaciones sobre la base de datos durante las pruebas.
+
+
+
+# Capítulo VII: DevOps Practices
+
+## 7.1. Continuous Integration
+
+### 7.1.1. Tools and Practices.
+
+La práctica de Continuous Integration (CI) en **FrostLink** consiste en integrar con la mayor frecuencia posible los cambios realizados por los desarrolladores en la rama principal del repositorio —generalmente `main`—, verificando de forma automática que dichas modificaciones mantengan la calidad, seguridad y funcionalidad del sistema.
+
+Al automatizar los procesos de compilación, ejecución de pruebas y análisis de código, CI proporciona un ciclo de retroalimentación rápido, reduce la acumulación de defectos y fomenta una cultura de mejora continua y entrega confiable.
+
+En el contexto del proyecto **FrostLink**, desarrollado con **.NET** y **C#**, la integración continua actúa como un mecanismo preventivo ante vulnerabilidades, fallos lógicos y problemas de compatibilidad entre los módulos del sistema (como la gestión de equipos, el monitoreo de sensores, las órdenes de trabajo y la autenticación).
+
+Con este propósito, se implementó un pipeline de CI que cubre todas las fases —desde el commit hasta la generación del artefacto contenedor—, priorizando los siguientes objetivos:
+
+* **Reproducibilidad:** builds deterministas con dependencias declaradas y entornos estandarizados.
+* **Seguridad temprana (shift left):** detección de vulnerabilidades en código y librerías antes de llegar a producción.
+* **Velocidad y visibilidad:** ejecución paralela de jobs, caché de dependencias y métricas disponibles en tiempo real.
+* **Artefactos listos para CD:** imágenes Docker firmadas y versionadas, listas para despliegue en entornos sucesivos (desarrollo → staging → producción).
+
+A continuación, se describen las herramientas y buenas prácticas adoptadas dentro del pipeline de Integración Continua de **FrostLink**.
+
+#### Control de versiones – Git + GitHub
+
+El código fuente de **FrostLink** se gestiona mediante Git bajo una estrategia de ramas cortas derivadas de `main`. Cada modificación se versiona y audita (historial, diferencias, autores) garantizando trazabilidad completa.
+
+En GitHub, se implementan Pull Requests con revisiones obligatorias, políticas de rama y protección de merges. Cada `push` o PR desencadena automáticamente la ejecución del pipeline CI a través de webhooks, asegurando que toda contribución sea verificada antes de integrarse a la rama principal.
+
+#### Orquestador CI – GitHub Actions
+
+El pipeline de **FrostLink** se orquesta mediante GitHub Actions, utilizando workflows definidos en YAML directamente dentro del repositorio. Los runners hospedados ejecutan los jobs en entornos preconfigurados con el **SDK de .NET**, permitiendo paralelizar tareas como compilación, pruebas y análisis de calidad.
+
+Los disparadores `on: [push, pull_request]` garantizan que cada commit genere un build reproducible y resultados inmediatos. Además, el uso de **cachés de NuGet** reduce significativamente los tiempos de compilación en ejecuciones sucesivas.
+
+#### Build & Dependency Management – .NET SDK + NuGet
+
+El proyecto se compila y empaqueta mediante el **SDK de .NET**, utilizando comandos como `dotnet build` y `dotnet test` para validar la build completa. Se emplean archivos de configuración que fijan la versión exacta del SDK, asegurando que tanto los entornos locales como los runners de CI utilicen configuraciones idénticas.
+
+El archivo de proyecto (`.csproj`) declara versiones explícitas de dependencias a través de **NuGet**, garantizando builds deterministas y permitiendo auditorías de licencias, vulnerabilidades o incompatibilidades.
+
+#### Pruebas automatizadas – xUnit + Moq
+
+El pipeline ejecuta pruebas unitarias y de integración como parte del proceso CI:
+* **xUnit** y **Moq** se utilizan para pruebas unitarias en memoria, enfocadas en lógica de negocio (autenticación, gestión de equipos de refrigeración, validaciones de sensores y alertas).
+* En un job independiente, se ejecutan pruebas de integración mediante **Testcontainers**, levantando servicios reales como una base de datos PostgreSQL en contenedores efímeros.
+
+Se establece un umbral mínimo de cobertura del 80 %, y las pruebas más lentas se etiquetan para permitir su ejecución paralela sin afectar el tiempo total del pipeline.
+
+#### Análisis de código – SonarQube + .NET Analyzers
+
+La calidad del código se evalúa mediante **SonarQube**, que centraliza métricas sobre *code smells*, duplicaciones y vulnerabilidades. El job “Quality Gate” impide que los merges continúen si se detectan issues de severidad `blocker` o `critical`.
+
+Como medidas complementarias:
+* **Roslyn Analyzers** y **StyleCop** verifican el cumplimiento de las normas de estilo y convenciones de código de C#.
+* Los analizadores de seguridad integrados detectan patrones de código potencialmente inseguros.
+
+Aplicar la política de *fail-fast* en esta etapa evita la acumulación de deuda técnica y promueve la calidad continua del código.
+
+#### Escaneo de dependencias
+
+Cada ejecución del pipeline realiza un escaneo de vulnerabilidades (CVE) sobre el árbol de dependencias **NuGet**. Si se detecta una librería afectada, la build falla automáticamente y se adjunta un reporte detallado al Pull Request, evitando que código inseguro llegue a producción.
+
+Esta práctica se alinea con el principio de seguridad desde el diseño (*Security by Design*), priorizando la detección temprana de riesgos.
+
+#### Empaquetado y contenedores
+
+Una vez superadas las pruebas y validaciones, el sistema **FrostLink** se empaqueta dentro de una imagen **Docker** multi-arquitectura (amd64/arm64) utilizando Buildx. Las imágenes se etiquetan con un esquema de versionado semántico y el hash corto del commit (por ejemplo, `v1.3.0-gabcdef`).
+
+Se aplican buenas prácticas como:
+* Uso de imágenes base inmutables y usuarios no-root.
+* Ejecución de `docker scan` para verificar vulnerabilidades en las capas base.
+
+De esta forma, se obtiene un artefacto seguro, portable y listo para despliegue en entornos de Continuous Delivery (CD).
+
+#### Registro de artefactos
+
+Las imágenes Docker se publican en un registro privado de contenedores (como GitHub Container Registry o Azure Container Registry), desde donde se promueven entre los distintos entornos (desarrollo → staging → producción) sin necesidad de reconstrucción.
+
+Se aplica una política de retención automática para eliminar versiones obsoletas, y las imágenes se firman digitalmente con herramientas como **Cosign** para garantizar su integridad y autenticidad.
+
+#### Feedback y reporting
+
+El pipeline de **FrostLink** incluye mecanismos de visibilidad y retroalimentación continua:
+* *Badges* de estado de build y cobertura se muestran en el `README.md`.
+* Cada ejecución del pipeline notifica al canal `#devops` con duración, resultado y métricas de rendimiento (DORA Metrics: frecuencia de despliegue, MTTR y ratio de fallos).
+
+Esta transparencia fomenta la cultura DevOps dentro del equipo, facilitando una detección temprana de errores y una mejora continua en la calidad del software.
+
+### 7.1.2. Build & Test Suite Pipeline Components.
+
+Para garantizar un código de calidad que sea validado antes de las fases de entrega haremos uso de un pipeline diseñado con enfoque en la integración continua. Este pipeline contará con tres etapas.
+
+- Checkout & Install: se realiza el setup del proyecto al descargar el repositorio desde GitHub e instalar las dependencias necesarias para la compilación y ejecución del código en el entorno.
+- Build Stage: se desarrolla y compila el frontend (en Angular), el backend (en Node.js) y la generación de imágenes (en Docker) que se mantendrán consistentes en los diversos entornos de ejecución.
+- QA & Linting: se realizan procesos de verificación de calidad mediante el análisis estático del código, linting, y prouebas automatizadas para detectar errores o vulnerabilidades.
+- Report & Feedback: se documentan los resultados de las etapas anteriores y se comparten con el equipo para obtener retroalimentación inmediata sobre el estado del build.
+- Artifact Storage: se almacenan en un registro seguro los bundles y artefactos generados para que puedan ser reutilizados en etapas del pipeline de Continuous Delivery.
+
+## 7.2. Continuous Delivery
+
+### 7.2.1. Tools and Practices
+
+Para lograr un Continuous Delivery en FrostLink haremos uso de una serie de herramientas y prácticas que garantizan una alta calidad en el software al mismo tiempo que se mantiene una frecuencia de entregas periódica:
+
+- Control de versiones: Aplicaremos el flujo de GitFlow para mantener separación entre los entornos de desarrollo, staging y producción.
+
+- CI/CD: Aprovecharemos Github Actions para integrar las fases de compilación, pruebas y despliegue automático en entornos de staging.
+
+- Contenedorización: Mediante Docker para empaquetar el backend y el frontend web, asegurando consistencia.
+
+- Infraestructura como código: Configuración de entornos en Docker Compose y scripts automatizados para levantar dependencias.
+
+- Testing automatizado: Integraremos pruebas unitarias e integrales como paso obligatorio antes de que se realice el despliegue.
+
+- Entornos de staging: Utilizaremos servicios como Firebase para pruebas previas al despliegue en producción.
+
+### 7.2.2. Stages Deployment Pipeline Components
+
+Estructuraremos nuestro pipeline de entrega continua en 5 etapas progresivas.
+A continuación detallaremos las tareas que se realizaran en cada de una de estas etapas:
+
+- **Build Stage**
+  - Compilación del frontend y empaquetado del backend en Docker.
+  - Verificación de dependencias y versiones.
+
+- **Testing Stage**
+  - Ejecución de pruebas unitarias e integración.
+  - Validación de endpoints de la API.
+
+- **Package & Registry Stage**
+  - Generación de imágenes Docker.
+  - Publicación en GitHub Container Registry.
+
+- **Staging Deployment Stage**
+  - Despliegue automático en entorno staging.
+  - Pruebas manuales de QA por el equipo.
+
+- **Approval/Gate**
+  - Validación por parte del equipo antes de pasar a producción.
+
+## 7.3. Continuous deployment
+
+En FrostLink, adoptaremos el Continuous Deployment de forma parcial:
+
+Para la landing page y el frontend web, cada commit en la rama main que pase todas las pruebas se desplegará automáticamente en producción mediante Firebase.
+
+Para el backend o API, el despliegue se realizará automáticamente en Azure luego de que se realicen las pruebas de integración y estas resulten exitosas.
+
+Para la aplicación móvil buscaremos un enfoque híbrido, priorizando mantener una distribución continua hacia testers mediante Firebase App Distribution y TestFlight.
+
+### 7.3.1. Tools and Practices
+
+Las herramientas y prácticas que emplearemos para el Continuous Deployment serán:
+
+- GitHub Actions: con workflows separados para frontend, backend y aplicaciones móviles.
+- Firebase Hosting: para el deployment de nuestra aplicacion web.
+- Microsoft Azure: para desplegar nuestro backend el cual previamente sera dockerizado.
+- Docker: para contenerización.
+- Firebase App Distribution y TestFlight: para el deploy de nuestra aplicación móvil.
+- Blue-Green Deployment: estrategia de despliegue de dos entornos para minimizar riesgos de producción.
+- Rollbacks: empleados en caso de fallas detectadas en produccion.
+- Monitoreo y login: integrando las aplicaciones con servicios como Google Analytics o Firebase Crashlytics.
+- Zero-downtime deployment: mediante contenedores y balanceo de carga en el backend.
+
+### 7.3.2. Production Deployment Pipeline Components.
+
+El Production Deployment Pipeline representa la secuencia automatizada de procesos que permiten llevar una aplicación desde su entorno de desarrollo hasta su despliegue en producción de forma segura, eficiente y controlada. A continuación se describen los pasos que conforman este pipeline para FrostLink:
+
+* **Gestión del código fuente**: El proyecto se gestiona en un repositorio de GitHub, donde cada commit o merge a la rama `main` activa automáticamente la ejecución del pipeline en **GitHub Actions**, que procede a clonar el repositorio.
+
+* **Compilación y Empaquetado**: **GitHub Actions** realiza el proceso de compilación utilizando el **SDK de .NET**, resolviendo las dependencias de **NuGet** declaradas en el backend. Una vez compilado, el artefacto se empaqueta en una imagen **Docker**, creando una unidad de despliegue portable y consistente.
+
+* **Validación Automatizada**: **GitHub Actions** ejecuta las suites de pruebas unitarias e integrales para verificar la funcionalidad del sistema. Si alguna prueba falla, el pipeline se detiene y se notifica al equipo de desarrollo, impidiendo que el código defectuoso avance.
+
+* **Despliegue a Producción**: Una vez que la imagen Docker ha superado todas las validaciones, **GitHub Actions** procede a realizar el despliegue del contenedor en el entorno de producción, alojado en **Microsoft Azure**. Se utilizan estrategias como Blue-Green Deployment para minimizar el tiempo de inactividad y permitir rollbacks rápidos en caso de ser necesario.
+
+
 # Conclusiones
 
-Se validó la alineación problema–solución mediante investigación con usuarios y análisis competitivo, definiendo con claridad segmentos objetivo y oportunidades de valor.
+El proyecto FrostLink permitió el desarrollo de una plataforma integral de gestión y monitoreo de equipos de refrigeración, diseñada para satisfacer las necesidades tanto de clientes
+como de empresas proveedoras. A lo largo del trabajo parcial se logró conceptualizar, diseñar y prototipar la aplicación web y móvil, aplicando metodologías de diseño centradas en el
+usuario y principios de arquitectura de software moderna.
 
-La especificación (As-Is/To-Be, user stories, backlog e impact mapping) aseguró trazabilidad desde necesidades del usuario hasta funcionalidades priorizadas.
+Se inició con el análisis de necesidades y definición de objetivos, identificando los principales requerimientos de los usuarios y estableciendo los flujos de interacción para los
+distintos escenarios de uso. A partir de esto, se elaboraron mockups y prototipos interactivos que permitieron validar la experiencia de usuario y la navegación entre las diferentes
+secciones de la plataforma, garantizando claridad, usabilidad e interacción fluida.
 
-El diseño del producto consolidó guías de estilo y una arquitectura de información coherentes, materializadas en wireframes, flujos y mockups para web, móvil y landing.
+En cuanto a la arquitectura de software, se aplicó un enfoque de Domain Driven Design (DDD), definiendo bounded contexts para la gestión de equipos, notificaciones y órdenes de trabajo.
+Esto permitió estructurar el sistema en componentes claros y modulares, facilitando su escalabilidad y mantenimiento. Los diagramas de contexto, contenedores y componentes, junto con
+los diagramas de clases y diccionarios de entidades, reflejan la correcta organización y la interrelación entre los distintos elementos de la plataforma.
 
-Los prototipos permitieron evaluar usabilidad y reducir retrabajo antes del desarrollo, afinando interacciones clave y contenidos.
+El diseño de la base de datos consideró tanto aspectos relacionales como no relacionales, asegurando integridad y consistencia en la información almacenada. La implementación de
+entidades como Cliente, Empresa, Equipo, Cuenta, Solicitud y Notificación permitió gestionar de manera eficiente usuarios, equipos y comunicaciones, integrando funcionalidades clave
+como monitoreo en tiempo real, reportes analíticos y gestión de mantenimientos.
 
-La arquitectura basada en DDD y diagramas C4, junto con el diseño orientado a objetos, favorece mantenibilidad, escalabilidad e integración con servicios externos.
+La implementación de la aplicación web y móvil incluyó la configuración de entornos de desarrollo, control de versiones con GitFlow, y adopción de buenas prácticas de codificación
+en HTML, CSS, JavaScript y frameworks modernos. Se desarrollaron interfaces intuitivas para registro, inicio de sesión, dashboards, gestión de equipos y análisis de métricas, así
+como funcionalidades de contacto, notificaciones y administración de cuentas. La comunicación entre front-end y back-end se realizó mediante una API RESTful desplegada en Azure,
+validada con Postman y asegurando interoperabilidad y confiabilidad en la transmisión de datos.
 
-El modelo de datos (relacional/no relacional) respalda los casos de uso actuales y futuros, equilibrando consistencia, rendimiento y analítica.
-
-La implementación aplicó buenas prácticas de ingeniería (configuración de entorno, control de versiones, convenciones de código, despliegue y documentación de API).
-
-La colaboración del equipo, con roles claros y revisión continua, aceleró la toma de decisiones y aseguró calidad en los entregables.
-
-Se consideraron accesibilidad, privacidad, seguridad y responsabilidad ética, reforzando la confiabilidad y la inclusión del producto.
-
-El conjunto de avances deja bases sólidas para un piloto en producción y un camino claro de mejora continua.
+Se incorporaron también prácticas de DevOps y CI/CD, con despliegue de la landing page y front-end en Netlify, uso de contenedores Docker para backend y front-end, automatización de builds
+y pruebas, y estrategias de despliegue continuo que permiten mantener alta disponibilidad y control de versiones. Además, se consideraron aspectos de seguridad, confidencialidad y respaldo
+de datos, cumpliendo con estándares de protección de información.
 
 # Anexo
 
-//- Repositorio Landing Page: [Enlace](https://github.com/Prime-Fixers/Landing-Page)
-//- Repositorio del Front-End: [Enlace](https://github.com/Prime-Fixers/Frontend)
-//- Repositorio del Back-End: [Enlace](https://github.com/Prime-Fixers/Platform)
+- Repositorio del Report: [Enlace](https://github.com/Prime-Fixers/Project-Report)
+- Repositorio Landing Page: [Enlace](https://github.com/Prime-Fixers/Landing-Page)
+- Repositorio del Front-End: [Enlace](https://github.com/Prime-Fixers/Frontend)
+- Repositorio del Back-End: [Enlace](https://github.com/Prime-Fixers/Platform)
+- Repositorio del mobile application: [Enlace](https://github.com/Prime-Fixers/Mobile)
 
 # Bibliografía
 
