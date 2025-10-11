@@ -202,6 +202,72 @@
                 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Conclusiones</p>
             </td>
         </tr>
+      <tr>
+            <td>TP1</td>
+            <td>11/09/2025</td>
+            <td>
+                <ul>   
+                    <li>León Vivas, Fabrizio Amir</li>
+                    <li>Medina Cruzado, Raúl Adrian</li>
+                    <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
+                     <li>Pereira Vasquez, Fabrizzio</li>
+                    <li>Varela Bustinza, Marcelo Alessandro</li>
+                </ul>
+            </td>
+<td>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Part II: Verification, Validation & Pipeline</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VI: Product Verification & Validation</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1. Testing Suites & Validation</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.1. Core Entities Unit Tests.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.2. Core Integration Tests.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.3. Core Behavior-Driven Development</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.4. Core System Tests.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2. Static testing & Verification</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1. Static Code Analysis</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1.1. Coding standard & Code conventions.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1.2. Code Quality & Code Security.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.2. Reviews</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3. Validation Interviews.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.1. Diseño de Entrevistas.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.2. Registro de Entrevistas.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.3. Evaluaciones según heurísticas.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4. Auditoría de Experiencias de Usuario</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1. Auditoría realizada.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.1. Información del grupo auditado.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.2. Cronograma de auditoría realizada.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.3. Contenido de auditoría realizada.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2. Auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.1. Información del grupo auditor.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.2. Cronograma de auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.3. Contenido de auditoría recibida.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.4. Resumen de modificaciones para subsanar hallazgos.</p>
+
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VII: DevOps Practices</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1. Continuous Integration</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.2. Build & Test Suite Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2. Continuous Delivery</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.2. Stages Deployment Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3. Continuous deployment</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.1. Tools and Practices.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.2. Production Deployment Pipeline Components.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4. Continuous Monitoring</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.1. Tools and Practices</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.2. Monitoring Pipeline Components</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.3. Alerting Pipeline Components</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.4. Notification Pipeline Components.</p>
+
+</td>
+      </tr>
     </tbody>
 </table>
 
@@ -255,13 +321,13 @@ Para la elaboración deJmondonedorl informe correspondiente a la entrega del TB1
 
 Para la elaboración del informe correspondiente a la entrega del TP1, se realizó una división del trabajo, asignando a cada integrante del equipo la implementación de secciones específicas desde el capítulo III hasta el capitulo VII y levantando las correcciones del anterior entregable TB1.
 
-| Integrantes                                 | Tareas Asignadas |
-|---------------------------------------------|------------------|
-| León Vivas, Fabrizio Amir                   |                  |
-| Medina Cruzado, Raúl Adrian                 |                  |
-| Mondoñedo Rodriguez, Juan Diego Javier      |                  |
-| Pereira Vasquez, Fabrizzio                  |                  |
-| Varela Bustinza, Marcelo Alessandro         |                  |
+| Integrantes                            | Tareas Asignadas                                                                                                                                                                                                                           |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| León Vivas, Fabrizio Amir              | **6.1 Testing Suites & Validation**: 6.1.1 Unit Tests (Core Entities), 6.1.2 Integration Tests, 6.1.3 BDD (escenarios Gherkin), 6.1.4 System Tests; plan de pruebas, datos semilla y cobertura.                                            |
+| Medina Cruzado, Raúl Adrian            | **6.2 Static Testing & Verification**: 6.2.1 Análisis estático (estándares y convenciones; calidad y seguridad con Sonar/linters/OWASP), 6.2.2 Reviews (checklists, registro de hallazgos y PRs).                                          |
+| Mondoñedo Rodriguez, Juan Diego Javier | **6.3 Validation Interviews**: 6.3.1 Diseño de entrevistas (guion y criterios), 6.3.2 Registro (matriz de respuestas y evidencias), 6.3.3 Evaluación por heurísticas (Nielsen, severidad y recomendaciones).                               |
+| Pereira Vasquez, Fabrizzio             | **6.4 Auditoría de UX**: 6.4.1 Auditoría realizada (info del grupo auditado, cronograma, contenido); 6.4.2 Auditoría recibida (info del grupo auditor, cronograma, contenido); 6.4.2.4 Resumen de modificaciones para subsanar hallazgos.  |
+| Varela Bustinza, Marcelo Alessandro    | **Cap. VII DevOps**: 7.1 CI (herramientas y pipeline de build/test), 7.2 CD (stages y despliegue a staging), 7.3 Continuous Deployment (a producción), 7.4 Monitoring (métricas, alertas y notificaciones); diagramas y YAML del pipeline. |
 
 # Github Collaboration Insights
 
