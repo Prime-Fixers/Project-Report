@@ -1869,22 +1869,73 @@ Bajo un enfoque **nativo-móvil**, se implementan componentes específicos de ca
 
 ---
 
+### 4.1.3.1. iOS Mobile Style Guidelines
+
+## Diseño Adaptativo
+La interfaz se adapta fluidamente al ecosistema **iOS**, respetando los márgenes de seguridad, zonas táctiles y proporciones de pantalla de dispositivos como **iPhone SE**, **iPhone 13/14/15** y **iPad Mini**.  
+Los componentes se ajustan mediante **Auto Layout** y **Size Classes**, manteniendo la consistencia visual tanto en orientación vertical como horizontal.
+
+---
+
+## Tipografía Móvil
+- **iOS:** SF Pro  
+
+Las fuentes respetan el tamaño dinámico configurado por el usuario y siguen las recomendaciones de las **Human Interface Guidelines (HIG)**.  
+Los títulos utilizan pesos **semibold**, mientras que los textos secundarios usan **regular** para favorecer la lectura en pantallas pequeñas.
+
+---
+
+## Paleta de Colores Móvil
+La interfaz aprovecha el modo **claro/oscuro de iOS**, manteniendo el contraste adecuado para la accesibilidad visual.
+
+- **Celeste Primario (#0884C4):** Elementos activos, botones principales.  
+- **Degradados suaves:** Aplicados en headers y secciones destacadas.  
+- **Verde (#00CC66):** Indicadores de conexión y acciones exitosas.  
+- **Rojo (#FF4B4B):** Alertas del sistema con retroalimentación háptica.  
+- **Amarillo (#FFCC00):** Advertencias o tareas pendientes.  
+
+---
+
+## Componentes Móviles Específicos
+- **Tab Bar inferior** con íconos SF Symbols adaptados.  
+- **Botones redondeados** con sombras sutiles.  
+- **Deslizamiento (swipe actions)** en listas nativas.  
+- **Alertas modales** con estilo iOS.  
+- **Feedback háptico** en acciones confirmadas.  
+
+---
+
+## Interacciones Táctiles
+- **Pull-to-refresh** en listas.  
+- **Gestos de retorno (swipe back)** en vistas anidadas.  
+- **Animaciones fluidas y naturales** basadas en UIKit Dynamics.  
+- **Haptics personalizados** para confirmaciones y errores.
+
+<center>
+<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
+</center>
+
+*Figura 1:* Guías de Estilo Móvil iOS – Color Sky Blue.
+
+---
+
+### 4.1.3.2. Android Mobile Style Guidelines
+
 ## Diseño Adaptativo
 La interfaz utiliza un sistema de contenedores flexibles que se ajustan dinámicamente a diferentes resoluciones y orientaciones de pantalla, manteniendo la jerarquía visual en dispositivos desde **4 hasta 6.5 pulgadas**.
 
 ---
 
 ## Tipografía Móvil
-- **iOS:** SF Pro  
 - **Android:** Roboto  
 
 Las tipografías se escalan automáticamente según las configuraciones de accesibilidad del usuario.  
-Los tamaños de fuente siguen las pautas de **Material Design** y **Human Interface Guidelines**.
+Los tamaños de fuente siguen las pautas de **Material Design**.
 
 ---
 
 ## Paleta de Colores Móvil
-La paleta se adapta a los modos **claro/oscuro** de los sistemas operativos, conservando la identidad de FrostLink y manteniendo un contraste adecuado para mejorar la legibilidad.
+La paleta se adapta a los modos **claro/oscuro** del sistema operativo, conservando la identidad de FrostLink y manteniendo un contraste adecuado para mejorar la legibilidad.
 
 - **Celeste Primario (#0884C4):** Botones de acción principal y estados activos.  
 - **Degradados Dinámicos:** Fondos con gradientes sutiles para profundidad visual.  
@@ -1907,10 +1958,11 @@ La paleta se adapta a los modos **claro/oscuro** de los sistemas operativos, con
 - **Swipe left/right** para acciones rápidas.  
 - **Vibración háptica** en confirmaciones críticas.  
 - **Animaciones de carga nativas** por plataforma.  
+
 <center>
 <img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
-*Figura 1:* Guías de Estilo Web – Color Sky Blue
+*Figura 2:* Guías de Estilo Móvil Android – Color Sky Blue.
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
@@ -1918,7 +1970,7 @@ De manera complementaria, se utiliza una paleta de rojo claro para resaltar vent
 <img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" >
 </center>
 
-*Figura 2:* Guías de Estilo Web - Color Rojo.
+*Figura 3:* Guías de Estilo Móvil Android – Color Rojo.
 
 
 ## 4.2. Information Architecture
