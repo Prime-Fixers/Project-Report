@@ -2396,6 +2396,63 @@ En el contexto de FrostLink, estos diagramas reflejan la secuencia lógica del c
 **User Goal: Añadir máquina** El *customer* quiere añadir una nueva máquina de refrigeración a su dashboard para monitoreo asincronico.
 
 ![USER GOAL - ADD EQUIPMENTS](./resources/USER_FLOW-ADDEQUIPMENTS.png)
+
+
+## 4.5. Mobile Applications Prototyping.
+
+### 4.5.1. Android Mobile Applications Prototyping.
+
+## Autenticación
+
+### Login Screen
+Pantalla de inicio de sesión donde los usuarios ingresan sus credenciales para acceder a la aplicación. Incluye campos para usuario y contraseña, opción "Remember me" y enlace "Forgot password". Al completar el login exitoso, navega al home principal.
+
+![Login](./resources/LoginMobile.png)
+
+### Register Screen
+Formulario de registro para nuevos usuarios. Contiene campos para nombre completo, usuario, email, contraseña y confirmación de contraseña. Incluye selector de tipo de cuenta (Cliente/Empresa) con radio buttons. Valida todos los campos antes de crear la cuenta.
+
+![Register](./resources/RegisterMobile.png)
+
+## Home
+
+### Home Screen
+Pantalla principal de la aplicación que muestra un resumen del estado del sistema. Incluye mensaje de bienvenida, estadísticas de equipos (cantidad, alertas, estado), y una tarjeta principal con información de monitoreo. Tiene icono de notificaciones en la esquina superior derecha.
+
+![Home](./resources/HomeMobile.png)
+
+## Equipos
+
+### My Equipment Screen
+Lista principal de equipos del usuario. Muestra tarjetas con información de cada equipo incluyendo nombre, temperatura actual, estado (normal/warning/critical) y ubicación. Incluye botón circular para agregar nuevos equipos. Header con título "My Equipment" y notificaciones.
+
+![My Equipment](./resources/MyEquipmentMobile.png)
+
+### Manage Equipments Screen
+Pantalla de gestión de equipos con enfoque en administración. Muestra una tarjeta con ejemplo de equipo ("Vertical display case for frozen meats") y botón para agregar equipos. Incluye botón principal "Add Equipment" para navegar al formulario de creación.
+
+![Manage Equipments](./resources/ManageEquipmentsMobile.png)
+
+### Add Equipment Screen
+Formulario completo para agregar nuevos equipos al sistema. Contiene campos para nombre, tipo, modelo, fabricante, número de serie, código, fecha de instalación, consumo energético, ubicación, dirección y temperatura. Incluye validación de campos y estados de carga.
+
+![Add Equipment](./resources/AddEquipmentMobile.png)
+
+## Cuenta
+
+### Account Screen
+Pantalla de perfil de usuario con información de la cuenta y gestión de planes de suscripción. Muestra datos del usuario (empresa, email, usuario, plan actual), icono de perfil circular, y tarjetas de planes disponibles (Gold/Diamond) con precios y botones de actualización.
+
+![Account](./resources/AccountMobile.png)
+
+## Navegación
+
+### Bottom Navigation
+Barra de navegación inferior presente en todas las pantallas principales. Incluye 5 secciones: Home (casa), Machines (equipos), Rent (alquiler), Contact (contacto) y Account (cuenta). La sección activa se destaca en azul FrostLink.
+
+![Bottom Navigation](./resources/BottomNavigationMobile.png)
+
+
 ## 4.6. Web Applications UX/UI Design
 
 ### 4.6.1. Web Applications Wireframes
