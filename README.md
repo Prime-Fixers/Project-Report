@@ -1814,14 +1814,14 @@ La paleta se adapta a los modos **claro/oscuro** de los sistemas operativos, con
 - **Vibración háptica** en confirmaciones críticas.  
 - **Animaciones de carga nativas** por plataforma.  
 <center>
-<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+<img src="./resources/Landing_Page/Escala_de_colores_azules.png" alt="color_section" width="500" height="500">
 </center>
 *Figura 1:* Guías de Estilo Web – Color Sky Blue
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
 <center>
-<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+<img src="./resources/Landing_Page/Escala_de_colores_rojos.png" alt="color_section" width="500" height="500">
 </center>
 
 *Figura 2:* Guías de Estilo Web - Color Rojo.
