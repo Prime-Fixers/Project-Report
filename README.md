@@ -3495,6 +3495,75 @@ Vista detallada de la gestión de versiones en App Distribution:
 Se muestran capturas que validan la implementación de la **API RESTful** o backend serverless, incluyendo endpoints activos, pruebas realizadas en herramientas como Postman y la comunicación entre el front-end y el back-end.  
 
 
+## Configuración de la Máquina Virtual en Azure
+
+![Configuración Básica de VM](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.41.36.png)
+
+La imagen muestra la configuración inicial de la Máquina Virtual de Azure para el despliegue del backend de FrostLink. Se puede observar la selección de Ubuntu Server 24.04 LTS como sistema operativo, la configuración de zona de disponibilidad, y la selección del tamaño Standard_E2s_v3 con 2 vCPU y 16 GiB de memoria. Esta configuración proporciona los recursos necesarios para ejecutar eficientemente el servicio backend de FrostLink en un entorno de producción.
+
+## Configuración de Red y Seguridad
+
+![Configuración de Red](./resources/Captura%20de%20pantalla%202025-10-11%20a%20la(s)%2001.42.58.png)
+
+Esta captura muestra la configuración de red de la VM de FrostLink, incluyendo la dirección IP pública (40.82.177.111) y privada (10.0.0.4), así como las reglas del Network Security Group que permiten el tráfico SSH en el puerto 22 y el tráfico HTTP en el puerto 8080 para el backend de FrostLink. La configuración de red es fundamental para garantizar la accesibilidad del servicio desde internet mientras se mantiene la seguridad apropiada.
+
+## Vista General de la VM de FrostLink
+
+![Vista General VM](./resources/WhatsApp%20Image%202025-10-05%20at%2014.38.58.jpeg)
+
+La imagen presenta una vista general de la Máquina Virtual de FrostLink en el portal de Azure, mostrando el estado detenido de la VM, la información de recursos asignados (Standard D4s v3 con 4 vCPU y 16 GiB de memoria), y los detalles de conectividad de red. Esta vista confirma la configuración básica de la infraestructura antes del despliegue del servicio backend.
+
+## Configuración de PM2 para Auto-inicio
+
+![Configuración PM2 Startup](./resources/WhatsApp%20Image%202025-10-05%20at%2015.11.52.jpeg)
+
+Esta captura muestra la configuración de PM2 para el auto-inicio del backend de FrostLink. Se puede observar la ejecución del comando `pm2 startup` que detecta systemd como sistema de inicio y genera el script necesario para que el servicio de FrostLink se inicie automáticamente al reiniciar la VM. La configuración incluye las variables de entorno correctas y los permisos apropiados para el usuario backendadmin.
+
+## Inicialización del Servicio FrostLink
+
+![Inicialización del Servicio](./resources/WhatsApp%20Image%202025-10-05%20at%2015.13.01.jpeg)
+
+La imagen muestra el proceso de inicialización del servicio backend de FrostLink utilizando PM2. Se puede observar la carga de variables de entorno desde el archivo .env, la configuración del entorno de producción, y la inicialización de la base de datos con las migraciones correspondientes. El servicio se configura para ejecutarse en el puerto 8080 y conectarse a la base de datos local.
+
+## Monitoreo de Logs del Servicio
+
+![Monitoreo de Logs](./resources/WhatsApp%20Image%202025-10-05%20at%2015.15.16.jpeg)
+
+Esta captura muestra el monitoreo en tiempo real de los logs del servicio backend de FrostLink utilizando PM2. Se pueden observar los logs de inicialización de la base de datos, la ejecución exitosa de las migraciones, y la confirmación de que el servidor está corriendo correctamente. El monitoreo de logs es esencial para el diagnóstico y mantenimiento del servicio en producción.
+
+## Verificación del Estado del Servicio
+
+![Estado del Servicio](./resources/WhatsApp%20Image%202025-10-10%20at%2011.24.18.jpeg)
+
+La imagen final muestra la verificación del estado del servicio backend de FrostLink después de un reinicio de la VM. Se puede observar que el servicio se ha reiniciado automáticamente y está funcionando correctamente, con un uso de memoria de 76.2mb y estado "online". Esta verificación confirma que la configuración de auto-inicio funciona correctamente y que el servicio de FrostLink mantiene su disponibilidad incluso después de reinicios del sistema.
+
+---
+
+## Enlaces de Acceso al Servicio
+
+### API Backend de FrostLink
+- **Endpoint Principal**: http://40.82.177.111:8080
+- **Documentación Swagger UI**: http://40.82.177.111:8080/index.html
+
+El servicio backend de FrostLink está disponible públicamente a través de la dirección IP de la VM de Azure, permitiendo el acceso a todos los endpoints de la API y la documentación interactiva de Swagger.
+
+---
+
+## Proceso de Despliegue Completado
+
+El despliegue del servicio backend de FrostLink en Azure VM se ha completado exitosamente, incluyendo:
+
+1. **Configuración de Infraestructura**: VM con Ubuntu Server 24.04 LTS y recursos apropiados
+2. **Configuración de Red**: Reglas de seguridad y conectividad para el puerto 8080
+3. **Instalación de Dependencias**: Node.js, PM2 y configuración del entorno
+4. **Configuración de Auto-inicio**: PM2 configurado para reiniciar automáticamente el servicio
+5. **Verificación de Funcionamiento**: Servicio operativo y monitoreado correctamente
+
+El servicio backend de FrostLink está ahora desplegado y funcionando en Azure, con alta disponibilidad y capacidad de auto-recuperación ante reinicios del sistema.
+
+
+
+
 # 5.2.7. RESTful API Documentation
 
 Aquí se presenta evidencia de la documentación de la API RESTful, mostrando cómo se estructuran los endpoints, métodos, parámetros y ejemplos de uso, con el fin de facilitar la integración y el mantenimiento.
