@@ -3894,7 +3894,7 @@ Código de Pruebas de Lógica de Negocio para ServiceRequest
 <img src="./resources/service-request-business-logic-test-evidence-2.jpg" alt="Código de pruebas para ServiceRequestBusinessLogicTests">
 
 Resultado de Ejecución de Pruebas
-<img src="./resources/service-request-business-evidence-1.jpgusinessLogicTests"> 
+<img src="./resources/service-request-business-evidence-1.jpg"> 
 
 
 # Capítulo VII: DevOps Practices
