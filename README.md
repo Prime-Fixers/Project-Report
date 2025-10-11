@@ -364,6 +364,7 @@ Se explican las ramas más prominentes:
 
 # Contenido
 
+<!-- Part I -->
 # Part I: As-Is Software Project
 1. [Capítulo I: Introducción](#capítulo-i-introducción)<br>
    1.1. [Startup Profile](#11-startup-profile)<br>
@@ -400,6 +401,7 @@ Se explican las ramas más prominentes:
    3.3. [Product Backlog](#33-product-backlog)<br>
    3.4. [Impact Mapping](#34-impact-mapping)<br>
 
+<!-- Part II -->
 # Part II: Verification, Validation & Pipeline
 
 4. [Capítulo IV: Product Design](#capítulo-iv-product-design)<br>
@@ -501,6 +503,7 @@ Se explican las ramas más prominentes:
    7.4.3. [Alerting Pipeline Components](#743-alerting-pipeline-components)<br>
    7.4.4. [Notification Pipeline Components](#744-notification-pipeline-components)<br>
 
+<!-- Part III -->
 # Part III: Experiment-Driven Lifecycle
 
 8. [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)<br>
@@ -547,6 +550,7 @@ Se explican las ramas más prominentes:
 11. [Video About-the-Team](#video-about-the-team)<br>
 12. [Bibliografía](#bibliografía)<br>
 13. [Anexos](#anexos)<br>
+
 
 # Student Outcome
 
