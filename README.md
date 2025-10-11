@@ -562,10 +562,10 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
     </thead>
     <tbody>
         <tr>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software 
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong><br>
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong> Contribuí en la definición de la propuesta de valor de FrostLink, el análisis 5W+2H y el desarrollo del Lean UX Canvas, asegurando un enfoque ético y responsable. También participé en la elaboración de los As-is Scenario Mapping, User Journey Mapping y en el análisis competitivo frente a otras soluciones del mercado.</li>
@@ -573,48 +573,49 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Juan Diego Mondoñedo:</strong> Definí las configuraciones de las plataformas y environments de programación que empleamos para el desarrollo de nuestros productos y establecí pautas para el despliegue de estos.</li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Durante el desarrollo del Capítulo IV: Product Design reconocí mi responsabilidad ética y profesional al diseñar las guías de estilo, la arquitectura de información y las interfaces UX/UI, asegurando que cumplan con principios de accesibilidad, usabilidad y buenas prácticas de ingeniería de software orientadas al bienestar del usuario. </li>
                 </ul>
-               <strong>TP1:</strong><br>
+                <strong>TP1:</strong><br>
                 <ul>
-                    <li><strong>Fabrizio Amir León Vivas:</strong></li>                     
-                     <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
-                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier: </strong></li>                    
-                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Implementé suites de pruebas (unitarias/integración/BDDs) usando datos anonimizados y criterios de aceptación trazables a requisitos, evitando exposición de información sensible y promoviendo revisiones pares.</li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong> Configuré análisis estático (linters/Sonar) y políticas de ramas; apliqué listas de verificación éticas en code reviews (seguridad, privacidad, licencias) y gestioné vulnerabilidades reportadas.</li>
+                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier:</strong> Conduje entrevistas con consentimiento informado, protegí la identidad de participantes y registré sesgos potenciales; apliqué heurísticas priorizando bienestar y accesibilidad.</li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Definí gates éticos en el pipeline (quality gate, escaneo SCA/secretos) y estrategias de rollback/feature flags para despliegues seguros y responsables.</li>
+                    <li><strong>Pereira Vasquez, Fabrizzio:</strong> Organicé la auditoría UX cuidando la confidencialidad de evidencias, documenté hallazgos sin datos personales y prioricé criterios WCAG en las correcciones.</li>
                 </ul>
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong> Se demostró un compromiso ético y profesional al diseñar FrostLink, alineando la propuesta tecnológica con las necesidades reales de los usuarios y consolidando una solución responsable e innovadora.<br>
-               <strong>TP1:</strong>            
+                <strong>TP1:</strong> El equipo evidenció responsabilidad ética al anonimizar datos, establecer controles en el pipeline y documentar revisiones y entrevistas con consentimiento, reduciendo riesgos de seguridad y sesgos en decisiones.
             </td>
         </tr>
         <tr>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales económicos, ambientales y sociales 
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong><br>
                 <ul>
                     <li><strong>Fabrizio Amir León Vivas:</strong> Analicé el impacto de FrostLink en negocios que dependen de la cadena de frío, resaltando beneficios económicos al reducir pérdidas, sociales al garantizar calidad de productos y ambientales al optimizar el consumo energético.</li>
-                    <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong>Para el TB1, asumí el rol de verificación técnica y buenas prácticas: configuré el análisis estático (linters y Sonar), definí convenciones de código y listas de chequeo para code reviews, y atendí observaciones de seguridad y licencias. Documenté las evidencias de cada revisión y prioricé correcciones que reducen deuda técnica y riesgos (OWASP), emitiendo juicios informados sobre dependencias y costos operativos para asegurar una solución ética, mantenible y con menor impacto en fallas y retrabajo. </li>
                     <li><strong>Mondoñedo Rodriguez, Juan Diego Javier</strong>Analicé las implicaciones y los contextos en los que se utilizarían nuestros productos para definir correctamente plataformas para el despliegue de nuestras aplicaciones que sean compatibles con el uso. </li>
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong>Asimismo, emití juicios informados considerando el impacto que las soluciones de software pueden tener en distintos contextos globales, económicos, sociales y ambientales, buscando que las propuestas de diseño y arquitectura no solo sean técnicamente viables, sino también sostenibles, inclusivas y generadoras de valor en la sociedad.</li>
-                     <li><strong>Pereira Vasquez, Fabrizzio</strong></li>                
                </ul>
                <strong>TP1:</strong><br>
                 <ul>
-                    <li><strong>Fabrizio Amir León Vivas:</strong></li>                     
-                     <li><strong>Raúl Adrian Medina Cruzado:</strong> </li>
-                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier: </strong></li>                    
-                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong></li>
-                     <li><strong>Pereira Vasquez, Fabrizzio</strong></li>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Priorizó pruebas que disminuyen costo de fallas en operación (reducción de rechazos/mermas), y midió cobertura/casos críticos para asegurar continuidad de servicio en la cadena de frío.</li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong> Evaluó deuda técnica y riesgos OWASP, proponiendo remediaciones que reducen costos de infraestructura y exposición legal; recomendó dependencias con mejor soporte y mantenimiento.</li>
+                    <li><strong>Mondoñedo Rodriguez, Juan Diego Javier:</strong> De las entrevistas derivó requerimientos con mayor impacto social (alertas claras, flujos accesibles), y recomendó simplificaciones que disminuyen errores y tiempos de capacitación.</li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Diseñó CI/CD con entornos escalables y apagado automático en staging para optimizar costos; definió monitoreo de métricas de uso/errores para decisiones basadas en evidencia.</li>
+                    <li><strong>Pereira Vasquez, Fabrizzio:</strong> La auditoría UX identificó barreras de accesibilidad; priorizó mejoras que amplían inclusión y reducen fricción en onboarding, con impacto directo en productividad y satisfacción.</li>
                 </ul>
             </td>
-            <td>
+            <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong> El proyecto demuestra que una solución tecnológica puede generar valor económico, social y ambiental, siempre que se diseñe con responsabilidad y pensando en su impacto global.<br>
-               <strong>TP1:</strong> 
-         </td>
+                <strong>TP1:</strong> Los juicios informados guiaron la priorización de requisitos, controles de calidad y pipeline, logrando menor retrabajo, consumo controlado de recursos y mayor accesibilidad para usuarios finales.
+            </td>
         </tr>
     </tbody>
 </table>
+
 
 # Capítulo I: Introducción
 
