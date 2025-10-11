@@ -584,14 +584,14 @@ Dado que FrostLink está orientado al sector tecnológico, su paleta de colores 
 Dado que los botones y fondos pueden variar según el contexto, la plataforma emplea diferentes tonalidades de celeste para mantener coherencia visual.
 
 <center>
-<img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+<img src="./resources/Landing_Page/Escala_de_colores_azules.png" alt="color_section" width="500" height="500">
 </center>
 *Figura 1:* Guías de Estilo Web – Color Sky Blue
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
 <center>
-<img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" width="500" height="500">
+<img src="./resources/Landing_Page/Escala_de_colores_rojos.png" alt="color_section" width="500" height="500">
 </center>
 
 *Figura 2:* Guías de Estilo Web - Color Rojo.
@@ -709,11 +709,7 @@ La página incluye secciones que presentan a los usuarios objetivo, las funciona
 *Figura 1:* Wireframe de la Landing Page.
 <center>
 
-<img src="./resources/LandingPage_1.jpeg" alt="lading_page_1" width="500" height="500">
-
-<img src="./resources/LandingPage_2.jpeg" alt="lading_page_2" width="500" height="500">
-
-<img src="./resources/LandingPage_3.jpeg" alt="lading_page_3" width="500" height="500">
+<img src="./resources/Landing_Page/WireFrame-Landing Page.png" alt="wireframe_lading_page" width="500" height="500">
 
 </center>
 
