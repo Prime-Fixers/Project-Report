@@ -3189,8 +3189,37 @@ Class & DB Diagrams), usando únicamente las User Stories, Spike Stories y Techn
 </table>
 
 ### 5.2.2. Implemented Landing Page Evidence  
-En esta sección se presentan capturas de pantalla de la **Landing Page** ya implementada, mostrando su diseño, estructura y los elementos visuales clave que permiten la interacción con el usuario.  
 
+**LANDING PAGE - EVIDENCE**
+
+<img src="./resources/landing-page-evidence-1.png">
+
+Se observa el hero section junto con el navbar.
+
+<img src= "./resources/landing-page-evidence-2.png">
+Se observa los usuarios que se delimitaron en el diseño de la solución, solamente tenemos como usuarios a estos segmentos objetivos.
+
+<img src="./resources/landing-page-evidence-3.png">
+Se observa las diferentes funcionalidades del sistema FrostLink para los diferentes usuarios.
+
+<img src="./resources/landing-page-evidence-4.png">
+En esta imagen se observa los outcomes que esperan los usuarios al usar nuestro sistema.
+
+<img src="./resources/landing-page-evidence-5.png">
+En esta imagen se detalla los pasos a seguir para usar adecuadamente y sin complicaciones el sistema de FrostLink.
+
+<img src="./resources/landing-page-evidence-6.png">
+En esta imagen se detalla la descripción de FrostLink.
+
+
+<img src="./resources/landing-page-evidence-7.png">
+En esta imagen se detallan los diferentes planes que ocupa FrostLink para los diferentes usuarios.
+
+<img src="./resources/landing-page-evidence-8.png">
+Se muestran lo que dicen los clientes sobre nosotros.
+
+<img src="./resources/landing-page-evidence-9.png">
+En esta imagen se muestra un formulario para que el usuario solicite una demo.
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence  
 Aquí se incluyen capturas de la **aplicación web** en funcionamiento, donde se visualizan las pantallas principales, la navegación entre módulos y las funcionalidades desarrolladas en el front-end.  
