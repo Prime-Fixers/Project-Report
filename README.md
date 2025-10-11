@@ -3495,8 +3495,101 @@ Vista detallada de la gestión de versiones en App Distribution:
 Se muestran capturas que validan la implementación de la **API RESTful** o backend serverless, incluyendo endpoints activos, pruebas realizadas en herramientas como Postman y la comunicación entre el front-end y el back-end.  
 
 
-### 5.2.7. RESTful API Documentation  
-Aquí se presenta evidencia de la **documentación de la API RESTful**, mostrando cómo se estructuran los endpoints, métodos, parámetros y ejemplos de uso, con el fin de facilitar la integración y el mantenimiento.  
+# 5.2.7. RESTful API Documentation
+
+Aquí se presenta evidencia de la documentación de la API RESTful, mostrando cómo se estructuran los endpoints, métodos, parámetros y ejemplos de uso, con el fin de facilitar la integración y el mantenimiento.
+
+## Interfaz Principal de Swagger UI
+
+![Swagger UI Principal](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.09.jpeg)
+
+La imagen muestra la interfaz principal de Swagger UI para la API de FrostLink Platform. Se puede observar el encabezado con el logo de Swagger, la selección de la definición "FrostLink API V1", y la información básica de la API incluyendo la versión 1.0 y la especificación OAS 3.0. La sección de WorkOrders está expandida mostrando los endpoints disponibles para la gestión de órdenes de trabajo.
+
+## Endpoints de Autenticación
+
+![Endpoints de Autenticación](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.21.jpeg)
+
+Esta captura muestra los endpoints de autenticación disponibles en la API. Se presentan dos endpoints principales: POST para sign-in (iniciar sesión) y POST para sign-up (registro de usuarios). Ambos endpoints están protegidos con autenticación, como se indica por los iconos de candado, y permiten la gestión completa del ciclo de autenticación de usuarios en el sistema.
+
+## Endpoints de Usuarios
+
+![Endpoints de Usuarios](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.30.jpeg)
+
+La imagen presenta los endpoints disponibles para la gestión de usuarios. Se incluyen dos operaciones principales: GET para obtener un usuario específico por ID y GET para obtener todos los usuarios del sistema. Estos endpoints proporcionan la funcionalidad básica de consulta de información de usuarios, esencial para la administración del sistema.
+
+## Endpoints de Perfiles
+
+![Endpoints de Perfiles](./resources/WhatsApp%20Image%202025-10-10%20at%2013.33.49.jpeg)
+
+Esta sección muestra los endpoints relacionados con la gestión de perfiles de usuario. Se incluyen operaciones para obtener un perfil específico por ID, crear nuevos perfiles y obtener todos los perfiles del sistema. Los perfiles permiten almacenar información adicional y personalizada de los usuarios más allá de los datos básicos de autenticación.
+
+## Endpoints de Técnicos
+
+![Endpoints de Técnicos](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.16.jpeg)
+
+La imagen muestra los endpoints disponibles para la gestión de técnicos en el sistema. Se incluyen operaciones para crear técnicos, obtener todos los técnicos, obtener un técnico específico por ID y obtener la calificación promedio de un técnico. Estos endpoints son fundamentales para la gestión del personal técnico que realizará las órdenes de trabajo.
+
+## Endpoints de Equipos
+
+![Endpoints de Equipos](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.33.jpeg)
+
+Esta captura presenta una vista completa de los endpoints para la gestión de equipos. Se incluyen operaciones CRUD completas (Crear, Leer, Actualizar, Eliminar) así como operaciones específicas para gestionar parámetros de operación y lecturas de equipos. La variedad de endpoints permite un control detallado sobre todos los aspectos de los equipos en el sistema.
+
+## Endpoints de Solicitudes de Servicio
+
+![Endpoints de Solicitudes de Servicio](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.43.jpeg)
+
+La imagen muestra los endpoints disponibles para la gestión de solicitudes de servicio. Se incluyen operaciones para crear solicitudes, obtener todas las solicitudes, actualizar solicitudes existentes, asignar técnicos, agregar retroalimentación de clientes y actualizar el estado de las solicitudes. Estos endpoints cubren todo el ciclo de vida de una solicitud de servicio.
+
+## Endpoints de Órdenes de Trabajo
+
+![Endpoints de Órdenes de Trabajo](./resources/WhatsApp%20Image%202025-10-10%20at%2013.34.54.jpeg)
+
+Esta sección presenta los endpoints para la gestión de órdenes de trabajo. Se incluyen operaciones para crear órdenes de trabajo, obtener todas las órdenes, obtener una orden específica por ID, actualizar el estado de una orden y agregar detalles de resolución. Estos endpoints son centrales para la operación del sistema de gestión de mantenimiento.
+
+## Endpoints de Suscripciones
+
+![Endpoints de Suscripciones](./resources/WhatsApp%20Image%202025-10-10%20at%2013.35.02.jpeg)
+
+La imagen muestra los endpoints disponibles para la gestión de suscripciones y planes de pago. Se incluyen operaciones para crear planes de suscripción, obtener todas las suscripciones, obtener una suscripción específica, actualizar suscripciones y eliminar planes de suscripción. Estos endpoints permiten la gestión completa del modelo de negocio basado en suscripciones.
+
+## Endpoints de Analíticas
+
+![Endpoints de Analíticas](./resources/WhatsApp%20Image%202025-10-10%20at%2013.35.40.jpeg)
+
+Esta captura presenta los endpoints disponibles para el análisis de datos del sistema. Se incluyen operaciones para obtener lecturas de equipos específicos, obtener resúmenes analíticos de equipos y obtener una vista general de analíticas de múltiples equipos. Estos endpoints proporcionan las capacidades de business intelligence y análisis de rendimiento del sistema.
+
+## Esquemas de Datos - Primera Parte
+
+![Esquemas de Datos Parte 1](./resources/WhatsApp%20Image%202025-10-10%20at%2013.35.54.jpeg)
+
+La imagen muestra la primera parte de los esquemas de datos disponibles en la API. Se pueden observar recursos como AddCustomerFeedbackToServiceRequestResource, AddWorkOrderResolutionDetailsCommand, AnalyticsSummaryResource, y otros esquemas relacionados con la gestión de solicitudes, órdenes de trabajo y analíticas. Estos esquemas definen la estructura de datos utilizada en toda la API.
+
+## Esquemas de Datos - Segunda Parte
+
+![Esquemas de Datos Parte 2](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.05.jpeg)
+
+Esta captura continúa mostrando los esquemas de datos de la API. Se incluyen recursos como EServiceType, EUrgency, EWorkOrderStatus, EquipmentOperationParametersResource, y otros esquemas relacionados con enumeraciones y recursos de equipos. Estos esquemas proporcionan las definiciones de tipos de datos y estructuras utilizadas en las operaciones de la API.
+
+## Ejemplo de Endpoint GET Work Orders
+
+![Ejemplo GET Work Orders](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.24.jpeg)
+
+La imagen muestra un ejemplo detallado del endpoint GET /api/v1/work-orders para obtener todas las órdenes de trabajo. Se puede observar la estructura de respuesta con todos los campos disponibles, incluyendo información como ID, número de orden, ID de solicitud de servicio, título, descripción, fechas de creación y programación, estado, prioridad, y otros campos relevantes para la gestión de órdenes de trabajo.
+
+## Ejemplo de Endpoint POST Work Orders
+
+![Ejemplo POST Work Orders](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.35.jpeg)
+
+Esta captura muestra un ejemplo detallado del endpoint POST /api/v1/work-orders para crear nuevas órdenes de trabajo. Se puede observar la estructura del request body con campos como título, descripción, detalles del problema, ID del equipo, tipo de servicio, dirección de servicio, prioridad, y fecha programada. También se muestra la respuesta exitosa con todos los campos de la orden de trabajo creada.
+
+## Ejemplo de Endpoint PATCH Work Order Status
+
+![Ejemplo PATCH Work Order Status](./resources/WhatsApp%20Image%202025-10-10%20at%2013.36.56.jpeg)
+
+La imagen muestra un ejemplo detallado del endpoint PATCH /api/v1/work-orders/{workOrderId}/status para actualizar el estado de una orden de trabajo. Se puede observar la estructura del request body con el campo newStatus, los parámetros requeridos (workOrderId), y la respuesta exitosa que incluye todos los detalles de la orden de trabajo actualizada. Este endpoint es crucial para el seguimiento del progreso de las órdenes de trabajo.
+
+
 
 
 ### 5.2.8. Team Collaboration Insights  
