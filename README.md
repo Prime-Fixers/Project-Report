@@ -268,6 +268,17 @@
 
 </td>
       </tr>
+      <td>TP1</td>
+            <td>11/09/2025</td>
+            <td>
+                <ul>   
+                    <li>León Vivas, Fabrizio Amir</li>
+                    <li>Medina Cruzado, Raúl Adrian</li>
+                    <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
+                     <li>Pereira Vasquez, Fabrizzio</li>
+                    <li>Varela Bustinza, Marcelo Alessandro</li>
+                </ul>
+            </td>
     </tbody>
 </table>
 
