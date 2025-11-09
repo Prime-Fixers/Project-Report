@@ -5128,6 +5128,8 @@ Orden  recomendado por repo (paralelizable):
 
 - Proceso: rama hotfix/* → PR con etiqueta urgent → 1 aprobación mínima (owner o guardia del día) → gates obligatorios (al menos linters + build + smoke tests) → merge a main y develop → post-mortem ≤48h.
 
+## 6.3. Validation Interviews
+
 ### 6.3.1. Diseño de Entrevistas (Validation Interviews)
 
 #### Objetivo e hipótesis (resumen operativo)
