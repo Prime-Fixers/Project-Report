@@ -5175,6 +5175,177 @@ El Production Deployment Pipeline representa la secuencia automatizada de proces
 * **Despliegue a Producción**: Una vez que la imagen Docker ha superado todas las validaciones, **GitHub Actions** procede a realizar el despliegue del contenedor en el entorno de producción, alojado en **Microsoft Azure**. Se utilizan estrategias como Blue-Green Deployment para minimizar el tiempo de inactividad y permitir rollbacks rápidos en caso de ser necesario.
 
 
+## 7.4. Continuous Monitoring.
+### 7.4.1. Tools and Practices.
+
+Esta sección describe las herramientas y prácticas de monitoreo implementadas para cada tipo de prueba en el ecosistema FrostLink.
+
+A. Unit Tests - Herramientas y Prácticas
+
+**Herramientas de monitoreo para pruebas unitarias:**
+
+1. **xUnit Test Runner**
+   - Ejecución mediante `dotnet test`
+   - Generación de reportes en formato TRX
+   - Configuración de verbosity para debugging: `--logger "console;verbosity=detailed"`
+   - Ejecución selectiva por categoría: `--filter "Category=Unit"`
+
+2. **Coverlet (Code Coverage Analysis)**
+   - Herramienta: Coverlet integrada con .NET
+   - Configuración: `dotnet test --collect:"XPlat Code Coverage"`
+   - Target mínimo: 80% de cobertura para entidades core
+   - Generación de reportes en formatos: Cobertura, OpenCover, lcov
+
+3. **Visual Studio Test Explorer**
+   - Integración nativa con IDE
+   - Ejecución selectiva por clase o método
+   - Indicadores visuales de pass/fail en tiempo real
+   - Hot reload de pruebas durante desarrollo
+
+4. **ReportGenerator**
+   - Generación de reportes HTML de cobertura
+   - Análisis de tendencias de cobertura por módulo
+   - Identificación de código crítico sin cobertura
+
+**Prácticas de monitoreo establecidas (Unit Tests):**
+
+1. **Ejecución automática en cada build:**
+   - Las pruebas unitarias se ejecutan antes de cada commit (pre-commit hooks)
+   - Bloqueo de merge si las pruebas fallan
+   - Tiempo objetivo: < 5 segundos para la suite completa
+
+2. **Análisis de cobertura:**
+   - Reportes de cobertura generados en cada PR
+   - Alertas cuando la cobertura disminuye > 2%
+   - Identificación de código no cubierto en revisiones de código
+
+3. **Test Isolation Validation:**
+   - Verificación de que las pruebas no tienen dependencias entre sí
+   - Ejecución en orden aleatorio para detectar dependencias ocultas
+   - Cada prueba debe pasar independientemente del orden de ejecución
+
+4. **Performance Tracking:**
+   - Monitoreo del tiempo de ejecución por test
+   - Alertas para tests que exceden 100ms
+   - Optimización continua de tests lentos
+
+B. Integration Tests - Herramientas y Prácticas
+
+**Herramientas de monitoreo para pruebas de integración:**
+
+1. **curl + bash scripts**
+   - Scripts automatizados en `scripts/01-05_*.sh`
+   - Captura de responses HTTP y códigos de estado
+   - Generación de archivos `.integration_env` para reutilización de IDs
+   - Validación de headers y payloads JSON
+
+2. **jq (JSON Processor)**
+   - Parsing y extracción de valores de respuestas JSON
+   - Validación de estructuras de datos
+   - Generación de datos dinámicos para tests en cadena
+
+3. **MySQL Query Monitoring**
+   - Monitoreo de queries ejecutadas durante las pruebas
+   - Validación de transacciones y rollbacks
+   - Análisis de performance de queries complejas
+   - Verificación de integridad referencial
+
+4. **API Response Time Tracking**
+   - Medición de tiempos de respuesta por endpoint
+   - Target: < 500ms para operaciones CRUD
+   - Target: < 1000ms para operaciones complejas (con joins)
+   - Identificación de cuellos de botella
+
+5. **Docker Container Health Checks**
+   - Monitoreo del estado del contenedor MySQL
+   - Verificación de conexiones disponibles
+   - Alertas de recursos (CPU, memoria, disco)
+   - Logs de contenedores para debugging
+
+**Prácticas de monitoreo establecidas (Integration Tests):**
+
+1. **Ejecución diaria automatizada:**
+   - Suite completa ejecutada a las 6 AM
+   - Validación de endpoints críticos cada 4 horas
+   - Reportes enviados al equipo QA vía email/Slack
+
+2. **Environment Validation:**
+   - Verificación de `DefaultConnection` antes de ejecutar
+   - Validación de que MySQL está corriendo (`brew services list`)
+   - Confirmación de que el backend responde en el puerto esperado
+   - Limpieza de datos de prueba al finalizar
+
+3. **Data Consistency Checks:**
+   - Verificación de que los IDs generados son válidos
+   - Validación de relaciones FK (ServiceRequest ↔ WorkOrder)
+   - Comprobación de estados sincronizados entre entidades
+   - Rollback automático en caso de fallo
+
+4. **Screenshot Capture:**
+   - Captura automática de responses para evidencia
+   - Almacenamiento organizado por escenario (`img-test1/`, `img-test2/`, etc.)
+   - Timestamping de capturas para trazabilidad
+
+C. BDD Tests - Herramientas y Prácticas
+
+**Herramientas de monitoreo para pruebas BDD:**
+
+1. **xUnit Test Runner con Verbosity Detallada**
+   - Configuración: `--logger "console;verbosity=detailed"`
+   - Proporciona output paso a paso de cada escenario (Given/When/Then)
+   - Registra tiempos de ejecución individuales por escenario
+   - Captura mensajes de `ITestOutputHelper` con emojis para trazabilidad
+
+2. **TRX Logger para Reporting Estructurado**
+   - Configuración: `--logger "trx;LogFileName=TestExecution.trx"`
+   - Genera archivos XML estándar de Microsoft Test Platform
+   - Permite análisis histórico de tendencias de ejecución
+   - Compatible con herramientas de CI/CD (Azure DevOps, GitHub Actions)
+
+3. **SpecFlow LivingDoc Plugin**
+   - Versión: 3.9.57
+   - Genera documentación HTML navegable en tiempo real
+   - Presenta escenarios con código Gherkin y estado de ejecución
+   - Permite compartir resultados con stakeholders no técnicos
+   - Actualización automática de documentación con cada ejecución
+
+4. **Scenario Execution Hooks (TestHooks.cs)**
+   - `[BeforeScenario]` y `[AfterScenario]` capturan duración y estado
+   - `[BeforeFeature]` y `[AfterFeature]` agrupan resultados por feature
+   - Generación de banners visuales en consola para mejor legibilidad
+   - Logging estructurado con contexto completo de escenario
+
+**Prácticas de monitoreo establecidas (BDD Tests):**
+
+1. **Ejecución regular en CI/CD:**
+   - Los tests BDD se ejecutan en cada push a las ramas principales
+   - Se generan reportes TRX que se almacenan como artefactos del build
+   - Notificaciones automáticas en Slack/Teams en caso de fallos
+   - LivingDoc publicado como GitHub Pages para acceso del equipo
+
+2. **Análisis de tendencias:**
+   - Seguimiento del tiempo de ejecución por feature y escenario
+   - Identificación de tests flaky mediante múltiples ejecuciones
+   - Registro de tasas de éxito/fallo a lo largo del tiempo
+   - Detección de degradación de performance en escenarios
+
+3. **Alertas y notificaciones:**
+   - Integración con sistemas de notificación (Slack, Teams, email)
+   - Alertas inmediatas cuando un escenario crítico falla
+   - Resúmenes diarios/semanales del estado de la suite BDD
+   - Notificaciones de nuevos escenarios agregados
+
+4. **Revisiones periódicas:**
+   - Revisión mensual de la cobertura de escenarios BDD
+   - Actualización de escenarios obsoletos o redundantes
+   - Identificación de nuevas áreas que requieren cobertura BDD
+   - Sincronización con Product Owners para validar prioridades
+
+---
+
+### 7.4.2. Monitoring Pipeline Components.
+
+
 # Conclusiones
 
 El proyecto FrostLink permitió el desarrollo de una plataforma integral de gestión y monitoreo de equipos de refrigeración, diseñada para satisfacer las necesidades tanto de clientes
