@@ -4259,8 +4259,8 @@ Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica prim
     <thead>
       <tr>
         <th scope="col">ID</th>
-        <th scope="col">Historia (Como… quiero… para…)</th>
-        <th scope="col">Criterios de aceptación (Given–When–Then)</th>
+        <th scope="col">Historia</th>
+        <th scope="col">Criterios de aceptación</th>
         <th scope="col">Notas FrostLink</th>
       </tr>
     </thead>
@@ -4324,7 +4324,7 @@ Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica prim
     <thead>
       <tr>
         <th scope="col">ID</th>
-        <th scope="col">Ítem (resultado esperado)</th>
+        <th scope="col">Ítem</th>
         <th scope="col">Objetivo</th>
         <th scope="col">Prioridad</th>
         <th scope="col">Dependencias</th>
