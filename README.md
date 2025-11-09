@@ -4218,6 +4218,41 @@ El sistema analítico orienta decisiones mediante una métrica primaria por expe
 Uso y reglas de decisión. Una variante se adopta cuando el IC95% del uplift en la métrica primaria excluye cero y los guardrails permanecen dentro de tolerancias; si la mejora estadística coexiste con deterioro en guardrails, se pospone el lanzamiento hasta corregir; en caso de resultados inconclusos, se reevalúa el MDE o se amplía la muestra. Las métricas de apoyo —ARPDAU, ARPPU, D7/D30, duración de sesión, embudos de onboarding y cohortes por país/dispositivo/fuente— contextualizan el resultado sin sustituir a la métrica primaria en la decisión.
 Frostlink (economía y versionado analítico). Para controlar costos de telemetría y preservar comparabilidad entre sprints, Frostlink valida que sólo se recolecten los eventos estrictamente necesarios para estimar la métrica primaria y los guardrails, y versiona esquemas/consultas a fin de que cualquier hallazgo sea reproducible con precisión.
 
+
+8.2.8. Web and Mobile Tracking Plan (FrostLink)
+
+Este plan define, desde FrostLink, cómo se miden con el menor costo de datos y la máxima reproducibilidad los comportamientos clave en Web y Móvil que alimentan los KPIs del capítulo 8 (adquisición, activación/retención y conversión). La unidad analítica es la persona usuaria; las mediciones se diseñan para soportar experimentos con α=0.05, poder 0.80 y MDE definidos, y para resguardar guardrails de salud (estabilidad, errores, quejas).
+
+Identidad, sesión y variantes (FrostLink Identity & Experiments).
+Se usa anon_id antes del registro y user_id tras la creación de cuenta; FrostLink reconcilia ambos de forma determinística. Se registran device_id, versión de app y SO. La sesión se define por primera interacción y 30 minutos de inactividad. Cuando hay experimentos, la variante se asigna por hash de user_id en FrostLink Experiments y se persiste para evitar “flips” entre sesiones y dispositivos.
+
+Eventos troncales (FrostLink Event Hub).
+• Descubrimiento y adquisición: page_view/screen_view, utm_params (web) o campaign_id/creative_id (móvil).
+• Onboarding y cuenta: signup_start, signup_complete, signin, logout.
+• Activación (primer valor): workspace_create (o equivalente), resource_linked (p. ej., dataset/activo), schema_validated, first_success_action (definido por el equipo).
+• Uso continuo y valor: artifact_created (consulta/pipeline/tablero), artifact_viewed, artifact_run/job_started/job_finished con estado y latencias.
+• Conversión y planes: plan_viewed, trial_started, subscription_started, subscription_renewed, payment_success, refund_processed.
+• Salud y soporte: error_raised (código/severidad), crash, report_submitted, latency_bucketed.
+• Notificaciones (móvil): push_received, push_opened, deep_link_opened.
+
+Propiedades mínimas por evento (FrostLink Schema Registry).
+timestamp_utc, user_id o anon_id, platform (web/android/ios), app_version, os_version, locale, country, experiment_id y variant cuando aplique; cada evento añade su payload específico (p. ej., en artifact_run: tipo, duración, estado; en payment_success: plan_id, period, amount, currency). FrostLink mantiene el contrato y su versionado.
+
+Atribución y ventanas (FrostLink Attribution).
+En Web se capturan UTM (source, medium, campaign, term, content); en Móvil, campaign_id y creative_id. Ventanas recomendadas: 24 h para adquisición (CTR/click→landing) y 7 días para conversión (trial/compra). FrostLink deduplica clics por impresión y documenta reglas de resolución entre canales.
+
+Calidad y gobierno del dato (FrostLink Quality Monitor & Catalog).
+Cada esquema pasa por pruebas de contrato antes del deploy; hay checks diarios de completitud, unicidad y balance de variantes; se filtra tráfico anómalo. Los cambios de esquema y las consultas estándar de KPIs se versionan en el catálogo, garantizando que un mismo cálculo produzca el mismo resultado en el tiempo.
+
+Privacidad y ética (FrostLink Privacy Console).
+Se aplica minimización de datos, consentimiento por categorías donde corresponda y rutinas de acceso/borrado a solicitud de la persona usuaria. Se registran evidencias de cumplimiento y accesos para auditoría. No se bloquean funciones básicas tras muros de pago ni se introduce fricción para forzar conversiones.
+
+Mapa a KPIs y experimentos (FrostLink Analytics & Decision Board).
+• Adquisición: CTR a partir de page_view + ad_click (o equivalentes en móvil) con campaña/creatividad.
+• Activación/Retención: D1 derivado de cohortes por signup_complete o first_success_action y eventos de retorno a 24–48 h.
+• Conversión: tasa a plan/trial y a pago desde subscription_started y payment_success.
+Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica primaria de cada experimento y lectura de guardrails (errores, quejas, latencias), todo dentro de FrostLink para asegurar trazabilidad de extremo a extremo.
+
 # Conclusiones
 
 El proyecto FrostLink permitió el desarrollo de una plataforma integral de gestión y monitoreo de equipos de refrigeración, diseñada para satisfacer las necesidades tanto de clientes
