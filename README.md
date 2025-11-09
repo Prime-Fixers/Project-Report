@@ -4089,16 +4089,20 @@ HTTP/1.1 200 OK
 }
 ```
 **Evidencia:**
-![Creación de equipo y solicitud](./resources/img-test1-service-request/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.18.38.png)
+![Creación de equipo y solicitud](./resources/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.18.38.png)
+
 *Figura 1a. Payload y respuesta de `POST /api/v1/equipments`.*
 
-![Solicitud y asignación de técnico](./resources/img-test1-service-request/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.18.58.png)
+![Solicitud y asignación de técnico](./resources/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.18.58.png)
+
 *Figura 1b. Creación de la solicitud y confirmación `HTTP 201`.*
 
-![Asignación y work order generada](./resources/img-test1-service-request/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.19.12.png)
+![Asignación y work order generada](./resources/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.19.12.png)
+
 *Figura 1c. Asignación de técnico y respuesta `HTTP 200`.*
 
-![Verificación de la work order vinculada](./resources/img-test1-service-request/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.19.38.png)
+![Verificación de la work order vinculada](./resources/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.19.38.png)
+
 *Figura 1d. Consulta de `GET /api/v1/work-orders` filtrando por `serviceRequestId`.*
 
 ### Prueba 2. Propagación de feedback al Work Order
@@ -4144,10 +4148,11 @@ HTTP/1.1 200 OK
 }
 ```
 **Evidencia:**
-![Aplicación de feedback y sincronización](./resources/img-test2-feedback/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.21.55.png)
+![Aplicación de feedback y sincronización](./resources/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.21.55.png)
+
 *Figura 2a. Ejecución de `PATCH` y `PUT` para resolución y feedback.*
 
-![Consultas GET confirmando la propagación](./resources/img-test2-feedback/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.22.09.png)
+![Consultas GET confirmando la propagación](./resources/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.22.09.png)
 *Figura 2b. Work order y service request reflejando la calificación del cliente.*
 
 ### Prueba 3. Telemetría Equipment → Analytics
@@ -4190,7 +4195,8 @@ HTTP/1.1 200 OK
 }
 ```
 **Evidencia:**
-![Registro y consulta de lecturas](./resources/img-test3-equipment/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.23.31.png)
+![Registro y consulta de lecturas](./resources/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.23.31.png)
+
 *Figura 3a. Inserción de lecturas y consulta de Analytics para el mismo equipo.*
 
 ### Prueba 4. Autenticación y acceso autorizado
@@ -4237,7 +4243,8 @@ HTTP/1.1 200 OK
 [ { "id": 1, "username": "qa.user.1762658213" } ]
 ```
 **Evidencia:**
-![Flujo de autenticación y acceso autorizado](./resources/img-test4-authentication/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.23.44.png)
+![Flujo de autenticación y acceso autorizado](./resources/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.23.44.png)
+
 *Figura 4a. Secuencia completa de sign-up, sign-in y llamadas autenticadas.*
 
 ### Prueba 5. Sincronización de estados Work Order ↔ Service Request
@@ -4290,28 +4297,16 @@ HTTP/1.1 200 OK
 }
 ```
 **Evidencia:**
-![Cambio a InProgress](./resources/img-test5-worker/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.23.53.png)
+![Cambio a InProgress](./resources/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.23.53.png)
 *Figura 5a. Respuesta del PATCH que coloca la orden en progreso y la consulta correspondiente.*
 
-![Cambio a Resolved](./resources/img-test5-worker/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.24.02.png)
+![Cambio a Resolved](./resources/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.24.02.png)
 *Figura 5b. Respuesta del PATCH a Resolved y verificación final de la solicitud.*
 
 
 ### 6.1.3. Core Behavior-Driven Development
-# Core Behavior-Driven Development (BDD)
-
-**Documento Técnico de Pruebas BDD**  
-*FrostLinkPlatform - Sistema de Gestión de Equipos de Refrigeración*
-
----
-
-## Resumen Ejecutivo
 
 Este documento detalla la implementación y resultados de las pruebas de Behavior-Driven Development (BDD) para el ecosistema FrostLink. Se presenta una suite completa de 8 escenarios de prueba distribuidos en 5 módulos funcionales, validando el comportamiento del sistema desde la perspectiva del usuario final. La implementación utiliza SpecFlow 3.9.74 como framework BDD, integrado con xUnit como test runner en el entorno .NET 9.0. Los resultados demuestran una tasa de éxito del 100% en la validación de comportamientos esperados, con un tiempo de ejecución total de 0.9456 segundos.
-
-## Descripción General
-
-Este documento define los lineamientos, arquitectura y escenarios de Behavior-Driven Development (BDD) implementados para validar el comportamiento del ecosistema FrostLink desde la perspectiva del usuario. Se prioriza el lenguaje ubicuo (ubiquitous language) y la colaboración entre roles (producto, QA, desarrollo) para describir historias que conectan acciones del negocio con respuestas observables en la plataforma. La metodología BDD facilita la comunicación entre stakeholders técnicos y no técnicos mediante el uso de especificaciones ejecutables en formato Gherkin (Given-When-Then).
 
 ## Enfoque metodológico
 
