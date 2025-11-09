@@ -4253,9 +4253,8 @@ Se aplica minimización de datos, consentimiento por categorías donde correspon
 • Conversión: tasa a plan/trial y a pago desde subscription_started y payment_success.
 Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica primaria de cada experimento y lectura de guardrails (errores, quejas, latencias), todo dentro de FrostLink para asegurar trazabilidad de extremo a extremo.
 
-<!-- 8.3.1. To-Be User Stories -->
+### 8.3.1. To-Be User Stories 
 <section id="to-be-user-stories">
-  <h2>8.3.1. To-Be User Stories</h2>
   <table>
     <thead>
       <tr>
@@ -4317,11 +4316,10 @@ Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica prim
     </tbody>
   </table>
 </section>
-html
-Copiar código
-<!-- 8.3.2. To-Be Product Backlog -->
+
+### 8.3.2. To-Be Product Backlog 
+
 <section id="to-be-product-backlog">
-  <h2>8.3.2. To-Be Product Backlog</h2>
   <table>
     <thead>
       <tr>
