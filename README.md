@@ -5332,6 +5332,172 @@ Mediciones por tarea:
   </tbody>
 </table>
 
+### 6.3.3. Evaluaciones según heurísticas
+
+#### **UX Heuristics & Principles Evaluation**
+**Usability - Inclusive Design - Information Architecture**
+
+**CARERRA: INGENIERÍA DE SOFTWARE**
+**CURSO: Diseño de Experimentos de Ingeniería de Software**
+**NRC: 7503**
+**PROFESORES: Todos**
+**AUDITOR: Nigma**
+**CLIENTE(S): Javier Tello y Sebastian Ramos**
+
+***SITE o APP A EVALUAR***
+FrostLink
+
+***TAREAS A EVALUAR***
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Iniciar sesión con credenciales válidas.
+2. Intento de inicio de sesión inválido.
+3. Cerrar sesión y retorno a pantalla de acceso.
+4. Publicar un equipo de refrigeración.
+5. Editar ficha de equipo.
+6. Duplicar ficha de equipo para acelerar el alta de un modelo similar.
+7. Adjuntar/ordenar evidencias y guardado.
+8. Buscar equipo por capacidad/ubicación/precio.
+9. Ver detalles y comparar dos equipos.
+10. Solicitar alquier seleccionando fechas en calendario.
+11. Aceptar o rechazar una solicitud de alquiler.
+12. Cancelar una solicitud antes de la confirmación.
+13. Confirmar devolución y registrar condición del equipo.
+14. Calificar la experiencia.
+15. Consultar estadisticas del equipo último mes.
+16. Crear una alerta por umbral y elegir canal.
+17. Reconocer/archivar alertas y revisar historial.
+18. Ver la bitácora de auditoría de una ficha.
+19. Generar reporte técnico con evidencias y resumen.
+20. Exportar reporte a PDF y compartir enlace/archivo.
+21. Guardar búsqueda como favorita.
+22. Compartir un equipo por enlace.
+23. Crear usuario operador y asignar rol "lector/editor".
+24. Cambiar zona horaria/formato de feceha y comprobrar su efecto en registros.
+
+**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+
+1. Onboarding y registro de organizaciones (alta de empresa/tenant, verificación de correo/SMS).
+2. Recuperar contraseña / 2FA / SSO (flujos de identidad avanzados).
+3. Integración con sensores IoT (emparejamiento/calibración de hardware, edge).
+4. Pagos/facturación (pasarela, emisión de comprobantes, reembolsos).
+5. Integraciones externas (ERP/CRM, exportaciones masivas CSV/ETL).
+6. Notificaciones push nativas (Android/iOS) y modo offline.
+7. Localización/idiomas completos (solo verificaciones básicas de copy).
+8. SEO y páginas públicas de marketing (landing, indexación).
+9. Accesibilidad exhaustiva WCAG (en esta sesión solo checks básicos: contraste, foco, labels).
+10. Pruebas de performance/carga/estrés y cross-browser extendido (se limita a Chrome/Edge modernos + Safari iOS).
+11. Analíticas avanzadas (cohorts, funnels, atribución).
+12. Modo kiosco o despliegues en dispositivos dedicados.
+13. Políticas de backup/retención y restauración de desastres.
+14. Soporte en vivo (chat, SLA y escalamiento).
+
+***TABLA RESUMEN***
+
+|  # | Problema                                                                               | Escala de severidad | Heurística/Principio violado(a)                                           |
+| -: | -------------------------------------------------------------------------------------- | :-----------------: | ------------------------------------------------------------------------- |
+|  1 | El error de credenciales en **Login** no muestra mensaje claro (solo animación sutil). |        **3**        | Usabilidad: **Visibilidad del estado del sistema**                        |
+|  2 | En **Publicar equipo**, se aceptan rangos de temperatura invertidos (mín > máx).       |        **3**        | Usabilidad: **Prevención de errores**                                     |
+|  3 | En **Búsqueda**, los filtros se **resetean** al cambiar el rango de fechas.            |        **2**        | Usabilidad: **Reconocer mejor que recordar**                              |
+|  4 | Botón **Comparar** no informa el **límite** de ítems; el error aparece tardío.         |        **2**        | Usabilidad: **Visibilidad del estado** / Prevención de errores            |
+|  5 | En mobile, la ubicación de **Filtros** y **Ordenar** cambia respecto a Web.            |        **1**        | Usabilidad: **Consistencia y estándares**                                 |
+|  6 | En **Estadísticas**, el contraste de líneas/leyendas es bajo; difícil de leer.         |        **2**        | Accesibilidad: **WCAG 2.2 – Contraste (1.4.3)**                           |
+|  7 | En **Solicitar alquiler**, no existe **confirmación** previa al envío.                 |        **3**        | Usabilidad: **Control y libertad** / Prevención de errores                |
+|  8 | **Bitácora** sin filtros por tipo/usuario; difícil localizar eventos.                  |        **1**        | IA: **Findability** (¿es localizable?)                                    |
+|  9 | **Generar PDF** falla en silencio si falta una foto requerida.                         |        **3**        | Usabilidad: **Ayuda al usuario a reconocer y recuperarse de errores**     |
+| 10 | Campos de **dirección** sin formato esperado (placeholder ambiguo).                    |        **1**        | Usabilidad: **Correspondencia con el mundo real** / Prevención de errores |
+
+
+***DESCRIPCIÓN DE PROBLEMAS***
+
+**PROBLEMA #1: Falta feedback claro de error en Login**
+
+**Severidad:** 3
+**Heurística violada: Usabilidad – Visibilidad del estado del sistema**
+**Problema:** Al ingresar credenciales inválidas, la pantalla solo realiza una animación leve; no aparece un mensaje que indique el motivo del fallo ni cómo resolverlo.
+**Recomendación:** Mostrar mensaje de error específico.
+
+---
+
+**PROBLEMA #2: Rango de temperatura invertido permitido al publicar equipo**
+
+**Severidad:** 3
+Heurística violada: Usabilidad – Prevención de errores
+**Problema:** El formulario acepta una temperatura mínima mayor que la máxima sin alertar ni bloquear el guardado.
+**Recomendación:** Validaciones sincrónicas y server-side; mensajes junto a los campos, ejemplo de formato permitido y autocorrección sugerida (intercambiar valores si corresponde).
+
+---
+
+**PROBLEMA #3: Filtros se reinician al cambiar fecha en Búsqueda**
+
+**Severidad:** 2
+Heurística violada: Usabilidad – Reconocimiento mejor que recuerdo
+**Problema:** Al ajustar el rango de fechas, los filtros previamente seleccionados desaparecen, obligando al usuario a recordarlos y reconfigurarlos.
+**Recomendación:** Persistir estado de filtros; mostrar chips de filtros activos y un botón “Restablecer”.
+
+---
+
+**PROBLEMA #4: Límite de comparación no comunicado**
+
+**Severidad:** 2
+Heurística violada: Usabilidad – Visibilidad del estado del sistema / Prevención de errores
+**Problema:** El usuario puede seleccionar más equipos de los permitidos; el error aparece tarde al abrir la vista de comparación.
+**Recomendación:** Indicar el límite desde el inicio (“Puedes comparar hasta 2 equipos”), deshabilitar selecciones extra y mostrar contador en tiempo real.
+
+---
+
+**PROBLEMA #5: Inconsistencia de controles entre Web y Mobile**
+
+**Severidad:** 1
+Heurística violada: Usabilidad – Consistencia y estándares
+**Problema:** En mobile los iconos **Filtros/Ordenar** cambian de posición respecto a Web, generando fricción al alternar plataformas.
+**Recomendación:** Unificar patrón (barra superior), usar iconografía estándar Material 3/iOS HIG y mantener ubicación estable.
+
+---
+
+**PROBLEMA #6: Bajo contraste en gráficos de Estadísticas**
+
+**Severidad:** 2
+Heurística violada: Accesibilidad – WCAG 2.2 (1.4.3 Contraste)
+**Problema:** Las series y leyendas son difíciles de distinguir para usuarios con baja visión o en pantallas con brillo reducido.
+**Recomendación:** Asegurar contraste ≥ 4.5:1, añadir marcadores en líneas, tooltips con valores y un modo de alto contraste.
+
+---
+
+**PROBLEMA #7: Sin confirmación previa al enviar solicitud de alquiler**
+
+**Severidad:** 3
+Heurística violada: Usabilidad – Control y libertad / Prevención de errores
+**Problema:** El flujo envía la solicitud sin pantalla de resumen/confirmación, lo que puede provocar envíos accidentales o datos incorrectos.
+**Recomendación:** Agregar paso de confirmación con datos clave (fechas, equipo, costo), botón **Deshacer** (5–10 s) y confirmación visual clara.
+
+---
+
+**PROBLEMA #8: Bitácora sin filtros**
+
+**Severidad:** 1
+Heurística violada: Arquitectura de información – Findability (¿es localizable?)
+**Problema:** La bitácora lista eventos, pero no permite filtrar por tipo de acción, usuario o fecha, dificultando la auditoría.
+**Recomendación:** Añadir filtros por rango de fechas, tipo (creación, edición, alquiler, alerta) y usuario; permitir exportar a CSV.
+
+---
+
+**PROBLEMA #9: Generación de PDF falla en silencio**
+
+**Severidad:** 3
+Heurística violada: Usabilidad – Ayuda al usuario a reconocer y recuperarse de errores
+**Problema:** Si falta una evidencia requerida, **Exportar PDF** no muestra la causa del fallo ni pasos para resolver.
+**Recomendación:** Validar requisitos antes de exportar; si falla, mostrar mensaje con causa y acciones (“Adjunta al menos 1 foto”) y permitir reintentar.
+
+---
+
+**PROBLEMA #10: Formato de dirección no indicado**
+
+**Severidad:** 1
+Heurística violada: Usabilidad – Correspondencia con el mundo real / Prevención de errores
+**Problema:** Campos de dirección sin ejemplos ni restricciones; los usuarios ingresan formatos inconsistentes.
+**Recomendación:** Proveer placeholders y máscara de entrada (calle, número, distrito), validación por país y ayuda contextual.
+
 <div style="page-break-before: always;"></div>
 
 # Capítulo VII: DevOps Practices
