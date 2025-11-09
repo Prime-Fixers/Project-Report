@@ -4146,6 +4146,78 @@ El Production Deployment Pipeline representa la secuencia automatizada de proces
 * **Despliegue a Producción**: Una vez que la imagen Docker ha superado todas las validaciones, **GitHub Actions** procede a realizar el despliegue del contenedor en el entorno de producción, alojado en **Microsoft Azure**. Se utilizan estrategias como Blue-Green Deployment para minimizar el tiempo de inactividad y permitir rollbacks rápidos en caso de ser necesario.
 
 
+### 8.2.5. Scale Calculations and Decisions (Cálculos y Decisiones de Escala)
+
+La escala de cada experimento se determina combinando Certeza y Precisión. Para la Certeza se fija un nivel de significancia α=0.05 (bilateral) y un poder estadístico 1−β=0.80, lo que acota los errores Tipo I y II sin sobredimensionar muestras. La Precisión se expresa con el Efecto Mínimo Detectable (MDE), entendido como el cambio más pequeño que, de observarse, justificaría una decisión de producto. La unidad de aleatorización es siempre la persona usuaria (no la sesión) y el análisis se conduce con horizonte fijo: no se inspeccionan resultados intermedios y sólo se decide al completar la muestra planificada. La decisión se fundamenta en el intervalo de confianza al 95% sobre la diferencia entre variantes para una métrica primaria única, acompañada de guardrails (p. ej., tasa de crash, reportes/abusos, variaciones relevantes en tiempo de juego o reembolsos) que evitan canjear mejoras locales por deterioros globales.
+
+#### Experimento A — Anuncios/Creatividades (CTR)
+
+El objetivo es mejorar la tasa de clic sobre impresiones (CTR = clics/impresiones), asegurando que cualquier incremento observado sea material para adquisición. Con tasa base de 0.8% y MDE de +0.4 puntos porcentuales, se requieren ≈9,701 impresiones por variante (prueba de dos proporciones, α=0.05, poder=0.80). La variante se adopta si el IC95% del uplift excluye cero y los guardrails permanecen dentro de tolerancias.
+Frostlink (trazabilidad): la configuración estadística (α, poder, MDE, unidad de análisis, ventanas de lectura y guardrails) queda registrada antes del Sprint, lo que garantiza reproducibilidad y evita ajustes “ad hoc”.
+
+#### Experimento B — Retención temprana (D1)
+
+Se busca elevar el porcentaje de personas que regresan el día 1 respecto de quienes jugaron el día 0 (D1 = regresan D1 / nuevas D0). Con base de 15% y MDE de +3 puntos porcentuales, la muestra necesaria es de ≈2,400 personas nuevas por variante. La decisión sigue el mismo criterio de IC95% sobre la métrica primaria y verificación de guardrails.
+Frostlink (trazabilidad): además de la configuración, se versionan los esquemas de eventos utilizados (p. ej., session_start, session_end), favoreciendo auditoría posterior y comparabilidad entre sprints.
+
+#### Experimento C — Monetización (Tasa de compra)
+
+El foco es incrementar la tasa de compra (compradores/DAU) sin deteriorar experiencia. Con base de 1.0% y MDE de +0.5 puntos porcentuales, se requieren ≈7,741 personas por variante. Se adopta la variante si el IC95% del uplift en la tasa de compra excluye cero y se mantienen guardrails como ARPPU estable y ausencia de picos de quejas.
+Frostlink (trazabilidad): se consolidan consultas estándar y definiciones de ingreso/compra para que los resultados sean comparables y reproducibles.
+
+Ejecución común a los tres experimentos. La exposición se realiza con rampas seguras (p. ej., 10%→50%) y chequeos previos de salud (crashes, reportes). Si el ritmo de tráfico impide alcanzar la muestra en el tiempo previsto, se reevalúan MDE, poder o duración antes de continuar. Nunca se ejecutan pruebas solapadas en la misma superficie que puedan exponer a una misma persona a dos tratamientos incompatibles.
+
+### 8.2.6. Methods Selection (Selección de Métodos)
+
+La investigación se guía por el principio Simplest Useful Thing: se elige el método más simple que permita alcanzar la muestra objetivo con validez interna y sin afectar negativamente la experiencia. Se distingue explícitamente el objeto de investigación (pregunta o hipótesis) del método (técnica de prueba). El estándar es un A/B test con asignación determinística derivada de un hash estable del userId y persistencia de variante entre sesiones para evitar cambios de condición. Se garantiza no solapamiento de experimentos en la misma superficie, de modo que ninguna persona reciba tratamientos simultáneos que interfieran. La instrumentación mínima contempla eventos con sello temporal relevantes para exposición y resultado (p. ej., ad_impression, ad_click, session_start/end, purchase, crash, report_flag) y controles antifraude (deduplicación de impresiones/clics, filtrado de tráfico anómalo). El análisis aplica dos proporciones (z) para métricas binarias (CTR, D1, compra) y t-test o Mann-Whitney para métricas continuas, reportando efecto absoluto (puntos porcentuales o unidades), efecto relativo, IC95%, p-value y lectura de guardrails; la decisión de producto se expresa en ship / hold / retest. En clave Scrum, cada experimento ingresa al Product Backlog con Definition of Ready (métrica primaria, MDE y tamaño muestral calculados, instrumentación disponible, matriz de exclusiones para evitar solapamientos) y sólo se planifica en Sprint si cumple esa preparación. El Sprint Goal se formula alrededor del resultado de la métrica primaria y la Definition of Done exige haber alcanzado la muestra prevista, ejecutar el análisis completo y formalizar la decisión en la Sprint Review; la Retrospective captura mejoras (ajuste de MDE, mitigación de sesgos, cobertura de eventos).
+Frostlink (catálogo y control): mantiene el catálogo de experimentos, la matriz de exclusiones y los logs de asignación, con validaciones automáticas de balance y pérdidas de datos antes del cierre del Sprint, reforzando calidad metodológica y disciplina operativa.
+
+### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection (Análisis de Datos: Metas, KPIs y Selección de Métricas)
+
+El sistema analítico orienta decisiones mediante una métrica primaria por experimento y un conjunto acotado de métricas de apoyo para diagnóstico. La cadencia de lectura es diaria y el corte de decisión coincide con el cumplimiento del tamaño muestral planificado. Incluyo a continuación la tabla de objetivos y KPIs en etiquetas HTML (lista para insertar en tu documento), tal como pediste:
+
+<table>
+  <thead>
+    <tr>
+      <th>Objetivo</th>
+      <th>KPI primario</th>
+      <th>Definición</th>
+      <th>MDE de referencia</th>
+      <th>Muestra por variante (ref.)</th>
+      <th>Guardrails clave</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adquisición</td>
+      <td>CTR</td>
+      <td>clics / impresiones</td>
+      <td>+0.4 puntos porcentuales</td>
+      <td>≈ 9,701 impresiones</td>
+      <td>Crash estable; sin alza de reportes</td>
+    </tr>
+    <tr>
+      <td>Retención temprana</td>
+      <td>D1</td>
+      <td>regresan en D1 / nuevas personas en D0</td>
+      <td>+3 puntos porcentuales</td>
+      <td>≈ 2,400 personas</td>
+      <td>Tiempo de juego sin caídas materiales</td>
+    </tr>
+    <tr>
+      <td>Monetización</td>
+      <td>Tasa de compra</td>
+      <td>compradores / DAU</td>
+      <td>+0.5 puntos porcentuales</td>
+      <td>≈ 7,741 personas</td>
+      <td>ARPPU estable; quejas contenidas</td>
+    </tr>
+  </tbody>
+</table>
+
+Uso y reglas de decisión. Una variante se adopta cuando el IC95% del uplift en la métrica primaria excluye cero y los guardrails permanecen dentro de tolerancias; si la mejora estadística coexiste con deterioro en guardrails, se pospone el lanzamiento hasta corregir; en caso de resultados inconclusos, se reevalúa el MDE o se amplía la muestra. Las métricas de apoyo —ARPDAU, ARPPU, D7/D30, duración de sesión, embudos de onboarding y cohortes por país/dispositivo/fuente— contextualizan el resultado sin sustituir a la métrica primaria en la decisión.
+Frostlink (economía y versionado analítico). Para controlar costos de telemetría y preservar comparabilidad entre sprints, Frostlink valida que sólo se recolecten los eventos estrictamente necesarios para estimar la métrica primaria y los guardrails, y versiona esquemas/consultas a fin de que cualquier hallazgo sea reproducible con precisión.
+
 # Conclusiones
 
 El proyecto FrostLink permitió el desarrollo de una plataforma integral de gestión y monitoreo de equipos de refrigeración, diseñada para satisfacer las necesidades tanto de clientes
