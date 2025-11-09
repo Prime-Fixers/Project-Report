@@ -4253,6 +4253,179 @@ Se aplica minimización de datos, consentimiento por categorías donde correspon
 • Conversión: tasa a plan/trial y a pago desde subscription_started y payment_success.
 Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica primaria de cada experimento y lectura de guardrails (errores, quejas, latencias), todo dentro de FrostLink para asegurar trazabilidad de extremo a extremo.
 
+<!-- 8.3.1. To-Be User Stories -->
+<section id="to-be-user-stories">
+  <h2>8.3.1. To-Be User Stories</h2>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Historia (Como… quiero… para…)</th>
+        <th scope="col">Criterios de aceptación (Given–When–Then)</th>
+        <th scope="col">Notas FrostLink</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>US1</td>
+        <td>Como responsable de plataforma, quiero que la variante experimental se asigne por <code>user_id</code> y se mantenga entre sesiones, para asegurar resultados válidos.</td>
+        <td>Given un <code>user_id</code> nuevo, When inicia por primera vez, Then se le asigna una variante y queda guardada; Given el mismo <code>user_id</code> en otro dispositivo, When inicia, Then conserva la variante.</td>
+        <td>La asignación y su hash quedan registrados para auditoría.</td>
+      </tr>
+      <tr>
+        <td>US2</td>
+        <td>Como PM, quiero un contrato de eventos mínimo por experimento, para medir la métrica primaria y guardrails sin capturar datos de más.</td>
+        <td>Given la hipótesis, When definimos el contrato, Then sólo se incluyen eventos y propiedades necesarios y se versionan; Given un cambio, When se despliega, Then pasa por pruebas de esquema y staging.</td>
+        <td>Versionado de esquemas y consultas en el catálogo.</td>
+      </tr>
+      <tr>
+        <td>US3</td>
+        <td>Como equipo de producto, quiero medir activación (primer valor real), para saber si el onboarding funciona.</td>
+        <td>Given una cohorte de registro, When pasan 24–48 h, Then puedo ver activación y D1 por variante con IC95% y misma zona horaria.</td>
+        <td>Cohortes diarias y reglas de cómputo documentadas.</td>
+      </tr>
+      <tr>
+        <td>US4</td>
+        <td>Como negocio, quiero medir conversión a trial/pago y ARPPU de forma consistente, para evaluar precios y beneficios.</td>
+        <td>Given <code>subscription_started</code> y <code>payment_success</code>, When consolido por día, Then obtengo tasa de conversión y ARPPU comparables entre variantes.</td>
+        <td>Definiciones de ingreso, plan y moneda normalizadas.</td>
+      </tr>
+      <tr>
+        <td>US5</td>
+        <td>Como responsable de calidad, quiero alertas automáticas de guardrails (errores, crashes, latencias), para frenar rampas a tiempo.</td>
+        <td>Given un experimento activo, When un umbral se supera, Then se envía alerta y se bloquea la expansión hasta corregir.</td>
+        <td>Umbrales y playbooks documentados.</td>
+      </tr>
+      <tr>
+        <td>US6</td>
+        <td>Como marketing, quiero atribución clara (UTM en web, <code>campaign_id</code>/<code>creative_id</code> en móvil), para invertir mejor.</td>
+        <td>Given campañas activas, When consulto CTR y conversión, Then puedo filtrarlas por país, plataforma y creatividad.</td>
+        <td>Ventanas de atribución definidas (24 h adquisición, 7 días conversión).</td>
+      </tr>
+      <tr>
+        <td>US7</td>
+        <td>Como equipo, quiero un tablero por experimento con efecto, IC95% y estado, para decidir en Sprint Review.</td>
+        <td>Given el horizonte fijo alcanzado, When abro el tablero, Then veo métrica primaria, guardrails y propuesta de ship/hold/retest.</td>
+        <td>Plantilla de reporte única para comparabilidad.</td>
+      </tr>
+      <tr>
+        <td>US8</td>
+        <td>Como compliance, quiero consentimiento y borrado bajo demanda, para cumplir normativa.</td>
+        <td>Given una solicitud de borrado, When se procesa, Then se eliminan datos del <code>user_id</code> y queda registro de la acción.</td>
+        <td>Flujos y evidencias de cumplimiento centralizados.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+html
+Copiar código
+<!-- 8.3.2. To-Be Product Backlog -->
+<section id="to-be-product-backlog">
+  <h2>8.3.2. To-Be Product Backlog</h2>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Ítem (resultado esperado)</th>
+        <th scope="col">Objetivo</th>
+        <th scope="col">Prioridad</th>
+        <th scope="col">Dependencias</th>
+        <th scope="col">Criterio de Hecho (resumen)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PB1</td>
+        <td>Identidad y sesión unificadas</td>
+        <td>Sesiones y usuarios consistentes; variante persistente por <code>user_id</code>.</td>
+        <td>P1</td>
+        <td>—</td>
+        <td>Reconciliación <code>anon_id</code>&rarr;<code>user_id</code>, definición de sesión, persistencia de variante validada.</td>
+      </tr>
+      <tr>
+        <td>PB2</td>
+        <td>SDK y contrato de eventos mínimo</td>
+        <td>Datos justos para decidir; contratos versionados.</td>
+        <td>P1</td>
+        <td>PB1</td>
+        <td>Eventos troncales en web/móvil, pruebas de esquema, catálogo publicado.</td>
+      </tr>
+      <tr>
+        <td>PB3</td>
+        <td>Pipeline y checks de calidad</td>
+        <td>Datos confiables (completitud, unicidad, balance de variantes).</td>
+        <td>P1</td>
+        <td>PB2</td>
+        <td>Ingesta y agregaciones diarias operativas, monitoreo y alertas de data-quality activas.</td>
+      </tr>
+      <tr>
+        <td>PB4</td>
+        <td>Tablero de decisión por experimento</td>
+        <td>Decidir con evidencia en Sprint Review.</td>
+        <td>P1</td>
+        <td>PB3</td>
+        <td>Métrica primaria con IC95%, efecto, p-value y guardrails; estado ship/hold/retest visible.</td>
+      </tr>
+      <tr>
+        <td>PB5</td>
+        <td>Experimento A (adquisición)</td>
+        <td>Medir y decidir sobre creatividades/canales.</td>
+        <td>P1</td>
+        <td>PB4</td>
+        <td>Rampa 10%→50%, CTR por campaña/creatividad, decisión documentada.</td>
+      </tr>
+      <tr>
+        <td>PB6</td>
+        <td>Experimento B (activación/retención)</td>
+        <td>Validar mejoras de onboarding/primer valor.</td>
+        <td>P1</td>
+        <td>PB4</td>
+        <td>Activación y D1 por cohorte/variante con IC95%; decisión documentada.</td>
+      </tr>
+      <tr>
+        <td>PB7</td>
+        <td>Experimento C (conversión)</td>
+        <td>Evaluar pricing/beneficios sin dañar valor.</td>
+        <td>P1</td>
+        <td>PB4</td>
+        <td>Conversión y ARPPU comparables; guardrails ok; decisión documentada.</td>
+      </tr>
+      <tr>
+        <td>PB8</td>
+        <td>Guardrails automáticos</td>
+        <td>Seguridad operativa ante degradaciones.</td>
+        <td>P2</td>
+        <td>PB3</td>
+        <td>Umbrales definidos; alertas y bloqueos de rampa funcionando.</td>
+      </tr>
+      <tr>
+        <td>PB9</td>
+        <td>Atribución extendida</td>
+        <td>Inversión de marketing más eficiente.</td>
+        <td>P2</td>
+        <td>PB2</td>
+        <td>UTM completas (web) y <code>campaign_id</code>/<code>creative_id</code> (móvil) en producción.</td>
+      </tr>
+      <tr>
+        <td>PB10</td>
+        <td>Privacidad y cumplimiento</td>
+        <td>Confianza y alineamiento normativo.</td>
+        <td>P2</td>
+        <td>PB1</td>
+        <td>Consentimiento por categorías, flujo de acceso/borrado y auditoría activos.</td>
+      </tr>
+      <tr>
+        <td>PB11</td>
+        <td>Dashboards de apoyo y cohortes</td>
+        <td>Diagnóstico profundo y seguimiento.</td>
+        <td>P3</td>
+        <td>PB3</td>
+        <td>Embudos y cohortes por país/plataforma/fuente publicados y estables.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
 # Conclusiones
 
 El proyecto FrostLink permitió el desarrollo de una plataforma integral de gestión y monitoreo de equipos de refrigeración, diseñada para satisfacer las necesidades tanto de clientes
