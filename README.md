@@ -3736,170 +3736,566 @@ A continuación se encuentra nuestro video about the product, donde se evidencia
 
 ### 6.1.1. Core Entities Unit Tests.
 
-Para asegurar la robustez y el correcto funcionamiento de los componentes centrales del sistema, se implementó una rigurosa estrategia de pruebas unitarias. El objetivo principal fue verificar el comportamiento esperado de cada agregado (User, Provider y Machine) de forma completamente aislada, validando su ciclo de vida y la lógica de negocio que encapsulan.
+# Core Entities Unit Tests
 
-La implementación se apoyó en el ecosistema de Spring Boot, utilizando JUnit 5 como pilar para la estructuración y ejecución de los casos de prueba. Adicionalmente, se integró el framework Mockito para simular las dependencias externas de cada entidad. Este enfoque nos permitió crear un entorno de prueba controlado, garantizando que las validaciones se centraran exclusivamente en la lógica interna de la clase bajo prueba —como sus constructores, métodos de modificación de estado y validaciones— sin la interferencia de otros componentes. Las suites de pruebas, como InvoiceTest, InventoryItemTest y PatientTest, fueron diseñadas para auditar estas operaciones y asegurar la integridad del código desde las primeras etapas del desarrollo.
+Este documento especifica las pruebas unitarias implementadas para las entidades principales del sistema FrostLink. Estas pruebas validan que cada componente individual funciona correctamente en aislamiento, asegurando que cumple con los requisitos funcionales y no presenta errores en su lógica interna.
 
-#### **Test 1: Pruebas del Modelo User (IAM)**
-Descripción
-Pruebas unitarias que validan el comportamiento del agregado User del bounded context IAM, incluyendo creación, actualización de username, password y suscripción.
-**Casos de prueba**
+## Entidades Probadas
 
-* Creación de usuario con datos válidos.
+Las siguientes entidades principales del sistema han sido cubiertas con pruebas unitarias:
 
-* Actualización de username.
+1. **Equipment** (Gestión de Equipos)
+2. **ServiceRequest** (Solicitudes de Servicio)
+3. **User** (Gestión de Usuarios)
+4. **Profile** (Perfiles de Usuario)
+5. **WorkOrder** (Órdenes de Trabajo)
 
-* Actualización de password hash.
+## 1. Equipment Tests
 
-* Asignación de suscripción.
+**Archivo:** `EquipmentTests.cs`
 
-* Manejo de suscripción nula.
+**Entidad probada:** `Equipment` (Aggregate Root)
 
-**Cobertura**
+### Prueba 1.1: Equipment_ShouldBeCreated_WithValidCommand
 
-* Modelo: User.cs
+**Objetivo:** Validar que un equipo de refrigeración se crea correctamente con todos sus atributos cuando se proporciona un comando válido.
 
-**Evidencia de Ejecución**
-Código de Pruebas Unitarias para UserModel
-<img src=".//resources/iam-test-evidence-1.jpg" alt="Código de pruebas para UserModelTests">
+**Escenario:**
+- Se crea un comando `CreateEquipmentCommand` con datos válidos
+- Se instancia un objeto `Equipment` usando el comando
+- Se verifica que todas las propiedades se inicializan correctamente
 
-**Resultado de Ejecución de Pruebas**
-<img src="./resources/iam-test-evidence-2.jpg" alt="Resultado de la ejecución de UserModelTests">
+**Valores de prueba:**
+- Nombre: "Industrial Freezer"
+- Modelo: "IF-2000X"
+- Fabricante: "CoolTech"
+- Costo: $5,000.00
+- Temperatura actual: -18.5°C
+- Temperatura configurada: -20.0°C
 
-#### Test 2: Pruebas del Modelo ServiceRequest
-Descripción
-Pruebas que verifican el comportamiento del modelo ServiceRequest, incluyendo asignación de técnicos, cambios de estado y validación de feedback de clientes.
+**Criterios de éxito:**
+- ✓ El equipo se crea sin errores
+- ✓ Todas las propiedades coinciden con los valores del comando
+- ✓ Los value objects (Location, EnergyConsumption) se inicializan correctamente
 
-Casos de prueba
+![Resultados de las pruebas de Equipment](./FullyQualifiedName~EquipmentTests.png)
+*Figura 1. Resultados de la ejecución filtrada para `EquipmentTests`.*
 
-Creación con datos válidos y estado inicial Pending.
+## 2. ServiceRequest Tests
 
-Asignación de técnico (estado pasa a Accepted).
+**Archivo:** `ServiceRequestTests.cs`
 
-Validación de ID de técnico (debe ser positivo).
+**Entidad probada:** `ServiceRequest` (Aggregate Root)
 
-Cambio de estado a Resolved con fecha de completado.
+### Prueba 2.1: AssignTechnician_ShouldUpdateStatus_WhenPending
 
-Agregar feedback del cliente cuando está resuelto.
+**Objetivo:** Verificar que al asignar un técnico a una solicitud pendiente, el estado cambia a "Accepted".
 
-Validación de rating (1-5).
+**Escenario:**
+- Se crea una solicitud de servicio en estado "Pending"
+- Se asigna un técnico con ID válido
+- Se verifica que el técnico se asigna y el estado cambia
 
-Cobertura
+**Criterios de éxito:**
+- ✓ AssignedTechnicianId se actualiza correctamente
+- ✓ Status cambia de Pending a Accepted
 
-Modelo: ServiceRequest.cs
+### Prueba 2.2: AddCustomerFeedback_ShouldSetRating_WhenResolved
 
-Bounded Context: ServiceRequests
+**Objetivo:** Validar que se puede agregar feedback del cliente solo cuando la solicitud está resuelta.
 
-Evidencia de Ejecución
-Código de Pruebas Unitarias para ServiceRequestModel
-<img src="./resources/service.-request-model-test-evidence-2.jpg" alt="Código de pruebas para ServiceRequestModelTests">
+**Escenario:**
+- Se crea una solicitud y se marca como resuelta
+- Se agrega un feedback con calificación de 5 estrellas
+- Se verifica que la calificación y fecha se registran
 
-Resultado de Ejecución de Pruebas
-<img src="./resources/service-evidence-1.jpg" alt="Resultado de la ejecución de ServiceRequestModelTests">
+**Criterios de éxito:**
+- ✓ CustomerFeedbackRating se establece en 5
+- ✓ FeedbackSubmissionDate no es null
 
-#### Test 3: Pruebas del HashingService
-Descripción
-Pruebas para el servicio de hashing de contraseñas usando BCrypt, validando la generación de hashes seguros y verificación correcta de credenciales.
+### Prueba 2.3: AddCustomerFeedback_ShouldThrowException_WhenRatingInvalid
 
-Casos de prueba
+**Objetivo:** Asegurar que se validan las calificaciones fuera del rango permitido (1-5).
 
-Generación de hash de contraseña.
+**Escenario:**
+- Se intenta agregar una calificación de 6 (inválida)
 
-Verificación de contraseña correcta.
+**Criterios de éxito:**
+- ✓ Se lanza ArgumentOutOfRangeException
 
-Rechazo de contraseña incorrecta.
+### Prueba 2.4: Reject_ShouldUpdateStatus_WhenPending
 
-Hashes únicos con salt aleatorio (BCrypt).
+**Objetivo:** Verificar que una solicitud pendiente puede ser rechazada.
 
-Manejo de caracteres especiales.
+**Escenario:**
+- Se crea una solicitud en estado "Pending"
+- Se ejecuta el método Reject()
 
-Cobertura
+**Criterios de éxito:**
+- ✓ Status cambia a Rejected
 
-Servicio: HashingService.cs
+### Prueba 2.5: Cancel_ShouldUpdateStatus_WhenPending
 
-Bounded Context: IAM
+**Objetivo:** Verificar que una solicitud pendiente puede ser cancelada.
 
-Librería: BCrypt.Net-Next
+**Escenario:**
+- Se crea una solicitud en estado "Pending"
+- Se ejecuta el método Cancel()
 
-Evidencia de Ejecución
-Código de Pruebas Unitarias para HashingService
-<img src="./resources/service-evidence.2.jpg" alt="Código de pruebas para HashingServiceTests">
+**Criterios de éxito:**
+- ✓ Status cambia a Cancelled
 
-Resultado de Ejecución de Pruebas
-<img src="./resources/hashing-service-test-evidence-1.jpg" alt="Código de pruebas para HashingServiceTests">
+![Resultados de las pruebas de ServiceRequest](./resources/FullyQualifiedName~ServiceRequestTests.png)
+*Figura 2. Resultados de la ejecución filtrada para `ServiceRequestTests`.*
 
-#### Test 4: Pruebas del Modelo Equipment
-Descripción
-Pruebas unitarias para el agregado Equipment del bounded context EquipmentManagement, validando la creación correcta de equipos de refrigeración con sus propiedades complejas.
+## 3. User Tests
 
-Casos de prueba
+**Archivo:** `UserTests.cs`
 
-Creación con CreateEquipmentCommand válido.
+**Entidad probada:** `User` (Aggregate Root)
 
-Validación de datos básicos (nombre, modelo, fabricante, costo).
+### Prueba 3.1: UpdateUsername_ShouldChangeUsername
 
-Configuración correcta de Location (entidad).
+**Objetivo:** Validar que el nombre de usuario puede ser actualizado.
 
-Configuración correcta de EnergyConsumption (entidad).
+**Escenario:**
+- Se crea un usuario con username "john_doe"
+- Se actualiza a "john_doe_updated"
 
-Parsing correcto de enums (Type, OwnershipType).
+**Criterios de éxito:**
+- ✓ Username se actualiza correctamente
 
-Cobertura
+### Prueba 3.2: UpdatePasswordHash_ShouldChangePasswordHash
 
-Modelo: Equipment.cs
+**Objetivo:** Verificar que el hash de contraseña puede ser actualizado.
 
-Entidades: Location.cs, EnergyConsumption.cs
+**Escenario:**
+- Se crea un usuario con un hash inicial
+- Se actualiza a un nuevo hash
 
-Bounded Context: EquipmentManagement
+**Criterios de éxito:**
+- ✓ PasswordHash se actualiza correctamente
 
-Evidencia de Ejecución
-Código de Pruebas Unitarias para EquipmentModel
-<img src="./resources//equipment-model-test-evidence-2.jpg" alt="Código de pruebas para EquipmentModelTests">
+### Prueba 3.3: UpdateSubscription_ShouldSetSubscriptionId
 
-Resultado de Ejecución de Pruebas
-<img src="./resources/equipment-model-test-evidence-1.jpg" alt="Resultado de la ejecución de EquipmentModelTests">
+**Objetivo:** Validar que se puede asignar un plan de suscripción a un usuario.
 
-#### Test 5: Pruebas de Lógica de Negocio (ServiceRequest)
-Descripción
-Pruebas complejas de reglas de negocio y validaciones para el flujo de trabajo de ServiceRequest, incluyendo transiciones de estado y restricciones.
+**Escenario:**
+- Se crea un usuario sin suscripción
+- Se asigna SubscriptionId = 42
 
-Casos de prueba
+**Criterios de éxito:**
+- ✓ SubscriptionId se establece en 42
 
-Restricción: técnico solo se asigna si está Pending.
+### Prueba 3.4: UpdateSubscription_ShouldAllowNull
 
-Cancelación permitida cuando está InProgress.
+**Objetivo:** Verificar que se puede remover una suscripción (asignar null).
 
-Restricción: no cancelar si está Resolved.
+**Escenario:**
+- Se crea un usuario con suscripción activa
+- Se actualiza SubscriptionId a null
 
-Creación de solicitud de emergencia con prioridad alta.
+**Criterios de éxito:**
+- ✓ SubscriptionId es null
 
-Agregar detalles de resolución con costo.
+![Resultados de las pruebas de User](./resources/FullyQualifiedName~UserTests.png)
+*Figura 3. Resultados de la ejecución filtrada para `UserTests`.*
 
-Restricción: feedback solo si está Resolved.
+## 4. Profile Tests
 
-Rechazo permitido solo cuando está Pending.
+**Archivo:** `ProfileTests.cs`
 
-Restricción: no rechazar si está InProgress.
+**Entidad probada:** `Profile` (Aggregate Root)
 
-Cobertura
+### Prueba 4.1: Profile_ShouldBeCreated_WithValidData
 
-Modelo: ServiceRequest.cs
+**Objetivo:** Validar que un perfil se crea correctamente con todos sus value objects.
 
-Métodos: AssignTechnician, Cancel, Reject, AddResolutionDetails, AddCustomerFeedback
+**Escenario:**
+- Se crea un perfil con nombre, email y dirección válidos
+- Se verifican las propiedades computadas (FullName, EmailAddress, StreetAddress)
 
-Bounded Context: ServiceRequests
+**Criterios de éxito:**
+- ✓ El perfil se crea sin errores
+- ✓ FullName combina nombre y apellido
+- ✓ EmailAddress contiene el email correcto
+- ✓ StreetAddress incluye la ciudad
 
-Evidencia de Ejecución
-Código de Pruebas de Lógica de Negocio para ServiceRequest
-<img src="./resources/service-request-business-logic-test-evidence-2.jpg" alt="Código de pruebas para ServiceRequestBusinessLogicTests">
+### Prueba 4.2: Profile_FullName_ShouldCombineFirstAndLastName
 
-Resultado de Ejecución de Pruebas
-<img src="./resources/service-request-business-evidence-1.jpg"> 
+**Objetivo:** Verificar que la propiedad FullName combina correctamente el nombre y apellido.
+
+**Escenario:**
+- Se crea un perfil con FirstName="Maria" y LastName="Gonzalez"
+
+**Criterios de éxito:**
+- ✓ FullName retorna "Maria Gonzalez"
+
+### Prueba 4.3: Profile_EmailAddress_ShouldReturnCorrectEmail
+
+**Objetivo:** Validar que la propiedad EmailAddress retorna el email correcto.
+
+**Escenario:**
+- Se crea un perfil con un email específico
+
+**Criterios de éxito:**
+- ✓ EmailAddress retorna el email proporcionado
+
+![Resultados de las pruebas de Profile](./resources/FullyQualifiedName~ProfileTests.png)
+*Figura 4. Resultados de la ejecución filtrada para `ProfileTests`.*
+
+## 5. WorkOrder Tests
+
+**Archivo:** `WorkOrderTests.cs`
+
+**Entidad probada:** `WorkOrder` (Aggregate Root)
+
+### Prueba 5.1: AssignTechnician_ShouldUpdateStatusToAssigned_WhenCreated
+
+**Objetivo:** Verificar que al asignar un técnico a una orden de trabajo nueva, el estado cambia a "Assigned".
+
+**Escenario:**
+- Se crea una orden de trabajo en estado "Created"
+- Se asigna un técnico
+- Se verifica el cambio de estado
+
+**Criterios de éxito:**
+- ✓ AssignedTechnicianId se actualiza
+- ✓ Status cambia a Assigned
+
+### Prueba 5.2: AddResolutionDetails_ShouldUpdateStatus_ToResolved
+
+**Objetivo:** Validar que al agregar detalles de resolución, el estado cambia a "Resolved".
+
+**Escenario:**
+- Se crea una orden de trabajo
+- Se agregan detalles de resolución con costo
+- Se verifica el cambio de estado y valores
+
+**Criterios de éxito:**
+- ✓ Status cambia a Resolved
+- ✓ ResolutionDetails se almacena correctamente
+- ✓ Cost se registra (150.00)
+
+### Prueba 5.3: SetCustomerFeedbackRating_ShouldSetRating_WhenValid
+
+**Objetivo:** Verificar que se puede registrar el feedback del cliente con una calificación válida.
+
+**Escenario:**
+- Se crea una orden de trabajo
+- Se registra una calificación de 4 estrellas
+
+**Criterios de éxito:**
+- ✓ CustomerFeedbackRating se establece en 4
+- ✓ FeedbackSubmissionDate no es null
+
+### Prueba 5.4: SetCustomerFeedbackRating_ShouldThrowException_WhenRatingInvalid
+
+**Objetivo:** Asegurar que se validan calificaciones fuera del rango (1-5).
+
+**Escenario:**
+- Se intentan registrar calificaciones de 0 y 6
+
+**Criterios de éxito:**
+- ✓ Se lanza ArgumentOutOfRangeException para ambos casos
+
+### Prueba 5.5: UpdatePriority_ShouldChangePriority
+
+**Objetivo:** Validar que la prioridad de una orden de trabajo puede ser actualizada.
+
+**Escenario:**
+- Se crea una orden con prioridad "Medium"
+- Se actualiza a "High"
+
+**Criterios de éxito:**
+- ✓ Priority se actualiza a High
+
+![Resultados de las pruebas de WorkOrder](./resources/FullyQualifiedName~WorkOrderTests.png)
+*Figura 5. Resultados de la ejecución filtrada para `WorkOrderTests`.*
+
+## Resumen de Cobertura
+
+| Entidad | Pruebas | Métodos Probados |
+|---------|---------|------------------|
+| Equipment | 1 | Constructor con Command |
+| ServiceRequest | 5 | AssignTechnician, AddCustomerFeedback (2), Reject, Cancel |
+| User | 4 | UpdateUsername, UpdatePasswordHash, UpdateSubscription (2) |
+| Profile | 3 | Constructor, FullName, EmailAddress |
+| WorkOrder | 5 | AssignTechnician, AddResolutionDetails, SetCustomerFeedbackRating (2), UpdatePriority |
+| **TOTAL** | **18** | **18 métodos de negocio** |
+
+
+## Tecnologías Utilizadas
+
+- **Framework de pruebas:** xUnit
+- **Lenguaje:** C# (.NET)
+- **Patrón:** Arrange-Act-Assert (AAA)
 
 
 ###  6.1.2. Core Integration Tests.
 
-<img src="./resources/integrantion-test.jpg"
+Este documento describe las pruebas de integración planificadas para la plataforma FrostLink con el fin de validar que los bounded contexts y servicios compartidos colaboran correctamente al exponer la API REST principal. Cada escenario se ejecuta sobre la solución `.NET 9` publicada en `FrostLinkPlatform.API`, respaldada por `AppDbContext` y MySQL según la configuración de `Program.cs`. El objetivo es asegurar que las transacciones que cruzan módulos preservan la consistencia de datos y respetan las reglas de negocio expuestas al frontend.
+
+## Alcance del sistema integrado
+
+1. `FrostLinkPlatform.API/ServiceRequests` y `FrostLinkPlatform.API/WorkOrders` para la orquestación de órdenes de trabajo.
+2. `FrostLinkPlatform.API/IAM` y `FrostLinkPlatform.API/Profiles` para autenticación, autorización y enriquecimiento de identidad.
+3. `FrostLinkPlatform.API/EquipmentManagement` y `FrostLinkPlatform.API/Analytics` para la telemetría de equipos de frío.
+4. `FrostLinkPlatform.API/bc-technicians` como proveedor de técnicos y métricas de desempeño.
+5. Servicios transversales: `Shared` (Unit of Work, repositorios genéricos), `AppDbContext`, middleware de autorización y configuración CORS.
+
+
+### Prueba 1. Orquestación Service Request → Work Order
+
+**Objetivo:** garantizar que la asignación de un técnico a una solicitud crea y persiste la orden de trabajo asociada.  
+**Componentes involucrados:** `ServiceRequestsController.AssignTechnician`, `ServiceRequestCommandService`, `WorkOrderRepository`, `IUnitOfWork`.  
+**Script asociado:** `scripts/01_service_request_workorder.sh` (crea datos base y genera `.integration_env`).  
+**Flujo de ejecución documentado:**
+1. `POST /api/v1/equipments` registra el activo de refrigeración con los datos mostrados en la Figura 1a.
+2. `POST /api/v1/service-requests` crea la solicitud enlazando el `equipmentId` recién generado (Figura 1b).
+3. `POST /api/v1/technicians` incorpora un técnico disponible y `PUT /api/v1/service-requests/{id}/technician` lo asigna a la solicitud (Figura 1c).
+4. `GET /api/v1/work-orders` evidencia la orden creada automáticamente y se filtra por `serviceRequestId` (Figura 1d).  
+**Resultados observados:**
+- El endpoint de asignación responde `HTTP 200`, cambia el estado de la solicitud a `Accepted` y retorna `assignedTechnicianId = 1`.
+- La orden de trabajo queda en estado `Assigned`, mantiene el título y copia `scheduledDate`, `timeSlot` y `serviceAddress`.
+- Los logs en consola muestran la ejecución de `UnitOfWork.CompleteAsync()` una vez, confirmando una transacción atómica.  
+**Requests y respuestas principales:**
+```http
+POST /api/v1/equipments HTTP/1.1
+{
+  "name": "QA Freezer 1762658077",
+  "model": "Model-1762658077",
+  "serialNumber": "SN-1762658077",
+  "energyConsumptionAverage": 11.2
+}
+
+HTTP/1.1 201 Created
+{
+  "id": 2,
+  "status": "Active",
+  "installationDate": "2025-11-09T03:14:37.219781+00:00"
+}
+```
+
+```http
+PUT /api/v1/service-requests/1/technician HTTP/1.1
+{ "technicianId": 1 }
+
+HTTP/1.1 200 OK
+{
+  "id": 1,
+  "status": "Accepted",
+  "assignedTechnicianId": 1
+}
+```
+**Evidencia:**
+![Creación de equipo y solicitud](./resources/img-test1-service-request/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.18.38.png)
+*Figura 1a. Payload y respuesta de `POST /api/v1/equipments`.*
+
+![Solicitud y asignación de técnico](./resources/img-test1-service-request/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.18.58.png)
+*Figura 1b. Creación de la solicitud y confirmación `HTTP 201`.*
+
+![Asignación y work order generada](./resources/img-test1-service-request/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.19.12.png)
+*Figura 1c. Asignación de técnico y respuesta `HTTP 200`.*
+
+![Verificación de la work order vinculada](./resources/img-test1-service-request/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.19.38.png)
+*Figura 1d. Consulta de `GET /api/v1/work-orders` filtrando por `serviceRequestId`.*
+
+### Prueba 2. Propagación de feedback al Work Order
+
+**Objetivo:** verificar que el feedback del cliente aplicado a una solicitud resuelta replica la calificación en la orden de trabajo asociada.  
+**Componentes involucrados:** `ServiceRequestsController.AddCustomerFeedback`, `ServiceRequestCommandService`, `WorkOrderRepository`.  
+**Script asociado:** `scripts/02_feedback_sync.sh`.  
+**Flujo de ejecución documentado:**
+1. `PATCH /api/v1/work-orders/{workOrderId}/resolution` incorpora las notas técnicas y el costo del servicio.
+2. `PUT /api/v1/service-requests/{id}/feedback` adjunta la calificación del cliente (`rating = 4`).
+3. `GET /api/v1/work-orders/{workOrderId}` y `GET /api/v1/service-requests/{id}` corroboran la replicación del feedback.  
+**Resultados observados:**
+- El work order cambia su estado a `Resolved` y persiste `customerFeedbackRating` y `feedbackSubmissionDate`.
+- La solicitud registra `actualCompletionDate` y `status = "Resolved"` tras el feedback.
+- Se mantiene coherencia en `resolutionDetails`, `technicianNotes` y `cost` en ambas entidades.  
+**Requests y respuestas principales:**
+```http
+PATCH /api/v1/work-orders/1/resolution HTTP/1.1
+{
+  "resolutionDetails": "Se reemplazó el sensor...",
+  "cost": 150.00
+}
+
+HTTP/1.1 200 OK
+{
+  "id": 1,
+  "status": "Resolved",
+  "resolutionDetails": "Se reemplazó el sensor...",
+  "cost": 150.00
+}
+```
+
+```http
+PUT /api/v1/service-requests/1/feedback HTTP/1.1
+{ "rating": 4 }
+
+HTTP/1.1 200 OK
+{
+  "id": 1,
+  "status": "Resolved",
+  "customerFeedbackRating": 4,
+  "actualCompletionDate": "2025-11-09T03:15:12+00:00"
+}
+```
+**Evidencia:**
+![Aplicación de feedback y sincronización](./resources/img-test2-feedback/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.21.55.png)
+*Figura 2a. Ejecución de `PATCH` y `PUT` para resolución y feedback.*
+
+![Consultas GET confirmando la propagación](./resources/img-test2-feedback/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.22.09.png)
+*Figura 2b. Work order y service request reflejando la calificación del cliente.*
+
+### Prueba 3. Telemetría Equipment → Analytics
+
+**Objetivo:** asegurar que las lecturas registradas en el contexto de equipos son consultables a través del API de Analytics.  
+**Componentes involucrados:** `EquipmentsController.CreateEquipmentReading`, `AnalyticsController.GetEquipmentReadings`, `AnalyticsRepository`.  
+**Script asociado:** `scripts/03_equipment_analytics.sh`.  
+**Flujo de ejecución documentado:**
+1. `POST /api/v1/equipments/{equipmentId}/readings` registra una lectura de temperatura con timestamp ISO.
+2. `GET /api/v1/analytics/equipments/{equipmentId}/readings?type=temperature&hours=24&limit=5` consulta la agregación de Analytics.  
+**Resultados observados:**
+- El API de equipos responde `HTTP 201` confirmando que la lectura queda persistida en la base relacional.
+- Analytics devuelve `HTTP 200` con la estructura esperada (`data`, `total`, `period`), demostrando la integración aun cuando no existan agregaciones previas.
+- El script evidencia que ambos contextos comparten la misma fuente de datos (`AppDbContext`).  
+**Requests y respuestas principales:**
+```http
+POST /api/v1/equipments/2/readings HTTP/1.1
+{
+  "type": "temperature",
+  "value": -18.2,
+  "timestamp": "2025-11-09T03:16:47Z"
+}
+
+HTTP/1.1 201 Created
+{
+  "id": 1274,
+  "equipmentId": 2,
+  "timestamp": "2025-11-09T03:16:47+00:00"
+}
+```
+
+```http
+GET /api/v1/analytics/equipments/2/readings?type=temperature&hours=24&limit=5 HTTP/1.1
+
+HTTP/1.1 200 OK
+{
+  "data": [],
+  "total": 0,
+  "period": "24h"
+}
+```
+**Evidencia:**
+![Registro y consulta de lecturas](./resources/img-test3-equipment/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.23.31.png)
+*Figura 3a. Inserción de lecturas y consulta de Analytics para el mismo equipo.*
+
+### Prueba 4. Autenticación y acceso autorizado
+
+**Objetivo:** confirmar que el pipeline de autenticación genera tokens válidos y que los controladores protegidos exigen autorización.  
+**Componentes involucrados:** `AuthenticationController.SignIn`, `UserCommandService`, middleware `UseRequestAuthorization`, `UsersController`.  
+**Script asociado:** `scripts/04_auth_access.sh`.  
+**Flujo de ejecución documentado:**
+1. `POST /api/v1/authentication/sign-up` crea el usuario de QA.
+2. `POST /api/v1/authentication/sign-in` devuelve el JWT y el script lo exporta como `FROSTLINK_TOKEN`.
+3. `GET /api/v1/users` sin encabezado produce `HTTP 401`.
+4. `GET /api/v1/users` con `Authorization: Bearer <token>` retorna `HTTP 200` y la lista de usuarios.  
+**Resultados observados:**
+- El token incluye `sid` y `name` y permite acceder a controladores anotados con `[Authorize]`.
+- La protección de endpoints funciona: la misma ruta responde 401 sin credenciales y 200 con token válido.
+- Los mensajes del middleware confirman que se cargó la configuración de `TokenSettings`.  
+**Requests y respuestas principales:**
+```http
+POST /api/v1/authentication/sign-up HTTP/1.1
+{ "username": "qa.user.1762658213", "password": "P@ssw0rd!" }
+
+HTTP/1.1 200 OK
+{ "message": "User created successfully" }
+```
+
+```http
+POST /api/v1/authentication/sign-in HTTP/1.1
+{ "username": "qa.user.1762658213", "password": "P@ssw0rd!" }
+
+HTTP/1.1 200 OK
+{
+  "token": "eyJhbGciOiJodHRwOi8vd3d3L..."
+}
+```
+
+```http
+GET /api/v1/users HTTP/1.1    # sin token
+HTTP/1.1 401 Unauthorized
+
+GET /api/v1/users HTTP/1.1
+Authorization: Bearer eyJhbGciOiJ...
+
+HTTP/1.1 200 OK
+[ { "id": 1, "username": "qa.user.1762658213" } ]
+```
+**Evidencia:**
+![Flujo de autenticación y acceso autorizado](./resources/img-test4-authentication/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.23.44.png)
+*Figura 4a. Secuencia completa de sign-up, sign-in y llamadas autenticadas.*
+
+### Prueba 5. Sincronización de estados Work Order ↔ Service Request
+
+**Objetivo:** asegurar que los cambios de estado aplicados a una orden de trabajo actualizan automáticamente la solicitud de servicio vinculada.  
+**Componentes involucrados:** `WorkOrdersController.UpdateWorkOrderStatus`, `WorkOrderCommandService`, `ServiceRequestRepository`, `ServiceRequestCommandService`.  
+**Script asociado:** `scripts/05_workorder_status_sync.sh`.  
+**Flujo de ejecución documentado:**
+1. `PATCH /api/v1/work-orders/{id}/status` con `newStatus = 2` (InProgress) actualiza el flujo operativo.
+2. `GET /api/v1/service-requests/{id}` comprueba el cambio de estado de la solicitud.
+3. `PATCH /api/v1/work-orders/{id}/status` con `newStatus = 5` (Resolved) completa la orden.
+4. `GET /api/v1/service-requests/{id}` verifica la sincronización final.  
+**Resultados observados:**
+- Al pasar a `InProgress` la solicitud cambia a `status = "InProgress"` y conserva la calificación dada previamente.
+- La transición a `Resolved` genera `actualCompletionDate` y mantiene el feedback y costos sincronizados.
+- Las respuestas evidencian que `WorkOrderCommandService` y `ServiceRequestRepository` actualizan sus agregados en la misma transacción.  
+**Requests y respuestas principales:**
+```http
+PATCH /api/v1/work-orders/1/status HTTP/1.1
+{ "newStatus": 2 }
+
+HTTP/1.1 200 OK
+{
+  "id": 1,
+  "status": "InProgress"
+}
+```
+
+```http
+PATCH /api/v1/work-orders/1/status HTTP/1.1
+{ "newStatus": 5 }
+
+HTTP/1.1 200 OK
+{
+  "id": 1,
+  "status": "Resolved",
+  "actualCompletionDate": "2025-11-09T03:16:59.190326+00:00"
+}
+```
+
+```http
+GET /api/v1/service-requests/1 HTTP/1.1
+
+HTTP/1.1 200 OK
+{
+  "id": 1,
+  "status": "Resolved",
+  "actualCompletionDate": "2025-11-09T03:16:59+00:00",
+  "customerFeedbackRating": 4
+}
+```
+**Evidencia:**
+![Cambio a InProgress](./resources/img-test5-worker/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.23.53.png)
+*Figura 5a. Respuesta del PATCH que coloca la orden en progreso y la consulta correspondiente.*
+
+![Cambio a Resolved](./resources/img-test5-worker/Captura%20de%20pantalla%202025-11-08%20a%20la%28s%29%2022.24.02.png)
+*Figura 5b. Respuesta del PATCH a Resolved y verificación final de la solicitud.*
+
 
 ### 6.1.3. Core Behavior-Driven Development
 
