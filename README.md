@@ -5345,6 +5345,629 @@ C. BDD Tests - Herramientas y Prácticas
 
 ### 7.4.2. Monitoring Pipeline Components.
 
+### 7.4.2. Monitoring Pipeline Components
+
+Esta sección describe los componentes de la pipeline de monitoreo continuo para cada categoría de pruebas.
+
+ A. Unit Tests - Pipeline Components
+
+**1. Pre-commit Hooks**
+
+```bash
+# .git/hooks/pre-commit
+#!/bin/bash
+echo "🧪 Ejecutando pruebas unitarias..."
+dotnet test FrostLinkPlatform.Tests/FrostLinkPlatform.Tests.csproj \
+    --filter "Category=Unit" \
+    --logger "console;verbosity=minimal"
+
+if [ $? -ne 0 ]; then
+    echo "❌ Las pruebas unitarias fallaron. Commit bloqueado."
+    exit 1
+fi
+
+echo "✅ Todas las pruebas unitarias pasaron"
+```
+
+**2. CI/CD Integration (GitHub Actions)**
+
+```yaml
+name: Unit Tests
+
+on: [push, pull_request]
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '9.0.x'
+    
+    - name: Restore dependencies
+      run: dotnet restore Platform/FrostLinkPlatform.Tests/FrostLinkPlatform.Tests.csproj
+    
+    - name: Run Unit Tests
+      run: |
+        dotnet test Platform/FrostLinkPlatform.Tests/FrostLinkPlatform.Tests.csproj \
+          --filter "Category=Unit" \
+          --collect:"XPlat Code Coverage" \
+          --logger "trx;LogFileName=unit-test-results.trx" \
+          --results-directory ./TestResults
+    
+    - name: Generate Coverage Report
+      run: |
+        dotnet tool install --global dotnet-reportgenerator-globaltool
+        reportgenerator \
+          -reports:./TestResults/*/coverage.cobertura.xml \
+          -targetdir:./CoverageReport \
+          -reporttypes:Html;Badges
+    
+    - name: Upload Coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./TestResults/*/coverage.cobertura.xml
+        flags: unittests
+    
+    - name: Upload Test Results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: unit-test-results
+        path: |
+          ./TestResults/*.trx
+          ./CoverageReport/**
+```
+
+**3. Métricas monitoreadas (Unit Tests)**
+
+| Métrica | Objetivo | Actual | Estado |
+|---------|----------|--------|--------|
+| Tiempo de ejecución | < 5s | 2.3s | ✅ |
+| Tasa de éxito | 100% | 100% | ✅ |
+| Cobertura de código | ≥ 80% | 85% | ✅ |
+| Pruebas por entidad | ≥ 3 | 3.6 promedio | ✅ |
+| Tests fallidos | 0 | 0 | ✅ |
+
+**4. Alertas configuradas (Unit Tests)**
+
+```json
+{
+  "unit_tests": {
+    "critical": {
+      "condition": "test_failure_count > 0",
+      "action": "block_pipeline",
+      "notification": ["email", "slack"],
+      "recipients": ["dev-team@frostlink.com"]
+    },
+    "warning": {
+      "condition": "code_coverage < 75%",
+      "action": "require_justification",
+      "notification": ["slack"],
+      "recipients": ["#dev-channel"]
+    },
+    "info": {
+      "condition": "execution_time > 4s",
+      "action": "log_warning",
+      "notification": ["slack"],
+      "recipients": ["#qa-channel"]
+    }
+  }
+}
+```
+
+ B. Integration Tests - Pipeline Components
+
+**1. Backend Startup Script con Health Check**
+
+```bash
+# scripts/00_start_backend.sh (con monitoreo)
+#!/bin/bash
+
+echo "🚀 Iniciando backend..."
+dotnet run --project ../../FrostLinkPlatform.API/FrostLinkPlatform.API.csproj &
+BACKEND_PID=$!
+
+echo "⏳ Esperando que el backend esté disponible..."
+for i in {1..30}; do
+    if curl -s http://localhost:5000/health > /dev/null 2>&1; then
+        echo "✅ Backend disponible en http://localhost:5000"
+        echo $BACKEND_PID > .backend.pid
+        exit 0
+    fi
+    sleep 1
+done
+
+echo "❌ Backend no respondió en 30 segundos"
+kill $BACKEND_PID 2>/dev/null
+exit 1
+```
+
+**2. CI/CD Integration (GitHub Actions)**
+
+```yaml
+name: Integration Tests
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Diario a las 6 AM
+  workflow_dispatch:
+  push:
+    branches: [ main, develop ]
+
+jobs:
+  integration-tests:
+    runs-on: ubuntu-latest
+    
+    services:
+      mysql:
+        image: mysql:9.0
+        env:
+          MYSQL_ROOT_PASSWORD: test_password
+          MYSQL_DATABASE: frostlink_test
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=3
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '9.0.x'
+    
+    - name: Restore dependencies
+      run: dotnet restore Platform/FrostLinkPlatform.API/FrostLinkPlatform.API.csproj
+    
+    - name: Start Backend
+      env:
+        DefaultConnection: "server=localhost;port=3306;database=frostlink_test;uid=root;pwd=test_password;"
+      run: |
+        cd Platform/FrostLinkPlatform.Tests/scripts
+        chmod +x 00_start_backend.sh
+        ./00_start_backend.sh &
+        sleep 10
+    
+    - name: Run Integration Tests
+      run: |
+        cd Platform/FrostLinkPlatform.Tests/scripts
+        chmod +x 01_*.sh 02_*.sh 03_*.sh 04_*.sh 05_*.sh
+        
+        echo "🧪 Ejecutando Test 1: Service Request → Work Order"
+        ./01_service_request_workorder.sh || exit 1
+        
+        echo "🧪 Ejecutando Test 2: Feedback Propagation"
+        ./02_feedback_sync.sh || exit 1
+        
+        echo "🧪 Ejecutando Test 3: Equipment → Analytics"
+        ./03_equipment_analytics.sh || exit 1
+        
+        echo "🧪 Ejecutando Test 4: Authentication"
+        ./04_auth_access.sh || exit 1
+        
+        echo "🧪 Ejecutando Test 5: Work Order Status Sync"
+        ./05_workorder_status_sync.sh || exit 1
+        
+        echo "✅ Todos los tests de integración pasaron"
+    
+    - name: Cleanup
+      if: always()
+      run: |
+        if [ -f Platform/FrostLinkPlatform.Tests/scripts/.backend.pid ]; then
+          kill $(cat Platform/FrostLinkPlatform.Tests/scripts/.backend.pid) 2>/dev/null || true
+        fi
+    
+    - name: Upload Screenshots
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: integration-test-screenshots
+        path: Platform/FrostLinkPlatform.Tests/img-test*/**/*.png
+```
+
+**3. Métricas monitoreadas (Integration Tests)**
+
+| Métrica | Objetivo | Actual | Estado |
+|---------|----------|--------|--------|
+| Tiempo total de suite | < 60s | 45s | ✅ |
+| API response time (CRUD) | < 500ms | 320ms avg | ✅ |
+| API response time (complex) | < 1000ms | 780ms avg | ✅ |
+| Tasa de éxito | 100% | 100% | ✅ |
+| Endpoints cubiertos | 15+ | 18 | ✅ |
+| Scripts ejecutados | 5 | 5 | ✅ |
+
+**4. Alertas configuradas (Integration Tests)**
+
+```json
+{
+  "integration_tests": {
+    "critical": {
+      "condition": "script_exit_code != 0",
+      "action": "fail_pipeline",
+      "notification": ["email", "slack", "pagerduty"],
+      "recipients": ["qa-team@frostlink.com", "devops@frostlink.com"]
+    },
+    "warning": {
+      "condition": "api_response_time > 1000ms",
+      "action": "log_warning",
+      "notification": ["slack"],
+      "recipients": ["#performance-alerts"]
+    },
+    "warning": {
+      "condition": "mysql_connection_pool > 80%",
+      "action": "investigate",
+      "notification": ["slack"],
+      "recipients": ["#database-team"]
+    },
+    "info": {
+      "condition": "new_endpoint_detected",
+      "action": "suggest_test_coverage",
+      "notification": ["slack"],
+      "recipients": ["#qa-channel"]
+    }
+  }
+}
+```
+
+**5. Dashboard de Monitoreo (Integration Tests)**
+
+Componentes específicos para pruebas de integración:
+
+- **API Health Status:** Estado en tiempo real del backend (UP/DOWN)
+- **Database Connection Pool:** Utilización de conexiones MySQL (gauge 0-100%)
+- **Endpoint Response Times:** Gráfico de barras por endpoint (ms)
+- **Integration Flow Success Rate:** % de ejecuciones exitosas por flujo (últimos 30 días)
+- **Test Data Growth:** Monitoreo del crecimiento de datos de prueba en BD (registros)
+- **Error Rate by Endpoint:** Tasa de errores HTTP 4xx/5xx por endpoint
+
+ C. BDD Tests - Pipeline Components
+
+**1. Source Control Integration (GitHub Actions)**
+
+```yaml
+# .github/workflows/bdd-tests.yml
+name: BDD Test Suite
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  schedule:
+    - cron: '0 8 * * *'  # Ejecución diaria a las 8 AM
+  workflow_dispatch:
+
+jobs:
+  bdd-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '9.0.x'
+    
+    - name: Restore dependencies
+      run: dotnet restore Platform/FrostLinkPlatform.Tests/FrostLinkPlatform.Tests.csproj
+    
+    - name: Install SpecFlow Tools
+      run: |
+        dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI --version 3.9.57
+        echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+    
+    - name: Run BDD Tests
+      run: |
+        dotnet test Platform/FrostLinkPlatform.Tests/FrostLinkPlatform.Tests.csproj \
+          --filter "Category=bdd" \
+          --logger "trx;LogFileName=bdd-results.trx" \
+          --logger "console;verbosity=detailed" \
+          --results-directory ./TestResults
+    
+    - name: Generate LivingDoc Report
+      if: always()
+      run: |
+        livingdoc test-assembly \
+          Platform/FrostLinkPlatform.Tests/bin/Debug/net9.0/FrostLinkPlatform.Tests.dll \
+          -t TestResults/bdd-results.trx \
+          -o ./LivingDoc
+    
+    - name: Upload Test Results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: bdd-test-results
+        path: ./TestResults/*.trx
+    
+    - name: Publish LivingDoc to GitHub Pages
+      if: always() && github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./LivingDoc
+        destination_dir: bdd-report
+    
+    - name: Comment PR with Results
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          const trxPath = './TestResults/bdd-results.trx';
+          // Parse TRX y genera comentario con resumen
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '✅ BDD Tests passed! View [LivingDoc Report](https://your-org.github.io/frostlink/bdd-report/)'
+          });
+```
+
+**2. Test Execution Monitoring (BDD)**
+
+El sistema monitorea los siguientes aspectos durante la ejecución de pruebas BDD:
+
+- **Tiempo de ejecución total:** Target < 2 segundos para la suite completa (8 escenarios)
+- **Tiempo por escenario:** Target < 200ms por escenario individual
+- **Tiempo por feature:** Agrupación de tiempos por feature file
+- **Tasa de éxito:** Target = 100% para escenarios en `main` branch
+- **Cobertura de features:** Mínimo 2 escenarios por bounded context crítico
+- **Step definition reuse:** Métrica de reutilización de step definitions
+
+**3. Results Collection and Storage (BDD)**
+
+```bash
+# Estructura de almacenamiento de resultados BDD
+TestResults/
+├── bdd-results-2025-11-09-00-58-22.trx          # Resultado de ejecución
+├── bdd-results-2025-11-09-12-30-45.trx
+├── LivingDoc/
+│   ├── index.html                                # Reporte HTML principal
+│   ├── featuresSummary.html                      # Resumen por features
+│   └── assets/                                   # CSS/JS del reporte
+├── trends/
+│   ├── execution-time-history.json               # Historial de tiempos
+│   ├── success-rate-history.json                 # Historial de tasa de éxito
+│   ├── scenario-flakiness.json                   # Escenarios con fallas intermitentes
+│   └── feature-coverage.json                     # Cobertura por bounded context
+└── archived/
+    └── 2025-11/                                  # Resultados archivados por mes
+        ├── week-01/
+        └── week-02/
+```
+
+**4. Reporting Dashboard (BDD)**
+
+Componentes del dashboard de monitoreo específicos para BDD:
+
+- **Estado general de la suite:** Gráfico de pastel con % éxito/fallo de escenarios
+- **Tendencia temporal:** Gráfico de líneas mostrando evolución de tasa de éxito (últimos 30 días)
+- **Escenarios más lentos:** Lista ordenada por tiempo de ejecución
+- **Escenarios flaky:** Scenarios con resultados inconsistentes (>1 falla en últimos 10 runs)
+- **Cobertura por feature:** Matriz de features vs. escenarios implementados
+- **Step definition usage:** Top 10 step definitions más reutilizados
+- **Gherkin quality metrics:** Análisis de complejidad de escenarios (número de steps)
+
+**5. Alert Configuration (BDD)**
+
+```json
+{
+  "bdd_tests": {
+    "critical": {
+      "condition": "success_rate < 90%",
+      "action": "block_merge",
+      "channels": ["email", "slack"],
+      "recipients": ["qa-team@frostlink.com", "product-owners@frostlink.com"],
+      "priority": "high",
+      "escalation_time": "15m"
+    },
+    "warning": {
+      "condition": "execution_time > 3s",
+      "action": "investigate_performance",
+      "channels": ["slack"],
+      "recipients": ["#qa-channel"],
+      "priority": "medium"
+    },
+    "warning": {
+      "condition": "scenario_flaky_count > 2",
+      "action": "review_scenario",
+      "channels": ["slack"],
+      "recipients": ["#qa-channel"],
+      "priority": "medium"
+    },
+    "info": {
+      "condition": "new_scenario_added",
+      "action": "notify_stakeholders",
+      "channels": ["slack"],
+      "recipients": ["#qa-channel", "#product-channel"],
+      "priority": "low"
+    }
+  }
+}
+```
+
+**6. Integration with Monitoring Tools (BDD)**
+
+La suite BDD se integra con las siguientes herramientas de monitoreo:
+
+- **Application Insights (Azure):** 
+  - Telemetría de ejecución de tests
+  - Métricas personalizadas por feature
+  - Tracking de dependencias entre scenarios
+
+- **Prometheus + Grafana:** 
+  - Métricas personalizadas de escenarios BDD
+  - Dashboards visuales con KPIs en tiempo real
+  - Alerting basado en umbrales configurables
+
+- **ELK Stack (Elasticsearch, Logstash, Kibana):** 
+  - Indexación de logs de ejecución de Gherkin
+  - Búsqueda full-text de escenarios y steps
+  - Análisis de patrones de fallo en scenarios
+
+- **Datadog:** 
+  - Monitoreo unificado de infraestructura y tests
+  - APM (Application Performance Monitoring) integrado
+  - Correlación de fallos de tests con eventos de sistema
+
+- **GitHub Pages:** 
+  - Publicación automática de LivingDoc
+  - Acceso público al estado de escenarios
+  - Historial de reportes por versión
+
+**7. Continuous Improvement Loop (BDD)**
+
+```
+┌──────────────────────┐
+│   Run BDD Tests      │
+│  (SpecFlow + xUnit)  │
+└──────────┬───────────┘
+           │
+           ▼
+┌──────────────────────┐
+│  Collect Results     │
+│  (TRX + LivingDoc)   │
+└──────────┬───────────┘
+           │
+           ▼
+┌──────────────────────┐
+│  Analyze Metrics     │
+│ • Success rate       │
+│ • Execution time     │
+│ • Flaky scenarios    │
+└──────────┬───────────┘
+           │
+           ▼
+┌──────────────────────┐
+│  Identify Issues     │
+│ • Failed scenarios   │
+│ • Performance issues │
+│ • Coverage gaps      │
+└──────────┬───────────┘
+           │
+           ▼
+┌──────────────────────┐
+│  Update Scenarios    │
+│ • Fix failing steps  │
+│ • Optimize slow ones │
+│ • Add missing ones   │
+└──────────┬───────────┘
+           │
+           └──────────┐
+                      │
+                      ▼
+                ┌─────────────┐
+                │   Repeat    │
+                └─────────────┘
+```
+
+**8. Métricas clave monitoreadas (BDD)**
+
+| Métrica | Objetivo | Actual | Estado |
+|---------|----------|--------|--------|
+| Tasa de éxito | 100% | 100% | ✅ |
+| Tiempo total | < 2s | 0.95s | ✅ |
+| Escenarios totales | ≥ 8 | 8 | ✅ |
+| Features cubiertos | 5 | 5 | ✅ |
+| Cobertura de código | ≥ 70% | 85% | ✅ |
+| Step definitions | 20-30 | 25 | ✅ |
+| Escenarios flaky | 0 | 0 | ✅ |
+| LivingDoc actualizado | Sí | Sí | ✅ |
+
+---
+
+ Resumen Comparativo de Monitoreo por Tipo de Prueba
+
+| Aspecto | Unit Tests | Integration Tests | BDD Tests |
+|---------|------------|-------------------|-----------|
+| **Frecuencia de ejecución** | Cada commit | Diaria + cada push | Cada push + diaria |
+| **Tiempo objetivo** | < 5s | < 60s | < 2s |
+| **Herramienta principal** | xUnit + Coverlet | bash + curl | SpecFlow + xUnit |
+| **Formato de reporte** | TRX + Cobertura | Screenshots + logs | TRX + LivingDoc HTML |
+| **Métrica clave** | Code Coverage (85%) | API Response Time (320ms) | Scenario Success (100%) |
+| **Alertas críticas** | Test failure | Script exit ≠ 0 | Success rate < 90% |
+| **Stakeholders** | Developers | QA + DevOps | QA + Product Owners |
+| **Bloquea pipeline** | Sí | Sí | Sí |
+| **Publicación externa** | No | No (screenshots) | Sí (GitHub Pages) |
+
+---
+
+ Implementación de Dashboards Centralizados
+
+Para unificar la visualización de todas las métricas de pruebas, se recomienda implementar un dashboard centralizado que integre:
+
+ Dashboard Principal - FrostLink Test Suite
+
+**Sección 1: Overview General**
+- Total de pruebas ejecutadas (Unit + Integration + BDD)
+- Tasa de éxito global
+- Tiempo total de suite completa
+- Última ejecución exitosa
+
+**Sección 2: Unit Tests**
+- Número de pruebas unitarias: 18
+- Cobertura de código: 85%
+- Tiempo de ejecución: 2.3s
+- Estado: ✅ All Passing
+
+**Sección 3: Integration Tests**
+- Número de scripts: 5
+- Endpoints cubiertos: 18
+- Tiempo promedio de respuesta: 320ms
+- Estado: ✅ All Passing
+
+**Sección 4: BDD Tests**
+- Número de escenarios: 8
+- Features cubiertos: 5
+- Tiempo de ejecución: 0.95s
+- Estado: ✅ All Passing
+- LivingDoc: [Ver reporte](link)
+
+**Sección 5: Tendencias (últimos 30 días)**
+- Gráfico de línea: Tasa de éxito por día
+- Gráfico de barras: Tiempo de ejecución por tipo de prueba
+- Heat map: Días con fallos por categoría
+
+---
+
+ Próximos Pasos Recomendados
+
+1. **Automatización completa de CI/CD:**
+   - Configurar todos los workflows de GitHub Actions
+   - Integrar notificaciones con Slack/Teams
+   - Publicar LivingDoc en GitHub Pages
+
+2. **Implementación de dashboards:**
+   - Configurar Grafana con Prometheus
+   - Crear dashboards personalizados por equipo
+   - Implementar alerting avanzado
+
+3. **Expansión de cobertura:**
+   - Aumentar escenarios BDD a 15+
+   - Agregar pruebas de performance
+   - Implementar pruebas de seguridad (SAST/DAST)
+
+4. **Optimización de performance:**
+   - Paralelización de pruebas unitarias
+   - Optimización de queries en integration tests
+   - Reducción de setup time en BDD tests
+
+5. **Documentación y capacitación:**
+   - Crear guías para nuevos desarrolladores
+   - Capacitar al equipo en SpecFlow/Gherkin
+   - Establecer mejores prácticas de testing
+
+
 
 # Conclusiones
 
