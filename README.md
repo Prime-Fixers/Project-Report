@@ -4145,6 +4145,91 @@ El Production Deployment Pipeline representa la secuencia automatizada de proces
 
 * **Despliegue a Producción**: Una vez que la imagen Docker ha superado todas las validaciones, **GitHub Actions** procede a realizar el despliegue del contenedor en el entorno de producción, alojado en **Microsoft Azure**. Se utilizan estrategias como Blue-Green Deployment para minimizar el tiempo de inactividad y permitir rollbacks rápidos en caso de ser necesario.
 
+## 8.1.4. Question Backlog
+
+| ID | Pregunta | Prioridad | Estado | Fuente/Contexto |
+|---|---|---|---|---|
+| QB-01 | ¿Los usuarios confían en las alertas automáticas de temperatura para tomar acciones inmediatas? | Alta | Pendiente | Entrevistas iniciales - Segmento 1 |
+| QB-02 | ¿Qué tan dispuestos están los técnicos a adoptar una plataforma digital para gestionar sus visitas? | Alta | Pendiente | Entrevistas iniciales - Segmento 2 |
+| QB-03 | ¿El monitoreo en tiempo real realmente reduce las pérdidas por fallas en equipos? | Alta | Pendiente | Lean UX Hypothesis 2 |
+| QB-04 | ¿Qué funcionalidades son consideradas "imprescindibles" por los dueños de negocios? | Media | Pendiente | Análisis competitivo |
+| QB-05 | ¿El sistema de reportes automáticos mejora la eficiencia de los técnicos? | Media | Pendiente | User Stories EP-04 |
+| QB-06 | ¿Qué tan crítico es el control remoto de equipos para los usuarios? | Baja | Pendiente | Technical Stories EP-02 |
+| QB-07 | ¿Los usuarios están dispuestos a pagar por funcionalidades avanzadas de mantenimiento predictivo? | Alta | Pendiente | Business Outcomes - Lean UX |
+
+## 8.1.5. Experiment Cards
+
+| Experiment ID | Título | Pregunta Relacionada | Hipótesis | Métrica Principal |
+|---|---|---|---|---|
+| EXP-01 | Validación de Confianza en Alertas | QB-01 | Los usuarios confían y actúan basados en alertas automáticas de temperatura | Tasa de respuesta a alertas > 80% |
+| EXP-02 | Adopción Técnica Plataforma Digital | QB-02 | Los técnicos adoptan la plataforma si reduce su tiempo administrativo en 30% | Tasa de adopción técnica > 70% |
+| EXP-03 | Impacto en Reducción de Pérdidas | QB-03 | El monitoreo reduce pérdidas por fallas en al menos 25% | Reducción porcentual de pérdidas reportadas |
+| EXP-04 | Funcionalidades Esenciales MVP | QB-04 | Monitoreo tiempo real y alertas son las funcionalidades más valoradas | Ranking de características por importancia |
+| EXP-05 | Eficiencia en Reportes Técnicos | QB-05 | Reportes automáticos reducen tiempo de documentación en 40% | Tiempo ahorrado en documentación |
+| EXP-06 | Valoración Control Remoto | QB-06 | Control remoto no es crítico para la versión inicial del producto | Porcentaje de uso de control remoto |
+| EXP-07 | Disposición Pago Funcionalidades Avanzadas | QB-07 | Usuarios pagan 20% más por mantenimiento predictivo | Tasa de conversión a planes premium |
+
+## 8.2.1. Hypotheses
+
+**Hipótesis de Valor:**
+- **H1:** Los dueños de negocios confían en las alertas automáticas de temperatura y toman acciones basadas en ellas dentro de los primeros 15 minutos de recibidas.
+- **H2:** Los técnicos especializados en refrigeración adoptan la plataforma cuando reduce su tiempo en gestión administrativa en al menos un 30%.
+
+**Hipótesis de Crecimiento:**
+- **H3:** La funcionalidad de monitoreo en tiempo real es la característica más valorada por los usuarios y tiene el mayor impacto en la decisión de suscripción.
+- **H4:** Los reportes automáticos de consumo energético generan un ahorro mensual identificable que justifica el costo de la suscripción.
+
+**Hipótesis de Usabilidad:**
+- **H5:** La interfaz móvil permite a los técnicos registrar intervenciones completas en menos de 3 minutos por visita.
+- **H6:** Los dueños de negocios pueden configurar alertas básicas sin asistencia técnica en su primer uso.
+
+## 8.2.2. Domain Business Metrics
+
+**Métricas Principales del Negocio:**
+- **Customer Acquisition Cost (CAC):** Costo promedio para adquirir un nuevo cliente
+- **Monthly Recurring Revenue (MRR):** Ingresos recurrentes mensuales
+- **Customer Lifetime Value (LTV):** Valor promedio de un cliente durante su ciclo de vida
+- **Churn Rate:** Tasa de cancelación de suscripciones mensual
+
+**Métricas Específicas del Dominio:**
+- **Tasa de Reducción de Pérdidas:** Porcentaje de reducción en pérdidas por fallas de refrigeración
+- **Eficiencia Operativa Técnicos:** Horas ahorradas en gestión administrativa por técnico/mes
+- **Tiempo Medio de Respuesta:** Tiempo promedio entre alerta y acción correctiva
+- **Tasa de Adopción Funcionalidades:** Porcentaje de usuarios que utilizan cada funcionalidad clave
+
+## 8.2.3. Measures
+
+**Medidas Cuantitativas:**
+- **Tasa de Conversión:** % de visitantes que se convierten en usuarios registrados
+- **Tasa de Activación:** % de usuarios que completan configuración inicial
+- **Frecuencia de Uso:** Número de sesiones por usuario por semana
+- **Tiempo en Plataforma:** Minutos promedio por sesión por tipo de usuario
+- **Tasa de Retención:** % de usuarios activos después de 30 días
+
+**Medidas Cualitativas:**
+- **Score de Satisfacción (CSAT):** Calificación de satisfacción post-interacción (1-5)
+- **Net Promoter Score (NPS):** Probabilidad de recomendar el servicio (0-10)
+- **Tasa de Abandono:** Razones principales para cancelar suscripción
+- **Feedback de Usabilidad:** Comentarios sobre facilidad de uso y aprendizaje
+
+## 8.2.4. Conditions
+
+**Criterios de Éxito:**
+- **Condición de Validación H1:** > 80% de usuarios actúan sobre alertas dentro de 15 minutos
+- **Condición de Validación H2:** > 70% de técnicos reportan ahorro de tiempo > 30%
+- **Condición de Validación H3:** Monitoreo tiempo real rankeado como #1 en importancia
+- **Condición de Validación H4:** > 60% de usuarios identifican ahorros que justifican costo
+
+**Criterios de Fracaso:**
+- **Condición de Invalidación H1:** < 50% de usuarios actúan sobre alertas en 24 horas
+- **Condición de Invalidación H2:** < 40% de técnicos adoptan plataforma después de 2 semanas
+- **Condición de Invalidación H5:** > 50% de técnicos requieren > 5 minutos por registro
+- **Condición de Invalidación H6:** > 30% de usuarios requieren asistencia para configuración inicial
+
+**Condiciones de Terminación:**
+- **Muestra Mínima:** 50 usuarios por segmento completando experimentos
+- **Duración Mínima:** 2 semanas de recolección de datos por experimento
+- **Confianza Estadística:** 95% de nivel de confianza para decisiones pivotar/perseverar
 
 ### 8.2.5. Scale Calculations and Decisions (Cálculos y Decisiones de Escala)
 
