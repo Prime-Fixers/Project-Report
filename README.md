@@ -75,6 +75,10 @@
     <td>Varela Bustinza, Marcelo Alessandro</td>
     <td>U202319668</td>
   </tr>
+     <tr>
+    <td>Ramos Calagua, Sebastian Alexander</td>
+    <td>U202222846</td>
+  </tr>
 </table>
 
 
@@ -109,6 +113,7 @@
                     <li>Medina Cruzado, Raúl Adrian</li>
                     <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
                     <li>Varela Bustinza, Marcelo Alessandro</li>
+                    <li>Ramos Calagua, Sebastian Alexander</li>
                 </ul>
             </td>
             <td>
@@ -212,6 +217,7 @@
                     <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
                      <li>Pereira Vasquez, Fabrizzio</li>
                     <li>Varela Bustinza, Marcelo Alessandro</li>
+                    <li>Ramos Calagua, Sebastian Alexander</li>
                 </ul>
             </td>
 <td>
@@ -277,6 +283,7 @@
                     <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
                      <li>Pereira Vasquez, Fabrizzio</li>
                     <li>Varela Bustinza, Marcelo Alessandro</li>
+                    <li>Ramos Calagua, Sebastian Alexander</li>
                 </ul>
             </td>
     </tbody>
@@ -315,6 +322,10 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
     <td>Varela Bustinza, Marcelo Alessandro</td>
     <td>VarBus</td>
   </tr>
+  <tr>
+    <td>Ramos Calagua, Sebastian Alexander</td>
+    <td>Dazzliboy</td>
+  </tr>
 </table>
 
 **TB1**
@@ -352,6 +363,7 @@ Los integrantes son:
 - Mondoñedo Rodriguez, Juan Diego Javier (Jmondonedor)
 - Pereira Vasquez, Fabrizzio  (fabrizzioper)
 - Varela Bustinza, Marcelo Alessandro  (Varbus)
+- Ramos Calagua, Sebastian Alexander (DazzliBoy)
 
 Se explican las ramas más prominentes:
 
@@ -669,6 +681,7 @@ La plataforma incorpora funcionalidades clave como monitoreo en tiempo real de t
 | **Juan Diego Mondoñedo**<br>Estudiante de Ingeniería de Software con experiencia previa con metodología ágil y frameworks como Angular y Vue, además de conocimientos en programación en Javascript, C++ y Python. Como miembro del equipo de FrostLink, emplearé mis habilidades al máximo para el desarrollo de nuestra startup. | <img src="/resources/JD.jpg" alt="angie image" width="200"> |
 | **Fabrizzio Pereira**<br> Mi nombre es Nelson Fabrizzio Pereira Vásquez (U202417468), estudiante de Ingeniería de Software con dominio en desarrollo web, especializado en React y su ecosistema. Cuenta con experiencia en la creación de proyectos prácticos como método de aprendizaje, aplicando principios de ingeniería de software y buenas prácticas de desarrollo. Destaca por su capacidad de trabajo en equipo, su disposición para colaborar activamente y su habilidad para apoyar en la resolución de problemas técnicos.| <img src="https://raw.githubusercontent.com/upc-pre-202520-1ACC0238-2005-mira/ProjectReport/main/img/chapter1/nelson.jpeg" alt="fabrizzio image" width="200"> |
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
+| **Sebastian Ramos**<br>Mi nombre es Sebastian Ramos. Soy un estudiante de la carrera de Ingeniería De Software, tengo 22 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona proactiva, al cual le gusta aprender sobre desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi participación para enfrentar lo desafíos así como dar lo mejor de mí. | <img src="https://i.postimg.cc/vHksZbw6/Sebastian-Ramos-foto-perfil.jpg" alt="sebas image" width="200"> |
 
 ## 1.2. Solution Profile
 
