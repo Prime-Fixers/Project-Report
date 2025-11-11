@@ -5502,6 +5502,96 @@ Heurística violada: Usabilidad – Correspondencia con el mundo real / Prevenci
 
 <div style="page-break-before: always;"></div>
 
+## 6.4. Auditoría de Experiencias de Usuario (UX) 📝
+
+### 6.4.1. Auditoría Realizada (Perspectiva del Grupo Auditado: FrostLink)
+
+#### 6.4.1.1. Información del grupo auditado
+
+El equipo de desarrollo de la plataforma **FrostLink** (equipo auditado) fue el responsable de generar los artefactos de diseño y las historias de usuario que fueron sometidos a la Evaluación Heurística.
+
+| Aspecto | Detalle |
+| :--- | :--- |
+| **Nombre del Proyecto** | Plataforma de Gestión de Refrigeración **FrostLink**. |
+| **Fase Auditada** | **UX/UI Design y Prototipado** (Artefactos de Capítulos IV y V). |
+| **Grupo Auditado (Startup)** | Equipo de Desarrollo y Diseño (Startup **FrostLink**). |
+| **Integrantes del Equipo** | Fabrizio León, Raúl Medina, Juan Diego Mondoñedo, Fabrizzio Pereira, Marcelo Varela, Javier Oswaldo Tello Murga, Sebastian Alexander Ramos Calagua. |
+| **Alcance de la Auditoría** | 24 tareas críticas del producto, incluyendo los flujos de autenticación, alta de equipos y generación de reportes (definidas en 6.3.3). |
+
+#### 6.4.1.2. Cronograma de auditoría realizada
+
+El cronograma detalla la interacción del equipo FrostLink con el auditor externo simulado, cubriendo desde la entrega de artefactos hasta la planificación de la subsanación.
+
+| Hito | Fecha (Ejemplo) | Duración | Actividad del Grupo Auditado |
+| :--- | :--- | :--- | :--- |
+| **Entrega de Artefactos UX/UI** | 10 de Noviembre | 6 horas | Consolidación de *Mock-ups* (Web/Mobile), *Wireflows* y *Guías de Estilo* (4.1). |
+| **Ejecución de Tareas por Auditor** | 11 al 13 de Noviembre | 3 días | Seguimiento al progreso del auditor y respuesta a consultas puntuales sobre requisitos. |
+| **Reunión de Hallazgos** | 14 de Noviembre | 1.5 horas | Recepción formal del informe de hallazgos y análisis de la severidad (6.3.3). |
+| **Período de Subsanación Crítica** | 15 al 18 de Noviembre | 3 días | Priorización y desarrollo de *hotfixes* para los hallazgos de **Severidad 3**. |
+
+#### 6.4.1.3. Contenido de auditoría realizada
+
+La auditoría consistió en una **Evaluación Heurística** enfocada en la validación de la usabilidad y la coherencia del diseño, buscando prevenir errores costosos en la operación (*Near-Misses*).
+
+Los artefactos y flujos clave sometidos a revisión fueron:
+
+* **Flujo de Autenticación (US-01, US-02):** Evaluación de la **Visibilidad del Estado del Sistema** durante el inicio de sesión y registro (Mock-ups 4.4.3 Fig. 6 y 7).
+* **Gestión de Equipos (US-06):** Revisión del formulario **Add Equipment** (Mock-up 4.4.3 Fig. 2) para validar la **Prevención de Errores** en la configuración de parámetros críticos (temperatura óptima).
+* **Generación de Documentos (US-05):** Validación del flujo de **Exportar Reporte a PDF** para asegurar que el usuario pueda **Reconocer y Recuperarse de Errores** (Generación silenciosa de fallas).
+* **Consistencia de Marca:** Verificación de la aplicación correcta de las *Style Guidelines* (4.1) y el nombre del producto en todos los prototipos.
+
+### 6.4.2. Auditoría recibida (Perspectiva del Grupo Auditor: Consultora TecnoUX)
+
+#### 6.4.2.1. Información del grupo auditor
+
+| Aspecto | Detalle |
+| :--- | :--- |
+| **Nombre del Auditor** | **Consultora Externa TecnoUX** (Auditor: Nigma). |
+| **Perfil del Auditor** | Experto en Usabilidad, Arquitectura de Información y Accesibilidad (WCAG). |
+| **Herramientas Utilizadas** | Checklist Heurísticas de Nielsen, Test de Contraste WCAG, Matriz de Trazabilidad de Requisitos. |
+| **Enfoque de la Auditoría** | Priorización de problemas que afecten la **seguridad de los datos** y la **integridad de los activos** registrados en la plataforma. |
+
+#### 6.4.2.2. Cronograma de auditoría recibida
+
+El cronograma detalla las actividades del proceso de evaluación y la entrega formal del informe.
+
+| Hito | Fecha (Ejemplo) | Actividad Central del Auditor |
+| :--- | :--- | :--- |
+| **Revisión de Flujos Críticos** | 12 de Noviembre | Ejecución de las tareas de **Publicación de Equipo** y **Solicitud de Alquiler**, documentando errores de severidad alta. |
+| **Análisis de Consistencia** | 13 de Noviembre | Verificación de la aplicación de las *Style Guides* (4.1) y la **coherencia de la marca** en los prototipos. |
+| **Elaboración de Informe Final** | 14 de Noviembre | Consolidación de 10 problemas con sus respectivas severidades y redacción del informe de subasanación (6.4.2.3). |
+
+#### 6.4.2.3. Contenido de auditoría recibida
+
+El informe documentó los hallazgos críticos de no conformidad (Severidad 3) que deben ser corregidos antes de pasar a producción. Estos hallazgos se extrajeron directamente de la **Evaluación Heurística (6.3.3)** y se priorizaron por su impacto.
+
+| ID Problema | Severidad | Heurística Violada | Descripción del Hallazgo (Hallazgo Crítico) |
+| :--- | :--- | :--- | :--- |
+| **#1** | **3** (Crítica) | Visibilidad del estado del sistema | El error de credenciales en el **Login** (Mobile/Web) se comunica solo con una animación sutil, sin un mensaje claro que indique el problema. |
+| **#2** | **3** (Crítica) | Prevención de errores | En el formulario **Add Equipment** (Mobile/Web), la validación permite que el usuario ingrese rangos de temperatura invertidos (**Min > Max**). |
+| **#7** | **3** (Crítica) | Control y libertad | El flujo para **Solicitar alquiler** (Web) no incluye una **pantalla de confirmación** final, lo que no permite al usuario deshacer o revisar la acción. |
+| **#9** | **3** (Crítica) | Ayuda al usuario a recuperarse | La funcionalidad **Generar PDF** (reporte) falla de forma silenciosa si faltan evidencias (ej. fotos), sin mostrar la causa ni un mensaje accionable. |
+| **Inconsistencia** | 3 (Crítica) | Consistencia y estándares | Persiste la incoherencia en el nombre de la plataforma (**Osito Polar** / **Prime Fixers** vs. **FrostLink**) en diagramas de arquitectura y wireframes, afectando la comunicación interna y externa. |
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
+
+Tras recibir el informe de auditoría (6.4.2.3), el equipo de FrostLink procesó los hallazgos de Severidad 3 y ejecutó las siguientes acciones correctivas para subsanar las deficiencias críticas de usabilidad y consistencia:
+
+1.  **Subsanación de Inconsistencia de Marca (Hallazgo: Inconsistencia):**
+    * **Acción:** Se realizó un *refactor* completo en la documentación y los *Mock-ups* (Cap. IV) para estandarizar el nombre del producto a **FrostLink**, eliminando todas las referencias a "Osito Polar" y "Prime Fixers".
+
+2.  **Corrección de Error en Login (Hallazgo #1):**
+    * **Acción:** Se modificó el flujo de autenticación. El *endpoint* `POST /api/v1/authentication/sign-in` (5.2.7) ahora devuelve un error 401 explícito, que el *Front-end* captura y muestra como un **mensaje de error textual** ("Usuario o Contraseña inválidos"), cumpliendo con la heurística de **Visibilidad del estado del sistema**.
+
+3.  **Implementación de Validación de Rango (Hallazgo #2):**
+    * **Acción:** Se implementó una doble validación: (1) En el *Front-end*, se añadió lógica de JavaScript para validar sincrónicamente que el valor *Min* no supere al *Max*. (2) En el *Back-end* (Platform C#), se reforzó la lógica de negocio antes de la persistencia de datos (4.10) para rechazar la creación del equipo si los rangos son inconsistentes, previniendo la corrupción de datos.
+
+4.  **Adición de Pantalla de Confirmación (Hallazgo #7):**
+    * **Acción:** Se diseñó e implementó un paso de **resumen y confirmación** (*Modal*) en el flujo de solicitud de alquiler/servicio. Esto permite al usuario revisar los detalles (equipo, fechas, costos) antes de confirmar la transacción, restaurando el **Control y libertad** del usuario.
+
+5.  **Manejo de Errores en Reportes (Hallazgo #9):**
+    * **Acción:** La lógica de **Generar PDF** (reporte) fue ajustada. El *Backend* ahora valida la existencia de evidencias requeridas (ej. fotos/firmas) y retorna un error 400 (Bad Request) si faltan. El *Front-end* traduce este error en un **mensaje accionable** (ej. "Error: Debe adjuntar la evidencia para generar el reporte"), permitiendo al usuario **recuperarse del error**.
+
 # Capítulo VII: DevOps Practices
 
 ## 7.1. Continuous Integration
