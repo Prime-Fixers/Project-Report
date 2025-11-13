@@ -5667,16 +5667,82 @@ Las herramientas y prácticas que emplearemos para el Continuous Deployment ser�
 
 ### 7.3.2. Production Deployment Pipeline Components.
 
-El Production Deployment Pipeline representa la secuencia automatizada de procesos que permiten llevar una aplicación desde su entorno de desarrollo hasta su despliegue en producción de forma segura, eficiente y controlada. A continuación se describen los pasos que conforman este pipeline para FrostLink:
+El pipeline de despliegue a producción es el conjunto final de trabajos automatizados que entregan el software a los usuarios finales. Está separado por componente (Backend, Frontend, Mobile) y se activa principalmente tras un *merge* exitoso a la rama `main` o la creación de un *tag* de versión (ej. `v1.2.0`).
 
-* **Gestión del código fuente**: El proyecto se gestiona en un repositorio de GitHub, donde cada commit o merge a la rama `main` activa automáticamente la ejecución del pipeline en **GitHub Actions**, que procede a clonar el repositorio.
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Componente</th>
+      <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Pasos del Pipeline de Despliegue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">
+        <strong>Backend API (.NET/C#)</strong><br>
+        <em>Destino: Azure App Service</em>
+      </td>
+      <td style="border: 1px solid #ddd; padding: 8px;">
+        <ol>
+          <li><strong>Trigger:</strong> Creación de un <em>tag</em> de versión (ej. <code>v1.2.0</code>) en la rama <code>main</code>.</li>
+          <li><strong>Download CI Artifact:</strong> Descarga la imagen Docker de la API (ej. <code>frostlink-api:latest</code>) que fue construida y probada durante el pipeline de CI.</li>
+          <li><strong>Tag & Push to Registry:</strong>
+            <ul>
+              <li>Etiqueta la imagen descargada con el nuevo tag de versión (ej. <code>primefixers.azurecr.io/frostlink-api:v1.2.0</code>) y también como <code>latest</code>.</li>
+              <li>Publica estas etiquetas en nuestro <strong>Azure Container Registry (ACR)</strong>.</li>
+            </ul>
+          </li>
+          <li><strong>Deploy to Production:</strong>
+            <ul>
+              <li>Utiliza el CLI de Azure (<code>az webapp deploy</code>) para actualizar el <strong>Azure App Service</strong> de producción para que utilice la nueva imagen (<code>:v1.2.0</code>) desde ACR.</li>
+              <li><strong>Estrategia:</strong> Se utiliza una estrategia Blue-Green (slots de despliegue de Azure) para un despliegue sin tiempo de inactividad (Zero-Downtime).</li>
+            </ul>
+          </li>
+          <li><strong>Production Smoke Test:</strong> Ejecuta un script que realiza una petición <code>GET</code> al endpoint <code>/health</code> de la API en producción.</li>
+          <li><strong>Rollback (on failure):</strong> Si el <em>Smoke Test</em> falla, el pipeline se detiene y revierte automáticamente el intercambio (swap) de slots.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">
+        <strong>Frontend Web (Vue.js)</strong><br>
+        <em>Destino: Firebase Hosting</em>
+      </td>
+      <td style="border: 1px solid #ddd; padding: 8px;">
+        <ol>
+          <li><strong>Trigger:</strong> Mismo tag de versión que el backend (<code>v1.2.0</code>) en <code>main</code>.</li>
+          <li><strong>Install & Build:</strong>
+            <ul>
+              <li>Ejecuta <code>npm install</code> para restaurar dependencias.</li>
+              <li>Ejecuta <code>npm run build</code> para generar los artefactos estáticos de producción (usando Vue.js).</li>
+            </ul>
+          </li>
+          <li><strong>Deploy to Firebase:</strong>
+            <ul>
+              <li>Utiliza la CLI de <code>firebase-tools</code> (autenticada con un token de servicio) para desplegar los artefactos construidos: <code>firebase deploy --only hosting</code>.</li>
+            </ul>
+          </li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">
+        <strong>Mobile (Android/iOS)</strong><br>
+        <em>Destino: Firebase App Distribution</em>
+      </td>
+      <td style="border: 1px solid #ddd; padding: 8px;">
+        <ol>
+          <li><strong>Trigger:</strong> Creación de tag (ej. <code>v1.2.0-beta</code>).</li>
+          <li><strong>Build Native App:</strong> Compila y firma el <code>.apk</code> (Android) o <code>.ipa</code> (iOS).</li>
+          <li><strong>Upload to Firebase:</strong> Sube el artefacto a Firebase App Distribution.</li>
+          <li><strong>Notify Testers:</strong> Firebase notifica automáticamente al grupo de testers (QA y stakeholders) que hay una nueva versión disponible para probar.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-* **Compilación y Empaquetado**: **GitHub Actions** realiza el proceso de compilación utilizando el **SDK de .NET**, resolviendo las dependencias de **NuGet** declaradas en el backend. Una vez compilado, el artefacto se empaqueta en una imagen **Docker**, creando una unidad de despliegue portable y consistente.
-
-* **Validación Automatizada**: **GitHub Actions** ejecuta las suites de pruebas unitarias e integrales para verificar la funcionalidad del sistema. Si alguna prueba falla, el pipeline se detiene y se notifica al equipo de desarrollo, impidiendo que el código defectuoso avance.
-
-* **Despliegue a Producción**: Una vez que la imagen Docker ha superado todas las validaciones, **GitHub Actions** procede a realizar el despliegue del contenedor en el entorno de producción, alojado en **Microsoft Azure**. Se utilizan estrategias como Blue-Green Deployment para minimizar el tiempo de inactividad y permitir rollbacks rápidos en caso de ser necesario.
-
+---
 
 ## 7.4. Continuous Monitoring.
 ### 7.4.1. Tools and Practices.
@@ -6470,7 +6536,218 @@ Para unificar la visualización de todas las métricas de pruebas, se recomienda
    - Capacitar al equipo en SpecFlow/Gherkin
    - Establecer mejores prácticas de testing
 
+### 7.4.3. Alerting Pipeline Components
 
+El pipeline de alertas define *qué* condiciones disparan una notificación. Se basa en reglas de monitoreo activas que observan el comportamiento del sistema en producción, principalmente en nuestro backend de Azure.
+
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="border: 1px solid #ddd; padding: 8px;">Componente</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Descripción y Ejemplos de FrostLink</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>1. Fuente de Datos (Data Source)</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">
+        <ul>
+          <li><strong>Azure Application Insights:</strong> Recopila logs de la API .NET (excepciones, trazas, peticiones HTTP).</li>
+          <li><strong>Azure Monitor (Métricas):</strong> Recopila métricas de infraestructura del App Service (Uso de CPU, Memoria, Tasa de errores HTTP 5xx).</li>
+          <li><strong>Firebase Crashlytics:</strong> Recopila reportes de crasheo de las apps móviles.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>2. Regla de Alerta (Alert Rule)</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">
+        Es el componente principal, definido en Azure Monitor. Utilizamos Kusto Query Language (KQL) para definir reglas personalizadas.
+        <ul>
+          <li><strong>Ej. Excepciones (KQL):</strong> <code>exceptions | where severityLevel >= 3 | count > 10 in 5m</code><br>(Alerta si hay más de 10 excepciones críticas en 5 minutos).</li>
+          <li><strong>Ej. Infraestructura:</strong> <code>CPU Percentage > 90% for 10m</code>.</li>
+          <li><strong>Ej. Errores HTTP:</strong> <code>HTTP Server Errors (5xx) > 5% of requests</code>.</li>
+          <li><strong>Ej. Firebase:</strong> "Alerta si la tasa de sesiones sin crasheo cae por debajo del 98%".</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>3. Grupo de Acción (Action Group)</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Es el contenedor de Azure que se activa cuando una <em>Regla de Alerta</em> es verdadera. Define <em>qué hacer</em> y enlaza con los componentes de notificación (7.4.4).</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+### 7.4.4. Notification Pipeline Components
+
+El pipeline de notificación define *cómo* y a *quién* se entregan las alertas generadas en la sección 7.4.3.
+
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="border: 1px solid #ddd; padding: 8px;">Componente</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>1. Orquestador (Azure Action Group)</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Recibe la alerta disparada. Un solo Grupo de Acción (ej. "Alertas Críticas de FrostLink") puede ser usado por múltiples Reglas de Alerta.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>2. Canales de Notificación (Endpoints)</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">
+        El Grupo de Acción invoca uno o más de los siguientes:
+        <ul>
+          <li><strong>Email:</strong> Envía una notificación a un alias de equipo (ej. <code>devops@primefixers.com</code> o <code>on-call@primefixers.com</code>).</li>
+          <li><strong>Webhook (Slack/Teams):</strong> Envía una carga útil (payload) JSON a un webhook. Esto se integra con un canal de <strong>Microsoft Teams</strong> o <strong>Slack</strong> (ej. <code>#frostlink-alerts-prod</code>) para notificación en tiempo real del equipo de desarrollo.</li>
+          <li><strong>Webhook (PagerDuty/Opsgenie):</strong> (Para alertas P1/críticas) Envía un webhook a un servicio de gestión de guardias (on-call) que inicia un incidente y llama al ingeniero de guardia.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>3. Plantillas (Templates)</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Define el <em>cuerpo</em> del mensaje de notificación, asegurando que incluya la severidad, el recurso afectado, la hora y un enlace directo al dashboard de Azure Monitor o Firebase para un diagnóstico rápido.</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+# Part III: Experiment-Driven Lifecycle
+
+# Capítulo VIII: Experiment-Driven Development
+
+## 8.1. Experiment Planning
+
+### 8.1.1. As-Is Summary
+
+El estado "As-Is" (actual) de FrostLink es un Producto Mínimo Viable (MVP) funcional, construido en las Partes I y II de este informe. La plataforma resuelve el problema central de la gestión de mantenimiento, que era reactiva, manual y desconectada.
+
+El MVP actual conecta a dos segmentos de usuarios:
+1.  **Negocios (Clientes):** Pueden registrar sus equipos de refrigeración, ver su estado (basado en los mockups de Cap. 4) y crear solicitudes de servicio/mantenimiento.
+2.  **Proveedores (Técnicos):** Pueden recibir y gestionar estas solicitudes de servicio.
+
+La plataforma As-Is consiste en:
+* Una **API RESTful de backend** (C#/.NET) desplegada en Azure.
+* Una **Aplicación Web Frontend** (Vue.js) para la administración.
+* **Aplicaciones Móviles Nativas** (Android/iOS) para uso en campo.
+
+Todo el sistema está soportado por un pipeline de CI/CD (Cap. 7) que automatiza las pruebas (Unitarias, Integración, BDD) y el despliegue, asegurando la calidad y estabilidad de la base del producto sobre la cual ahora experimentaremos.
+
+---
+
+### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+Esta tabla sirve como un *brainstorming* estructurado para identificar qué experimentos debemos ejecutar. Se basa en el trabajo realizado y las entrevistas con usuarios.
+
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="border: 1px solid #ddd; padding: 8px; width: 30%;">Categoría</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Declaración (Materia Prima)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>Supuesto (Assumption)</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">
+        <em>(Cosas que creemos ciertas, pero que no hemos probado con datos reales).</em>
+        <ul>
+          <li><strong>(Valor):</strong> Creemos que los <em>Negocios</em> (clientes) desean y revisarán activamente un dashboard de monitoreo en tiempo real.</li>
+          <li><strong>(Adopción):</strong> Creemos que los <em>Técnicos</em> encontrarán nuestra aplicación móvil más eficiente y fácil de usar que sus métodos actuales (WhatsApp, llamadas, papel).</li>
+          <li><strong>(Monetización):</strong> Creemos que el costo de una falla de equipo (como los S/ 10,000 mencionados por "Jorge Garcia") es lo suficientemente alto como para justificar una suscripción mensual.</li>
+          <li><strong>(Datos):</strong> Creemos que la "temperatura" y el "consumo de energía" son las métricas más importantes para el cliente.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>Brecha de Conocimiento (Knowledge Gap)</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">
+        <em>(Cosas que sabemos que no sabemos).</em>
+        <ul>
+          <li><strong>(Precio):</strong> No sabemos cuál es el <em>precio exacto</em> (price point) que los negocios (PYMEs vs. supermercados) están dispuestos a pagar.</li>
+          <li><strong>(Alerta Crítica):</strong> No sabemos cuál es la <em>alerta individual más crítica</em> para un cliente. ¿Es "Falla de Energía"? ¿"Temperatura Alta por > 30 min"? ¿O "Puerta Abierta"?</li>
+          <li><strong>(Adopción):</strong> No sabemos cuánta <em>resistencia al cambio</em> tendrán los técnicos (ej. "Richard Flores", 38 años) que han usado métodos manuales por más de 10 años.</li>
+          <li><strong>(Onboarding):</strong> No sabemos qué tan "auto-explicativa" es nuestra app. ¿Necesitarán los usuarios un tutorial o una capacitación en persona?</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>Idea (New Feature)</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">
+        <em>(Funciones que podríamos construir para probar si generan valor).</em>
+        <ul>
+          <li><strong>(Predictiva):</strong> Implementar "Mantenimiento Predictivo" usando ML/AI para alertar <em>antes</em> de que ocurra una falla, basándonos en el "consumo energético".</li>
+          <li><strong>(Automatización):</strong> Integración con proveedores de repuestos para automatizar la compra de partes cuando un técnico diagnostica una falla.</li>
+          <li><strong>(Gamificación):</strong> Un sistema de puntos o "ranking" para técnicos basado en su tiempo de respuesta y calificaciones de clientes.</li>
+          <li><strong>(Segmentación):</strong> Un modo "FrostLink Lite" (freemium) para bodegas con un solo equipo, como gancho de entrada.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>Afirmación (Claim)</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">
+        <em>(Declaraciones de stakeholders o clientes que necesitamos verificar).</em>
+        <ul>
+          <li><strong>(Cliente):</strong> "Pierdo S/ 10,000 en insumos cada vez que un equipo falla.". (¿Es esto un caso atípico o una media universal?).</li>
+          <li><strong>(Equipo de FrostLink):</strong> "Nuestra plataforma reducirá el tiempo de inactividad del equipo en un 30%." (Necesitamos probar esto).</li>
+          <li><strong>(Técnico):</strong> "No tengo tiempo para aprender una app nueva; prefiero que me llamen." (Verificado en entrevistas informales).</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+### 8.1.3. Experiment-Ready Questions
+
+Convertimos la "materia prima" de 8.1.2 en preguntas específicas, medibles y accionables que podemos responder con un experimento.
+
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="border: 1px solid #ddd; padding: 8px;">ID</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Pregunta Lista para Experimentar</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Tipo de Experimento</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Origen (de 8.1.2)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>Q1</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">¿Qué porcentaje de <em>Negocios</em> (PYMEs) que completan una prueba gratuita de 14 días convierten a un plan de pago si el precio es S/ 50/mes (Versión A) vs S/ 99/mes (Versión B)?</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Prueba A/B</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Brecha (Precio), Supuesto (Monetización)</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>Q2</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">¿Puede un <em>Técnico</em> (nuevo en la app) completar el flujo "Aceptar, Iniciar y Cerrar Orden de Trabajo" en menos de 3 minutos, sin asistencia?</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Prueba de Usabilidad (Cualitativa/Cuantitativa)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Supuesto (Adopción), Brecha (Resistencia al cambio)</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>Q3</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">¿Los <em>Negocios</em> que activan y reciben "Alertas de Falla de Energía" (una nueva característica experimental) inician sesión en la app (engagement) con más frecuencia y tienen una tasa de retención (mes 2) más alta que el grupo de control (sin esa alerta)?</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Prueba de Cohorte</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Brecha (Alerta Crítica), Supuesto (Datos)</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>Q4</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">¿Aumentará el <em>engagement</em> del cliente (medido en clics/sesiones) en el dashboard del equipo si añadimos un "Indicador de Riesgo Predictivo" (Idea) en lugar de solo mostrar la temperatura actual (As-Is)?</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Prueba A/B (basada en funcionalidad)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Idea (Predictiva), Supuesto (Valor)</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>Q5</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Para una cohorte de 20 <em>Negocios</em> que usan activamente FrostLink durante 3 meses, ¿el número de <em>incidentes de pérdida de producto reportados por ellos mismos</em> disminuye en comparación con los 3 meses anteriores (datos de referencia auto-reportados)?</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Estudio de Cohorte (Antes y Después)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Afirmación (Equipo: "reducirá 30%"), Afirmación (Cliente: "pierdo S/ 10,000")</td>
+    </tr>
+  </tbody>
+</table>
 
 # Conclusiones
 
