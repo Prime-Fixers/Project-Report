@@ -5592,6 +5592,52 @@ Tras recibir el informe de auditoría (6.4.2.3), el equipo de FrostLink procesó
 5.  **Manejo de Errores en Reportes (Hallazgo #9):**
     * **Acción:** La lógica de **Generar PDF** (reporte) fue ajustada. El *Backend* ahora valida la existencia de evidencias requeridas (ej. fotos/firmas) y retorna un error 400 (Bad Request) si faltan. El *Front-end* traduce este error en un **mensaje accionable** (ej. "Error: Debe adjuntar la evidencia para generar el reporte"), permitiendo al usuario **recuperarse del error**.
 
+* Tras la auditoría de UX y la evaluación heurística, se identificaron 10 problemas clave. El equipo ha implementado las siguientes modificaciones para subsanarlos:
+
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="border: 1px solid #ddd; padding: 8px;">Hallazgo (ID)</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Problema Detectado</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Modificación Realizada para Subsanar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>#1</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Error de credenciales en Login sin mensaje claro. (Severidad 3)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Se implementó un componente de alerta (toast/snackbar) que muestra el mensaje "Error: Usuario o contraseña incorrectos" en la parte superior de la pantalla de Login.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>#2</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Se aceptan rangos de temperatura invertidos (mín > máx) al publicar equipo. (Severidad 3)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Se añadió validación en el formulario (client-side) y en el backend (server-side) que previene el guardado si <code>temp_min > temp_max</code>. Se muestra un mensaje de error debajo de los campos.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>#3</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Filtros de Búsqueda se resetean al cambiar el rango de fechas. (Severidad 2)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Se refactorizó el estado de la búsqueda (usando Vuex/Pinia) para que el estado de los filtros (categoría, ubicación) persista independientemente del cambio en el componente de fecha.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>#7</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Solicitud de alquiler se envía sin confirmación previa. (Severidad 3)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Se añadió un paso modal de "Resumen de Solicitud". El usuario debe presionar "Confirmar Alquiler" en este modal para enviar la solicitud.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>#9</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Generación de PDF falla en silencio si faltan datos (ej. fotos). (Severidad 3)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">El botón "Exportar PDF" ahora ejecuta una validación previa. Si faltan datos requeridos, el botón se deshabilita y se muestra un tooltip indicando "Faltan fotos requeridas para el reporte".</td>
+    </tr>
+     <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">...</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">(El resto de hallazgos se documentan de manera similar)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">...</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
 # Capítulo VII: DevOps Practices
 
 ## 7.1. Continuous Integration
