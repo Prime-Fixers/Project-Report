@@ -48,7 +48,6 @@
    </div>
 
    <br>
-<center>
 
 <table style="margin-left: auto; margin-right: auto;">
   <tr>
@@ -82,7 +81,6 @@
 </table>
 
 
-</center>
 
    <center><b>Octubre, 2025</b></center>
 
@@ -245,33 +243,26 @@
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.1. Información del grupo auditado.</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.2. Cronograma de auditoría realizada.</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.3. Contenido de auditoría realizada.</p>
-
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2. Auditoría recibida.</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.1. Información del grupo auditor.</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.2. Cronograma de auditoría recibida.</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.3. Contenido de auditoría recibida.</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.4. Resumen de modificaciones para subsanar hallazgos.</p>
-
-
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VII: DevOps Practices</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1. Continuous Integration</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.1. Tools and Practices.</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.2. Build & Test Suite Pipeline Components.</p>
-
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2. Continuous Delivery</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.1. Tools and Practices.</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.2. Stages Deployment Pipeline Components.</p>
-
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3. Continuous deployment</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.1. Tools and Practices.</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.2. Production Deployment Pipeline Components.</p>
-
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4. Continuous Monitoring</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.1. Tools and Practices</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.2. Monitoring Pipeline Components</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.3. Alerting Pipeline Components</p>
 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.4. Notification Pipeline Components.</p>
-
 </td>
       </tr>
       <td>TP1</td>
@@ -606,10 +597,20 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Definí gates éticos en el pipeline (quality gate, escaneo SCA/secretos) y estrategias de rollback/feature flags para despliegues seguros y responsables.</li>
                     <li><strong>Pereira Vasquez, Fabrizzio:</strong> Organicé la auditoría UX cuidando la confidencialidad de evidencias, documenté hallazgos sin datos personales y prioricé criterios WCAG en las correcciones.</li>
                 </ul>
+                <strong>TB2:</strong><br>
+                <ul>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Implementó suites de pruebas completas (unitarias, integración y BDD) empleando datos anonimizados y criterios de aceptación alineados a requisitos. Aseguró que las pruebas no expusieran información sensible y fomentó revisiones por pares para fortalecer la calidad y confiabilidad del código.</li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong> Configuró análisis estático mediante linters y Sonar, además de políticas de ramas que fortalecen la gobernanza del código. Aplicó checklists éticas en code reviews para validar seguridad, privacidad y licenciamiento, gestionando también vulnerabilidades detectadas durante el desarrollo.</li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Definió gates éticos dentro del pipeline (quality gate, escaneo SCA y detección de secretos), asegurando despliegues responsables. Implementó estrategias de rollback y feature flags para habilitar lanzamientos seguros y controlados, minimizando riesgos operativos.</li>
+                    <li><strong>Pereira Vasquez, Fabrizzio:</strong> Lideró la auditoría UX garantizando la confidencialidad de las evidencias revisadas. Documentó hallazgos sin incluir datos personales y priorizó criterios WCAG para asegurar accesibilidad y mejoras en la experiencia de usuario.</li>
+                    <li><strong>Ramos Calagua, Sebastian Alexander:</strong> Participó en la auditoría UX, velando por la privacidad de la información y la correcta anonimización de evidencias. Registró problemas y propuestas siguiendo estándares WCAG, contribuyendo a una interfaz accesible y ética.</li>
+                    <li><strong>Tello Murga, Javier Oswaldo :</strong> Realizó la auditoría UX con enfoque en resguardar datos sensibles. Elaboró documentación libre de información personal e impulsó correcciones basadas en WCAG, apoyando un diseño accesible y responsable.</li>
+                </ul>
             </td>
             <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong> Se demostró un compromiso ético y profesional al diseñar FrostLink, alineando la propuesta tecnológica con las necesidades reales de los usuarios y consolidando una solución responsable e innovadora.<br>
-                <strong>TP1:</strong> El equipo evidenció responsabilidad ética al anonimizar datos, establecer controles en el pipeline y documentar revisiones y entrevistas con consentimiento, reduciendo riesgos de seguridad y sesgos en decisiones.
+                <strong>TP1:</strong> El equipo evidenció responsabilidad ética al anonimizar datos, establecer controles en el pipeline y documentar revisiones y entrevistas con consentimiento, reduciendo riesgos de seguridad y sesgos en decisiones.<br>
+                <strong>TB2:</strong> En el TB2, el equipo consolidó un enfoque ético y responsable en el desarrollo de FrostLink, reforzando las prácticas implementadas en etapas previas. Se garantizó la anonimización de datos, la aplicación de controles de calidad y seguridad en el pipeline, y la documentación rigurosa de revisiones, entrevistas y evidencias con el debido consentimiento. Estas acciones no solo redujeron riesgos de seguridad y sesgos en la toma de decisiones, sino que también fortalecieron la trazabilidad, la transparencia y la confiabilidad del sistema. Con ello, FrostLink avanza como una solución técnicamente sólida y alineada con principios éticos que priorizan la protección de usuarios y la integridad del proceso de desarrollo.
             </td>
         </tr>
         <tr>
@@ -632,10 +633,21 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Diseñó CI/CD con entornos escalables y apagado automático en staging para optimizar costos; definió monitoreo de métricas de uso/errores para decisiones basadas en evidencia.</li>
                     <li><strong>Pereira Vasquez, Fabrizzio:</strong> La auditoría UX identificó barreras de accesibilidad; priorizó mejoras que amplían inclusión y reducen fricción en onboarding, con impacto directo en productividad y satisfacción.</li>
                 </ul>
+                <strong>TB2:</strong><br>
+                <ul>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Emitió juicios informados al diseñar y ejecutar suites de pruebas que reducen riesgos operativos y previenen fallas que podrían generar pérdidas económicas y desperdicio energético. Su enfoque en datos anonimizados y trazabilidad contribuyó a una solución más segura y responsable, considerando impactos sociales y de privacidad..</li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong> Aplicó análisis estático y políticas de ramas con criterios que priorizan seguridad, licenciamiento y sostenibilidad del software. Sus decisiones reducen vulnerabilidades que pueden afectar la continuidad operativa y los costos asociados, demostrando conciencia del impacto social y económico de la calidad del código.</li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Diseñó gates éticos y estrategias de despliegue seguro que minimizan fallas en producción, reduciendo potenciales afectaciones económicas y la huella operativa del sistema. Su enfoque en feature flags y rollback evidencia un juicio informado sobre la necesidad de sistemas resilientes y responsables en contextos reales.</li>
+                    <li><strong>Pereira Vasquez, Fabrizzio:</strong> En la auditoría UX, tomó decisiones que priorizan accesibilidad, evitando excluir a grupos de usuarios y reduciendo brechas digitales. Su énfasis en WCAG y confidencialidad muestra un juicio informado sobre el impacto social del diseño y la responsabilidad de crear interfaces equitativas y respetuosas.</li>
+                    <li><strong>Ramos Calagua, Sebastian Alexander:</strong> Evaluó la experiencia de usuario considerando accesibilidad, privacidad y claridad de la interacción, lo cual contribuye a una plataforma más inclusiva y socialmente responsable. Sus acciones reflejan conciencia del efecto que un diseño deficiente podría tener en la operación comercial y en la experiencia de usuarios diversos.</li>
+                </ul>
+                <li><strong>Tello Murga, Javier Oswaldo:</strong> Emitió juicios informados al analizar la UX desde una perspectiva de accesibilidad y protección de datos, asegurando que las mejoras propuestas impacten positivamente en usuarios de distintos contextos. Su trabajo reduce fricciones sociales y mejora la adopción, fortaleciendo el valor económico y social de la solución.</li>
+                </ul>
             </td>
             <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong> El proyecto demuestra que una solución tecnológica puede generar valor económico, social y ambiental, siempre que se diseñe con responsabilidad y pensando en su impacto global.<br>
-                <strong>TP1:</strong> Los juicios informados guiaron la priorización de requisitos, controles de calidad y pipeline, logrando menor retrabajo, consumo controlado de recursos y mayor accesibilidad para usuarios finales.
+                <strong>TP1:</strong> Los juicios informados guiaron la priorización de requisitos, controles de calidad y pipeline, logrando menor retrabajo, consumo controlado de recursos y mayor accesibilidad para usuarios finales.<br>
+                <strong>TB2:</strong> El equipo demostró la capacidad de emitir juicios informados al evaluar constantemente el impacto de FrostLink en dimensiones económicas, ambientales y sociales. Cada integrante actuó con responsabilidad al considerar cómo la calidad del software, la accesibilidad, la seguridad y la eficiencia energética influyen en la operación real de los negocios y en la experiencia de los usuarios. Las decisiones tomadas —desde pruebas robustas y control de vulnerabilidades hasta auditorías de accesibilidad y despliegues seguros— reflejan un entendimiento maduro del rol del ingeniero de software en contextos globales. Gracias a este enfoque, FrostLink avanza como una solución confiable, inclusiva y sostenible, capaz de aportar valor no solo técnico, sino también social y económico en entornos reales.
             </td>
         </tr>
     </tbody>
