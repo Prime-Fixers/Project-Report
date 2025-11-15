@@ -5314,12 +5314,12 @@ Mediciones por tarea:
               <li><strong>Apellidos:</strong> Garcia Roca</li>
               <li><strong>Edad:</strong> 28</li>
               <li><strong>Distrito:</strong> San Miguel</li>
-              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/EVNdbWUsAPlCiq8mgLnukSABKau8G9kECaaVFAjfninR9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yg7o0X" target="_blank">Ver video</a></li>
-              <li><strong>Timestamp:</strong> 04:52</li>
-              <li><strong>Duración:</strong> </li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/IQDCxKPIkI6DRZ9gWAEGfLJiAVufiME6K8ONtMWOpR5GbUI?e=kuMNxJ" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 00:00</li>
+              <li><strong>Duración:</strong> 09:35</li>
             </ul>
           </div>
-          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="/resources/segunda_entrevista.png" alt="Screenshot de la entrevista">
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="/resources/entrevista-prototipo.png" alt="Screenshot de la entrevista">
         </div>
       </td>
     </tr>
@@ -5327,7 +5327,50 @@ Mediciones por tarea:
       <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
         <div style="background-color: #f9f9f9; border-radius: 10px; padding: 24px; margin-top: 12px;">
           <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Resumen</p>
-          Comenta que en varias ocasiones sufrió pérdidas por fallas de equipos, llegando a perder más de S/ 10,000 en insumos durante un corte de energía que pasó desapercibido hasta la mañana siguiente. Actualmente, confía en que su personal revise los equipos manualmente, pero reconoce que es un proceso poco confiable. Jorge estaría dispuesto a pagar por una suscripción mensual si el sistema realmente reduce pérdidas y mejora la vida útil de los equipos. Para él, las funcionalidades imprescindibles son: monitoreo en tiempo real, integración con múltiples equipos, alertas inmediatas y reportes exportables. Prefiere acceder tanto desde computadora en la oficina como desde el celular cuando está fuera.
+          Jorge nos da una retroalimentación muy enriquecedora empezando con unos antecedentes y problematica del negocio. Identifico flujos de usuario precarios y otros poco útiles para el problema que tratamos de resolver. Sin embargo, comentó que las principales funcionalidades cumplen su propósito dado.
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table class="tabla-entrevista">
+  <thead>
+    <tr>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>SEGMENTO OBJETIVO: NEGOCIOS</strong></th>
+      <th><strong>#2</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; background-color: #fafafa; border-radius: 10px; padding: 24px;">
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
+              <li><strong>Nombres:</strong> Mario Joaquin</li>
+              <li><strong>Apellidos:</strong> Lopez Acuña</li>
+              <li><strong>Edad:</strong> 25</li>
+              <li><strong>Distrito:</strong> La Molina</li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/IQDCxKPIkI6DRZ9gWAEGfLJiAVufiME6K8ONtMWOpR5GbUI?e=kuMNxJ" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 09:35</li>
+              <li><strong>Duración:</strong> 08:24</li>
+            </ul>
+          </div>
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="/resources/entrevista-prototipo-2.png" alt="Screenshot de la entrevista">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="background-color: #f9f9f9; border-radius: 10px; padding: 24px; margin-top: 12px;">
+          <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Resumen</p>
+          El entrevistado supervisa 15–18 equipos de refrigeración y coordina mantenimientos e incidencias. En los últimos meses tuvieron 6–8 fallas, casi siempre fuera de horario. El monitoreo actual es manual, usando revisiones por turno, termómetros análogos y reportes por WhatsApp. No cuentan con un sistema formal, solo Excel y chats. Trabajan con 2 proveedores principales. El flujo de atención es improvisado: la detección ocurre 2–3 horas después y la resolución toma 5–6 horas. Los mayores problemas son la detección tardía, la coordinación con técnicos y la aprobación de repuestos. El costo de una falla se estima por pérdidas de producto. No miden energía, pero les interesa monitorear horas de compresor, picos de consumo y aperturas de puerta.
         </div>
       </td>
     </tr>
