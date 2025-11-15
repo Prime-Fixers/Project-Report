@@ -1,32 +1,30 @@
 <div align="center">
-   <div>
-
-# <center>Informe del Trabajo Final</center>
-
-   <br>
-
-   <center>Universidad Peruana de Ciencias Aplicadas</center>
-
-   <br>
-
-   <center><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC"></center>
-
-   <br>
-
-   <center><b>Ingeniería de software</b></center>
-
-   <br>
-
-   <center><b>2025-20</b></center>
-
-   <br>
-
-
-   <center><b>1ASI0732 Diseño de Experimentos de Ingeniería de Software</b></center>
-
-   <br>
-
-   <center><b>Sección:</b> 7503</center>
+  <tbody>
+    <tr>
+      <td>Adquisición</td>
+      <td>CTR</td>
+      <td>clics / impresiones</td>
+      <td>+0.4 puntos porcentuales</td>
+      <td>≈ 9,701 impresiones</td>
+      <td>Crash estable; sin alza de reportes</td>
+    </tr>
+    <tr>
+      <td>Retención temprana</td>
+      <td>D1</td>
+      <td>regresan en D1 / nuevas personas en D0</td>
+      <td>+3 puntos porcentuales</td>
+      <td>≈ 2,400 personas</td>
+      <td>Tiempo de juego sin caídas materiales</td>
+    </tr>
+    <tr>
+      <td>Monetización</td>
+      <td>Tasa de compra</td>
+      <td>compradores / DAU</td>
+      <td>+0.5 puntos porcentuales</td>
+      <td>≈ 7,741 personas</td>
+      <td>ARPPU estable; quejas contenidas</td>
+    </tr>
+  </tbody>
 
    <br>
 
@@ -75,22 +73,10 @@
     <td>Varela Bustinza, Marcelo Alessandro</td>
     <td>U202319668</td>
   </tr>
-</table>
-
-
-</center>
-
-   <center><b>Octubre, 2025</b></center>
-
-</div>
-
-
-
-
-
-# Registro de Versiones del Informe
-
-<table style="border-collapse: collapse; width: 100%; text-align: left;">
+     <tr>
+    <td>Ramos Calagua, Sebastian Alexander</td>
+    <td>U202222846</td>
+  </tr>
     <thead>
         <tr>
             <th style="border: 1px solid black; padding: 8px; font-weight: bold; text-align: center;">Versión</th>
@@ -101,31 +87,6 @@
     </thead>
     <tbody>
         <tr>
-            <td>TB1</td>
-            <td>19/09/2025</td>
-            <td>
-                <ul>   
-                    <li>León Vivas, Fabrizio Amir</li>
-                    <li>Medina Cruzado, Raúl Adrian</li>
-                    <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
-                    <li>Varela Bustinza, Marcelo Alessandro</li>
-                </ul>
-            </td>
-            <td>
-                <strong>Adición de secciones:</strong><br>
-                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Registro de Versiones del Informe</p>
-                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Project Report Collaboration Insights</p>
-                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Student Outcome</p>
-                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Part I: As-Is Software Project</p>
-                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.1. Startup Profile</p>
-                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.1.1. Descripción de la Startup</p>
-                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.1.2. Perfiles de integrantes del equipo</p>
-                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.2. Solution Profile</p>
-                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.2.1. Antecedentes y problemática</p>
-                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.2.2. Lean UX Process</p>
-                <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.1. Lean UX Problem Statements</p>
-                <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.2. Lean UX Assumptions</p>
-                <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.3. Lean UX Hypothesis Statements</p>
                 <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.4. Lean UX Canvas</p>
                 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.3. Segmentos objetivo</p>
                 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">2.1. Competidores</p>
@@ -212,6 +173,7 @@
                     <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
                      <li>Pereira Vasquez, Fabrizzio</li>
                     <li>Varela Bustinza, Marcelo Alessandro</li>
+                    <li>Ramos Calagua, Sebastian Alexander</li>
                 </ul>
             </td>
 <td>
@@ -268,6 +230,18 @@
 
 </td>
       </tr>
+      <td>TP1</td>
+            <td>11/09/2025</td>
+            <td>
+                <ul>   
+                    <li>León Vivas, Fabrizio Amir</li>
+                    <li>Medina Cruzado, Raúl Adrian</li>
+                    <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
+                     <li>Pereira Vasquez, Fabrizzio</li>
+                    <li>Varela Bustinza, Marcelo Alessandro</li>
+                    <li>Ramos Calagua, Sebastian Alexander</li>
+                </ul>
+            </td>
     </tbody>
 </table>
 
@@ -303,6 +277,10 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
   <tr>
     <td>Varela Bustinza, Marcelo Alessandro</td>
     <td>VarBus</td>
+  </tr>
+  <tr>
+    <td>Ramos Calagua, Sebastian Alexander</td>
+    <td>Dazzliboy</td>
   </tr>
 </table>
 
@@ -341,6 +319,7 @@ Los integrantes son:
 - Mondoñedo Rodriguez, Juan Diego Javier (Jmondonedor)
 - Pereira Vasquez, Fabrizzio  (fabrizzioper)
 - Varela Bustinza, Marcelo Alessandro  (Varbus)
+- Ramos Calagua, Sebastian Alexander (DazzliBoy)
 
 Se explican las ramas más prominentes:
 
@@ -359,7 +338,6 @@ Se explican las ramas más prominentes:
 **TP1:**
 <br>
 <img src="resources/github_collaboration_insights_tb1.jpeg" alt="insightTB1open" width="500px" />
-
 
 
 # Contenido
@@ -658,6 +636,7 @@ La plataforma incorpora funcionalidades clave como monitoreo en tiempo real de t
 | **Juan Diego Mondoñedo**<br>Estudiante de Ingeniería de Software con experiencia previa con metodología ágil y frameworks como Angular y Vue, además de conocimientos en programación en Javascript, C++ y Python. Como miembro del equipo de FrostLink, emplearé mis habilidades al máximo para el desarrollo de nuestra startup. | <img src="/resources/JD.jpg" alt="angie image" width="200"> |
 | **Fabrizzio Pereira**<br> Mi nombre es Nelson Fabrizzio Pereira Vásquez (U202417468), estudiante de Ingeniería de Software con dominio en desarrollo web, especializado en React y su ecosistema. Cuenta con experiencia en la creación de proyectos prácticos como método de aprendizaje, aplicando principios de ingeniería de software y buenas prácticas de desarrollo. Destaca por su capacidad de trabajo en equipo, su disposición para colaborar activamente y su habilidad para apoyar en la resolución de problemas técnicos.| <img src="https://raw.githubusercontent.com/upc-pre-202520-1ACC0238-2005-mira/ProjectReport/main/img/chapter1/nelson.jpeg" alt="fabrizzio image" width="200"> |
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
+| **Sebastian Ramos**<br>Mi nombre es Sebastian Ramos. Soy un estudiante de la carrera de Ingeniería De Software, tengo 22 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me gusta todo lo relacionado a la tecnología y al desarrollo web. Espero ansioso poder aprender más del curso a medida que se desarrolle este proyecto. | <img src="https://i.postimg.cc/vHksZbw6/Sebastian-Ramos-foto-perfil.jpg" alt="sebas image" width="200"> |
 
 ## 1.2. Solution Profile
 
@@ -1548,8 +1527,6 @@ Las entrevistas evidencian que los negocios pequeños y medianos que dependen de
 
 **PROVEEDORES**
 
-falta
-
 <div style="page-break-before: always;"></div>
 
 ## 2.3. Needfinding.
@@ -1836,7 +1813,6 @@ Diagrama del Product Backlog: lista priorizada de requisitos y funcionalidades d
 |    35 | US-35         | Crear registro de intervención técnica (API)     | Como desarrollador, registrar intervenciones técnicas vía API para seguimiento.                                |            5 |
 |    36 | US-36         | Registrar evento de alerta manual (API)          | Como desarrollador, permitir el alta de alertas manuales desde campo mediante la API.                          |            3 |
 |    37 | US-37         | Evaluar servicio (API)                           | Como desarrollador, habilitar un endpoint para crear y actualizar evaluaciones de servicio.                    |            8 |
-
 
 # Capítulo IV: Product Design
 
@@ -5677,9 +5653,8 @@ Tras recibir el informe de auditoría (6.4.2.3), el equipo de FrostLink procesó
       <td style="border: 1px solid #ddd; padding: 8px;">...</td>
     </tr>
   </tbody>
-</table>
 
----
+</table>
 
 # Capítulo VII: DevOps Practices
 
@@ -5923,8 +5898,9 @@ El pipeline de despliegue a producción es el conjunto final de trabajos automat
 
 ---
 
-## 7.4. Continuous Monitoring.
-### 7.4.1. Tools and Practices.
+## 7.4. Continuous Monitoring
+
+### 7.4.1. Tools and Practices
 
 Esta sección describe las herramientas y prácticas de monitoreo implementadas para cada tipo de prueba en el ecosistema FrostLink.
 
@@ -6090,8 +6066,6 @@ C. BDD Tests - Herramientas y Prácticas
    - Sincronización con Product Owners para validar prioridades
 
 ---
-
-### 7.4.2. Monitoring Pipeline Components.
 
 ### 7.4.2. Monitoring Pipeline Components
 
@@ -6715,46 +6689,97 @@ Para unificar la visualización de todas las métricas de pruebas, se recomienda
    - Capacitar al equipo en SpecFlow/Gherkin
    - Establecer mejores prácticas de testing
 
+## 8.2.3. Measures
+
 ### 7.4.3. Alerting Pipeline Components
 
-El pipeline de alertas define *qué* condiciones disparan una notificación. Se basa en reglas de monitoreo activas que observan el comportamiento del sistema en producción, principalmente en nuestro backend de Azure.
+El pipeline de alertas resume los elementos que transforman las métricas monitoreadas en eventos accionables dentro del ecosistema FrostLink.
 
-<table style="width: 100%; border-collapse: collapse;">
-  <thead>
-    <tr style="background-color: #f2f2f2;">
-      <th style="border: 1px solid #ddd; padding: 8px;">Componente</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Descripción y Ejemplos de FrostLink</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>1. Fuente de Datos (Data Source)</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">
-        <ul>
-          <li><strong>Azure Application Insights:</strong> Recopila logs de la API .NET (excepciones, trazas, peticiones HTTP).</li>
-          <li><strong>Azure Monitor (Métricas):</strong> Recopila métricas de infraestructura del App Service (Uso de CPU, Memoria, Tasa de errores HTTP 5xx).</li>
-          <li><strong>Firebase Crashlytics:</strong> Recopila reportes de crasheo de las apps móviles.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>2. Regla de Alerta (Alert Rule)</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">
-        Es el componente principal, definido en Azure Monitor. Utilizamos Kusto Query Language (KQL) para definir reglas personalizadas.
-        <ul>
-          <li><strong>Ej. Excepciones (KQL):</strong> <code>exceptions | where severityLevel >= 3 | count > 10 in 5m</code><br>(Alerta si hay más de 10 excepciones críticas en 5 minutos).</li>
-          <li><strong>Ej. Infraestructura:</strong> <code>CPU Percentage > 90% for 10m</code>.</li>
-          <li><strong>Ej. Errores HTTP:</strong> <code>HTTP Server Errors (5xx) > 5% of requests</code>.</li>
-          <li><strong>Ej. Firebase:</strong> "Alerta si la tasa de sesiones sin crasheo cae por debajo del 98%".</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>3. Grupo de Acción (Action Group)</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Es el contenedor de Azure que se activa cuando una <em>Regla de Alerta</em> es verdadera. Define <em>qué hacer</em> y enlaza con los componentes de notificación (7.4.4).</td>
-    </tr>
-  </tbody>
-</table>
+1. **Fuente de datos (Data Source):** Punto de entrada de la telemetría consolidada.
+   - `Azure Application Insights`: recopila logs de la API .NET (excepciones, trazas y peticiones HTTP).
+   - `Azure Monitor` (métricas): captura métricas de infraestructura del App Service (uso de CPU, memoria y tasa de errores 5xx).
+   - `Firebase Crashlytics`: agrega reportes de crasheo desde las aplicaciones móviles.
+2. **Regla de alerta (Alert Rule):** Lógica definida en Azure Monitor mediante Kusto Query Language (KQL) para evaluar condiciones sobre las señales anteriores.
+   - Excepciones (KQL): `exceptions | where severityLevel >= 3 | count > 10 in 5m` → alerta si hay más de 10 excepciones críticas en 5 minutos.
+   - Infraestructura: `CPU Percentage > 90% for 10m`.
+   - Errores HTTP: `HTTP Server Errors (5xx) > 5% of requests`.
+   - Firebase: alerta si la tasa de sesiones sin crasheo cae por debajo del 98%.
+3. **Grupo de acción (Action Group):** Contenedor de Azure que se dispara cuando la regla evalúa en verdadero; define la acción y enlaza con los componentes de notificación descritos en la sección 7.4.4.
+
+---
+
+**Medidas Cuantitativas:**
+
+- **Tasa de Conversión:** % de visitantes que se convierten en usuarios registrados
+- **Tasa de Activación:** % de usuarios que completan configuración inicial
+- **Frecuencia de Uso:** Número de sesiones por usuario por semana
+- **Tiempo en Plataforma:** Minutos promedio por sesión por tipo de usuario
+- **Tasa de Retención:** % de usuarios activos después de 30 días
+
+**Medidas Cualitativas:**
+
+- **Score de Satisfacción (CSAT):** Calificación de satisfacción post-interacción (1-5)
+- **Net Promoter Score (NPS):** Probabilidad de recomendar el servicio (0-10)
+- **Tasa de Abandono:** Razones principales para cancelar suscripción
+- **Feedback de Usabilidad:** Comentarios sobre facilidad de uso y aprendizaje
+
+## 8.2.4. Conditions
+
+**Criterios de Éxito:**
+
+- **Condición de Validación H1:** > 80% de usuarios actúan sobre alertas dentro de 15 minutos
+- **Condición de Validación H2:** > 70% de técnicos reportan ahorro de tiempo > 30%
+- **Condición de Validación H3:** Monitoreo tiempo real rankeado como #1 en importancia
+- **Condición de Validación H4:** > 60% de usuarios identifican ahorros que justifican costo
+
+**Criterios de Fracaso:**
+
+- **Condición de Invalidación H1:** < 50% de usuarios actúan sobre alertas en 24 horas
+- **Condición de Invalidación H2:** < 40% de técnicos adoptan plataforma después de 2 semanas
+- **Condición de Invalidación H5:** > 50% de técnicos requieren > 5 minutos por registro
+- **Condición de Invalidación H6:** > 30% de usuarios requieren asistencia para configuración inicial
+
+**Condiciones de Terminación:**
+
+- **Muestra Mínima:** 50 usuarios por segmento completando experimentos
+- **Duración Mínima:** 2 semanas de recolección de datos por experimento
+- **Confianza Estadística:** 95% de nivel de confianza para decisiones pivotar/perseverar
+
+### 8.2.5. Scale Calculations and Decisions (Cálculos y Decisiones de Escala)
+
+La escala de cada experimento se determina combinando Certeza y Precisión. Para la Certeza se fija un nivel de significancia α=0.05 (bilateral) y un poder estadístico 1−β=0.80, lo que acota los errores Tipo I y II sin sobredimensionar muestras. La Precisión se expresa con el Efecto Mínimo Detectable (MDE), entendido como el cambio más pequeño que, de observarse, justificaría una decisión de producto. La unidad de aleatorización es siempre la persona usuaria (no la sesión) y el análisis se conduce con horizonte fijo: no se inspeccionan resultados intermedios y sólo se decide al completar la muestra planificada. La decisión se fundamenta en el intervalo de confianza al 95% sobre la diferencia entre variantes para una métrica primaria única, acompañada de guardrails (p. ej., tasa de crash, reportes/abusos, variaciones relevantes en tiempo de juego o reembolsos) que evitan canjear mejoras locales por deterioros globales.
+
+#### Experimento A — Anuncios/Creatividades (CTR)
+
+El objetivo es mejorar la tasa de clic sobre impresiones (CTR = clics/impresiones), asegurando que cualquier incremento observado sea material para adquisición. Con tasa base de 0.8% y MDE de +0.4 puntos porcentuales, se requieren ≈9,701 impresiones por variante (prueba de dos proporciones, α=0.05, poder=0.80). La variante se adopta si el IC95% del uplift excluye cero y los guardrails permanecen dentro de tolerancias.
+Frostlink (trazabilidad): la configuración estadística (α, poder, MDE, unidad de análisis, ventanas de lectura y guardrails) queda registrada antes del Sprint, lo que garantiza reproducibilidad y evita ajustes “ad hoc”.
+
+#### Experimento B — Retención temprana (D1)
+
+Se busca elevar el porcentaje de personas que regresan el día 1 respecto de quienes jugaron el día 0 (D1 = regresan D1 / nuevas D0). Con base de 15% y MDE de +3 puntos porcentuales, la muestra necesaria es de ≈2,400 personas nuevas por variante. La decisión sigue el mismo criterio de IC95% sobre la métrica primaria y verificación de guardrails.
+Frostlink (trazabilidad): además de la configuración, se versionan los esquemas de eventos utilizados (p. ej., session_start, session_end), favoreciendo auditoría posterior y comparabilidad entre sprints.
+
+#### Experimento C — Monetización (Tasa de compra)
+
+El foco es incrementar la tasa de compra (compradores/DAU) sin deteriorar experiencia. Con base de 1.0% y MDE de +0.5 puntos porcentuales, se requieren ≈7,741 personas por variante. Se adopta la variante si el IC95% del uplift en la tasa de compra excluye cero y se mantienen guardrails como ARPPU estable y ausencia de picos de quejas.
+Frostlink (trazabilidad): se consolidan consultas estándar y definiciones de ingreso/compra para que los resultados sean comparables y reproducibles.
+
+Ejecución común a los tres experimentos. La exposición se realiza con rampas seguras (p. ej., 10%→50%) y chequeos previos de salud (crashes, reportes). Si el ritmo de tráfico impide alcanzar la muestra en el tiempo previsto, se reevalúan MDE, poder o duración antes de continuar. Nunca se ejecutan pruebas solapadas en la misma superficie que puedan exponer a una misma persona a dos tratamientos incompatibles.
+
+### 8.2.6. Methods Selection (Selección de Métodos)
+
+La investigación se guía por el principio Simplest Useful Thing: se elige el método más simple que permita alcanzar la muestra objetivo con validez interna y sin afectar negativamente la experiencia. Se distingue explícitamente el objeto de investigación (pregunta o hipótesis) del método (técnica de prueba). El estándar es un A/B test con asignación determinística derivada de un hash estable del userId y persistencia de variante entre sesiones para evitar cambios de condición. Se garantiza no solapamiento de experimentos en la misma superficie, de modo que ninguna persona reciba tratamientos simultáneos que interfieran. La instrumentación mínima contempla eventos con sello temporal relevantes para exposición y resultado (p. ej., ad_impression, ad_click, session_start/end, purchase, crash, report_flag) y controles antifraude (deduplicación de impresiones/clics, filtrado de tráfico anómalo). El análisis aplica dos proporciones (z) para métricas binarias (CTR, D1, compra) y t-test o Mann-Whitney para métricas continuas, reportando efecto absoluto (puntos porcentuales o unidades), efecto relativo, IC95%, p-value y lectura de guardrails; la decisión de producto se expresa en ship / hold / retest. En clave Scrum, cada experimento ingresa al Product Backlog con Definition of Ready (métrica primaria, MDE y tamaño muestral calculados, instrumentación disponible, matriz de exclusiones para evitar solapamientos) y sólo se planifica en Sprint si cumple esa preparación. El Sprint Goal se formula alrededor del resultado de la métrica primaria y la Definition of Done exige haber alcanzado la muestra prevista, ejecutar el análisis completo y formalizar la decisión en la Sprint Review; la Retrospective captura mejoras (ajuste de MDE, mitigación de sesgos, cobertura de eventos).
+Frostlink (catálogo y control): mantiene el catálogo de experimentos, la matriz de exclusiones y los logs de asignación, con validaciones automáticas de balance y pérdidas de datos antes del cierre del Sprint, reforzando calidad metodológica y disciplina operativa.
+
+### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection (Análisis de Datos: Metas, KPIs y Selección de Métricas)
+
+El sistema analítico orienta decisiones mediante una métrica primaria por experimento y un conjunto acotado de métricas de apoyo para diagnóstico. La cadencia de lectura es diaria y el corte de decisión coincide con el cumplimiento del tamaño muestral planificado. Incluyo a continuación la tabla de objetivos y KPIs en formato Markdown para facilitar la referencia:
+
+| Objetivo | KPI primario | Definición | MDE de referencia | Muestra por variante (ref.) | Guardrails clave |
+| --- | --- | --- | --- | --- | --- |
+| Adquisición | CTR | clics / impresiones | +0.4 puntos porcentuales | ≈ 9,701 impresiones | Crash estable; sin alza de reportes |
+| Retención temprana | D1 | regresan en D1 / nuevas personas en D0 | +3 puntos porcentuales | ≈ 2,400 personas | Tiempo de juego sin caídas materiales |
+| Monetización | Tasa de compra | compradores / DAU | +0.5 puntos porcentuales | ≈ 7,741 personas | ARPPU estable; quejas contenidas |
 
 ---
 
@@ -6762,35 +6787,12 @@ El pipeline de alertas define *qué* condiciones disparan una notificación. Se 
 
 El pipeline de notificación define *cómo* y a *quién* se entregan las alertas generadas en la sección 7.4.3.
 
-<table style="width: 100%; border-collapse: collapse;">
-  <thead>
-    <tr style="background-color: #f2f2f2;">
-      <th style="border: 1px solid #ddd; padding: 8px;">Componente</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>1. Orquestador (Azure Action Group)</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Recibe la alerta disparada. Un solo Grupo de Acción (ej. "Alertas Críticas de FrostLink") puede ser usado por múltiples Reglas de Alerta.</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>2. Canales de Notificación (Endpoints)</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">
-        El Grupo de Acción invoca uno o más de los siguientes:
-        <ul>
-          <li><strong>Email:</strong> Envía una notificación a un alias de equipo (ej. <code>devops@primefixers.com</code> o <code>on-call@primefixers.com</code>).</li>
-          <li><strong>Webhook (Slack/Teams):</strong> Envía una carga útil (payload) JSON a un webhook. Esto se integra con un canal de <strong>Microsoft Teams</strong> o <strong>Slack</strong> (ej. <code>#frostlink-alerts-prod</code>) para notificación en tiempo real del equipo de desarrollo.</li>
-          <li><strong>Webhook (PagerDuty/Opsgenie):</strong> (Para alertas P1/críticas) Envía un webhook a un servicio de gestión de guardias (on-call) que inicia un incidente y llama al ingeniero de guardia.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><strong>3. Plantillas (Templates)</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Define el <em>cuerpo</em> del mensaje de notificación, asegurando que incluya la severidad, el recurso afectado, la hora y un enlace directo al dashboard de Azure Monitor o Firebase para un diagnóstico rápido.</td>
-    </tr>
-  </tbody>
-</table>
+1. **Orquestador (Azure Action Group):** Recibe la alerta disparada. Un solo grupo de acción (por ejemplo, "Alertas Críticas de FrostLink") puede atender múltiples reglas.
+2. **Canales de notificación (Endpoints):** El grupo de acción invoca uno o varios canales según la severidad.
+   - Email: envía avisos a alias compartidos como `devops@primefixers.com` u `on-call@primefixers.com`.
+   - Webhook (Slack/Teams): publica payloads JSON en canales como `#frostlink-alerts-prod` para alertas en tiempo real.
+   - Webhook (PagerDuty/Opsgenie): para incidentes P1 crea eventos on-call que escalan al ingeniero de guardia.
+3. **Plantillas (Templates):** Definen el cuerpo de cada mensaje para incluir severidad, recurso afectado, hora y enlaces a Azure Monitor o Firebase, facilitando el diagnóstico inmediato.
 
 ---
 
@@ -6805,13 +6807,15 @@ El pipeline de notificación define *cómo* y a *quién* se entregan las alertas
 El estado "As-Is" (actual) de FrostLink es un Producto Mínimo Viable (MVP) funcional, construido en las Partes I y II de este informe. La plataforma resuelve el problema central de la gestión de mantenimiento, que era reactiva, manual y desconectada.
 
 El MVP actual conecta a dos segmentos de usuarios:
-1.  **Negocios (Clientes):** Pueden registrar sus equipos de refrigeración, ver su estado (basado en los mockups de Cap. 4) y crear solicitudes de servicio/mantenimiento.
-2.  **Proveedores (Técnicos):** Pueden recibir y gestionar estas solicitudes de servicio.
+
+1. **Negocios (Clientes):** Pueden registrar sus equipos de refrigeración, ver su estado (basado en los mockups de Cap. 4) y crear solicitudes de servicio/mantenimiento.
+2. **Proveedores (Técnicos):** Pueden recibir y gestionar estas solicitudes de servicio.
 
 La plataforma As-Is consiste en:
-* Una **API RESTful de backend** (C#/.NET) desplegada en Azure.
-* Una **Aplicación Web Frontend** (Vue.js) para la administración.
-* **Aplicaciones Móviles Nativas** (Android/iOS) para uso en campo.
+
+- Una **API RESTful de backend** (C#/.NET) desplegada en Azure.
+- Una **Aplicación Web Frontend** (Vue.js) para la administración.
+- **Aplicaciones Móviles Nativas** (Android/iOS) para uso en campo.
 
 Todo el sistema está soportado por un pipeline de CI/CD (Cap. 7) que automatiza las pruebas (Unitarias, Integración, BDD) y el despliegue, asegurando la calidad y estabilidad de la base del producto sobre la cual ahora experimentaremos.
 
@@ -6927,6 +6931,215 @@ Convertimos la "materia prima" de 8.1.2 en preguntas específicas, medibles y ac
     </tr>
   </tbody>
 </table>
+
+Uso y reglas de decisión. Una variante se adopta cuando el IC95% del uplift en la métrica primaria excluye cero y los guardrails permanecen dentro de tolerancias; si la mejora estadística coexiste con deterioro en guardrails, se pospone el lanzamiento hasta corregir; en caso de resultados inconclusos, se reevalúa el MDE o se amplía la muestra. Las métricas de apoyo —ARPDAU, ARPPU, D7/D30, duración de sesión, embudos de onboarding y cohortes por país/dispositivo/fuente— contextualizan el resultado sin sustituir a la métrica primaria en la decisión.
+Frostlink (economía y versionado analítico). Para controlar costos de telemetría y preservar comparabilidad entre sprints, Frostlink valida que sólo se recolecten los eventos estrictamente necesarios para estimar la métrica primaria y los guardrails, y versiona esquemas/consultas a fin de que cualquier hallazgo sea reproducible con precisión.
+
+
+### 8.2.8. Web and Mobile Tracking Plan (FrostLink)
+
+Este plan define, desde FrostLink, cómo se miden con el menor costo de datos y la máxima reproducibilidad los comportamientos clave en Web y Móvil que alimentan los KPIs del capítulo 8 (adquisición, activación/retención y conversión). La unidad analítica es la persona usuaria; las mediciones se diseñan para soportar experimentos con α=0.05, poder 0.80 y MDE definidos, y para resguardar guardrails de salud (estabilidad, errores, quejas).
+
+#### Identidad, sesión y variantes (FrostLink Identity & Experiments).
+Se usa anon_id antes del registro y user_id tras la creación de cuenta; FrostLink reconcilia ambos de forma determinística. Se registran device_id, versión de app y SO. La sesión se define por primera interacción y 30 minutos de inactividad. Cuando hay experimentos, la variante se asigna por hash de user_id en FrostLink Experiments y se persiste para evitar “flips” entre sesiones y dispositivos.
+
+#### Eventos troncales (FrostLink Event Hub).
+• Descubrimiento y adquisición: page_view/screen_view, utm_params (web) o campaign_id/creative_id (móvil).
+• Onboarding y cuenta: signup_start, signup_complete, signin, logout.
+• Activación (primer valor): workspace_create (o equivalente), resource_linked (p. ej., dataset/activo), schema_validated, first_success_action (definido por el equipo).
+• Uso continuo y valor: artifact_created (consulta/pipeline/tablero), artifact_viewed, artifact_run/job_started/job_finished con estado y latencias.
+• Conversión y planes: plan_viewed, trial_started, subscription_started, subscription_renewed, payment_success, refund_processed.
+• Salud y soporte: error_raised (código/severidad), crash, report_submitted, latency_bucketed.
+• Notificaciones (móvil): push_received, push_opened, deep_link_opened.
+
+#### Propiedades mínimas por evento (FrostLink Schema Registry).
+timestamp_utc, user_id o anon_id, platform (web/android/ios), app_version, os_version, locale, country, experiment_id y variant cuando aplique; cada evento añade su payload específico (p. ej., en artifact_run: tipo, duración, estado; en payment_success: plan_id, period, amount, currency). FrostLink mantiene el contrato y su versionado.
+
+#### Atribución y ventanas (FrostLink Attribution).
+En Web se capturan UTM (source, medium, campaign, term, content); en Móvil, campaign_id y creative_id. Ventanas recomendadas: 24 h para adquisición (CTR/click→landing) y 7 días para conversión (trial/compra). FrostLink deduplica clics por impresión y documenta reglas de resolución entre canales.
+
+#### Calidad y gobierno del dato (FrostLink Quality Monitor & Catalog).
+Cada esquema pasa por pruebas de contrato antes del deploy; hay checks diarios de completitud, unicidad y balance de variantes; se filtra tráfico anómalo. Los cambios de esquema y las consultas estándar de KPIs se versionan en el catálogo, garantizando que un mismo cálculo produzca el mismo resultado en el tiempo.
+
+#### Privacidad y ética (FrostLink Privacy Console).
+Se aplica minimización de datos, consentimiento por categorías donde corresponda y rutinas de acceso/borrado a solicitud de la persona usuaria. Se registran evidencias de cumplimiento y accesos para auditoría. No se bloquean funciones básicas tras muros de pago ni se introduce fricción para forzar conversiones.
+
+#### Mapa a KPIs y experimentos (FrostLink Analytics & Decision Board).
+• Adquisición: CTR a partir de page_view + ad_click (o equivalentes en móvil) con campaña/creatividad.
+• Activación/Retención: D1 derivado de cohortes por signup_complete o first_success_action y eventos de retorno a 24–48 h.
+• Conversión: tasa a plan/trial y a pago desde subscription_started y payment_success.
+Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica primaria de cada experimento y lectura de guardrails (errores, quejas, latencias), todo dentro de FrostLink para asegurar trazabilidad de extremo a extremo.
+
+### 8.3.1. To-Be User Stories 
+<section id="to-be-user-stories">
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Historia</th>
+        <th scope="col">Criterios de aceptación</th>
+        <th scope="col">Notas FrostLink</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>US1</td>
+        <td>Como responsable de plataforma, quiero que la variante experimental se asigne por <code>user_id</code> y se mantenga entre sesiones, para asegurar resultados válidos.</td>
+        <td>Given un <code>user_id</code> nuevo, When inicia por primera vez, Then se le asigna una variante y queda guardada; Given el mismo <code>user_id</code> en otro dispositivo, When inicia, Then conserva la variante.</td>
+        <td>La asignación y su hash quedan registrados para auditoría.</td>
+      </tr>
+      <tr>
+        <td>US2</td>
+        <td>Como PM, quiero un contrato de eventos mínimo por experimento, para medir la métrica primaria y guardrails sin capturar datos de más.</td>
+        <td>Given la hipótesis, When definimos el contrato, Then sólo se incluyen eventos y propiedades necesarios y se versionan; Given un cambio, When se despliega, Then pasa por pruebas de esquema y staging.</td>
+        <td>Versionado de esquemas y consultas en el catálogo.</td>
+      </tr>
+      <tr>
+        <td>US3</td>
+        <td>Como equipo de producto, quiero medir activación (primer valor real), para saber si el onboarding funciona.</td>
+        <td>Given una cohorte de registro, When pasan 24–48 h, Then puedo ver activación y D1 por variante con IC95% y misma zona horaria.</td>
+        <td>Cohortes diarias y reglas de cómputo documentadas.</td>
+      </tr>
+      <tr>
+        <td>US4</td>
+        <td>Como negocio, quiero medir conversión a trial/pago y ARPPU de forma consistente, para evaluar precios y beneficios.</td>
+        <td>Given <code>subscription_started</code> y <code>payment_success</code>, When consolido por día, Then obtengo tasa de conversión y ARPPU comparables entre variantes.</td>
+        <td>Definiciones de ingreso, plan y moneda normalizadas.</td>
+      </tr>
+      <tr>
+        <td>US5</td>
+        <td>Como responsable de calidad, quiero alertas automáticas de guardrails (errores, crashes, latencias), para frenar rampas a tiempo.</td>
+        <td>Given un experimento activo, When un umbral se supera, Then se envía alerta y se bloquea la expansión hasta corregir.</td>
+        <td>Umbrales y playbooks documentados.</td>
+      </tr>
+      <tr>
+        <td>US6</td>
+        <td>Como marketing, quiero atribución clara (UTM en web, <code>campaign_id</code>/<code>creative_id</code> en móvil), para invertir mejor.</td>
+        <td>Given campañas activas, When consulto CTR y conversión, Then puedo filtrarlas por país, plataforma y creatividad.</td>
+        <td>Ventanas de atribución definidas (24 h adquisición, 7 días conversión).</td>
+      </tr>
+      <tr>
+        <td>US7</td>
+        <td>Como equipo, quiero un tablero por experimento con efecto, IC95% y estado, para decidir en Sprint Review.</td>
+        <td>Given el horizonte fijo alcanzado, When abro el tablero, Then veo métrica primaria, guardrails y propuesta de ship/hold/retest.</td>
+        <td>Plantilla de reporte única para comparabilidad.</td>
+      </tr>
+      <tr>
+        <td>US8</td>
+        <td>Como compliance, quiero consentimiento y borrado bajo demanda, para cumplir normativa.</td>
+        <td>Given una solicitud de borrado, When se procesa, Then se eliminan datos del <code>user_id</code> y queda registro de la acción.</td>
+        <td>Flujos y evidencias de cumplimiento centralizados.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+### 8.3.2. To-Be Product Backlog 
+
+<section id="to-be-product-backlog">
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Ítem</th>
+        <th scope="col">Objetivo</th>
+        <th scope="col">Prioridad</th>
+        <th scope="col">Dependencias</th>
+        <th scope="col">Criterio de Hecho (resumen)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PB1</td>
+        <td>Identidad y sesión unificadas</td>
+        <td>Sesiones y usuarios consistentes; variante persistente por <code>user_id</code>.</td>
+        <td>P1</td>
+        <td>—</td>
+        <td>Reconciliación <code>anon_id</code>&rarr;<code>user_id</code>, definición de sesión, persistencia de variante validada.</td>
+      </tr>
+      <tr>
+        <td>PB2</td>
+        <td>SDK y contrato de eventos mínimo</td>
+        <td>Datos justos para decidir; contratos versionados.</td>
+        <td>P1</td>
+        <td>PB1</td>
+        <td>Eventos troncales en web/móvil, pruebas de esquema, catálogo publicado.</td>
+      </tr>
+      <tr>
+        <td>PB3</td>
+        <td>Pipeline y checks de calidad</td>
+        <td>Datos confiables (completitud, unicidad, balance de variantes).</td>
+        <td>P1</td>
+        <td>PB2</td>
+        <td>Ingesta y agregaciones diarias operativas, monitoreo y alertas de data-quality activas.</td>
+      </tr>
+      <tr>
+        <td>PB4</td>
+        <td>Tablero de decisión por experimento</td>
+        <td>Decidir con evidencia en Sprint Review.</td>
+        <td>P1</td>
+        <td>PB3</td>
+        <td>Métrica primaria con IC95%, efecto, p-value y guardrails; estado ship/hold/retest visible.</td>
+      </tr>
+      <tr>
+        <td>PB5</td>
+        <td>Experimento A (adquisición)</td>
+        <td>Medir y decidir sobre creatividades/canales.</td>
+        <td>P1</td>
+        <td>PB4</td>
+        <td>Rampa 10%→50%, CTR por campaña/creatividad, decisión documentada.</td>
+      </tr>
+      <tr>
+        <td>PB6</td>
+        <td>Experimento B (activación/retención)</td>
+        <td>Validar mejoras de onboarding/primer valor.</td>
+        <td>P1</td>
+        <td>PB4</td>
+        <td>Activación y D1 por cohorte/variante con IC95%; decisión documentada.</td>
+      </tr>
+      <tr>
+        <td>PB7</td>
+        <td>Experimento C (conversión)</td>
+        <td>Evaluar pricing/beneficios sin dañar valor.</td>
+        <td>P1</td>
+        <td>PB4</td>
+        <td>Conversión y ARPPU comparables; guardrails ok; decisión documentada.</td>
+      </tr>
+      <tr>
+        <td>PB8</td>
+        <td>Guardrails automáticos</td>
+        <td>Seguridad operativa ante degradaciones.</td>
+        <td>P2</td>
+        <td>PB3</td>
+        <td>Umbrales definidos; alertas y bloqueos de rampa funcionando.</td>
+      </tr>
+      <tr>
+        <td>PB9</td>
+        <td>Atribución extendida</td>
+        <td>Inversión de marketing más eficiente.</td>
+        <td>P2</td>
+        <td>PB2</td>
+        <td>UTM completas (web) y <code>campaign_id</code>/<code>creative_id</code> (móvil) en producción.</td>
+      </tr>
+      <tr>
+        <td>PB10</td>
+        <td>Privacidad y cumplimiento</td>
+        <td>Confianza y alineamiento normativo.</td>
+        <td>P2</td>
+        <td>PB1</td>
+        <td>Consentimiento por categorías, flujo de acceso/borrado y auditoría activos.</td>
+      </tr>
+      <tr>
+        <td>PB11</td>
+        <td>Dashboards de apoyo y cohortes</td>
+        <td>Diagnóstico profundo y seguimiento.</td>
+        <td>P3</td>
+        <td>PB3</td>
+        <td>Embudos y cohortes por país/plataforma/fuente publicados y estables.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
 # Conclusiones
 
