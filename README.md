@@ -46,7 +46,6 @@
    </div>
 
    <br>
-<center>
 
 <table style="margin-left: auto; margin-right: auto;">
   <tr>
@@ -6776,7 +6775,7 @@ Frostlink (catálogo y control): mantiene el catálogo de experimentos, la matri
 El sistema analítico orienta decisiones mediante una métrica primaria por experimento y un conjunto acotado de métricas de apoyo para diagnóstico. La cadencia de lectura es diaria y el corte de decisión coincide con el cumplimiento del tamaño muestral planificado. Incluyo a continuación la tabla de objetivos y KPIs en formato Markdown para facilitar la referencia:
 
 | Objetivo | KPI primario | Definición | MDE de referencia | Muestra por variante (ref.) | Guardrails clave |
-| --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | Adquisición | CTR | clics / impresiones | +0.4 puntos porcentuales | ≈ 9,701 impresiones | Crash estable; sin alza de reportes |
 | Retención temprana | D1 | regresan en D1 / nuevas personas en D0 | +3 puntos porcentuales | ≈ 2,400 personas | Tiempo de juego sin caídas materiales |
 | Monetización | Tasa de compra | compradores / DAU | +0.5 puntos porcentuales | ≈ 7,741 personas | ARPPU estable; quejas contenidas |
