@@ -1,30 +1,32 @@
 <div align="center">
-  <tbody>
-    <tr>
-      <td>Adquisición</td>
-      <td>CTR</td>
-      <td>clics / impresiones</td>
-      <td>+0.4 puntos porcentuales</td>
-      <td>≈ 9,701 impresiones</td>
-      <td>Crash estable; sin alza de reportes</td>
-    </tr>
-    <tr>
-      <td>Retención temprana</td>
-      <td>D1</td>
-      <td>regresan en D1 / nuevas personas en D0</td>
-      <td>+3 puntos porcentuales</td>
-      <td>≈ 2,400 personas</td>
-      <td>Tiempo de juego sin caídas materiales</td>
-    </tr>
-    <tr>
-      <td>Monetización</td>
-      <td>Tasa de compra</td>
-      <td>compradores / DAU</td>
-      <td>+0.5 puntos porcentuales</td>
-      <td>≈ 7,741 personas</td>
-      <td>ARPPU estable; quejas contenidas</td>
-    </tr>
-  </tbody>
+   <div>
+
+# <center>Informe del Trabajo Final</center>
+
+   <br>
+
+   <center>Universidad Peruana de Ciencias Aplicadas</center>
+
+   <br>
+
+   <center><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC"></center>
+
+   <br>
+
+   <center><b>Ingeniería de software</b></center>
+
+   <br>
+
+   <center><b>2025-20</b></center>
+
+   <br>
+
+
+   <center><b>1ASI0732 Diseño de Experimentos de Ingeniería de Software</b></center>
+
+   <br>
+
+   <center><b>Sección:</b> 7503</center>
 
    <br>
 
@@ -46,6 +48,7 @@
    </div>
 
    <br>
+<center>
 
 <table style="margin-left: auto; margin-right: auto;">
   <tr>
@@ -76,6 +79,22 @@
     <td>Ramos Calagua, Sebastian Alexander</td>
     <td>U202222846</td>
   </tr>
+</table>
+
+
+</center>
+
+   <center><b>Octubre, 2025</b></center>
+
+</div>
+
+
+
+
+
+# Registro de Versiones del Informe
+
+<table style="border-collapse: collapse; width: 100%; text-align: left;">
     <thead>
         <tr>
             <th style="border: 1px solid black; padding: 8px; font-weight: bold; text-align: center;">Versión</th>
@@ -86,6 +105,32 @@
     </thead>
     <tbody>
         <tr>
+            <td>TB1</td>
+            <td>19/09/2025</td>
+            <td>
+                <ul>   
+                    <li>León Vivas, Fabrizio Amir</li>
+                    <li>Medina Cruzado, Raúl Adrian</li>
+                    <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
+                    <li>Varela Bustinza, Marcelo Alessandro</li>
+                    <li>Ramos Calagua, Sebastian Alexander</li>
+                </ul>
+            </td>
+            <td>
+                <strong>Adición de secciones:</strong><br>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Registro de Versiones del Informe</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Project Report Collaboration Insights</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Student Outcome</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Part I: As-Is Software Project</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.1. Startup Profile</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.1.1. Descripción de la Startup</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.1.2. Perfiles de integrantes del equipo</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.2. Solution Profile</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.2.1. Antecedentes y problemática</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">1.2.2. Lean UX Process</p>
+                <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.1. Lean UX Problem Statements</p>
+                <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.2. Lean UX Assumptions</p>
+                <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.3. Lean UX Hypothesis Statements</p>
                 <p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.4. Lean UX Canvas</p>
                 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.3. Segmentos objetivo</p>
                 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">2.1. Competidores</p>
@@ -243,7 +288,6 @@
             </td>
     </tbody>
 </table>
-
 
 
 # Project Report Collaboration Insights
