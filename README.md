@@ -384,7 +384,6 @@ Se explican las ramas más prominentes:
 <img src="resources/github_collaboration_insights_tb1.jpeg" alt="insightTB1open" width="500px" />
 
 
-
 # Contenido
 
 <!-- Part I -->
@@ -1572,8 +1571,6 @@ Las entrevistas evidencian que los negocios pequeños y medianos que dependen de
 
 **PROVEEDORES**
 
-falta
-
 <div style="page-break-before: always;"></div>
 
 ## 2.3. Needfinding.
@@ -1860,7 +1857,6 @@ Diagrama del Product Backlog: lista priorizada de requisitos y funcionalidades d
 |    35 | US-35         | Crear registro de intervención técnica (API)     | Como desarrollador, registrar intervenciones técnicas vía API para seguimiento.                                |            5 |
 |    36 | US-36         | Registrar evento de alerta manual (API)          | Como desarrollador, permitir el alta de alertas manuales desde campo mediante la API.                          |            3 |
 |    37 | US-37         | Evaluar servicio (API)                           | Como desarrollador, habilitar un endpoint para crear y actualizar evaluaciones de servicio.                    |            8 |
-
 
 # Capítulo IV: Product Design
 
