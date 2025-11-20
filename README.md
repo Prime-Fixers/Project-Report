@@ -1,54 +1,54 @@
 <div align="center">
    <div>
 
-# <center>Informe del Trabajo Final</center>
+# Informe del Trabajo Final
 
    <br>
 
-   <center>Universidad Peruana de Ciencias Aplicadas</center>
+   Universidad Peruana de Ciencias Aplicadas
 
    <br>
 
-   <center><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC"></center>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC">
 
    <br>
 
-   <center><b>Ingeniería de software</b></center>
+   <b>Ingeniería de software</b>
 
    <br>
 
-   <center><b>2025-20</b></center>
-
-   <br>
-
-
-   <center><b>1ASI0732 Diseño de Experimentos de Ingeniería de Software</b></center>
-
-   <br>
-
-   <center><b>Sección:</b> 7503</center>
-
-   <br>
-
-   <center><b>Profesor:</b> Tinoco Licas, Juan Carlos</center>
-
-   <br>
-
-<center><b>"Informe de Trabajo Final"</b></center>
-
-   <br>
-
-   <center><b>Nombre del StartUp:</b> PrimeFixers</center>
+   <b>2025-20</b>
 
    <br>
 
 
-   <center><b>Nombre del Producto:</b> FrostLink</center>
+   <b>1ASI0732 Diseño de Experimentos de Ingeniería de Software</b>
+
+   <br>
+
+   <b>Sección:</b> 7503
+
+   <br>
+
+   <b>Profesor:</b> Tinoco Licas, Juan Carlos
+
+   <br>
+
+<b>"Informe de Trabajo Final"</b>
+
+   <br>
+
+   <b>Nombre del StartUp:</b> PrimeFixers
+
+   <br>
+
+
+   <b>Nombre del Producto:</b> FrostLink
 
    </div>
 
    <br>
-<center>
+
 
 <table style="margin-left: auto; margin-right: auto;">
   <tr>
@@ -82,9 +82,9 @@
 </table>
 
 
-</center>
 
-   <center><b>Octubre, 2025</b></center>
+
+   <b>Octubre, 2025</b>
 
 </div>
 
@@ -1876,17 +1876,17 @@ La identidad visual de FrostLink busca transmitir seguridad, innovación y cerca
 
 Para mantener la formalidad y accesibilidad de la interfaz de usuario de FrostLink, se establecen las tipografías Helvetica y Open Sans por sus cualidades funcionales, estéticas y su excelente compatibilidad con entornos digitales, siendo Helvetica la tipografía principal.
 
-<center>
+
 <img src="./resources/Tipografia.jpeg" alt="Tipografia" >
-</center>
+
 
 *Figura 1:* Tipografía Helvica
 
-<center>
+
 
 <img src="./resources/Tipografia_helvica.jpeg" alt="Tipografia helvica" >
 
-</center>
+
 
 *Figura 2:* Tipografía Open Sans
 
@@ -1895,12 +1895,12 @@ La paleta cromática fue diseñada para evocar entornos fríos y tecnológicos, 
 
 El color principal es el celeste, ya que refleja de manera óptima las características de la marca. Como colores neutros, se emplean negro, blanco y gris, ideales para fondos y textos por su versatilidad. Además, se incorporan variantes de verde, rojo, azul y amarillo para resaltar estados específicos, como alertas, servicios o calificaciones.
 
-<center>
+
 <img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" width="50" height="50">
 
 <img src="./resources/Colors-General%20Style%20Guidelines.png" alt="Colors" >
 
-</center>
+
 *Figura 3:* Guías Generales de Estilo – Colores
 
 *Espaciado*
@@ -1939,16 +1939,16 @@ Dado que FrostLink está orientado al sector tecnológico, su paleta de colores 
 
 Dado que los botones y fondos pueden variar según el contexto, la plataforma emplea diferentes tonalidades de celeste para mantener coherencia visual.
 
-<center>
+
 <img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
-</center>
+
 *Figura 1:* Guías de Estilo Web – Color Sky Blue
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
-<center>
+
 <img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" >
-</center>
+
 
 *Figura 2:* Guías de Estilo Web - Color Rojo.
 
@@ -2002,9 +2002,9 @@ La interfaz aprovecha el modo **claro/oscuro de iOS**, manteniendo el contraste 
 - **Animaciones fluidas y naturales** basadas en UIKit Dynamics.  
 - **Haptics personalizados** para confirmaciones y errores.
 
-<center>
+
 <img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
-</center>
+
 
 *Figura 1:* Guías de Estilo Móvil iOS – Color Sky Blue.
 
@@ -2050,16 +2050,16 @@ La paleta se adapta a los modos **claro/oscuro** del sistema operativo, conserva
 - **Vibración háptica** en confirmaciones críticas.  
 - **Animaciones de carga nativas** por plataforma.  
 
-<center>
+
 <img src="./resources/Sky_blue-color-Web%20Style%20Guidelines.png" alt="color_section" >
-</center>
+
 *Figura 2:* Guías de Estilo Móvil Android – Color Sky Blue.
 
 De manera complementaria, se utiliza una paleta de rojo claro para resaltar ventanas, fondos o íconos que indiquen errores del sistema, alertas o estados críticos, facilitando su identificación por parte del usuario.
 
-<center>
+
 <img src="./resources/Red-color-Web%20Style%20Guidelines.png" alt="color_section" >
-</center>
+
 
 *Figura 3:* Guías de Estilo Móvil Android – Color Rojo.
 
@@ -2175,7 +2175,7 @@ El wireframe de la landing page de FrostLink está diseñado para organizar los 
 La página incluye secciones que presentan a los usuarios objetivo, las funcionalidades principales de la plataforma y los beneficios que FrostLink ofrece. Finalmente, en la parte inferior se dispone un formulario de contacto para solicitar una demo y un pie de página con enlaces legales y de referencia.
 
 *Figura 1:* Wireframe de la Landing Page.
-<center>
+
 
 <img src="./resources/LandingPage_1.jpeg" alt="lading_page_1" >
 
@@ -2183,7 +2183,7 @@ La página incluye secciones que presentan a los usuarios objetivo, las funciona
 
 <img src="./resources/LandingPage_3.jpeg" alt="lading_page_3" >
 
-</center>
+
 
 ### 4.3.2. Landing Page Mock-up
 
