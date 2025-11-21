@@ -1,5 +1,4 @@
 <div align="center">
-   <div>
 
 # Informe del Trabajo Final
 
@@ -17,7 +16,7 @@
 
    <br>
 
-   <b>2025-20</b>
+   <b>202520</b>
 
    <br>
 
@@ -26,7 +25,7 @@
 
    <br>
 
-   <b>Sección:</b> 7503
+   <b>NRC:</b> 7503
 
    <br>
 
@@ -49,38 +48,45 @@
 
    <br>
 
-
-<table style="margin-left: auto; margin-right: auto;">
-  <tr>
-    <th>Nombre</th>
-    <th>Código</th>
-  </tr>
-  <tr>
-    <td>León Vivas, Fabrizio Amir</td>
-    <td>U20211B994</td>
-  </tr>
-  <tr>
-    <td>Medina Cruzado, Raúl Adrian</td>
-    <td>U202210938</td>
-  </tr>
-  <tr>
-    <td>Tello Murga, Javier Oswaldo</td>
-    <td>U202110373</td>
-  </tr>
-  <tr>
-    <td>Pereira Vasquez, Fabrizzio</td>
-    <td>U202417468</td>
-  </tr>
-  <tr>
-    <td>Varela Bustinza, Marcelo Alessandro</td>
-    <td>U202319668</td>
-  </tr>
-     <tr>
-    <td>Ramos Calagua, Sebastian Alexander</td>
-    <td>U202222846</td>
-  </tr>
+<table border="1" style="margin: 0 auto; text-align: center; border-collapse: collapse; width: 50%;">
+  <thead>
+    <tr>
+      <th style="padding: 10px;">Nombre</th>
+      <th style="padding: 10px;">Código</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>León Vivas, Fabrizio Amir</td>
+      <td>U20211B994</td>
+    </tr>
+    <tr>
+      <td>Medina Cruzado, Raúl Adrian</td>
+      <td>U202210938</td>
+    </tr>
+    <tr>
+      <td>Tello Murga, Javier Oswaldo</td>
+      <td>U202110373</td>
+    </tr>
+    <tr>
+      <td>Pereira Vasquez, Fabrizzio</td>
+      <td>U202417468</td>
+    </tr>
+    <tr>
+      <td>Varela Bustinza, Marcelo Alessandro</td>
+      <td>U202319668</td>
+    </tr>
+    <tr>
+      <td>Ramos Calagua, Sebastian Alexander</td>
+      <td>U202222846</td>
+    </tr>
+  </tbody>
 </table>
-   <b>Noviembre, 2025</b>
+   <br>
+
+<div style="text-align: center;">
+  <b>Noviembre, 2025</b>
+</div>
 
 </div>
 
