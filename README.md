@@ -64,7 +64,7 @@
     <td>U202210938</td>
   </tr>
   <tr>
-    <td>Mondoñedo Rodriguez, Juan Diego Javier</td>
+    <td>Tello Murga, Javier Oswaldo</td>
     <td>U202110373</td>
   </tr>
   <tr>
@@ -80,17 +80,9 @@
     <td>U202222846</td>
   </tr>
 </table>
-
-
-
-
-   <b>Octubre, 2025</b>
+   <b>Noviembre, 2025</b>
 
 </div>
-
-
-
-
 
 # Registro de Versiones del Informe
 
@@ -111,7 +103,7 @@
                 <ul>   
                     <li>León Vivas, Fabrizio Amir</li>
                     <li>Medina Cruzado, Raúl Adrian</li>
-                    <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
+                    <li>Tello Murga, Javier Oswaldo</li>
                     <li>Varela Bustinza, Marcelo Alessandro</li>
                     <li>Ramos Calagua, Sebastian Alexander</li>
                 </ul>
@@ -207,89 +199,102 @@
                 <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Conclusiones</p>
             </td>
         </tr>
-      <tr>
+        <tr>
             <td>TP1</td>
             <td>11/09/2025</td>
             <td>
                 <ul>   
                     <li>León Vivas, Fabrizio Amir</li>
                     <li>Medina Cruzado, Raúl Adrian</li>
-                    <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
-                     <li>Pereira Vasquez, Fabrizzio</li>
+                    <li>Tello Murga, Javier Oswaldo</li>
+                    <li>Pereira Vasquez, Fabrizzio</li>
                     <li>Varela Bustinza, Marcelo Alessandro</li>
                     <li>Ramos Calagua, Sebastian Alexander</li>
                 </ul>
             </td>
-<td>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Part II: Verification, Validation & Pipeline</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VI: Product Verification & Validation</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1. Testing Suites & Validation</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.1. Core Entities Unit Tests.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.2. Core Integration Tests.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.3. Core Behavior-Driven Development</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.4. Core System Tests.</p>
-
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2. Static testing & Verification</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1. Static Code Analysis</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1.1. Coding standard & Code conventions.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.1.2. Code Quality & Code Security.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2.2. Reviews</p>
-
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3. Validation Interviews.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.1. Diseño de Entrevistas.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.2. Registro de Entrevistas.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3.3. Evaluaciones según heurísticas.</p>
-
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4. Auditoría de Experiencias de Usuario</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1. Auditoría realizada.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.1. Información del grupo auditado.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.2. Cronograma de auditoría realizada.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.1.3. Contenido de auditoría realizada.</p>
-
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2. Auditoría recibida.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.1. Información del grupo auditor.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.2. Cronograma de auditoría recibida.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.3. Contenido de auditoría recibida.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4.2.4. Resumen de modificaciones para subsanar hallazgos.</p>
-
-
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VII: DevOps Practices</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1. Continuous Integration</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.1. Tools and Practices.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.2. Build & Test Suite Pipeline Components.</p>
-
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2. Continuous Delivery</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.1. Tools and Practices.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.2. Stages Deployment Pipeline Components.</p>
-
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3. Continuous deployment</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.1. Tools and Practices.</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.2. Production Deployment Pipeline Components.</p>
-
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4. Continuous Monitoring</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.1. Tools and Practices</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.2. Monitoring Pipeline Components</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.3. Alerting Pipeline Components</p>
-<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4.4. Notification Pipeline Components.</p>
-
-</td>
-      </tr>
-      <td>TP1</td>
-            <td>11/09/2025</td>
+            <td>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Part II: Verification, Validation & Pipeline</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VI: Product Verification & Validation</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1. Testing Suites & Validation</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.1. Core Entities Unit Tests.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.2. Core Integration Tests.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.3. Core Behavior-Driven Development</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.1.4. Core System Tests.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VII: DevOps Practices</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1. Continuous Integration</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.1. Tools and Practices.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.1.2. Build & Test Suite Pipeline Components.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2. Continuous Delivery</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.1. Tools and Practices.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.2.2. Stages Deployment Pipeline Components.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3. Continuous deployment</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.1. Tools and Practices.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.3.2. Production Deployment Pipeline Components.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>TB2</td>
+            <td>15/11/2025</td>
             <td>
                 <ul>   
                     <li>León Vivas, Fabrizio Amir</li>
                     <li>Medina Cruzado, Raúl Adrian</li>
-                    <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
-                     <li>Pereira Vasquez, Fabrizzio</li>
+                    <li>Tello Murga, Javier Oswaldo</li>
+                    <li>Pereira Vasquez, Fabrizzio</li>
                     <li>Varela Bustinza, Marcelo Alessandro</li>
                     <li>Ramos Calagua, Sebastian Alexander</li>
                 </ul>
             </td>
+            <td>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.2. Static testing & Verification</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">6.2.1. Static Code Analysis</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">6.2.1.1. Coding standard & Code conventions.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">6.2.1.2. Code Quality & Code Security.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">6.2.2. Reviews</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.3. Validation Interviews.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">6.3.1. Diseño de Entrevistas.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">6.3.2. Registro de Entrevistas.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">6.3.3. Evaluaciones según heurísticas.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">Página 37 de 50</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">6.4. Auditoría de Experiencias de Usuario.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">6.4.1. Auditoría realizada.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">6.4.1.1. Información del grupo auditado.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">6.4.1.2. Cronograma de auditoría realizada.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">6.4.1.3. Contenido de auditoría realizada.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">6.4.2. Auditoría recibida.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">6.4.2.1. Información del grupo auditor.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">6.4.2.2. Cronograma de auditoría recibida.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">6.4.2.3. Contenido de auditoría recibida.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 10px;">6.4.2.4. Resumen de modificaciones para subsanar hallazgos.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">7.4. Continuous Monitoring</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">7.4.1. Tools and Practices</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">7.4.2. Monitoring Pipeline Components</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">7.4.3. Alerting Pipeline Components</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">7.4.4. Notification Pipeline Components.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Capítulo VIII: Experiment-Driven Development</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.1. Experiment Planning</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.1.1. As-Is Summary.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.1.3. Experiment-Ready Questions.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.1.4. Question Backlog.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.1.5. Experiment Cards.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.2. Experiment Design</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.2.1. Hypotheses.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.2.2. Domain Business Metrics</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.2.3. Measures.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.2.4. Conditions.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.2.5. Scale Calculations and Decisions.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.2.6. Methods Selection.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.2.8. Web and Mobile Tracking Plan.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3. Experimentation</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.3.1. To-Be User Stories.</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">8.3.2. To-Be Product Backlog</p>
+                <p style="display: block; margin: 2px 0; text-indent: 0px;">Avance de Conclusiones, Bibliografía y Anexos.</p>
+            </td>
+        </tr>
     </tbody>
 </table>
-
-
 
 # Project Report Collaboration Insights
 
