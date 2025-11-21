@@ -3760,9 +3760,11 @@ Para asegurar la robustez y el correcto funcionamiento de los componentes centra
 
 La implementación se apoyó en el ecosistema de Spring Boot, utilizando JUnit 5 como pilar para la estructuración y ejecución de los casos de prueba. Adicionalmente, se integró el framework Mockito para simular las dependencias externas de cada entidad. Este enfoque nos permitió crear un entorno de prueba controlado, garantizando que las validaciones se centraran exclusivamente en la lógica interna de la clase bajo prueba —como sus constructores, métodos de modificación de estado y validaciones— sin la interferencia de otros componentes. Las suites de pruebas, como InvoiceTest, InventoryItemTest y PatientTest, fueron diseñadas para auditar estas operaciones y asegurar la integridad del código desde las primeras etapas del desarrollo.
 
-#### **Test 1: Pruebas del Modelo User (IAM)**
-Descripción
+**Test 1: Pruebas del Modelo User (IAM)**
+
+Descripción:
 Pruebas unitarias que validan el comportamiento del agregado User del bounded context IAM, incluyendo creación, actualización de username, password y suscripción.
+
 **Casos de prueba**
 
 * Creación de usuario con datos válidos.
@@ -3786,140 +3788,151 @@ Código de Pruebas Unitarias para UserModel
 **Resultado de Ejecución de Pruebas**
 <img src="./resources/iam-test-evidence-2.jpg" alt="Resultado de la ejecución de UserModelTests">
 
-#### Test 2: Pruebas del Modelo ServiceRequest
-Descripción
+**Test 2: Pruebas del Modelo ServiceRequest**
+
+Descripción:
 Pruebas que verifican el comportamiento del modelo ServiceRequest, incluyendo asignación de técnicos, cambios de estado y validación de feedback de clientes.
 
 Casos de prueba
 
-Creación con datos válidos y estado inicial Pending.
+* Creación con datos válidos y estado inicial Pending.
 
-Asignación de técnico (estado pasa a Accepted).
+* Asignación de técnico (estado pasa a Accepted).
 
-Validación de ID de técnico (debe ser positivo).
+* Validación de ID de técnico (debe ser positivo).
 
-Cambio de estado a Resolved con fecha de completado.
+* Cambio de estado a Resolved con fecha de completado.
 
-Agregar feedback del cliente cuando está resuelto.
+* Agregar feedback del cliente cuando está resuelto.
 
-Validación de rating (1-5).
+* Validación de rating (1-5).
 
-Cobertura
+**Cobertura**
 
-Modelo: ServiceRequest.cs
+* Modelo: ServiceRequest.cs
 
-Bounded Context: ServiceRequests
+* Bounded Context: ServiceRequests
 
-Evidencia de Ejecución
+**Evidencia de Ejecución**
+
 Código de Pruebas Unitarias para ServiceRequestModel
 <img src="./resources/service.-request-model-test-evidence-2.jpg" alt="Código de pruebas para ServiceRequestModelTests">
 
-Resultado de Ejecución de Pruebas
+**Resultado de Ejecución de Pruebas**
 <img src="./resources/service-evidence-1.jpg" alt="Resultado de la ejecución de ServiceRequestModelTests">
 
-#### Test 3: Pruebas del HashingService
-Descripción
+**Test 3: Pruebas del HashingService**
+
+Descripción:
 Pruebas para el servicio de hashing de contraseñas usando BCrypt, validando la generación de hashes seguros y verificación correcta de credenciales.
 
-Casos de prueba
+**Casos de prueba**
 
-Generación de hash de contraseña.
+* Generación de hash de contraseña.
 
-Verificación de contraseña correcta.
+* Verificación de contraseña correcta.
 
-Rechazo de contraseña incorrecta.
+* Rechazo de contraseña incorrecta.
 
-Hashes únicos con salt aleatorio (BCrypt).
+* Hashes únicos con salt aleatorio (BCrypt).
 
-Manejo de caracteres especiales.
+* Manejo de caracteres especiales.
 
-Cobertura
+**Cobertura**
 
-Servicio: HashingService.cs
+* Servicio: HashingService.cs
 
-Bounded Context: IAM
+* Bounded Context: IAM
 
-Librería: BCrypt.Net-Next
+* Librería: BCrypt.Net-Next
 
-Evidencia de Ejecución
+**Evidencia de Ejecución**
+
 Código de Pruebas Unitarias para HashingService
 <img src="./resources/service-evidence.2.jpg" alt="Código de pruebas para HashingServiceTests">
 
-Resultado de Ejecución de Pruebas
+**Resultado de Ejecución de Pruebas**
 <img src="./resources/hashing-service-test-evidence-1.jpg" alt="Código de pruebas para HashingServiceTests">
 
-#### Test 4: Pruebas del Modelo Equipment
-Descripción
+**Test 4: Pruebas del Modelo Equipment**
+
+Descripción:
 Pruebas unitarias para el agregado Equipment del bounded context EquipmentManagement, validando la creación correcta de equipos de refrigeración con sus propiedades complejas.
 
-Casos de prueba
+**Casos de prueba**
 
-Creación con CreateEquipmentCommand válido.
+* Creación con CreateEquipmentCommand válido.
 
-Validación de datos básicos (nombre, modelo, fabricante, costo).
+* Validación de datos básicos (nombre, modelo, fabricante, costo).
 
-Configuración correcta de Location (entidad).
+* Configuración correcta de Location (entidad).
 
-Configuración correcta de EnergyConsumption (entidad).
+* Configuración correcta de EnergyConsumption (entidad).
 
-Parsing correcto de enums (Type, OwnershipType).
+* Parsing correcto de enums (Type, OwnershipType).
 
-Cobertura
+**Cobertura**
 
-Modelo: Equipment.cs
+* Modelo: Equipment.cs
 
-Entidades: Location.cs, EnergyConsumption.cs
+* Entidades: Location.cs, EnergyConsumption.cs
 
-Bounded Context: EquipmentManagement
+* Bounded Context: EquipmentManagement
 
-Evidencia de Ejecución
+**Evidencia de Ejecución**
+
 Código de Pruebas Unitarias para EquipmentModel
 <img src="./resources//equipment-model-test-evidence-2.jpg" alt="Código de pruebas para EquipmentModelTests">
 
-Resultado de Ejecución de Pruebas
+**Resultado de Ejecución de Pruebas**
 <img src="./resources/equipment-model-test-evidence-1.jpg" alt="Resultado de la ejecución de EquipmentModelTests">
 
-#### Test 5: Pruebas de Lógica de Negocio (ServiceRequest)
-Descripción
+**Test 5: Pruebas de Lógica de Negocio (ServiceRequest)**
+
+Descripción:
 Pruebas complejas de reglas de negocio y validaciones para el flujo de trabajo de ServiceRequest, incluyendo transiciones de estado y restricciones.
 
-Casos de prueba
+**Casos de prueba**
 
-Restricción: técnico solo se asigna si está Pending.
+* Restricción: técnico solo se asigna si está Pending.
 
-Cancelación permitida cuando está InProgress.
+* Cancelación permitida cuando está InProgress.
 
-Restricción: no cancelar si está Resolved.
+* Restricción: no cancelar si está Resolved.
 
-Creación de solicitud de emergencia con prioridad alta.
+* Creación de solicitud de emergencia con prioridad alta.
 
-Agregar detalles de resolución con costo.
+* Agregar detalles de resolución con costo.
 
-Restricción: feedback solo si está Resolved.
+* Restricción: feedback solo si está Resolved.
 
-Rechazo permitido solo cuando está Pending.
+* Rechazo permitido solo cuando está Pending.
 
-Restricción: no rechazar si está InProgress.
+* Restricción: no rechazar si está InProgress.
 
-Cobertura
+**Cobertura**
 
-Modelo: ServiceRequest.cs
+* Modelo: ServiceRequest.cs
 
-Métodos: AssignTechnician, Cancel, Reject, AddResolutionDetails, AddCustomerFeedback
+* Métodos: AssignTechnician, Cancel, Reject, AddResolutionDetails, AddCustomerFeedback
 
-Bounded Context: ServiceRequests
+* Bounded Context: ServiceRequests
 
-Evidencia de Ejecución
+**Evidencia de Ejecución**
+
 Código de Pruebas de Lógica de Negocio para ServiceRequest
 <img src="./resources/service-request-business-logic-test-evidence-2.jpg" alt="Código de pruebas para ServiceRequestBusinessLogicTests">
 
-Resultado de Ejecución de Pruebas
+**Resultado de Ejecución de Pruebas**
 <img src="./resources/service-request-business-evidence-1.jpg"> 
 
 
 ###  6.1.2. Core Integration Tests.
 
-<img src="./resources/integrantion-test.jpg"
+Como parte del conjunto de pruebas de integración de la plataforma FrostLink, implementé la clase *CrossContextIntegrationTests*, que valida el flujo end-to-end entre los bounded contexts IAM y Profiles usando xUnit y un *CustomWebApplicationFactory* basado en *WebApplicationFactory* de ASP.NET Core, lo que me permite levantar la API completa en memoria y probarla a través de HTTP real, de forma similar a un entorno de producción.
+
+En resumen, esta prueba de integración me permite evidenciar en el reporte que la plataforma FrostLink no solo tiene componentes individuales correctos, sino que además sus bounded contexts IAM y Profiles interactúan de forma consistente bajo escenarios reales de uso, reduciendo el riesgo de errores de integración al momento de desplegar el sistema.
+<img src="./resources/integrantion-test.jpg">
 
 ### 6.1.3. Core Behavior-Driven Development
 
@@ -3932,7 +3945,7 @@ Las funcionalidades definidas corresponden a tres flujos esenciales del sistema:
 
 Cada flujo representa un proceso clave dentro de la operación de la plataforma, garantizando la coherencia entre la experiencia del usuario (tanto del cliente como del proveedor) y la lógica de negocio implementada.
 
-#### Escenario probado 1: Autenticación y Usuario
+**Escenario probado 1: Autenticación y Usuario**
 
 La funcionalidad validada corresponde al flujo de autenticación básica del sistema, cubriendo el registro, inicio de sesión y posterior acceso a las funcionalidades internas de la aplicación.
 
@@ -3945,7 +3958,7 @@ En la ejecución se evidenció que:
 
 Este caso garantiza que el proceso de autenticación sea confiable, fluido y seguro, cumpliendo con las políticas de acceso definidas en **FrostLink**.
 
-#### Escenario probado 2: Gestión de Solicitudes de Servicio
+**Escenario probado 2: Gestión de Solicitudes de Servicio**
 
 La funcionalidad probada cubre el flujo completo de administración de solicitudes de servicio, incluyendo la creación de una solicitud por falla, la asignación de un técnico y la verificación del cambio de estado.
 
@@ -3958,7 +3971,7 @@ Durante la prueba se observó que:
 
 Con este escenario se valida que el módulo de solicitudes de servicio funciona de manera estable, brindando una experiencia de uso coherente y eficaz para los usuarios de la plataforma.
 
-#### Escenario probado 3: Gestión de Equipos
+**Escenario probado 3: Gestión de Equipos**
 
 La funcionalidad evaluada se centra en la administración de equipos de refrigeración, abarcando la visualización, registro y edición de sus detalles en el sistema.
 
@@ -3971,13 +3984,11 @@ En la ejecución se confirmó que:
 
 Este caso valida que el módulo de equipos de **FrostLink** garantiza una gestión confiable de la información de los activos de refrigeración, asegurando la integridad de los datos registrados.
 
-#### Herramientas utilizadas
+**Herramientas utilizadas**
 
 * **Gherkin / SpecFlow** → Para la definición y ejecución de los escenarios BDD en el ecosistema .NET.
 * **.NET + xUnit + EF Core In-Memory Database** → Para la ejecución controlada de los pasos de prueba en un entorno aislado.
 * **Entity Framework Core (EF Core)** → Para la persistencia y trazabilidad de las operaciones sobre la base de datos durante las pruebas.
-
-
 
 # Capítulo VII: DevOps Practices
 
