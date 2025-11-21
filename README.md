@@ -316,8 +316,8 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
     <td>Necxuz18</td>
   </tr>
   <tr>
-    <td>Mondoñedo Rodriguez, Juan Diego Javier</td>
-    <td>Jmondonedor</td>
+    <td>Tello Murga, Javier Oswaldo</td>
+    <td>JavierTello20</td>
   </tr>
   <tr>
     <td>Pereira Vasquez, Fabrizzio</td>
@@ -356,6 +356,20 @@ Para la elaboración del informe correspondiente a la entrega del TP1, se realiz
 | Pereira Vasquez, Fabrizzio             | **6.4 Auditoría de UX**: 6.4.1 Auditoría realizada (info del grupo auditado, cronograma, contenido); 6.4.2 Auditoría recibida (info del grupo auditor, cronograma, contenido); 6.4.2.4 Resumen de modificaciones para subsanar hallazgos.  |
 | Varela Bustinza, Marcelo Alessandro    | **Cap. VII DevOps**: 7.1 CI (herramientas y pipeline de build/test), 7.2 CD (stages y despliegue a staging), 7.3 Continuous Deployment (a producción), 7.4 Monitoring (métricas, alertas y notificaciones); diagramas y YAML del pipeline. |
 
+**TB2**
+
+Para la elaboración del informe correspondiente a la entrega del TB2, se realizó una nueva división del trabajo, asignando a cada integrante del equipo la actualización y ampliación de las secciones del Capítulo VI, Capítulo VII, Capítulo VIII y el avance de Conclusiones, Bibliografía y Anexos, incorporando además las correcciones y hallazgos levantados en el entregable TP1.
+
+| Integrantes                                | Tareas Asignadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **León Vivas, Fabrizio Amir**              | **6.2 Static testing & Verification (refinamiento global)**: integración de resultados de análisis estático, resumen ejecutivo de calidad y seguridad del código; consolidación de hallazgos de Sonar/linters/OWASP; coherencia entre 6.2, 6.3 y 6.4. **Capítulo VIII – visión global**: revisión cruzada de 8.1–8.3 para asegurar alineamiento con los objetivos del producto y métricas de negocio.                                                                                                                                                                           |
+| **Medina Cruzado, Raúl Adrian**            | **6.2 Static testing & Verification (contenido detallado)**: 6.2.1 Static Code Analysis, 6.2.1.1 Coding standard & Code conventions, 6.2.1.2 Code Quality & Code Security, 6.2.2 Reviews (checklists finales, ejemplos de issues encontrados y cómo se resolvieron). Documentar herramientas, reglas clave y cómo se integran al pipeline.                                                                                                                                                                                                                                      |
+| **Tello Murga, Javier Oswaldo** | **6.3 Validation Interviews** (versión extendida TB2): 6.3.1 Diseño de Entrevistas (versión final), 6.3.2 Registro de Entrevistas (matrices depuradas, citas clave), 6.3.3 Evaluaciones según heurísticas (Nielsen, severidad, priorización y decisiones de rediseño); integración del contenido marcado como *Página 37 de 50* dentro del flujo del Capítulo VI.                                                                                                                                                                                                               |
+| **Pereira Vasquez, Fabrizzio**             | **6.4 Auditoría de Experiencias de Usuario**: 6.4.1 Auditoría realizada (6.4.1.1 Información del grupo auditado, 6.4.1.2 Cronograma de auditoría realizada, 6.4.1.3 Contenido de auditoría realizada). **6.4.2 Auditoría recibida**: 6.4.2.1 Información del grupo auditor, 6.4.2.2 Cronograma de auditoría recibida, 6.4.2.3 Contenido de auditoría recibida, 6.4.2.4 Resumen de modificaciones para subsanar hallazgos.                                                                                                                                                       |
+| **Varela Bustinza, Marcelo Alessandro**    | **7.4 Continuous Monitoring**: 7.4.1 Tools and Practices, 7.4.2 Monitoring Pipeline Components, 7.4.3 Alerting Pipeline Components, 7.4.4 Notification Pipeline Components. Descripción detallada de la arquitectura de monitoreo, flujos de alertas y ejemplos de reglas. Soporte con diagramas de pipeline y cómo se integran con las prácticas de CI/CD definidas previamente.                                                                                                                                                                                               |
+| **Ramos Calagua, Sebastian Alexander**     | **Capítulo VIII: Experiment-Driven Development**: 8.1 Experiment Planning (8.1.1 As-Is Summary, 8.1.2 Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims, 8.1.3 Experiment-Ready Questions, 8.1.4 Question Backlog, 8.1.5 Experiment Cards), 8.2 Experiment Design (8.2.1–8.2.8: Hypotheses, Domain Business Metrics, Measures, Conditions, Scale Calculations, Methods Selection, KPIs y tracking plan), 8.3 Experimentation (8.3.1 To-Be User Stories, 8.3.2 To-Be Product Backlog) y **avance de Conclusiones, Bibliografía y Anexos** relacionado a los experimentos. |
+
+
 # Github Collaboration Insights
 
 GitHub muestra también una línea de tiempo que refleja las ramas principales y los procesos de merge realizados.
@@ -365,7 +379,7 @@ Los integrantes son:
 
 - León Vivas, Fabrizio Amir (CodyLionVivo)
 - Medina Cruzado, Raúl Adrian  (Necxuz18)
-- Mondoñedo Rodriguez, Juan Diego Javier (Jmondonedor)
+- Tello Murga, Javier Oswaldo (JavierTello20)
 - Pereira Vasquez, Fabrizzio  (fabrizzioper)
 - Varela Bustinza, Marcelo Alessandro  (Varbus)
 - Ramos Calagua, Sebastian Alexander (DazzliBoy)
