@@ -448,8 +448,7 @@ Se explican las ramas más prominentes:
    3.3. [Product Backlog](#33-product-backlog)<br>
    3.4. [Impact Mapping](#34-impact-mapping)<br>
 
-<!-- Part II -->
-# Part II: Verification, Validation & Pipeline
+
 
 4. [Capítulo IV: Product Design](#capítulo-iv-product-design)<br>
    4.1. [Style Guidelines](#41-style-guidelines)<br>
@@ -507,6 +506,9 @@ Se explican las ramas más prominentes:
    5.2.7. [RESTful API documentation](#527-restful-api-documentation)<br>
    5.2.8. [Team Collaboration Insights](#528-team-collaboration-insights)<br>
    5.3. [Video About-the-Product](#53-video-about-the-product)<br>
+
+<!-- Part II -->
+# Part II: Verification, Validation & Pipeline
 
 6. [Capítulo VI: Product Verification & Validation](#capítulo-vi-product-verification--validation)<br>
    6.1. [Testing Suites & Validation](#61-testing-suites--validation)<br>
@@ -4023,35 +4025,35 @@ Este caso valida que el módulo de equipos de **FrostLink** garantiza una gesti�
 
 #### 6.2.1.1. Coding standard & Code conventions
 
-##### Alcance
+ Alcance
 - Landing-Page (JavaScript): Prime-Fixers/Landing-Page
 - Frontend (Vue 3 + TypeScript): Prime-Fixers/Frontend
 - Mobile (Kotlin/Android): Prime-Fixers/Mobile
 - Platform (C#/.NET): Prime-Fixers/Platform
 
-##### Estándares base
+ Estándares base
 - JS/Vue: TypeScript + Guía de Estilo de Vue + Airbnb/TS adaptada (via typescript-eslint).
 - Kotlin: Kotlin Coding Conventions.
 - C#: .NET/C# Coding Conventions (Microsoft).
 - Docs en código: JSDoc/TypeDoc (JS/Vue), KDoc (Kotlin), XML Doc Comments (C#).
 
-##### Formateo automático y lint
+ Formateo automático y lint
 - Formateo: Prettier (JS/Vue), ktlint/ktfmt (Kotlin), dotnet format (C#).
 - Lint: ESLint + @typescript-eslint (JS/Vue), Detekt + ktlint (Kotlin), Roslyn/StyleCop.Analyzers (C#).
 - Aplicación: local (pre-commit) y CI (jobs format:check + lint).
 
-##### Nombres y estructura
+ Nombres y estructura
 - JS/Vue: archivos y componentes en kebab-case (p. ej., ejemplo-vue.vue, user-card.vue).
 - C#: archivos/clases en PascalCase (p. ej., EjemploPlatform.cs / EjemploPlatform).
 - Kotlin: clases y archivos en PascalCase (EjemploMobile.kt).
 - Paquetes/módulos: nombres descriptivos, consistentes con el bounded context.
 
-##### APIs & payloads
+ APIs & payloads
 - Paths REST: kebab-case (p. ej., /api/v1/cold-units/{id}/temp-history).
 - JSON keys: camelCase.
 - Códigos de estado: semánticos, errores con el cuerpo { code, message, details }.
 
-##### Pruebas
+ Pruebas
 - Mobile: JUnit 5 + MockK (unit); estructura src/test/java y src/androidTest.
 - Frontend: Vitest + Vue Test Utils; cobertura con vitest --coverage.
 - Platform: NUnit; proyectos *.Tests con patrón Given_When_Then.
@@ -4065,7 +4067,7 @@ Commits & ramas
 
 #### 6.2.1.2. Code Quality & Code Security
 
-##### Umbrales de calidad (por repo)
+Umbrales de calidad (por repo)
 
 | Repo              | Cobertura mínima | Complejidad máx. por función/método | Duplicación máx. | Lint errors | Comentarios                                                 |
 | ----------------- | ---------------: | ----------------------------------: | ---------------: | ----------: | ----------------------------------------------------------- |
@@ -4076,12 +4078,12 @@ Commits & ramas
 
 “Complejidad” medida por herramienta por defecto (ESLint complexity, Detekt/ktlint + Detekt metrics, Roslyn/StyleCop/ReportGenerator).
 
-##### Matriz de herramientas
+ Matriz de herramientas
 - JS/Vue: ESLint (+ @typescript-eslint), Prettier, Vitest (coverage), tsc --noEmit.
 - Kotlin: Detekt, ktlint/ktfmt, JUnit5 + MockK. JaCoco.
 - C#: Roslyn Analyzers/StyleCop, dotnet formato, NUnit, Coverlet + ReportGenerator.
 
-##### Seguridad (App & Supply Chain)
+ Seguridad (App & Supply Chain)
 - Contenedores (sí)
   - Imágenes base aprobadas:
     - Frontend/Landing: node:20-alpine (build) + nginx: alpine (serve si aplica).
@@ -4095,18 +4097,18 @@ Commits & ramas
 - Modelo de amenaza: OWASP AVVS L" como base + referencias NIST 800-53 (moderate).
 Riesgos foco: authN/authZ multi-tenant, inyección, exposición de secretos, IDOR, falta de rate limiting, SSRF (si hay integraciones).
 
-##### SLAs de remediación (días hábiles, America/Lima)
+ SLAs de remediación (días hábiles, America/Lima)
 - Critical: 1 día (owner: Fabrizio Amir León Vivas).
 - High: 3-4 días.
 - Medium: 1-2 semanas.
 - Low: backlog regular (según prioridad de producto).
 
-##### Gates de CI (fail-fast)
+ Gates de CI (fail-fast)
 Orden  recomendado por repo (paralelizable):
 1. format:check -> 2. lint -> 3. build -> 4. test + coverage (enforce umbral) -> 5. analyzers (Detekt/StyleCop) -> 6. trivy fs -> 7. docker build -> 8. trivy image (block High/Critical) -> 9. Deploy (solo si pasa):
 
 
-##### Evidencia simulada (válida para anexos)
+ Evidencia simulada (válida para anexos)
 
 - Ejemplo Sprint N (ficticio):
 
@@ -4115,16 +4117,15 @@ Orden  recomendado por repo (paralelizable):
   - Platform: cobertura 66% (<70%) ❌ → bloqueado; trivy image sin High/Critical ✅.
 
   - Acción: crear ticket “Aumentar cobertura de Services X/Y al 70%” (SLA Medium 1–2 semanas).
-
-
+  
 ### 6.2.2. Reviews
 
-#### Política general
+ Política general
 - Tipo: Code reviews de PR.
 - Aprobaciones: ≥1 aprobación distinta al autor (requisito mínimo).
 - Checks obligatorios: build verde, gates de calidad (sección 6.2.1.2) y estado “Ready” del pipeline.
 
-#### Checklist del PR (bloqueante)
+ Checklist del PR (bloqueante)
 
 1. Formato (Prettier/ktfmt/dotnet format) y Lint sin errores.
 
@@ -4138,10 +4139,10 @@ Orden  recomendado por repo (paralelizable):
 
 6. Tamaño de PR razonable (preferible < 400 LOC netos).
 
-#### Métrica de efectividad
+ Métrica de efectividad
 - Defectos post-merge: issues creados ≤7 días que referencian el PR. Se monitorea por sprint; sin umbral, solo tracking.
 
-#### Excepciones (hotfix estándar)
+ Excepciones (hotfix estándar)
 - Cuándo: caída de producción, vulnerabilidad High/Critical explotable, error en flujo de pago/registro.
 
 - Proceso: rama hotfix/* → PR con etiqueta urgent → 1 aprobación mínima (owner o guardia del día) → gates obligatorios (al menos linters + build + smoke tests) → merge a main y develop → post-mortem ≤48h.
@@ -4150,7 +4151,7 @@ Orden  recomendado por repo (paralelizable):
 
 ### 6.3.1. Diseño de Entrevistas (Validation Interviews)
 
-#### Objetivo e hipótesis (resumen operativo)
+ Objetivo e hipótesis (resumen operativo)
 
 - H1 Eficiencia: ↓ incidencias térmicas ≥20% en 4–6 semanas.
 
@@ -4162,21 +4163,21 @@ Orden  recomendado por repo (paralelizable):
 
 - H5 Adopción: retención 4-sem ≥60%, activación de funcionalidades clave ≥70%.
 
-#### Segmentos y muestra
+ Segmentos y muestra
 - Segmento 1: negocios con equipos de refrigeración (n=3).
 
 - Segmento 2: proveedores/servicios técnicos (n=3).
 
 - Total: 6 entrevistas remotas (Meet/Zoom). Sin incentivos.
 
-#### Materiales y ética
+ Materiales y ética
 - Material: prototipo navegable (FrostLink).
 
 - Grabación: audio/video solo para toma de notas en vivo.
 
 - Participantes: consentimiento informado verbal simple.
 
-#### Roles y logística
+ Roles y logística
 - Moderador: 1 miembro del equipo.
 
 - Entrevistado: 1 participante por sesión.
@@ -4189,7 +4190,7 @@ Orden  recomendado por repo (paralelizable):
 
 **Preguntas de entrevista**
 
-#### Segmeto 1 - Negocio que usan equipos de refrigeración
+ Segmeto 1 - Negocio que usan equipos de refrigeración
 
 **A) Screener (selección)**
 1. ¿Cuál es tu cargo y responsabilidades frente a los equipos de refrigeración?
@@ -4246,7 +4247,7 @@ H5 – Adopción
 2. Top-3 valores y Top-3 fricciones que encontraste hoy.
 3. ¿Te interesaría un piloto de 2-4 semanas? ¿Qué necesitarías para aprobarlo internamente?
 
-#### Segmento 2 - Proveedores de servicios/equipos de refrigeración
+ Segmento 2 - Proveedores de servicios/equipos de refrigeración
 
 **A) Screener (selección)**
 1. ¿Cuál es tu rol (técnico, jefe de servicio, comercial, operaciones)?
@@ -4397,7 +4398,7 @@ Mediciones por tarea:
 
 ### 6.3.3. Evaluaciones según heurísticas
 
-#### **UX Heuristics & Principles Evaluation**
+ **UX Heuristics & Principles Evaluation**
 **Usability - Inclusive Design - Information Architecture**
 
 **CARERRA: INGENIERÍA DE SOFTWARE**
