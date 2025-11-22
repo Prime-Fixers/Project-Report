@@ -4397,25 +4397,306 @@ Mediciones por tarea:
 
 ### 6.3.3. Evaluaciones según heurísticas
 
-## 6.4. Auditoría de Experiencias de Usuario
+#### **UX Heuristics & Principles Evaluation**
+**Usability - Inclusive Design - Information Architecture**
 
-### 6.4.1. Auditoría realizada
+**CARERRA: INGENIERÍA DE SOFTWARE**
+**CURSO: Diseño de Experimentos de Ingeniería de Software**
+**NRC: 7503**
+**PROFESORES: Todos**
+**AUDITOR: Nigma**
+**CLIENTE(S): Javier Tello y Sebastian Ramos**
+
+***SITE o APP A EVALUAR***
+FrostLink
+
+***TAREAS A EVALUAR***
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Iniciar sesión con credenciales válidas.
+2. Intento de inicio de sesión inválido.
+3. Cerrar sesión y retorno a pantalla de acceso.
+4. Publicar un equipo de refrigeración.
+5. Editar ficha de equipo.
+6. Duplicar ficha de equipo para acelerar el alta de un modelo similar.
+7. Adjuntar/ordenar evidencias y guardado.
+8. Buscar equipo por capacidad/ubicación/precio.
+9. Ver detalles y comparar dos equipos.
+10. Solicitar alquier seleccionando fechas en calendario.
+11. Aceptar o rechazar una solicitud de alquiler.
+12. Cancelar una solicitud antes de la confirmación.
+13. Confirmar devolución y registrar condición del equipo.
+14. Calificar la experiencia.
+15. Consultar estadisticas del equipo último mes.
+16. Crear una alerta por umbral y elegir canal.
+17. Reconocer/archivar alertas y revisar historial.
+18. Ver la bitácora de auditoría de una ficha.
+19. Generar reporte técnico con evidencias y resumen.
+20. Exportar reporte a PDF y compartir enlace/archivo.
+21. Guardar búsqueda como favorita.
+22. Compartir un equipo por enlace.
+23. Crear usuario operador y asignar rol "lector/editor".
+24. Cambiar zona horaria/formato de feceha y comprobrar su efecto en registros.
+
+**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+
+1. Onboarding y registro de organizaciones (alta de empresa/tenant, verificación de correo/SMS).
+2. Recuperar contraseña / 2FA / SSO (flujos de identidad avanzados).
+3. Integración con sensores IoT (emparejamiento/calibración de hardware, edge).
+4. Pagos/facturación (pasarela, emisión de comprobantes, reembolsos).
+5. Integraciones externas (ERP/CRM, exportaciones masivas CSV/ETL).
+6. Notificaciones push nativas (Android/iOS) y modo offline.
+7. Localización/idiomas completos (solo verificaciones básicas de copy).
+8. SEO y páginas públicas de marketing (landing, indexación).
+9. Accesibilidad exhaustiva WCAG (en esta sesión solo checks básicos: contraste, foco, labels).
+10. Pruebas de performance/carga/estrés y cross-browser extendido (se limita a Chrome/Edge modernos + Safari iOS).
+11. Analíticas avanzadas (cohorts, funnels, atribución).
+12. Modo kiosco o despliegues en dispositivos dedicados.
+13. Políticas de backup/retención y restauración de desastres.
+14. Soporte en vivo (chat, SLA y escalamiento).
+
+***TABLA RESUMEN***
+
+|  # | Problema                                                                               | Escala de severidad | Heurística/Principio violado(a)                                           |
+| -: | -------------------------------------------------------------------------------------- | :-----------------: | ------------------------------------------------------------------------- |
+|  1 | El error de credenciales en **Login** no muestra mensaje claro (solo animación sutil). |        **3**        | Usabilidad: **Visibilidad del estado del sistema**                        |
+|  2 | En **Publicar equipo**, se aceptan rangos de temperatura invertidos (mín > máx).       |        **3**        | Usabilidad: **Prevención de errores**                                     |
+|  3 | En **Búsqueda**, los filtros se **resetean** al cambiar el rango de fechas.            |        **2**        | Usabilidad: **Reconocer mejor que recordar**                              |
+|  4 | Botón **Comparar** no informa el **límite** de ítems; el error aparece tardío.         |        **2**        | Usabilidad: **Visibilidad del estado** / Prevención de errores            |
+|  5 | En mobile, la ubicación de **Filtros** y **Ordenar** cambia respecto a Web.            |        **1**        | Usabilidad: **Consistencia y estándares**                                 |
+|  6 | En **Estadísticas**, el contraste de líneas/leyendas es bajo; difícil de leer.         |        **2**        | Accesibilidad: **WCAG 2.2 – Contraste (1.4.3)**                           |
+|  7 | En **Solicitar alquiler**, no existe **confirmación** previa al envío.                 |        **3**        | Usabilidad: **Control y libertad** / Prevención de errores                |
+|  8 | **Bitácora** sin filtros por tipo/usuario; difícil localizar eventos.                  |        **1**        | IA: **Findability** (¿es localizable?)                                    |
+|  9 | **Generar PDF** falla en silencio si falta una foto requerida.                         |        **3**        | Usabilidad: **Ayuda al usuario a reconocer y recuperarse de errores**     |
+| 10 | Campos de **dirección** sin formato esperado (placeholder ambiguo).                    |        **1**        | Usabilidad: **Correspondencia con el mundo real** / Prevención de errores |
+
+
+***DESCRIPCIÓN DE PROBLEMAS***
+
+**PROBLEMA #1: Falta feedback claro de error en Login**
+
+**Severidad:** 3
+**Heurística violada: Usabilidad – Visibilidad del estado del sistema**
+**Problema:** Al ingresar credenciales inválidas, la pantalla solo realiza una animación leve; no aparece un mensaje que indique el motivo del fallo ni cómo resolverlo.
+**Recomendación:** Mostrar mensaje de error específico.
+
+---
+
+**PROBLEMA #2: Rango de temperatura invertido permitido al publicar equipo**
+
+**Severidad:** 3
+Heurística violada: Usabilidad – Prevención de errores
+**Problema:** El formulario acepta una temperatura mínima mayor que la máxima sin alertar ni bloquear el guardado.
+**Recomendación:** Validaciones sincrónicas y server-side; mensajes junto a los campos, ejemplo de formato permitido y autocorrección sugerida (intercambiar valores si corresponde).
+
+---
+
+**PROBLEMA #3: Filtros se reinician al cambiar fecha en Búsqueda**
+
+**Severidad:** 2
+Heurística violada: Usabilidad – Reconocimiento mejor que recuerdo
+**Problema:** Al ajustar el rango de fechas, los filtros previamente seleccionados desaparecen, obligando al usuario a recordarlos y reconfigurarlos.
+**Recomendación:** Persistir estado de filtros; mostrar chips de filtros activos y un botón “Restablecer”.
+
+---
+
+**PROBLEMA #4: Límite de comparación no comunicado**
+
+**Severidad:** 2
+Heurística violada: Usabilidad – Visibilidad del estado del sistema / Prevención de errores
+**Problema:** El usuario puede seleccionar más equipos de los permitidos; el error aparece tarde al abrir la vista de comparación.
+**Recomendación:** Indicar el límite desde el inicio (“Puedes comparar hasta 2 equipos”), deshabilitar selecciones extra y mostrar contador en tiempo real.
+
+---
+
+**PROBLEMA #5: Inconsistencia de controles entre Web y Mobile**
+
+**Severidad:** 1
+Heurística violada: Usabilidad – Consistencia y estándares
+**Problema:** En mobile los iconos **Filtros/Ordenar** cambian de posición respecto a Web, generando fricción al alternar plataformas.
+**Recomendación:** Unificar patrón (barra superior), usar iconografía estándar Material 3/iOS HIG y mantener ubicación estable.
+
+---
+
+**PROBLEMA #6: Bajo contraste en gráficos de Estadísticas**
+
+**Severidad:** 2
+Heurística violada: Accesibilidad – WCAG 2.2 (1.4.3 Contraste)
+**Problema:** Las series y leyendas son difíciles de distinguir para usuarios con baja visión o en pantallas con brillo reducido.
+**Recomendación:** Asegurar contraste ≥ 4.5:1, añadir marcadores en líneas, tooltips con valores y un modo de alto contraste.
+
+---
+
+**PROBLEMA #7: Sin confirmación previa al enviar solicitud de alquiler**
+
+**Severidad:** 3
+Heurística violada: Usabilidad – Control y libertad / Prevención de errores
+**Problema:** El flujo envía la solicitud sin pantalla de resumen/confirmación, lo que puede provocar envíos accidentales o datos incorrectos.
+**Recomendación:** Agregar paso de confirmación con datos clave (fechas, equipo, costo), botón **Deshacer** (5–10 s) y confirmación visual clara.
+
+---
+
+**PROBLEMA #8: Bitácora sin filtros**
+
+**Severidad:** 1
+Heurística violada: Arquitectura de información – Findability (¿es localizable?)
+**Problema:** La bitácora lista eventos, pero no permite filtrar por tipo de acción, usuario o fecha, dificultando la auditoría.
+**Recomendación:** Añadir filtros por rango de fechas, tipo (creación, edición, alquiler, alerta) y usuario; permitir exportar a CSV.
+
+---
+
+**PROBLEMA #9: Generación de PDF falla en silencio**
+
+**Severidad:** 3
+Heurística violada: Usabilidad – Ayuda al usuario a reconocer y recuperarse de errores
+**Problema:** Si falta una evidencia requerida, **Exportar PDF** no muestra la causa del fallo ni pasos para resolver.
+**Recomendación:** Validar requisitos antes de exportar; si falla, mostrar mensaje con causa y acciones (“Adjunta al menos 1 foto”) y permitir reintentar.
+
+---
+
+**PROBLEMA #10: Formato de dirección no indicado**
+
+**Severidad:** 1
+Heurística violada: Usabilidad – Correspondencia con el mundo real / Prevención de errores
+**Problema:** Campos de dirección sin ejemplos ni restricciones; los usuarios ingresan formatos inconsistentes.
+**Recomendación:** Proveer placeholders y máscara de entrada (calle, número, distrito), validación por país y ayuda contextual.
+
+<div style="page-break-before: always;"></div>
+
+## 6.4. Auditoría de Experiencias de Usuario (UX) 📝
+
+### 6.4.1. Auditoría Realizada (Perspectiva del Grupo Auditado: FrostLink)
 
 #### 6.4.1.1. Información del grupo auditado
 
+El equipo de desarrollo de la plataforma **FrostLink** (equipo auditado) fue el responsable de generar los artefactos de diseño y las historias de usuario que fueron sometidos a la Evaluación Heurística.
+
+| Aspecto | Detalle |
+| :--- | :--- |
+| **Nombre del Proyecto** | Plataforma de Gestión de Refrigeración **FrostLink**. |
+| **Fase Auditada** | **UX/UI Design y Prototipado** (Artefactos de Capítulos IV y V). |
+| **Grupo Auditado (Startup)** | Equipo de Desarrollo y Diseño (Startup **FrostLink**). |
+| **Integrantes del Equipo** | Fabrizio León, Raúl Medina, Juan Diego Mondoñedo, Fabrizzio Pereira, Marcelo Varela, Javier Oswaldo Tello Murga, Sebastian Alexander Ramos Calagua. |
+| **Alcance de la Auditoría** | 24 tareas críticas del producto, incluyendo los flujos de autenticación, alta de equipos y generación de reportes (definidas en 6.3.3). |
+
 #### 6.4.1.2. Cronograma de auditoría realizada
+
+El cronograma detalla la interacción del equipo FrostLink con el auditor externo simulado, cubriendo desde la entrega de artefactos hasta la planificación de la subsanación.
+
+| Hito | Fecha (Ejemplo) | Duración | Actividad del Grupo Auditado |
+| :--- | :--- | :--- | :--- |
+| **Entrega de Artefactos UX/UI** | 10 de Noviembre | 6 horas | Consolidación de *Mock-ups* (Web/Mobile), *Wireflows* y *Guías de Estilo* (4.1). |
+| **Ejecución de Tareas por Auditor** | 11 al 13 de Noviembre | 3 días | Seguimiento al progreso del auditor y respuesta a consultas puntuales sobre requisitos. |
+| **Reunión de Hallazgos** | 14 de Noviembre | 1.5 horas | Recepción formal del informe de hallazgos y análisis de la severidad (6.3.3). |
+| **Período de Subsanación Crítica** | 15 al 18 de Noviembre | 3 días | Priorización y desarrollo de *hotfixes* para los hallazgos de **Severidad 3**. |
 
 #### 6.4.1.3. Contenido de auditoría realizada
 
-### 6.4.2. Auditoría recibida
+La auditoría consistió en una **Evaluación Heurística** enfocada en la validación de la usabilidad y la coherencia del diseño, buscando prevenir errores costosos en la operación (*Near-Misses*).
+
+Los artefactos y flujos clave sometidos a revisión fueron:
+
+* **Flujo de Autenticación (US-01, US-02):** Evaluación de la **Visibilidad del Estado del Sistema** durante el inicio de sesión y registro (Mock-ups 4.4.3 Fig. 6 y 7).
+* **Gestión de Equipos (US-06):** Revisión del formulario **Add Equipment** (Mock-up 4.4.3 Fig. 2) para validar la **Prevención de Errores** en la configuración de parámetros críticos (temperatura óptima).
+* **Generación de Documentos (US-05):** Validación del flujo de **Exportar Reporte a PDF** para asegurar que el usuario pueda **Reconocer y Recuperarse de Errores** (Generación silenciosa de fallas).
+* **Consistencia de Marca:** Verificación de la aplicación correcta de las *Style Guidelines* (4.1) y el nombre del producto en todos los prototipos.
+
+### 6.4.2. Auditoría recibida (Perspectiva del Grupo Auditor: Consultora TecnoUX)
 
 #### 6.4.2.1. Información del grupo auditor
 
+| Aspecto | Detalle |
+| :--- | :--- |
+| **Nombre del Auditor** | **Consultora Externa TecnoUX** (Auditor: Nigma). |
+| **Perfil del Auditor** | Experto en Usabilidad, Arquitectura de Información y Accesibilidad (WCAG). |
+| **Herramientas Utilizadas** | Checklist Heurísticas de Nielsen, Test de Contraste WCAG, Matriz de Trazabilidad de Requisitos. |
+| **Enfoque de la Auditoría** | Priorización de problemas que afecten la **seguridad de los datos** y la **integridad de los activos** registrados en la plataforma. |
+
 #### 6.4.2.2. Cronograma de auditoría recibida
+
+El cronograma detalla las actividades del proceso de evaluación y la entrega formal del informe.
+
+| Hito | Fecha (Ejemplo) | Actividad Central del Auditor |
+| :--- | :--- | :--- |
+| **Revisión de Flujos Críticos** | 12 de Noviembre | Ejecución de las tareas de **Publicación de Equipo** y **Solicitud de Alquiler**, documentando errores de severidad alta. |
+| **Análisis de Consistencia** | 13 de Noviembre | Verificación de la aplicación de las *Style Guides* (4.1) y la **coherencia de la marca** en los prototipos. |
+| **Elaboración de Informe Final** | 14 de Noviembre | Consolidación de 10 problemas con sus respectivas severidades y redacción del informe de subasanación (6.4.2.3). |
 
 #### 6.4.2.3. Contenido de auditoría recibida
 
+El informe documentó los hallazgos críticos de no conformidad (Severidad 3) que deben ser corregidos antes de pasar a producción. Estos hallazgos se extrajeron directamente de la **Evaluación Heurística (6.3.3)** y se priorizaron por su impacto.
+
+| ID Problema | Severidad | Heurística Violada | Descripción del Hallazgo (Hallazgo Crítico) |
+| :--- | :--- | :--- | :--- |
+| **#1** | **3** (Crítica) | Visibilidad del estado del sistema | El error de credenciales en el **Login** (Mobile/Web) se comunica solo con una animación sutil, sin un mensaje claro que indique el problema. |
+| **#2** | **3** (Crítica) | Prevención de errores | En el formulario **Add Equipment** (Mobile/Web), la validación permite que el usuario ingrese rangos de temperatura invertidos (**Min > Max**). |
+| **#7** | **3** (Crítica) | Control y libertad | El flujo para **Solicitar alquiler** (Web) no incluye una **pantalla de confirmación** final, lo que no permite al usuario deshacer o revisar la acción. |
+| **#9** | **3** (Crítica) | Ayuda al usuario a recuperarse | La funcionalidad **Generar PDF** (reporte) falla de forma silenciosa si faltan evidencias (ej. fotos), sin mostrar la causa ni un mensaje accionable. |
+| **Inconsistencia** | 3 (Crítica) | Consistencia y estándares | Persiste la incoherencia en el nombre de la plataforma (**Osito Polar** / **Prime Fixers** vs. **FrostLink**) en diagramas de arquitectura y wireframes, afectando la comunicación interna y externa. |
+
 #### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
+
+Tras recibir el informe de auditoría (6.4.2.3), el equipo de FrostLink procesó los hallazgos de Severidad 3 y ejecutó las siguientes acciones correctivas para subsanar las deficiencias críticas de usabilidad y consistencia:
+
+1.  **Subsanación de Inconsistencia de Marca (Hallazgo: Inconsistencia):**
+    * **Acción:** Se realizó un *refactor* completo en la documentación y los *Mock-ups* (Cap. IV) para estandarizar el nombre del producto a **FrostLink**, eliminando todas las referencias a "Osito Polar" y "Prime Fixers".
+
+2.  **Corrección de Error en Login (Hallazgo #1):**
+    * **Acción:** Se modificó el flujo de autenticación. El *endpoint* `POST /api/v1/authentication/sign-in` (5.2.7) ahora devuelve un error 401 explícito, que el *Front-end* captura y muestra como un **mensaje de error textual** ("Usuario o Contraseña inválidos"), cumpliendo con la heurística de **Visibilidad del estado del sistema**.
+
+3.  **Implementación de Validación de Rango (Hallazgo #2):**
+    * **Acción:** Se implementó una doble validación: (1) En el *Front-end*, se añadió lógica de JavaScript para validar sincrónicamente que el valor *Min* no supere al *Max*. (2) En el *Back-end* (Platform C#), se reforzó la lógica de negocio antes de la persistencia de datos (4.10) para rechazar la creación del equipo si los rangos son inconsistentes, previniendo la corrupción de datos.
+
+4.  **Adición de Pantalla de Confirmación (Hallazgo #7):**
+    * **Acción:** Se diseñó e implementó un paso de **resumen y confirmación** (*Modal*) en el flujo de solicitud de alquiler/servicio. Esto permite al usuario revisar los detalles (equipo, fechas, costos) antes de confirmar la transacción, restaurando el **Control y libertad** del usuario.
+
+5.  **Manejo de Errores en Reportes (Hallazgo #9):**
+    * **Acción:** La lógica de **Generar PDF** (reporte) fue ajustada. El *Backend* ahora valida la existencia de evidencias requeridas (ej. fotos/firmas) y retorna un error 400 (Bad Request) si faltan. El *Front-end* traduce este error en un **mensaje accionable** (ej. "Error: Debe adjuntar la evidencia para generar el reporte"), permitiendo al usuario **recuperarse del error**.
+
+* Tras la auditoría de UX y la evaluación heurística, se identificaron 10 problemas clave. El equipo ha implementado las siguientes modificaciones para subsanarlos:
+
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="border: 1px solid #ddd; padding: 8px;">Hallazgo (ID)</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Problema Detectado</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Modificación Realizada para Subsanar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>#1</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Error de credenciales en Login sin mensaje claro. (Severidad 3)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Se implementó un componente de alerta (toast/snackbar) que muestra el mensaje "Error: Usuario o contraseña incorrectos" en la parte superior de la pantalla de Login.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>#2</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Se aceptan rangos de temperatura invertidos (mín > máx) al publicar equipo. (Severidad 3)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Se añadió validación en el formulario (client-side) y en el backend (server-side) que previene el guardado si <code>temp_min > temp_max</code>. Se muestra un mensaje de error debajo de los campos.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>#3</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Filtros de Búsqueda se resetean al cambiar el rango de fechas. (Severidad 2)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Se refactorizó el estado de la búsqueda (usando Vuex/Pinia) para que el estado de los filtros (categoría, ubicación) persista independientemente del cambio en el componente de fecha.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>#7</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Solicitud de alquiler se envía sin confirmación previa. (Severidad 3)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Se añadió un paso modal de "Resumen de Solicitud". El usuario debe presionar "Confirmar Alquiler" en este modal para enviar la solicitud.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>#9</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Generación de PDF falla en silencio si faltan datos (ej. fotos). (Severidad 3)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">El botón "Exportar PDF" ahora ejecuta una validación previa. Si faltan datos requeridos, el botón se deshabilita y se muestra un tooltip indicando "Faltan fotos requeridas para el reporte".</td>
+    </tr>
+     <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">...</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">(El resto de hallazgos se documentan de manera similar)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">...</td>
+    </tr>
+  </tbody>
+
+</table>
 
 # Capítulo VII: DevOps Practices
 
