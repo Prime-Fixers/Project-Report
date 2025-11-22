@@ -1980,12 +1980,10 @@ De manera complementaria, se utiliza una paleta de rojo claro para resaltar vent
 *Figura 2:* Guías de Estilo Web - Color Rojo.
 
 ### 4.1.3. Mobile Style Guidelines
-# FrostLink - Estándares de Diseño e Interacción Móvil
+FrostLink - Estándares de Diseño e Interacción Móvil
 
 Esta sección establece los estándares visuales y de interacción para la aplicación móvil de **FrostLink**, garantizando una experiencia de usuario uniforme y optimizada para **iOS** y **Android**.  
 Bajo un enfoque **nativo-móvil**, se implementan componentes específicos de cada plataforma que priorizan la ergonomía táctil, gestos intuitivos y navegación por pestañas inferiores.
-
----
 
 ### 4.1.3.1. iOS Mobile Style Guidelines
 
@@ -1993,7 +1991,7 @@ Bajo un enfoque **nativo-móvil**, se implementan componentes específicos de ca
 La interfaz se adapta fluidamente al ecosistema **iOS**, respetando los márgenes de seguridad, zonas táctiles y proporciones de pantalla de dispositivos como **iPhone SE**, **iPhone 13/14/15** y **iPad Mini**.  
 Los componentes se ajustan mediante **Auto Layout** y **Size Classes**, manteniendo la consistencia visual tanto en orientación vertical como horizontal.
 
----
+
 
 ## Tipografía Móvil
 - **iOS:** SF Pro  
@@ -2001,7 +1999,7 @@ Los componentes se ajustan mediante **Auto Layout** y **Size Classes**, mantenie
 Las fuentes respetan el tamaño dinámico configurado por el usuario y siguen las recomendaciones de las **Human Interface Guidelines (HIG)**.  
 Los títulos utilizan pesos **semibold**, mientras que los textos secundarios usan **regular** para favorecer la lectura en pantallas pequeñas.
 
----
+
 
 ## Paleta de Colores Móvil
 La interfaz aprovecha el modo **claro/oscuro de iOS**, manteniendo el contraste adecuado para la accesibilidad visual.
@@ -2012,7 +2010,7 @@ La interfaz aprovecha el modo **claro/oscuro de iOS**, manteniendo el contraste 
 - **Rojo (#FF4B4B):** Alertas del sistema con retroalimentación háptica.  
 - **Amarillo (#FFCC00):** Advertencias o tareas pendientes.  
 
----
+
 
 ## Componentes Móviles Específicos
 - **Tab Bar inferior** con íconos SF Symbols adaptados.  
@@ -2021,7 +2019,7 @@ La interfaz aprovecha el modo **claro/oscuro de iOS**, manteniendo el contraste 
 - **Alertas modales** con estilo iOS.  
 - **Feedback háptico** en acciones confirmadas.  
 
----
+
 
 ## Interacciones Táctiles
 - **Pull-to-refresh** en listas.  
@@ -2035,14 +2033,14 @@ La interfaz aprovecha el modo **claro/oscuro de iOS**, manteniendo el contraste 
 
 *Figura 1:* Guías de Estilo Móvil iOS – Color Sky Blue.
 
----
+
 
 ### 4.1.3.2. Android Mobile Style Guidelines
 
 ## Diseño Adaptativo
 La interfaz utiliza un sistema de contenedores flexibles que se ajustan dinámicamente a diferentes resoluciones y orientaciones de pantalla, manteniendo la jerarquía visual en dispositivos desde **4 hasta 6.5 pulgadas**.
 
----
+
 
 ## Tipografía Móvil
 - **Android:** Roboto  
@@ -2050,7 +2048,7 @@ La interfaz utiliza un sistema de contenedores flexibles que se ajustan dinámic
 Las tipografías se escalan automáticamente según las configuraciones de accesibilidad del usuario.  
 Los tamaños de fuente siguen las pautas de **Material Design**.
 
----
+
 
 ## Paleta de Colores Móvil
 La paleta se adapta a los modos **claro/oscuro** del sistema operativo, conservando la identidad de FrostLink y manteniendo un contraste adecuado para mejorar la legibilidad.
@@ -2061,7 +2059,7 @@ La paleta se adapta a los modos **claro/oscuro** del sistema operativo, conserva
 - **Rojo (#FF4B4B):** Alertas críticas con vibración asociada.  
 - **Amarillo (#FFCC00):** Recordatorios de mantenimiento preventivo.  
 
----
+
 
 ## Componentes Móviles Específicos
 - Navegación inferior con **5 secciones clave**.  
@@ -2069,7 +2067,7 @@ La paleta se adapta a los modos **claro/oscuro** del sistema operativo, conserva
 - **Botones flotantes (FAB)** para acciones frecuentes.  
 - Notificaciones integradas con el **centro de notificaciones del sistema operativo**.  
 
----
+
 
 ## Interacciones Táctiles
 - **Pull-to-refresh** en listas dinámicas.  
@@ -2094,23 +2092,11 @@ De manera complementaria, se utiliza una paleta de rojo claro para resaltar vent
 ## 4.2. Information Architecture
 ### 4.2.1. Organization Systems
 
-Para estructurar la información en FrostLink, se emplean diversos sistemas de organización que facilitan la navegación del usuario:
-
-Jerarquía Visual: Se priorizan los elementos más relevantes, ayudando a que el usuario identifique rápidamente la información clave.
-
-Organización Secuencial (Paso a Paso): Ideal para procesos guiados como la compra de equipos o contratación de servicios, asegurando un flujo ordenado y sencillo de seguir.
-
-Organización Matricial: Utilizada para comparar o analizar datos relacionados, ofreciendo al usuario una visión clara y estructurada de las alternativas disponibles.
+En el frontend de OsitoPolar, la organización de la información se estructura mediante tres sistemas principales. La **organización visual jerárquica** se aplica en la navegación principal del navbar, donde los elementos más importantes (Home, My Machines, My Service Requests, Rent, Plans) aparecen de forma prominente, y en las tarjetas de equipos donde la información crítica (temperatura, estado, ubicación) se destaca visualmente mediante indicadores de color y tipografía. La **organización secuencial (step-by-step)** se utiliza en formularios complejos como la creación de solicitudes de servicio y órdenes de trabajo, donde se divide el proceso en pasos numerados (Equipment → Scheduling → Confirmation), guiando al usuario de forma progresiva y evitando la sobrecarga cognitiva. La **organización matricial** se emplea en el catálogo de alquiler de equipos, donde los elementos se presentan en una cuadrícula que permite comparar visualmente precios, tipos y disponibilidad. Además, la información se categoriza principalmente **por tópicos funcionales** (equipment, service, rental, analytics, field-operations), donde cada módulo agrupa funcionalidades relacionadas, facilitando la navegación por dominio de conocimiento. La categorización **cronológica** se aplica en historiales de temperatura y listas de solicitudes, ordenadas por fecha reciente. La categorización **por audiencia** se observa en la separación entre vistas de usuario (equipment-list, service-requests) y vistas de empresa (company-service-requests), permitiendo diferentes perspectivas según el rol del usuario.
 
 ### 4.2.2. Labeling Systems
 
-En FrostLink, estos sistemas se aplican de la siguiente forma:
-
-Jerarquía Visual: Se destacan indicadores importantes, como el estado de los equipos y alertas críticas, para facilitar su identificación inmediata.
-
-Organización Secuencial: El proceso de agendar mantenimiento o visitas técnicas se presenta paso a paso para guiar al usuario de forma clara.
-
-Organización Matricial: Se emplean tablas comparativas para mostrar diferencias entre planes de servicio y suscripción, apoyando la toma de decisiones.
+El sistema de etiquetado del frontend prioriza la simplicidad y claridad, utilizando etiquetas concisas que representan grupos de información de forma intuitiva. En la navegación principal, las etiquetas son mínimas y descriptivas: "Home", "My Machines", "My Service Requests", "Rent", "Plans", "Contact", cada una usando el mínimo número de palabras necesarias para comunicar la función. Las etiquetas de estado utilizan valores cortos y estándar: "Normal", "Warning", "Critical" para estados de equipos; "Pending", "Accepted", "In Progress", "Resolved" para solicitudes de servicio. Los campos de formulario emplean etiquetas directas: "Equipment", "Service Type", "Priority", "Description", evitando términos técnicos innecesarios. Las asociaciones entre elementos se representan mediante iconos universales (pi-map-marker para ubicación, pi-bell para notificaciones, pi-user para perfil) y colores consistentes (verde para normal, amarillo para warning, rojo para crítico), creando un sistema visual que complementa las etiquetas textuales. El sistema de internacionalización (i18n) permite mantener la consistencia de etiquetas en múltiples idiomas, utilizando claves estructuradas jerárquicamente (ej: "equipment.status.normal", "service.form.description") que facilitan el mantenimiento y la coherencia del etiquetado en toda la aplicación.
 
 ### 4.2.3. SEO Tags and Meta Tags
 
@@ -2290,28 +2276,28 @@ Representa la pantalla móvil destinada a que los clientes puedan solicitar el *
 
 ![rentCustomer](./resources/RENT-CUSTOMER.jpg)
 
----
+
 
 #### Figura 2: Wireframe Móvil – Agregar Equipos
 Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
 
 ![addEquipments](./resources/ADD-EQUIMENTS.jpg)
 
----
+
 
 #### Figura 3: Wireframe Móvil – Máquinas (Clientes)
 Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
 
 ![machinesCustomer](./resources/MACHINES-CUSTOMER.jpg)
 
----
+
 
 #### Figura 4: Wireframe Móvil – Inicio (Clientes)
 Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
 
 ![homeCustomer](./resources/HOME-CUSTOMER.jpg)
 
----
+
 
 #### Figura 5: Wireframe Móvil – Registro (Clientes)
 Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
@@ -2319,56 +2305,56 @@ Formulario de registro para **nuevos clientes**, con campos validados y navegaci
 
 ![register-customer](./resources/REGISTER-CUSTOMER.jpg)
 
----
+
 
 #### Figura 6: Wireframe Móvil – Inicio de Sesión (Clientes)
 Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
 
 ![login-customer](./resources/LOGIN-CUSTOMER.jpg)
 
----
+
 
 #### Figura 7: Wireframe Móvil – Inicio de Sesión (General)
 Pantalla de inicio de sesión para acceso general de la aplicación.
 
 ![login](./resources/LOGIN.jpg)
 
----
+
 
 #### Figura 8: Wireframe Móvil – Registro (Empresas)
 Formulario para el registro de **nuevas empresas** dentro de la aplicación.
 
 ![register-companies](./resources/REGISTER-COMPANIES.jpg)
 
----
+
 
 #### Figura 9: Wireframe Móvil – Inicio (Empresas)
 Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
 
 ![home-companies](./resources/HOME-COMPANIES.jpg)
 
----
+
 
 #### Figura 10: Wireframe Móvil – Máquinas (Empresas)
 Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
 
 ![machines-companies](./resources/MACHINES-COMPANIES.jpg)
 
----
+
 
 #### Figura 11: Wireframe Móvil – Cuenta (Empresas)
 Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
 
 ![account-companies](./resources/ACCOUNT-COMPANIES.jpg)
 
----
+
 
 #### Figura 12: Wireframe Móvil – Cuenta (General)
 Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
 
 ![account](./resources/ACCOUNT.jpg)
 
----
+
 
 #### Figura 13: Wireframe Móvil – Gestión de Equipos
 Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
@@ -2410,69 +2396,61 @@ Actúan como **referencia visual definitiva** para el diseño final, garantizand
 
 Estos mockups priorizan la **usabilidad móvil** y la **claridad visual**, permitiendo que diseñadores y desarrolladores anticipen cómo los usuarios interactuarán con la aplicación mediante gestos táctiles y optimicen la distribución de elementos para ofrecer una experiencia ágil e intuitiva en dispositivos de pantalla reducida.
 
----
+
 
 #### Figura 1: Mockup Móvil – Alquiler de Equipos (Clientes)
 Representa la pantalla móvil destinada a que los clientes puedan solicitar el **alquiler de equipos** mediante una interfaz táctil optimizada, con:
 ![RENT-CUSTOMER-MOCKUP](./resources/RENT-CUSTOMER%20-%20MOCKUP.jpg)
 
----
+
 
 #### Figura 2: Mockup Móvil – Agregar Equipos
 Pantalla destinada a que las empresas puedan **registrar nuevos equipos** en la plataforma.
 
 ![ADD EQUIPMENT-MOCKUP](./resources/ADD-EQUIMENTS%20-%20MOCKUP.jpg)
 
----
+
 
 #### Figura 3: Mockup Móvil – Máquinas (Clientes)
 Permite a los clientes visualizar y explorar el catálogo de **máquinas disponibles** para alquiler.
 
 ![MACHINES CUSTOMER - MOCKUP](./resources/MACHINES-CUSTOMER%20-%20MOCKUP.jpg)
 
----
+
 
 #### Figura 4: Mockup Móvil – Inicio (Clientes)
 Pantalla principal de inicio para clientes, con accesos rápidos y vista general de funciones clave.
 
 ![HOME CUSTOMER - MOCKUP](./resources/HOME-CUSTOMER%20-%20MOCKUP.jpg)
 
----
+
 
 #### Figura 5: Mockup Móvil – Registro (Clientes)
 Formulario de registro para **nuevos clientes**, con campos validados y navegación simplificada.
 
 ![REGISTER CUSTOMER - MOCKUP](./resources/REGISTER-CUSTOMER%20-%20MOCKUP.jpg)
 
----
+
 
 #### Figura 6: Mockup Móvil – Inicio de Sesión (Clientes)
 Pantalla para **login de clientes**, con integración de validación y opciones de recuperación de contraseña.
 
 ![LOGIN CUSTOMER - MOCKUP](./resources/LOGIN-CUSTOMER%20-%20MOCKUP.jpg)
 
----
-
-#### Figura 7: Mockup Móvil – Inicio de Sesión (General)
-Pantalla de inicio de sesión para acceso general de la aplicación.
-
-![LOGIN COMPANY - MOCKUP](/resources/LOGIN-MOCKUP.jpg)
-
----
 
 #### Figura 8: Mockup Móvil – Registro (Empresas)
 Formulario para el registro de **nuevas empresas** dentro de la aplicación.
 
 ![REGISTER COMPANIES - MOCKUP](./resources/REGISTER-COMPANIES%20-%20MOCKUP.jpg)
 
----
+
 
 #### Figura 9: Mockup Móvil – Inicio (Empresas)
 Pantalla principal de inicio para empresas, con accesos a gestión de equipos y cuenta.
 
 ![HOME COMPANIES - MOCKUP](./resources/HOME-CUSTOMER%20-%20MOCKUP.jpg)
 
----
+
 
 #### Figura 10: Mockup Móvil – Máquinas (Empresas)
 Permite a las empresas gestionar el catálogo de **máquinas disponibles para alquiler**.
@@ -2480,21 +2458,21 @@ Permite a las empresas gestionar el catálogo de **máquinas disponibles para al
 
 ![MACHINES COMPANIES - MOCKUP](./resources/MACHINES-COMPANIES%20-%20MOCKUP.jpg)
 
----
+
 
 #### Figura 11: Mockup Móvil – Cuenta (Empresas)
 Pantalla de gestión de cuenta para empresas: datos de perfil, configuraciones y seguridad.
 
 ![ACCOUNT COMPANIES - MOCKUP](./resources/ACCOUNT-COMPANIES%20-%20MOCKUP.jpg)
 
----
+
 
 #### Figura 12: Mockup Móvil – Cuenta (General)
 Pantalla de **configuración de cuenta** aplicable a clientes y empresas.
 
 ![ACCOUNT - MOCKUP](./resources/ACCOUNT%20-%20MOCKUP.jpg)
 
----
+
 
 #### Figura 13: Mockup Móvil – Gestión de Equipos
 Pantalla de administración para **añadir, modificar o eliminar equipos** registrados por las empresas.
@@ -2853,49 +2831,49 @@ Se presenta el prototipo interactivo de la aplicación web de **FrostLink**, que
 
 Vista inicial de la página donde se muestra el **hero section** con el mensaje principal y el **navbar** superior que permite navegar entre secciones.
 
----
+
 
 ### Usuarios Objetivo
 <img src="./resources/landing-page-evidence-2.png">
 
 Se presentan los **segmentos de usuarios** definidos en el diseño de la solución, mostrando claramente los grupos objetivo a los que se dirige FrostLink.
 
----
+
 
 ### Funcionalidades del Sistema
 <img src="./resources/landing-page-evidence-3.png">
 
 Visualización de las **principales funcionalidades** que ofrece el sistema FrostLink para los diferentes tipos de usuarios.
 
----
+
 
 ### Resultados Esperados (Outcomes)
 <img src="./resources/landing-page-evidence-4.png">
 
 Se ilustran los **outcomes o resultados esperados** que los usuarios obtendrán al interactuar con el sistema.
 
----
+
 
 ### Guía de Uso
 <img src="./resources/landing-page-evidence-5.png">
 
 Explicación visual de los **pasos a seguir** para utilizar el sistema de FrostLink de manera sencilla y eficiente.
 
----
+
 
 ### Descripción General del Sistema
 <img src="./resources/landing-page-evidence-6.png">
 
 Se muestra la **descripción general** de FrostLink, resaltando su propósito, beneficios y propuesta de valor.
 
----
+
 
 ### Planes Disponibles
 <img src="./resources/landing-page-evidence-7.png">
 
 Visualización de los **planes de suscripción** que ofrece FrostLink, diferenciados según las necesidades de cada usuario.
 
----
+
 
 ### Testimonios de Clientes
 <img src="./resources/landing-page-evidence-8.png">
@@ -3627,7 +3605,7 @@ Esta captura muestra el monitoreo en tiempo real de los logs del servicio backen
 
 La imagen final muestra la verificación del estado del servicio backend de FrostLink después de un reinicio de la VM. Se puede observar que el servicio se ha reiniciado automáticamente y está funcionando correctamente, con un uso de memoria de 76.2mb y estado "online". Esta verificación confirma que la configuración de auto-inicio funciona correctamente y que el servicio de FrostLink mantiene su disponibilidad incluso después de reinicios del sistema.
 
----
+
 
 ## Enlaces de Acceso al Servicio
 
@@ -3637,7 +3615,7 @@ La imagen final muestra la verificación del estado del servicio backend de Fros
 
 El servicio backend de FrostLink está disponible públicamente a través de la dirección IP de la VM de Azure, permitiendo el acceso a todos los endpoints de la API y la documentación interactiva de Swagger.
 
----
+
 
 ## Proceso de Despliegue Completado
 
