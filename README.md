@@ -3752,8 +3752,8 @@ A continuación se encuentra nuestro video about the product, donde se evidencia
 **Título:** ``
 <td><img src="resources/aboutTheProduct.png" alt="Screenshot del video about the product"></td>
 
-- **YouTube:** [Ver en YouTube]()
-- **Microsoft Stream:** [Ver video]()
+- **YouTube:** [Ver en YouTube](https://youtu.be/0vPqIK1htB4)
+- **Microsoft Stream:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQDpJvRmc5oBQ55MDCJ6eFfXAVh190Hg_4vkwvc7V27m_ZU?e=nZCqyL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 # Capítulo VI: Product Verification & Validation
 
@@ -3996,109 +3996,6 @@ Este caso valida que el módulo de equipos de **FrostLink** garantiza una gesti�
 * **Entity Framework Core (EF Core)** → Para la persistencia y trazabilidad de las operaciones sobre la base de datos durante las pruebas.
 
 ### 6.1.4. Core System Tests
-
-En esta subsección documento las pruebas de sistema (Core System Tests) que realizamos sobre OsitoPolar. A diferencia de las pruebas unitarias o de integración, en las pruebas de sistema evaluamos la aplicación completa funcionando de extremo a extremo, tal como lo haría un usuario real. Es decir, verificamos no solo componentes aislados, sino el comportamiento conjunto de la web app y las aplicaciones móviles, incluyendo la navegación entre pantallas, la interacción con las APIs del backend, el manejo de estados (carga, éxito, error, datos vacíos) y la consistencia de la información mostrada.
-
-Nuestro objetivo en esta sección es comprobar que los principales flujos de negocio de OsitoPolar funcionan correctamente en un entorno lo más cercano posible a producción: visualización y monitoreo de equipos de refrigeración, gestión de solicitudes de servicio, alquiler de equipos, y actualización de lecturas de temperatura. Para cada escenario, registramos evidencias con capturas de pantalla, trazas de red (Network DevTools) y, cuando aplica, validamos que las respuestas HTTP y los cambios en la interfaz coinciden con lo esperado según los requisitos del sistema.
-
-#### Caso 1 - Visualización del dashboard de equipos**
-
-**Descripción**
-En esta prueba de sistema verifico que, tras iniciar sesión en la aplicación web de OsitoPolar, el dashboard principal se cargue correctamente. La pantalla muestra el mensaje “Welcome to OsitoPolar”, la sección My Equipment con el equipo “QA Freezer 1762658002” (incluyendo su temperatura actual de -18.5 °C y el indicador de estado en verde) y, en paralelo, la sección Rent Equipment presenta el estado vacío “No equipment available for rent”, confirmando que el sistema maneja adecuadamente la ausencia de equipos disponibles para alquiler.
-
-**Evidencia**
-En la pestaña Network del navegador se registran dos llamadas XHR al recurso equipments, ambas con respuesta HTTP 200 OK, lo que evidencia que esta prueba cubre un flujo end-to-end típico de pruebas de sistema: desde la solicitud del usuario en la interfaz hasta la obtención de datos válidos desde la API y su renderizado correcto en la UI.
-
-<img src="./resources/core-system-tests-1.jpg">
-
-#### Caso 2- Vista de detalles y control del equipo
-
-**Descripción**
-En esta prueba de sistema verifico la pantalla de detalles de un equipo de refrigeración en la aplicación web, accediendo a localhost:5173/equipment/1. En la sección Equipment Information confirmo que se muestra correctamente la ficha técnica del equipo “QA Freezer 1762658002” (tipo, modelo, número de serie, fecha de instalación, consumo energético y ubicación). En la sección Equipment Control valido que el Power Control aparece en estado ON, que la temperatura actual es -18.5 °C, que la temperatura objetivo está configurada en -20.0 °C y que el sistema indica Status: normal, todo ello coherente con el rango óptimo definido.
-
-**Evidencia**
-En la pestaña Network se observan varias peticiones XHR con estado 200 OK: una al recurso del equipo (id 1), otras a equipments y una a readings?type=temperature&hours=24…, lo que evidencia que esta vista no solo muestra datos estáticos, sino que consulta en tiempo real tanto la información del equipo como sus lecturas de temperatura para la sección de “Temperature Analytics”.
-
-<img src="./resources/core-system-tests-2.jpg">
-
-#### Caso 3 – Formulario de edición de equipo
-
-**Descripción**
-En esta prueba de sistema verifico la pantalla de edición de un equipo en la aplicación web, accediendo a la ruta localhost:5173/equipment/1 en modo Edit Equipment. En la parte izquierda se muestra el formulario completamente pre-rellenado con los datos del equipo “QA Freezer 1762658002”: tipo Freezer, modelo, fabricante, número de serie, código de equipo, temperaturas (actual, set point, mínimo y máximo óptimos) y datos de ubicación (Warehouse A, dirección “123 Cold Street”, latitud y longitud opcionales). Con esto valido que el sistema carga correctamente la información existente y la expone de forma editable para el usuario, manteniendo la coherencia con la vista de detalles del caso anterior.
-
-
-**Evidencia**
-En la pestaña Network se observan nuevamente peticiones XHR con estado 200 OK hacia el recurso del equipo (1), la lista de equipments y el endpoint de lecturas readings?type=temperature&hours=24…. Esto demuestra que, incluso en modo edición, la pantalla sigue realizando consultas en tiempo real al backend para obtener los datos más recientes del equipo, lo cual es clave para asegurar que cualquier cambio que haga el usuario parta de una versión actualizada de la información.
-
-<img src="./resources/core-system-tests-3.jpg">
-
-#### Caso 4 – Cambio de estado del equipo (apagado)
-
-**Descripción**
-En esta prueba de sistema valido el comportamiento del control de potencia (Power Control) sobre un equipo específico. Después de editar el equipo y aplicar los cambios, regreso a la pantalla “Equipment Details” (/equipment/1) y confirmo que el estado del botón de potencia ahora aparece en OFF, indicando que el equipo ha sido apagado desde la interfaz. La sección Equipment Information sigue mostrando la ficha de QA Freezer 1762658002, mientras que la temperatura actual (-18.5 °C) se mantiene como referencia histórica, pero el control visual deja claro que el equipo ya no está encendido.
-
-**Evidencia**
-En la pestaña Network se puede ver que, además de las peticiones para el equipo (1), equipments y lecturas de temperatura (readings?type=temperature&hours=24…), aparece una llamada adicional al endpoint operations, todas con HTTP 200 OK. Esto evidencia que el apagado del equipo dispara una operación registrada en el backend (por ejemplo, un comando de “turn off”) y que el cambio de estado mostrado en la UI está respaldado por una operación válida en la API.
-
-<img src="./resources/core-system-tests-4.jpg">
-
-#### Caso 5 - Vista de analítica del equipo ( temperatura y estado)
-
-**Descripción**
-En esta prueba de sistema valido la pantalla de analítica del equipo “QA Freezer 1762658002”. En la parte izquierda se muestran tres tarjetas principales:
-
-Current Temperature: -18.5 °C con estado NORMAL.
-
-Set Temperature: -20.0 °C, dentro del rango óptimo configurado (-25.0 °C a -15.0 °C).
-
-Power Status: ON, con consumo de 12.5 kWh.
-
-Debajo, la sección Temperature Gauge vuelve a mostrar la temperatura actual y se incluye el gráfico “Temperature Over Time (24h)”, que representa la evolución de la temperatura en el último día. Con esta vista confirmo que el sistema presenta de forma integrada tanto el estado actual del equipo como sus métricas históricas.
-
-**Evidencia**
-En la pestaña Network se registran múltiples peticiones XHR con código 200 OK hacia distintos endpoints: el recurso del equipo (1), la lista de equipments, el endpoint de operations, varias llamadas a readings?type=temperature&hours=24… y a summaries?type=daily-averages&days=7…. Esto muestra que la pantalla de analítica consulta en tiempo real las lecturas de temperatura y los resúmenes diarios, lo que respalda los indicadores y gráficos mostrados en la interfaz como parte de un flujo de monitoreo end-to-end.
-
-<img src="./resources/core-system-tests-5.jpg">
-
-#### Caso 6 - Analítica diaria y localización del equipo
-
-**Descripción**
-En esta prueba de sistema completo verifico la parte inferior de la pantalla de analítica del equipo “QA Freezer 1762658002”. En la sección “Daily Temperature Averages (7d)” valido que el componente gráfico se renderiza correctamente y está listo para mostrar los promedios diarios de temperatura de la última semana. Justo debajo, en “Equipment Location”, confirmo que el sistema muestra el bloque “Equipment Locations – 2 devices” y un mapa con la ubicación detectada del equipo, incluyendo un marcador sobre la ciudad (zona de Barrios Altos / El Agustino). Esto demuestra que la aplicación integra en una misma vista tanto la dimensión temporal (tendencias de temperatura) como la dimensión espacial (ubicación geográfica del equipo).
-
-**Evidencia**
-En la pestaña Network se observa un número significativo de peticiones XHR con estado 200 OK a distintos endpoints: equipments, readings?type=temperature&hours=24…, summaries?type=daily-averages&days=7…, además de llamadas a servicios de mapas. Esto evidencia que la pantalla combina datos de telemetría (temperaturas) con servicios externos de mapas para geolocalización, lo cual es clave en una prueba de sistema para garantizar que todos los servicios involucrados cooperan correctamente en tiempo real.
-
-<img src="./resources/core-system-tests-6.jpg">
-
-#### Caso 7 – Registro de un nuevo equipo (formulario de alta)
-
-**Descripción**
-En esta prueba de sistema valido la pantalla de creación de un nuevo equipo en OsitoPolar. En la parte izquierda se muestra el formulario vacío en la mayoría de campos, pero con algunos valores iniciales de ejemplo: temperaturas (actual y de consigna) configuradas en 22.0 °C, rango óptimo entre 18.0 °C y 25.0 °C, y coordenadas de latitud y longitud ya ingresadas. Verifico que todos los campos obligatorios estén disponibles (nombre, tipo, modelo, fabricante, número de serie, código, ubicación y dirección) y que el usuario pueda introducir los datos técnicos del nuevo equipo de refrigeración sin errores de interfaz ni validación.
-
-**Evidencia**
-En la pestaña Network se observa un gran número de peticiones XHR con respuesta 200 OK a endpoints como equipments, readings, summaries y servicios de mapas. Esto indica que, incluso mientras el usuario está registrando un nuevo equipo, la aplicación sigue sincronizada con el backend y con los servicios de geolocalización, garantizando que la información de contexto (por ejemplo, otros equipos y el mapa) esté siempre actualizada durante el flujo de alta.
-
-<img src="./resources/core-system-tests-7.jpg">
-
-#### Caso 8 – Listado de solicitudes de servicio
-
-**Descripción**
-En esta prueba de sistema verifico la pantalla de “Service Requests” en la aplicación web de OsitoPolar. En la parte izquierda se muestra una tarjeta con el detalle de una solicitud asociada al Equipment ID: 2, donde puedo ver el estado del servicio, la ubicación (en este caso “Not specified”), la fecha en la que se solicitó (08/11/2025, 10:14 p. m.), la fecha programada y el tipo de servicio: CorrectiveMaintenance. Además, valido que el botón “View Details” esté disponible, lo que confirma que el usuario puede profundizar en la información de la solicitud desde este listado.
-
-**Evidencia**
-En la pestaña Network (lado derecho) se observan múltiples peticiones XHR con código 200 OK a endpoints como equipments, operations, readings, summaries y, específicamente, al recurso service-requests. Esto evidencia que la pantalla de solicitudes de servicio consulta en tiempo real el backend para obtener tanto la información de los equipos como las solicitudes registradas, garantizando que el listado que ve el usuario esté sincronizado con el estado actual del sistema.
-
-<img src="./resources/core-system-test-8.jpg">
-
-#### Caso 9 - Agendamiento de una nueva solicitud de servicio
-
-**Descripción**
-En esta prueba de sistema valido el paso de agendamiento (“Scheduling”) dentro del flujo “New Service Request”. En la parte izquierda se muestra el segundo paso del wizard, donde selecciono si necesito atención inmediata, la fecha deseada (por ejemplo, 12/11/2025) y el bloque horario disponible (en este caso, 08:00 – 10:00). Con esto confirmo que el sistema permite al usuario definir claramente cuándo desea que el técnico atienda el equipo, antes de pasar al paso de confirmación mediante el botón “Continue”.
-
-**Evidencia**
-En la pestaña Network se observan múltiples peticiones XHR con código 200 OK a distintos endpoints, incluidos equipments, operations, readings, summaries y service-requests. Esto demuestra que el asistente de nueva solicitud de servicio se mantiene sincronizado con el backend mientras el usuario agenda la cita, asegurando que los slots horarios mostrados y la información del equipo estén actualizados en tiempo real.
-
-<img src="./resources/core-system-tests-9.jpg">
 
 ## 6.2. Static testing & Verification
 
