@@ -4851,6 +4851,106 @@ El Production Deployment Pipeline representa la secuencia automatizada de proces
 * **Validación Automatizada**: **GitHub Actions** ejecuta las suites de pruebas unitarias e integrales para verificar la funcionalidad del sistema. Si alguna prueba falla, el pipeline se detiene y se notifica al equipo de desarrollo, impidiendo que el código defectuoso avance.
 
 * **Despliegue a Producción**: Una vez que la imagen Docker ha superado todas las validaciones, **GitHub Actions** procede a realizar el despliegue del contenedor en el entorno de producción, alojado en **Microsoft Azure**. Se utilizan estrategias como Blue-Green Deployment para minimizar el tiempo de inactividad y permitir rollbacks rápidos en caso de ser necesario.
+ 
+## 7.4. Continuous Monitoring
+
+El monitoreo continuo en **FrostLink** es la práctica fundamental que nos permite cerrar el ciclo de DevOps, proporcionando visibilidad en tiempo real sobre la salud, el rendimiento y la fiabilidad de la plataforma en producción. No nos limitamos únicamente a verificar si los servicios están activos (*uptime*), sino que implementamos una estrategia de **observabilidad** completa que abarca logs, métricas y trazas distribuidas.
+
+El objetivo principal es detectar anomalías antes de que afecten a los usuarios finales (dueños de negocios y técnicos), reducir el tiempo medio de resolución (MTTR) de incidentes y validar que los recursos de Azure estén optimizados en términos de costo y rendimiento.
+
+### 7.4.1. Tools and Practices
+
+Para la estrategia de monitoreo de FrostLink, hemos seleccionado un conjunto de herramientas nativas de nuestra infraestructura en la nube (Azure) y soluciones especializadas para la parte móvil y de experiencia de usuario.
+
+**Herramientas (Tools):**
+
+| Herramienta | Propósito en FrostLink |
+| :--- | :--- |
+| **Azure Monitor** | Plataforma central de observabilidad que recopila, analiza y actúa sobre la telemetría de nuestros entornos en la nube y on-premises. |
+| **Application Insights** | Servicio de APM (Application Performance Management) integrado en el Backend (.NET) y Frontend (Vue) para detectar excepciones, tiempos de respuesta lentos y dependencias fallidas. |
+| **Log Analytics Workspace** | Repositorio centralizado donde se almacenan y consultan los logs estructurados generados por los servicios, permitiendo consultas complejas mediante lenguaje KQL (Kusto Query Language). |
+| **Firebase Crashlytics** | Herramienta específica para la aplicación móvil (Android) que reporta cierres inesperados (*crashes*) y problemas de estabilidad en los dispositivos de los técnicos. |
+| **Serilog** | Librería de logging estructurado implementada en el código C# para generar logs enriquecidos que facilitan el filtrado y la búsqueda. |
+| **Uptime Robot** | Monitor sintético externo para verificar la disponibilidad pública de la Landing Page y los endpoints de la API desde diferentes ubicaciones geográficas. |
+
+**Prácticas (Practices):**
+
+* **Logging Estructurado:** Evitamos los logs de texto plano. Todos los eventos se registran como objetos JSON con propiedades consultables (ej. `UserId`, `EquipmentId`, `CorrelationId`), lo que facilita la trazabilidad de errores específicos.
+* **Monitoreo de las "Golden Signals":** Nos enfocamos en medir Latencia, Tráfico, Errores y Saturación para tener una visión clara de la salud del sistema.
+* **Distributed Tracing:** Utilizamos identificadores de correlación (*TraceId*) que viajan desde el Frontend hasta la base de datos, permitiendo reconstruir el flujo completo de una solicitud a través de los distintos microservicios o contextos delimitados.
+* **Health Checks:** Implementación de endpoints `/health` y `/ready` en la API que son consultados periódicamente por el orquestador para determinar si la instancia debe recibir tráfico o ser reiniciada.
+
+### 7.4.2. Monitoring Pipeline Components
+
+El pipeline de monitoreo describe cómo fluyen los datos desde la generación del evento hasta su visualización. En FrostLink, este flujo se divide en cuatro etapas clave:
+
+1.  **Instrumentación (Collection):**
+    * **Backend (.NET):** Se utiliza el SDK de Application Insights para capturar automáticamente solicitudes HTTP, consultas SQL (Entity Framework) y excepciones no controladas.
+    * **Frontend (Vue.js):** Se capturan métricas de experiencia de usuario (tiempos de carga, interacciones) y errores de JavaScript en el navegador.
+    * **Infraestructura (Azure VM):** Agentes de Azure Monitor instalados en la máquina virtual recolectan métricas de nivel de sistema operativo (CPU, RAM, Disco, Red).
+
+2.  **Ingesta y Procesamiento:**
+    * La telemetría enviada por los agentes y SDKs es recibida por los endpoints de ingestión de Azure Monitor.
+    * Los datos se normalizan y se enriquecen con metadatos (geo-localización, versión del despliegue).
+
+3.  **Almacenamiento (Storage):**
+    * Los datos se persisten en el **Log Analytics Workspace** con políticas de retención configuradas (ej. 30 días para logs detallados, 90 días para métricas agregadas).
+
+4.  **Visualización (Visualization):**
+    * **Azure Dashboards:** Paneles compartidos que muestran gráficos en tiempo real sobre:
+        * *Rendimiento:* Solicitudes por segundo (RPS) y tiempo de respuesta promedio de la API.
+        * *Fiabilidad:* Tasa de errores 4xx y 5xx.
+        * *Negocio:* Número de solicitudes de servicio creadas y usuarios activos.
+
+### 7.4.3. Alerting Pipeline Components
+
+El componente de alertas es el mecanismo proactivo que notifica al equipo cuando los umbrales de seguridad son superados. En FrostLink, las alertas se clasifican por severidad y capa:
+
+**Reglas de Alerta Configuradas:**
+
+* **Alertas de Infraestructura (Azure VM):**
+    * *CPU Usage High:* Se dispara si el uso de CPU > 85% por más de 5 minutos.
+    * *Available Memory Low:* Se dispara si la memoria disponible es < 1 GB.
+    * *Disk Space:* Se dispara si el espacio libre en disco es < 10%.
+
+* **Alertas de Aplicación (Backend API):**
+    * *High Error Rate:* Se dispara si el porcentaje de respuestas HTTP 500 supera el 2% del tráfico total en 5 minutos.
+    * *High Latency:* Se dispara si el tiempo de respuesta promedio del endpoint `/api/v1/work-orders` supera los 2 segundos.
+
+* **Alertas de Disponibilidad (Synthetics):**
+    * *Ping Failure:* Se dispara inmediatamente si el endpoint `/health` no responde con un código 200 OK desde 3 ubicaciones distintas.
+
+* **Alertas Móviles (Firebase):**
+    * *New Fatal Issue:* Se dispara cuando aparece un nuevo tipo de crash que afecta a más del 1% de los usuarios en una versión específica.
+
+**Lógica de Evaluación:**
+Las reglas se evalúan cada minuto. Azure Monitor utiliza lógica de agregación para evitar "falsos positivos" causados por picos momentáneos, requiriendo que la condición se mantenga durante una ventana de tiempo definida.
+
+### 7.4.4. Notification Pipeline Components
+
+Una vez que una alerta es disparada, el pipeline de notificación asegura que la información llegue a la persona correcta a través del canal adecuado. Utilizamos los **Action Groups** de Azure para gestionar estos flujos.
+
+**Canales de Notificación:**
+
+1.  **Correo Electrónico (Email):**
+    * *Destinatarios:* Administradores del sistema y Tech Leads.
+    * *Uso:* Alertas de severidad media (Sev-2) y reportes semanales de rendimiento.
+    * *Contenido:* Resumen del incidente, enlace directo al dashboard y métrica afectada.
+
+2.  **Mensajería Instantánea (Slack/Discord):**
+    * *Integración:* Webhook entrante conectado a un canal `#devops-alerts`.
+    * *Uso:* Notificaciones generales de despliegues y alertas de infraestructura. Permite visibilidad para todo el equipo de desarrollo.
+
+3.  **SMS / Llamada (Severidad Crítica):**
+    * *Destinatarios:* Equipo de guardia (On-call).
+    * *Uso:* Alertas de severidad crítica (Sev-0/Sev-1), como caída total del servicio o fallos en la base de datos que impiden la operación de FrostLink.
+
+**Flujo de Respuesta:**
+1.  **Detección:** Azure Monitor detecta la anomalía.
+2.  **Enrutamiento:** El Action Group determina los canales según la severidad.
+3.  **Notificación:** Se envía el mensaje con contexto (ej. "Server CPU at 95% - VM-FrostLink-Prod").
+4.  **Reconocimiento (Ack):** El ingeniero responde en el canal de comunicación indicando que está investigando.
+5.  **Resolución:** Una vez resuelto, el sistema envía una notificación de "Resolved" automáticamente cuando las métricas vuelven a la normalidad.
 
 ## 8.1.4. Question Backlog
 
