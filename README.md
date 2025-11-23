@@ -3750,7 +3750,7 @@ He asignado las actividades existentes a los nuevos alumnos en el orden que los 
 A continuación se encuentra nuestro video about the product, donde se evidencia la explicacion sobre los principales features, sustentacion de diseño  y proposito de la aplicacion.
 
 **Título:** ``
-<td><img src="resources/aboutTheProduct.png" alt="Screenshot del video about the product"></td>
+<td><img src="resources/aboutTheProduct.jpg" alt="Screenshot del video about the product"></td>
 
 - **YouTube:** [Ver en YouTube](https://youtu.be/0vPqIK1htB4)
 - **Microsoft Stream:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQDpJvRmc5oBQ55MDCJ6eFfXAVh190Hg_4vkwvc7V27m_ZU?e=nZCqyL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
