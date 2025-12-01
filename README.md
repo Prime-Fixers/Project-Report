@@ -1,58 +1,41 @@
-<div align="center">
-
-# Informe del Trabajo Final
-
-   <br>
-
-   Universidad Peruana de Ciencias Aplicadas
-
-   <br>
-
-   <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC">
-
-   <br>
-
-   <b>Ingeniería de software</b>
-
-   <br>
-
-   <b>202520</b>
-
-   <br>
-
-
-   <b>1ASI0732 Diseño de Experimentos de Ingeniería de Software</b>
-
-   <br>
-
-   <b>NRC:</b> 7503
-
-   <br>
-
-   <b>Profesor:</b> Tinoco Licas, Juan Carlos
-
-   <br>
-
-<b>"Informe de Trabajo Final"</b>
-
-   <br>
-
-   <b>Nombre del StartUp:</b> PrimeFixers
-
-   <br>
-
-
-   <b>Nombre del Producto:</b> FrostLink
-
-   </div>
-
-   <br>
-
-<table border="1" style="margin: 0 auto; text-align: center; border-collapse: collapse; width: 50%;">
+<!-- CONTENEDOR PRINCIPAL CENTRADO -->
+<table align="center" width="100%">
+  <tr>
+    <td align="center">
+      # **Informe del Trabajo Final**
+      <br>
+      Universidad Peruana de Ciencias Aplicadas  
+      <br>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"
+        alt="Logo UPC"
+        width="180"
+      >
+      <br><br>
+      Ingeniería de Software
+      <br>
+      202520
+      <br>
+      1ASI0732 Diseño de Experimentos de Ingeniería de Software
+      <br>
+      NRC: 7503  
+      <br>
+      Profesor: Tinoco Licas, Juan Carlos 
+      <br>
+      "Informe de Trabajo Final"
+      <br>
+      Nombre del Startup: PrimeFixers  
+      <br>
+      Nombre del Producto: FrostLink
+      <br><br>
+    </td>
+  </tr>
+</table>
+<table align="center" border="1" width="60%">
   <thead>
     <tr>
-      <th style="padding: 10px;">Nombre</th>
-      <th style="padding: 10px;">Código</th>
+      <th>Nombre</th>
+      <th>Código</th>
     </tr>
   </thead>
   <tbody>
@@ -82,13 +65,15 @@
     </tr>
   </tbody>
 </table>
-   <br>
-
-<div style="text-align: center;">
-  <b>Noviembre, 2025</b>
-</div>
-
-</div>
+<br>
+<!-- FECHA CENTRADA -->
+<table align="center" width="100%">
+  <tr>
+    <td align="center">
+      Noviembre, 2025
+    </td>
+  </tr>
+</table>
 
 # Registro de Versiones del Informe
 
@@ -4952,7 +4937,15 @@ Una vez que una alerta es disparada, el pipeline de notificación asegura que la
 4.  **Reconocimiento (Ack):** El ingeniero responde en el canal de comunicación indicando que está investigando.
 5.  **Resolución:** Una vez resuelto, el sistema envía una notificación de "Resolved" automáticamente cuando las métricas vuelven a la normalidad.
 
-## 8.1.4. Question Backlog
+## 8.1. Experiment Planning
+
+### 8.1.1. As-Is Summary
+
+### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+### 8.1.3. Experiment-Ready Questions
+
+### 8.1.4. Question Backlog
 
 | ID | Pregunta | Prioridad | Estado | Fuente/Contexto |
 |---|---|---|---|---|
@@ -4976,7 +4969,9 @@ Una vez que una alerta es disparada, el pipeline de notificación asegura que la
 | EXP-06 | Valoración Control Remoto | QB-06 | Control remoto no es crítico para la versión inicial del producto | Porcentaje de uso de control remoto |
 | EXP-07 | Disposición Pago Funcionalidades Avanzadas | QB-07 | Usuarios pagan 20% más por mantenimiento predictivo | Tasa de conversión a planes premium |
 
-## 8.2.1. Hypotheses
+## 8.2. Experiment Design
+
+### 8.2.1. Hypotheses
 
 **Hipótesis de Valor:**
 - **H1:** Los dueños de negocios confían en las alertas automáticas de temperatura y toman acciones basadas en ellas dentro de los primeros 15 minutos de recibidas.
@@ -4990,7 +4985,7 @@ Una vez que una alerta es disparada, el pipeline de notificación asegura que la
 - **H5:** La interfaz móvil permite a los técnicos registrar intervenciones completas en menos de 3 minutos por visita.
 - **H6:** Los dueños de negocios pueden configurar alertas básicas sin asistencia técnica en su primer uso.
 
-## 8.2.2. Domain Business Metrics
+### 8.2.2. Domain Business Metrics
 
 **Métricas Principales del Negocio:**
 - **Customer Acquisition Cost (CAC):** Costo promedio para adquirir un nuevo cliente
@@ -5004,7 +4999,7 @@ Una vez que una alerta es disparada, el pipeline de notificación asegura que la
 - **Tiempo Medio de Respuesta:** Tiempo promedio entre alerta y acción correctiva
 - **Tasa de Adopción Funcionalidades:** Porcentaje de usuarios que utilizan cada funcionalidad clave
 
-## 8.2.3. Measures
+### 8.2.3. Measures
 
 **Medidas Cuantitativas:**
 - **Tasa de Conversión:** % de visitantes que se convierten en usuarios registrados
@@ -5019,7 +5014,7 @@ Una vez que una alerta es disparada, el pipeline de notificación asegura que la
 - **Tasa de Abandono:** Razones principales para cancelar suscripción
 - **Feedback de Usabilidad:** Comentarios sobre facilidad de uso y aprendizaje
 
-## 8.2.4. Conditions
+### 8.2.4. Conditions
 
 **Criterios de Éxito:**
 - **Condición de Validación H1:** > 80% de usuarios actúan sobre alertas dentro de 15 minutos
@@ -5144,6 +5139,8 @@ Se aplica minimización de datos, consentimiento por categorías donde correspon
 • Activación/Retención: D1 derivado de cohortes por signup_complete o first_success_action y eventos de retorno a 24–48 h.
 • Conversión: tasa a plan/trial y a pago desde subscription_started y payment_success.
 Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica primaria de cada experimento y lectura de guardrails (errores, quejas, latencias), todo dentro de FrostLink para asegurar trazabilidad de extremo a extremo.
+
+## 8.3. Experimentation
 
 ### 8.3.1. To-Be User Stories 
 <section id="to-be-user-stories">
@@ -5315,6 +5312,40 @@ Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica prim
     </tbody>
   </table>
 </section>
+
+### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+#### 8.3.3.1. To-Be Sprint Backlogs
+
+#### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+#### 8.3.3.6. Team Collaboration Insights
+
+### 8.3.4. To-Be Validation Interviews
+
+#### 8.3.4.1. Diseño de Entrevistas
+
+#### 8.3.4.2. Registro de Entrevistas
+
+## 8.4. Experiment Aftermath & Analysis
+
+### 8.4.1. Analysis and Interpretation of Results
+
+### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+## 8.5. Continuous Learning
+
+### 8.5.1. Shareback Sessión Artifacts: Learning Workflow
+
+## To-Be Software Platform Pre-launch
+
+### 8.6.1. About-the-Product Intro Video
 
 # Conclusiones
 
