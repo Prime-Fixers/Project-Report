@@ -5315,6 +5315,56 @@ Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica prim
 
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
+Introducción
+
+El ciclo de vida de la plataforma FrostLink se fundamenta en un enfoque experimental apoyado por pipelines de CI/CD que permiten la validación continua de hipótesis y la entrega iterativa de funcionalidades.
+
+Arquitectura de Backend: Domain-Driven Design con CQRS
+
+Bounded Contexts Implementados
+
+La plataforma adopta una arquitectura de Domain-Driven Design (DDD) organizada en ocho bounded contexts: IAM (Identity and Access Management), Profiles, Equipment Management, Service Requests, Work Orders, Technicians, Analytics, y Subscriptions and Payments. Cada contexto encapsula su propio modelo de dominio y responsabilidades específicas.
+
+Patrón CQRS
+
+La arquitectura implementa Command Query Responsibility Segregation (CQRS), separando comandos (Application/Internal/CommandServices/) que modifican el estado del sistema, de queries (Application/Internal/QueryServices/) optimizadas para lectura.
+
+Persistencia con Entity Framework Core
+
+La infraestructura utiliza Entity Framework Core con MySQL, implementando convención de nombres snake_case, configuraciones por bounded context e interceptores para auditoría automática.
+
+Pipeline CI/CD Integrado
+
+Pipeline de Integración Continua
+
+El pipeline CI incluye seis etapas: checkout e instalación, build, QA y testing (análisis estático con SonarQube, pruebas unitarias con xUnit con cobertura mínima del 80%, escaneo de vulnerabilidades), packaging en Docker, almacenamiento de artefactos y reportes de retroalimentación.
+
+Pipeline de Continuous Delivery
+
+El pipeline CD comprende: build, testing, package y registro, despliegue a staging con validación de health checks, y aprobación manual antes de producción.
+
+Pipeline de Continuous Deployment
+
+Para producción se implementan estrategias de Blue-Green Deployment, rollbacks automáticos, zero-downtime mediante contenedores y feature flags para activación gradual.
+
+Integración del Pipeline con Experiment-Driven Development
+
+El pipeline CI/CD permite validar hipótesis mediante experimentos en branches, despliegue automático a staging para pruebas con usuarios y feature flags para activación gradual. El monitoreo integra Application Insights, Log Analytics con Serilog, Firebase Crashlytics y distributed tracing.
+
+Arquitectura Frontend
+
+El frontend utiliza Vue.js con PrimeVue, se despliega en Netlify o Firebase Hosting, y se comunica con el backend mediante API RESTful con Axios. El backend está configurado con CORS para permitir comunicación desde múltiples orígenes.
+
+Contenedorización y Desacoplamiento
+
+El backend utiliza Docker con build multi-stage, imagen base oficial de Microsoft .NET 9.0 y usuario no-root para seguridad. El proyecto implementa el patrón Mediator mediante Cortex para desacoplamiento entre comandos y handlers, pipeline behaviors y manejo de eventos entre bounded contexts.
+
+Ciclo de Vida Experiment-Driven
+
+El ciclo comprende: planificación del experimento, desarrollo en feature branch, validación en pipeline CI, despliegue a staging, análisis de resultados, despliegue a producción con aprobación manual y feature flags, e iteración continua basada en feedback.
+
+
+
 #### 8.3.3.1. To-Be Sprint Backlogs
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
@@ -5335,7 +5385,79 @@ Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica prim
 
 ## 8.4. Experiment Aftermath & Analysis
 
+Tras la ejecución de los experimentos dentro del ciclo de vida de desarrollo de FrostLink, se presenta el análisis e interpretación de resultados y el impacto en la priorización del backlog de preguntas.
+
 ### 8.4.1. Analysis and Interpretation of Results
+
+
+**Arquitectura Implementada**
+
+La plataforma FrostLink implementa Domain-Driven Design (DDD) con ocho bounded contexts: IAM, Profiles, Equipment Management, Service Requests, Work Orders, Technicians, Analytics, y Subscriptions and Payments. Cada contexto encapsula su modelo de dominio y reglas de negocio específicas.
+
+El patrón CQRS (Command Query Responsibility Segregation) separa comandos y queries, permitiendo optimización independiente y mejor escalabilidad. La persistencia utiliza Entity Framework Core con MySQL, implementando convención snake_case e interceptores para auditoría automática.
+
+**Pipeline CI/CD**
+
+El pipeline de integración continua logra cobertura de código del 80%, análisis estático con SonarQube, escaneo de vulnerabilidades en dependencias NuGet y build time optimizado mediante caché. Los resultados muestran reducción de bugs en producción, feedback rápido para correcciones inmediatas y detección temprana de vulnerabilidades.
+
+El pipeline de continuous delivery permite despliegue automático a staging, validación pre-producción coordinada, capacidad de rollback y artefactos versionados para trazabilidad completa.
+
+**Contenedorización**
+
+La contenedorización con Docker proporciona consistencia entre entornos, portabilidad para diferentes plataformas, escalabilidad horizontal y aislamiento de dependencias. Se implementan builds multi-stage, imágenes base oficiales de Microsoft y usuarios no-root para seguridad.
+
+**Análisis de Experimentos**
+
+**Experimento 1: Arquitectura Modular con DDD**
+
+La hipótesis de que una arquitectura modular basada en DDD facilitaría el mantenimiento fue validada. La separación en bounded contexts permitió desarrollo paralelo y cambios independientes. Las lecciones aprendidas indican que los Anti-Corruption Layers son esenciales para integración entre contextos y que la inversión inicial en diseño arquitectónico se compensa con mantenibilidad.
+
+**Experimento 2: Pipeline Automatizado de CI/CD**
+
+La hipótesis de reducción de errores y aceleración de entregas fue validada. Métricas cuantitativas muestran build time promedio de 5-8 minutos, cobertura mantenida arriba del 80% y mínimos falsos positivos. Las lecciones indican que la inversión inicial en configuración del pipeline es crítica y que la paralelización de jobs es esencial.
+
+**Experimento 3: Separación CQRS**
+
+La hipótesis fue parcialmente validada. Se observaron beneficios en escalabilidad de queries, aunque con complejidad adicional que requiere disciplina del equipo. Las lecciones indican que CQRS es beneficioso cuando hay necesidades diferentes de lectura/escritura y que requiere documentación clara.
+
+**Desafíos y Limitaciones**
+
+Los desafíos técnicos incluyeron curva de aprendizaje inicial de DDD, tiempo extenso de configuración del pipeline e integración entre bounded contexts. Las limitaciones identificadas comprenden tiempo inicial de desarrollo, recursos de infraestructura y complejidad cognitiva, mitigadas mediante documentación y código claro.
+
+**Interpretación desde el Reporte del Proyecto**
+
+Según las conclusiones documentadas, el enfoque centrado en el usuario desde el inicio permitió construir una solución alineada con necesidades reales. La decisión de adoptar DDD fue acertada, permitiendo desarrollo paralelo, mantenimiento independiente, escalabilidad horizontal y extensibilidad. Las prácticas de DevOps fueron fundamentales para velocidad, calidad, confiabilidad y trazabilidad.
+
+**Conclusiones del Análisis**
+
+Las fortalezas identificadas incluyen arquitectura sólida con DDD, calidad asegurada mediante pipeline CI/CD, modularidad que facilita mantenimiento, escalabilidad y múltiples capas de seguridad. Las áreas de mejora comprenden documentación de arquitectura, aumento de tests de integración, ampliación de métricas de negocio, optimización de queries complejas y mejor estructuración del proceso de experimentación.
+
+**8.4.2. Re-scored and Re-prioritized Question Backlog**
+
+**Metodología de Repriorización**
+
+La repriorización considera resultados de experimentos, necesidades de negocio, relación riesgo-valor, facilidad de implementación y dependencias entre preguntas.
+
+**Preguntas Validadas**
+
+La pregunta sobre viabilidad de arquitectura modular con DDD fue validada mediante implementación exitosa de 8 bounded contexts. La pregunta sobre reducción de errores mediante pipeline CI/CD fue validada con reducción medible de bugs. La pregunta sobre mejora de rendimiento mediante CQRS fue parcialmente validada, con beneficios claros pero complejidad adicional.
+
+**Nuevas Preguntas Emergentes**
+
+Las nuevas preguntas incluyen optimización de comunicación entre bounded contexts (prioridad alta), estrategias de caching para rendimiento (prioridad media) y estructuración del proceso de experimentación (prioridad media).
+
+**Backlog Repriorizado**
+
+Las preguntas fueron reordenadas considerando valor, riesgo e impacto. Las preguntas sobre experiencia de usuario y métricas de negocio aumentaron en prioridad tras verificar la arquitectura base.
+
+**Próximos Experimentos Planificados**
+
+Se planifican experimentos sobre optimización de comunicación entre contextos (2 semanas, métricas de latencia), experiencia de usuario en dashboards (3 semanas, métricas de satisfacción) y estrategias de caching (1 semana, reducción del 30% en tiempo de respuesta).
+
+**Conclusión General**
+
+El análisis de los experimentos en FrostLink proporcionó información valiosa sobre la efectividad de las decisiones arquitectónicas. La arquitectura DDD con CQRS, combinada con pipelines automatizados de CI/CD, demostró ser una base sólida. La repriorización del backlog asegura que el equipo se enfoque en áreas de mayor impacto, manteniendo un ciclo continuo de aprendizaje basado en datos reales.
+
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
 
