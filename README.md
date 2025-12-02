@@ -5319,13 +5319,298 @@ Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica prim
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
+En esta sección se presenta la evidencia de la Landing Page To-Be implementada para FrostLink, construida desde la perspectiva de un flujo real de usuario y desplegada en un entorno público de producción ligera mediante Netlify. Esta landing no es solo un entregable visual, sino un artefacto funcional que forma parte del ciclo de experimentación de la plataforma SaaS IoT orientada a la gestión y monitoreo de equipos de refrigeración (cadena de frío) en supermercados y farmacias.
+
+Link: [Landing](https://tobe-landing.netlify.app/)
+
+#### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+En esta sección se presenta la evidencia de la **Landing Page To-Be implementada** para **FrostLink**, construida desde la perspectiva de un flujo real de usuario y desplegada en un entorno público de producción ligera mediante Netlify. Esta landing no es solo un entregable visual, sino un **artefacto funcional** que forma parte del ciclo de experimentación de la plataforma SaaS IoT orientada a la **gestión y monitoreo de equipos de refrigeración (cadena de frío)** en supermercados y farmacias.
+
+* **URL pública de la Landing Page To-Be:**
+  👉 [https://tobe-landing.netlify.app/](https://tobe-landing.netlify.app/)
+
+---
+
+##### a) Rol de la landing dentro del experimento To-Be
+
+Desde UX y Frontend, la Landing Page To-Be se diseñó explícitamente para responder a tres preguntas clave en menos de 10 segundos para un visitante nuevo:
+
+1. **¿Qué es FrostLink?**
+   Una plataforma SaaS IoT que centraliza el monitoreo de temperatura y el mantenimiento de equipos de refrigeración.
+
+2. **¿Qué problema resuelve?**
+   Reduce pérdidas de inventario por fallas en la cadena de frío, entregando **alertas en tiempo real** y herramientas para gestionar el mantenimiento preventivo.
+
+3. **¿Es para mí?**
+   Mensajes y secciones están redactados pensando en los dos perfiles objetivo:
+
+   * **Dueños de negocios (supermercados y farmacias)** → foco en pérdidas evitadas, visibilidad y reportes.
+   * **Técnicos/proveedores de servicio** → foco en tickets de mantenimiento, historial y rutas de visita optimizadas.
+
+La landing se utilizó como **pieza principal de comunicación y validación** durante las entrevistas To-Be, para evaluar si el valor de FrostLink se entendía y resultaba relevante antes de invertir en desarrollos más costosos del producto.
+
+---
+
+##### b) Implementación y despliegue en Netlify
+
+La Landing Page To-Be fue implementada como una **interfaz web responsiva** basada en tecnologías web estándar (HTML, CSS y JavaScript), cuidando que la estructura fuera simple, rápida de cargar y fácil de iterar durante el experimento.
+
+El despliegue se realizó en **Netlify**, lo que permitió:
+
+* Contar con una **URL estable y pública** para compartirla con dueños de negocios y técnicos durante entrevistas y pruebas.
+* Integrar la landing a un flujo de trabajo tipo **pipeline**: cada cambio en el código se refleja en un nuevo despliegue, manteniendo la coherencia entre diseño, contenido y feedback recibido.
+* Mantener tiempos de carga bajos y una experiencia fluida incluso en conexiones no óptimas, algo alineado con el contexto de usuarios que muchas veces navegan desde laptops corporativas o redes inestables.
+
+A nivel de calidad frontend, se garantizaron aspectos como:
+
+* **Diseño responsive**, adaptándose a escritorio y dispositivos móviles, especialmente relevante para técnicos que pueden acceder desde el campo.
+* **Separación clara de capas** (estructura, estilos y comportamiento) para facilitar refactors posteriores al experimento.
+* Carga correcta de imágenes y recursos, evitando errores de paths en el entorno Netlify.
+
+---
+
+##### c) Estructura UX y narrativa visual de la Landing To-Be
+
+La arquitectura de la información se diseñó con foco en claridad y jerarquía visual, minimizando ruido y priorizando mensajes relevantes para la cadena de frío. A nivel de UI/UX, la landing se organiza en secciones clave:
+
+* **Hero principal**
+
+  * Mensaje corto y directo explicando que FrostLink es una plataforma IoT para **evitar pérdidas de inventario por fallas de temperatura**.
+  * Subtítulo que refuerza la propuesta de valor: monitoreo en tiempo real, alertas tempranas y mantenimiento preventivo.
+  * **CTA principal** orientado a la acción (por ejemplo: “Ver cómo funciona”, “Solicitar demo” o similar), utilizado en el experimento para medir intención de explorar más.
+
+* **Sección de problema y contexto**
+
+  * Texto orientado a dueños de negocios que enfatiza el impacto económico de perder productos por una nevera que falla en la madrugada o un congelador mal calibrado.
+  * Lenguaje sencillo, sin jerga técnica de IoT, poniendo en el centro la pérdida de inventario y el riesgo operativo.
+
+* **Sección de beneficios para cada tipo de usuario**
+
+  * **Para Dueños de Negocios:**
+
+    * Dashboards claros de temperatura y estado de equipos.
+    * Alertas visuales y notificaciones cuando un equipo sale de rango.
+    * Reportes de consumo energético para decisiones de ahorro.
+  * **Para Técnicos/Proveedores:**
+
+    * Lista de equipos con incidencias y prioridades.
+    * Historial de fallas, intervenciones y mantenimientos realizados.
+    * Visión de rutas de visita más eficientes.
+
+* **Sección “Cómo funciona”**
+  Explica el flujo simplificado:
+
+  1. Los sensores IoT instalados en las vitrinas, cámaras frigoríficas y congeladoras envían datos de temperatura.
+  2. FrostLink centraliza esa información en la nube y monitorea en tiempo real.
+  3. Cuando un equipo sale de su rango seguro, se generan **alertas** y se crean **solicitudes de servicio** para el equipo técnico.
+  4. El dueño del negocio puede ver todo en un dashboard sencillo y entender qué está pasando con su cadena de frío.
+
+* **Sección de cierre y CTA final**
+
+  * Refuerza la promesa de “menos pérdida, más control” en la cadena de frío.
+  * Invita al usuario a dar el siguiente paso: agendar una demo, dejar sus datos o contactar a soporte comercial.
+
+Toda la narrativa visual sigue un enfoque de **claridad y confianza**, alineado con un producto B2B crítico para la operación diaria de supermercados y farmacias.
+
+---
+
+##### d) Evidencia de implementación y uso en entrevistas
+
+La Landing Page To-Be, ya desplegada en Netlify, se utilizó directamente en las **entrevistas de validación To-Be** con usuarios objetivo (dueños y/o responsables de operación, y técnicos). Durante estas sesiones se evaluó:
+
+* Si el usuario entendía, solo con leer el hero y el primer scroll, que FrostLink se centra en **equipos de refrigeración y cadena de frío**, no en otro tipo de IoT genérico.
+* Qué tan claro quedaba el beneficio económico: **menos pérdidas de inventario, más control y visibilidad**.
+* Si los técnicos se veían reflejados en las secciones orientadas a su rol (historial de equipos, rutas de visita, solicitudes de servicio).
+* Reacciones frente a los CTA:
+
+  * ¿Les parecía razonable solicitar una demo?
+  * ¿Qué información esperaban ver antes de dejar sus datos?
+
+Los comentarios, dudas y sugerencias surgidos al navegar la landing se registraron como insumo para:
+
+* Ajustes de contenido (terminología más cercana a su lenguaje diario).
+* Priorización de funcionalidades en el **To-Be Product Backlog** (por ejemplo, darle más peso a reportes de consumo energético o al módulo de mantenimiento preventivo).
+* Refinamiento de la propuesta de valor de FrostLink antes de avanzar a etapas de pre-lanzamiento más amplias.
+
+---
+
+En resumen, la **Implemented To-Be Landing Page** de FrostLink, accesible en
+👉 [https://tobe-landing.netlify.app/](https://tobe-landing.netlify.app/),
+representa la materialización concreta de la visión del producto en el contexto de **IoT para cadena de frío**, y funciona como un artefacto central del experimento: comunica, filtra interés real de usuarios y genera aprendizaje accionable para la evolución de la plataforma.
+
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+En esta sección se documenta la **implementación de la aplicación web To-Be de FrostLink**, entendida como el **panel principal** desde el cual los usuarios interactúan con la plataforma SaaS IoT para la gestión de la cadena de frío.
+
+Aunque, por alcance del trabajo, la aplicación aún no se encuentra expuesta en un entorno público, el frontend está **implementado y ejecutable en entorno local**, conectado a servicios de prueba y listo para ser integrado a un pipeline de despliegue continuo. La evidencia se basa en el código fuente, las pantallas construidas y los flujos de navegación validados internamente.
+
+---
+
+##### a) Alcance funcional del To-Be Frontend
+
+La versión To-Be del frontend se centra en cubrir un **MVP funcional** que represente los flujos de mayor valor para los dos perfiles principales:
+
+* **Dueños de negocios (supermercados y farmacias)**
+
+  * Acceso a un **dashboard de estado de la cadena de frío**, donde pueden ver:
+
+    * Número de equipos monitoreados (vitrinas, cámaras frigoríficas, congeladoras).
+    * Alertas activas por temperatura fuera de rango.
+    * Indicadores de riesgo de pérdida de inventario.
+  * Visualización de **tendencias de temperatura y consumo energético** por equipo o por local.
+  * Acceso a una vista de “detalle de local” con el listado de equipos y su estado actual.
+
+* **Técnicos / Proveedores de servicio**
+
+  * Módulo de **solicitudes de servicio**, donde se listan tickets abiertos asociados a equipos con alertas recurrentes.
+  * Vista de **historial del equipo**, con eventos relevantes (alertas, intervenciones, cambios de configuración).
+  * Posibilidad de marcar tickets como atendidos y registrar notas de mantenimiento.
+
+Este alcance permite **simular el uso real del producto** en escenarios de monitoreo y mantenimiento, y al mismo tiempo instrumentar los eventos necesarios para los experimentos descritos en las To-Be User Stories (activación, conversión, guardrails, etc.).
+
+---
+
+##### b) Diseño de interacción y estructura de la interfaz
+
+Desde UX se optó por una estructura clásica de **web app tipo consola**:
+
+* **Barra lateral de navegación** con acceso rápido a:
+
+  * Dashboard general.
+  * Equipos y locales.
+  * Alertas.
+  * Mantenimiento / tickets.
+
+* **Zona principal de contenido**, donde se renderizan:
+
+  * Tarjetas con KPIs clave (equipos en riesgo, alertas críticas, consumo estimado).
+  * Tablas y listados con filtros por local, tipo de equipo y severidad de la alerta.
+  * Gráficos de tendencia simples para temperatura y consumo energético.
+
+Las interacciones se diseñaron priorizando:
+
+* **Tiempo de respuesta visual**: estados de carga (skeletons / spinners) para evitar pantallas en blanco mientras se consultan datos.
+* **Claridad en las alertas**: uso de iconografía y estados visuales diferenciados (por ejemplo, niveles de severidad por color y etiquetas) para que un dueño pueda identificar, en segundos, qué equipos requieren atención urgente.
+* **Flujos cortos** para tareas frecuentes:
+
+  * Revisar alertas críticas y abrir el detalle del equipo.
+  * Crear o revisar un ticket de servicio desde una alerta.
+
+---
+
+##### c) Implementación técnica y buenas prácticas de frontend
+
+El frontend se implementó como una **Single Page Application (SPA)** basada en componentes reutilizables, siguiendo principios de separación de responsabilidades:
+
+* **Componentes de presentación** para tarjetas de equipo, badges de severidad, tablas de alertas y gráficos.
+* **Componentes contenedores** encargados de orquestar llamadas a la API (reales o mock) y manejar estados de error / carga.
+* Manejo de estado centralizado para:
+
+  * Usuario autenticado y su rol (dueño de negocio o técnico).
+  * Lista de equipos, alertas y tickets de mantenimiento.
+  * Preferencias básicas de visualización (por ejemplo, rango temporal seleccionado).
+
+Se implementaron validaciones básicas y manejo de errores en los flujos clave:
+
+* Mensajes claros cuando no hay datos (ej. “No hay alertas activas para este local”).
+* Feedback inmediato al crear o actualizar un ticket de servicio.
+* Manejo de sesión (desconexión controlada, redirección a pantalla de inicio de sesión).
+
+Aunque no se dispone de una URL pública, el código está preparado para integrarse a un **pipeline CI/CD**: build automatizado, ejecución de pruebas básicas de interfaz y despliegue a un entorno de pruebas cuando se habilite.
+
+---
+
+##### d) Conexión con las To-Be User Stories de experimentación
+
+La aplicación web To-Be no solo expone funcionalidades, sino que está **instrumentada conceptualmente** para soportar las historias de experimentación definidas:
+
+* Cada acción relevante (inicio de sesión, acceso al dashboard, apertura de una alerta, creación de un ticket, configuración de umbrales, etc.) se modela como un **evento explícito**, listo para conectarse con el contrato de eventos mínimo (US2).
+* Las pantallas de onboarding y primer uso del dashboard están pensadas para medir **activación** (primer valor real) de los dueños de negocio (US3).
+* Los flujos relacionados con la evolución hacia un plan de pago (por ejemplo, habilitar más locales o equipos) se diseñan para integrarse con eventos de **trial/pago y ARPPU** (US4).
+* Estados de error y tiempos de respuesta de la UI pueden conectarse con los **guardrails de calidad** (US5), evitando que un experimento aumente conversiones a costa de degradar la experiencia.
+
+De este modo, el frontend To-Be se concibe desde el inicio como un **cliente first-class del sistema de experimentación**, no solo como una capa visual desconectada de las hipótesis de negocio.
+
+---
+
+##### e) Evidencia disponible
+
+La evidencia de implementación del Frontend-Web To-Be se sustenta en:
+
+* El **código fuente de la SPA**, organizado por módulos (dashboard, alertas, equipos, mantenimiento).
+* Las **pantallas funcionales** que se ejecutan en entorno local, utilizadas en demos internas y en sesiones de revisión con el equipo.
+* Capturas de pantalla y recorridos guiados del flujo principal (dashboard de cadena de frío, vista de alertas y tickets), que pueden ser anexados como figuras de soporte en el informe.
+
+En conjunto, esta implementación del **Frontend-Web To-Be de FrostLink** materializa la experiencia objetivo para dueños de negocios y técnicos, y prepara la plataforma para ser medida y mejorada mediante el ciclo de experimentos definido en las secciones anteriores.
+
 
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
 
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
 
 #### 8.3.3.6. Team Collaboration Insights
+
+#### 8.3.3.6. Team Collaboration Insights
+
+El desarrollo del To-Be de **FrostLink** se abordó como un trabajo colaborativo entre perfiles mixtos (producto, frontend, backend, datos y UX). Más que repartir “tareas sueltas”, el equipo se organizó en **flows de valor**: definición de hipótesis, diseño de experiencia, implementación e instrumentación para experimentos.
+
+**Integrantes:**
+
+* León Vivas, Fabrizio Amir
+* Medina Cruzado, Raúl Adrian
+* Tello Murga, Javier Oswaldo
+* Pereira Vasquez, Fabrizzio
+* Varela Bustinza, Marcelo Alessandro
+* Ramos Calagua, Sebastian Alexander
+
+---
+
+##### a) Organización del equipo y focos de aporte
+
+* **León Vivas, Fabrizio Amir**
+  Asumió un rol de *lead técnico y de experiencia*, guiando las decisiones de arquitectura del frontend web y asegurando que la interfaz To-Be de FrostLink estuviera alineada con las hipótesis del experimento (qué flujos debían existir para dueños de negocio y técnicos, y qué eventos se necesitaban para medir activación).
+
+* **Medina Cruzado, Raúl Adrian**
+  Participó principalmente en la **definición e integración con servicios backend**, apoyando en el modelado de entidades (equipos de refrigeración, alertas, tickets) y en cómo exponerlas de forma consistente para el frontend y para la capa de experimentación.
+
+* **Tello Murga, Javier Oswaldo**
+  Tuvo foco en **datos y medición**: colaboró en la interpretación de las To-Be User Stories de experimentación (US1–US8), en la definición de qué eventos eran realmente necesarios y en cómo se podrían explotar luego en tableros e informes.
+
+* **Pereira Vasquez, Fabrizzio**
+  Apoyó en la **elaboración de flujos de usuario y maquetación**, participando en la construcción de pantallas clave (dashboard, alertas, tickets) y en la validación de que los textos y jerarquías visuales fueran comprensibles para perfiles no técnicos.
+
+* **Varela Bustinza, Marcelo Alessandro**
+  Se encargó de **documentación funcional y técnica**, conectando las decisiones del equipo con las secciones del informe (backlogs, evidencias implementadas, entrevistas), y ayudando a mantener trazabilidad entre hipótesis, historias de usuario y entregables.
+
+* **Ramos Calagua, Sebastian Alexander**
+  Colaboró en **pruebas y refinamiento**, ejecutando recorridos completos sobre el frontend To-Be, registrando problemas de usabilidad, estados de error y ajustes necesarios para que el flujo de monitoreo y mantenimiento se sintiera consistente de punta a punta.
+
+---
+
+##### b) Prácticas de colaboración
+
+El trabajo se organizó en **iteraciones cortas**, con espacios recurrentes de coordinación donde se revisaban:
+
+* El avance de las historias To-Be priorizadas.
+* La alineación entre diseño de interfaz, comportamiento del sistema y métricas de experimento.
+* Los ajustes necesarios sobre la marcha (ej. cambiar textos, mover componentes, simplificar flujos).
+
+Se utilizaron repositorios compartidos y revisiones de código (*code reviews*) para asegurar que las decisiones técnicas fueran visibles para todo el equipo. Esto permitió que las contribuciones de frontend, backend y datos se integraran sin perder de vista el objetivo principal: **evitar pérdidas en la cadena de frío y, al mismo tiempo, poder medir si el producto realmente aportaba valor**.
+
+---
+
+##### c) Aprendizajes de colaboración
+
+A nivel de colaboración, el equipo identificó tres aprendizajes clave:
+
+1. **Experimentar exige coordinación temprana**: no basta con “tener pantallas”; fue necesario que todos entendieran qué métricas queríamos observar y cómo se relacionaban con US1–US8 para instrumentar bien el frontend desde el inicio.
+2. **La comunicación entre roles técnicos y de negocio es crítica**: varias decisiones de UX y de modelado de eventos cambiaron después de discutir con el equipo cómo se vive realmente el problema de la cadena de frío.
+3. **Documentar mientras se construye ahorra retrabajo**: mantener el informe y los artefactos (backlogs, evidencias, entrevistas) actualizados en paralelo al desarrollo hizo más fácil justificar las decisiones y conectar cada pantalla con su hipótesis correspondiente.
+
+En conjunto, estas prácticas y roles hicieron que la colaboración alrededor de FrostLink no fuera solo una suma de tareas individuales, sino un esfuerzo coordinado para **construir, medir y aprender** de manera coherente con el enfoque experiment-driven del proyecto.
+
+<img style="border-radius: 10px; object-fit: cover;" src="/resources/insights_tf.png" alt="Screenshot de la entrevista">
 
 ### 8.3.4. To-Be Validation Interviews
 
