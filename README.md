@@ -284,6 +284,52 @@
                 <p style="display: block; margin: 2px 0; text-indent: 0px;">Avance de Conclusiones, Bibliografía y Anexos.</p>
             </td>
         </tr>
+        <tr>
+            <td>TF</td>
+            <td>11/09/2025</td>
+            <td>
+                <ul>   
+                    <li>León Vivas, Fabrizio Amir</li>
+                    <li>Medina Cruzado, Raúl Adrian</li>
+                    <li>Tello Murga, Javier Oswaldo</li>
+                    <li>Pereira Vasquez, Fabrizzio</li>
+                    <li>Varela Bustinza, Marcelo Alessandro</li>
+                    <li>Ramos Calagua, Sebastian Alexander</li>
+                </ul>
+            </td>
+            <td>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3. Experimentation</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.1. To-Be User Stories.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.2. To-Be Product Backlog</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.3.1. To-Be Sprint Backlogs</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.3.2. Implemented To-Be Landing Page Evidence</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.3.3. Implemented To-Be Frontend-Web Application Evidence</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.3.4. Implemented To-Be Native-Mobile Application Evidence</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.3.6. Team Collaboration Insights</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.4. To-Be Validation Interviews</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.4.1. Diseño de Entrevistas.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.3.4.2. Registro de Entrevistas.</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.4. Experiment Aftermath &amp; Analysis</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.4.1. Analysis and Interpretation of Results</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.4.2. Re-scored and Re-prioritized Question Backlog</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.5. Continuous Learning</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.5.1. Shareback Session Artifacts: Learning Workflow</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.6. To-Be Software Platform Pre-launch</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">8.6.1. About-the-Product Intro Video</p>
+
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Conclusiones</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Conclusiones y recomendaciones.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Video App Validation</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Video About-The-Team.</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Bibliografía</p>
+<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Anexos</p>
+            </td>
+        </tr>
     </tbody>
 </table>
 
