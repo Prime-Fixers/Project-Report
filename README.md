@@ -5779,6 +5779,18 @@ Se documentan los aprendizajes clave obtenidos durante las sesiones de **Shareba
 
 ## To-Be Software Platform Pre-launch
 
+### 8.6. To-Be Software Platform Pre-launch
+Plan de actividades previas al lanzamiento oficial de la plataforma **FrostLink**, asegurando calidad, estabilidad y alineamiento con objetivos de negocio.
+
+**Checklist Pre-lanzamiento**
+- Validación funcional completa (Web, Mobile, API).
+- Auditoría UX final (heurísticas + accesibilidad WCAG).
+- Pruebas de carga y estrés en backend (Azure VM).
+- Configuración de monitoreo y alertas (Azure Monitor + Firebase Crashlytics).
+- Pipeline CI/CD operativo con gates de calidad.
+- Plan de comunicación y marketing (Landing Page + redes sociales).
+- Entrenamiento del equipo de soporte y documentación para usuarios.
+
 ### 8.6.1. About-the-Product Intro Video
 
 # Conclusiones
