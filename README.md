@@ -4542,7 +4542,7 @@ Heurística violada: Usabilidad – Correspondencia con el mundo real / Prevenci
 
 <div style="page-break-before: always;"></div>
 
-## 6.4. Auditoría de Experiencias de Usuario (UX) 📝
+## 6.4. Auditoría de Experiencias de Usuario (UX) 
 
 ### 6.4.1. Auditoría Realizada (Perspectiva del Grupo Auditado: FrostLink)
 
