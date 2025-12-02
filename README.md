@@ -693,6 +693,7 @@ La plataforma incorpora funcionalidades clave como monitoreo en tiempo real de t
 | **Fabrizzio Pereira**<br> Mi nombre es Nelson Fabrizzio Pereira Vásquez (U202417468), estudiante de Ingeniería de Software con dominio en desarrollo web, especializado en React y su ecosistema. Cuenta con experiencia en la creación de proyectos prácticos como método de aprendizaje, aplicando principios de ingeniería de software y buenas prácticas de desarrollo. Destaca por su capacidad de trabajo en equipo, su disposición para colaborar activamente y su habilidad para apoyar en la resolución de problemas técnicos.| <img src="https://raw.githubusercontent.com/upc-pre-202520-1ACC0238-2005-mira/ProjectReport/main/img/chapter1/nelson.jpeg" alt="fabrizzio image" width="200"> |
 | **Marcelo Varela**<br>Mi nombre es Marcelo Varela. Soy un estudiante de la carrera de Ingeniería De Software, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me caracterizo por ser una persona responsable, resiliente y proactiva, al cual le gusta aprender sobre tecnología y el desarrollo de software. Mi compromiso como miembro de este equipo es brindar mi apoyo y participación para enfrentar lo desafíos así como dar lo mejor de mí para el éxito de este proyecto. | <img src="https://files.catbox.moe/w88eqj.jpeg" alt="kevin image" width="200"> |
 | **Sebastian Ramos**<br>Mi nombre es Sebastian Ramos. Soy un estudiante de la carrera de Ingeniería De Software, tengo 22 años y actualmente me encuentro cursando el séptimo ciclo de la carrera. Me gusta todo lo relacionado a la tecnología y al desarrollo web. Espero ansioso poder aprender más del curso a medida que se desarrolle este proyecto. | <img src="https://i.postimg.cc/vHksZbw6/Sebastian-Ramos-foto-perfil.jpg" alt="sebas image" width="200"> |
+| **Javier Tello**<br>Mi nombre es Javier Tello. Soy una persona responsable, creativa y empática, cualidades que me permiten establecer buenas conexiones con quienes me rodean. Valoro el trabajo en equipo porque me da la oportunidad de compartir ideas y aprender de otras perspectivas. Tengo conocimientos en lenguajes de programación como C + +, HTML, CSS , entre otros. Me gusta todo lo que es Frontend y Diseño UX. | <img src="https://i.postimg.cc/vHksZbw6/Javier-Tello-foto-perfil.jpg" alt="Javier image" width="200"> |
 
 ## 1.2. Solution Profile
 
@@ -5664,6 +5665,31 @@ En conjunto, estas prácticas y roles hicieron que la colaboración alrededor de
 
 ### 8.3.4. To-Be Validation Interviews
 
+Esta sección detalla la ejecución de las entrevistas de validación del estado futuro (To-Be), diseñadas como experimentos cualitativos para confirmar si la solución propuesta, **FrostLink**, resuelve efectivamente las problemáticas detectadas durante la fase de descubrimiento. A diferencia de las entrevistas iniciales (As-Is), el objetivo aquí no es explorar problemas, sino **validar que los prototipos de alta fidelidad y los flujos de usuario propuestos generen el valor esperado y sean utilizables**.
+
+El proceso de validación se centrará en los dos segmentos objetivo del proyecto, utilizando a los arquetipos definidos para reclutar a los entrevistados adecuados:
+
+#### Segmento de Negocios (User Persona: Ernesto Mendoza)
+Se validará si la automatización de alertas y el monitoreo permiten al dueño del negocio prevenir pérdidas de mercadería sin depender de revisiones manuales constantes.
+
+#### Segmento de Proveedores de Servicios (User Persona: Luis Rojas)
+Se validará si las herramientas de gestión de rutas y reportes centralizados optimizan su tiempo operativo y mejoran la comunicación con sus clientes.
+
+Estas entrevistas tienen como finalidad específica recolectar evidencia empírica para confirmar o refutar las siguientes hipótesis clave planteadas en el diseño del experimento (Sección 8.2.1):
+
+#### Validación de Valor (H1 y H2)
+- Confirmar si los dueños confían en las alertas automáticas para tomar acciones en menos de **15 minutos**.  
+- Validar si los técnicos perciben una reducción de carga administrativa suficiente (**30%**) para adoptar la plataforma.
+
+#### Validación de Usabilidad (H5 y H6)
+- Verificar si la interfaz permite registrar intervenciones en menos de **3 minutos**.  
+- Confirmar si la configuración de alertas es lo suficientemente intuitiva sin necesidad de soporte técnico.
+
+---
+
+Los resultados de estas sesiones determinarán si el producto está **listo para su desarrollo final** o si requiere **iteraciones en el diseño (pivotes)** antes de pasar a la etapa de implementación masiva.
+
+
 #### 8.3.4.1. Diseño de Entrevistas
 
 #### 8.3.4.2. Registro de Entrevistas
@@ -5757,27 +5783,60 @@ El análisis de los experimentos en FrostLink proporcionó información valiosa 
 
 ## 8.5. Continuous Learning
 
-### 8.5.1. Shareback Sessión Artifacts: Learning Workflow
-Se documentan los aprendizajes clave obtenidos durante las sesiones de **Shareback**, organizados en un flujo que facilita la transferencia de conocimiento al equipo.
+La estrategia de aprendizaje continuo de **FrostLink** se fundamenta en el ciclo empírico de inspección y adaptación. Dado que el proyecto se gestiona mediante Sprints (como se evidencia en el Sprint Backlog 1), el aprendizaje no es un evento aislado, sino un **proceso iterativo** que ocurre al finalizar la ejecución de cada bloque de experimentos.
 
-**Workflow de Aprendizaje**
-1. **Preparación**  
-   - Consolidación de métricas y hallazgos en dashboards.
-   - Identificación de hipótesis validadas y rechazadas.
+El objetivo de esta sección es formalizar cómo el equipo transforma los datos crudos obtenidos en las *To-Be Validation Interviews* y las métricas de uso en conocimiento validado (*Validated Learning*) para actualizar el **Question Backlog** y decidir el curso del desarrollo del producto.
 
-2. **Sesión de Shareback**  
-   - Presentación de resultados por experimento (KPIs, IC95%, guardrails).
-   - Discusión sobre impacto en roadmap y decisiones de producto.
+---
 
-3. **Documentación**  
-   - Registro en el repositorio de Confluence/GitHub Wiki.
-   - Actualización del backlog con nuevas prioridades.
+## 8.5.1. Shareback Session Artifacts: Learning Workflow
 
-4. **Acciones Posteriores**  
-   - Ajuste de experimentos futuros.
-   - Inclusión de mejoras en UX y funcionalidades críticas.
+Para garantizar que el aprendizaje sea compartido y democrático, el equipo ejecuta una **Shareback Session** (Sesión de Intercambio) al cierre de cada ciclo de experimentación. Esta sesión sigue un flujo de trabajo estructurado en tres etapas, aprovechando las habilidades multidisciplinarias de los integrantes:
 
-## To-Be Software Platform Pre-launch
+---
+
+### 1. Recopilación y Análisis (Pre-Session)
+
+Antes de la reunión grupal, los miembros procesan la información según sus perfiles técnicos:
+
+#### Análisis Cuantitativo
+Integrantes con enfoque analítico, como **Raúl Medina**, consolidan las métricas clave (KPIs) obtenidas de las herramientas de tracking para determinar si se cumplieron los umbrales de éxito de las hipótesis.
+
+#### Análisis Cualitativo (UX)
+Integrantes con enfoque en experiencia de usuario, como **Javier Tello** y **Fabrizio León**, sintetizan las grabaciones de entrevistas y observaciones de usabilidad, destacando puntos de fricción y citas textuales de los usuarios (Ernesto y Luis).
+
+---
+
+### 2. La Sesión de Intercambio (The Shareback)
+
+Todo el equipo (incluyendo a los desarrolladores **Juan Diego Mondoñedo, Fabrizzio Pereira, Marcelo Varela y Sebastian Ramos**) se reúne para visualizar los hallazgos. En esta sesión se presenta:
+
+#### Evidencia vs. Opinión  
+Se contrastan los resultados reales con las suposiciones iniciales del Sprint Backlog.
+
+#### Semáforo de Hipótesis  
+Las hipótesis del periodo se clasifican como:
+
+- **Validada:** Los datos soportan la hipótesis.  
+- **Invalidada:** Los datos refutan la hipótesis.  
+- **No Concluyente:** Se requieren más datos o ajustes en el experimento.
+
+---
+
+### 3. Decisión de Pivotar o Perseverar
+
+Basado en la evidencia presentada, el equipo toma decisiones conjuntas sobre los siguientes pasos del desarrollo:
+
+#### Perseverar
+Si la hipótesis se valida (ej. el flujo de alertas funciona), las *User Stories* relacionadas pasan al **Product Backlog** para refinamiento y paso a producción.
+
+#### Pivotar
+Si se detecta un rechazo en la validación To-Be, el equipo decide si:
+
+- Modificar la solución (**Zoom-in Pivot**)  
+- Cambiar el enfoque del problema  
+
+En ambos casos, se actualiza el **Lean UX Canvas** y se generan nuevas tarjetas de experimento para el siguiente Sprint.
 
 ### 8.6. To-Be Software Platform Pre-launch
 Plan de actividades previas al lanzamiento oficial de la plataforma **FrostLink**, asegurando calidad, estabilidad y alineamiento con objetivos de negocio.
