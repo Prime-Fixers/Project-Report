@@ -5717,7 +5717,19 @@ Según las conclusiones documentadas, el enfoque centrado en el usuario desde el
 
 Las fortalezas identificadas incluyen arquitectura sólida con DDD, calidad asegurada mediante pipeline CI/CD, modularidad que facilita mantenimiento, escalabilidad y múltiples capas de seguridad. Las áreas de mejora comprenden documentación de arquitectura, aumento de tests de integración, ampliación de métricas de negocio, optimización de queries complejas y mejor estructuración del proceso de experimentación.
 
-**8.4.2. Re-scored and Re-prioritized Question Backlog**
+### 8.4.2. Re-scored and Re-prioritized Question Backlog
+En esta sección se presenta la actualización del **Question Backlog** tras la ejecución de los experimentos. Cada pregunta se reevalúa según los resultados obtenidos y se asigna una nueva prioridad para los próximos sprints.
+
+**Tabla de Preguntas Re-priorizadas**
+| ID    | Pregunta                                                                 | Prioridad Anterior | Nueva Prioridad | Justificación                                      |
+|-------|--------------------------------------------------------------------------|---------------------|-----------------|----------------------------------------------------|
+| QB01  | ¿Los usuarios confían en las alertas automáticas de temperatura?        | Alta               | Alta            | Validada parcialmente; requiere más datos.        |
+| QB02  | ¿Qué tan dispuestos están los técnicos a adoptar la plataforma digital? | Alta               | Media           | Adopción inicial positiva, pero con fricciones.   |
+| QB03  | ¿El monitoreo en tiempo real reduce pérdidas por fallas?                | Alta               | Alta            | Resultados preliminares confirman hipótesis.      |
+| QB04  | ¿Qué funcionalidades son imprescindibles para los dueños de negocios?   | Media              | Alta            | Feedback indica alta relevancia para roadmap.     |
+| QB07  | ¿Usuarios pagarían por mantenimiento predictivo?                        | Alta               | Alta            | Conversión a plan premium > 20% en pruebas.       |
+
+---
 
 **Metodología de Repriorización**
 
@@ -5742,9 +5754,6 @@ Se planifican experimentos sobre optimización de comunicación entre contextos 
 **Conclusión General**
 
 El análisis de los experimentos en FrostLink proporcionó información valiosa sobre la efectividad de las decisiones arquitectónicas. La arquitectura DDD con CQRS, combinada con pipelines automatizados de CI/CD, demostró ser una base sólida. La repriorización del backlog asegura que el equipo se enfoque en áreas de mayor impacto, manteniendo un ciclo continuo de aprendizaje basado en datos reales.
-
-
-### 8.4.2. Re-scored and Re-prioritized Question Backlog
 
 ## 8.5. Continuous Learning
 
