@@ -1,58 +1,41 @@
-<div align="center">
-
-# Informe del Trabajo Final
-
-   <br>
-
-   Universidad Peruana de Ciencias Aplicadas
-
-   <br>
-
-   <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC">
-
-   <br>
-
-   <b>Ingeniería de software</b>
-
-   <br>
-
-   <b>202520</b>
-
-   <br>
-
-
-   <b>1ASI0732 Diseño de Experimentos de Ingeniería de Software</b>
-
-   <br>
-
-   <b>NRC:</b> 7503
-
-   <br>
-
-   <b>Profesor:</b> Tinoco Licas, Juan Carlos
-
-   <br>
-
-<b>"Informe de Trabajo Final"</b>
-
-   <br>
-
-   <b>Nombre del StartUp:</b> PrimeFixers
-
-   <br>
-
-
-   <b>Nombre del Producto:</b> FrostLink
-
-   </div>
-
-   <br>
-
-<table border="1" style="margin: 0 auto; text-align: center; border-collapse: collapse; width: 50%;">
+<!-- CONTENEDOR PRINCIPAL CENTRADO -->
+<table align="center" width="100%">
+  <tr>
+    <td align="center">
+      # **Informe del Trabajo Final**
+      <br>
+      Universidad Peruana de Ciencias Aplicadas  
+      <br>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"
+        alt="Logo UPC"
+        width="180"
+      >
+      <br><br>
+      Ingeniería de Software
+      <br>
+      202520
+      <br>
+      1ASI0732 Diseño de Experimentos de Ingeniería de Software
+      <br>
+      NRC: 7503  
+      <br>
+      Profesor: Tinoco Licas, Juan Carlos 
+      <br>
+      "Informe de Trabajo Final"
+      <br>
+      Nombre del Startup: PrimeFixers  
+      <br>
+      Nombre del Producto: FrostLink
+      <br><br>
+    </td>
+  </tr>
+</table>
+<table align="center" border="1" width="60%">
   <thead>
     <tr>
-      <th style="padding: 10px;">Nombre</th>
-      <th style="padding: 10px;">Código</th>
+      <th>Nombre</th>
+      <th>Código</th>
     </tr>
   </thead>
   <tbody>
@@ -82,13 +65,15 @@
     </tr>
   </tbody>
 </table>
-   <br>
-
-<div style="text-align: center;">
-  <b>Noviembre, 2025</b>
-</div>
-
-</div>
+<br>
+<!-- FECHA CENTRADA -->
+<table align="center" width="100%">
+  <tr>
+    <td align="center">
+      Noviembre, 2025
+    </td>
+  </tr>
+</table>
 
 # Registro de Versiones del Informe
 
@@ -3750,10 +3735,10 @@ He asignado las actividades existentes a los nuevos alumnos en el orden que los 
 A continuación se encuentra nuestro video about the product, donde se evidencia la explicacion sobre los principales features, sustentacion de diseño  y proposito de la aplicacion.
 
 **Título:** ``
-<td><img src="resources/aboutTheProduct.png" alt="Screenshot del video about the product"></td>
+<td><img src="resources/aboutTheProduct.jpg" alt="Screenshot del video about the product"></td>
 
-- **YouTube:** [Ver en YouTube]()
-- **Microsoft Stream:** [Ver video]()
+- **YouTube:** [Ver en YouTube](https://youtu.be/0vPqIK1htB4)
+- **Microsoft Stream:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQDpJvRmc5oBQ55MDCJ6eFfXAVh190Hg_4vkwvc7V27m_ZU?e=nZCqyL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 # Capítulo VI: Product Verification & Validation
 
@@ -4851,8 +4836,116 @@ El Production Deployment Pipeline representa la secuencia automatizada de proces
 * **Validación Automatizada**: **GitHub Actions** ejecuta las suites de pruebas unitarias e integrales para verificar la funcionalidad del sistema. Si alguna prueba falla, el pipeline se detiene y se notifica al equipo de desarrollo, impidiendo que el código defectuoso avance.
 
 * **Despliegue a Producción**: Una vez que la imagen Docker ha superado todas las validaciones, **GitHub Actions** procede a realizar el despliegue del contenedor en el entorno de producción, alojado en **Microsoft Azure**. Se utilizan estrategias como Blue-Green Deployment para minimizar el tiempo de inactividad y permitir rollbacks rápidos en caso de ser necesario.
+ 
+## 7.4. Continuous Monitoring
 
-## 8.1.4. Question Backlog
+El monitoreo continuo en **FrostLink** es la práctica fundamental que nos permite cerrar el ciclo de DevOps, proporcionando visibilidad en tiempo real sobre la salud, el rendimiento y la fiabilidad de la plataforma en producción. No nos limitamos únicamente a verificar si los servicios están activos (*uptime*), sino que implementamos una estrategia de **observabilidad** completa que abarca logs, métricas y trazas distribuidas.
+
+El objetivo principal es detectar anomalías antes de que afecten a los usuarios finales (dueños de negocios y técnicos), reducir el tiempo medio de resolución (MTTR) de incidentes y validar que los recursos de Azure estén optimizados en términos de costo y rendimiento.
+
+### 7.4.1. Tools and Practices
+
+Para la estrategia de monitoreo de FrostLink, hemos seleccionado un conjunto de herramientas nativas de nuestra infraestructura en la nube (Azure) y soluciones especializadas para la parte móvil y de experiencia de usuario.
+
+**Herramientas (Tools):**
+
+| Herramienta | Propósito en FrostLink |
+| :--- | :--- |
+| **Azure Monitor** | Plataforma central de observabilidad que recopila, analiza y actúa sobre la telemetría de nuestros entornos en la nube y on-premises. |
+| **Application Insights** | Servicio de APM (Application Performance Management) integrado en el Backend (.NET) y Frontend (Vue) para detectar excepciones, tiempos de respuesta lentos y dependencias fallidas. |
+| **Log Analytics Workspace** | Repositorio centralizado donde se almacenan y consultan los logs estructurados generados por los servicios, permitiendo consultas complejas mediante lenguaje KQL (Kusto Query Language). |
+| **Firebase Crashlytics** | Herramienta específica para la aplicación móvil (Android) que reporta cierres inesperados (*crashes*) y problemas de estabilidad en los dispositivos de los técnicos. |
+| **Serilog** | Librería de logging estructurado implementada en el código C# para generar logs enriquecidos que facilitan el filtrado y la búsqueda. |
+| **Uptime Robot** | Monitor sintético externo para verificar la disponibilidad pública de la Landing Page y los endpoints de la API desde diferentes ubicaciones geográficas. |
+
+**Prácticas (Practices):**
+
+* **Logging Estructurado:** Evitamos los logs de texto plano. Todos los eventos se registran como objetos JSON con propiedades consultables (ej. `UserId`, `EquipmentId`, `CorrelationId`), lo que facilita la trazabilidad de errores específicos.
+* **Monitoreo de las "Golden Signals":** Nos enfocamos en medir Latencia, Tráfico, Errores y Saturación para tener una visión clara de la salud del sistema.
+* **Distributed Tracing:** Utilizamos identificadores de correlación (*TraceId*) que viajan desde el Frontend hasta la base de datos, permitiendo reconstruir el flujo completo de una solicitud a través de los distintos microservicios o contextos delimitados.
+* **Health Checks:** Implementación de endpoints `/health` y `/ready` en la API que son consultados periódicamente por el orquestador para determinar si la instancia debe recibir tráfico o ser reiniciada.
+
+### 7.4.2. Monitoring Pipeline Components
+
+El pipeline de monitoreo describe cómo fluyen los datos desde la generación del evento hasta su visualización. En FrostLink, este flujo se divide en cuatro etapas clave:
+
+1.  **Instrumentación (Collection):**
+    * **Backend (.NET):** Se utiliza el SDK de Application Insights para capturar automáticamente solicitudes HTTP, consultas SQL (Entity Framework) y excepciones no controladas.
+    * **Frontend (Vue.js):** Se capturan métricas de experiencia de usuario (tiempos de carga, interacciones) y errores de JavaScript en el navegador.
+    * **Infraestructura (Azure VM):** Agentes de Azure Monitor instalados en la máquina virtual recolectan métricas de nivel de sistema operativo (CPU, RAM, Disco, Red).
+
+2.  **Ingesta y Procesamiento:**
+    * La telemetría enviada por los agentes y SDKs es recibida por los endpoints de ingestión de Azure Monitor.
+    * Los datos se normalizan y se enriquecen con metadatos (geo-localización, versión del despliegue).
+
+3.  **Almacenamiento (Storage):**
+    * Los datos se persisten en el **Log Analytics Workspace** con políticas de retención configuradas (ej. 30 días para logs detallados, 90 días para métricas agregadas).
+
+4.  **Visualización (Visualization):**
+    * **Azure Dashboards:** Paneles compartidos que muestran gráficos en tiempo real sobre:
+        * *Rendimiento:* Solicitudes por segundo (RPS) y tiempo de respuesta promedio de la API.
+        * *Fiabilidad:* Tasa de errores 4xx y 5xx.
+        * *Negocio:* Número de solicitudes de servicio creadas y usuarios activos.
+
+### 7.4.3. Alerting Pipeline Components
+
+El componente de alertas es el mecanismo proactivo que notifica al equipo cuando los umbrales de seguridad son superados. En FrostLink, las alertas se clasifican por severidad y capa:
+
+**Reglas de Alerta Configuradas:**
+
+* **Alertas de Infraestructura (Azure VM):**
+    * *CPU Usage High:* Se dispara si el uso de CPU > 85% por más de 5 minutos.
+    * *Available Memory Low:* Se dispara si la memoria disponible es < 1 GB.
+    * *Disk Space:* Se dispara si el espacio libre en disco es < 10%.
+
+* **Alertas de Aplicación (Backend API):**
+    * *High Error Rate:* Se dispara si el porcentaje de respuestas HTTP 500 supera el 2% del tráfico total en 5 minutos.
+    * *High Latency:* Se dispara si el tiempo de respuesta promedio del endpoint `/api/v1/work-orders` supera los 2 segundos.
+
+* **Alertas de Disponibilidad (Synthetics):**
+    * *Ping Failure:* Se dispara inmediatamente si el endpoint `/health` no responde con un código 200 OK desde 3 ubicaciones distintas.
+
+* **Alertas Móviles (Firebase):**
+    * *New Fatal Issue:* Se dispara cuando aparece un nuevo tipo de crash que afecta a más del 1% de los usuarios en una versión específica.
+
+**Lógica de Evaluación:**
+Las reglas se evalúan cada minuto. Azure Monitor utiliza lógica de agregación para evitar "falsos positivos" causados por picos momentáneos, requiriendo que la condición se mantenga durante una ventana de tiempo definida.
+
+### 7.4.4. Notification Pipeline Components
+
+Una vez que una alerta es disparada, el pipeline de notificación asegura que la información llegue a la persona correcta a través del canal adecuado. Utilizamos los **Action Groups** de Azure para gestionar estos flujos.
+
+**Canales de Notificación:**
+
+1.  **Correo Electrónico (Email):**
+    * *Destinatarios:* Administradores del sistema y Tech Leads.
+    * *Uso:* Alertas de severidad media (Sev-2) y reportes semanales de rendimiento.
+    * *Contenido:* Resumen del incidente, enlace directo al dashboard y métrica afectada.
+
+2.  **Mensajería Instantánea (Slack/Discord):**
+    * *Integración:* Webhook entrante conectado a un canal `#devops-alerts`.
+    * *Uso:* Notificaciones generales de despliegues y alertas de infraestructura. Permite visibilidad para todo el equipo de desarrollo.
+
+3.  **SMS / Llamada (Severidad Crítica):**
+    * *Destinatarios:* Equipo de guardia (On-call).
+    * *Uso:* Alertas de severidad crítica (Sev-0/Sev-1), como caída total del servicio o fallos en la base de datos que impiden la operación de FrostLink.
+
+**Flujo de Respuesta:**
+1.  **Detección:** Azure Monitor detecta la anomalía.
+2.  **Enrutamiento:** El Action Group determina los canales según la severidad.
+3.  **Notificación:** Se envía el mensaje con contexto (ej. "Server CPU at 95% - VM-FrostLink-Prod").
+4.  **Reconocimiento (Ack):** El ingeniero responde en el canal de comunicación indicando que está investigando.
+5.  **Resolución:** Una vez resuelto, el sistema envía una notificación de "Resolved" automáticamente cuando las métricas vuelven a la normalidad.
+
+## 8.1. Experiment Planning
+
+### 8.1.1. As-Is Summary
+
+### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+### 8.1.3. Experiment-Ready Questions
+
+### 8.1.4. Question Backlog
 
 | ID | Pregunta | Prioridad | Estado | Fuente/Contexto |
 |---|---|---|---|---|
@@ -4876,7 +4969,9 @@ El Production Deployment Pipeline representa la secuencia automatizada de proces
 | EXP-06 | Valoración Control Remoto | QB-06 | Control remoto no es crítico para la versión inicial del producto | Porcentaje de uso de control remoto |
 | EXP-07 | Disposición Pago Funcionalidades Avanzadas | QB-07 | Usuarios pagan 20% más por mantenimiento predictivo | Tasa de conversión a planes premium |
 
-## 8.2.1. Hypotheses
+## 8.2. Experiment Design
+
+### 8.2.1. Hypotheses
 
 **Hipótesis de Valor:**
 - **H1:** Los dueños de negocios confían en las alertas automáticas de temperatura y toman acciones basadas en ellas dentro de los primeros 15 minutos de recibidas.
@@ -4890,7 +4985,7 @@ El Production Deployment Pipeline representa la secuencia automatizada de proces
 - **H5:** La interfaz móvil permite a los técnicos registrar intervenciones completas en menos de 3 minutos por visita.
 - **H6:** Los dueños de negocios pueden configurar alertas básicas sin asistencia técnica en su primer uso.
 
-## 8.2.2. Domain Business Metrics
+### 8.2.2. Domain Business Metrics
 
 **Métricas Principales del Negocio:**
 - **Customer Acquisition Cost (CAC):** Costo promedio para adquirir un nuevo cliente
@@ -4904,7 +4999,7 @@ El Production Deployment Pipeline representa la secuencia automatizada de proces
 - **Tiempo Medio de Respuesta:** Tiempo promedio entre alerta y acción correctiva
 - **Tasa de Adopción Funcionalidades:** Porcentaje de usuarios que utilizan cada funcionalidad clave
 
-## 8.2.3. Measures
+### 8.2.3. Measures
 
 **Medidas Cuantitativas:**
 - **Tasa de Conversión:** % de visitantes que se convierten en usuarios registrados
@@ -4919,7 +5014,7 @@ El Production Deployment Pipeline representa la secuencia automatizada de proces
 - **Tasa de Abandono:** Razones principales para cancelar suscripción
 - **Feedback de Usabilidad:** Comentarios sobre facilidad de uso y aprendizaje
 
-## 8.2.4. Conditions
+### 8.2.4. Conditions
 
 **Criterios de Éxito:**
 - **Condición de Validación H1:** > 80% de usuarios actúan sobre alertas dentro de 15 minutos
@@ -5044,6 +5139,8 @@ Se aplica minimización de datos, consentimiento por categorías donde correspon
 • Activación/Retención: D1 derivado de cohortes por signup_complete o first_success_action y eventos de retorno a 24–48 h.
 • Conversión: tasa a plan/trial y a pago desde subscription_started y payment_success.
 Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica primaria de cada experimento y lectura de guardrails (errores, quejas, latencias), todo dentro de FrostLink para asegurar trazabilidad de extremo a extremo.
+
+## 8.3. Experimentation
 
 ### 8.3.1. To-Be User Stories 
 <section id="to-be-user-stories">
@@ -5215,6 +5312,447 @@ Estas salidas alimentan el tablero de decisión con IC95% sobre la métrica prim
     </tbody>
   </table>
 </section>
+
+### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+Introducción
+
+El ciclo de vida de la plataforma FrostLink se fundamenta en un enfoque experimental apoyado por pipelines de CI/CD que permiten la validación continua de hipótesis y la entrega iterativa de funcionalidades.
+
+Arquitectura de Backend: Domain-Driven Design con CQRS
+
+Bounded Contexts Implementados
+
+La plataforma adopta una arquitectura de Domain-Driven Design (DDD) organizada en ocho bounded contexts: IAM (Identity and Access Management), Profiles, Equipment Management, Service Requests, Work Orders, Technicians, Analytics, y Subscriptions and Payments. Cada contexto encapsula su propio modelo de dominio y responsabilidades específicas.
+
+Patrón CQRS
+
+La arquitectura implementa Command Query Responsibility Segregation (CQRS), separando comandos (Application/Internal/CommandServices/) que modifican el estado del sistema, de queries (Application/Internal/QueryServices/) optimizadas para lectura.
+
+Persistencia con Entity Framework Core
+
+La infraestructura utiliza Entity Framework Core con MySQL, implementando convención de nombres snake_case, configuraciones por bounded context e interceptores para auditoría automática.
+
+Pipeline CI/CD Integrado
+
+Pipeline de Integración Continua
+
+El pipeline CI incluye seis etapas: checkout e instalación, build, QA y testing (análisis estático con SonarQube, pruebas unitarias con xUnit con cobertura mínima del 80%, escaneo de vulnerabilidades), packaging en Docker, almacenamiento de artefactos y reportes de retroalimentación.
+
+Pipeline de Continuous Delivery
+
+El pipeline CD comprende: build, testing, package y registro, despliegue a staging con validación de health checks, y aprobación manual antes de producción.
+
+Pipeline de Continuous Deployment
+
+Para producción se implementan estrategias de Blue-Green Deployment, rollbacks automáticos, zero-downtime mediante contenedores y feature flags para activación gradual.
+
+Integración del Pipeline con Experiment-Driven Development
+
+El pipeline CI/CD permite validar hipótesis mediante experimentos en branches, despliegue automático a staging para pruebas con usuarios y feature flags para activación gradual. El monitoreo integra Application Insights, Log Analytics con Serilog, Firebase Crashlytics y distributed tracing.
+
+Arquitectura Frontend
+
+El frontend utiliza Vue.js con PrimeVue, se despliega en Netlify o Firebase Hosting, y se comunica con el backend mediante API RESTful con Axios. El backend está configurado con CORS para permitir comunicación desde múltiples orígenes.
+
+Contenedorización y Desacoplamiento
+
+El backend utiliza Docker con build multi-stage, imagen base oficial de Microsoft .NET 9.0 y usuario no-root para seguridad. El proyecto implementa el patrón Mediator mediante Cortex para desacoplamiento entre comandos y handlers, pipeline behaviors y manejo de eventos entre bounded contexts.
+
+Ciclo de Vida Experiment-Driven
+
+El ciclo comprende: planificación del experimento, desarrollo en feature branch, validación en pipeline CI, despliegue a staging, análisis de resultados, despliegue a producción con aprobación manual y feature flags, e iteración continua basada en feedback.
+
+
+
+#### 8.3.3.1. To-Be Sprint Backlogs
+
+#### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+En esta sección se presenta la evidencia de la Landing Page To-Be implementada para FrostLink, construida desde la perspectiva de un flujo real de usuario y desplegada en un entorno público de producción ligera mediante Netlify. Esta landing no es solo un entregable visual, sino un artefacto funcional que forma parte del ciclo de experimentación de la plataforma SaaS IoT orientada a la gestión y monitoreo de equipos de refrigeración (cadena de frío) en supermercados y farmacias.
+
+Link: [Landing](https://tobe-landing.netlify.app/)
+
+#### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+En esta sección se presenta la evidencia de la **Landing Page To-Be implementada** para **FrostLink**, construida desde la perspectiva de un flujo real de usuario y desplegada en un entorno público de producción ligera mediante Netlify. Esta landing no es solo un entregable visual, sino un **artefacto funcional** que forma parte del ciclo de experimentación de la plataforma SaaS IoT orientada a la **gestión y monitoreo de equipos de refrigeración (cadena de frío)** en supermercados y farmacias.
+
+* **URL pública de la Landing Page To-Be:**
+  👉 [https://tobe-landing.netlify.app/](https://tobe-landing.netlify.app/)
+
+---
+
+##### a) Rol de la landing dentro del experimento To-Be
+
+Desde UX y Frontend, la Landing Page To-Be se diseñó explícitamente para responder a tres preguntas clave en menos de 10 segundos para un visitante nuevo:
+
+1. **¿Qué es FrostLink?**
+   Una plataforma SaaS IoT que centraliza el monitoreo de temperatura y el mantenimiento de equipos de refrigeración.
+
+2. **¿Qué problema resuelve?**
+   Reduce pérdidas de inventario por fallas en la cadena de frío, entregando **alertas en tiempo real** y herramientas para gestionar el mantenimiento preventivo.
+
+3. **¿Es para mí?**
+   Mensajes y secciones están redactados pensando en los dos perfiles objetivo:
+
+   * **Dueños de negocios (supermercados y farmacias)** → foco en pérdidas evitadas, visibilidad y reportes.
+   * **Técnicos/proveedores de servicio** → foco en tickets de mantenimiento, historial y rutas de visita optimizadas.
+
+La landing se utilizó como **pieza principal de comunicación y validación** durante las entrevistas To-Be, para evaluar si el valor de FrostLink se entendía y resultaba relevante antes de invertir en desarrollos más costosos del producto.
+
+---
+
+##### b) Implementación y despliegue en Netlify
+
+La Landing Page To-Be fue implementada como una **interfaz web responsiva** basada en tecnologías web estándar (HTML, CSS y JavaScript), cuidando que la estructura fuera simple, rápida de cargar y fácil de iterar durante el experimento.
+
+El despliegue se realizó en **Netlify**, lo que permitió:
+
+* Contar con una **URL estable y pública** para compartirla con dueños de negocios y técnicos durante entrevistas y pruebas.
+* Integrar la landing a un flujo de trabajo tipo **pipeline**: cada cambio en el código se refleja en un nuevo despliegue, manteniendo la coherencia entre diseño, contenido y feedback recibido.
+* Mantener tiempos de carga bajos y una experiencia fluida incluso en conexiones no óptimas, algo alineado con el contexto de usuarios que muchas veces navegan desde laptops corporativas o redes inestables.
+
+A nivel de calidad frontend, se garantizaron aspectos como:
+
+* **Diseño responsive**, adaptándose a escritorio y dispositivos móviles, especialmente relevante para técnicos que pueden acceder desde el campo.
+* **Separación clara de capas** (estructura, estilos y comportamiento) para facilitar refactors posteriores al experimento.
+* Carga correcta de imágenes y recursos, evitando errores de paths en el entorno Netlify.
+
+---
+
+##### c) Estructura UX y narrativa visual de la Landing To-Be
+
+La arquitectura de la información se diseñó con foco en claridad y jerarquía visual, minimizando ruido y priorizando mensajes relevantes para la cadena de frío. A nivel de UI/UX, la landing se organiza en secciones clave:
+
+* **Hero principal**
+
+  * Mensaje corto y directo explicando que FrostLink es una plataforma IoT para **evitar pérdidas de inventario por fallas de temperatura**.
+  * Subtítulo que refuerza la propuesta de valor: monitoreo en tiempo real, alertas tempranas y mantenimiento preventivo.
+  * **CTA principal** orientado a la acción (por ejemplo: “Ver cómo funciona”, “Solicitar demo” o similar), utilizado en el experimento para medir intención de explorar más.
+
+* **Sección de problema y contexto**
+
+  * Texto orientado a dueños de negocios que enfatiza el impacto económico de perder productos por una nevera que falla en la madrugada o un congelador mal calibrado.
+  * Lenguaje sencillo, sin jerga técnica de IoT, poniendo en el centro la pérdida de inventario y el riesgo operativo.
+
+* **Sección de beneficios para cada tipo de usuario**
+
+  * **Para Dueños de Negocios:**
+
+    * Dashboards claros de temperatura y estado de equipos.
+    * Alertas visuales y notificaciones cuando un equipo sale de rango.
+    * Reportes de consumo energético para decisiones de ahorro.
+  * **Para Técnicos/Proveedores:**
+
+    * Lista de equipos con incidencias y prioridades.
+    * Historial de fallas, intervenciones y mantenimientos realizados.
+    * Visión de rutas de visita más eficientes.
+
+* **Sección “Cómo funciona”**
+  Explica el flujo simplificado:
+
+  1. Los sensores IoT instalados en las vitrinas, cámaras frigoríficas y congeladoras envían datos de temperatura.
+  2. FrostLink centraliza esa información en la nube y monitorea en tiempo real.
+  3. Cuando un equipo sale de su rango seguro, se generan **alertas** y se crean **solicitudes de servicio** para el equipo técnico.
+  4. El dueño del negocio puede ver todo en un dashboard sencillo y entender qué está pasando con su cadena de frío.
+
+* **Sección de cierre y CTA final**
+
+  * Refuerza la promesa de “menos pérdida, más control” en la cadena de frío.
+  * Invita al usuario a dar el siguiente paso: agendar una demo, dejar sus datos o contactar a soporte comercial.
+
+Toda la narrativa visual sigue un enfoque de **claridad y confianza**, alineado con un producto B2B crítico para la operación diaria de supermercados y farmacias.
+
+---
+
+##### d) Evidencia de implementación y uso en entrevistas
+
+La Landing Page To-Be, ya desplegada en Netlify, se utilizó directamente en las **entrevistas de validación To-Be** con usuarios objetivo (dueños y/o responsables de operación, y técnicos). Durante estas sesiones se evaluó:
+
+* Si el usuario entendía, solo con leer el hero y el primer scroll, que FrostLink se centra en **equipos de refrigeración y cadena de frío**, no en otro tipo de IoT genérico.
+* Qué tan claro quedaba el beneficio económico: **menos pérdidas de inventario, más control y visibilidad**.
+* Si los técnicos se veían reflejados en las secciones orientadas a su rol (historial de equipos, rutas de visita, solicitudes de servicio).
+* Reacciones frente a los CTA:
+
+  * ¿Les parecía razonable solicitar una demo?
+  * ¿Qué información esperaban ver antes de dejar sus datos?
+
+Los comentarios, dudas y sugerencias surgidos al navegar la landing se registraron como insumo para:
+
+* Ajustes de contenido (terminología más cercana a su lenguaje diario).
+* Priorización de funcionalidades en el **To-Be Product Backlog** (por ejemplo, darle más peso a reportes de consumo energético o al módulo de mantenimiento preventivo).
+* Refinamiento de la propuesta de valor de FrostLink antes de avanzar a etapas de pre-lanzamiento más amplias.
+
+---
+
+En resumen, la **Implemented To-Be Landing Page** de FrostLink, accesible en
+👉 [https://tobe-landing.netlify.app/](https://tobe-landing.netlify.app/),
+representa la materialización concreta de la visión del producto en el contexto de **IoT para cadena de frío**, y funciona como un artefacto central del experimento: comunica, filtra interés real de usuarios y genera aprendizaje accionable para la evolución de la plataforma.
+
+#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+En esta sección se documenta la **implementación de la aplicación web To-Be de FrostLink**, entendida como el **panel principal** desde el cual los usuarios interactúan con la plataforma SaaS IoT para la gestión de la cadena de frío.
+
+Aunque, por alcance del trabajo, la aplicación aún no se encuentra expuesta en un entorno público, el frontend está **implementado y ejecutable en entorno local**, conectado a servicios de prueba y listo para ser integrado a un pipeline de despliegue continuo. La evidencia se basa en el código fuente, las pantallas construidas y los flujos de navegación validados internamente.
+
+---
+
+##### a) Alcance funcional del To-Be Frontend
+
+La versión To-Be del frontend se centra en cubrir un **MVP funcional** que represente los flujos de mayor valor para los dos perfiles principales:
+
+* **Dueños de negocios (supermercados y farmacias)**
+
+  * Acceso a un **dashboard de estado de la cadena de frío**, donde pueden ver:
+
+    * Número de equipos monitoreados (vitrinas, cámaras frigoríficas, congeladoras).
+    * Alertas activas por temperatura fuera de rango.
+    * Indicadores de riesgo de pérdida de inventario.
+  * Visualización de **tendencias de temperatura y consumo energético** por equipo o por local.
+  * Acceso a una vista de “detalle de local” con el listado de equipos y su estado actual.
+
+* **Técnicos / Proveedores de servicio**
+
+  * Módulo de **solicitudes de servicio**, donde se listan tickets abiertos asociados a equipos con alertas recurrentes.
+  * Vista de **historial del equipo**, con eventos relevantes (alertas, intervenciones, cambios de configuración).
+  * Posibilidad de marcar tickets como atendidos y registrar notas de mantenimiento.
+
+Este alcance permite **simular el uso real del producto** en escenarios de monitoreo y mantenimiento, y al mismo tiempo instrumentar los eventos necesarios para los experimentos descritos en las To-Be User Stories (activación, conversión, guardrails, etc.).
+
+---
+
+##### b) Diseño de interacción y estructura de la interfaz
+
+Desde UX se optó por una estructura clásica de **web app tipo consola**:
+
+* **Barra lateral de navegación** con acceso rápido a:
+
+  * Dashboard general.
+  * Equipos y locales.
+  * Alertas.
+  * Mantenimiento / tickets.
+
+* **Zona principal de contenido**, donde se renderizan:
+
+  * Tarjetas con KPIs clave (equipos en riesgo, alertas críticas, consumo estimado).
+  * Tablas y listados con filtros por local, tipo de equipo y severidad de la alerta.
+  * Gráficos de tendencia simples para temperatura y consumo energético.
+
+Las interacciones se diseñaron priorizando:
+
+* **Tiempo de respuesta visual**: estados de carga (skeletons / spinners) para evitar pantallas en blanco mientras se consultan datos.
+* **Claridad en las alertas**: uso de iconografía y estados visuales diferenciados (por ejemplo, niveles de severidad por color y etiquetas) para que un dueño pueda identificar, en segundos, qué equipos requieren atención urgente.
+* **Flujos cortos** para tareas frecuentes:
+
+  * Revisar alertas críticas y abrir el detalle del equipo.
+  * Crear o revisar un ticket de servicio desde una alerta.
+
+---
+
+##### c) Implementación técnica y buenas prácticas de frontend
+
+El frontend se implementó como una **Single Page Application (SPA)** basada en componentes reutilizables, siguiendo principios de separación de responsabilidades:
+
+* **Componentes de presentación** para tarjetas de equipo, badges de severidad, tablas de alertas y gráficos.
+* **Componentes contenedores** encargados de orquestar llamadas a la API (reales o mock) y manejar estados de error / carga.
+* Manejo de estado centralizado para:
+
+  * Usuario autenticado y su rol (dueño de negocio o técnico).
+  * Lista de equipos, alertas y tickets de mantenimiento.
+  * Preferencias básicas de visualización (por ejemplo, rango temporal seleccionado).
+
+Se implementaron validaciones básicas y manejo de errores en los flujos clave:
+
+* Mensajes claros cuando no hay datos (ej. “No hay alertas activas para este local”).
+* Feedback inmediato al crear o actualizar un ticket de servicio.
+* Manejo de sesión (desconexión controlada, redirección a pantalla de inicio de sesión).
+
+Aunque no se dispone de una URL pública, el código está preparado para integrarse a un **pipeline CI/CD**: build automatizado, ejecución de pruebas básicas de interfaz y despliegue a un entorno de pruebas cuando se habilite.
+
+---
+
+##### d) Conexión con las To-Be User Stories de experimentación
+
+La aplicación web To-Be no solo expone funcionalidades, sino que está **instrumentada conceptualmente** para soportar las historias de experimentación definidas:
+
+* Cada acción relevante (inicio de sesión, acceso al dashboard, apertura de una alerta, creación de un ticket, configuración de umbrales, etc.) se modela como un **evento explícito**, listo para conectarse con el contrato de eventos mínimo (US2).
+* Las pantallas de onboarding y primer uso del dashboard están pensadas para medir **activación** (primer valor real) de los dueños de negocio (US3).
+* Los flujos relacionados con la evolución hacia un plan de pago (por ejemplo, habilitar más locales o equipos) se diseñan para integrarse con eventos de **trial/pago y ARPPU** (US4).
+* Estados de error y tiempos de respuesta de la UI pueden conectarse con los **guardrails de calidad** (US5), evitando que un experimento aumente conversiones a costa de degradar la experiencia.
+
+De este modo, el frontend To-Be se concibe desde el inicio como un **cliente first-class del sistema de experimentación**, no solo como una capa visual desconectada de las hipótesis de negocio.
+
+---
+
+##### e) Evidencia disponible
+
+La evidencia de implementación del Frontend-Web To-Be se sustenta en:
+
+* El **código fuente de la SPA**, organizado por módulos (dashboard, alertas, equipos, mantenimiento).
+* Las **pantallas funcionales** que se ejecutan en entorno local, utilizadas en demos internas y en sesiones de revisión con el equipo.
+* Capturas de pantalla y recorridos guiados del flujo principal (dashboard de cadena de frío, vista de alertas y tickets), que pueden ser anexados como figuras de soporte en el informe.
+
+En conjunto, esta implementación del **Frontend-Web To-Be de FrostLink** materializa la experiencia objetivo para dueños de negocios y técnicos, y prepara la plataforma para ser medida y mejorada mediante el ciclo de experimentos definido en las secciones anteriores.
+
+
+#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+#### 8.3.3.6. Team Collaboration Insights
+
+#### 8.3.3.6. Team Collaboration Insights
+
+El desarrollo del To-Be de **FrostLink** se abordó como un trabajo colaborativo entre perfiles mixtos (producto, frontend, backend, datos y UX). Más que repartir “tareas sueltas”, el equipo se organizó en **flows de valor**: definición de hipótesis, diseño de experiencia, implementación e instrumentación para experimentos.
+
+**Integrantes:**
+
+* León Vivas, Fabrizio Amir
+* Medina Cruzado, Raúl Adrian
+* Tello Murga, Javier Oswaldo
+* Pereira Vasquez, Fabrizzio
+* Varela Bustinza, Marcelo Alessandro
+* Ramos Calagua, Sebastian Alexander
+
+---
+
+##### a) Organización del equipo y focos de aporte
+
+* **León Vivas, Fabrizio Amir**
+  Asumió un rol de *lead técnico y de experiencia*, guiando las decisiones de arquitectura del frontend web y asegurando que la interfaz To-Be de FrostLink estuviera alineada con las hipótesis del experimento (qué flujos debían existir para dueños de negocio y técnicos, y qué eventos se necesitaban para medir activación).
+
+* **Medina Cruzado, Raúl Adrian**
+  Participó principalmente en la **definición e integración con servicios backend**, apoyando en el modelado de entidades (equipos de refrigeración, alertas, tickets) y en cómo exponerlas de forma consistente para el frontend y para la capa de experimentación.
+
+* **Tello Murga, Javier Oswaldo**
+  Tuvo foco en **datos y medición**: colaboró en la interpretación de las To-Be User Stories de experimentación (US1–US8), en la definición de qué eventos eran realmente necesarios y en cómo se podrían explotar luego en tableros e informes.
+
+* **Pereira Vasquez, Fabrizzio**
+  Apoyó en la **elaboración de flujos de usuario y maquetación**, participando en la construcción de pantallas clave (dashboard, alertas, tickets) y en la validación de que los textos y jerarquías visuales fueran comprensibles para perfiles no técnicos.
+
+* **Varela Bustinza, Marcelo Alessandro**
+  Se encargó de **documentación funcional y técnica**, conectando las decisiones del equipo con las secciones del informe (backlogs, evidencias implementadas, entrevistas), y ayudando a mantener trazabilidad entre hipótesis, historias de usuario y entregables.
+
+* **Ramos Calagua, Sebastian Alexander**
+  Colaboró en **pruebas y refinamiento**, ejecutando recorridos completos sobre el frontend To-Be, registrando problemas de usabilidad, estados de error y ajustes necesarios para que el flujo de monitoreo y mantenimiento se sintiera consistente de punta a punta.
+
+---
+
+##### b) Prácticas de colaboración
+
+El trabajo se organizó en **iteraciones cortas**, con espacios recurrentes de coordinación donde se revisaban:
+
+* El avance de las historias To-Be priorizadas.
+* La alineación entre diseño de interfaz, comportamiento del sistema y métricas de experimento.
+* Los ajustes necesarios sobre la marcha (ej. cambiar textos, mover componentes, simplificar flujos).
+
+Se utilizaron repositorios compartidos y revisiones de código (*code reviews*) para asegurar que las decisiones técnicas fueran visibles para todo el equipo. Esto permitió que las contribuciones de frontend, backend y datos se integraran sin perder de vista el objetivo principal: **evitar pérdidas en la cadena de frío y, al mismo tiempo, poder medir si el producto realmente aportaba valor**.
+
+---
+
+##### c) Aprendizajes de colaboración
+
+A nivel de colaboración, el equipo identificó tres aprendizajes clave:
+
+1. **Experimentar exige coordinación temprana**: no basta con “tener pantallas”; fue necesario que todos entendieran qué métricas queríamos observar y cómo se relacionaban con US1–US8 para instrumentar bien el frontend desde el inicio.
+2. **La comunicación entre roles técnicos y de negocio es crítica**: varias decisiones de UX y de modelado de eventos cambiaron después de discutir con el equipo cómo se vive realmente el problema de la cadena de frío.
+3. **Documentar mientras se construye ahorra retrabajo**: mantener el informe y los artefactos (backlogs, evidencias, entrevistas) actualizados en paralelo al desarrollo hizo más fácil justificar las decisiones y conectar cada pantalla con su hipótesis correspondiente.
+
+En conjunto, estas prácticas y roles hicieron que la colaboración alrededor de FrostLink no fuera solo una suma de tareas individuales, sino un esfuerzo coordinado para **construir, medir y aprender** de manera coherente con el enfoque experiment-driven del proyecto.
+
+<img style="border-radius: 10px; object-fit: cover;" src="/resources/insights_tf.png" alt="Screenshot de la entrevista">
+
+### 8.3.4. To-Be Validation Interviews
+
+#### 8.3.4.1. Diseño de Entrevistas
+
+#### 8.3.4.2. Registro de Entrevistas
+
+## 8.4. Experiment Aftermath & Analysis
+
+Tras la ejecución de los experimentos dentro del ciclo de vida de desarrollo de FrostLink, se presenta el análisis e interpretación de resultados y el impacto en la priorización del backlog de preguntas.
+
+### 8.4.1. Analysis and Interpretation of Results
+
+
+**Arquitectura Implementada**
+
+La plataforma FrostLink implementa Domain-Driven Design (DDD) con ocho bounded contexts: IAM, Profiles, Equipment Management, Service Requests, Work Orders, Technicians, Analytics, y Subscriptions and Payments. Cada contexto encapsula su modelo de dominio y reglas de negocio específicas.
+
+El patrón CQRS (Command Query Responsibility Segregation) separa comandos y queries, permitiendo optimización independiente y mejor escalabilidad. La persistencia utiliza Entity Framework Core con MySQL, implementando convención snake_case e interceptores para auditoría automática.
+
+**Pipeline CI/CD**
+
+El pipeline de integración continua logra cobertura de código del 80%, análisis estático con SonarQube, escaneo de vulnerabilidades en dependencias NuGet y build time optimizado mediante caché. Los resultados muestran reducción de bugs en producción, feedback rápido para correcciones inmediatas y detección temprana de vulnerabilidades.
+
+El pipeline de continuous delivery permite despliegue automático a staging, validación pre-producción coordinada, capacidad de rollback y artefactos versionados para trazabilidad completa.
+
+**Contenedorización**
+
+La contenedorización con Docker proporciona consistencia entre entornos, portabilidad para diferentes plataformas, escalabilidad horizontal y aislamiento de dependencias. Se implementan builds multi-stage, imágenes base oficiales de Microsoft y usuarios no-root para seguridad.
+
+**Análisis de Experimentos**
+
+**Experimento 1: Arquitectura Modular con DDD**
+
+La hipótesis de que una arquitectura modular basada en DDD facilitaría el mantenimiento fue validada. La separación en bounded contexts permitió desarrollo paralelo y cambios independientes. Las lecciones aprendidas indican que los Anti-Corruption Layers son esenciales para integración entre contextos y que la inversión inicial en diseño arquitectónico se compensa con mantenibilidad.
+
+**Experimento 2: Pipeline Automatizado de CI/CD**
+
+La hipótesis de reducción de errores y aceleración de entregas fue validada. Métricas cuantitativas muestran build time promedio de 5-8 minutos, cobertura mantenida arriba del 80% y mínimos falsos positivos. Las lecciones indican que la inversión inicial en configuración del pipeline es crítica y que la paralelización de jobs es esencial.
+
+**Experimento 3: Separación CQRS**
+
+La hipótesis fue parcialmente validada. Se observaron beneficios en escalabilidad de queries, aunque con complejidad adicional que requiere disciplina del equipo. Las lecciones indican que CQRS es beneficioso cuando hay necesidades diferentes de lectura/escritura y que requiere documentación clara.
+
+**Desafíos y Limitaciones**
+
+Los desafíos técnicos incluyeron curva de aprendizaje inicial de DDD, tiempo extenso de configuración del pipeline e integración entre bounded contexts. Las limitaciones identificadas comprenden tiempo inicial de desarrollo, recursos de infraestructura y complejidad cognitiva, mitigadas mediante documentación y código claro.
+
+**Interpretación desde el Reporte del Proyecto**
+
+Según las conclusiones documentadas, el enfoque centrado en el usuario desde el inicio permitió construir una solución alineada con necesidades reales. La decisión de adoptar DDD fue acertada, permitiendo desarrollo paralelo, mantenimiento independiente, escalabilidad horizontal y extensibilidad. Las prácticas de DevOps fueron fundamentales para velocidad, calidad, confiabilidad y trazabilidad.
+
+**Conclusiones del Análisis**
+
+Las fortalezas identificadas incluyen arquitectura sólida con DDD, calidad asegurada mediante pipeline CI/CD, modularidad que facilita mantenimiento, escalabilidad y múltiples capas de seguridad. Las áreas de mejora comprenden documentación de arquitectura, aumento de tests de integración, ampliación de métricas de negocio, optimización de queries complejas y mejor estructuración del proceso de experimentación.
+
+**8.4.2. Re-scored and Re-prioritized Question Backlog**
+
+**Metodología de Repriorización**
+
+La repriorización considera resultados de experimentos, necesidades de negocio, relación riesgo-valor, facilidad de implementación y dependencias entre preguntas.
+
+**Preguntas Validadas**
+
+La pregunta sobre viabilidad de arquitectura modular con DDD fue validada mediante implementación exitosa de 8 bounded contexts. La pregunta sobre reducción de errores mediante pipeline CI/CD fue validada con reducción medible de bugs. La pregunta sobre mejora de rendimiento mediante CQRS fue parcialmente validada, con beneficios claros pero complejidad adicional.
+
+**Nuevas Preguntas Emergentes**
+
+Las nuevas preguntas incluyen optimización de comunicación entre bounded contexts (prioridad alta), estrategias de caching para rendimiento (prioridad media) y estructuración del proceso de experimentación (prioridad media).
+
+**Backlog Repriorizado**
+
+Las preguntas fueron reordenadas considerando valor, riesgo e impacto. Las preguntas sobre experiencia de usuario y métricas de negocio aumentaron en prioridad tras verificar la arquitectura base.
+
+**Próximos Experimentos Planificados**
+
+Se planifican experimentos sobre optimización de comunicación entre contextos (2 semanas, métricas de latencia), experiencia de usuario en dashboards (3 semanas, métricas de satisfacción) y estrategias de caching (1 semana, reducción del 30% en tiempo de respuesta).
+
+**Conclusión General**
+
+El análisis de los experimentos en FrostLink proporcionó información valiosa sobre la efectividad de las decisiones arquitectónicas. La arquitectura DDD con CQRS, combinada con pipelines automatizados de CI/CD, demostró ser una base sólida. La repriorización del backlog asegura que el equipo se enfoque en áreas de mayor impacto, manteniendo un ciclo continuo de aprendizaje basado en datos reales.
+
+
+### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+## 8.5. Continuous Learning
+
+### 8.5.1. Shareback Sessión Artifacts: Learning Workflow
+
+## To-Be Software Platform Pre-launch
+
+### 8.6.1. About-the-Product Intro Video
 
 # Conclusiones
 
