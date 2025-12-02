@@ -5758,6 +5758,24 @@ El análisis de los experimentos en FrostLink proporcionó información valiosa 
 ## 8.5. Continuous Learning
 
 ### 8.5.1. Shareback Sessión Artifacts: Learning Workflow
+Se documentan los aprendizajes clave obtenidos durante las sesiones de **Shareback**, organizados en un flujo que facilita la transferencia de conocimiento al equipo.
+
+**Workflow de Aprendizaje**
+1. **Preparación**  
+   - Consolidación de métricas y hallazgos en dashboards.
+   - Identificación de hipótesis validadas y rechazadas.
+
+2. **Sesión de Shareback**  
+   - Presentación de resultados por experimento (KPIs, IC95%, guardrails).
+   - Discusión sobre impacto en roadmap y decisiones de producto.
+
+3. **Documentación**  
+   - Registro en el repositorio de Confluence/GitHub Wiki.
+   - Actualización del backlog con nuevas prioridades.
+
+4. **Acciones Posteriores**  
+   - Ajuste de experimentos futuros.
+   - Inclusión de mejoras en UX y funcionalidades críticas.
 
 ## To-Be Software Platform Pre-launch
 
