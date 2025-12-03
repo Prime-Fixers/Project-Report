@@ -5594,10 +5594,82 @@ La evidencia de implementación del Frontend-Web To-Be se sustenta en:
 
 En conjunto, esta implementación del **Frontend-Web To-Be de FrostLink** materializa la experiencia objetivo para dueños de negocios y técnicos, y prepara la plataforma para ser medida y mejorada mediante el ciclo de experimentos definido en las secciones anteriores.
 
+## 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
 
-#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+Esta sección documenta la **implementación To-Be de la aplicación móvil nativa de FrostLink**, enfocada en optimizar los flujos críticos para los **técnicos/proveedores de servicio**. El diseño y las funcionalidades reflejan las correcciones de usabilidad identificadas en la auditoría y la instrumentación necesaria para los experimentos de adopción (H2, H5).
 
-#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+La aplicación, desarrollada para **Android (Kotlin)**, fue distribuida a un grupo piloto de técnicos a través de **Firebase App Distribution** para validar su usabilidad y eficiencia en campo.
+
+### a) Objetivo de la Implementación Móvil To-Be
+
+El objetivo principal de esta implementación To-Be es validar la **Hipótesis H2** (Los técnicos adoptan la plataforma si reduce su tiempo administrativo en 30%) y la **Hipótesis H5** (La interfaz móvil permite a los técnicos registrar intervenciones completas en menos de 3 minutos por visita), centrando el diseño en:
+
+* **Reducción de Fricción:** Optimización del flujo de **"Inicio/Registro de Intervención"** para minimizar clics y tiempo.
+* **Visibilidad de Datos:** Acceso rápido al **Historial Técnico** y a las **Alertas** del equipo *antes* de la visita.
+* **Captura de Evidencia:** Flujos simplificados para tomar fotos, adjuntar reportes y obtener la firma digital del cliente en sitio.
+
+### b) Evidencia de Implementación y Despliegue
+
+La implementación se centró en las vistas principales que usa el técnico:
+
+1.  **Dashboard del Técnico:** Vista inicial optimizada para mostrar **Órdenes de Trabajo Prioritarias** y **Alertas Activas** en su zona de servicio (H2).
+2.  **Detalle de Orden de Trabajo:** Pantalla con acceso a la información completa del equipo y el historial de fallas (H2, H3).
+3.  **Flujo de Registro de Intervención (To-Be):** Flujo de trabajo guiado para registrar el servicio, cronometrado para medir **H5**.
+
+**Artefacto de Despliegue (Firebase App Distribution)**
+La aplicación fue compilada y distribuida mediante Firebase, asegurando que los testers utilicen la última versión estable.
+
+* **Nombre de la App en Firebase:** FrostLink Mobile App - ToBe
+* **Versión Desplegada:** `1.1.0 (Build 5)`
+* **Estado:** Disponible para Grupo Piloto de Técnicos.
+
+### c) Instrumentación de Eventos para Experimentación
+
+Para medir las hipótesis (US2 - Contrato de Eventos Mínimo), se instrumentaron los siguientes eventos clave, esenciales para el análisis de adopción y eficiencia:
+
+* `technician_login_success`: Mide la adopción.
+* `work_order_opened`: Mide la frecuencia de uso.
+* `intervention_start`: Marca el inicio del flujo cronometrado (para H5).
+* `intervention_complete_success`: Marca el final del flujo cronometrado, capturando la duración total (para H5).
+* `photo_attached`: Mide el uso de captura de evidencia.
+
+Esta instrumentación permite a la capa de Analytics (8.2.7) calcular el **Tiempo Medio de Registro (TMR)**, un KPI directo para validar la eficiencia (H5) y la satisfacción del técnico.
+
+---
+
+## 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+El backend de FrostLink, implementado en **.NET 8/9** con arquitectura **DDD + CQRS**, fue refinado en la fase To-Be para soportar los nuevos requerimientos de experimentación (US1, US2, US4) y las correcciones de seguridad/calidad (6.2). El despliegue se mantiene en **Azure VM**.
+
+### a) Refinamiento Arquitectónico y de Calidad
+
+1.  **Soporte a Feature Flags (US1):** Se implementó una capa de servicio para gestionar *Feature Flags*. El *endpoint* de autenticación ahora devuelve el *user_id* y su **variante asignada**, asegurando consistencia en la exposición (US1 - Variante persistente).
+2.  **Validaciones de Seguridad y Calidad (6.2):** Se integraron las correcciones de la auditoría UX, especialmente:
+    * *Corrección #2:* Refuerzo de la validación **server-side** en el *Bounded Context* `EquipmentManagement` para rechazar rangos de temperatura invertidos (`Min > Max`) antes de la persistencia.
+    * *Corrección #9:* Lógica de negocio en el *Bounded Context* `WorkOrders` para verificar la existencia de **evidencias requeridas** antes de generar el reporte final o cambiar el estado a *Resolved*.
+3.  **Endpoints para Métricas (US4):** Se crearon nuevos *endpoints* en el *Bounded Context* `Analytics` para consumir eventos de facturación y experimentación:
+    * `POST /api/v1/analytics/experiment-event`: Endpoint genérico para la ingesta de eventos instrumentados desde el frontend/móvil (ej. `intervention_complete_success`).
+    * `GET /api/v1/subscriptions/conversion-rate`: Lógica de negocio para calcular la tasa de conversión a planes premium (H4).
+
+### b) Evidencia de Endpoint To-Be - Swagger UI
+
+La documentación de la API fue actualizada para reflejar los nuevos *endpoints* de experimentación y las validaciones más estrictas.
+
+* **Endpoint de Analytics (Nuevo To-Be):**
+
+| Método | Path | Descripción |
+| :--- | :--- | :--- |
+| `POST` | `/api/v1/analytics/experiment-event` | Registra eventos de experimentación instrumentados, esenciales para el Tracking Plan (8.2.8). |
+
+### c) Estado del Despliegue Backend To-Be
+
+El backend To-Be está desplegado en un entorno de pruebas con la siguiente configuración:
+
+* **Dirección IP Pública (Azure VM):** `40.82.177.111:8080` (Mismo que el As-Is para mantener consistencia de infraestructura).
+* **Servicios Activos:** API RESTful (.NET 8/9), Base de Datos MySQL (en contenedor), PM2 (para auto-inicio).
+
+La ejecución de pruebas automatizadas (*System Tests*) contra este entorno valida que los nuevos *endpoints* de analíticas y las correcciones de seguridad funcionan como se espera, listos para recibir el tráfico de los clientes To-Be.
+
 
 #### 8.3.3.6. Team Collaboration Insights
 
