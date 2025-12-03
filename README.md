@@ -619,11 +619,20 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Definí gates éticos en el pipeline (quality gate, escaneo SCA/secretos) y estrategias de rollback/feature flags para despliegues seguros y responsables.</li>
                     <li><strong>Pereira Vasquez, Fabrizzio:</strong> Organicé la auditoría UX cuidando la confidencialidad de evidencias, documenté hallazgos sin datos personales y prioricé criterios WCAG en las correcciones.</li>
                 </ul>
+                <strong>TF1:</strong><br>
+                <ul>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Reflexionó sobre la responsabilidad de FrostLink al generar alertas de temperatura para alimentos y medicamentos, priorizando siempre la confiabilidad del sistema por encima de decisiones puramente técnicas. Definió criterios de calidad mínimos para el frontend y la experiencia de usuario, evitando mostrar información ambigua o engañosa que pudiera llevar a interpretaciones erróneas por parte de dueños de negocio o técnicos.</li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong> Al modelar los servicios relacionados con equipos de refrigeración y alertas, consideró la importancia ética de no perder ni corromper datos críticos, adoptando buenas prácticas de integridad y consistencia. Revisó los flujos de error y fallos de servicio, proponiendo mecanismos de recuperación que reducen el riesgo de decisiones incorrectas por información incompleta.</li>
+                    <li><strong>Tello Murga, Javier Oswaldo:</strong> Al trabajar con las historias de experimentación y medición, tuvo en cuenta la responsabilidad de no manipular métricas ni presentar resultados sesgados. Promovió el uso de contratos de eventos mínimos y transparentes, evitando la recolección innecesaria de datos personales y respetando la privacidad de los usuarios monitoreados por la plataforma.</li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> En la documentación de requisitos y decisiones técnicas, dejó trazabilidad de supuestos, limitaciones y riesgos del sistema, facilitando que el equipo reconozca sus responsabilidades frente a posibles fallos. Registró explícitamente la necesidad de cumplir con normativa de datos y de justificar el uso de información sensible en el contexto de la plataforma.</li>
+                    <li><strong>Pereira Vasquez, Fabrizzio:</strong> Durante el diseño de las pantallas, se aseguró de que los mensajes, iconos y alertas no generaran falsas expectativas sobre la seguridad de la cadena de frío. Cuidó que la interfaz comunique de forma honesta el estado real de los equipos, reduciendo el riesgo de que un usuario ignore una alerta crítica por diseño confuso o poco claro.</li>
+                    <li><strong>Ramos Calagua, Sebastian Alexander:</strong> Durante las pruebas de la aplicación web, reportó casos en los que la interfaz podía inducir errores de operación (por ejemplo, confusión entre alertas críticas y menores) y propuso mejoras para mitigarlos. Asumió una postura responsable al no “ignorar” defectos que podían impactar en la operación real de los usuarios, sino documentarlos y priorizarlos.</li>
+                </ul>
             </td>
             <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong> Se demostró un compromiso ético y profesional al diseñar FrostLink, alineando la propuesta tecnológica con las necesidades reales de los usuarios y consolidando una solución responsable e innovadora.<br>
                 <strong>TP1:</strong> El equipo evidenció responsabilidad ética al anonimizar datos, establecer controles en el pipeline y documentar revisiones y entrevistas con consentimiento, reduciendo riesgos de seguridad y sesgos en decisiones.
-            </td>
+                <strong>TF1:</strong> Como equipo, concluimos que el desarrollo de FrostLink nos permitió tomar conciencia explícita de la responsabilidad ética y profesional que implica construir una plataforma que monitorea equipos de refrigeración para alimentos y medicamentos. A lo largo del proyecto priorizamos la confiabilidad de la información, la claridad de las alertas y la trazabilidad de las decisiones técnicas, entendiendo que un error en el diseño, en los datos o en la interfaz puede derivar en pérdidas económicas y riesgos para la salud. Esto se reflejó en la forma en que definimos los flujos críticos, revisamos los posibles puntos de fallo y documentamos supuestos y limitaciones, asumiendo que un ingeniero de software no solo “escribe código”, sino que responde por el impacto real que ese código tiene en la operación de los usuarios.
         </tr>
         <tr>
             <td style="border: 1px solid black; padding: 8px;">
@@ -645,10 +654,20 @@ ABET – EAC - Student Outcome 4 Criterio: La capacidad de reconocer responsabil
                     <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Diseñó CI/CD con entornos escalables y apagado automático en staging para optimizar costos; definió monitoreo de métricas de uso/errores para decisiones basadas en evidencia.</li>
                     <li><strong>Pereira Vasquez, Fabrizzio:</strong> La auditoría UX identificó barreras de accesibilidad; priorizó mejoras que amplían inclusión y reducen fricción en onboarding, con impacto directo en productividad y satisfacción.</li>
                 </ul>
+                <strong>TF1:</strong><br>
+                <ul>
+                    <li><strong>Fabrizio Amir León Vivas:</strong> Al definir el flujo principal del dashboard, valoró el impacto económico de las pérdidas de inventario por fallas de refrigeración y priorizó funcionalidades que permitieran a los negocios reaccionar rápido ante una alerta. Consideró también el beneficio ambiental de evitar desperdicio de alimentos y medicamentos, entendiendo que cada mejora en la visibilidad de la cadena de frío puede reducir desechos.</li>
+                    <li><strong>Raúl Adrian Medina Cruzado:</strong> En el modelado del backend y las APIs, analizó cómo las decisiones de diseño podían afectar el costo operativo de la solución (almacenamiento, procesamiento y escalabilidad). Planteó esquemas que permiten reutilizar datos y optimizar consultas, reduciendo tanto el gasto en infraestructura como el impacto energético asociado a un uso ineficiente de recursos en la nube.</li>
+                    <li><strong>Tello Murga, Javier Oswaldo:</strong> Al trabajar con métricas y experimentos, evaluó cómo las decisiones sobre qué medir y cómo reportarlo impactan en la toma de decisiones de negocio: precios, planes y prioridades de mantenimiento. Propuso interpretar los datos no solo desde el punto de vista de ingresos, sino también considerando la continuidad del servicio para comunidades que dependen de medicamentos refrigerados.</li>
+                    <li><strong>Marcelo Alessandro Varela Bustinza:</strong> Al redactar la documentación, relacionó las funcionalidades de FrostLink con su impacto en la reducción de pérdidas económicas y en la protección de productos sensibles. Destacó en el informe cómo la solución puede aportar a una gestión más sostenible de la cadena de frío, alineando la plataforma con objetivos de eficiencia y responsabilidad social.</li>
+                    <li><strong>Pereira Vasquez, Fabrizzio:</strong> En el diseño visual, ponderó el contexto social de los usuarios: personal de supermercados y farmacias que trabaja bajo presión. Adaptó la interfaz para que las alertas y estados se entiendan rápidamente, reduciendo el estrés operativo y ayudando a que las decisiones que toman tengan un efecto positivo en la seguridad alimentaria y sanitaria.</li>
+                    <li><strong>Ramos Calagua, Sebastian Alexander:</strong> Durante la validación de los flujos de uso, analizó escenarios donde una mala experiencia podría provocar decisiones costosas (por ejemplo, descartar productos innecesariamente o no reaccionar a tiempo ante una falla). A partir de estas observaciones, emitió recomendaciones para ajustar la UI y los mensajes, buscando que las acciones de los usuarios minimicen impactos económicos negativos y favorezcan el uso responsable de recursos.</li>
+                </ul>
             </td>
             <td style="border: 1px solid black; padding: 8px;">
                 <strong>TB1:</strong> El proyecto demuestra que una solución tecnológica puede generar valor económico, social y ambiental, siempre que se diseñe con responsabilidad y pensando en su impacto global.<br>
                 <strong>TP1:</strong> Los juicios informados guiaron la priorización de requisitos, controles de calidad y pipeline, logrando menor retrabajo, consumo controlado de recursos y mayor accesibilidad para usuarios finales.
+                <strong>TF1:</strong> De manera grupal, también concluimos que las decisiones de diseño y arquitectura en FrostLink se tomaron considerando su impacto económico, ambiental y social. En términos económicos, buscamos que la solución ayude a los negocios a reducir pérdidas por fallas en la cadena de frío y optimizar sus costos de operación. Desde una perspectiva ambiental, reconocimos que disminuir el desperdicio de alimentos y productos farmacéuticos contribuye a un uso más responsable de recursos. Finalmente, a nivel social, entendimos que una cadena de frío más confiable aporta a la seguridad alimentaria y sanitaria de las personas. Por ello, nuestros juicios técnicos se orientaron no solo a que el sistema funcione, sino a que su funcionamiento genere beneficios medibles y responsables en el entorno donde será utilizado.
             </td>
         </tr>
     </tbody>
@@ -6134,6 +6153,12 @@ validada con Postman y asegurando interoperabilidad y confiabilidad en la transm
 Se incorporaron también prácticas de DevOps y CI/CD, con despliegue de la landing page y front-end en Netlify, uso de contenedores Docker para backend y front-end, automatización de builds
 y pruebas, y estrategias de despliegue continuo que permiten mantener alta disponibilidad y control de versiones. Además, se consideraron aspectos de seguridad, confidencialidad y respaldo
 de datos, cumpliendo con estándares de protección de información.
+
+# Video About The Team
+
+Link
+
+[Video About The Team](https://youtu.be/vJANNQhpfIY)
 
 # Anexo
 
