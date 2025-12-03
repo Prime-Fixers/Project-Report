@@ -5666,7 +5666,250 @@ En conjunto, estas prácticas y roles hicieron que la colaboración alrededor de
 
 #### 8.3.4.1. Diseño de Entrevistas
 
+ Objetivo e hipótesis (resumen operativo)
+
+- H1 Eficiencia: ↓ incidencias térmicas ≥20% en 4–6 semanas.
+
+- H2 Energía/pérdidas: ↑ uso de monitoreo/reportes ≥30% y ↓ costos incidentes.
+
+- H3 Soporte predictivo: NPS técnicos ≥+20 y TTR ↓ ≥15%.
+
+- H4 Confianza/seguridad: 0 incidentes de pérdida de datos; percepción de trazabilidad ≥4/5.
+
+- H5 Adopción: retención 4-sem ≥60%, activación de funcionalidades clave ≥70%.
+
+ Segmentos y muestra
+- Segmento 1: negocios con equipos de refrigeración (n=3).
+
+- Segmento 2: proveedores/servicios técnicos (n=3).
+
+- Total: 6 entrevistas remotas (Meet/Zoom). Sin incentivos.
+
+ Materiales y ética
+- Material: prototipo navegable (FrostLink).
+
+- Grabación: audio/video solo para toma de notas en vivo.
+
+- Participantes: consentimiento informado verbal simple.
+
+ Roles y logística
+- Moderador: 1 miembro del equipo.
+
+- Entrevistado: 1 participante por sesión.
+
+- Duración: flexible (20–40 min recomendado).
+
+- Idioma: español.
+
+---
+
+**Preguntas de entrevista**
+
+ Segmeto 1 - Negocio que usan equipos de refrigeración
+
+**A) Screener (selección)**
+1. ¿Cuál es tu cargo y responsabilidades frente a los equipos de refrigeración?
+2. ¿Cuántos equipos gestionan actualmente y de qué tipos (cámaras, vitrinas, freezers, etc.)?
+3. En los últimos 3 meses, ¿cuántas incidencias térmicas han tenido (aprox.)?
+4. ¿Cómo realizan hoy el monitoreo (herramientas, planillas, app, nada)?
+5. ¿Tercerizan el mantenimiento? ¿Con cuántos proveedores trabajan?
+6. ¿Usan algún sistema para alertas y reportes (cuál)?
+7. ¿Tienen políticas o requisitos sobre trazabilidad y seguridad de datos?
+8. ¿Puedes participar en una sesión remota de 30-40 min y compartir pantalla del prototipo?
+
+**B) Exploración (contexto y dolor)**
+H1 - Eficiencia / fallas
+1. Cuéntame el flujo actual para detectar y atender una falla térmica.
+2. En tu última incidencia, ¿cuánto tardaron en detectarla (TTD) y resolverla (TTR)?
+3. ¿Dónde se generan más cuellos de botella (detección, coordinación, repuestos, aprobación)?
+
+H2 - Pérdidas / energía
+4. ¿Cómo estiman el costo de una falla (pérdida de producto, ventas, horas hombre)?
+5. ¿Monitorean consumo energético? ¿Qué métricas revisas (kWh, horas de compresor, picos)?
+6. Si pudieras definir 3 alertas automáticas, ¿cuáles serían y con qué umbrales?
+
+H3 – Predictivo / personalización
+7. ¿Qué historial y reportes te ayudan a planificar preventivos?
+8. ¿Qué info te gustaría que el proveedor técnico vea para venir preparado?
+
+H4 – Confianza / trazabilidad
+9. ¿Qué acciones deben quedar auditadas (quién cambió qué y cuándo)?
+10. ¿Qué te preocupa de la seguridad (acceso, privacidad, backups, errores humanos)?
+
+H5 – Adopción
+11. Si probaras FrostLink, ¿qué integraciones serían críticas (correo, WhatsApp, ERP)?
+12. ¿Qué te haría usarlo semanalmente y qué barreras ves (costo, capacitación, tiempo)?
+
+*(Sondeos útiles: “¿Puedes darme un ejemplo?”, “¿Qué pasaría si…?”, “¿Cómo lo haces hoy?”)*
+
+**C) Tareas con prototipo (think-aloud)**
+1. Login: Accede con una cuenta de prueba. ¿Qué esperabas ver? ¿Algo confunde?
+
+2. Registrar/publicar un equipo: Da de alta un equipo con datos básicos y fotos.
+
+3. Alquilar un equipo de respaldo: Encuentra un equipo compatible y completa la solicitud.
+
+4. Estadísticas: Revisa métricas del último mes y configura una alerta de temperatura.
+
+5. Búsqueda y filtros: Busca equipos por capacidad/ubicación y guarda un filtro favorito.
+
+**Mediciones rápidas por tarea:**
+- SEQ (1-7) "¿Qué tan fácil fue completar la tarea?"
+- Minutos/segundos estimados, errores cometidos, y confianza 1-5.
+
+**D) Cierre / metricado**
+1. En una escala 0-10, ¿recomendarías FrostLink a un colega? ¿Por qué?
+2. Top-3 valores y Top-3 fricciones que encontraste hoy.
+3. ¿Te interesaría un piloto de 2-4 semanas? ¿Qué necesitarías para aprobarlo internamente?
+
+ Segmento 2 - Proveedores de servicios/equipos de refrigeración
+
+**A) Screener (selección)**
+1. ¿Cuál es tu rol (técnico, jefe de servicio, comercial, operaciones)?
+
+2. ¿Qué servicios ofrecen (preventivo, correctivo, alquiler, instalación)?
+
+3. ¿Cuántos clientes activos y cuántas intervenciones al mes realizan (aprox.)?
+
+4. ¿Ofrecen alquiler de equipos? ¿Qué catálogo manejan (tipos/capacidades)?
+
+5. ¿Cómo priorizan tickets y asignan técnicos hoy?
+
+6. ¿Usan herramientas para reportes a clientes y trazabilidad de intervenciones?
+
+7. ¿Pueden mostrar procesos reales (sin datos sensibles) en una sesión remota?
+
+**B) Exploración (operación y negocio)**
+H1 - Eficiencia / coordinación
+1. ¿Cómo les llega un ticket y cómo deciden quién lo atiende y cuándo?
+2. ¿Dónde se pierde más tiempo (diagnóstico, repuestos, coordinación con cliente)?
+
+H2 - Pérdidas / energía (lado proveedor)
+3. ¿Qué métricas entregan al cliente post-servicio (temperatura, consumo, tiempos)?
+4. ¿Les piden alertas proactivas? ¿Cómo las configuran hoy?
+
+H3 - Predictivo / personalización
+5. ¿Qué datos necesitarían para ofrecer mantenimiento predictivo (sensores, histórico, patrones)?
+6. ¿Cómo documentan el estado del equipo (fotos, lecturas, checklist, firma digital)?
+
+H4 - Confianza / trazabilidad
+7. ¿Qué deben auditar para fines de garantía (quién intervino, repuestos, calibraciones)?
+8. ¿Requisitos de seguridad del cliente (accesos, retención, transferencia de datos)?
+
+H5 - Adopción / modelo
+9. ¿Qué modelo de precio prefieren (licencia, por técnico, por equipo, por alquiler)?
+10. ¿Qué integraciones son imprescindibles (CRM, WhatsApp, facturación)?
+11. ¿Qué capacitaciones requeriría tu equipo para usar FrostLink día a día?
+
+*(Sondeos útiles: “Muéstrame el último caso”, “¿Qué automatizarías primero?”, “¿Qué error no debe pasar nunca?”)*
+
+**C) Tareas con prototipo (think-aloud)**
+1. Publicar un equipo para alquiler: Crea una ficha con fotos y especificaciones.
+
+2. Aceptar una solicitud de alquiler: Revisa requisitos y confirma disponibilidad.
+
+3. Programar un preventivo: Agenda visita, define checklist y repuestos probables.
+
+4. Generar un reporte técnico: Adjunta evidencias y comparte con el cliente.
+
+5. Buscar demanda/solicitudes: Filtra por ciudad/capacidad y guarda un “alerta de oportunidad”.
+
+Mediciones por tarea:
+- SEQ (1-7), tiempo, errores, confianza 1-5.
+
+**D) Cierre / metricado**
+1. Top-3 beneficios para tu operación y Top-3 riesgos percibidos.
+
+2. En 0–10, ¿cuán probable es que lo uses con tus próximos 3 clientes?
+
+3. Requisitos mínimos para un piloto (accesos, soporte, transferencia de datos).
+
 #### 8.3.4.2. Registro de Entrevistas
+
+<table class="tabla-entrevista">
+  <thead>
+    <tr>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>SEGMENTO OBJETIVO: NEGOCIOS</strong></th>
+      <th><strong>#1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; background-color: #fafafa; border-radius: 10px; padding: 24px;">
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
+              <li><strong>Nombres:</strong> Jorge Rolando</li>
+              <li><strong>Apellidos:</strong> Garcia Roca</li>
+              <li><strong>Edad:</strong> 28</li>
+              <li><strong>Distrito:</strong> San Miguel</li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/IQDCxKPIkI6DRZ9gWAEGfLJiAVufiME6K8ONtMWOpR5GbUI?e=kuMNxJ" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 00:00</li>
+              <li><strong>Duración:</strong> 09:35</li>
+            </ul>
+          </div>
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="/resources/entrevista-prototipo.png" alt="Screenshot de la entrevista">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="background-color: #f9f9f9; border-radius: 10px; padding: 24px; margin-top: 12px;">
+          <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Resumen</p>
+          Jorge nos da una retroalimentación muy enriquecedora empezando con unos antecedentes y problematica del negocio. Identifico flujos de usuario precarios y otros poco útiles para el problema que tratamos de resolver. Sin embargo, comentó que las principales funcionalidades cumplen su propósito dado.
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table class="tabla-entrevista">
+  <thead>
+    <tr>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>SEGMENTO OBJETIVO: NEGOCIOS</strong></th>
+      <th><strong>#2</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; background-color: #fafafa; border-radius: 10px; padding: 24px;">
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
+              <li><strong>Nombres:</strong> Mario Joaquin</li>
+              <li><strong>Apellidos:</strong> Lopez Acuña</li>
+              <li><strong>Edad:</strong> 25</li>
+              <li><strong>Distrito:</strong> La Molina</li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/IQDCxKPIkI6DRZ9gWAEGfLJiAVufiME6K8ONtMWOpR5GbUI?e=kuMNxJ" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 09:35</li>
+              <li><strong>Duración:</strong> 08:24</li>
+            </ul>
+          </div>
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="/resources/entrevista-prototipo-2.png" alt="Screenshot de la entrevista">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="background-color: #f9f9f9; border-radius: 10px; padding: 24px; margin-top: 12px;">
+          <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Resumen</p>
+          El entrevistado supervisa 15–18 equipos de refrigeración y coordina mantenimientos e incidencias. En los últimos meses tuvieron 6–8 fallas, casi siempre fuera de horario. El monitoreo actual es manual, usando revisiones por turno, termómetros análogos y reportes por WhatsApp. No cuentan con un sistema formal, solo Excel y chats. Trabajan con 2 proveedores principales. El flujo de atención es improvisado: la detección ocurre 2–3 horas después y la resolución toma 5–6 horas. Los mayores problemas son la detección tardía, la coordinación con técnicos y la aprobación de repuestos. El costo de una falla se estima por pérdidas de producto. No miden energía, pero les interesa monitorear horas de compresor, picos de consumo y aperturas de puerta.
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## 8.4. Experiment Aftermath & Analysis
 
